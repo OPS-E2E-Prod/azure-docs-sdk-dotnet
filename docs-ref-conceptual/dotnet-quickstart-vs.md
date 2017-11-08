@@ -24,7 +24,7 @@ This tutorial will walk you through building and deploying a Microsoft Azure app
 
 ## Create a CosmosDB account
 
-CosmosDB is used for data storage in this tutorial, so you'll need to create an account.  Run this script locally or in the Cloud Shell to create an Azure CosmosDB DocumentDB API account.  Click the **Try it** button on the code block below to launch the [Azure Cloud Shell](/azure/cloud-shell/) and copy/paste the script block into the shell.
+CosmosDB iss used for data storage in this tutorial, so you'll need to create an account.  Run this script locally or in the Cloud Shell to create an Azure CosmosDB DocumentDB API account.  Click the **Try it** button on the code block below to launch the [Azure Cloud Shell](/azure/cloud-shell/) and copy/paste the script block into the shell.
 
 ```azurecli-interactive
 # Create the DotNetAzureTutorial resource group
