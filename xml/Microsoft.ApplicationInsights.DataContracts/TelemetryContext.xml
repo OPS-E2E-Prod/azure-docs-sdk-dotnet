@@ -6,14 +6,16 @@
   <TypeSignature Language="F#" Value="type TelemetryContext = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-    <AssemblyVersion>2.7.0.0</AssemblyVersion>
+    <AssemblyVersion>2.7.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents a context for sending telemetry to the Application Insights service.
+            <a href="https://go.microsoft.com/fwlink/?linkid=525722#telemetrycontext">Learn more</a></summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -25,11 +27,13 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.ApplicationInsights.DataContracts.TelemetryContext" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -42,13 +46,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.Extensibility.Implementation.CloudContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the object describing the cloud tracked by this <see cref="T:Microsoft.ApplicationInsights.DataContracts.TelemetryContext" />.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -62,13 +68,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.Extensibility.Implementation.ComponentContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the object describing the component tracked by this <see cref="T:Microsoft.ApplicationInsights.DataContracts.TelemetryContext" />.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -82,13 +90,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.Extensibility.Implementation.DeviceContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the object describing the device tracked by this <see cref="T:Microsoft.ApplicationInsights.DataContracts.TelemetryContext" />.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -102,14 +112,16 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <MemberValue>2097152</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Value for the flag that indicates that server should not store IP address from incoming events.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,13 +134,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary> 
+            Gets or sets flags which controls events priority and endpoint behavior.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -142,15 +156,22 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the default instrumentation key for all <see cref="T:Microsoft.ApplicationInsights.Channel.ITelemetry" /> objects logged in this <see cref="T:Microsoft.ApplicationInsights.DataContracts.TelemetryContext" />.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            By default, this property is initialized with the <see cref="P:Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration.InstrumentationKey" /> value
+            of the <see cref="P:Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration.Active" /> instance of <see cref="T:Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration" />. You can specify it
+            for all telemetry tracked via a particular <see cref="T:Microsoft.ApplicationInsights.TelemetryClient" /> or for a specific <see cref="T:Microsoft.ApplicationInsights.Channel.ITelemetry" />
+            instance.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="Location">
@@ -162,13 +183,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.Extensibility.Implementation.LocationContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the object describing a location tracked by this <see cref="T:Microsoft.ApplicationInsights.DataContracts.TelemetryContext" />.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -182,13 +205,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.Extensibility.Implementation.OperationContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the object describing a operation tracked by this <see cref="T:Microsoft.ApplicationInsights.DataContracts.TelemetryContext" />.
+            <a href="https://go.microsoft.com/fwlink/?linkid=525722#operationcontext">Learn more</a></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -202,13 +227,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets a dictionary of application-defined property values.
+            <a href="https://go.microsoft.com/fwlink/?linkid=525722#properties">Learn more</a></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -222,13 +249,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.Extensibility.Implementation.SessionContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the object describing a user session tracked by this <see cref="T:Microsoft.ApplicationInsights.DataContracts.TelemetryContext" />.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -242,13 +271,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.Extensibility.Implementation.UserContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the object describing a user tracked by this <see cref="T:Microsoft.ApplicationInsights.DataContracts.TelemetryContext" />.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

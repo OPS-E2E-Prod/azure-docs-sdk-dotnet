@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type SessionStateTelemetry = class&#xA;    interface ITelemetry" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-    <AssemblyVersion>2.7.0.0</AssemblyVersion>
+    <AssemblyVersion>2.7.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -22,7 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Telemetry type used to track user sessions.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,11 +36,13 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.ApplicationInsights.DataContracts.SessionStateTelemetry" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,14 +55,18 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="state" Type="Microsoft.ApplicationInsights.DataContracts.SessionState" />
       </Parameters>
       <Docs>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="state">
+            A <see cref="T:Microsoft.ApplicationInsights.DataContracts.SessionState" /> value indicating state of the user session.
+            </param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.ApplicationInsights.DataContracts.SessionStateTelemetry" /> class with the specified <paramref name="state" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,13 +82,15 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.DataContracts.TelemetryContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the <see cref="T:Microsoft.ApplicationInsights.DataContracts.TelemetryContext" /> of the application when the session state was recorded.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -97,15 +107,17 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.Channel.ITelemetry</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Deeply clones a <see cref="T:Microsoft.ApplicationInsights.DataContracts.SessionStateTelemetry" /> object.
+            </summary>
+        <returns>A cloned instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,14 +132,16 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Sanitizes this telemetry instance to ensure it can be accepted by the Application Insights.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,13 +157,15 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the value that defines absolute order of the telemetry item.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -163,13 +179,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.DataContracts.SessionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the value describing state of the user session.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -186,13 +204,15 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the date and time the session state was recorded.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

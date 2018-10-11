@@ -6,14 +6,16 @@
   <TypeSignature Language="F#" Value="type TelemetryProcessorChainBuilder = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-    <AssemblyVersion>2.7.0.0</AssemblyVersion>
+    <AssemblyVersion>2.7.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents an object used to Build a TelemetryProcessorChain.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,14 +28,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="configuration" Type="Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration" />
       </Parameters>
       <Docs>
-        <param name="configuration">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="configuration"> The <see cref="T:Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration" /> instance to which the constructed processing chain should be set to.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryProcessorChainBuilder" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -45,16 +49,18 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="configuration" Type="Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration" />
         <Parameter Name="telemetrySink" Type="Microsoft.ApplicationInsights.Extensibility.TelemetrySink" />
       </Parameters>
       <Docs>
-        <param name="configuration">To be added.</param>
-        <param name="telemetrySink">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="configuration">Configuration instance to use for constructing the processor chain.</param>
+        <param name="telemetrySink">Telemetry sink the processor chain will be assigned to.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryProcessorChainBuilder" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,14 +73,18 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Builds the chain of linked <see cref="T:Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor" /> instances and sets the same in configuration object passed.
+            A special telemetry processor for handling Transmission is always appended as the last
+            processor in the chain.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,7 +97,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryProcessorChainBuilder</ReturnType>
@@ -96,8 +106,12 @@
         <Parameter Name="telemetryProcessorFactory" Type="System.Func&lt;Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor,Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor&gt;" />
       </Parameters>
       <Docs>
-        <param name="telemetryProcessorFactory">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="telemetryProcessorFactory">A delegate that returns a <see cref="T:Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor" />
+            , given the next <see cref="T:Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor" /> in the call chain.</param>
+        <summary>
+            Uses given factory to add TelemetryProcessor to the chain of processors. The processors
+            in the chain will be invoked in the same order in which they are added.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

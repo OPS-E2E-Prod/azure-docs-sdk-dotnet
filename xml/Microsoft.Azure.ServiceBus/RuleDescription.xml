@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type RuleDescription = class&#xA;    interface IEquatable&lt;RuleDescription&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-    <AssemblyVersion>3.1.0.0</AssemblyVersion>
+    <AssemblyVersion>3.1.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -31,7 +31,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -49,7 +49,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-dotnet">
@@ -76,7 +76,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -97,7 +97,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -121,7 +121,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.ServiceBus.RuleAction</ReturnType>
@@ -143,7 +143,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -163,11 +163,14 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class Microsoft.Azure.ServiceBus.RuleDescription otherRule) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ServiceBus.RuleDescription.Equals(Microsoft.Azure.ServiceBus.RuleDescription)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (otherRule As RuleDescription) As Boolean" />
-      <MemberSignature Language="F#" Value="abstract member Equals : Microsoft.Azure.ServiceBus.RuleDescription -&gt; bool&#xA;override this.Equals : Microsoft.Azure.ServiceBus.RuleDescription -&gt; bool" Usage="ruleDescription.Equals otherRule" />
+      <MemberSignature Language="F#" Value="override this.Equals : Microsoft.Azure.ServiceBus.RuleDescription -&gt; bool" Usage="ruleDescription.Equals otherRule" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -187,11 +190,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ServiceBus.RuleDescription.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
-      <MemberSignature Language="F#" Value="abstract member Equals : obj -&gt; bool&#xA;override this.Equals : obj -&gt; bool" Usage="ruleDescription.Equals obj" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="ruleDescription.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -215,7 +218,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.ServiceBus.Filter</ReturnType>
@@ -234,11 +237,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ServiceBus.RuleDescription.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
-      <MemberSignature Language="F#" Value="abstract member GetHashCode : unit -&gt; int&#xA;override this.GetHashCode : unit -&gt; int" Usage="ruleDescription.GetHashCode " />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="ruleDescription.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -259,7 +262,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -281,7 +284,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -307,7 +310,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type JobClient = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-    <AssemblyVersion>1.16.0.0</AssemblyVersion>
+    <AssemblyVersion>1.17.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -31,7 +31,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.17.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,7 +48,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.17.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Devices.JobResponse&gt;</ReturnType>
@@ -73,7 +73,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.17.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Devices.JobResponse&gt;</ReturnType>
@@ -101,7 +101,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.17.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -124,7 +124,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.17.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Devices.JobClient</ReturnType>
@@ -141,6 +141,34 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="CreateFromConnectionString">
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Devices.JobClient CreateFromConnectionString (string connectionString, Microsoft.Azure.Devices.HttpTransportSettings transportSettings);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.Devices.JobClient CreateFromConnectionString(string connectionString, class Microsoft.Azure.Devices.HttpTransportSettings transportSettings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.JobClient.CreateFromConnectionString(System.String,Microsoft.Azure.Devices.HttpTransportSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromConnectionString (connectionString As String, transportSettings As HttpTransportSettings) As JobClient" />
+      <MemberSignature Language="F#" Value="static member CreateFromConnectionString : string * Microsoft.Azure.Devices.HttpTransportSettings -&gt; Microsoft.Azure.Devices.JobClient" Usage="Microsoft.Azure.Devices.JobClient.CreateFromConnectionString (connectionString, transportSettings)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
+        <AssemblyVersion>1.17.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Devices.JobClient</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connectionString" Type="System.String" />
+        <Parameter Name="transportSettings" Type="Microsoft.Azure.Devices.HttpTransportSettings" />
+      </Parameters>
+      <Docs>
+        <param name="connectionString"> The Iot Hub connection string.</param>
+        <param name="transportSettings"> The HTTP transport settings.</param>
+        <summary>
+            Creates a JobClient from the Iot Hub connection string and HTTP transport settings
+            </summary>
+        <returns> A JobClient instance. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CreateQuery">
       <MemberSignature Language="C#" Value="public abstract Microsoft.Azure.Devices.IQuery CreateQuery ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Azure.Devices.IQuery CreateQuery() cil managed" />
@@ -150,7 +178,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.17.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Devices.IQuery</ReturnType>
@@ -173,7 +201,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.17.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Devices.IQuery</ReturnType>
@@ -199,7 +227,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.17.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Devices.IQuery</ReturnType>
@@ -227,7 +255,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.17.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Devices.IQuery</ReturnType>
@@ -261,7 +289,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.17.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -282,7 +310,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.17.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -308,7 +336,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.17.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Devices.JobResponse&gt;</ReturnType>
@@ -333,7 +361,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.17.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Devices.JobResponse&gt;</ReturnType>
@@ -361,7 +389,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.17.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -383,7 +411,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.17.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Devices.JobResponse&gt;</ReturnType>
@@ -416,7 +444,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.17.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Devices.JobResponse&gt;</ReturnType>
@@ -451,7 +479,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.17.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Devices.JobResponse&gt;</ReturnType>
@@ -484,7 +512,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.17.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Devices.JobResponse&gt;</ReturnType>

@@ -13,7 +13,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            The payload for a Configure HTTP settings request.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,30 +35,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public HttpConnectivitySettings (string enabledCredential = null, string username = null, string password = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string enabledCredential, string username, string password) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.HDInsight.Models.HttpConnectivitySettings.#ctor(System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional enabledCredential As String = null, Optional username As String = null, Optional password As String = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.HDInsight.Models.HttpConnectivitySettings : string * string * string -&gt; Microsoft.Azure.Management.HDInsight.Models.HttpConnectivitySettings" Usage="new Microsoft.Azure.Management.HDInsight.Models.HttpConnectivitySettings (enabledCredential, username, password)" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="enabledCredential" Type="System.String" />
-        <Parameter Name="username" Type="System.String" />
-        <Parameter Name="password" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="enabledCredential">To be added.</param>
-        <param name="username">To be added.</param>
-        <param name="password">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="EnabledCredential">
       <MemberSignature Language="C#" Value="public string EnabledCredential { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string EnabledCredential" />
@@ -69,7 +47,7 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="restAuthCredential.isEnabled")</AttributeName>
         </Attribute>
       </Attributes>
@@ -77,7 +55,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets whether or not the HTTP based authorization is
+            enabled. Possible values include: 'true', 'false'
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -94,7 +75,7 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="restAuthCredential.password")</AttributeName>
         </Attribute>
       </Attributes>
@@ -102,7 +83,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the HTTP user password.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,7 +102,7 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="restAuthCredential.username")</AttributeName>
         </Attribute>
       </Attributes>
@@ -127,7 +110,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the HTTP username.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

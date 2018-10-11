@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type ExceptionHandledAt = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-    <AssemblyVersion>2.7.0.0</AssemblyVersion>
+    <AssemblyVersion>2.7.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -17,7 +17,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            This enumeration is used by ExceptionTelemetry to identify if and where exception was handled.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,14 +32,16 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.DataContracts.ExceptionHandledAt</ReturnType>
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Exception was handled by some platform handlers.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Unhandled">
@@ -49,14 +53,16 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.DataContracts.ExceptionHandledAt</ReturnType>
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Exception was not handled. Application crashed.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="UserCode">
@@ -68,14 +74,16 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.DataContracts.ExceptionHandledAt</ReturnType>
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Exception was handled in user code.
+            </summary>
       </Docs>
     </Member>
   </Members>

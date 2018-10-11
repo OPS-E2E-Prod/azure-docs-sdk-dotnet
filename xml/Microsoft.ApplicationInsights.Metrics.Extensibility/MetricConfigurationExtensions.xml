@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type MetricConfigurationExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-    <AssemblyVersion>2.7.0.0</AssemblyVersion>
+    <AssemblyVersion>2.7.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -18,7 +18,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Provides discoverable access to constants used by metric aggregates.
+            Do not use directly. Instead, use: <c>MetricConfigurations.Common.Xxxx().Constants()</c>.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +34,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.Metrics.MetricSeriesConfigurationForMeasurement+AggregateKindConstants</ReturnType>
@@ -40,9 +43,12 @@
         <Parameter Name="measurementConfig" Type="Microsoft.ApplicationInsights.Metrics.MetricConfigurationForMeasurement" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="measurementConfig">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="measurementConfig">@ToDo: Complete documentation before stable release. {276}</param>
+        <summary>
+            Groups constants used my metric aggregates produced by aggregators that are configured by metric configurations represented
+            through instances of <see cref="T:Microsoft.ApplicationInsights.Metrics.MetricConfigurationForMeasurement" />. See also <c>MetricConfigurations.Common.Measurement()</c>./&gt;
+            </summary>
+        <returns>@ToDo: Complete documentation before stable release. {564}</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,7 +61,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.Metrics.MetricSeriesConfigurationForMeasurement+AggregateKindConstants</ReturnType>
@@ -64,9 +70,12 @@
         <Parameter Name="measurementConfig" Type="Microsoft.ApplicationInsights.Metrics.MetricSeriesConfigurationForMeasurement" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="measurementConfig">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="measurementConfig">@ToDo: Complete documentation before stable release. {071}</param>
+        <summary>
+            Groups constants used my metric aggregates produced by aggregators that are configured by metric configurations represented
+            through instances of <see cref="T:Microsoft.ApplicationInsights.Metrics.MetricSeriesConfigurationForMeasurement" />. See also <c>MetricConfigurations.Common.Measurement()</c>./&gt;
+            </summary>
+        <returns>@ToDo: Complete documentation before stable release. {132}</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

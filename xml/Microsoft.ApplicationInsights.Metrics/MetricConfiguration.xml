@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type MetricConfiguration = class&#xA;    interface IEquatable&lt;MetricConfiguration&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-    <AssemblyVersion>2.7.0.0</AssemblyVersion>
+    <AssemblyVersion>2.7.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -17,7 +17,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Encapsulates the configuration for a metric and its respecitve data time series.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="seriesCountLimit" Type="System.Int32" />
@@ -38,10 +38,17 @@
         <Parameter Name="seriesConfig" Type="Microsoft.ApplicationInsights.Metrics.IMetricSeriesConfiguration" />
       </Parameters>
       <Docs>
-        <param name="seriesCountLimit">To be added.</param>
-        <param name="valuesPerDimensionLimits">To be added.</param>
-        <param name="seriesConfig">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="seriesCountLimit">How many data time series a metric can contain as a maximum.
+            Once this limit is reached, calls to <c>TrackValue(..)</c>, <c>TryGetDataSeries(..)</c> and similar
+            that would normally result in new series will return <c>false</c>.</param>
+        <param name="valuesPerDimensionLimits">How many different values each of the dimensions of a metric can
+            have as a maximum. If this enumeration contains less elements than the number of supported dimensions,
+            then the last specified element is replicated for subsequent dimensions. If this enumeration contains
+            too many elements, superflous elements are ignored.
+            Once this limit is reached, calls to <c>TrackValue(..)</c>, <c>TryGetDataSeries(..)</c> and similar
+            that would normally result in new series will return <c>false</c>.</param>
+        <param name="seriesConfig">The configuration for how each series of this metric should be aggregated.</param>
+        <summary>Creates a new instance of <c>MetricConfiguration</c>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,7 +61,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="seriesCountLimit" Type="System.Int32" />
@@ -62,10 +69,15 @@
         <Parameter Name="seriesConfig" Type="Microsoft.ApplicationInsights.Metrics.IMetricSeriesConfiguration" />
       </Parameters>
       <Docs>
-        <param name="seriesCountLimit">To be added.</param>
-        <param name="valuesPerDimensionLimit">To be added.</param>
-        <param name="seriesConfig">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="seriesCountLimit">How many data time series a metric can contain as a maximum.
+            Once this limit is reached, calls to <c>TrackValue(..)</c>, <c>TryGetDataSeries(..)</c> and similar
+            that would normally result in new series will return <c>false</c>.</param>
+        <param name="valuesPerDimensionLimit">How many different values each of the dimensions of a metric can
+            have as a maximum.
+            Once this limit is reached, calls to <c>TrackValue(..)</c>, <c>TryGetDataSeries(..)</c> and similar
+            that would normally result in new series will return <c>false</c>.</param>
+        <param name="seriesConfig">The configuration for how each series of this metric should be aggregated.</param>
+        <summary>Creates a new instance of <c>MetricConfiguration</c>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,7 +93,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -90,9 +102,9 @@
         <Parameter Name="other" Type="Microsoft.ApplicationInsights.Metrics.MetricConfiguration" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">A configuration object.</param>
+        <summary>Gets whether tho objects describe idendical configuration.</summary>
+        <returns>Whether tho objects describe idendical configuration.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,7 +117,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -114,9 +126,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">A configuration object.</param>
+        <summary>Gets whether tho objects describe idendical configuration.</summary>
+        <returns>Whether tho objects describe idendical configuration.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,15 +141,15 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the Hash Code for this object.</summary>
+        <returns>The Hash Code for this object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,7 +162,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-dotnet">
@@ -164,9 +176,11 @@
         <Parameter Name="dimensionNumber" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="dimensionNumber">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dimensionNumber">1-based dimension number. Currently it can be <c>1</c>...<c>10</c>.</param>
+        <summary>
+            Gets the maximum number of distinct values for a dimension identified by the specified 1-based dimension index.
+            </summary>
+        <returns>The maximum number of distinct values for the specified dimension.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,13 +193,13 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.Metrics.IMetricSeriesConfiguration</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the configuration for how each series of this metric should be aggregated.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -199,13 +213,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets how many data time series a metric can contain as a maximum.
+            Once this limit is reached, calls to <c>TrackValue(..)</c>, <c>TryGetDataSeries(..)</c> and similar
+            that would normally result in new series will return <c>false</c>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

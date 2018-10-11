@@ -13,7 +13,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Gets or sets the StorageAccountName, StorageAccountKey and StorageContainer for the Azure Blob Storage Account.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,10 +36,12 @@
         <Parameter Name="storageContainer" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="storageAccountName">To be added.</param>
-        <param name="storageAccountKey">To be added.</param>
-        <param name="storageContainer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="storageAccountName">Fully Qualified StorageAccountName for the Azure Blob Storage Account.</param>
+        <param name="storageAccountKey">StorageKey for the Azure Blob Storage Account.</param>
+        <param name="storageContainer">StorageContainer for the Azure Blob Storage Account. The cluster will leverage to store some cluster level files.</param>
+        <summary>
+            Initializes a new instance of the AzureStorageInfo class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,27 +60,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="StorageAccountUri">
-      <MemberSignature Language="C#" Value="public string StorageAccountUri { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string StorageAccountUri" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.HDInsight.Models.AzureStorageInfo.StorageAccountUri" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StorageAccountUri As String" />
-      <MemberSignature Language="F#" Value="member this.StorageAccountUri : string" Usage="Microsoft.Azure.Management.HDInsight.Models.AzureStorageInfo.StorageAccountUri" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Management.HDInsight</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets Azure Blob Storage Account Key.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -96,7 +82,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets Azure Blob Storage Container.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

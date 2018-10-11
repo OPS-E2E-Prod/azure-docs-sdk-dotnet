@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type TelemetryContextExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-    <AssemblyVersion>2.7.0.0</AssemblyVersion>
+    <AssemblyVersion>2.7.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -18,7 +18,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Extension methods for TelemetryContext.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +33,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.7.0.0</AssemblyVersion>
+        <AssemblyVersion>2.7.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.Extensibility.Implementation.InternalContext</ReturnType>
@@ -40,9 +42,11 @@
         <Parameter Name="context" Type="Microsoft.ApplicationInsights.DataContracts.TelemetryContext" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">Telemetry context to get Internal context for.</param>
+        <summary>
+            Returns TelemetryContext's Internal context.
+            </summary>
+        <returns>Internal context for TelemetryContext.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

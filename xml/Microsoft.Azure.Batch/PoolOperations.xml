@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type PoolOperations = class&#xA;    interface IInheritedBehaviors" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -32,7 +32,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -66,7 +66,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -95,6 +95,149 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="CopyNodeFileContentToStream">
+      <MemberSignature Language="C#" Value="public void CopyNodeFileContentToStream (string poolId, string computeNodeId, string filePath, System.IO.Stream stream, Microsoft.Azure.Batch.GetFileRequestByteRange byteRange = null, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyNodeFileContentToStream(string poolId, string computeNodeId, string filePath, class System.IO.Stream stream, class Microsoft.Azure.Batch.GetFileRequestByteRange byteRange, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.PoolOperations.CopyNodeFileContentToStream(System.String,System.String,System.String,System.IO.Stream,Microsoft.Azure.Batch.GetFileRequestByteRange,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})" />
+      <MemberSignature Language="F#" Value="member this.CopyNodeFileContentToStream : string * string * string * System.IO.Stream * Microsoft.Azure.Batch.GetFileRequestByteRange * seq&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; -&gt; unit" Usage="poolOperations.CopyNodeFileContentToStream (poolId, computeNodeId, filePath, stream, byteRange, additionalBehaviors)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="poolId" Type="System.String" />
+        <Parameter Name="computeNodeId" Type="System.String" />
+        <Parameter Name="filePath" Type="System.String" />
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="byteRange" Type="Microsoft.Azure.Batch.GetFileRequestByteRange" />
+        <Parameter Name="additionalBehaviors" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="poolId">The id of the pool that contains the compute node.</param>
+        <param name="computeNodeId">The id of the compute node.</param>
+        <param name="filePath">The path of the file to retrieve.</param>
+        <param name="stream">The stream to copy the file contents to.</param>
+        <param name="byteRange">A byte range defining what section of the file to copy. If omitted, the entire file is downloaded.</param>
+        <param name="additionalBehaviors">A collection of <see cref="T:Microsoft.Azure.Batch.BatchClientBehavior" /> instances that are applied to the Batch service request after the <see cref="P:Microsoft.Azure.Batch.PoolOperations.CustomBehaviors" />.</param>
+        <summary>
+            Copies the contents of a file from the specified node to the given <see cref="T:System.IO.Stream" />.
+            </summary>
+        <remarks>This is a blocking operation.  For a non-blocking equivalent, see <see cref="M:Microsoft.Azure.Batch.PoolOperations.CopyNodeFileContentToStreamAsync(System.String,System.String,System.String,System.IO.Stream,Microsoft.Azure.Batch.GetFileRequestByteRange,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},System.Threading.CancellationToken)" />.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyNodeFileContentToStreamAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task CopyNodeFileContentToStreamAsync (string poolId, string computeNodeId, string filePath, System.IO.Stream stream, Microsoft.Azure.Batch.GetFileRequestByteRange byteRange = null, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task CopyNodeFileContentToStreamAsync(string poolId, string computeNodeId, string filePath, class System.IO.Stream stream, class Microsoft.Azure.Batch.GetFileRequestByteRange byteRange, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.PoolOperations.CopyNodeFileContentToStreamAsync(System.String,System.String,System.String,System.IO.Stream,Microsoft.Azure.Batch.GetFileRequestByteRange,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.CopyNodeFileContentToStreamAsync : string * string * string * System.IO.Stream * Microsoft.Azure.Batch.GetFileRequestByteRange * seq&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="poolOperations.CopyNodeFileContentToStreamAsync (poolId, computeNodeId, filePath, stream, byteRange, additionalBehaviors, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="poolId" Type="System.String" />
+        <Parameter Name="computeNodeId" Type="System.String" />
+        <Parameter Name="filePath" Type="System.String" />
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="byteRange" Type="Microsoft.Azure.Batch.GetFileRequestByteRange" />
+        <Parameter Name="additionalBehaviors" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="poolId">The id of the pool that contains the compute node.</param>
+        <param name="computeNodeId">The id of the compute node.</param>
+        <param name="filePath">The path of the file to retrieve.</param>
+        <param name="stream">The stream to copy the file contents to.</param>
+        <param name="byteRange">A byte range defining what section of the file to copy. If omitted, the entire file is downloaded.</param>
+        <param name="additionalBehaviors">A collection of <see cref="T:Microsoft.Azure.Batch.BatchClientBehavior" /> instances that are applied to the Batch service request after the <see cref="P:Microsoft.Azure.Batch.PoolOperations.CustomBehaviors" />.</param>
+        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> for controlling the lifetime of the asynchronous operation.</param>
+        <summary>
+            Copies the contents of a file from the specified node to the given <see cref="T:System.IO.Stream" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>The get file operation runs asynchronously.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyNodeFileContentToString">
+      <MemberSignature Language="C#" Value="public string CopyNodeFileContentToString (string poolId, string computeNodeId, string filePath, System.Text.Encoding encoding = null, Microsoft.Azure.Batch.GetFileRequestByteRange byteRange = null, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string CopyNodeFileContentToString(string poolId, string computeNodeId, string filePath, class System.Text.Encoding encoding, class Microsoft.Azure.Batch.GetFileRequestByteRange byteRange, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.PoolOperations.CopyNodeFileContentToString(System.String,System.String,System.String,System.Text.Encoding,Microsoft.Azure.Batch.GetFileRequestByteRange,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})" />
+      <MemberSignature Language="F#" Value="member this.CopyNodeFileContentToString : string * string * string * System.Text.Encoding * Microsoft.Azure.Batch.GetFileRequestByteRange * seq&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; -&gt; string" Usage="poolOperations.CopyNodeFileContentToString (poolId, computeNodeId, filePath, encoding, byteRange, additionalBehaviors)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="poolId" Type="System.String" />
+        <Parameter Name="computeNodeId" Type="System.String" />
+        <Parameter Name="filePath" Type="System.String" />
+        <Parameter Name="encoding" Type="System.Text.Encoding" />
+        <Parameter Name="byteRange" Type="Microsoft.Azure.Batch.GetFileRequestByteRange" />
+        <Parameter Name="additionalBehaviors" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="poolId">The id of the pool that contains the compute node.</param>
+        <param name="computeNodeId">The id of the compute node.</param>
+        <param name="filePath">The path of the file to retrieve.</param>
+        <param name="encoding">The encoding to use. If no value or null is specified, UTF8 is used.</param>
+        <param name="byteRange">A byte range defining what section of the file to copy. If omitted, the entire file is downloaded.</param>
+        <param name="additionalBehaviors">A collection of <see cref="T:Microsoft.Azure.Batch.BatchClientBehavior" /> instances that are applied to the Batch service request after the <see cref="P:Microsoft.Azure.Batch.PoolOperations.CustomBehaviors" />.</param>
+        <summary>
+            Reads the contents of a file from the specified node into a string.
+            </summary>
+        <returns>The contents of the file, as a string</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyNodeFileContentToStringAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; CopyNodeFileContentToStringAsync (string poolId, string computeNodeId, string filePath, System.Text.Encoding encoding = null, Microsoft.Azure.Batch.GetFileRequestByteRange byteRange = null, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;string&gt; CopyNodeFileContentToStringAsync(string poolId, string computeNodeId, string filePath, class System.Text.Encoding encoding, class Microsoft.Azure.Batch.GetFileRequestByteRange byteRange, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.PoolOperations.CopyNodeFileContentToStringAsync(System.String,System.String,System.String,System.Text.Encoding,Microsoft.Azure.Batch.GetFileRequestByteRange,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.CopyNodeFileContentToStringAsync : string * string * string * System.Text.Encoding * Microsoft.Azure.Batch.GetFileRequestByteRange * seq&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="poolOperations.CopyNodeFileContentToStringAsync (poolId, computeNodeId, filePath, encoding, byteRange, additionalBehaviors, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="poolId" Type="System.String" />
+        <Parameter Name="computeNodeId" Type="System.String" />
+        <Parameter Name="filePath" Type="System.String" />
+        <Parameter Name="encoding" Type="System.Text.Encoding" />
+        <Parameter Name="byteRange" Type="Microsoft.Azure.Batch.GetFileRequestByteRange" />
+        <Parameter Name="additionalBehaviors" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="poolId">The id of the pool that contains the compute node.</param>
+        <param name="computeNodeId">The id of the compute node.</param>
+        <param name="filePath">The path of the file to retrieve.</param>
+        <param name="encoding">The encoding to use. If no value or null is specified, UTF8 is used.</param>
+        <param name="byteRange">A byte range defining what section of the file to copy. If omitted, the entire file is downloaded.</param>
+        <param name="additionalBehaviors">A collection of <see cref="T:Microsoft.Azure.Batch.BatchClientBehavior" /> instances that are applied to the Batch service request after the <see cref="P:Microsoft.Azure.Batch.PoolOperations.CustomBehaviors" />.</param>
+        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> for controlling the lifetime of the asynchronous operation.</param>
+        <summary>
+            Reads the contents of a file from the specified node into a string.
+            </summary>
+        <returns>The contents of the file, as a string</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CreateComputeNodeUser">
       <MemberSignature Language="C#" Value="public Microsoft.Azure.Batch.ComputeNodeUser CreateComputeNodeUser (string poolId, string computeNodeId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Azure.Batch.ComputeNodeUser CreateComputeNodeUser(string poolId, string computeNodeId) cil managed" />
@@ -104,7 +247,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Batch.ComputeNodeUser</ReturnType>
@@ -133,7 +276,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Batch.CloudPool</ReturnType>
@@ -156,7 +299,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Batch.CloudPool</ReturnType>
@@ -201,7 +344,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Batch.CloudPool</ReturnType>
@@ -249,7 +392,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt;</ReturnType>
@@ -275,7 +418,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -308,7 +451,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -345,7 +488,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -381,7 +524,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -421,7 +564,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -451,7 +594,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -485,7 +628,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -513,7 +656,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -545,7 +688,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -575,7 +718,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -609,7 +752,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -643,7 +786,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -681,7 +824,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -709,7 +852,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -741,7 +884,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Batch.AutoScaleRun</ReturnType>
@@ -776,7 +919,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.AutoScaleRun&gt;</ReturnType>
@@ -814,7 +957,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Batch.PoolStatistics</ReturnType>
@@ -841,7 +984,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.PoolStatistics&gt;</ReturnType>
@@ -870,7 +1013,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Batch.ComputeNode</ReturnType>
@@ -901,7 +1044,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.ComputeNode&gt;</ReturnType>
@@ -935,7 +1078,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Batch.NodeFile</ReturnType>
@@ -966,7 +1109,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.NodeFile&gt;</ReturnType>
@@ -999,7 +1142,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Batch.CloudPool</ReturnType>
@@ -1028,7 +1171,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.CloudPool&gt;</ReturnType>
@@ -1060,7 +1203,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1098,7 +1241,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1134,7 +1277,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1174,7 +1317,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1214,7 +1357,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Batch.RemoteLoginSettings</ReturnType>
@@ -1248,7 +1391,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.RemoteLoginSettings&gt;</ReturnType>
@@ -1284,7 +1427,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Batch.IPagedEnumerable&lt;Microsoft.Azure.Batch.ComputeNode&gt;</ReturnType>
@@ -1314,7 +1457,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Batch.IPagedEnumerable&lt;Microsoft.Azure.Batch.NodeAgentSku&gt;</ReturnType>
@@ -1341,7 +1484,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Batch.IPagedEnumerable&lt;Microsoft.Azure.Batch.NodeFile&gt;</ReturnType>
@@ -1375,7 +1518,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Batch.IPagedEnumerable&lt;Microsoft.Azure.Batch.PoolNodeCounts&gt;</ReturnType>
@@ -1403,7 +1546,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Batch.IPagedEnumerable&lt;Microsoft.Azure.Batch.CloudPool&gt;</ReturnType>
@@ -1431,7 +1574,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Batch.IPagedEnumerable&lt;Microsoft.Azure.Batch.PoolUsageMetrics&gt;</ReturnType>
@@ -1464,7 +1607,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1497,7 +1640,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1534,7 +1677,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1567,7 +1710,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1603,7 +1746,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1643,7 +1786,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1682,7 +1825,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1721,7 +1864,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1760,7 +1903,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1801,7 +1944,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1841,7 +1984,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1882,7 +2025,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1924,7 +2067,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1975,7 +2118,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -2030,7 +2173,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2064,7 +2207,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -2101,7 +2244,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Batch.UploadBatchServiceLogsResult</ReturnType>
@@ -2147,7 +2290,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.UploadBatchServiceLogsResult&gt;</ReturnType>

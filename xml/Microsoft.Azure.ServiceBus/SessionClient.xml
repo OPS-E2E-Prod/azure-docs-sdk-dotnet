@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type SessionClient = class&#xA;    inherit ClientEntity&#xA;    interface ISessionClient&#xA;    interface IClientEntity" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-    <AssemblyVersion>3.1.0.0</AssemblyVersion>
+    <AssemblyVersion>3.1.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.ServiceBus.ClientEntity</BaseTypeName>
@@ -26,7 +26,6 @@
              See <see cref="T:Microsoft.Azure.ServiceBus.IMessageSession" /> for usage of session object.
              This uses AMQP protocol to communicate with the service.
              </remarks>
-    <altmember cref="T:Microsoft.Azure.ServiceBus.IMessageSession" />
     <example>
              To create a new SessionClient
              <code>
@@ -45,6 +44,7 @@
              <code>
              IMessageSession session = await sessionClient.AcceptMessageSessionAsync();
              </code></example>
+    <altmember cref="T:Microsoft.Azure.ServiceBus.IMessageSession" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,7 +55,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="connectionStringBuilder" Type="Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder" />
@@ -82,7 +82,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="serviceBusConnection" Type="Microsoft.Azure.ServiceBus.ServiceBusConnection" />
@@ -111,7 +111,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="connectionString" Type="System.String" />
@@ -141,7 +141,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="endpoint" Type="System.String" />
@@ -179,7 +179,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.ServiceBus.IMessageSession&gt;</ReturnType>
@@ -206,7 +206,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.ServiceBus.IMessageSession&gt;</ReturnType>
@@ -225,27 +225,27 @@
       </Docs>
     </Member>
     <Member MemberName="AcceptMessageSessionAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.ServiceBus.IMessageSession&gt; AcceptMessageSessionAsync (TimeSpan serverWaitTime);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.ServiceBus.IMessageSession&gt; AcceptMessageSessionAsync(valuetype System.TimeSpan serverWaitTime) cil managed" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.ServiceBus.IMessageSession&gt; AcceptMessageSessionAsync (TimeSpan operationTimeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.ServiceBus.IMessageSession&gt; AcceptMessageSessionAsync(valuetype System.TimeSpan operationTimeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ServiceBus.SessionClient.AcceptMessageSessionAsync(System.TimeSpan)" />
-      <MemberSignature Language="VB.NET" Value="Public Function AcceptMessageSessionAsync (serverWaitTime As TimeSpan) As Task(Of IMessageSession)" />
-      <MemberSignature Language="F#" Value="abstract member AcceptMessageSessionAsync : TimeSpan -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.ServiceBus.IMessageSession&gt;&#xA;override this.AcceptMessageSessionAsync : TimeSpan -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.ServiceBus.IMessageSession&gt;" Usage="sessionClient.AcceptMessageSessionAsync serverWaitTime" />
+      <MemberSignature Language="VB.NET" Value="Public Function AcceptMessageSessionAsync (operationTimeout As TimeSpan) As Task(Of IMessageSession)" />
+      <MemberSignature Language="F#" Value="abstract member AcceptMessageSessionAsync : TimeSpan -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.ServiceBus.IMessageSession&gt;&#xA;override this.AcceptMessageSessionAsync : TimeSpan -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.ServiceBus.IMessageSession&gt;" Usage="sessionClient.AcceptMessageSessionAsync operationTimeout" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Azure.ServiceBus.ISessionClient.AcceptMessageSessionAsync(System.TimeSpan)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.ServiceBus.IMessageSession&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="serverWaitTime" Type="System.TimeSpan" />
+        <Parameter Name="operationTimeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="serverWaitTime">Amount of time for which the call should wait to fetch the next session.</param>
+        <param name="operationTimeout">Amount of time for which the call should wait to fetch the next session.</param>
         <summary>
             Gets a session object of any <see cref="P:Microsoft.Azure.ServiceBus.IMessageSession.SessionId" /> that can be used to receive messages for that sessionId.
             </summary>
@@ -255,29 +255,29 @@
       </Docs>
     </Member>
     <Member MemberName="AcceptMessageSessionAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.ServiceBus.IMessageSession&gt; AcceptMessageSessionAsync (string sessionId, TimeSpan serverWaitTime);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.ServiceBus.IMessageSession&gt; AcceptMessageSessionAsync(string sessionId, valuetype System.TimeSpan serverWaitTime) cil managed" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.ServiceBus.IMessageSession&gt; AcceptMessageSessionAsync (string sessionId, TimeSpan operationTimeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.ServiceBus.IMessageSession&gt; AcceptMessageSessionAsync(string sessionId, valuetype System.TimeSpan operationTimeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ServiceBus.SessionClient.AcceptMessageSessionAsync(System.String,System.TimeSpan)" />
-      <MemberSignature Language="VB.NET" Value="Public Function AcceptMessageSessionAsync (sessionId As String, serverWaitTime As TimeSpan) As Task(Of IMessageSession)" />
-      <MemberSignature Language="F#" Value="abstract member AcceptMessageSessionAsync : string * TimeSpan -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.ServiceBus.IMessageSession&gt;&#xA;override this.AcceptMessageSessionAsync : string * TimeSpan -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.ServiceBus.IMessageSession&gt;" Usage="sessionClient.AcceptMessageSessionAsync (sessionId, serverWaitTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AcceptMessageSessionAsync (sessionId As String, operationTimeout As TimeSpan) As Task(Of IMessageSession)" />
+      <MemberSignature Language="F#" Value="abstract member AcceptMessageSessionAsync : string * TimeSpan -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.ServiceBus.IMessageSession&gt;&#xA;override this.AcceptMessageSessionAsync : string * TimeSpan -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.ServiceBus.IMessageSession&gt;" Usage="sessionClient.AcceptMessageSessionAsync (sessionId, operationTimeout)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Azure.ServiceBus.ISessionClient.AcceptMessageSessionAsync(System.String,System.TimeSpan)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.ServiceBus.IMessageSession&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="sessionId" Type="System.String" />
-        <Parameter Name="serverWaitTime" Type="System.TimeSpan" />
+        <Parameter Name="operationTimeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
         <param name="sessionId">The sessionId present in all its messages.</param>
-        <param name="serverWaitTime">Amount of time for which the call should wait to fetch the next session.</param>
+        <param name="operationTimeout">Amount of time for which the call should wait to fetch the next session.</param>
         <summary>
             Gets a particular session object identified by <paramref name="sessionId" /> that can be used to receive messages for that sessionId.
             </summary>
@@ -298,7 +298,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -320,7 +320,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -344,7 +344,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
@@ -369,7 +369,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -394,7 +394,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin&gt;</ReturnType>
@@ -418,7 +418,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -446,7 +446,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.ServiceBus.ServiceBusConnection</ReturnType>
@@ -471,7 +471,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
