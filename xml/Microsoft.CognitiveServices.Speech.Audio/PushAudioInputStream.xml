@@ -6,10 +6,7 @@
   <TypeSignature Language="F#" Value="type PushAudioInputStream = class&#xA;    inherit AudioInputStream" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-    <AssemblyVersion>0.0.0.0</AssemblyVersion>
-    <AssemblyVersion>1.3.0.28</AssemblyVersion>
-    <AssemblyVersion>1.3.1.28</AssemblyVersion>
-    <AssemblyVersion>1.4.0.28</AssemblyVersion>
+    <AssemblyVersion>1.5.0.28</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.CognitiveServices.Speech.Audio.AudioInputStream</BaseTypeName>
@@ -30,15 +27,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.0.28</AssemblyVersion>
-        <AssemblyVersion>1.3.1.28</AssemblyVersion>
-        <AssemblyVersion>1.4.0.28</AssemblyVersion>
+        <AssemblyVersion>1.5.0.28</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>
-            Creates a memory backed PushAudioInputStream using the default format (16Khz 16bit mono PCM).
+            Creates a memory backed PushAudioInputStream using the default format (16 kHz, 16 bit, mono PCM).
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -52,18 +46,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.0.28</AssemblyVersion>
-        <AssemblyVersion>1.3.1.28</AssemblyVersion>
-        <AssemblyVersion>1.4.0.28</AssemblyVersion>
+        <AssemblyVersion>1.5.0.28</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="format" Type="Microsoft.CognitiveServices.Speech.Audio.AudioStreamFormat" />
       </Parameters>
       <Docs>
-        <param name="format">The audio data format in which audio will be written to the push audio stream's write() method (currently only support 16Khz 16bit mono PCM).</param>
+        <param name="format">The audio data format in which audio will be written to the push audio stream's write() method.</param>
         <summary>
             Creates a memory backed PushAudioInputStream with the specified audio format.
+            Currently, only WAV / PCM with 16-bit samples, 16 kHz sample rate, and a single channel (Mono) is supported. When used with the Conversation Transcription Service, eight channels are supported.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -77,10 +69,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.0.28</AssemblyVersion>
-        <AssemblyVersion>1.3.1.28</AssemblyVersion>
-        <AssemblyVersion>1.4.0.28</AssemblyVersion>
+        <AssemblyVersion>1.5.0.28</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -102,10 +91,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.0.28</AssemblyVersion>
-        <AssemblyVersion>1.3.1.28</AssemblyVersion>
-        <AssemblyVersion>1.4.0.28</AssemblyVersion>
+        <AssemblyVersion>1.5.0.28</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -123,6 +109,62 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="SetProperty">
+      <MemberSignature Language="C#" Value="public void SetProperty (Microsoft.CognitiveServices.Speech.PropertyId id, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetProperty(valuetype Microsoft.CognitiveServices.Speech.PropertyId id, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CognitiveServices.Speech.Audio.PushAudioInputStream.SetProperty(Microsoft.CognitiveServices.Speech.PropertyId,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetProperty (id As PropertyId, value As String)" />
+      <MemberSignature Language="F#" Value="member this.SetProperty : Microsoft.CognitiveServices.Speech.PropertyId * string -&gt; unit" Usage="pushAudioInputStream.SetProperty (id, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
+        <AssemblyVersion>1.5.0.28</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Microsoft.CognitiveServices.Speech.PropertyId" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="id">A property Id.</param>
+        <param name="value">The value of the property.</param>
+        <summary>
+            Set value of a property associated to data buffer. The properties of the audio data should be set before writing the audio data.
+            Added in version 1.5.0
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetProperty">
+      <MemberSignature Language="C#" Value="public void SetProperty (string name, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetProperty(string name, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.CognitiveServices.Speech.Audio.PushAudioInputStream.SetProperty(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetProperty (name As String, value As String)" />
+      <MemberSignature Language="F#" Value="member this.SetProperty : string * string -&gt; unit" Usage="pushAudioInputStream.SetProperty (name, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
+        <AssemblyVersion>1.5.0.28</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the property.</param>
+        <param name="value">The value of the property.</param>
+        <summary>
+            Set value of a property associated to data buffer. The properties of the audio data should be set before writing the audio data.
+            Added in version 1.5.0
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Write">
       <MemberSignature Language="C#" Value="public void Write (byte[] dataBuffer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(unsigned int8[] dataBuffer) cil managed" />
@@ -132,10 +174,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.0.28</AssemblyVersion>
-        <AssemblyVersion>1.3.1.28</AssemblyVersion>
-        <AssemblyVersion>1.4.0.28</AssemblyVersion>
+        <AssemblyVersion>1.5.0.28</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -161,10 +200,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.0.28</AssemblyVersion>
-        <AssemblyVersion>1.3.1.28</AssemblyVersion>
-        <AssemblyVersion>1.4.0.28</AssemblyVersion>
+        <AssemblyVersion>1.5.0.28</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
