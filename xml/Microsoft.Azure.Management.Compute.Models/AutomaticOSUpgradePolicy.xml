@@ -6,10 +6,7 @@
   <TypeSignature Language="F#" Value="type AutomaticOSUpgradePolicy = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-    <AssemblyVersion>23.0.0.0</AssemblyVersion>
-    <AssemblyVersion>24.0.0.0</AssemblyVersion>
-    <AssemblyVersion>24.1.0.0</AssemblyVersion>
-    <AssemblyVersion>25.0.0.0</AssemblyVersion>
+    <AssemblyVersion>27.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,10 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>23.0.0.0</AssemblyVersion>
-        <AssemblyVersion>24.0.0.0</AssemblyVersion>
-        <AssemblyVersion>24.1.0.0</AssemblyVersion>
-        <AssemblyVersion>25.0.0.0</AssemblyVersion>
+        <AssemblyVersion>27.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -52,20 +46,20 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>23.0.0.0</AssemblyVersion>
-        <AssemblyVersion>24.0.0.0</AssemblyVersion>
-        <AssemblyVersion>24.1.0.0</AssemblyVersion>
-        <AssemblyVersion>25.0.0.0</AssemblyVersion>
+        <AssemblyVersion>27.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="enableAutomaticOSUpgrade" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="disableAutomaticRollback" Type="System.Nullable&lt;System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <param name="enableAutomaticOSUpgrade">Whether OS upgrades should
-            automatically be applied to scale set instances in a rolling
-            fashion when a newer version of the image becomes available.
-            Default value is false.</param>
+        <param name="enableAutomaticOSUpgrade">Indicates whether OS
+            upgrades should automatically be applied to scale set instances in
+            a rolling fashion when a newer version of the OS image becomes
+            available. Default value is false. If this is set to true for
+            Windows based scale sets, recommendation is to set
+            [enableAutomaticUpdates](https://docs.microsoft.com/dotnet/api/microsoft.azure.management.compute.models.windowsconfiguration.enableautomaticupdates?view=azure-dotnet)
+            to false.</param>
         <param name="disableAutomaticRollback">Whether OS image rollback
             feature should be disabled. Default value is false.</param>
         <summary>
@@ -83,13 +77,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>23.0.0.0</AssemblyVersion>
-        <AssemblyVersion>24.0.0.0</AssemblyVersion>
-        <AssemblyVersion>24.1.0.0</AssemblyVersion>
-        <AssemblyVersion>25.0.0.0</AssemblyVersion>
+        <AssemblyVersion>27.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="disableAutomaticRollback")</AttributeName>
         </Attribute>
       </Attributes>
@@ -114,13 +105,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>23.0.0.0</AssemblyVersion>
-        <AssemblyVersion>24.0.0.0</AssemblyVersion>
-        <AssemblyVersion>24.1.0.0</AssemblyVersion>
-        <AssemblyVersion>25.0.0.0</AssemblyVersion>
+        <AssemblyVersion>27.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="enableAutomaticOSUpgrade")</AttributeName>
         </Attribute>
       </Attributes>
@@ -129,9 +117,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets whether OS upgrades should automatically be applied to
-            scale set instances in a rolling fashion when a newer version of
-            the image becomes available. Default value is false.
+            Gets or sets indicates whether OS upgrades should automatically be
+            applied to scale set instances in a rolling fashion when a newer
+            version of the OS image becomes available. Default value is false.
+            If this is set to true for Windows based scale sets, recommendation
+            is to set
+            [enableAutomaticUpdates](https://docs.microsoft.com/dotnet/api/microsoft.azure.management.compute.models.windowsconfiguration.enableautomaticupdates?view=azure-dotnet)
+            to false.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
