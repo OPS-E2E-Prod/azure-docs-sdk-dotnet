@@ -218,6 +218,12 @@
           landingPageType: Service
           children:
           - 'Microsoft.Azure.CognitiveServices.Vision.Face*'
+        - name: Form Recognizer
+          uid: azure.net.sdk.landingPage.services.CognitiveServices.Client.FormRecognizer
+          landingPageType: Service
+          children:
+          - 'Microsoft.Azure.CognitiveServices.FormRecognizer*'
+          - 'Microsoft.Azure.CognitiveServices.FormRecognizer.Models*'
         - name: Language Understanding
           uid: azure.net.sdk.landingPage.services.CognitiveServices.Client.LUIS
           landingPageType: Service
@@ -293,7 +299,7 @@
       - 'Microsoft.Azure.Graphs*'
       - 'Microsoft.Azure.CosmosDB*'
       - 'Microsoft.Azure.Cosmos*'
-  - name: DataBox
+  - name: Data Box
     uid: azure.net.sdk.landingPage.services.DataBox
     landingPageType: Service
     items:
@@ -302,6 +308,15 @@
       landingPageType: Service
       children:
       - 'Microsoft.Azure.Management.DataBox*'
+  - name: Data Explorer
+    uid: azure.net.sdk.landingPage.services.DataExplorer
+    landingPageType: Service
+    items:
+    - name: Management
+      uid: azure.net.sdk.landingPage.services.DataExplorer.Management
+      landingPageType: Service
+      children:
+      - 'Microsoft.Azure.Management.Kusto*'
   - name: Data Factory
     uid: azure.net.sdk.landingPage.services.DataFactories
     href: ~/api/overview/azure/data-factory.md
@@ -335,15 +350,16 @@
       landingPageType: Service
       children:
       - 'Microsoft.Azure.DataLake*'
-  - name: Data Box
-    uid: azure.net.sdk.landingPage.services.DataBox
+  - name: Data Share
+    uid: azure.net.sdk.landingPage.services.DataShare
     landingPageType: Service
     items:
     - name: Management
-      uid: azure.net.sdk.landingPage.services.DataBox.Management
+      uid: azure.net.sdk.landingPage.services.DataShare.Management
       landingPageType: Service
       children:
-      - 'Microsoft.Azure.Management.DataBox*'
+      - 'MMicrosoft.Azure.Management.DataShare*'
+      - 'Microsoft.Azure.Management.DataShare.Models*'
   - name: Deployment Manager
     uid: azure.net.sdk.landingPage.services.DeploymentManager
     landingPageType: Service
@@ -399,16 +415,6 @@
       landingPageType: Service
       children:
       - 'Microsoft.Azure.EventHubs*'
-  - name: Form Recognizer
-    uid: azure.net.sdk.landingPage.services.FormRecognizer
-    landingPageType: Service
-    items:
-    - name: Client
-      uid: azure.net.sdk.landingPage.services.FormRecognizer.Client
-      landingPageType: Service
-      children:
-      - 'Microsoft.Azure.CognitiveServices.FormRecognizer*'
-      - 'Microsoft.Azure.CognitiveServices.FormRecognizer.Models*'
   - name: HDInsight
     uid: azure.net.sdk.landingPage.services.HDInsights
     href: ~/api/overview/azure/hdinsight.md
@@ -601,6 +607,15 @@
       landingPageType: Service
       children:
       - 'Microsoft.PowerBI*'
+  - name: Private DNS
+    uid: azure.net.sdk.landingPage.services.privatedns
+    landingPageType: Service
+    items:
+    - name: Management
+      uid: azure.net.sdk.landingPage.services.privatedns.Management
+      landingPageType: Service
+      children:
+      - 'Microsoft.Azure.Management.PrivateDns*'
   - name: Recovery Services and Backup
     uid: azure.net.sdk.landingPage.services.Recovery
     href: ~/api/overview/azure/recovery-services.md
@@ -647,6 +662,23 @@
       landingPageType: Service
       children:
       - 'Microsoft.Azure.Management.ResourceManager*'
+  - name: SDK
+    uid: azure.net.sdk.landingPage.services.sdk
+    landingPageType: Service
+    items:
+    - name: Client
+      uid: azure.net.sdk.landingPage.services.sdk.Client
+      landingPageType: Service
+      children:
+      - 'Azure'
+      - 'Azure.ApplicationModel.Configuration*'
+      - 'Azure.Core*'
+      - 'Azure.Identity*'
+      - 'Azure.Messaging.EventHubs*'
+      - 'Azure.Security.KeyVault.Secrets*'
+      - 'Azure.Security.KeyVault.Secrets*'
+      - 'Azure.Storage*'
+      - 'TrackOne*'
   - name: Search
     uid: azure.net.sdk.landingPage.services.Search
     href: ~/api/overview/azure/search.md
