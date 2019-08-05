@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -31,6 +32,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -47,6 +49,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.Scripts.StoredProcedureResponse&gt;</ReturnType>
@@ -103,6 +106,40 @@
                                            new PartitionKey(testPartitionId));
              Console.WriteLine("sprocResponse.Resource");
              ]]></code></example>
+        <example>
+              This creates and executes a stored procedure that appends a string to the first item returned from the query.
+             <code language="c#"><![CDATA[
+             string sprocBody = @"function simple(prefix)
+                {
+                    var collection = getContext().getCollection();
+            
+                    // Query documents and take 1st item.
+                    var isAccepted = collection.queryDocuments(
+                    collection.getSelfLink(),
+                    'SELECT * FROM root r',
+                    function(err, feed, options) {
+                        if (err)throw err;
+            
+                        // Check the feed and if it's empty, set the body to 'no docs found',
+                        // Otherwise just take 1st element from the feed.
+                        if (!feed || !feed.length) getContext().getResponse().setBody(""no docs found"");
+                        else getContext().getResponse().setBody(prefix + JSON.stringify(feed[0]));
+                    });
+            
+                    if (!isAccepted) throw new Error(""The query wasn't accepted by the server. Try again/use continuation token between API and script."");
+                }";
+                
+             Scripts scripts = this.container.Scripts;
+             StoredProcedureProperties storedProcedure = new StoredProcedureProperties(id, sprocBody);
+             StoredProcedureResponse storedProcedureResponse = await scripts.CreateStoredProcedureAsync(storedProcedure);
+             
+             // Execute the stored procedure
+             CosmosItemResponse<string> sprocResponse = await scripts.ExecuteStoredProcedureAsync<string, string>(
+                                           id, 
+                                           "Item as a string: ", 
+                                           new PartitionKey(testPartitionId));
+             Console.WriteLine("sprocResponse.Resource");
+             ]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="CreateTriggerAsync">
@@ -114,6 +151,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.Scripts.TriggerResponse&gt;</ReturnType>
@@ -166,6 +204,36 @@
              CosmosItemResponse<dynamic> createdItem = await this.container.Items.CreateItemAsync<dynamic>(item.status, item, options);
              double itemTax = createdItem.Resource.tax;
              ]]></code></example>
+        <example>
+              This creates a trigger then uses the trigger in a create item.
+             <code language="c#"><![CDATA[
+             Scripts scripts = this.container.Scripts;
+             TriggerResponse triggerResponse = await scripts.CreateTriggerAsync(
+                 new TriggerProperties
+                 {
+                     Id = "addTax",
+                     Body = @"function AddTax() {
+                         var item = getContext().getRequest().getBody();
+            
+                         // calculate the tax.
+                         item.tax = item.cost * .15;
+            
+                         // Update the request -- this is what is going to be inserted.
+                         getContext().getRequest().setBody(item);
+                     }",
+                     TriggerOperation = TriggerOperation.All,
+                     TriggerType = TriggerType.Pre
+                 });
+            
+             ItemRequestOptions options = new ItemRequestOptions()
+             {
+                 PreTriggers = new List<string>() { triggerResponse.Id },
+             };
+            
+             // Create a new item with trigger set in the request options
+             ItemResponse<dynamic> createdItem = await this.container.Items.CreateItemAsync<dynamic>(item.status, item, options);
+             double itemTax = createdItem.Resource.tax;
+             ]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="CreateUserDefinedFunctionAsync">
@@ -177,6 +245,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.Scripts.UserDefinedFunctionResponse&gt;</ReturnType>
@@ -227,6 +296,34 @@
                  }
              }
              ]]></code></example>
+        <example>
+              This creates a user defined function then uses the function in an item query.
+             <code language="c#"><![CDATA[
+             Scripts scripts = this.container.Scripts;
+             await scripts.UserDefinedFunctions.CreateUserDefinedFunctionAsync(
+                 new UserDefinedFunctionProperties 
+                 { 
+                     Id = "calculateTax", 
+                     Body = @"function(amt) { return amt * 0.05; }" 
+                 });
+            
+             QueryDefinition sqlQuery = new QueryDefinition(
+                 "SELECT VALUE udf.calculateTax(t.cost) FROM toDoActivity t where t.cost > @expensive and t.status = @status")
+                 .WithParameter("@expensive", 9000)
+                 .WithParameter("@status", "Done");
+            
+             FeedIterator<double> setIterator = this.container.Items.GetItemsQueryIterator<double>(
+                 sqlQueryDefinition: sqlQuery,
+                 partitionKey: "Done");
+            
+             while (setIterator.HasMoreResults)
+             {
+                 foreach (var tax in await setIterator.ReadNextAsync())
+                 {
+                     Console.WriteLine(tax);
+                 }
+             }
+             ]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="DeleteStoredProcedureAsync">
@@ -238,6 +335,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.Scripts.StoredProcedureResponse&gt;</ReturnType>
@@ -265,6 +363,12 @@
             Scripts scripts = this.container.GetScripts();
             CosmosResponseMessage response = await scripts.DeleteStoredProcedureAsync("taxUdfId");
             ]]></code></example>
+        <example>
+            This examples gets a reference to an existing stored procedure and deletes it.
+            <code language="c#"><![CDATA[
+            Scripts scripts = this.container.Scripts;
+            StoredProcedureResponse response = await scripts.DeleteStoredProcedureAsync("taxUdfId");
+            ]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="DeleteTriggerAsync">
@@ -276,6 +380,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.Scripts.TriggerResponse&gt;</ReturnType>
@@ -300,6 +405,12 @@
             Scripts scripts = this.container.GetScripts();
             TriggerResponse response = await scripts.DeleteTriggerAsync("existingId");
             ]]></code></example>
+        <example>
+            This examples gets a reference to an existing trigger and deletes it.
+            <code language="c#"><![CDATA[
+            Scripts scripts = this.container.Scripts;
+            TriggerResponse response = await scripts.DeleteTriggerAsync("existingId");
+            ]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="DeleteUserDefinedFunctionAsync">
@@ -311,6 +422,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.Scripts.UserDefinedFunctionResponse&gt;</ReturnType>
@@ -335,38 +447,43 @@
             Scripts scripts = this.container.GetScripts();
             UserDefinedFunctionResponse response = await this.container.DeleteUserDefinedFunctionAsync("existingId");
             ]]></code></example>
+        <example>
+            This examples gets a reference to an existing user defined function and deletes it.
+            <code language="c#"><![CDATA[
+            Scripts scripts = this.container.Scripts;
+            UserDefinedFunctionResponse response = await this.container.DeleteUserDefinedFunctionAsync("existingId");
+            ]]></code></example>
       </Docs>
     </Member>
-    <Member MemberName="ExecuteStoredProcedureAsync&lt;TInput,TOutput&gt;">
-      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.Scripts.StoredProcedureExecuteResponse&lt;TOutput&gt;&gt; ExecuteStoredProcedureAsync&lt;TInput,TOutput&gt; (string storedProcedureId, TInput input, Microsoft.Azure.Cosmos.PartitionKey partitionKey, Microsoft.Azure.Cosmos.Scripts.StoredProcedureRequestOptions requestOptions = null, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Cosmos.Scripts.StoredProcedureExecuteResponse`1&lt;!!TOutput&gt;&gt; ExecuteStoredProcedureAsync&lt;TInput, TOutput&gt;(string storedProcedureId, !!TInput input, valuetype Microsoft.Azure.Cosmos.PartitionKey partitionKey, class Microsoft.Azure.Cosmos.Scripts.StoredProcedureRequestOptions requestOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Scripts.Scripts.ExecuteStoredProcedureAsync``2(System.String,``0,Microsoft.Azure.Cosmos.PartitionKey,Microsoft.Azure.Cosmos.Scripts.StoredProcedureRequestOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="abstract member ExecuteStoredProcedureAsync : string * 'Input * Microsoft.Azure.Cosmos.PartitionKey * Microsoft.Azure.Cosmos.Scripts.StoredProcedureRequestOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.Scripts.StoredProcedureExecuteResponse&lt;'Output&gt;&gt;" Usage="scripts.ExecuteStoredProcedureAsync (storedProcedureId, input, partitionKey, requestOptions, cancellationToken)" />
+    <Member MemberName="ExecuteStoredProcedureAsync&lt;TOutput&gt;">
+      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.Scripts.StoredProcedureExecuteResponse&lt;TOutput&gt;&gt; ExecuteStoredProcedureAsync&lt;TOutput&gt; (string storedProcedureId, Microsoft.Azure.Cosmos.PartitionKey partitionKey, object[] parameters, Microsoft.Azure.Cosmos.Scripts.StoredProcedureRequestOptions requestOptions = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Cosmos.Scripts.StoredProcedureExecuteResponse`1&lt;!!TOutput&gt;&gt; ExecuteStoredProcedureAsync&lt;TOutput&gt;(string storedProcedureId, valuetype Microsoft.Azure.Cosmos.PartitionKey partitionKey, object[] parameters, class Microsoft.Azure.Cosmos.Scripts.StoredProcedureRequestOptions requestOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Scripts.Scripts.ExecuteStoredProcedureAsync``1(System.String,Microsoft.Azure.Cosmos.PartitionKey,System.Object[],Microsoft.Azure.Cosmos.Scripts.StoredProcedureRequestOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member ExecuteStoredProcedureAsync : string * Microsoft.Azure.Cosmos.PartitionKey * obj[] * Microsoft.Azure.Cosmos.Scripts.StoredProcedureRequestOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.Scripts.StoredProcedureExecuteResponse&lt;'Output&gt;&gt;" Usage="scripts.ExecuteStoredProcedureAsync (storedProcedureId, partitionKey, parameters, requestOptions, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.Scripts.StoredProcedureExecuteResponse&lt;TOutput&gt;&gt;</ReturnType>
       </ReturnValue>
       <TypeParameters>
-        <TypeParameter Name="TInput" />
         <TypeParameter Name="TOutput" />
       </TypeParameters>
       <Parameters>
         <Parameter Name="storedProcedureId" Type="System.String" />
-        <Parameter Name="input" Type="TInput" />
         <Parameter Name="partitionKey" Type="Microsoft.Azure.Cosmos.PartitionKey" />
+        <Parameter Name="parameters" Type="System.Object[]" />
         <Parameter Name="requestOptions" Type="Microsoft.Azure.Cosmos.Scripts.StoredProcedureRequestOptions" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <typeparam name="TInput">The input type that is JSON serializable.</typeparam>
         <typeparam name="TOutput">The return type that is JSON serializable.</typeparam>
         <param name="storedProcedureId">The identifier of the Stored Procedure to execute.</param>
-        <param name="input">The JSON serializable input parameters.</param>
         <param name="partitionKey">The partition key for the item. <see cref="T:Microsoft.Azure.Cosmos.PartitionKey" /></param>
+        <param name="parameters">(Optional) An array of dynamic objects representing the parameters for the stored procedure.</param>
         <param name="requestOptions">(Optional) The options for the stored procedure request <see cref="T:Microsoft.Azure.Cosmos.Scripts.StoredProcedureRequestOptions" /></param>
         <param name="cancellationToken">(Optional) <see cref="T:System.Threading.CancellationToken" /> representing request cancellation.</param>
         <summary>
@@ -378,7 +495,7 @@
         <example>
               This creates and executes a stored procedure that appends a string to the first item returned from the query.
              <code language="c#"><![CDATA[
-             string sprocBody = @"function simple(prefix)
+             string sprocBody = @"function simple(prefix, postfix)
                 {
                     var collection = getContext().getCollection();
             
@@ -392,51 +509,53 @@
                         // Check the feed and if it's empty, set the body to 'no docs found',
                         // Otherwise just take 1st element from the feed.
                         if (!feed || !feed.length) getContext().getResponse().setBody(""no docs found"");
-                        else getContext().getResponse().setBody(prefix + JSON.stringify(feed[0]));
+                        else getContext().getResponse().setBody(prefix + JSON.stringify(feed[0]) + postfix);
                     });
             
                     if (!isAccepted) throw new Error(""The query wasn't accepted by the server. Try again/use continuation token between API and script."");
                 }";
                 
-             Scripts scripts = this.container.GetScripts();
+             Scripts scripts = this.container.Scripts;
              string sprocId = "appendString";
-             CosmosStoredProcedure cosmosStoredProcedure = await scripts.CreateStoredProcedureAsync(
-                     id: sprocId,
-                     body: sprocBody);
+             StoredProcedureResponse storedProcedureResponse = await scripts.CreateStoredProcedureAsync(
+                     sprocId,
+                     sprocBody);
              
              // Execute the stored procedure
-             StoredProcedureExecuteResponse<string> sprocResponse = await scripts.ExecuteStoredProcedureAsync<string, string>(
+             StoredProcedureExecuteResponse<string> sprocResponse = await scripts.ExecuteStoredProcedureAsync<string>(
                                      sprocId,
-                                     "Item as a string: ",
-                                     new PartitionKey(testPartitionId));
+                                     new PartitionKey(testPartitionId),
+                                     new dynamic[] {"myPrefixString", "myPostfixString"});
+                                     
              Console.WriteLine(sprocResponse.Resource);
              /// ]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="ExecuteStoredProcedureStreamAsync">
-      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.ResponseMessage&gt; ExecuteStoredProcedureStreamAsync (string storedProcedureId, System.IO.Stream streamPayload, Microsoft.Azure.Cosmos.PartitionKey partitionKey, Microsoft.Azure.Cosmos.Scripts.StoredProcedureRequestOptions requestOptions = null, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Cosmos.ResponseMessage&gt; ExecuteStoredProcedureStreamAsync(string storedProcedureId, class System.IO.Stream streamPayload, valuetype Microsoft.Azure.Cosmos.PartitionKey partitionKey, class Microsoft.Azure.Cosmos.Scripts.StoredProcedureRequestOptions requestOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Scripts.Scripts.ExecuteStoredProcedureStreamAsync(System.String,System.IO.Stream,Microsoft.Azure.Cosmos.PartitionKey,Microsoft.Azure.Cosmos.Scripts.StoredProcedureRequestOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="abstract member ExecuteStoredProcedureStreamAsync : string * System.IO.Stream * Microsoft.Azure.Cosmos.PartitionKey * Microsoft.Azure.Cosmos.Scripts.StoredProcedureRequestOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.ResponseMessage&gt;" Usage="scripts.ExecuteStoredProcedureStreamAsync (storedProcedureId, streamPayload, partitionKey, requestOptions, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.ResponseMessage&gt; ExecuteStoredProcedureStreamAsync (string storedProcedureId, Microsoft.Azure.Cosmos.PartitionKey partitionKey, object[] parameters, Microsoft.Azure.Cosmos.Scripts.StoredProcedureRequestOptions requestOptions = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Cosmos.ResponseMessage&gt; ExecuteStoredProcedureStreamAsync(string storedProcedureId, valuetype Microsoft.Azure.Cosmos.PartitionKey partitionKey, object[] parameters, class Microsoft.Azure.Cosmos.Scripts.StoredProcedureRequestOptions requestOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Scripts.Scripts.ExecuteStoredProcedureStreamAsync(System.String,Microsoft.Azure.Cosmos.PartitionKey,System.Object[],Microsoft.Azure.Cosmos.Scripts.StoredProcedureRequestOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member ExecuteStoredProcedureStreamAsync : string * Microsoft.Azure.Cosmos.PartitionKey * obj[] * Microsoft.Azure.Cosmos.Scripts.StoredProcedureRequestOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.ResponseMessage&gt;" Usage="scripts.ExecuteStoredProcedureStreamAsync (storedProcedureId, partitionKey, parameters, requestOptions, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.ResponseMessage&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="storedProcedureId" Type="System.String" />
-        <Parameter Name="streamPayload" Type="System.IO.Stream" />
         <Parameter Name="partitionKey" Type="Microsoft.Azure.Cosmos.PartitionKey" />
+        <Parameter Name="parameters" Type="System.Object[]" />
         <Parameter Name="requestOptions" Type="Microsoft.Azure.Cosmos.Scripts.StoredProcedureRequestOptions" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="storedProcedureId">The identifier of the Stored Procedure to execute.</param>
-        <param name="streamPayload">The stream representing the input for the stored procedure.</param>
         <param name="partitionKey">The partition key for the item. <see cref="T:Microsoft.Azure.Cosmos.PartitionKey" /></param>
+        <param name="parameters">(Optional) An array of dynamic objects representing the parameters for the stored procedure.</param>
         <param name="requestOptions">(Optional) The options for the stored procedure request <see cref="T:Microsoft.Azure.Cosmos.Scripts.StoredProcedureRequestOptions" /></param>
         <param name="cancellationToken">(Optional) <see cref="T:System.Threading.CancellationToken" /> representing request cancellation.</param>
         <summary>
@@ -448,7 +567,7 @@
         <example>
               This creates and executes a stored procedure that appends a string to the first item returned from the query.
              <code language="c#"><![CDATA[
-             string sprocBody = @"function simple(prefix)
+             string sprocBody = @"function simple(prefix, postfix)
                 {
                     var collection = getContext().getCollection();
             
@@ -462,23 +581,24 @@
                         // Check the feed and if it's empty, set the body to 'no docs found',
                         // Otherwise just take 1st element from the feed.
                         if (!feed || !feed.length) getContext().getResponse().setBody(""no docs found"");
-                        else getContext().getResponse().setBody(prefix + JSON.stringify(feed[0]));
+                        else getContext().getResponse().setBody(prefix + JSON.stringify(feed[0]) + postfix);
                     });
             
                     if (!isAccepted) throw new Error(""The query wasn't accepted by the server. Try again/use continuation token between API and script."");
                 }";
                 
-             Scripts scripts = this.container.GetScripts();
+             Scripts scripts = this.container.Scripts;
              string sprocId = "appendString";
-             CosmosStoredProcedure cosmosStoredProcedure = await scripts.CreateStoredProcedureAsync(
-                     id: sprocId,
-                     body: sprocBody);
+             StoredProcedureResponse storedProcedureResponse = await scripts.CreateStoredProcedureAsync(
+                     sprocId,
+                     sprocBody);
              
              // Execute the stored procedure
-             CosmosResponseMessage sprocResponse = await scripts.ExecuteStoredProcedureStreamAsync(
+             ResponseMessage sprocResponse = await scripts.ExecuteStoredProcedureStreamAsync(
                                      sprocId,
-                                     stream,
-                                     new PartitionKey(testPartitionId)), 
+                                     new PartitionKey(testPartitionId),
+                                     new dynamic[] {"myPrefixString", "myPostfixString"});
+                                     
              using (StreamReader sr = new StreamReader(sprocResponse.Content))
              {
                  string stringResponse = await sr.ReadToEndAsync();
@@ -497,6 +617,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.FeedIterator&lt;T&gt;</ReturnType>
@@ -520,6 +641,15 @@
             </summary>
         <returns>An iterator to read through the existing stored procedures.</returns>
         <remarks>To be added.</remarks>
+        <example>
+            This create the type feed iterator for sproc with queryDefinition as input.
+            <code language="c#"><![CDATA[
+            Scripts scripts = this.container.Scripts;
+            string queryText = "SELECT * FROM s where s.id like @testId";
+            QueryDefinition queryDefinition = new QueryDefinition(queryText);
+            queryDefinition.WithParameter("@testId", "testSprocId");
+            FeedIterator<StoredProcedureProperties> iter = this.scripts.GetStoredProcedureQueryIterator<StoredProcedureProperties>(queryDefinition);
+            ]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="GetStoredProcedureQueryIterator&lt;T&gt;">
@@ -532,6 +662,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.FeedIterator&lt;T&gt;</ReturnType>
@@ -555,6 +686,13 @@
             </summary>
         <returns>An iterator to read through the existing stored procedures.</returns>
         <remarks>To be added.</remarks>
+        <example>
+            This create the type feed iterator for sproc with queryText as input.
+            <code language="c#"><![CDATA[
+            Scripts scripts = this.container.Scripts;
+            string queryText = "SELECT * FROM s where s.id like '%testId%'";
+            FeedIterator<StoredProcedureProperties> iter = this.scripts.GetStoredProcedureQueryIterator<StoredProcedureProperties>(queryText);
+            ]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="GetStoredProcedureQueryStreamIterator">
@@ -566,6 +704,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.FeedIterator</ReturnType>
@@ -585,6 +724,15 @@
             </summary>
         <returns>An iterator to read through the existing stored procedures.</returns>
         <remarks>To be added.</remarks>
+        <example>
+            This create the stream feed iterator for sproc with queryDefinition as input.
+            <code language="c#"><![CDATA[
+            Scripts scripts = this.container.Scripts;
+            string queryText = "SELECT * FROM s where s.id like @testId";
+            QueryDefinition queryDefinition = new QueryDefinition(queryText);
+            queryDefinition.WithParameter("@testId", "testSprocId");
+            FeedIterator iter = this.scripts.GetStoredProcedureQueryStreamIterator(queryDefinition);
+            ]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="GetStoredProcedureQueryStreamIterator">
@@ -597,6 +745,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.FeedIterator</ReturnType>
@@ -616,6 +765,13 @@
             </summary>
         <returns>An iterator to read through the existing stored procedures.</returns>
         <remarks>To be added.</remarks>
+        <example>
+            This create the stream feed iterator for sproc with queryText as input.
+            <code language="c#"><![CDATA[
+            Scripts scripts = this.container.Scripts;
+            string queryText = "SELECT * FROM s where s.id like '%testId%'";
+            FeedIterator iter = this.scripts.GetStoredProcedureQueryStreamIterator(queryText);
+            ]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="GetTriggerQueryIterator&lt;T&gt;">
@@ -627,6 +783,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.FeedIterator&lt;T&gt;</ReturnType>
@@ -650,6 +807,15 @@
             </summary>
         <returns>An iterator to read through the existing stored procedures.</returns>
         <remarks>To be added.</remarks>
+        <example>
+            This create the type feed iterator for Trigger with queryDefinition as input.
+            <code language="c#"><![CDATA[
+            Scripts scripts = this.container.Scripts;
+            string queryText = "SELECT * FROM t where t.id like @testId";
+            QueryDefinition queryDefinition = new QueryDefinition(queryText);
+            queryDefinition.WithParameter("@testId", "testTriggerId");
+            FeedIterator<TriggerProperties> iter = this.scripts.GetTriggerQueryIterator<TriggerProperties>(queryDefinition);
+            ]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="GetTriggerQueryIterator&lt;T&gt;">
@@ -662,6 +828,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.FeedIterator&lt;T&gt;</ReturnType>
@@ -685,6 +852,13 @@
             </summary>
         <returns>An iterator to read through the existing stored procedures.</returns>
         <remarks>To be added.</remarks>
+        <example>
+            This create the type feed iterator for Trigger with queryText as input.
+            <code language="c#"><![CDATA[
+            Scripts scripts = this.container.Scripts;
+            string queryText = "SELECT * FROM t where t.id like '%testId%'";
+            FeedIterator<TriggerProperties> iter = this.scripts.GetTriggerQueryIterator<TriggerProperties>(queryText);
+            ]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="GetTriggerQueryStreamIterator">
@@ -696,6 +870,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.FeedIterator</ReturnType>
@@ -715,6 +890,15 @@
             </summary>
         <returns>An iterator to read through the existing stored procedures.</returns>
         <remarks>To be added.</remarks>
+        <example>
+            This create the stream feed iterator for Trigger with queryDefinition as input.
+            <code language="c#"><![CDATA[
+            Scripts scripts = this.container.Scripts;
+            string queryText = "SELECT * FROM t where t.id like @testId";
+            QueryDefinition queryDefinition = new QueryDefinition(queryText);
+            queryDefinition.WithParameter("@testId", "testTriggerId");
+            FeedIterator iter = this.scripts.GetTriggerQueryStreamIterator(queryDefinition);
+            ]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="GetTriggerQueryStreamIterator">
@@ -727,6 +911,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.FeedIterator</ReturnType>
@@ -746,6 +931,13 @@
             </summary>
         <returns>An iterator to read through the existing stored procedures.</returns>
         <remarks>To be added.</remarks>
+        <example>
+            This create the stream feed iterator for Trigger with queryText as input.
+            <code language="c#"><![CDATA[
+            Scripts scripts = this.container.Scripts;
+            string queryText = "SELECT * FROM t where t.id like '%testId%'";
+            FeedIterator iter = this.scripts.GetTriggerQueryStreamIterator(queryText);
+            ]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="GetUserDefinedFunctionQueryIterator&lt;T&gt;">
@@ -757,6 +949,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.FeedIterator&lt;T&gt;</ReturnType>
@@ -780,6 +973,15 @@
             </summary>
         <returns>An iterator to read through the existing stored procedures.</returns>
         <remarks>To be added.</remarks>
+        <example>
+            This create the type feed iterator for UDF with queryDefinition as input.
+            <code language="c#"><![CDATA[
+            Scripts scripts = this.container.Scripts;
+            string queryText = "SELECT * FROM u where u.id like @testId";
+            QueryDefinition queryDefinition = new QueryDefinition(queryText);
+            queryDefinition.WithParameter("@testId", "testUDFId");
+            FeedIterator<UserDefinedFunctionProperties> iter = this.scripts.GetUserDefinedFunctionQueryIterator<UserDefinedFunctionProperties>(queryDefinition);
+            ]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="GetUserDefinedFunctionQueryIterator&lt;T&gt;">
@@ -792,6 +994,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.FeedIterator&lt;T&gt;</ReturnType>
@@ -815,6 +1018,13 @@
             </summary>
         <returns>An iterator to read through the existing stored procedures.</returns>
         <remarks>To be added.</remarks>
+        <example>
+            This create the type feed iterator for UDF with queryText as input.
+            <code language="c#"><![CDATA[
+            Scripts scripts = this.container.Scripts;
+            QueryDefinition queryDefinition = new QueryDefinition("SELECT * FROM u where u.id like '%testId%'");
+            FeedIterator<UserDefinedFunctionProperties> iter = this.scripts.GetUserDefinedFunctionQueryIterator<UserDefinedFunctionProperties>(queryDefinition);
+            ]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="GetUserDefinedFunctionQueryStreamIterator">
@@ -826,6 +1036,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.FeedIterator</ReturnType>
@@ -845,6 +1056,15 @@
             </summary>
         <returns>An iterator to read through the existing stored procedures.</returns>
         <remarks>To be added.</remarks>
+        <example>
+            This create the stream feed iterator for UDF with queryDefinition as input.
+            <code language="c#"><![CDATA[
+            Scripts scripts = this.container.Scripts;
+            string queryText = "SELECT * FROM u where u.id like @testId";
+            QueryDefinition queryDefinition = new QueryDefinition(queryText);
+            queryDefinition.WithParameter("@testId", "testUdfId");
+            FeedIterator iter = this.scripts.GetUserDefinedFunctionQueryStreamIterator(queryDefinition);
+            ]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="GetUserDefinedFunctionQueryStreamIterator">
@@ -857,6 +1077,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.FeedIterator</ReturnType>
@@ -876,6 +1097,13 @@
             </summary>
         <returns>An iterator to read through the existing stored procedures.</returns>
         <remarks>To be added.</remarks>
+        <example>
+            This create the stream feed iterator for UDF with queryText as input.
+            <code language="c#"><![CDATA[
+            Scripts scripts = this.container.Scripts;
+            QueryDefinition queryDefinition = new QueryDefinition("SELECT * FROM u where u.id like '%testId%'");
+            FeedIterator iter = this.scripts.GetUserDefinedFunctionQueryStreamIterator(queryDefinition);
+            ]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="ReadStoredProcedureAsync">
@@ -887,6 +1115,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.Scripts.StoredProcedureResponse&gt;</ReturnType>
@@ -916,6 +1145,12 @@
             Scripts scripts = this.container.GetScripts();
             CosmosStoredProcedure storedProcedure = await scripts.ReadStoredProcedureAsync("ExistingId");
             ]]></code></example>
+        <example>
+             This reads an existing stored procedure.
+            <code language="c#"><![CDATA[
+            Scripts scripts = this.container.Scripts;
+            StoredProcedureResponse storedProcedure = await scripts.ReadStoredProcedureAsync("ExistingId");
+            ]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="ReadTriggerAsync">
@@ -927,6 +1162,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.Scripts.TriggerResponse&gt;</ReturnType>
@@ -956,6 +1192,13 @@
             TriggerResponse response = await scripts.ReadTriggerAsync("ExistingId");
             TriggerProperties triggerProperties = response;
             ]]></code></example>
+        <example>
+             This reads an existing trigger
+            <code language="c#"><![CDATA[
+            Scripts scripts = this.container.Scripts;
+            TriggerResponse response = await scripts.ReadTriggerAsync("ExistingId");
+            TriggerProperties triggerProperties = response;
+            ]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="ReadUserDefinedFunctionAsync">
@@ -967,6 +1210,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.Scripts.UserDefinedFunctionResponse&gt;</ReturnType>
@@ -996,6 +1240,13 @@
             UserDefinedFunctionResponse response = await scripts.ReadUserDefinedFunctionAsync("ExistingId");
             UserDefinedFunctionProperties udfProperties = response;
             ]]></code></example>
+        <example>
+             This reads an existing user defined function.
+            <code language="c#"><![CDATA[
+            Scripts scripts = this.container.Scripts;
+            UserDefinedFunctionResponse response = await scripts.ReadUserDefinedFunctionAsync("ExistingId");
+            UserDefinedFunctionProperties udfProperties = response;
+            ]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="ReplaceStoredProcedureAsync">
@@ -1007,6 +1258,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.Scripts.StoredProcedureResponse&gt;</ReturnType>
@@ -1047,6 +1299,23 @@
              Scripts scripts = this.container.GetScripts();
              CosmosResponseMessage response = await scripts.ReplaceStoredProcedureAsync("testTriggerId", body);
              ]]></code></example>
+        <example>
+             This examples replaces an existing stored procedure.
+             <code language="c#"><![CDATA[
+             //Updated body
+             string body = @"function AddTax() {
+                 var item = getContext().getRequest().getBody();
+            
+                 // Validate/calculate the tax.
+                 item.tax = item.cost* .15;
+            
+                 // Update the request -- this is what is going to be inserted.
+                 getContext().getRequest().setBody(item);
+             }";
+             
+             Scripts scripts = this.container.Scripts;
+             StoredProcedureResponse response = await scripts.ReplaceStoredProcedureAsync(new StoredProcedureProperties("testTriggerId", body));
+             ]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="ReplaceTriggerAsync">
@@ -1058,6 +1327,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.Scripts.TriggerResponse&gt;</ReturnType>
@@ -1101,6 +1371,28 @@
              Scripts scripts = this.container.GetScripts();
              TriggerResponse response = await scripts.ReplaceTriggerAsync(triggerSettigs);
              ]]></code></example>
+        <example>
+             This examples replaces an existing trigger.
+             <code language="c#"><![CDATA[
+             TriggerProperties triggerProperties = new TriggerProperties
+             {
+                 Id = "testTriggerId",
+                 Body = @"function AddTax() {
+                     var item = getContext().getRequest().getBody();
+            
+                     // Validate/calculate the tax.
+                     item.tax = item.cost* .15;
+            
+                     // Update the request -- this is what is going to be inserted.
+                     getContext().getRequest().setBody(item);
+                 }",
+                 TriggerOperation = TriggerOperation.All,
+                 TriggerType = TriggerType.Post
+             };
+             
+             Scripts scripts = this.container.Scripts;
+             TriggerResponse response = await scripts.ReplaceTriggerAsync(triggerSettigs);
+             ]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="ReplaceUserDefinedFunctionAsync">
@@ -1112,6 +1404,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.Scripts.UserDefinedFunctionResponse&gt;</ReturnType>
@@ -1136,6 +1429,19 @@
             This examples replaces an existing user defined function.
             <code language="c#"><![CDATA[
             Scripts scripts = this.container.GetScripts();
+            UserDefinedFunctionProperties udfProperties = new UserDefinedFunctionProperties
+            {
+                Id = "testUserDefinedFunId",
+                Body = "function(amt) { return amt * 0.15; }",
+            };
+            
+            UserDefinedFunctionResponse response = await scripts.ReplaceUserDefinedFunctionAsync(udfProperties);
+            UserDefinedFunctionProperties udfProperties = response;
+            ]]></code></example>
+        <example>
+            This examples replaces an existing user defined function.
+            <code language="c#"><![CDATA[
+            Scripts scripts = this.container.Scripts;
             UserDefinedFunctionProperties udfProperties = new UserDefinedFunctionProperties
             {
                 Id = "testUserDefinedFunId",
