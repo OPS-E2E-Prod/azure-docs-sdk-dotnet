@@ -1,4 +1,4 @@
-﻿<Type Name="DatabaseBlobAuditingPoliciesOperationsExtensions" FullName="Microsoft.Azure.Management.Sql.Fluent.DatabaseBlobAuditingPoliciesOperationsExtensions">
+<Type Name="DatabaseBlobAuditingPoliciesOperationsExtensions" FullName="Microsoft.Azure.Management.Sql.Fluent.DatabaseBlobAuditingPoliciesOperationsExtensions">
   <TypeSignature Language="C#" Value="public static class DatabaseBlobAuditingPoliciesOperationsExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DatabaseBlobAuditingPoliciesOperationsExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Sql.Fluent.DatabaseBlobAuditingPoliciesOperationsExtensions" />
@@ -29,6 +29,11 @@
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Fluent.Models.DatabaseBlobAuditingPolicyInner&gt;</ReturnType>
       </ReturnValue>
@@ -52,8 +57,7 @@
             The name of the server.
             </param>
         <param name="databaseName">
-            The name of the database for which the blob auditing policy will be
-            defined.
+            The name of the database.
             </param>
         <param name="parameters">
             The database blob auditing policy.
@@ -78,6 +82,11 @@
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Fluent.Models.DatabaseBlobAuditingPolicyInner&gt;</ReturnType>
       </ReturnValue>
@@ -100,7 +109,7 @@
             The name of the server.
             </param>
         <param name="databaseName">
-            The name of the database for which the blob audit policy is defined.
+            The name of the database.
             </param>
         <param name="cancellationToken">
             The cancellation token.

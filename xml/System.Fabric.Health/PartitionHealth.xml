@@ -1,4 +1,4 @@
-﻿<Type Name="PartitionHealth" FullName="System.Fabric.Health.PartitionHealth">
+<Type Name="PartitionHealth" FullName="System.Fabric.Health.PartitionHealth">
   <TypeSignature Language="C#" Value="public sealed class PartitionHealth : System.Fabric.Health.EntityHealth" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PartitionHealth extends System.Fabric.Health.EntityHealth" />
   <TypeSignature Language="DocId" Value="T:System.Fabric.Health.PartitionHealth" />
@@ -95,9 +95,9 @@
           <para>The replicas of the current partition as found in the health store.</para>
         </value>
         <remarks>To be added.</remarks>
+        <para>All replicas are evaluated to determine the partition aggregated health.</para>
         <para>Only replicas that respect the <see cref="P:System.Fabric.Description.PartitionHealthQueryDescription.ReplicasFilter" /> (if specified) are returned. 
             If the input filter is not specified, all replicas are returned.</para>
-        <para>All replicas are evaluated to determine the partition aggregated health.</para>
       </Docs>
     </Member>
     <Member MemberName="ToString">

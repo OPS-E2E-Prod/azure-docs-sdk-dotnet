@@ -1,4 +1,4 @@
-﻿<Type Name="IVirtualMachineExtensionImagesOperations" FullName="Microsoft.Azure.Management.Compute.IVirtualMachineExtensionImagesOperations">
+<Type Name="IVirtualMachineExtensionImagesOperations" FullName="Microsoft.Azure.Management.Compute.IVirtualMachineExtensionImagesOperations">
   <TypeSignature Language="C#" Value="public interface IVirtualMachineExtensionImagesOperations" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IVirtualMachineExtensionImagesOperations" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Compute.IVirtualMachineExtensionImagesOperations" />
@@ -7,6 +7,8 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
     <AssemblyVersion>27.0.0.0</AssemblyVersion>
+    <AssemblyVersion>28.0.0.0</AssemblyVersion>
+    <AssemblyVersion>29.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -25,6 +27,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineExtensionImage&gt;&gt;</ReturnType>
@@ -41,9 +45,12 @@
         <param name="location">
             The name of a supported Azure region.
             </param>
-        <param name="publisherName"></param>
-        <param name="type"></param>
-        <param name="version"></param>
+        <param name="publisherName">
+        </param>
+        <param name="type">
+        </param>
+        <param name="version">
+        </param>
         <param name="customHeaders">
             The headers that will be added to request.
             </param>
@@ -75,6 +82,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineExtensionImage&gt;&gt;&gt;</ReturnType>
@@ -89,7 +98,8 @@
         <param name="location">
             The name of a supported Azure region.
             </param>
-        <param name="publisherName"></param>
+        <param name="publisherName">
+        </param>
         <param name="customHeaders">
             The headers that will be added to request.
             </param>
@@ -121,6 +131,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineExtensionImage&gt;&gt;&gt;</ReturnType>
@@ -137,8 +149,10 @@
         <param name="location">
             The name of a supported Azure region.
             </param>
-        <param name="publisherName"></param>
-        <param name="type"></param>
+        <param name="publisherName">
+        </param>
+        <param name="type">
+        </param>
         <param name="odataQuery">
             OData parameters to apply to the operation.
             </param>

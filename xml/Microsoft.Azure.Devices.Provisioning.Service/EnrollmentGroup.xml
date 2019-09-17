@@ -1,4 +1,4 @@
-﻿<Type Name="EnrollmentGroup" FullName="Microsoft.Azure.Devices.Provisioning.Service.EnrollmentGroup">
+<Type Name="EnrollmentGroup" FullName="Microsoft.Azure.Devices.Provisioning.Service.EnrollmentGroup">
   <TypeSignature Language="C#" Value="public class EnrollmentGroup : Microsoft.Azure.Devices.Shared.IETagHolder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EnrollmentGroup extends System.Object implements class Microsoft.Azure.Devices.Shared.IETagHolder" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Devices.Provisioning.Service.EnrollmentGroup" />
@@ -116,6 +116,7 @@
             
              Other parameters can be added by calling the setters on this object.
              </remarks>
+        <exception cref="T:System.ArgumentNullException">if one of the provided parameters is not correct</exception>
         <example>
              When serialized, an EnrollmentGroup will look like the following example:
              <code>
@@ -131,7 +132,6 @@
                  }
              }
              </code></example>
-        <exception cref="T:System.ArgumentNullException">if one of the provided parameters is not correct</exception>
       </Docs>
     </Member>
     <Member MemberName="AllocationPolicy">

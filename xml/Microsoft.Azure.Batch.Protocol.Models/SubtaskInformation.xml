@@ -1,4 +1,4 @@
-﻿<Type Name="SubtaskInformation" FullName="Microsoft.Azure.Batch.Protocol.Models.SubtaskInformation">
+<Type Name="SubtaskInformation" FullName="Microsoft.Azure.Batch.Protocol.Models.SubtaskInformation">
   <TypeSignature Language="C#" Value="public class SubtaskInformation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SubtaskInformation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.Protocol.Models.SubtaskInformation" />
@@ -6,7 +6,8 @@
   <TypeSignature Language="F#" Value="type SubtaskInformation = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,7 +28,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -46,7 +48,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.Nullable&lt;System.Int32&gt;" />
@@ -64,7 +67,7 @@
       </Parameters>
       <Docs>
         <param name="id">The ID of the subtask.</param>
-        <param name="nodeInfo">Information about the compute node on which
+        <param name="nodeInfo">Information about the Compute Node on which
             the subtask ran.</param>
         <param name="startTime">The time at which the subtask started
             running. If the subtask has been restarted or retried, this is the
@@ -74,8 +77,8 @@
         <param name="exitCode">The exit code of the program specified on
             the subtask command line.</param>
         <param name="containerInfo">Information about the container under
-            which the task is executing.</param>
-        <param name="failureInfo">Information describing the task failure,
+            which the Task is executing.</param>
+        <param name="failureInfo">Information describing the Task failure,
             if any.</param>
         <param name="state">The current state of the subtask.</param>
         <param name="stateTransitionTime">The time at which the subtask
@@ -84,7 +87,7 @@
             subtask.</param>
         <param name="previousStateTransitionTime">The time at which the
             subtask entered its previous state.</param>
-        <param name="result">The result of the task execution.</param>
+        <param name="result">The result of the Task execution.</param>
         <summary>
             Initializes a new instance of the SubtaskInformation class.
             </summary>
@@ -100,7 +103,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -112,12 +116,12 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets information about the container under which the task
+            Gets or sets information about the container under which the Task
             is executing.
             </summary>
         <value>To be added.</value>
         <remarks>
-            This property is set only if the task runs in a container context.
+            This property is set only if the Task runs in a container context.
             </remarks>
       </Docs>
     </Member>
@@ -130,7 +134,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -159,7 +164,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -196,7 +202,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -208,11 +215,11 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets information describing the task failure, if any.
+            Gets or sets information describing the Task failure, if any.
             </summary>
         <value>To be added.</value>
         <remarks>
-            This property is set only if the task is in the completed state and
+            This property is set only if the Task is in the completed state and
             encountered a failure.
             </remarks>
       </Docs>
@@ -226,7 +233,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -253,7 +261,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -265,7 +274,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets information about the compute node on which the
+            Gets or sets information about the Compute Node on which the
             subtask ran.
             </summary>
         <value>To be added.</value>
@@ -281,7 +290,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -311,7 +321,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -342,7 +353,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -354,7 +366,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the result of the task execution.
+            Gets or sets the result of the Task execution.
             </summary>
         <value>To be added.</value>
         <remarks>
@@ -373,7 +385,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -402,7 +415,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -431,7 +445,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
