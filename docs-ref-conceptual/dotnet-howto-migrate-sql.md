@@ -7,7 +7,7 @@ ms.service: sql-database
 
 ## Migrate a SQL Server database to Azure
 
-This short article provides a brief outline of two options for migrating a SQL Server database to Azure.
+This short article provides a brief outline of two options for migrating a SQL Server database to Azure.prtest
 
 Azure has two primary options for migrating a production SQL Server database:
 
