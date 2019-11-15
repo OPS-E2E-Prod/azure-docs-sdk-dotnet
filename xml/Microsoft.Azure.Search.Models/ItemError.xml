@@ -1,4 +1,4 @@
-﻿<Type Name="ItemError" FullName="Microsoft.Azure.Search.Models.ItemError">
+<Type Name="ItemError" FullName="Microsoft.Azure.Search.Models.ItemError">
   <TypeSignature Language="C#" Value="public class ItemError" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ItemError extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Search.Models.ItemError" />
@@ -6,8 +6,9 @@
   <TypeSignature Language="F#" Value="type ItemError = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-    <AssemblyVersion>9.0.0.0</AssemblyVersion>
-    <AssemblyVersion>9.1.0.0</AssemblyVersion>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+    <AssemblyVersion>10.0.1.0</AssemblyVersion>
+    <AssemblyVersion>10.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,8 +29,9 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.1.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.1.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -40,21 +42,25 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ItemError (string key = null, string errorMessage = null, int statusCode = 0);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string key, string errorMessage, int32 statusCode) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.Models.ItemError.#ctor(System.String,System.String,System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional key As String = null, Optional errorMessage As String = null, Optional statusCode As Integer = 0)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Search.Models.ItemError : string * string * int -&gt; Microsoft.Azure.Search.Models.ItemError" Usage="new Microsoft.Azure.Search.Models.ItemError (key, errorMessage, statusCode)" />
+      <MemberSignature Language="C#" Value="public ItemError (string key = null, string errorMessage = null, int statusCode = 0, string name = null, string details = null, string documentationLink = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string key, string errorMessage, int32 statusCode, string name, string details, string documentationLink) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.Models.ItemError.#ctor(System.String,System.String,System.Int32,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional key As String = null, Optional errorMessage As String = null, Optional statusCode As Integer = 0, Optional name As String = null, Optional details As String = null, Optional documentationLink As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Search.Models.ItemError : string * string * int * string * string * string -&gt; Microsoft.Azure.Search.Models.ItemError" Usage="new Microsoft.Azure.Search.Models.ItemError (key, errorMessage, statusCode, name, details, documentationLink)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.1.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.1.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="key" Type="System.String" />
         <Parameter Name="errorMessage" Type="System.String" />
         <Parameter Name="statusCode" Type="System.Int32" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="details" Type="System.String" />
+        <Parameter Name="documentationLink" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="key">The key of the item for which indexing
@@ -66,9 +72,78 @@
             malformed input document, 404 for document not found, 409 for a
             version conflict, 422 when the index is temporarily unavailable, or
             503 for when the service is too busy.</param>
+        <param name="name">The name of the source at which the error
+            originated. For example, this could refer to a particular skill in
+            the attached skillset. This may not be always available.</param>
+        <param name="details">Additional, verbose details about the error
+            to assist in debugging the indexer. This may not be always
+            available.</param>
+        <param name="documentationLink">A link to a troubleshooting guide
+            for these classes of errors. This may not be always
+            available.</param>
         <summary>
             Initializes a new instance of the ItemError class.
             </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Details">
+      <MemberSignature Language="C#" Value="public string Details { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Details" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Search.Models.ItemError.Details" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Details As String" />
+      <MemberSignature Language="F#" Value="member this.Details : string" Usage="Microsoft.Azure.Search.Models.ItemError.Details" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.1.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="details")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets additional, verbose details about the error to assist in
+            debugging the indexer. This may not be always available.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DocumentationLink">
+      <MemberSignature Language="C#" Value="public string DocumentationLink { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DocumentationLink" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Search.Models.ItemError.DocumentationLink" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DocumentationLink As String" />
+      <MemberSignature Language="F#" Value="member this.DocumentationLink : string" Usage="Microsoft.Azure.Search.Models.ItemError.DocumentationLink" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.1.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="documentationLink")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a link to a troubleshooting guide for these classes of errors.
+            This may not be always available.
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,8 +156,9 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.1.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.1.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -110,8 +186,9 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.1.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.1.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -129,6 +206,37 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Search.Models.ItemError.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Azure.Search.Models.ItemError.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.1.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the name of the source at which the error originated. For
+            example, this could refer to a particular skill in the attached
+            skillset. This may not be always available.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="StatusCode">
       <MemberSignature Language="C#" Value="public int StatusCode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 StatusCode" />
@@ -138,8 +246,9 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.1.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.1.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

@@ -1,4 +1,4 @@
-﻿<Type Name="IApplicationGateway" FullName="Microsoft.Azure.Management.Network.Fluent.IApplicationGateway">
+<Type Name="IApplicationGateway" FullName="Microsoft.Azure.Management.Network.Fluent.IApplicationGateway">
   <TypeSignature Language="C#" Value="public interface IApplicationGateway : Microsoft.Azure.Management.Network.Fluent.IApplicationGatewayBeta, Microsoft.Azure.Management.Network.Fluent.IHasPrivateIPAddress, Microsoft.Azure.Management.Network.Fluent.IUpdatableWithTags&lt;Microsoft.Azure.Management.Network.Fluent.IApplicationGateway&gt;, Microsoft.Azure.Management.ResourceManager.Fluent.Core.IBeta, Microsoft.Azure.Management.ResourceManager.Fluent.Core.IGroupableResource&lt;Microsoft.Azure.Management.Network.Fluent.INetworkManager,Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayInner&gt;, Microsoft.Azure.Management.ResourceManager.Fluent.Core.IHasInner&lt;Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayInner&gt;, Microsoft.Azure.Management.ResourceManager.Fluent.Core.IHasManager&lt;Microsoft.Azure.Management.Network.Fluent.INetworkManager&gt;, Microsoft.Azure.Management.ResourceManager.Fluent.Core.IHasSubnet, Microsoft.Azure.Management.ResourceManager.Fluent.Core.ResourceActions.IRefreshable&lt;Microsoft.Azure.Management.Network.Fluent.IApplicationGateway&gt;, Microsoft.Azure.Management.ResourceManager.Fluent.Core.ResourceActions.IUpdatable&lt;Microsoft.Azure.Management.Network.Fluent.ApplicationGateway.Update.IUpdate&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IApplicationGateway implements class Microsoft.Azure.Management.Network.Fluent.IApplicationGatewayBeta, class Microsoft.Azure.Management.Network.Fluent.IHasPrivateIPAddress, class Microsoft.Azure.Management.Network.Fluent.IUpdatableWithTags`1&lt;class Microsoft.Azure.Management.Network.Fluent.IApplicationGateway&gt;, class Microsoft.Azure.Management.ResourceManager.Fluent.Core.IBeta, class Microsoft.Azure.Management.ResourceManager.Fluent.Core.IGroupableResource`2&lt;class Microsoft.Azure.Management.Network.Fluent.INetworkManager, class Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayInner&gt;, class Microsoft.Azure.Management.ResourceManager.Fluent.Core.IHasId, class Microsoft.Azure.Management.ResourceManager.Fluent.Core.IHasInner`1&lt;class Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayInner&gt;, class Microsoft.Azure.Management.ResourceManager.Fluent.Core.IHasManager`1&lt;class Microsoft.Azure.Management.Network.Fluent.INetworkManager&gt;, class Microsoft.Azure.Management.ResourceManager.Fluent.Core.IHasName, class Microsoft.Azure.Management.ResourceManager.Fluent.Core.IHasResourceGroup, class Microsoft.Azure.Management.ResourceManager.Fluent.Core.IHasSubnet, class Microsoft.Azure.Management.ResourceManager.Fluent.Core.IResource, class Microsoft.Azure.Management.ResourceManager.Fluent.Core.ResourceActions.IIndexable, class Microsoft.Azure.Management.ResourceManager.Fluent.Core.ResourceActions.IRefreshable`1&lt;class Microsoft.Azure.Management.Network.Fluent.IApplicationGateway&gt;, class Microsoft.Azure.Management.ResourceManager.Fluent.Core.ResourceActions.IUpdatable`1&lt;class Microsoft.Azure.Management.Network.Fluent.ApplicationGateway.Update.IUpdate&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Network.Fluent.IApplicationGateway" />
@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
     <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -68,6 +69,29 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="AutoscaleConfiguration">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayAutoscaleConfiguration AutoscaleConfiguration { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayAutoscaleConfiguration AutoscaleConfiguration" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Fluent.IApplicationGateway.AutoscaleConfiguration" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AutoscaleConfiguration As ApplicationGatewayAutoscaleConfiguration" />
+      <MemberSignature Language="F#" Value="member this.AutoscaleConfiguration : Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayAutoscaleConfiguration" Usage="Microsoft.Azure.Management.Network.Fluent.IApplicationGateway.AutoscaleConfiguration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayAutoscaleConfiguration</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the auto scalse configuration value.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="BackendHttpConfigurations">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyDictionary&lt;string,Microsoft.Azure.Management.Network.Fluent.IApplicationGatewayBackendHttpConfiguration&gt; BackendHttpConfigurations { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, class Microsoft.Azure.Management.Network.Fluent.IApplicationGatewayBackendHttpConfiguration&gt; BackendHttpConfigurations" />
@@ -78,6 +102,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyDictionary&lt;System.String,Microsoft.Azure.Management.Network.Fluent.IApplicationGatewayBackendHttpConfiguration&gt;</ReturnType>
@@ -100,6 +125,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyDictionary&lt;System.String,Microsoft.Azure.Management.Network.Fluent.IApplicationGatewayBackend&gt;</ReturnType>
@@ -122,6 +148,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Network.Fluent.IApplicationGatewayIPConfiguration</ReturnType>
@@ -144,6 +171,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Network.Fluent.IApplicationGatewayFrontend</ReturnType>
@@ -166,6 +194,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Network.Fluent.IApplicationGatewayFrontend</ReturnType>
@@ -188,6 +217,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -215,6 +245,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.Int32&gt;</ReturnType>
@@ -237,6 +268,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyDictionary&lt;System.String,Microsoft.Azure.Management.Network.Fluent.IApplicationGatewayFrontend&gt;</ReturnType>
@@ -259,6 +291,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -281,6 +314,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyDictionary&lt;System.String,Microsoft.Azure.Management.Network.Fluent.IApplicationGatewayIPConfiguration&gt;</ReturnType>
@@ -303,6 +337,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -325,6 +360,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -347,6 +383,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Network.Fluent.IApplicationGatewayListener</ReturnType>
@@ -374,6 +411,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyDictionary&lt;System.String,Microsoft.Azure.Management.Network.Fluent.IApplicationGatewayListener&gt;</ReturnType>
@@ -396,6 +434,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayOperationalState</ReturnType>
@@ -418,6 +457,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyDictionary&lt;System.String,Microsoft.Azure.Management.Network.Fluent.IApplicationGatewayFrontend&gt;</ReturnType>
@@ -440,6 +480,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyDictionary&lt;System.String,Microsoft.Azure.Management.Network.Fluent.IApplicationGatewayProbe&gt;</ReturnType>
@@ -462,6 +503,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyDictionary&lt;System.String,Microsoft.Azure.Management.Network.Fluent.IApplicationGatewayFrontend&gt;</ReturnType>
@@ -484,6 +526,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyDictionary&lt;System.String,Microsoft.Azure.Management.Network.Fluent.IApplicationGatewayRequestRoutingRule&gt;</ReturnType>
@@ -506,6 +549,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySkuName</ReturnType>
@@ -528,6 +572,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySku</ReturnType>
@@ -550,6 +595,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyDictionary&lt;System.String,Microsoft.Azure.Management.Network.Fluent.IApplicationGatewaySslCertificate&gt;</ReturnType>
@@ -572,6 +618,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -593,6 +640,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -620,6 +668,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -641,6 +690,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -668,6 +718,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayTier</ReturnType>
@@ -675,6 +726,29 @@
       <Docs>
         <summary>
             Gets the tier of the application gateway.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WebApplicationFirewallConfiguration">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayWebApplicationFirewallConfiguration WebApplicationFirewallConfiguration { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayWebApplicationFirewallConfiguration WebApplicationFirewallConfiguration" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Fluent.IApplicationGateway.WebApplicationFirewallConfiguration" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WebApplicationFirewallConfiguration As ApplicationGatewayWebApplicationFirewallConfiguration" />
+      <MemberSignature Language="F#" Value="member this.WebApplicationFirewallConfiguration : Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayWebApplicationFirewallConfiguration" Usage="Microsoft.Azure.Management.Network.Fluent.IApplicationGateway.WebApplicationFirewallConfiguration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayWebApplicationFirewallConfiguration</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the WebApplicationFirewallConfiguration value.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

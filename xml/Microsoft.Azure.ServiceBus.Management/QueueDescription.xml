@@ -1,4 +1,4 @@
-﻿<Type Name="QueueDescription" FullName="Microsoft.Azure.ServiceBus.Management.QueueDescription">
+<Type Name="QueueDescription" FullName="Microsoft.Azure.ServiceBus.Management.QueueDescription">
   <TypeSignature Language="C#" Value="public class QueueDescription : IEquatable&lt;Microsoft.Azure.ServiceBus.Management.QueueDescription&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QueueDescription extends System.Object implements class System.IEquatable`1&lt;class Microsoft.Azure.ServiceBus.Management.QueueDescription&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.ServiceBus.Management.QueueDescription" />
@@ -6,7 +6,9 @@
   <TypeSignature Language="F#" Value="type QueueDescription = class&#xA;    interface IEquatable&lt;QueueDescription&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-    <AssemblyVersion>3.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -17,9 +19,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>
-            Represents the metadata description of the queue.
-            </summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,16 +32,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">Path of the queue relative to the namespace base address.</param>
-        <summary>
-            Initializes a new instance of QueueDescription class with the specified relative path.
-            </summary>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,15 +54,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.ServiceBus.Management.AuthorizationRules</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            The <see cref="P:Microsoft.Azure.ServiceBus.Management.QueueDescription.AuthorizationRules" /> on the queue to control user access at entity level.
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -76,17 +76,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            The <see cref="T:System.TimeSpan" /> idle interval after which the queue is automatically deleted.
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>The minimum duration is 5 minutes. Default value is <see cref="F:System.TimeSpan.MaxValue" />.</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultMessageTimeToLive">
@@ -98,22 +98,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            The default time to live value for the messages. This is the duration after which the message expires, starting from when
-            the message is sent to Service Bus. </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>
-            This is the default value used when <see cref="P:Microsoft.Azure.ServiceBus.Message.TimeToLive" /> is not set on a
-             message itself. Messages older than their TimeToLive value will expire and no longer be retained in the message store.
-             Subscribers will be unable to receive expired messages.
-             Default value is <see cref="F:System.TimeSpan.MaxValue" />.
-             </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DuplicateDetectionHistoryTimeWindow">
@@ -125,19 +120,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            The <see cref="T:System.TimeSpan" /> duration of duplicate detection history that is maintained by the service.
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>
-            The default value is 1 minute. Max value is 7 days and minimum is 20 seconds.
-            </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableBatchedOperations">
@@ -149,17 +142,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Indicates whether server-side batched operations are enabled.
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>Defaults to true.</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableDeadLetteringOnMessageExpiration">
@@ -171,17 +164,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Indicates whether this queue has dead letter support when a message expires.
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>If true, the expired messages are moved to dead-letter sub-queue. Default value is false.</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EnablePartitioning">
@@ -193,17 +186,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Indicates whether the queue is to be partitioned across multiple message brokers.
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>Defaults to false.</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -218,7 +211,9 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -242,7 +237,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -266,18 +263,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            The path of the recipient entity to which all the dead-lettered messages of this queue are forwarded to.
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>If set, user cannot manually receive dead-lettered messages from this queue. The destination
-            entity must already exist.</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ForwardTo">
@@ -289,18 +285,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            The path of the recipient entity to which all the messages sent to the queue are forwarded to.
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>If set, user cannot manually receive messages from this queue. The destination entity
-            must be an already existing entity.</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -312,7 +307,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -333,18 +330,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Duration of a peek lock receive. i.e., the amount of time that the message is locked by a given receiver so that
-            no other receiver receives the same message.
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>Max value is 5 minutes. Default value is 60 seconds.</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxDeliveryCount">
@@ -356,19 +352,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            The maximum delivery count of a message before it is dead-lettered.
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>The delivery count is increased when a message is received in <see cref="F:Microsoft.Azure.ServiceBus.ReceiveMode.PeekLock" /> mode
-            and didn't complete the message before the message lock expired.
-            Default value is 10. Minimum value is 1.</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxSizeInMB">
@@ -380,17 +374,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            The maximum size of the queue in megabytes, which is the size of memory allocated for the queue.
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>Default value is 1024.</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -402,7 +396,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -428,7 +424,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -454,18 +452,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Path of the queue relative to the namespace base address.
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>Max length is 260 chars. Cannot start or end with a slash.
-            Cannot have restricted characters: '@','?','#','*'</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequiresDuplicateDetection">
@@ -477,19 +474,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            This value indicates if the queue requires guard against duplicate messages. If true, duplicate messages having same
-            <see cref="P:Microsoft.Azure.ServiceBus.Message.MessageId" /> and sent to queue within duration of <see cref="P:Microsoft.Azure.ServiceBus.Management.QueueDescription.DuplicateDetectionHistoryTimeWindow" />
-            will be discarded.
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>Defaults to false.</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequiresSession">
@@ -501,20 +496,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            This indicates whether the queue supports the concept of session. Sessionful-messages follow FIFO ordering.
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>
-            If true, the receiver can only recieve messages using <see cref="M:Microsoft.Azure.ServiceBus.SessionClient.AcceptMessageSessionAsync" />.
-            Defaults to false.
-            </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Status">
@@ -526,17 +518,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.ServiceBus.Management.EntityStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            The current status of the queue (Enabled / Disabled).
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>When an entity is disabled, that entity cannot send or receive messages.</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UserMetadata">
@@ -548,17 +540,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Custom metdata that user can associate with the description.
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>Cannot be null. Max length is 1024 chars.</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

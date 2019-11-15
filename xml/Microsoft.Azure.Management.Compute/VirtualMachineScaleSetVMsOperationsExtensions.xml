@@ -1,4 +1,4 @@
-﻿<Type Name="VirtualMachineScaleSetVMsOperationsExtensions" FullName="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetVMsOperationsExtensions">
+<Type Name="VirtualMachineScaleSetVMsOperationsExtensions" FullName="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetVMsOperationsExtensions">
   <TypeSignature Language="C#" Value="public static class VirtualMachineScaleSetVMsOperationsExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit VirtualMachineScaleSetVMsOperationsExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetVMsOperationsExtensions" />
@@ -8,6 +8,9 @@
     <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
     <AssemblyVersion>27.0.0.0</AssemblyVersion>
     <AssemblyVersion>28.0.0.0</AssemblyVersion>
+    <AssemblyVersion>29.0.0.0</AssemblyVersion>
+    <AssemblyVersion>29.1.0.0</AssemblyVersion>
+    <AssemblyVersion>30.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -31,6 +34,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -73,6 +79,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -126,6 +135,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -165,6 +177,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -215,6 +230,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -254,6 +272,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -304,6 +325,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -351,6 +375,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -409,6 +436,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -433,7 +463,8 @@
             The instance ID of the virtual machine.
             </param>
         <summary>
-            Redeploys a virtual machine in a VM scale set.
+            Shuts down the virtual machine in the virtual machine scale set, moves it
+            to a new node, and powers it back on.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -448,6 +479,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -481,7 +515,8 @@
             The cancellation token.
             </param>
         <summary>
-            Redeploys a virtual machine in a VM scale set.
+            Shuts down the virtual machine in the virtual machine scale set, moves it
+            to a new node, and powers it back on.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -498,6 +533,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -545,6 +583,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -585,6 +626,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -635,6 +679,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -692,6 +739,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -731,6 +781,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -781,6 +834,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Compute.Models.RunCommandResult</ReturnType>
@@ -825,6 +881,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -879,6 +938,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -918,6 +980,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -968,6 +1033,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetVM</ReturnType>
@@ -1013,6 +1081,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1068,6 +1139,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1110,6 +1184,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1163,6 +1240,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1202,6 +1282,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1242,16 +1325,18 @@
       </Docs>
     </Member>
     <Member MemberName="Get">
-      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetVM Get (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetVMsOperations operations, string resourceGroupName, string vmScaleSetName, string instanceId);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetVM Get(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetVMsOperations operations, string resourceGroupName, string vmScaleSetName, string instanceId) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetVMsOperationsExtensions.Get(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetVMsOperations,System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Get (operations As IVirtualMachineScaleSetVMsOperations, resourceGroupName As String, vmScaleSetName As String, instanceId As String) As VirtualMachineScaleSetVM" />
-      <MemberSignature Language="F#" Value="static member Get : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetVMsOperations * string * string * string -&gt; Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetVM" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetVMsOperationsExtensions.Get (operations, resourceGroupName, vmScaleSetName, instanceId)" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetVM Get (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetVMsOperations operations, string resourceGroupName, string vmScaleSetName, string instanceId, Nullable&lt;Microsoft.Azure.Management.Compute.Models.InstanceViewTypes&gt; expand = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetVM Get(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetVMsOperations operations, string resourceGroupName, string vmScaleSetName, string instanceId, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Compute.Models.InstanceViewTypes&gt; expand) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetVMsOperationsExtensions.Get(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetVMsOperations,System.String,System.String,System.String,System.Nullable{Microsoft.Azure.Management.Compute.Models.InstanceViewTypes})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Get (operations As IVirtualMachineScaleSetVMsOperations, resourceGroupName As String, vmScaleSetName As String, instanceId As String, Optional expand As Nullable(Of InstanceViewTypes) = null) As VirtualMachineScaleSetVM" />
+      <MemberSignature Language="F#" Value="static member Get : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetVMsOperations * string * string * string * Nullable&lt;Microsoft.Azure.Management.Compute.Models.InstanceViewTypes&gt; -&gt; Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetVM" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetVMsOperationsExtensions.Get (operations, resourceGroupName, vmScaleSetName, instanceId, expand)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetVM</ReturnType>
@@ -1261,6 +1346,7 @@
         <Parameter Name="resourceGroupName" Type="System.String" />
         <Parameter Name="vmScaleSetName" Type="System.String" />
         <Parameter Name="instanceId" Type="System.String" />
+        <Parameter Name="expand" Type="System.Nullable&lt;Microsoft.Azure.Management.Compute.Models.InstanceViewTypes&gt;" />
       </Parameters>
       <Docs>
         <param name="operations">
@@ -1275,6 +1361,10 @@
         <param name="instanceId">
             The instance ID of the virtual machine.
             </param>
+        <param name="expand">
+            The expand expression to apply on the operation. Possible values include:
+            'instanceView'
+            </param>
         <summary>
             Gets a virtual machine from a VM scale set.
             </summary>
@@ -1283,15 +1373,17 @@
       </Docs>
     </Member>
     <Member MemberName="GetAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetVM&gt; GetAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetVMsOperations operations, string resourceGroupName, string vmScaleSetName, string instanceId, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetVM&gt; GetAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetVMsOperations operations, string resourceGroupName, string vmScaleSetName, string instanceId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetVMsOperationsExtensions.GetAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetVMsOperations,System.String,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="static member GetAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetVMsOperations * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetVM&gt;" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetVMsOperationsExtensions.GetAsync (operations, resourceGroupName, vmScaleSetName, instanceId, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetVM&gt; GetAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetVMsOperations operations, string resourceGroupName, string vmScaleSetName, string instanceId, Nullable&lt;Microsoft.Azure.Management.Compute.Models.InstanceViewTypes&gt; expand = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetVM&gt; GetAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetVMsOperations operations, string resourceGroupName, string vmScaleSetName, string instanceId, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Compute.Models.InstanceViewTypes&gt; expand, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetVMsOperationsExtensions.GetAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetVMsOperations,System.String,System.String,System.String,System.Nullable{Microsoft.Azure.Management.Compute.Models.InstanceViewTypes},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member GetAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetVMsOperations * string * string * string * Nullable&lt;Microsoft.Azure.Management.Compute.Models.InstanceViewTypes&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetVM&gt;" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetVMsOperationsExtensions.GetAsync (operations, resourceGroupName, vmScaleSetName, instanceId, expand, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1306,6 +1398,7 @@
         <Parameter Name="resourceGroupName" Type="System.String" />
         <Parameter Name="vmScaleSetName" Type="System.String" />
         <Parameter Name="instanceId" Type="System.String" />
+        <Parameter Name="expand" Type="System.Nullable&lt;Microsoft.Azure.Management.Compute.Models.InstanceViewTypes&gt;" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
@@ -1320,6 +1413,10 @@
             </param>
         <param name="instanceId">
             The instance ID of the virtual machine.
+            </param>
+        <param name="expand">
+            The expand expression to apply on the operation. Possible values include:
+            'instanceView'
             </param>
         <param name="cancellationToken">
             The cancellation token.
@@ -1342,6 +1439,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetVMInstanceView</ReturnType>
@@ -1382,6 +1482,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1432,6 +1535,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetVM&gt;</ReturnType>
@@ -1476,6 +1582,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1530,6 +1639,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetVM&gt;</ReturnType>
@@ -1562,6 +1674,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1604,6 +1719,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1643,6 +1761,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1693,6 +1814,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1740,6 +1864,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1798,6 +1925,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1822,7 +1952,8 @@
             The instance ID of the virtual machine.
             </param>
         <summary>
-            Redeploys a virtual machine in a VM scale set.
+            Shuts down the virtual machine in the virtual machine scale set, moves it
+            to a new node, and powers it back on.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1837,6 +1968,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1870,7 +2004,8 @@
             The cancellation token.
             </param>
         <summary>
-            Redeploys a virtual machine in a VM scale set.
+            Shuts down the virtual machine in the virtual machine scale set, moves it
+            to a new node, and powers it back on.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1887,6 +2022,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1934,6 +2072,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1974,6 +2115,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2024,6 +2168,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2081,6 +2228,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2120,6 +2270,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2170,6 +2323,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Compute.Models.RunCommandResult</ReturnType>
@@ -2214,6 +2370,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2268,6 +2427,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2307,6 +2469,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2357,6 +2522,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetVM</ReturnType>
@@ -2402,6 +2570,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

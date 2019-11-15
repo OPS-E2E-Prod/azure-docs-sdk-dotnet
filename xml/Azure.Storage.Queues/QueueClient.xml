@@ -1,4 +1,4 @@
-﻿<Type Name="QueueClient" FullName="Azure.Storage.Queues.QueueClient">
+<Type Name="QueueClient" FullName="Azure.Storage.Queues.QueueClient">
   <TypeSignature Language="C#" Value="public class QueueClient" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QueueClient extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Azure.Storage.Queues.QueueClient" />
@@ -13,7 +13,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            A QueueClient represents a URI to the Azure Storage Queue service allowing you to manipulate a queue.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,7 +31,10 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Azure.Storage.Queues.QueueClient" />
+            class for mocking.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,9 +54,20 @@
         <Parameter Name="queueName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="connectionString">To be added.</param>
-        <param name="queueName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="connectionString">
+             A connection string includes the authentication information
+             required for your application to access data in an Azure Storage
+             account at runtime.
+            
+             For more information, <see href="https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string" />.
+             </param>
+        <param name="queueName">
+             The name of the queue in the storage account to reference.
+             </param>
+        <summary>
+             Initializes a new instance of the <see cref="T:Azure.Storage.Queues.QueueClient" />
+             class.
+             </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,9 +87,19 @@
         <Parameter Name="options" Type="Azure.Storage.Queues.QueueClientOptions" />
       </Parameters>
       <Docs>
-        <param name="queueUri">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="queueUri">
+            A <see cref="P:Azure.Storage.Queues.QueueClient.Uri" /> referencing the queue that includes the
+            name of the account, and the name of the queue.
+            </param>
+        <param name="options">
+            Optional client options that define the transport pipeline
+            policies for authentication, retries, etc., that are applied to
+            every request.
+            </param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Azure.Storage.Queues.QueueClient" />
+            class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,10 +120,25 @@
         <Parameter Name="options" Type="Azure.Storage.Queues.QueueClientOptions" />
       </Parameters>
       <Docs>
-        <param name="connectionString">To be added.</param>
-        <param name="queueName">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="connectionString">
+             A connection string includes the authentication information
+             required for your application to access data in an Azure Storage
+             account at runtime.
+            
+             For more information, <see href="https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string" />.
+             </param>
+        <param name="queueName">
+             The name of the queue in the storage account to reference.
+             </param>
+        <param name="options">
+             Optional client options that define the transport pipeline
+             policies for authentication, retries, etc., that are applied to
+             every request.
+             </param>
+        <summary>
+             Initializes a new instance of the <see cref="T:Azure.Storage.Queues.QueueClient" />
+             class.
+             </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,10 +159,22 @@
         <Parameter Name="options" Type="Azure.Storage.Queues.QueueClientOptions" />
       </Parameters>
       <Docs>
-        <param name="queueUri">To be added.</param>
-        <param name="credential">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="queueUri">
+            A <see cref="P:Azure.Storage.Queues.QueueClient.Uri" /> referencing the queue that includes the
+            name of the account, and the name of the queue.
+            </param>
+        <param name="credential">
+            The token credential used to sign requests.
+            </param>
+        <param name="options">
+            Optional client options that define the transport pipeline
+            policies for authentication, retries, etc., that are applied to
+            every request.
+            </param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Azure.Storage.Queues.QueueClient" />
+            class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,10 +195,44 @@
         <Parameter Name="options" Type="Azure.Storage.Queues.QueueClientOptions" />
       </Parameters>
       <Docs>
-        <param name="queueUri">To be added.</param>
-        <param name="credential">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="queueUri">
+            A <see cref="P:Azure.Storage.Queues.QueueClient.Uri" /> referencing the queue that includes the
+            name of the account, and the name of the queue.
+            </param>
+        <param name="credential">
+            The shared key credential used to sign requests.
+            </param>
+        <param name="options">
+            Optional client options that define the transport pipeline
+            policies for authentication, retries, etc., that are applied to
+            every request.
+            </param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Azure.Storage.Queues.QueueClient" />
+            class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AccountName">
+      <MemberSignature Language="C#" Value="public virtual string AccountName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AccountName" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Queues.QueueClient.AccountName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AccountName As String" />
+      <MemberSignature Language="F#" Value="member this.AccountName : string" Usage="Azure.Storage.Queues.QueueClient.AccountName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Queues</AssemblyName>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the Storage account name corresponding to the queue client.
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,9 +253,16 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="cancellationToken">
+          <see cref="T:System.Threading.CancellationToken" />.
+            </param>
+        <summary>
+            Deletes all messages from a queue.
+            For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/clear-messages" />.
+            </summary>
+        <returns>
+          <see cref="T:Azure.Response" />
+        </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,11 +276,6 @@
         <AssemblyName>Azure.Storage.Queues</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
       </ReturnValue>
@@ -194,9 +283,16 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="cancellationToken">
+          <see cref="T:System.Threading.CancellationToken" />.
+            </param>
+        <summary>
+            Deletes all messages from a queue.
+            For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/clear-messages" />.
+            </summary>
+        <returns>
+          <see cref="T:Azure.Response" />
+        </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,10 +314,20 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="metadata">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="metadata">
+             Optional <see cref="T:System.Collections.Generic.IDictionary`2" />.
+             </param>
+        <param name="cancellationToken">
+          <see cref="T:System.Threading.CancellationToken" />
+        </param>
+        <summary>
+             Creates a queue.
+            
+             For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/create-queue4" />.
+             </summary>
+        <returns>
+          <see cref="T:Azure.Response" />
+        </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -235,11 +341,6 @@
         <AssemblyName>Azure.Storage.Queues</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
       </ReturnValue>
@@ -248,10 +349,20 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="metadata">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="metadata">
+             Optional <see cref="T:System.Collections.Generic.IDictionary`2" />.
+             </param>
+        <param name="cancellationToken">
+          <see cref="T:System.Threading.CancellationToken" />
+        </param>
+        <summary>
+             Creates a queue.
+            
+             For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/create-queue4" />.
+             </summary>
+        <returns>
+          <see cref="T:Azure.Response" />
+        </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -272,9 +383,16 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="cancellationToken">
+          <see cref="T:System.Threading.CancellationToken" />
+        </param>
+        <summary>
+            Deletes a queue.
+            For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/delete-queue3" />.
+            </summary>
+        <returns>
+          <see cref="T:Azure.Response" />
+        </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -288,11 +406,6 @@
         <AssemblyName>Azure.Storage.Queues</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
       </ReturnValue>
@@ -300,9 +413,16 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="cancellationToken">
+          <see cref="T:System.Threading.CancellationToken" />
+        </param>
+        <summary>
+            Deletes a queue.
+            For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/delete-queue3" />.
+            </summary>
+        <returns>
+          <see cref="T:Azure.Response" />
+        </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -325,11 +445,20 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="messageId">To be added.</param>
-        <param name="popReceipt">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="messageId">ID of the message to delete.</param>
+        <param name="popReceipt">
+            Required. A valid pop receipt value returned from an earlier call to the Get Messages or Update Message operation.
+            </param>
+        <param name="cancellationToken">
+            Optional <see cref="T:System.Threading.CancellationToken" />.
+            </param>
+        <summary>
+            Permanently removes the specified message from its queue.
+            For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/delete-message2" />.
+            </summary>
+        <returns>
+          <see cref="T:Azure.Response" />.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -343,11 +472,6 @@
         <AssemblyName>Azure.Storage.Queues</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
       </ReturnValue>
@@ -357,190 +481,86 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="messageId">To be added.</param>
-        <param name="popReceipt">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="DequeueMessages">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;System.Collections.Generic.IEnumerable&lt;Azure.Storage.Queues.Models.DequeuedMessage&gt;&gt; DequeueMessages (Nullable&lt;int&gt; maxMessages = null, Nullable&lt;TimeSpan&gt; visibilityTimeout = null, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Azure.Response`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class Azure.Storage.Queues.Models.DequeuedMessage&gt;&gt; DequeueMessages(valuetype System.Nullable`1&lt;int32&gt; maxMessages, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; visibilityTimeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueClient.DequeueMessages(System.Nullable{System.Int32},System.Nullable{System.TimeSpan},System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="abstract member DequeueMessages : Nullable&lt;int&gt; * Nullable&lt;TimeSpan&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;seq&lt;Azure.Storage.Queues.Models.DequeuedMessage&gt;&gt;&#xA;override this.DequeueMessages : Nullable&lt;int&gt; * Nullable&lt;TimeSpan&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;seq&lt;Azure.Storage.Queues.Models.DequeuedMessage&gt;&gt;" Usage="queueClient.DequeueMessages (maxMessages, visibilityTimeout, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Storage.Queues</AssemblyName>
-        <AssemblyVersion>12.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.Response&lt;System.Collections.Generic.IEnumerable&lt;Azure.Storage.Queues.Models.DequeuedMessage&gt;&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="maxMessages" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="visibilityTimeout" Type="System.Nullable&lt;System.TimeSpan&gt;" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="maxMessages">To be added.</param>
-        <param name="visibilityTimeout">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="DequeueMessagesAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IEnumerable&lt;Azure.Storage.Queues.Models.DequeuedMessage&gt;&gt;&gt; DequeueMessagesAsync (Nullable&lt;int&gt; maxMessages = null, Nullable&lt;TimeSpan&gt; visibilityTimeout = null, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;valuetype Azure.Response`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class Azure.Storage.Queues.Models.DequeuedMessage&gt;&gt;&gt; DequeueMessagesAsync(valuetype System.Nullable`1&lt;int32&gt; maxMessages, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; visibilityTimeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueClient.DequeueMessagesAsync(System.Nullable{System.Int32},System.Nullable{System.TimeSpan},System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="abstract member DequeueMessagesAsync : Nullable&lt;int&gt; * Nullable&lt;TimeSpan&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;seq&lt;Azure.Storage.Queues.Models.DequeuedMessage&gt;&gt;&gt;&#xA;override this.DequeueMessagesAsync : Nullable&lt;int&gt; * Nullable&lt;TimeSpan&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;seq&lt;Azure.Storage.Queues.Models.DequeuedMessage&gt;&gt;&gt;" Usage="queueClient.DequeueMessagesAsync (maxMessages, visibilityTimeout, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Storage.Queues</AssemblyName>
-        <AssemblyVersion>12.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IEnumerable&lt;Azure.Storage.Queues.Models.DequeuedMessage&gt;&gt;&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="maxMessages" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="visibilityTimeout" Type="System.Nullable&lt;System.TimeSpan&gt;" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="maxMessages">To be added.</param>
-        <param name="visibilityTimeout">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="EnqueueMessage">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Queues.Models.EnqueuedMessage&gt; EnqueueMessage (string messageText, Nullable&lt;TimeSpan&gt; visibilityTimeout = null, Nullable&lt;TimeSpan&gt; timeToLive = null, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Azure.Response`1&lt;class Azure.Storage.Queues.Models.EnqueuedMessage&gt; EnqueueMessage(string messageText, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; visibilityTimeout, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; timeToLive, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueClient.EnqueueMessage(System.String,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="abstract member EnqueueMessage : string * Nullable&lt;TimeSpan&gt; * Nullable&lt;TimeSpan&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Queues.Models.EnqueuedMessage&gt;&#xA;override this.EnqueueMessage : string * Nullable&lt;TimeSpan&gt; * Nullable&lt;TimeSpan&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Queues.Models.EnqueuedMessage&gt;" Usage="queueClient.EnqueueMessage (messageText, visibilityTimeout, timeToLive, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Storage.Queues</AssemblyName>
-        <AssemblyVersion>12.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.Response&lt;Azure.Storage.Queues.Models.EnqueuedMessage&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="messageText" Type="System.String" />
-        <Parameter Name="visibilityTimeout" Type="System.Nullable&lt;System.TimeSpan&gt;" />
-        <Parameter Name="timeToLive" Type="System.Nullable&lt;System.TimeSpan&gt;" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="messageText">To be added.</param>
-        <param name="visibilityTimeout">To be added.</param>
-        <param name="timeToLive">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="EnqueueMessageAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.EnqueuedMessage&gt;&gt; EnqueueMessageAsync (string messageText, Nullable&lt;TimeSpan&gt; visibilityTimeout = null, Nullable&lt;TimeSpan&gt; timeToLive = null, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;valuetype Azure.Response`1&lt;class Azure.Storage.Queues.Models.EnqueuedMessage&gt;&gt; EnqueueMessageAsync(string messageText, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; visibilityTimeout, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; timeToLive, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueClient.EnqueueMessageAsync(System.String,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="abstract member EnqueueMessageAsync : string * Nullable&lt;TimeSpan&gt; * Nullable&lt;TimeSpan&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.EnqueuedMessage&gt;&gt;&#xA;override this.EnqueueMessageAsync : string * Nullable&lt;TimeSpan&gt; * Nullable&lt;TimeSpan&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.EnqueuedMessage&gt;&gt;" Usage="queueClient.EnqueueMessageAsync (messageText, visibilityTimeout, timeToLive, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Storage.Queues</AssemblyName>
-        <AssemblyVersion>12.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.EnqueuedMessage&gt;&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="messageText" Type="System.String" />
-        <Parameter Name="visibilityTimeout" Type="System.Nullable&lt;System.TimeSpan&gt;" />
-        <Parameter Name="timeToLive" Type="System.Nullable&lt;System.TimeSpan&gt;" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="messageText">To be added.</param>
-        <param name="visibilityTimeout">To be added.</param>
-        <param name="timeToLive">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="messageId">ID of the message to delete.</param>
+        <param name="popReceipt">
+            Required. A valid pop receipt value returned from an earlier call to the Get Messages or Update Message operation.
+            </param>
+        <param name="cancellationToken">
+            Optional <see cref="T:System.Threading.CancellationToken" />.
+            </param>
+        <summary>
+            Permanently removes the specified message from its queue.
+            For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/delete-message2" />.
+            </summary>
+        <returns>
+          <see cref="T:Azure.Response" />.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAccessPolicy">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;System.Collections.Generic.IEnumerable&lt;Azure.Storage.Queues.Models.SignedIdentifier&gt;&gt; GetAccessPolicy (System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Azure.Response`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class Azure.Storage.Queues.Models.SignedIdentifier&gt;&gt; GetAccessPolicy(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;System.Collections.Generic.IEnumerable&lt;Azure.Storage.Queues.Models.QueueSignedIdentifier&gt;&gt; GetAccessPolicy (System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class Azure.Storage.Queues.Models.QueueSignedIdentifier&gt;&gt; GetAccessPolicy(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueClient.GetAccessPolicy(System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="abstract member GetAccessPolicy : System.Threading.CancellationToken -&gt; Azure.Response&lt;seq&lt;Azure.Storage.Queues.Models.SignedIdentifier&gt;&gt;&#xA;override this.GetAccessPolicy : System.Threading.CancellationToken -&gt; Azure.Response&lt;seq&lt;Azure.Storage.Queues.Models.SignedIdentifier&gt;&gt;" Usage="queueClient.GetAccessPolicy cancellationToken" />
+      <MemberSignature Language="F#" Value="abstract member GetAccessPolicy : System.Threading.CancellationToken -&gt; Azure.Response&lt;seq&lt;Azure.Storage.Queues.Models.QueueSignedIdentifier&gt;&gt;&#xA;override this.GetAccessPolicy : System.Threading.CancellationToken -&gt; Azure.Response&lt;seq&lt;Azure.Storage.Queues.Models.QueueSignedIdentifier&gt;&gt;" Usage="queueClient.GetAccessPolicy cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Queues</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Response&lt;System.Collections.Generic.IEnumerable&lt;Azure.Storage.Queues.Models.SignedIdentifier&gt;&gt;</ReturnType>
+        <ReturnType>Azure.Response&lt;System.Collections.Generic.IEnumerable&lt;Azure.Storage.Queues.Models.QueueSignedIdentifier&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="cancellationToken">
+          <see cref="T:System.Threading.CancellationToken" />
+        </param>
+        <summary>
+            Returns details about any stored access policies specified on the queue that may be used with
+            Shared Access Signatures.
+            For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/get-queue-acl" />.
+            </summary>
+        <returns>
+          <see cref="T:Azure.Response`1" /> of <see cref="T:System.Collections.Generic.IEnumerable`1" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAccessPolicyAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IEnumerable&lt;Azure.Storage.Queues.Models.SignedIdentifier&gt;&gt;&gt; GetAccessPolicyAsync (System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;valuetype Azure.Response`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class Azure.Storage.Queues.Models.SignedIdentifier&gt;&gt;&gt; GetAccessPolicyAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IEnumerable&lt;Azure.Storage.Queues.Models.QueueSignedIdentifier&gt;&gt;&gt; GetAccessPolicyAsync (System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class Azure.Storage.Queues.Models.QueueSignedIdentifier&gt;&gt;&gt; GetAccessPolicyAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueClient.GetAccessPolicyAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="abstract member GetAccessPolicyAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;seq&lt;Azure.Storage.Queues.Models.SignedIdentifier&gt;&gt;&gt;&#xA;override this.GetAccessPolicyAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;seq&lt;Azure.Storage.Queues.Models.SignedIdentifier&gt;&gt;&gt;" Usage="queueClient.GetAccessPolicyAsync cancellationToken" />
+      <MemberSignature Language="F#" Value="abstract member GetAccessPolicyAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;seq&lt;Azure.Storage.Queues.Models.QueueSignedIdentifier&gt;&gt;&gt;&#xA;override this.GetAccessPolicyAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;seq&lt;Azure.Storage.Queues.Models.QueueSignedIdentifier&gt;&gt;&gt;" Usage="queueClient.GetAccessPolicyAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Queues</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IEnumerable&lt;Azure.Storage.Queues.Models.SignedIdentifier&gt;&gt;&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IEnumerable&lt;Azure.Storage.Queues.Models.QueueSignedIdentifier&gt;&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="cancellationToken">
+          <see cref="T:System.Threading.CancellationToken" />
+        </param>
+        <summary>
+            Returns details about any stored access policies specified on the queue that may be used with
+            Shared Access Signatures.
+            For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/get-queue-acl" />.
+            </summary>
+        <returns>
+          <see cref="T:Azure.Response`1" /> of <see cref="T:System.Collections.Generic.IEnumerable`1" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
       <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Queues.Models.QueueProperties&gt; GetProperties (System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Azure.Response`1&lt;class Azure.Storage.Queues.Models.QueueProperties&gt; GetProperties(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Queues.Models.QueueProperties&gt; GetProperties(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueClient.GetProperties(System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member GetProperties : System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Queues.Models.QueueProperties&gt;&#xA;override this.GetProperties : System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Queues.Models.QueueProperties&gt;" Usage="queueClient.GetProperties cancellationToken" />
       <MemberType>Method</MemberType>
@@ -555,15 +575,23 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="cancellationToken">
+          <see cref="T:System.Threading.CancellationToken" />
+        </param>
+        <summary>
+            Retrieves queue properties and user-defined metadata and properties on the specified queue.
+            Metadata is associated with the queue as name-values pairs.
+            For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/get-queue-metadata" />.
+            </summary>
+        <returns>
+          <see cref="T:Azure.Response`1" />
+        </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPropertiesAsync">
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.QueueProperties&gt;&gt; GetPropertiesAsync (System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;valuetype Azure.Response`1&lt;class Azure.Storage.Queues.Models.QueueProperties&gt;&gt; GetPropertiesAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Queues.Models.QueueProperties&gt;&gt; GetPropertiesAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueClient.GetPropertiesAsync(System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member GetPropertiesAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.QueueProperties&gt;&gt;&#xA;override this.GetPropertiesAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.QueueProperties&gt;&gt;" Usage="queueClient.GetPropertiesAsync cancellationToken" />
       <MemberType>Method</MemberType>
@@ -571,11 +599,6 @@
         <AssemblyName>Azure.Storage.Queues</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.QueueProperties&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -583,19 +606,27 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="cancellationToken">
+          <see cref="T:System.Threading.CancellationToken" />
+        </param>
+        <summary>
+            Retrieves queue properties and user-defined metadata and properties on the specified queue.
+            Metadata is associated with the queue as name-values pairs.
+            For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/get-queue-metadata" />.
+            </summary>
+        <returns>
+          <see cref="T:Azure.Response`1" />
+        </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="MaxMessagesDequeue">
-      <MemberSignature Language="C#" Value="public const int MaxMessagesDequeue = 32;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 MaxMessagesDequeue = (32)" />
-      <MemberSignature Language="DocId" Value="F:Azure.Storage.Queues.QueueClient.MaxMessagesDequeue" />
-      <MemberSignature Language="VB.NET" Value="Public Const MaxMessagesDequeue As Integer  = 32" />
-      <MemberSignature Language="F#" Value="val mutable MaxMessagesDequeue : int" Usage="Azure.Storage.Queues.QueueClient.MaxMessagesDequeue" />
-      <MemberType>Field</MemberType>
+    <Member MemberName="MaxPeekableMessages">
+      <MemberSignature Language="C#" Value="public virtual int MaxPeekableMessages { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxPeekableMessages" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Queues.QueueClient.MaxPeekableMessages" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MaxPeekableMessages As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxPeekableMessages : int" Usage="Azure.Storage.Queues.QueueClient.MaxPeekableMessages" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Queues</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
@@ -603,39 +634,22 @@
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>32</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="MaxMessagesPeek">
-      <MemberSignature Language="C#" Value="public const int MaxMessagesPeek = 32;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 MaxMessagesPeek = (32)" />
-      <MemberSignature Language="DocId" Value="F:Azure.Storage.Queues.QueueClient.MaxMessagesPeek" />
-      <MemberSignature Language="VB.NET" Value="Public Const MaxMessagesPeek As Integer  = 32" />
-      <MemberSignature Language="F#" Value="val mutable MaxMessagesPeek : int" Usage="Azure.Storage.Queues.QueueClient.MaxMessagesPeek" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Storage.Queues</AssemblyName>
-        <AssemblyVersion>12.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <MemberValue>32</MemberValue>
-      <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            QueueMaxMessagesPeek indicates the maximum number of messages
+            you can retrieve with each call to Peek.
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MessageMaxBytes">
-      <MemberSignature Language="C#" Value="public const int MessageMaxBytes = 65536;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 MessageMaxBytes = (65536)" />
-      <MemberSignature Language="DocId" Value="F:Azure.Storage.Queues.QueueClient.MessageMaxBytes" />
-      <MemberSignature Language="VB.NET" Value="Public Const MessageMaxBytes As Integer  = 65536" />
-      <MemberSignature Language="F#" Value="val mutable MessageMaxBytes : int" Usage="Azure.Storage.Queues.QueueClient.MessageMaxBytes" />
-      <MemberType>Field</MemberType>
+      <MemberSignature Language="C#" Value="public virtual int MessageMaxBytes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MessageMaxBytes" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Queues.QueueClient.MessageMaxBytes" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MessageMaxBytes As Integer" />
+      <MemberSignature Language="F#" Value="member this.MessageMaxBytes : int" Usage="Azure.Storage.Queues.QueueClient.MessageMaxBytes" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Queues</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
@@ -643,9 +657,11 @@
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>65536</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the maximum number of bytes allowed for a message's UTF-8 text.
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -664,91 +680,506 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the Uri endpoint used by the object's messages.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="PeekMessages">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;System.Collections.Generic.IEnumerable&lt;Azure.Storage.Queues.Models.PeekedMessage&gt;&gt; PeekMessages (Nullable&lt;int&gt; maxMessages = null, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Azure.Response`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class Azure.Storage.Queues.Models.PeekedMessage&gt;&gt; PeekMessages(valuetype System.Nullable`1&lt;int32&gt; maxMessages, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueClient.PeekMessages(System.Nullable{System.Int32},System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="abstract member PeekMessages : Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;seq&lt;Azure.Storage.Queues.Models.PeekedMessage&gt;&gt;&#xA;override this.PeekMessages : Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;seq&lt;Azure.Storage.Queues.Models.PeekedMessage&gt;&gt;" Usage="queueClient.PeekMessages (maxMessages, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Storage.Queues</AssemblyName>
-        <AssemblyVersion>12.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.Response&lt;System.Collections.Generic.IEnumerable&lt;Azure.Storage.Queues.Models.PeekedMessage&gt;&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="maxMessages" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="maxMessages">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="PeekMessagesAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IEnumerable&lt;Azure.Storage.Queues.Models.PeekedMessage&gt;&gt;&gt; PeekMessagesAsync (Nullable&lt;int&gt; maxMessages = null, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;valuetype Azure.Response`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class Azure.Storage.Queues.Models.PeekedMessage&gt;&gt;&gt; PeekMessagesAsync(valuetype System.Nullable`1&lt;int32&gt; maxMessages, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueClient.PeekMessagesAsync(System.Nullable{System.Int32},System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="abstract member PeekMessagesAsync : Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;seq&lt;Azure.Storage.Queues.Models.PeekedMessage&gt;&gt;&gt;&#xA;override this.PeekMessagesAsync : Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;seq&lt;Azure.Storage.Queues.Models.PeekedMessage&gt;&gt;&gt;" Usage="queueClient.PeekMessagesAsync (maxMessages, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Storage.Queues</AssemblyName>
-        <AssemblyVersion>12.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IEnumerable&lt;Azure.Storage.Queues.Models.PeekedMessage&gt;&gt;&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="maxMessages" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="maxMessages">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Pipeline">
-      <MemberSignature Language="C#" Value="protected virtual Azure.Core.Pipeline.HttpPipeline Pipeline { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.Pipeline.HttpPipeline Pipeline" />
-      <MemberSignature Language="DocId" Value="P:Azure.Storage.Queues.QueueClient.Pipeline" />
-      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property Pipeline As HttpPipeline" />
-      <MemberSignature Language="F#" Value="member this.Pipeline : Azure.Core.Pipeline.HttpPipeline" Usage="Azure.Storage.Queues.QueueClient.Pipeline" />
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public virtual string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Queues.QueueClient.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Azure.Storage.Queues.QueueClient.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Queues</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Core.Pipeline.HttpPipeline</ReturnType>
+        <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the name of the queue.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="PeekMessages">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Queues.Models.PeekedMessage[]&gt; PeekMessages (Nullable&lt;int&gt; maxMessages = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Queues.Models.PeekedMessage[]&gt; PeekMessages(valuetype System.Nullable`1&lt;int32&gt; maxMessages, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueClient.PeekMessages(System.Nullable{System.Int32},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member PeekMessages : Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Queues.Models.PeekedMessage[]&gt;&#xA;override this.PeekMessages : Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Queues.Models.PeekedMessage[]&gt;" Usage="queueClient.PeekMessages (maxMessages, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Queues</AssemblyName>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.Storage.Queues.Models.PeekedMessage[]&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="maxMessages" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="maxMessages">
+            Optional. A nonzero integer value that specifies the number of messages to peek from the queue, up to a maximum of 32.
+            By default, a single message is peeked from the queue with this operation.
+            </param>
+        <param name="cancellationToken">
+            Optional <see cref="T:System.Threading.CancellationToken" /></param>
+        <summary>
+            Retrieves one or more messages from the front of the queue but does not alter the visibility of the message.
+            For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/peek-messages" />.
+            </summary>
+        <returns>
+          <see cref="T:Azure.Response`1" /> where T is an array of <see cref="T:Azure.Storage.Queues.Models.PeekedMessage" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PeekMessagesAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.PeekedMessage[]&gt;&gt; PeekMessagesAsync (Nullable&lt;int&gt; maxMessages = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Queues.Models.PeekedMessage[]&gt;&gt; PeekMessagesAsync(valuetype System.Nullable`1&lt;int32&gt; maxMessages, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueClient.PeekMessagesAsync(System.Nullable{System.Int32},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member PeekMessagesAsync : Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.PeekedMessage[]&gt;&gt;&#xA;override this.PeekMessagesAsync : Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.PeekedMessage[]&gt;&gt;" Usage="queueClient.PeekMessagesAsync (maxMessages, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Queues</AssemblyName>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.PeekedMessage[]&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="maxMessages" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="maxMessages">
+            Optional. A nonzero integer value that specifies the number of messages to peek from the queue, up to a maximum of 32.
+            By default, a single message is peeked from the queue with this operation.
+            </param>
+        <param name="cancellationToken">
+            Optional <see cref="T:System.Threading.CancellationToken" /></param>
+        <summary>
+            Retrieves one or more messages from the front of the queue but does not alter the visibility of the message.
+            For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/peek-messages" />.
+            </summary>
+        <returns>
+          <see cref="T:Azure.Response`1" /> where T is an array of <see cref="T:Azure.Storage.Queues.Models.PeekedMessage" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReceiveMessages">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Queues.Models.QueueMessage[]&gt; ReceiveMessages ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Queues.Models.QueueMessage[]&gt; ReceiveMessages() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueClient.ReceiveMessages" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReceiveMessages () As Response(Of QueueMessage())" />
+      <MemberSignature Language="F#" Value="abstract member ReceiveMessages : unit -&gt; Azure.Response&lt;Azure.Storage.Queues.Models.QueueMessage[]&gt;&#xA;override this.ReceiveMessages : unit -&gt; Azure.Response&lt;Azure.Storage.Queues.Models.QueueMessage[]&gt;" Usage="queueClient.ReceiveMessages " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Queues</AssemblyName>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.Storage.Queues.Models.QueueMessage[]&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Receives one or more messages from the front of the queue.
+            For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/get-messages" />.
+            </summary>
+        <returns>
+          <see cref="T:Azure.Response`1" /> where T is an array of <see cref="T:Azure.Storage.Queues.Models.QueueMessage" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReceiveMessages">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Queues.Models.QueueMessage[]&gt; ReceiveMessages (System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Queues.Models.QueueMessage[]&gt; ReceiveMessages(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueClient.ReceiveMessages(System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member ReceiveMessages : System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Queues.Models.QueueMessage[]&gt;&#xA;override this.ReceiveMessages : System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Queues.Models.QueueMessage[]&gt;" Usage="queueClient.ReceiveMessages cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Queues</AssemblyName>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.Storage.Queues.Models.QueueMessage[]&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">
+            Optional <see cref="T:System.Threading.CancellationToken" /></param>
+        <summary>
+            Receives one or more messages from the front of the queue.
+            For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/get-messages" />.
+            </summary>
+        <returns>
+          <see cref="T:Azure.Response`1" /> where T is an array of <see cref="T:Azure.Storage.Queues.Models.QueueMessage" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReceiveMessages">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Queues.Models.QueueMessage[]&gt; ReceiveMessages (Nullable&lt;int&gt; maxMessages = null, Nullable&lt;TimeSpan&gt; visibilityTimeout = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Queues.Models.QueueMessage[]&gt; ReceiveMessages(valuetype System.Nullable`1&lt;int32&gt; maxMessages, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; visibilityTimeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueClient.ReceiveMessages(System.Nullable{System.Int32},System.Nullable{System.TimeSpan},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member ReceiveMessages : Nullable&lt;int&gt; * Nullable&lt;TimeSpan&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Queues.Models.QueueMessage[]&gt;&#xA;override this.ReceiveMessages : Nullable&lt;int&gt; * Nullable&lt;TimeSpan&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Queues.Models.QueueMessage[]&gt;" Usage="queueClient.ReceiveMessages (maxMessages, visibilityTimeout, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Queues</AssemblyName>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.Storage.Queues.Models.QueueMessage[]&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="maxMessages" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="visibilityTimeout" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="maxMessages">
+            Optional. A nonzero integer value that specifies the number of messages to retrieve from the queue, up to a maximum of 32.
+            If fewer are visible, the visible messages are returned. By default, a single message is retrieved from the queue with this operation.
+            </param>
+        <param name="visibilityTimeout">
+            Optional. Specifies the new visibility timeout value, in seconds, relative to server time. The default value is 30 seconds.
+            </param>
+        <param name="cancellationToken">
+            Optional <see cref="T:System.Threading.CancellationToken" /></param>
+        <summary>
+            Receives one or more messages from the front of the queue.
+            For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/get-messages" />.
+            </summary>
+        <returns>
+          <see cref="T:Azure.Response`1" /> where T is an array of <see cref="T:Azure.Storage.Queues.Models.QueueMessage" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReceiveMessagesAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.QueueMessage[]&gt;&gt; ReceiveMessagesAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Queues.Models.QueueMessage[]&gt;&gt; ReceiveMessagesAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueClient.ReceiveMessagesAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReceiveMessagesAsync () As Task(Of Response(Of QueueMessage()))" />
+      <MemberSignature Language="F#" Value="abstract member ReceiveMessagesAsync : unit -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.QueueMessage[]&gt;&gt;&#xA;override this.ReceiveMessagesAsync : unit -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.QueueMessage[]&gt;&gt;" Usage="queueClient.ReceiveMessagesAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Queues</AssemblyName>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.QueueMessage[]&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Retrieves one or more messages from the front of the queue.
+            For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/get-messages" />.
+            </summary>
+        <returns>
+          <see cref="T:Azure.Response`1" /> where T is an array of <see cref="T:Azure.Storage.Queues.Models.QueueMessage" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReceiveMessagesAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.QueueMessage[]&gt;&gt; ReceiveMessagesAsync (System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Queues.Models.QueueMessage[]&gt;&gt; ReceiveMessagesAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueClient.ReceiveMessagesAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member ReceiveMessagesAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.QueueMessage[]&gt;&gt;&#xA;override this.ReceiveMessagesAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.QueueMessage[]&gt;&gt;" Usage="queueClient.ReceiveMessagesAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Queues</AssemblyName>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.QueueMessage[]&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">
+            Optional <see cref="T:System.Threading.CancellationToken" /></param>
+        <summary>
+            Retrieves one or more messages from the front of the queue.
+            For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/get-messages" />.
+            </summary>
+        <returns>
+          <see cref="T:Azure.Response`1" /> where T is an array of <see cref="T:Azure.Storage.Queues.Models.QueueMessage" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReceiveMessagesAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.QueueMessage[]&gt;&gt; ReceiveMessagesAsync (Nullable&lt;int&gt; maxMessages = null, Nullable&lt;TimeSpan&gt; visibilityTimeout = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Queues.Models.QueueMessage[]&gt;&gt; ReceiveMessagesAsync(valuetype System.Nullable`1&lt;int32&gt; maxMessages, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; visibilityTimeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueClient.ReceiveMessagesAsync(System.Nullable{System.Int32},System.Nullable{System.TimeSpan},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member ReceiveMessagesAsync : Nullable&lt;int&gt; * Nullable&lt;TimeSpan&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.QueueMessage[]&gt;&gt;&#xA;override this.ReceiveMessagesAsync : Nullable&lt;int&gt; * Nullable&lt;TimeSpan&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.QueueMessage[]&gt;&gt;" Usage="queueClient.ReceiveMessagesAsync (maxMessages, visibilityTimeout, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Queues</AssemblyName>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.QueueMessage[]&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="maxMessages" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="visibilityTimeout" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="maxMessages">
+            Optional. A nonzero integer value that specifies the number of messages to retrieve from the queue, up to a maximum of 32.
+            If fewer are visible, the visible messages are returned. By default, a single message is retrieved from the queue with this operation.
+            </param>
+        <param name="visibilityTimeout">
+            Optional. Specifies the new visibility timeout value, in seconds, relative to server time. The default value is 30 seconds.
+            </param>
+        <param name="cancellationToken">
+            Optional <see cref="T:System.Threading.CancellationToken" /></param>
+        <summary>
+            Retrieves one or more messages from the front of the queue.
+            For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/get-messages" />.
+            </summary>
+        <returns>
+          <see cref="T:Azure.Response`1" /> where T is an array of <see cref="T:Azure.Storage.Queues.Models.QueueMessage" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendMessage">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Queues.Models.SendReceipt&gt; SendMessage (string messageText);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Queues.Models.SendReceipt&gt; SendMessage(string messageText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueClient.SendMessage(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SendMessage (messageText As String) As Response(Of SendReceipt)" />
+      <MemberSignature Language="F#" Value="abstract member SendMessage : string -&gt; Azure.Response&lt;Azure.Storage.Queues.Models.SendReceipt&gt;&#xA;override this.SendMessage : string -&gt; Azure.Response&lt;Azure.Storage.Queues.Models.SendReceipt&gt;" Usage="queueClient.SendMessage messageText" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Queues</AssemblyName>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.Storage.Queues.Models.SendReceipt&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messageText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="messageText">
+            Message text.
+            </param>
+        <summary>
+            Adds a new message to the back of a queue. The visibility timeout specifies how long the message should be invisible
+            to Dequeue and Peek operations. The message content must be a UTF-8 encoded string that is up to 64KB in size.
+            For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/put-message" />.
+            </summary>
+        <returns>
+          <see cref="T:Azure.Response`1" />
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendMessage">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Queues.Models.SendReceipt&gt; SendMessage (string messageText, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Queues.Models.SendReceipt&gt; SendMessage(string messageText, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueClient.SendMessage(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member SendMessage : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Queues.Models.SendReceipt&gt;&#xA;override this.SendMessage : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Queues.Models.SendReceipt&gt;" Usage="queueClient.SendMessage (messageText, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Queues</AssemblyName>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.Storage.Queues.Models.SendReceipt&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messageText" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="messageText">
+            Message text.
+            </param>
+        <param name="cancellationToken">
+            Optional <see cref="T:System.Threading.CancellationToken" />.
+            </param>
+        <summary>
+            Adds a new message to the back of a queue. The visibility timeout specifies how long the message should be invisible
+            to Dequeue and Peek operations. The message content must be a UTF-8 encoded string that is up to 64KB in size.
+            For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/put-message" />.
+            </summary>
+        <returns>
+          <see cref="T:Azure.Response`1" />
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendMessage">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Queues.Models.SendReceipt&gt; SendMessage (string messageText, Nullable&lt;TimeSpan&gt; visibilityTimeout = null, Nullable&lt;TimeSpan&gt; timeToLive = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Queues.Models.SendReceipt&gt; SendMessage(string messageText, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; visibilityTimeout, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; timeToLive, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueClient.SendMessage(System.String,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member SendMessage : string * Nullable&lt;TimeSpan&gt; * Nullable&lt;TimeSpan&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Queues.Models.SendReceipt&gt;&#xA;override this.SendMessage : string * Nullable&lt;TimeSpan&gt; * Nullable&lt;TimeSpan&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Queues.Models.SendReceipt&gt;" Usage="queueClient.SendMessage (messageText, visibilityTimeout, timeToLive, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Queues</AssemblyName>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.Storage.Queues.Models.SendReceipt&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messageText" Type="System.String" />
+        <Parameter Name="visibilityTimeout" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="timeToLive" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="messageText">
+            Message text.
+            </param>
+        <param name="visibilityTimeout">
+            Visibility timeout.  Optional with a default value of 0.  Cannot be larger than 7 days.
+            </param>
+        <param name="timeToLive">
+            Optional. Specifies the time-to-live interval for the message
+            </param>
+        <param name="cancellationToken">
+            Optional <see cref="T:System.Threading.CancellationToken" />.
+            </param>
+        <summary>
+            Adds a new message to the back of a queue. The visibility timeout specifies how long the message should be invisible
+            to Dequeue and Peek operations. The message content must be a UTF-8 encoded string that is up to 64KB in size.
+            For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/put-message" />.
+            </summary>
+        <returns>
+          <see cref="T:Azure.Response`1" />
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendMessageAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.SendReceipt&gt;&gt; SendMessageAsync (string messageText);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Queues.Models.SendReceipt&gt;&gt; SendMessageAsync(string messageText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueClient.SendMessageAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SendMessageAsync (messageText As String) As Task(Of Response(Of SendReceipt))" />
+      <MemberSignature Language="F#" Value="abstract member SendMessageAsync : string -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.SendReceipt&gt;&gt;&#xA;override this.SendMessageAsync : string -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.SendReceipt&gt;&gt;" Usage="queueClient.SendMessageAsync messageText" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Queues</AssemblyName>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.SendReceipt&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messageText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="messageText">
+            Message text.
+            </param>
+        <summary>
+            Adds a new message to the back of a queue. The visibility timeout specifies how long the message should be invisible
+            to Dequeue and Peek operations. The message content must be a UTF-8 encoded string that is up to 64KB in size.
+            For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/put-message" />.
+            </summary>
+        <returns>
+          <see cref="T:Azure.Response`1" />
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendMessageAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.SendReceipt&gt;&gt; SendMessageAsync (string messageText, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Queues.Models.SendReceipt&gt;&gt; SendMessageAsync(string messageText, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueClient.SendMessageAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member SendMessageAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.SendReceipt&gt;&gt;&#xA;override this.SendMessageAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.SendReceipt&gt;&gt;" Usage="queueClient.SendMessageAsync (messageText, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Queues</AssemblyName>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.SendReceipt&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messageText" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="messageText">
+            Message text.
+            </param>
+        <param name="cancellationToken">
+            Optional <see cref="T:System.Threading.CancellationToken" />.
+            </param>
+        <summary>
+            Adds a new message to the back of a queue. The visibility timeout specifies how long the message should be invisible
+            to Dequeue and Peek operations. The message content must be a UTF-8 encoded string that is up to 64KB in size.
+            For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/put-message" />.
+            </summary>
+        <returns>
+          <see cref="T:Azure.Response`1" />
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendMessageAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.SendReceipt&gt;&gt; SendMessageAsync (string messageText, Nullable&lt;TimeSpan&gt; visibilityTimeout = null, Nullable&lt;TimeSpan&gt; timeToLive = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Queues.Models.SendReceipt&gt;&gt; SendMessageAsync(string messageText, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; visibilityTimeout, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; timeToLive, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueClient.SendMessageAsync(System.String,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member SendMessageAsync : string * Nullable&lt;TimeSpan&gt; * Nullable&lt;TimeSpan&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.SendReceipt&gt;&gt;&#xA;override this.SendMessageAsync : string * Nullable&lt;TimeSpan&gt; * Nullable&lt;TimeSpan&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.SendReceipt&gt;&gt;" Usage="queueClient.SendMessageAsync (messageText, visibilityTimeout, timeToLive, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Queues</AssemblyName>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.SendReceipt&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messageText" Type="System.String" />
+        <Parameter Name="visibilityTimeout" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="timeToLive" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="messageText">
+            Message text.
+            </param>
+        <param name="visibilityTimeout">
+            Visibility timeout.  Optional with a default value of 0.  Cannot be larger than 7 days.
+            </param>
+        <param name="timeToLive">
+            Optional. Specifies the time-to-live interval for the message
+            </param>
+        <param name="cancellationToken">
+            Optional <see cref="T:System.Threading.CancellationToken" />.
+            </param>
+        <summary>
+            Adds a new message to the back of a queue. The visibility timeout specifies how long the message should be invisible
+            to Dequeue and Peek operations. The message content must be a UTF-8 encoded string that is up to 64KB in size.
+            For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/put-message" />.
+            </summary>
+        <returns>
+          <see cref="T:Azure.Response`1" />
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SetAccessPolicy">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response SetAccessPolicy (System.Collections.Generic.IEnumerable&lt;Azure.Storage.Queues.Models.SignedIdentifier&gt; permissions, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response SetAccessPolicy(class System.Collections.Generic.IEnumerable`1&lt;class Azure.Storage.Queues.Models.SignedIdentifier&gt; permissions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueClient.SetAccessPolicy(System.Collections.Generic.IEnumerable{Azure.Storage.Queues.Models.SignedIdentifier},System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="abstract member SetAccessPolicy : seq&lt;Azure.Storage.Queues.Models.SignedIdentifier&gt; * System.Threading.CancellationToken -&gt; Azure.Response&#xA;override this.SetAccessPolicy : seq&lt;Azure.Storage.Queues.Models.SignedIdentifier&gt; * System.Threading.CancellationToken -&gt; Azure.Response" Usage="queueClient.SetAccessPolicy (permissions, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response SetAccessPolicy (System.Collections.Generic.IEnumerable&lt;Azure.Storage.Queues.Models.QueueSignedIdentifier&gt; permissions, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response SetAccessPolicy(class System.Collections.Generic.IEnumerable`1&lt;class Azure.Storage.Queues.Models.QueueSignedIdentifier&gt; permissions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueClient.SetAccessPolicy(System.Collections.Generic.IEnumerable{Azure.Storage.Queues.Models.QueueSignedIdentifier},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member SetAccessPolicy : seq&lt;Azure.Storage.Queues.Models.QueueSignedIdentifier&gt; * System.Threading.CancellationToken -&gt; Azure.Response&#xA;override this.SetAccessPolicy : seq&lt;Azure.Storage.Queues.Models.QueueSignedIdentifier&gt; * System.Threading.CancellationToken -&gt; Azure.Response" Usage="queueClient.SetAccessPolicy (permissions, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Queues</AssemblyName>
@@ -758,44 +1189,55 @@
         <ReturnType>Azure.Response</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="permissions" Type="System.Collections.Generic.IEnumerable&lt;Azure.Storage.Queues.Models.SignedIdentifier&gt;" />
+        <Parameter Name="permissions" Type="System.Collections.Generic.IEnumerable&lt;Azure.Storage.Queues.Models.QueueSignedIdentifier&gt;" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="permissions">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="permissions">
+            IEnumerable of <see cref="T:Azure.Storage.Queues.Models.QueueSignedIdentifier" /></param>
+        <param name="cancellationToken">
+          <see cref="T:System.Threading.CancellationToken" />
+        </param>
+        <summary>
+            SetAccessPolicyAsync sets stored access policies for the queue that may be used with Shared Access Signatures.
+            For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/set-queue-acl" />.
+            </summary>
+        <returns>
+          <see cref="T:Azure.Response" />
+        </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetAccessPolicyAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; SetAccessPolicyAsync (System.Collections.Generic.IEnumerable&lt;Azure.Storage.Queues.Models.SignedIdentifier&gt; permissions, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; SetAccessPolicyAsync(class System.Collections.Generic.IEnumerable`1&lt;class Azure.Storage.Queues.Models.SignedIdentifier&gt; permissions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueClient.SetAccessPolicyAsync(System.Collections.Generic.IEnumerable{Azure.Storage.Queues.Models.SignedIdentifier},System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="abstract member SetAccessPolicyAsync : seq&lt;Azure.Storage.Queues.Models.SignedIdentifier&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.SetAccessPolicyAsync : seq&lt;Azure.Storage.Queues.Models.SignedIdentifier&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="queueClient.SetAccessPolicyAsync (permissions, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; SetAccessPolicyAsync (System.Collections.Generic.IEnumerable&lt;Azure.Storage.Queues.Models.QueueSignedIdentifier&gt; permissions, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; SetAccessPolicyAsync(class System.Collections.Generic.IEnumerable`1&lt;class Azure.Storage.Queues.Models.QueueSignedIdentifier&gt; permissions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueClient.SetAccessPolicyAsync(System.Collections.Generic.IEnumerable{Azure.Storage.Queues.Models.QueueSignedIdentifier},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member SetAccessPolicyAsync : seq&lt;Azure.Storage.Queues.Models.QueueSignedIdentifier&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.SetAccessPolicyAsync : seq&lt;Azure.Storage.Queues.Models.QueueSignedIdentifier&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="queueClient.SetAccessPolicyAsync (permissions, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Queues</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="permissions" Type="System.Collections.Generic.IEnumerable&lt;Azure.Storage.Queues.Models.SignedIdentifier&gt;" />
+        <Parameter Name="permissions" Type="System.Collections.Generic.IEnumerable&lt;Azure.Storage.Queues.Models.QueueSignedIdentifier&gt;" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="permissions">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="permissions">
+            IEnumerable of <see cref="T:Azure.Storage.Queues.Models.QueueSignedIdentifier" /></param>
+        <param name="cancellationToken">
+          <see cref="T:System.Threading.CancellationToken" />
+        </param>
+        <summary>
+            SetAccessPolicyAsync sets stored access policies for the queue that may be used with Shared Access Signatures.
+            For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/set-queue-acl" />.
+            </summary>
+        <returns>
+          <see cref="T:Azure.Response" />
+        </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -817,10 +1259,19 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="metadata">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="metadata">
+          <see cref="T:System.Collections.Generic.IDictionary`2" />
+        </param>
+        <param name="cancellationToken">
+          <see cref="T:System.Threading.CancellationToken" />
+        </param>
+        <summary>
+            Sets user-defined metadata on the specified queue. Metadata is associated with the queue as name-value pairs.
+            For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/set-queue-metadata" />.
+            </summary>
+        <returns>
+          <see cref="T:Azure.Response" />
+        </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -834,11 +1285,6 @@
         <AssemblyName>Azure.Storage.Queues</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
       </ReturnValue>
@@ -847,16 +1293,25 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="metadata">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="metadata">
+          <see cref="T:System.Collections.Generic.IDictionary`2" />
+        </param>
+        <param name="cancellationToken">
+          <see cref="T:System.Threading.CancellationToken" />
+        </param>
+        <summary>
+            Sets user-defined metadata on the specified queue. Metadata is associated with the queue as name-value pairs.
+            For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/set-queue-metadata" />.
+            </summary>
+        <returns>
+          <see cref="T:Azure.Response" />
+        </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateMessage">
       <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Queues.Models.UpdatedMessage&gt; UpdateMessage (string messageText, string messageId, string popReceipt, TimeSpan visibilityTimeout = null, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Azure.Response`1&lt;class Azure.Storage.Queues.Models.UpdatedMessage&gt; UpdateMessage(string messageText, string messageId, string popReceipt, valuetype System.TimeSpan visibilityTimeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Queues.Models.UpdatedMessage&gt; UpdateMessage(string messageText, string messageId, string popReceipt, valuetype System.TimeSpan visibilityTimeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueClient.UpdateMessage(System.String,System.String,System.String,System.TimeSpan,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member UpdateMessage : string * string * string * TimeSpan * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Queues.Models.UpdatedMessage&gt;&#xA;override this.UpdateMessage : string * string * string * TimeSpan * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Queues.Models.UpdatedMessage&gt;" Usage="queueClient.UpdateMessage (messageText, messageId, popReceipt, visibilityTimeout, cancellationToken)" />
       <MemberType>Method</MemberType>
@@ -875,19 +1330,34 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="messageText">To be added.</param>
-        <param name="messageId">To be added.</param>
-        <param name="popReceipt">To be added.</param>
-        <param name="visibilityTimeout">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="messageText">
+            Updated message text.
+            </param>
+        <param name="messageId">ID of the message to update.</param>
+        <param name="popReceipt">
+            Required. Specifies the valid pop receipt value returned from an earlier call to the Get Messages or Update Message operation.
+            </param>
+        <param name="visibilityTimeout">
+            Required. Specifies the new visibility timeout value, in seconds, relative to server time. The new value must be larger than
+            or equal to 0, and cannot be larger than 7 days. The visibility timeout of a message cannot be set to a value later than the
+            expiry time. A message can be updated until it has been deleted or has expired.
+            </param>
+        <param name="cancellationToken">
+            Optional <see cref="T:System.Threading.CancellationToken" />.
+            </param>
+        <summary>
+            Changes a message's visibility timeout and contents. The message content must be a UTF-8 encoded string that is up to 64KB in size.
+            For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/update-message" />.
+            </summary>
+        <returns>
+          <see cref="T:Azure.Response`1" />.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateMessageAsync">
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.UpdatedMessage&gt;&gt; UpdateMessageAsync (string messageText, string messageId, string popReceipt, TimeSpan visibilityTimeout = null, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;valuetype Azure.Response`1&lt;class Azure.Storage.Queues.Models.UpdatedMessage&gt;&gt; UpdateMessageAsync(string messageText, string messageId, string popReceipt, valuetype System.TimeSpan visibilityTimeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Queues.Models.UpdatedMessage&gt;&gt; UpdateMessageAsync(string messageText, string messageId, string popReceipt, valuetype System.TimeSpan visibilityTimeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueClient.UpdateMessageAsync(System.String,System.String,System.String,System.TimeSpan,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member UpdateMessageAsync : string * string * string * TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.UpdatedMessage&gt;&gt;&#xA;override this.UpdateMessageAsync : string * string * string * TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.UpdatedMessage&gt;&gt;" Usage="queueClient.UpdateMessageAsync (messageText, messageId, popReceipt, visibilityTimeout, cancellationToken)" />
       <MemberType>Method</MemberType>
@@ -895,11 +1365,6 @@
         <AssemblyName>Azure.Storage.Queues</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.UpdatedMessage&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -911,13 +1376,28 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="messageText">To be added.</param>
-        <param name="messageId">To be added.</param>
-        <param name="popReceipt">To be added.</param>
-        <param name="visibilityTimeout">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="messageText">
+            Updated message text.
+            </param>
+        <param name="messageId">ID of the message to update.</param>
+        <param name="popReceipt">
+            Required. Specifies the valid pop receipt value returned from an earlier call to the Get Messages or Update Message operation.
+            </param>
+        <param name="visibilityTimeout">
+            Required. Specifies the new visibility timeout value, in seconds, relative to server time. The new value must be larger than
+            or equal to 0, and cannot be larger than 7 days. The visibility timeout of a message cannot be set to a value later than the
+            expiry time. A message can be updated until it has been deleted or has expired.
+            </param>
+        <param name="cancellationToken">
+            Optional <see cref="T:System.Threading.CancellationToken" />.
+            </param>
+        <summary>
+            Changes a message's visibility timeout and contents. The message content must be a UTF-8 encoded string that is up to 64KB in size.
+            For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/update-message" />.
+            </summary>
+        <returns>
+          <see cref="T:Azure.Response`1" />.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -936,7 +1416,9 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the Uri endpoint used by the object.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

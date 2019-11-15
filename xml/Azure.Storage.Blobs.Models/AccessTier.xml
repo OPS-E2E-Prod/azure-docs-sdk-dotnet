@@ -1,4 +1,4 @@
-﻿<Type Name="AccessTier" FullName="Azure.Storage.Blobs.Models.AccessTier">
+<Type Name="AccessTier" FullName="Azure.Storage.Blobs.Models.AccessTier">
   <TypeSignature Language="C#" Value="public struct AccessTier : IEquatable&lt;Azure.Storage.Blobs.Models.AccessTier&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit AccessTier extends System.ValueType implements class System.IEquatable`1&lt;valuetype Azure.Storage.Blobs.Models.AccessTier&gt;" />
   <TypeSignature Language="DocId" Value="T:Azure.Storage.Blobs.Models.AccessTier" />
@@ -17,17 +17,41 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Indicates the tier to be set on the blob.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AccessTier (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.Models.AccessTier.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
+      <MemberSignature Language="F#" Value="new Azure.Storage.Blobs.Models.AccessTier : string -&gt; Azure.Storage.Blobs.Models.AccessTier" Usage="new Azure.Storage.Blobs.Models.AccessTier value" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Blobs</AssemblyName>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">The string value of the instance.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Azure.Storage.Blobs.Models.AccessTier" /> structure.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Archive">
-      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.Models.AccessTier Archive;" />
-      <MemberSignature Language="ILAsm" Value=".field public static valuetype Azure.Storage.Blobs.Models.AccessTier Archive" />
-      <MemberSignature Language="DocId" Value="F:Azure.Storage.Blobs.Models.AccessTier.Archive" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Archive As AccessTier " />
-      <MemberSignature Language="F#" Value=" staticval mutable Archive : Azure.Storage.Blobs.Models.AccessTier" Usage="Azure.Storage.Blobs.Models.AccessTier.Archive" />
-      <MemberType>Field</MemberType>
+      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.Models.AccessTier Archive { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.Storage.Blobs.Models.AccessTier Archive" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Blobs.Models.AccessTier.Archive" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Archive As AccessTier" />
+      <MemberSignature Language="F#" Value="member this.Archive : Azure.Storage.Blobs.Models.AccessTier" Usage="Azure.Storage.Blobs.Models.AccessTier.Archive" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
@@ -36,17 +60,20 @@
         <ReturnType>Azure.Storage.Blobs.Models.AccessTier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Archive
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Cool">
-      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.Models.AccessTier Cool;" />
-      <MemberSignature Language="ILAsm" Value=".field public static valuetype Azure.Storage.Blobs.Models.AccessTier Cool" />
-      <MemberSignature Language="DocId" Value="F:Azure.Storage.Blobs.Models.AccessTier.Cool" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Cool As AccessTier " />
-      <MemberSignature Language="F#" Value=" staticval mutable Cool : Azure.Storage.Blobs.Models.AccessTier" Usage="Azure.Storage.Blobs.Models.AccessTier.Cool" />
-      <MemberType>Field</MemberType>
+      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.Models.AccessTier Cool { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.Storage.Blobs.Models.AccessTier Cool" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Blobs.Models.AccessTier.Cool" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Cool As AccessTier" />
+      <MemberSignature Language="F#" Value="member this.Cool : Azure.Storage.Blobs.Models.AccessTier" Usage="Azure.Storage.Blobs.Models.AccessTier.Cool" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
@@ -55,7 +82,10 @@
         <ReturnType>Azure.Storage.Blobs.Models.AccessTier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Cool
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,33 +110,42 @@
         <Parameter Name="other" Type="Azure.Storage.Blobs.Models.AccessTier" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The instance to compare to.</param>
+        <summary>
+            Check if two <see cref="T:Azure.Storage.Blobs.Models.AccessTier" /> instances are equal.
+            </summary>
+        <returns>True if they're equal, false otherwise.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
-      <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.Models.AccessTier.Equals(System.Object)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
-      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="accessTier.Equals o" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="accessTier.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="o" Type="System.Object" />
+        <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The instance to compare to.</param>
+        <summary>
+            Check if two <see cref="T:Azure.Storage.Blobs.Models.AccessTier" /> instances are equal.
+            </summary>
+        <returns>True if they're equal, false otherwise.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,23 +160,30 @@
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Get a hash code for the <see cref="T:Azure.Storage.Blobs.Models.AccessTier" />.
+            </summary>
+        <returns>Hash code for the AccessTier.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Hot">
-      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.Models.AccessTier Hot;" />
-      <MemberSignature Language="ILAsm" Value=".field public static valuetype Azure.Storage.Blobs.Models.AccessTier Hot" />
-      <MemberSignature Language="DocId" Value="F:Azure.Storage.Blobs.Models.AccessTier.Hot" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Hot As AccessTier " />
-      <MemberSignature Language="F#" Value=" staticval mutable Hot : Azure.Storage.Blobs.Models.AccessTier" Usage="Azure.Storage.Blobs.Models.AccessTier.Hot" />
-      <MemberType>Field</MemberType>
+      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.Models.AccessTier Hot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.Storage.Blobs.Models.AccessTier Hot" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Blobs.Models.AccessTier.Hot" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Hot As AccessTier" />
+      <MemberSignature Language="F#" Value="member this.Hot : Azure.Storage.Blobs.Models.AccessTier" Usage="Azure.Storage.Blobs.Models.AccessTier.Hot" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
@@ -146,16 +192,19 @@
         <ReturnType>Azure.Storage.Blobs.Models.AccessTier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Hot
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool operator == (Azure.Storage.Blobs.Models.AccessTier a, Azure.Storage.Blobs.Models.AccessTier b);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype Azure.Storage.Blobs.Models.AccessTier a, valuetype Azure.Storage.Blobs.Models.AccessTier b) cil managed" />
+      <MemberSignature Language="C#" Value="public static bool operator == (Azure.Storage.Blobs.Models.AccessTier left, Azure.Storage.Blobs.Models.AccessTier right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype Azure.Storage.Blobs.Models.AccessTier left, valuetype Azure.Storage.Blobs.Models.AccessTier right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.Models.AccessTier.op_Equality(Azure.Storage.Blobs.Models.AccessTier,Azure.Storage.Blobs.Models.AccessTier)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (a As AccessTier, b As AccessTier) As Boolean" />
-      <MemberSignature Language="F#" Value="static member ( = ) : Azure.Storage.Blobs.Models.AccessTier * Azure.Storage.Blobs.Models.AccessTier -&gt; bool" Usage="a = b" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As AccessTier, right As AccessTier) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : Azure.Storage.Blobs.Models.AccessTier * Azure.Storage.Blobs.Models.AccessTier -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
@@ -165,38 +214,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="a" Type="Azure.Storage.Blobs.Models.AccessTier" />
-        <Parameter Name="b" Type="Azure.Storage.Blobs.Models.AccessTier" />
+        <Parameter Name="left" Type="Azure.Storage.Blobs.Models.AccessTier" />
+        <Parameter Name="right" Type="Azure.Storage.Blobs.Models.AccessTier" />
       </Parameters>
       <Docs>
-        <param name="a">To be added.</param>
-        <param name="b">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static implicit operator string (Azure.Storage.Blobs.Models.AccessTier o);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname string op_Implicit(valuetype Azure.Storage.Blobs.Models.AccessTier o) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.Models.AccessTier.op_Implicit(Azure.Storage.Blobs.Models.AccessTier)~System.String" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (o As AccessTier) As String" />
-      <MemberSignature Language="F#" Value="static member op_Implicit : Azure.Storage.Blobs.Models.AccessTier -&gt; string" Usage="Azure.Storage.Blobs.Models.AccessTier.op_Implicit o" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Storage.Blobs</AssemblyName>
-        <AssemblyVersion>12.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="o" Type="Azure.Storage.Blobs.Models.AccessTier" />
-      </Parameters>
-      <Docs>
-        <param name="o">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first <see cref="T:Azure.Storage.Blobs.Models.AccessTier" /> to compare.</param>
+        <param name="right">The second <see cref="T:Azure.Storage.Blobs.Models.AccessTier" /> to compare.</param>
+        <summary>
+            Determines if two <see cref="T:Azure.Storage.Blobs.Models.AccessTier" /> values are the same.
+            </summary>
+        <returns>True if <paramref name="left" /> and <paramref name="right" /> are the same; otherwise, false.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,18 +245,20 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The string value to convert.</param>
+        <summary>
+            Converts a string to a <see cref="T:Azure.Storage.Blobs.Models.AccessTier" />.
+            </summary>
+        <returns>The AccessTier value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool operator != (Azure.Storage.Blobs.Models.AccessTier a, Azure.Storage.Blobs.Models.AccessTier b);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype Azure.Storage.Blobs.Models.AccessTier a, valuetype Azure.Storage.Blobs.Models.AccessTier b) cil managed" />
+      <MemberSignature Language="C#" Value="public static bool operator != (Azure.Storage.Blobs.Models.AccessTier left, Azure.Storage.Blobs.Models.AccessTier right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype Azure.Storage.Blobs.Models.AccessTier left, valuetype Azure.Storage.Blobs.Models.AccessTier right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.Models.AccessTier.op_Inequality(Azure.Storage.Blobs.Models.AccessTier,Azure.Storage.Blobs.Models.AccessTier)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (a As AccessTier, b As AccessTier) As Boolean" />
-      <MemberSignature Language="F#" Value="static member op_Inequality : Azure.Storage.Blobs.Models.AccessTier * Azure.Storage.Blobs.Models.AccessTier -&gt; bool" Usage="Azure.Storage.Blobs.Models.AccessTier.op_Inequality (a, b)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As AccessTier, right As AccessTier) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : Azure.Storage.Blobs.Models.AccessTier * Azure.Storage.Blobs.Models.AccessTier -&gt; bool" Usage="Azure.Storage.Blobs.Models.AccessTier.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
@@ -239,24 +268,26 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="a" Type="Azure.Storage.Blobs.Models.AccessTier" />
-        <Parameter Name="b" Type="Azure.Storage.Blobs.Models.AccessTier" />
+        <Parameter Name="left" Type="Azure.Storage.Blobs.Models.AccessTier" />
+        <Parameter Name="right" Type="Azure.Storage.Blobs.Models.AccessTier" />
       </Parameters>
       <Docs>
-        <param name="a">To be added.</param>
-        <param name="b">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first <see cref="T:Azure.Storage.Blobs.Models.AccessTier" /> to compare.</param>
+        <param name="right">The second <see cref="T:Azure.Storage.Blobs.Models.AccessTier" /> to compare.</param>
+        <summary>
+            Determines if two <see cref="T:Azure.Storage.Blobs.Models.AccessTier" /> values are different.
+            </summary>
+        <returns>True if <paramref name="left" /> and <paramref name="right" /> are different; otherwise, false.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="P10">
-      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.Models.AccessTier P10;" />
-      <MemberSignature Language="ILAsm" Value=".field public static valuetype Azure.Storage.Blobs.Models.AccessTier P10" />
-      <MemberSignature Language="DocId" Value="F:Azure.Storage.Blobs.Models.AccessTier.P10" />
-      <MemberSignature Language="VB.NET" Value="Public Shared P10 As AccessTier " />
-      <MemberSignature Language="F#" Value=" staticval mutable P10 : Azure.Storage.Blobs.Models.AccessTier" Usage="Azure.Storage.Blobs.Models.AccessTier.P10" />
-      <MemberType>Field</MemberType>
+      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.Models.AccessTier P10 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.Storage.Blobs.Models.AccessTier P10" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Blobs.Models.AccessTier.P10" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property P10 As AccessTier" />
+      <MemberSignature Language="F#" Value="member this.P10 : Azure.Storage.Blobs.Models.AccessTier" Usage="Azure.Storage.Blobs.Models.AccessTier.P10" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
@@ -265,17 +296,42 @@
         <ReturnType>Azure.Storage.Blobs.Models.AccessTier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            P10
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="P15">
+      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.Models.AccessTier P15 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.Storage.Blobs.Models.AccessTier P15" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Blobs.Models.AccessTier.P15" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property P15 As AccessTier" />
+      <MemberSignature Language="F#" Value="member this.P15 : Azure.Storage.Blobs.Models.AccessTier" Usage="Azure.Storage.Blobs.Models.AccessTier.P15" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Blobs</AssemblyName>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Storage.Blobs.Models.AccessTier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            P15
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="P20">
-      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.Models.AccessTier P20;" />
-      <MemberSignature Language="ILAsm" Value=".field public static valuetype Azure.Storage.Blobs.Models.AccessTier P20" />
-      <MemberSignature Language="DocId" Value="F:Azure.Storage.Blobs.Models.AccessTier.P20" />
-      <MemberSignature Language="VB.NET" Value="Public Shared P20 As AccessTier " />
-      <MemberSignature Language="F#" Value=" staticval mutable P20 : Azure.Storage.Blobs.Models.AccessTier" Usage="Azure.Storage.Blobs.Models.AccessTier.P20" />
-      <MemberType>Field</MemberType>
+      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.Models.AccessTier P20 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.Storage.Blobs.Models.AccessTier P20" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Blobs.Models.AccessTier.P20" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property P20 As AccessTier" />
+      <MemberSignature Language="F#" Value="member this.P20 : Azure.Storage.Blobs.Models.AccessTier" Usage="Azure.Storage.Blobs.Models.AccessTier.P20" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
@@ -284,17 +340,20 @@
         <ReturnType>Azure.Storage.Blobs.Models.AccessTier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            P20
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="P30">
-      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.Models.AccessTier P30;" />
-      <MemberSignature Language="ILAsm" Value=".field public static valuetype Azure.Storage.Blobs.Models.AccessTier P30" />
-      <MemberSignature Language="DocId" Value="F:Azure.Storage.Blobs.Models.AccessTier.P30" />
-      <MemberSignature Language="VB.NET" Value="Public Shared P30 As AccessTier " />
-      <MemberSignature Language="F#" Value=" staticval mutable P30 : Azure.Storage.Blobs.Models.AccessTier" Usage="Azure.Storage.Blobs.Models.AccessTier.P30" />
-      <MemberType>Field</MemberType>
+      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.Models.AccessTier P30 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.Storage.Blobs.Models.AccessTier P30" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Blobs.Models.AccessTier.P30" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property P30 As AccessTier" />
+      <MemberSignature Language="F#" Value="member this.P30 : Azure.Storage.Blobs.Models.AccessTier" Usage="Azure.Storage.Blobs.Models.AccessTier.P30" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
@@ -303,17 +362,20 @@
         <ReturnType>Azure.Storage.Blobs.Models.AccessTier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            P30
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="P4">
-      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.Models.AccessTier P4;" />
-      <MemberSignature Language="ILAsm" Value=".field public static valuetype Azure.Storage.Blobs.Models.AccessTier P4" />
-      <MemberSignature Language="DocId" Value="F:Azure.Storage.Blobs.Models.AccessTier.P4" />
-      <MemberSignature Language="VB.NET" Value="Public Shared P4 As AccessTier " />
-      <MemberSignature Language="F#" Value=" staticval mutable P4 : Azure.Storage.Blobs.Models.AccessTier" Usage="Azure.Storage.Blobs.Models.AccessTier.P4" />
-      <MemberType>Field</MemberType>
+      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.Models.AccessTier P4 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.Storage.Blobs.Models.AccessTier P4" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Blobs.Models.AccessTier.P4" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property P4 As AccessTier" />
+      <MemberSignature Language="F#" Value="member this.P4 : Azure.Storage.Blobs.Models.AccessTier" Usage="Azure.Storage.Blobs.Models.AccessTier.P4" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
@@ -322,17 +384,20 @@
         <ReturnType>Azure.Storage.Blobs.Models.AccessTier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            P4
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="P40">
-      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.Models.AccessTier P40;" />
-      <MemberSignature Language="ILAsm" Value=".field public static valuetype Azure.Storage.Blobs.Models.AccessTier P40" />
-      <MemberSignature Language="DocId" Value="F:Azure.Storage.Blobs.Models.AccessTier.P40" />
-      <MemberSignature Language="VB.NET" Value="Public Shared P40 As AccessTier " />
-      <MemberSignature Language="F#" Value=" staticval mutable P40 : Azure.Storage.Blobs.Models.AccessTier" Usage="Azure.Storage.Blobs.Models.AccessTier.P40" />
-      <MemberType>Field</MemberType>
+      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.Models.AccessTier P40 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.Storage.Blobs.Models.AccessTier P40" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Blobs.Models.AccessTier.P40" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property P40 As AccessTier" />
+      <MemberSignature Language="F#" Value="member this.P40 : Azure.Storage.Blobs.Models.AccessTier" Usage="Azure.Storage.Blobs.Models.AccessTier.P40" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
@@ -341,17 +406,20 @@
         <ReturnType>Azure.Storage.Blobs.Models.AccessTier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            P40
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="P50">
-      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.Models.AccessTier P50;" />
-      <MemberSignature Language="ILAsm" Value=".field public static valuetype Azure.Storage.Blobs.Models.AccessTier P50" />
-      <MemberSignature Language="DocId" Value="F:Azure.Storage.Blobs.Models.AccessTier.P50" />
-      <MemberSignature Language="VB.NET" Value="Public Shared P50 As AccessTier " />
-      <MemberSignature Language="F#" Value=" staticval mutable P50 : Azure.Storage.Blobs.Models.AccessTier" Usage="Azure.Storage.Blobs.Models.AccessTier.P50" />
-      <MemberType>Field</MemberType>
+      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.Models.AccessTier P50 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.Storage.Blobs.Models.AccessTier P50" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Blobs.Models.AccessTier.P50" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property P50 As AccessTier" />
+      <MemberSignature Language="F#" Value="member this.P50 : Azure.Storage.Blobs.Models.AccessTier" Usage="Azure.Storage.Blobs.Models.AccessTier.P50" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
@@ -360,17 +428,20 @@
         <ReturnType>Azure.Storage.Blobs.Models.AccessTier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            P50
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="P6">
-      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.Models.AccessTier P6;" />
-      <MemberSignature Language="ILAsm" Value=".field public static valuetype Azure.Storage.Blobs.Models.AccessTier P6" />
-      <MemberSignature Language="DocId" Value="F:Azure.Storage.Blobs.Models.AccessTier.P6" />
-      <MemberSignature Language="VB.NET" Value="Public Shared P6 As AccessTier " />
-      <MemberSignature Language="F#" Value=" staticval mutable P6 : Azure.Storage.Blobs.Models.AccessTier" Usage="Azure.Storage.Blobs.Models.AccessTier.P6" />
-      <MemberType>Field</MemberType>
+      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.Models.AccessTier P6 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.Storage.Blobs.Models.AccessTier P6" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Blobs.Models.AccessTier.P6" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property P6 As AccessTier" />
+      <MemberSignature Language="F#" Value="member this.P6 : Azure.Storage.Blobs.Models.AccessTier" Usage="Azure.Storage.Blobs.Models.AccessTier.P6" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
@@ -379,7 +450,76 @@
         <ReturnType>Azure.Storage.Blobs.Models.AccessTier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            P6
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="P60">
+      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.Models.AccessTier P60 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.Storage.Blobs.Models.AccessTier P60" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Blobs.Models.AccessTier.P60" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property P60 As AccessTier" />
+      <MemberSignature Language="F#" Value="member this.P60 : Azure.Storage.Blobs.Models.AccessTier" Usage="Azure.Storage.Blobs.Models.AccessTier.P60" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Blobs</AssemblyName>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Storage.Blobs.Models.AccessTier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            P60
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="P70">
+      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.Models.AccessTier P70 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.Storage.Blobs.Models.AccessTier P70" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Blobs.Models.AccessTier.P70" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property P70 As AccessTier" />
+      <MemberSignature Language="F#" Value="member this.P70 : Azure.Storage.Blobs.Models.AccessTier" Usage="Azure.Storage.Blobs.Models.AccessTier.P70" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Blobs</AssemblyName>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Storage.Blobs.Models.AccessTier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            P70
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="P80">
+      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.Models.AccessTier P80 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.Storage.Blobs.Models.AccessTier P80" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Blobs.Models.AccessTier.P80" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property P80 As AccessTier" />
+      <MemberSignature Language="F#" Value="member this.P80 : Azure.Storage.Blobs.Models.AccessTier" Usage="Azure.Storage.Blobs.Models.AccessTier.P80" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Blobs</AssemblyName>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Storage.Blobs.Models.AccessTier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            P80
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -399,8 +539,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Convert the <see cref="T:Azure.Storage.Blobs.Models.AccessTier" /> to a string.
+            </summary>
+        <returns>String representation of the AccessTier.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

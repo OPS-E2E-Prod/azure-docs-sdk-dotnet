@@ -1,4 +1,4 @@
-﻿<Type Name="IPAddressOrRange" FullName="Microsoft.Azure.Storage.IPAddressOrRange">
+<Type Name="IPAddressOrRange" FullName="Microsoft.Azure.Storage.IPAddressOrRange">
   <TypeSignature Language="C#" Value="public class IPAddressOrRange" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IPAddressOrRange extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Storage.IPAddressOrRange" />
@@ -6,14 +6,17 @@
   <TypeSignature Language="F#" Value="type IPAddressOrRange = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Storage.Common</AssemblyName>
-    <AssemblyVersion>10.0.3.0</AssemblyVersion>
+    <AssemblyVersion>11.0.1.0</AssemblyVersion>
+    <AssemblyVersion>11.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Specifies either a single IP Address or a single range of IP Addresses (a minimum and a maximum, inclusive.)
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,14 +29,17 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Common</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.0.1.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="address" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="address">The IP Address that the IPAddressOrRange object will represent.</param>
+        <summary>
+            Initializes a new instance of the IPAddressOrRange class from a single IPAddress.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,16 +52,19 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Common</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.0.1.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="minimum" Type="System.String" />
         <Parameter Name="maximum" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="minimum">To be added.</param>
-        <param name="maximum">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="minimum">The minimum IP Address that the IPAddressOrRange object will use as a range boundary, inclusive.</param>
+        <param name="maximum">The maximum IP Address that the IPAddressOrRange object will use as a range boundary, inclusive.</param>
+        <summary>
+            Initializes a new instance of the IPAddressOrRange class from two IPAddress objects, a minimum and a maximum.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,13 +77,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Common</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.0.1.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The IP Address.
+            Returns null if this object represents a range of IP addresses.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,13 +101,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Common</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.0.1.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            True if this object represents a single IP Address, false if it represents a range.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -108,13 +124,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Common</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.0.1.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The maximum IP Address for the range, inclusive.
+            Returns null if this object represents a single IP address.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -128,13 +148,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Common</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.0.1.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The minimum IP Address for the range, inclusive.
+            Returns null if this object represents a single IP address.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -148,15 +172,18 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Common</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.0.1.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Provides a string representation of this IPAddressOrRange object.
+            </summary>
+        <returns>The string representation of this IPAddressOrRange object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

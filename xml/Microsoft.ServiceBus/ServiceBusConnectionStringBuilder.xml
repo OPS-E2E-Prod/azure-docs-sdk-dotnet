@@ -1,4 +1,4 @@
-﻿<Type Name="ServiceBusConnectionStringBuilder" FullName="Microsoft.ServiceBus.ServiceBusConnectionStringBuilder">
+<Type Name="ServiceBusConnectionStringBuilder" FullName="Microsoft.ServiceBus.ServiceBusConnectionStringBuilder">
   <TypeSignature Language="C#" Value="public class ServiceBusConnectionStringBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServiceBusConnectionStringBuilder extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.ServiceBus.ServiceBusConnectionStringBuilder" />
@@ -66,6 +66,50 @@
             <see cref="T:System.TimeSpan" /> format.The 
             <see cref="P:Microsoft.ServiceBus.ServiceBusConnectionStringBuilder.RuntimePort" /> or 
             <see cref="P:Microsoft.ServiceBus.ServiceBusConnectionStringBuilder.ManagementPort" /> values are not in an integer format.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Audience">
+      <MemberSignature Language="C#" Value="public string Audience { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Audience" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.ServiceBus.ServiceBusConnectionStringBuilder.Audience" />
+      <MemberSignature Language="VB.NET" Value="Public Property Audience As String" />
+      <MemberSignature Language="F#" Value="member this.Audience : string with get, set" Usage="Microsoft.ServiceBus.ServiceBusConnectionStringBuilder.Audience" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.ServiceBus</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the audience for Azure Active Directory authentication.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Authentication">
+      <MemberSignature Language="C#" Value="public string Authentication { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Authentication" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.ServiceBus.ServiceBusConnectionStringBuilder.Authentication" />
+      <MemberSignature Language="VB.NET" Value="Public Property Authentication As String" />
+      <MemberSignature Language="F#" Value="member this.Authentication : string with get, set" Usage="Microsoft.ServiceBus.ServiceBusConnectionStringBuilder.Authentication" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.ServiceBus</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Enables Azure Active Directory Managed Identity authentication when set to 'Managed Identity'
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateUsingOAuthCredential">

@@ -1,8 +1,8 @@
-﻿<Type Name="PartitionProperties" FullName="Azure.Messaging.EventHubs.Metadata.PartitionProperties">
-  <TypeSignature Language="C#" Value="public sealed class PartitionProperties" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PartitionProperties extends System.Object" />
+<Type Name="PartitionProperties" FullName="Azure.Messaging.EventHubs.Metadata.PartitionProperties">
+  <TypeSignature Language="C#" Value="public class PartitionProperties" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PartitionProperties extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Azure.Messaging.EventHubs.Metadata.PartitionProperties" />
-  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PartitionProperties" />
+  <TypeSignature Language="VB.NET" Value="Public Class PartitionProperties" />
   <TypeSignature Language="F#" Value="type PartitionProperties = class" />
   <AssemblyInfo>
     <AssemblyName>Azure.Messaging.EventHubs</AssemblyName>
@@ -19,6 +19,40 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected internal PartitionProperties (string name, string partitionId, long beginningSequenceNumber, long lastSequenceNumber, long lastOffset, DateTimeOffset lastEnqueuedTime, bool isEmpty);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(string name, string partitionId, int64 beginningSequenceNumber, int64 lastSequenceNumber, int64 lastOffset, valuetype System.DateTimeOffset lastEnqueuedTime, bool isEmpty) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Messaging.EventHubs.Metadata.PartitionProperties.#ctor(System.String,System.String,System.Int64,System.Int64,System.Int64,System.DateTimeOffset,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (name As String, partitionId As String, beginningSequenceNumber As Long, lastSequenceNumber As Long, lastOffset As Long, lastEnqueuedTime As DateTimeOffset, isEmpty As Boolean)" />
+      <MemberSignature Language="F#" Value="new Azure.Messaging.EventHubs.Metadata.PartitionProperties : string * string * int64 * int64 * int64 * DateTimeOffset * bool -&gt; Azure.Messaging.EventHubs.Metadata.PartitionProperties" Usage="new Azure.Messaging.EventHubs.Metadata.PartitionProperties (name, partitionId, beginningSequenceNumber, lastSequenceNumber, lastOffset, lastEnqueuedTime, isEmpty)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Messaging.EventHubs</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="partitionId" Type="System.String" />
+        <Parameter Name="beginningSequenceNumber" Type="System.Int64" />
+        <Parameter Name="lastSequenceNumber" Type="System.Int64" />
+        <Parameter Name="lastOffset" Type="System.Int64" />
+        <Parameter Name="lastEnqueuedTime" Type="System.DateTimeOffset" />
+        <Parameter Name="isEmpty" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the Event Hub that contains the partitions.</param>
+        <param name="partitionId">The identifier of the partition.</param>
+        <param name="beginningSequenceNumber">The first sequence number available for events in the partition.</param>
+        <param name="lastSequenceNumber">The sequence number observed the last event to be enqueued in the partition.</param>
+        <param name="lastOffset">The offset of the last event to be enqueued in the partition.</param>
+        <param name="lastEnqueuedTime">The date and time, in UTC, that the last event was enqueued in the partition.</param>
+        <param name="isEmpty">Indicates whether or not the partition is currently empty.</param>
+        <summary>
+               Initializes a new instance of the <see cref="T:Azure.Messaging.EventHubs.Metadata.PartitionProperties" /> class.
+             </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="BeginningSequenceNumber">
       <MemberSignature Language="C#" Value="public long BeginningSequenceNumber { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 BeginningSequenceNumber" />
@@ -41,12 +75,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="EventHubPath">
-      <MemberSignature Language="C#" Value="public string EventHubPath { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string EventHubPath" />
-      <MemberSignature Language="DocId" Value="P:Azure.Messaging.EventHubs.Metadata.PartitionProperties.EventHubPath" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventHubPath As String" />
-      <MemberSignature Language="F#" Value="member this.EventHubPath : string" Usage="Azure.Messaging.EventHubs.Metadata.PartitionProperties.EventHubPath" />
+    <Member MemberName="EventHubName">
+      <MemberSignature Language="C#" Value="public string EventHubName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string EventHubName" />
+      <MemberSignature Language="DocId" Value="P:Azure.Messaging.EventHubs.Metadata.PartitionProperties.EventHubName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventHubName As String" />
+      <MemberSignature Language="F#" Value="member this.EventHubName : string" Usage="Azure.Messaging.EventHubs.Metadata.PartitionProperties.EventHubName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.EventHubs</AssemblyName>
@@ -57,8 +91,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-               The path of the Event Hub that contains the partitions, relative to the namespace
-               that contains it.
+               The name of the Event Hub where the partitions reside, specific to the
+               Event Hubs namespace that contains it.
              </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -105,35 +139,30 @@
                Indicates whether or not the partition is currently empty.
              </summary>
         <value>
-          <c>true</c> if the partition is empty; otherwise, <c>false</c>.
-             </value>
+          <c>true</c> if the partition is empty; otherwise, <c>false</c>.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LastEnqueuedOffset">
-      <MemberSignature Language="C#" Value="public string LastEnqueuedOffset { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string LastEnqueuedOffset" />
+      <MemberSignature Language="C#" Value="public long LastEnqueuedOffset { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 LastEnqueuedOffset" />
       <MemberSignature Language="DocId" Value="P:Azure.Messaging.EventHubs.Metadata.PartitionProperties.LastEnqueuedOffset" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastEnqueuedOffset As String" />
-      <MemberSignature Language="F#" Value="member this.LastEnqueuedOffset : string" Usage="Azure.Messaging.EventHubs.Metadata.PartitionProperties.LastEnqueuedOffset" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastEnqueuedOffset As Long" />
+      <MemberSignature Language="F#" Value="member this.LastEnqueuedOffset : int64" Usage="Azure.Messaging.EventHubs.Metadata.PartitionProperties.LastEnqueuedOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.EventHubs</AssemblyName>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-               The offset of the last event to be enqueued in the partition.
+               The offset of the last observed event to be enqueued in the partition.
              </summary>
         <value>To be added.</value>
-        <remarks>
-               The offset is the relative position for event in the context of the stream.  The offset
-               should not be considered a stable value, as the same offset may refer to a different event
-               as events reach the age limit for retention and are no longer visible within the stream.
-             </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LastEnqueuedSequenceNumber">
@@ -152,29 +181,29 @@
       </ReturnValue>
       <Docs>
         <summary>
-               The sequence number observed the last event to be enqueued in the partition.
+               The sequence number of the last observed event to be enqueued in the partition.
              </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="LastEnqueuedTimeUtc">
-      <MemberSignature Language="C#" Value="public DateTime LastEnqueuedTimeUtc { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime LastEnqueuedTimeUtc" />
-      <MemberSignature Language="DocId" Value="P:Azure.Messaging.EventHubs.Metadata.PartitionProperties.LastEnqueuedTimeUtc" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastEnqueuedTimeUtc As DateTime" />
-      <MemberSignature Language="F#" Value="member this.LastEnqueuedTimeUtc : DateTime" Usage="Azure.Messaging.EventHubs.Metadata.PartitionProperties.LastEnqueuedTimeUtc" />
+    <Member MemberName="LastEnqueuedTime">
+      <MemberSignature Language="C#" Value="public DateTimeOffset LastEnqueuedTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset LastEnqueuedTime" />
+      <MemberSignature Language="DocId" Value="P:Azure.Messaging.EventHubs.Metadata.PartitionProperties.LastEnqueuedTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastEnqueuedTime As DateTimeOffset" />
+      <MemberSignature Language="F#" Value="member this.LastEnqueuedTime : DateTimeOffset" Usage="Azure.Messaging.EventHubs.Metadata.PartitionProperties.LastEnqueuedTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.EventHubs</AssemblyName>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.DateTime</ReturnType>
+        <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-               The date and time, in UTC, that the last event was enqueued in the partition.
+               The date and time, in UTC, that the last observed event was enqueued in the partition.
              </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

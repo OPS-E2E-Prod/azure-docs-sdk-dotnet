@@ -1,4 +1,4 @@
-﻿<Type Name="IWithEditionBeta" FullName="Microsoft.Azure.Management.Sql.Fluent.SqlElasticPoolOperations.Definition.IWithEditionBeta">
+<Type Name="IWithEditionBeta" FullName="Microsoft.Azure.Management.Sql.Fluent.SqlElasticPoolOperations.Definition.IWithEditionBeta">
   <TypeSignature Language="C#" Value="public interface IWithEditionBeta : Microsoft.Azure.Management.ResourceManager.Fluent.Core.IBeta" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWithEditionBeta implements class Microsoft.Azure.Management.ResourceManager.Fluent.Core.IBeta" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Sql.Fluent.SqlElasticPoolOperations.Definition.IWithEditionBeta" />
@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
     <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -30,6 +31,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Sql.Fluent.SqlElasticPoolOperations.Definition.IWithBasicEdition</ReturnType>
@@ -45,21 +47,22 @@
       </Docs>
     </Member>
     <Member MemberName="WithEdition">
-      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Sql.Fluent.SqlElasticPoolOperations.Definition.IWithCreate WithEdition (string edition);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Azure.Management.Sql.Fluent.SqlElasticPoolOperations.Definition.IWithCreate WithEdition(string edition) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Fluent.SqlElasticPoolOperations.Definition.IWithEditionBeta.WithEdition(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Function WithEdition (edition As String) As IWithCreate" />
-      <MemberSignature Language="F#" Value="abstract member WithEdition : string -&gt; Microsoft.Azure.Management.Sql.Fluent.SqlElasticPoolOperations.Definition.IWithCreate" Usage="iWithEditionBeta.WithEdition edition" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Sql.Fluent.SqlElasticPoolOperations.Definition.IWithCreate WithEdition (Microsoft.Azure.Management.Sql.Fluent.Models.ElasticPoolEdition edition);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Azure.Management.Sql.Fluent.SqlElasticPoolOperations.Definition.IWithCreate WithEdition(class Microsoft.Azure.Management.Sql.Fluent.Models.ElasticPoolEdition edition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Fluent.SqlElasticPoolOperations.Definition.IWithEditionBeta.WithEdition(Microsoft.Azure.Management.Sql.Fluent.Models.ElasticPoolEdition)" />
+      <MemberSignature Language="VB.NET" Value="Public Function WithEdition (edition As ElasticPoolEdition) As IWithCreate" />
+      <MemberSignature Language="F#" Value="abstract member WithEdition : Microsoft.Azure.Management.Sql.Fluent.Models.ElasticPoolEdition -&gt; Microsoft.Azure.Management.Sql.Fluent.SqlElasticPoolOperations.Definition.IWithCreate" Usage="iWithEditionBeta.WithEdition edition" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Sql.Fluent.SqlElasticPoolOperations.Definition.IWithCreate</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="edition" Type="System.String" />
+        <Parameter Name="edition" Type="Microsoft.Azure.Management.Sql.Fluent.Models.ElasticPoolEdition" />
       </Parameters>
       <Docs>
         <param name="edition">Edition to be set for Elastic Pool.</param>
@@ -81,6 +84,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Sql.Fluent.SqlElasticPoolOperations.Definition.IWithPremiumEdition</ReturnType>
@@ -105,6 +109,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Sql.Fluent.SqlElasticPoolOperations.Definition.IWithStandardEdition</ReturnType>

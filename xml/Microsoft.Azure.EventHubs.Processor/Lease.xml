@@ -1,4 +1,4 @@
-﻿<Type Name="Lease" FullName="Microsoft.Azure.EventHubs.Processor.Lease">
+<Type Name="Lease" FullName="Microsoft.Azure.EventHubs.Processor.Lease">
   <TypeSignature Language="C#" Value="public class Lease" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Lease extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.EventHubs.Processor.Lease" />
@@ -7,6 +7,8 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.EventHubs.Processor</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,6 +30,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs.Processor</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -45,12 +49,15 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs.Processor</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="source" Type="Microsoft.Azure.EventHubs.Processor.Lease" />
       </Parameters>
       <Docs>
-        <param name="source"></param>
+        <param name="source">
+        </param>
         <summary />
         <remarks>To be added.</remarks>
       </Docs>
@@ -65,12 +72,15 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs.Processor</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="partitionId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="partitionId"></param>
+        <param name="partitionId">
+        </param>
         <summary />
         <remarks>To be added.</remarks>
       </Docs>
@@ -85,6 +95,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs.Processor</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -94,6 +106,29 @@
             Gets or sets the epoch year of the lease, which is a value you can use to determine the most recent owner of a partition between competing nodes.
             </summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncrementEpoch">
+      <MemberSignature Language="C#" Value="public long IncrementEpoch ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int64 IncrementEpoch() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.Processor.Lease.IncrementEpoch" />
+      <MemberSignature Language="VB.NET" Value="Public Function IncrementEpoch () As Long" />
+      <MemberSignature Language="F#" Value="member this.IncrementEpoch : unit -&gt; int64" Usage="lease.IncrementEpoch " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.EventHubs.Processor</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Increments the stored epoch in the checkpoint.
+            </summary>
+        <returns />
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,6 +142,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs.Processor</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -130,6 +167,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs.Processor</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -152,6 +191,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs.Processor</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -174,6 +215,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs.Processor</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -196,6 +239,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs.Processor</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -218,6 +263,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs.Processor</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

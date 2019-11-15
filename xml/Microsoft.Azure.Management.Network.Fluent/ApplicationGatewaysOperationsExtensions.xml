@@ -1,4 +1,4 @@
-﻿<Type Name="ApplicationGatewaysOperationsExtensions" FullName="Microsoft.Azure.Management.Network.Fluent.ApplicationGatewaysOperationsExtensions">
+<Type Name="ApplicationGatewaysOperationsExtensions" FullName="Microsoft.Azure.Management.Network.Fluent.ApplicationGatewaysOperationsExtensions">
   <TypeSignature Language="C#" Value="public static class ApplicationGatewaysOperationsExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ApplicationGatewaysOperationsExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Network.Fluent.ApplicationGatewaysOperationsExtensions" />
@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
     <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,6 +29,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -64,6 +66,61 @@
         <summary>
             Gets the backend health of the specified application gateway in a resource
             group.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackendHealthOnDemandAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayBackendHealthOnDemandInner&gt; BackendHealthOnDemandAsync (this Microsoft.Azure.Management.Network.Fluent.IApplicationGatewaysOperations operations, string resourceGroupName, string applicationGatewayName, Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayOnDemandProbe probeRequest, string expand = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayBackendHealthOnDemandInner&gt; BackendHealthOnDemandAsync(class Microsoft.Azure.Management.Network.Fluent.IApplicationGatewaysOperations operations, string resourceGroupName, string applicationGatewayName, class Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayOnDemandProbe probeRequest, string expand, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.ApplicationGatewaysOperationsExtensions.BackendHealthOnDemandAsync(Microsoft.Azure.Management.Network.Fluent.IApplicationGatewaysOperations,System.String,System.String,Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayOnDemandProbe,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member BackendHealthOnDemandAsync : Microsoft.Azure.Management.Network.Fluent.IApplicationGatewaysOperations * string * string * Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayOnDemandProbe * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayBackendHealthOnDemandInner&gt;" Usage="Microsoft.Azure.Management.Network.Fluent.ApplicationGatewaysOperationsExtensions.BackendHealthOnDemandAsync (operations, resourceGroupName, applicationGatewayName, probeRequest, expand, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayBackendHealthOnDemandInner&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Azure.Management.Network.Fluent.IApplicationGatewaysOperations" RefType="this" />
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="applicationGatewayName" Type="System.String" />
+        <Parameter Name="probeRequest" Type="Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayOnDemandProbe" />
+        <Parameter Name="expand" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="resourceGroupName">
+            The name of the resource group.
+            </param>
+        <param name="applicationGatewayName">
+            The name of the application gateway.
+            </param>
+        <param name="probeRequest">
+            Request body for on-demand test probe operation.
+            </param>
+        <param name="expand">
+            Expands BackendAddressPool and BackendHttpSettings referenced in backend
+            health.
+            </param>
+        <param name="cancellationToken">
+            The cancellation token.
+            </param>
+        <summary>
+            Gets the backend health for given combination of backend pool and http
+            setting of the specified application gateway in a resource group.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -78,6 +135,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -119,6 +177,61 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="BeginBackendHealthOnDemandAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayBackendHealthOnDemandInner&gt; BeginBackendHealthOnDemandAsync (this Microsoft.Azure.Management.Network.Fluent.IApplicationGatewaysOperations operations, string resourceGroupName, string applicationGatewayName, Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayOnDemandProbe probeRequest, string expand = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayBackendHealthOnDemandInner&gt; BeginBackendHealthOnDemandAsync(class Microsoft.Azure.Management.Network.Fluent.IApplicationGatewaysOperations operations, string resourceGroupName, string applicationGatewayName, class Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayOnDemandProbe probeRequest, string expand, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.ApplicationGatewaysOperationsExtensions.BeginBackendHealthOnDemandAsync(Microsoft.Azure.Management.Network.Fluent.IApplicationGatewaysOperations,System.String,System.String,Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayOnDemandProbe,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member BeginBackendHealthOnDemandAsync : Microsoft.Azure.Management.Network.Fluent.IApplicationGatewaysOperations * string * string * Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayOnDemandProbe * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayBackendHealthOnDemandInner&gt;" Usage="Microsoft.Azure.Management.Network.Fluent.ApplicationGatewaysOperationsExtensions.BeginBackendHealthOnDemandAsync (operations, resourceGroupName, applicationGatewayName, probeRequest, expand, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayBackendHealthOnDemandInner&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Azure.Management.Network.Fluent.IApplicationGatewaysOperations" RefType="this" />
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="applicationGatewayName" Type="System.String" />
+        <Parameter Name="probeRequest" Type="Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayOnDemandProbe" />
+        <Parameter Name="expand" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="resourceGroupName">
+            The name of the resource group.
+            </param>
+        <param name="applicationGatewayName">
+            The name of the application gateway.
+            </param>
+        <param name="probeRequest">
+            Request body for on-demand test probe operation.
+            </param>
+        <param name="expand">
+            Expands BackendAddressPool and BackendHttpSettings referenced in backend
+            health.
+            </param>
+        <param name="cancellationToken">
+            The cancellation token.
+            </param>
+        <summary>
+            Gets the backend health for given combination of backend pool and http
+            setting of the specified application gateway in a resource group.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="BeginCreateOrUpdateAsync">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayInner&gt; BeginCreateOrUpdateAsync (this Microsoft.Azure.Management.Network.Fluent.IApplicationGatewaysOperations operations, string resourceGroupName, string applicationGatewayName, Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayInner parameters, System.Threading.CancellationToken cancellationToken = null);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayInner&gt; BeginCreateOrUpdateAsync(class Microsoft.Azure.Management.Network.Fluent.IApplicationGatewaysOperations operations, string resourceGroupName, string applicationGatewayName, class Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayInner parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -128,6 +241,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -176,6 +290,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -220,6 +335,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -264,6 +380,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -308,6 +425,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -356,6 +474,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -404,6 +523,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -448,6 +568,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -492,6 +613,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -532,6 +654,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -568,6 +691,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -608,6 +732,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -639,6 +764,117 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ListAvailableRequestHeadersAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;string&gt;&gt; ListAvailableRequestHeadersAsync (this Microsoft.Azure.Management.Network.Fluent.IApplicationGatewaysOperations operations, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IList`1&lt;string&gt;&gt; ListAvailableRequestHeadersAsync(class Microsoft.Azure.Management.Network.Fluent.IApplicationGatewaysOperations operations, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.ApplicationGatewaysOperationsExtensions.ListAvailableRequestHeadersAsync(Microsoft.Azure.Management.Network.Fluent.IApplicationGatewaysOperations,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member ListAvailableRequestHeadersAsync : Microsoft.Azure.Management.Network.Fluent.IApplicationGatewaysOperations * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;string&gt;&gt;" Usage="Microsoft.Azure.Management.Network.Fluent.ApplicationGatewaysOperationsExtensions.ListAvailableRequestHeadersAsync (operations, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;System.String&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Azure.Management.Network.Fluent.IApplicationGatewaysOperations" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="cancellationToken">
+            The cancellation token.
+            </param>
+        <summary>
+            Lists all available request headers.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListAvailableResponseHeadersAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;string&gt;&gt; ListAvailableResponseHeadersAsync (this Microsoft.Azure.Management.Network.Fluent.IApplicationGatewaysOperations operations, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IList`1&lt;string&gt;&gt; ListAvailableResponseHeadersAsync(class Microsoft.Azure.Management.Network.Fluent.IApplicationGatewaysOperations operations, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.ApplicationGatewaysOperationsExtensions.ListAvailableResponseHeadersAsync(Microsoft.Azure.Management.Network.Fluent.IApplicationGatewaysOperations,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member ListAvailableResponseHeadersAsync : Microsoft.Azure.Management.Network.Fluent.IApplicationGatewaysOperations * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;string&gt;&gt;" Usage="Microsoft.Azure.Management.Network.Fluent.ApplicationGatewaysOperationsExtensions.ListAvailableResponseHeadersAsync (operations, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;System.String&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Azure.Management.Network.Fluent.IApplicationGatewaysOperations" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="cancellationToken">
+            The cancellation token.
+            </param>
+        <summary>
+            Lists all available response headers.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListAvailableServerVariablesAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;string&gt;&gt; ListAvailableServerVariablesAsync (this Microsoft.Azure.Management.Network.Fluent.IApplicationGatewaysOperations operations, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IList`1&lt;string&gt;&gt; ListAvailableServerVariablesAsync(class Microsoft.Azure.Management.Network.Fluent.IApplicationGatewaysOperations operations, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.ApplicationGatewaysOperationsExtensions.ListAvailableServerVariablesAsync(Microsoft.Azure.Management.Network.Fluent.IApplicationGatewaysOperations,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member ListAvailableServerVariablesAsync : Microsoft.Azure.Management.Network.Fluent.IApplicationGatewaysOperations * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;string&gt;&gt;" Usage="Microsoft.Azure.Management.Network.Fluent.ApplicationGatewaysOperationsExtensions.ListAvailableServerVariablesAsync (operations, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;System.String&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Azure.Management.Network.Fluent.IApplicationGatewaysOperations" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="cancellationToken">
+            The cancellation token.
+            </param>
+        <summary>
+            Lists all available server variables.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ListAvailableSslOptionsAsync">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayAvailableSslOptionsInner&gt; ListAvailableSslOptionsAsync (this Microsoft.Azure.Management.Network.Fluent.IApplicationGatewaysOperations operations, System.Threading.CancellationToken cancellationToken = null);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayAvailableSslOptionsInner&gt; ListAvailableSslOptionsAsync(class Microsoft.Azure.Management.Network.Fluent.IApplicationGatewaysOperations operations, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -648,6 +884,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -684,6 +921,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -720,6 +958,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -760,6 +999,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -796,6 +1036,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -836,6 +1077,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -880,6 +1122,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -924,6 +1167,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

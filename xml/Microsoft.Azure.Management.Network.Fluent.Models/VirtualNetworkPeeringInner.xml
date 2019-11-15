@@ -1,4 +1,4 @@
-﻿<Type Name="VirtualNetworkPeeringInner" FullName="Microsoft.Azure.Management.Network.Fluent.Models.VirtualNetworkPeeringInner">
+<Type Name="VirtualNetworkPeeringInner" FullName="Microsoft.Azure.Management.Network.Fluent.Models.VirtualNetworkPeeringInner">
   <TypeSignature Language="C#" Value="public class VirtualNetworkPeeringInner : Microsoft.Azure.Management.ResourceManager.Fluent.SubResource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VirtualNetworkPeeringInner extends Microsoft.Azure.Management.ResourceManager.Fluent.SubResource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Network.Fluent.Models.VirtualNetworkPeeringInner" />
@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
     <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.ResourceManager.Fluent.SubResource</BaseTypeName>
@@ -33,6 +34,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -52,6 +54,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
@@ -69,11 +72,11 @@
       <Docs>
         <param name="id">To be added.</param>
         <param name="allowVirtualNetworkAccess">Whether the VMs in the
-            linked virtual network space would be able to access all the VMs in
-            local Virtual network space.</param>
+            local virtual network space would be able to access the VMs in
+            remote virtual network space.</param>
         <param name="allowForwardedTraffic">Whether the forwarded traffic
-            from the VMs in the remote virtual network will be
-            allowed/disallowed.</param>
+            from the VMs in the local virtual network will be
+            allowed/disallowed in remote virtual network.</param>
         <param name="allowGatewayTransit">If gateway links can be used in
             remote virtual networking to link to this virtual network.</param>
         <param name="useRemoteGateways">If remote gateways can be used on
@@ -90,8 +93,7 @@
         <param name="remoteAddressSpace">The reference of the remote
             virtual network address space.</param>
         <param name="peeringState">The status of the virtual network
-            peering. Possible values are 'Initiated', 'Connected', and
-            'Disconnected'. Possible values include: 'Initiated', 'Connected',
+            peering. Possible values include: 'Initiated', 'Connected',
             'Disconnected'</param>
         <param name="provisioningState">The provisioning state of the
             resource.</param>
@@ -116,6 +118,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -128,7 +131,8 @@
       <Docs>
         <summary>
             Gets or sets whether the forwarded traffic from the VMs in the
-            remote virtual network will be allowed/disallowed.
+            local virtual network will be allowed/disallowed in remote virtual
+            network.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -144,6 +148,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -172,6 +177,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -183,8 +189,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets whether the VMs in the linked virtual network space
-            would be able to access all the VMs in local Virtual network space.
+            Gets or sets whether the VMs in the local virtual network space
+            would be able to access the VMs in remote virtual network space.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -200,6 +206,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -228,6 +235,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -256,6 +264,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -268,7 +277,6 @@
       <Docs>
         <summary>
             Gets or sets the status of the virtual network peering. Possible
-            values are 'Initiated', 'Connected', and 'Disconnected'. Possible
             values include: 'Initiated', 'Connected', 'Disconnected'
             </summary>
         <value>To be added.</value>
@@ -285,6 +293,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -312,6 +321,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -340,6 +350,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -370,6 +381,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

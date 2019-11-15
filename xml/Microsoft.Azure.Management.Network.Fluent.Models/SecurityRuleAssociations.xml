@@ -1,4 +1,4 @@
-﻿<Type Name="SecurityRuleAssociations" FullName="Microsoft.Azure.Management.Network.Fluent.Models.SecurityRuleAssociations">
+<Type Name="SecurityRuleAssociations" FullName="Microsoft.Azure.Management.Network.Fluent.Models.SecurityRuleAssociations">
   <TypeSignature Language="C#" Value="public class SecurityRuleAssociations" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SecurityRuleAssociations extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Network.Fluent.Models.SecurityRuleAssociations" />
@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
     <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,6 +29,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -46,6 +48,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="networkInterfaceAssociation" Type="Microsoft.Azure.Management.Network.Fluent.Models.NetworkInterfaceAssociation" />
@@ -54,8 +57,10 @@
         <Parameter Name="effectiveSecurityRules" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Fluent.Models.EffectiveNetworkSecurityRule&gt;" />
       </Parameters>
       <Docs>
-        <param name="networkInterfaceAssociation">To be added.</param>
-        <param name="subnetAssociation">To be added.</param>
+        <param name="networkInterfaceAssociation">Network interface and
+            it's custom security rules.</param>
+        <param name="subnetAssociation">Subnet and it's custom security
+            rules.</param>
         <param name="defaultSecurityRules">Collection of default security
             rules of the network security group.</param>
         <param name="effectiveSecurityRules">Collection of effective
@@ -76,6 +81,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -104,6 +110,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -131,6 +138,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -141,7 +149,9 @@
         <ReturnType>Microsoft.Azure.Management.Network.Fluent.Models.NetworkInterfaceAssociation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary />
+        <summary>
+            Gets or sets network interface and it's custom security rules.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -156,6 +166,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -166,7 +177,9 @@
         <ReturnType>Microsoft.Azure.Management.Network.Fluent.Models.SubnetAssociation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary />
+        <summary>
+            Gets or sets subnet and it's custom security rules.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

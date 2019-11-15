@@ -1,4 +1,4 @@
-﻿<Type Name="BlobSnapshotInfo" FullName="Azure.Storage.Blobs.Models.BlobSnapshotInfo">
+<Type Name="BlobSnapshotInfo" FullName="Azure.Storage.Blobs.Models.BlobSnapshotInfo">
   <TypeSignature Language="C#" Value="public class BlobSnapshotInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BlobSnapshotInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Azure.Storage.Blobs.Models.BlobSnapshotInfo" />
@@ -13,26 +13,12 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            BlobSnapshotInfo
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
-    <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public BlobSnapshotInfo ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.Models.BlobSnapshotInfo.#ctor" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Storage.Blobs</AssemblyName>
-        <AssemblyVersion>12.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters />
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="ETag">
       <MemberSignature Language="C#" Value="public Azure.ETag ETag { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Azure.ETag ETag" />
@@ -48,7 +34,31 @@
         <ReturnType>Azure.ETag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The ETag contains a value that you can use to perform operations conditionally. If the request version is 2011-08-18 or newer, the ETag value will be in quotes.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsServerEncrypted">
+      <MemberSignature Language="C#" Value="public bool IsServerEncrypted { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsServerEncrypted" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Blobs.Models.BlobSnapshotInfo.IsServerEncrypted" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsServerEncrypted As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsServerEncrypted : bool" Usage="Azure.Storage.Blobs.Models.BlobSnapshotInfo.IsServerEncrypted" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Blobs</AssemblyName>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            True if the contents of the request are successfully encrypted using the specified algorithm, and false otherwise. For a snapshot request, this header is set to true when metadata was provided in the request and encrypted with a customer-provided key.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -68,7 +78,9 @@
         <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Returns the date and time the container was last modified. Any operation that modifies the blob, including an update of the blob's metadata or properties, changes the last-modified time of the blob.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,7 +100,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Uniquely identifies the snapshot and indicates the snapshot version. It may be used in subsequent requests to access the snapshot
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

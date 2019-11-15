@@ -1,4 +1,4 @@
-﻿<Type Name="StorageFileDownloadProperties" FullName="Azure.Storage.Files.Models.StorageFileDownloadProperties">
+<Type Name="StorageFileDownloadProperties" FullName="Azure.Storage.Files.Models.StorageFileDownloadProperties">
   <TypeSignature Language="C#" Value="public class StorageFileDownloadProperties" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StorageFileDownloadProperties extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Azure.Storage.Files.Models.StorageFileDownloadProperties" />
@@ -13,26 +13,12 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Properties returned when downloading a File
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
-    <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public StorageFileDownloadProperties ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Models.StorageFileDownloadProperties.#ctor" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Storage.Files</AssemblyName>
-        <AssemblyVersion>12.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters />
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="AcceptRanges">
       <MemberSignature Language="C#" Value="public string AcceptRanges { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AcceptRanges" />
@@ -48,7 +34,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Indicates that the service supports requests for partial file content.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -68,7 +56,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Returned if it was previously specified for the file.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,47 +78,53 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Returns the value that was specified for the 'x-ms-content-disposition' header and specifies how to process the response.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentEncoding">
-      <MemberSignature Language="C#" Value="public string ContentEncoding { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string ContentEncoding" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;string&gt; ContentEncoding { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; ContentEncoding" />
       <MemberSignature Language="DocId" Value="P:Azure.Storage.Files.Models.StorageFileDownloadProperties.ContentEncoding" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentEncoding As String" />
-      <MemberSignature Language="F#" Value="member this.ContentEncoding : string" Usage="Azure.Storage.Files.Models.StorageFileDownloadProperties.ContentEncoding" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentEncoding As IEnumerable(Of String)" />
+      <MemberSignature Language="F#" Value="member this.ContentEncoding : seq&lt;string&gt;" Usage="Azure.Storage.Files.Models.StorageFileDownloadProperties.ContentEncoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Files</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Returns the value that was specified for the Content-Encoding request header.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentLanguage">
-      <MemberSignature Language="C#" Value="public string ContentLanguage { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string ContentLanguage" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;string&gt; ContentLanguage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; ContentLanguage" />
       <MemberSignature Language="DocId" Value="P:Azure.Storage.Files.Models.StorageFileDownloadProperties.ContentLanguage" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentLanguage As String" />
-      <MemberSignature Language="F#" Value="member this.ContentLanguage : string" Usage="Azure.Storage.Files.Models.StorageFileDownloadProperties.ContentLanguage" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentLanguage As IEnumerable(Of String)" />
+      <MemberSignature Language="F#" Value="member this.ContentLanguage : seq&lt;string&gt;" Usage="Azure.Storage.Files.Models.StorageFileDownloadProperties.ContentLanguage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Files</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Returns the value that was specified for the Content-Language request header.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -148,7 +144,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Indicates the range of bytes returned if the client requested a subset of the file by setting the Range request header.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -168,7 +166,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The content type specified for the file. The default content type is 'application/octet-stream'
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -188,7 +188,9 @@
         <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Conclusion time of the last attempted Copy File operation where this file was the destination file. This value can specify the time of a completed, aborted, or failed copy attempt.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -208,7 +210,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            String identifier for the last attempted Copy File operation where this file was the destination file.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -228,7 +232,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Contains the number of bytes copied and the total bytes in the source in the last attempted Copy File operation where this file was the destination file. Can show between 0 and Content-Length bytes copied.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -248,7 +254,9 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            URL up to 2KB in length that specifies the source file used in the last attempted Copy File operation where this file was the destination file.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -268,7 +276,9 @@
         <ReturnType>Azure.Storage.Files.Models.CopyStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            State of the copy operation identified by 'x-ms-copy-id'.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -288,47 +298,31 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Date">
-      <MemberSignature Language="C#" Value="public DateTimeOffset Date { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset Date" />
-      <MemberSignature Language="DocId" Value="P:Azure.Storage.Files.Models.StorageFileDownloadProperties.Date" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Date As DateTimeOffset" />
-      <MemberSignature Language="F#" Value="member this.Date : DateTimeOffset" Usage="Azure.Storage.Files.Models.StorageFileDownloadProperties.Date" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Storage.Files</AssemblyName>
-        <AssemblyVersion>12.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.DateTimeOffset</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Only appears when x-ms-copy-status is failed or pending. Describes cause of fatal or non-fatal copy operation failure.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ETag">
-      <MemberSignature Language="C#" Value="public Azure.ETag ETag { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype Azure.ETag ETag" />
+      <MemberSignature Language="C#" Value="public Azure.Core.Http.ETag ETag { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Azure.Core.Http.ETag ETag" />
       <MemberSignature Language="DocId" Value="P:Azure.Storage.Files.Models.StorageFileDownloadProperties.ETag" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ETag As ETag" />
-      <MemberSignature Language="F#" Value="member this.ETag : Azure.ETag" Usage="Azure.Storage.Files.Models.StorageFileDownloadProperties.ETag" />
+      <MemberSignature Language="F#" Value="member this.ETag : Azure.Core.Http.ETag" Usage="Azure.Storage.Files.Models.StorageFileDownloadProperties.ETag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Files</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ETag</ReturnType>
+        <ReturnType>Azure.Core.Http.ETag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The ETag contains a value that you can use to perform operations conditionally, in quotes.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -348,7 +342,9 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            If the file has a MD5 hash, and if request contains range header (Range or x-ms-range), this response header is returned with the value of the whole file's MD5 value. This value may or may not be equal to the value returned in Content-MD5 header, with the latter calculated from the requested range.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -368,7 +364,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The value of this header is set to true if the file data and application metadata are completely encrypted using the specified algorithm. Otherwise, the value is set to false (when the file is unencrypted, or if only parts of the file/application metadata are encrypted).
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -388,7 +386,9 @@
         <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Returns the date and time the file was last modified. Any operation that modifies the file or its properties updates the last modified time.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -408,47 +408,31 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            A set of name-value pairs associated with this file as user-defined metadata.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="RequestId">
-      <MemberSignature Language="C#" Value="public string RequestId { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string RequestId" />
-      <MemberSignature Language="DocId" Value="P:Azure.Storage.Files.Models.StorageFileDownloadProperties.RequestId" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestId As String" />
-      <MemberSignature Language="F#" Value="member this.RequestId : string" Usage="Azure.Storage.Files.Models.StorageFileDownloadProperties.RequestId" />
+    <Member MemberName="SmbProperties">
+      <MemberSignature Language="C#" Value="public Azure.Storage.Files.Models.FileSmbProperties SmbProperties { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Azure.Storage.Files.Models.FileSmbProperties SmbProperties" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Files.Models.StorageFileDownloadProperties.SmbProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Property SmbProperties As FileSmbProperties" />
+      <MemberSignature Language="F#" Value="member this.SmbProperties : Azure.Storage.Files.Models.FileSmbProperties with get, set" Usage="Azure.Storage.Files.Models.StorageFileDownloadProperties.SmbProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Files</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Azure.Storage.Files.Models.FileSmbProperties</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Version">
-      <MemberSignature Language="C#" Value="public string Version { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string Version" />
-      <MemberSignature Language="DocId" Value="P:Azure.Storage.Files.Models.StorageFileDownloadProperties.Version" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Version As String" />
-      <MemberSignature Language="F#" Value="member this.Version : string" Usage="Azure.Storage.Files.Models.StorageFileDownloadProperties.Version" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Storage.Files</AssemblyName>
-        <AssemblyVersion>12.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The SMB properties for the file
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

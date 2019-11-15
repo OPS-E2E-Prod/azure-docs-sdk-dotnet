@@ -1,4 +1,4 @@
-﻿<Type Name="ApplicationGatewayBackendHealthInner" FullName="Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayBackendHealthInner">
+<Type Name="ApplicationGatewayBackendHealthInner" FullName="Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayBackendHealthInner">
   <TypeSignature Language="C#" Value="public class ApplicationGatewayBackendHealthInner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ApplicationGatewayBackendHealthInner extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayBackendHealthInner" />
@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
     <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -14,7 +15,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            List of ApplicationGatewayBackendHealthPool resources.
+            Response for ApplicationGatewayBackendHealth API service call.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -28,6 +29,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,12 +50,14 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="backendAddressPools" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayBackendHealthPool&gt;" />
       </Parameters>
       <Docs>
-        <param name="backendAddressPools">To be added.</param>
+        <param name="backendAddressPools">A list of
+            ApplicationGatewayBackendHealthPool resources.</param>
         <summary>
             Initializes a new instance of the
             ApplicationGatewayBackendHealthInner class.
@@ -71,6 +75,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -81,7 +86,10 @@
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayBackendHealthPool&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary />
+        <summary>
+            Gets or sets a list of ApplicationGatewayBackendHealthPool
+            resources.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

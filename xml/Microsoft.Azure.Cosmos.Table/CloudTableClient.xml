@@ -1,4 +1,4 @@
-﻿<Type Name="CloudTableClient" FullName="Microsoft.Azure.Cosmos.Table.CloudTableClient">
+<Type Name="CloudTableClient" FullName="Microsoft.Azure.Cosmos.Table.CloudTableClient">
   <TypeSignature Language="C#" Value="public class CloudTableClient" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CloudTableClient extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Cosmos.Table.CloudTableClient" />
@@ -7,6 +7,12 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
     <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <AssemblyVersion>1.0.4.0</AssemblyVersion>
+    <AssemblyVersion>1.0.5.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,6 +32,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.4.0</AssemblyVersion>
+        <AssemblyVersion>1.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="storageUri" Type="Microsoft.Azure.Cosmos.Table.StorageUri" />
@@ -48,10 +60,15 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="baseUri" Type="System.Uri" />
-        <Parameter Name="credentials" Type="Microsoft.Azure.Cosmos.Table.StorageCredentials" />
+        <Parameter Name="baseUri" Type="System.Uri" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="credentials" Type="Microsoft.Azure.Cosmos.Table.StorageCredentials" Index="1" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="baseUri">To be added.</param>
@@ -69,6 +86,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.4.0</AssemblyVersion>
+        <AssemblyVersion>1.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="storageUri" Type="Microsoft.Azure.Cosmos.Table.StorageUri" />
@@ -77,6 +100,30 @@
       </Parameters>
       <Docs>
         <param name="storageUri">To be added.</param>
+        <param name="credentials">To be added.</param>
+        <param name="configuration">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CloudTableClient (Uri baseUri, Microsoft.Azure.Cosmos.Table.StorageCredentials credentials, Microsoft.Azure.Cosmos.Table.TableClientConfiguration configuration = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUri, class Microsoft.Azure.Cosmos.Table.StorageCredentials credentials, class Microsoft.Azure.Cosmos.Table.TableClientConfiguration configuration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Table.CloudTableClient.#ctor(System.Uri,Microsoft.Azure.Cosmos.Table.StorageCredentials,Microsoft.Azure.Cosmos.Table.TableClientConfiguration)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUri As Uri, credentials As StorageCredentials, Optional configuration As TableClientConfiguration = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Cosmos.Table.CloudTableClient : Uri * Microsoft.Azure.Cosmos.Table.StorageCredentials * Microsoft.Azure.Cosmos.Table.TableClientConfiguration -&gt; Microsoft.Azure.Cosmos.Table.CloudTableClient" Usage="new Microsoft.Azure.Cosmos.Table.CloudTableClient (baseUri, credentials, configuration)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
+        <AssemblyVersion>1.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUri" Type="System.Uri" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="credentials" Type="Microsoft.Azure.Cosmos.Table.StorageCredentials" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="configuration" Type="Microsoft.Azure.Cosmos.Table.TableClientConfiguration" Index="2" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="baseUri">To be added.</param>
         <param name="credentials">To be added.</param>
         <param name="configuration">To be added.</param>
         <summary>To be added.</summary>
@@ -93,6 +140,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.4.0</AssemblyVersion>
+        <AssemblyVersion>1.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -113,6 +166,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.4.0</AssemblyVersion>
+        <AssemblyVersion>1.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.Table.StorageCredentials</ReturnType>
@@ -133,6 +192,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.4.0</AssemblyVersion>
+        <AssemblyVersion>1.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.Table.TableRequestOptions</ReturnType>
@@ -152,6 +217,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.4.0</AssemblyVersion>
+        <AssemblyVersion>1.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.Table.ServiceProperties</ReturnType>
@@ -178,6 +249,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.4.0</AssemblyVersion>
+        <AssemblyVersion>1.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.Table.ServiceProperties&gt;</ReturnType>
@@ -198,6 +275,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.4.0</AssemblyVersion>
+        <AssemblyVersion>1.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.Table.ServiceProperties&gt;</ReturnType>
@@ -221,6 +304,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.4.0</AssemblyVersion>
+        <AssemblyVersion>1.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.Table.ServiceProperties&gt;</ReturnType>
@@ -246,6 +335,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.4.0</AssemblyVersion>
+        <AssemblyVersion>1.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.Table.ServiceProperties&gt;</ReturnType>
@@ -273,6 +368,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.4.0</AssemblyVersion>
+        <AssemblyVersion>1.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.Table.ServiceStats</ReturnType>
@@ -299,6 +400,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.4.0</AssemblyVersion>
+        <AssemblyVersion>1.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.Table.ServiceStats&gt;</ReturnType>
@@ -319,6 +426,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.4.0</AssemblyVersion>
+        <AssemblyVersion>1.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.Table.ServiceStats&gt;</ReturnType>
@@ -342,6 +455,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.4.0</AssemblyVersion>
+        <AssemblyVersion>1.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.Table.ServiceStats&gt;</ReturnType>
@@ -367,6 +486,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.4.0</AssemblyVersion>
+        <AssemblyVersion>1.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.Table.ServiceStats&gt;</ReturnType>
@@ -395,6 +520,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.4.0</AssemblyVersion>
+        <AssemblyVersion>1.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.Table.CloudTable</ReturnType>
@@ -418,6 +549,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.4.0</AssemblyVersion>
+        <AssemblyVersion>1.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Cosmos.Table.CloudTable&gt;</ReturnType>
@@ -446,6 +583,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.4.0</AssemblyVersion>
+        <AssemblyVersion>1.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.Table.TableResultSegment</ReturnType>
@@ -470,6 +613,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.4.0</AssemblyVersion>
+        <AssemblyVersion>1.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.Table.TableResultSegment</ReturnType>
@@ -495,6 +644,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.4.0</AssemblyVersion>
+        <AssemblyVersion>1.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.Table.TableResultSegment</ReturnType>
@@ -527,6 +682,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.4.0</AssemblyVersion>
+        <AssemblyVersion>1.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.Table.TableResultSegment&gt;</ReturnType>
@@ -550,6 +711,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.4.0</AssemblyVersion>
+        <AssemblyVersion>1.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.Table.TableResultSegment&gt;</ReturnType>
@@ -576,6 +743,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.4.0</AssemblyVersion>
+        <AssemblyVersion>1.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.Table.TableResultSegment&gt;</ReturnType>
@@ -601,6 +774,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.4.0</AssemblyVersion>
+        <AssemblyVersion>1.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.Table.TableResultSegment&gt;</ReturnType>
@@ -628,6 +807,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.4.0</AssemblyVersion>
+        <AssemblyVersion>1.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.Table.TableResultSegment&gt;</ReturnType>
@@ -657,6 +842,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.4.0</AssemblyVersion>
+        <AssemblyVersion>1.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.Table.TableResultSegment&gt;</ReturnType>
@@ -688,6 +879,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.4.0</AssemblyVersion>
+        <AssemblyVersion>1.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.Table.TableResultSegment&gt;</ReturnType>
@@ -721,6 +918,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.4.0</AssemblyVersion>
+        <AssemblyVersion>1.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -748,6 +951,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.4.0</AssemblyVersion>
+        <AssemblyVersion>1.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -771,6 +980,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.4.0</AssemblyVersion>
+        <AssemblyVersion>1.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -796,6 +1011,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.4.0</AssemblyVersion>
+        <AssemblyVersion>1.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -823,6 +1044,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.4.0</AssemblyVersion>
+        <AssemblyVersion>1.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -853,6 +1080,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.4.0</AssemblyVersion>
+        <AssemblyVersion>1.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.Table.StorageUri</ReturnType>
@@ -873,6 +1106,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.4.0</AssemblyVersion>
+        <AssemblyVersion>1.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.Table.TableClientConfiguration</ReturnType>

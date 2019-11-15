@@ -1,4 +1,4 @@
-﻿<Type Name="ClusterUpdate" FullName="Microsoft.Azure.Management.Kusto.Models.ClusterUpdate">
+<Type Name="ClusterUpdate" FullName="Microsoft.Azure.Management.Kusto.Models.ClusterUpdate">
   <TypeSignature Language="C#" Value="public class ClusterUpdate : Microsoft.Azure.Management.Kusto.Models.Resource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ClusterUpdate extends Microsoft.Azure.Management.Kusto.Models.Resource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Kusto.Models.ClusterUpdate" />
@@ -7,6 +7,8 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Kusto</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.Kusto.Models.Resource</BaseTypeName>
@@ -33,6 +35,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Kusto</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,15 +47,14 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ClusterUpdate (string id = null, string name = null, string type = null, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = null, string location = null, Microsoft.Azure.Management.Kusto.Models.AzureSku sku = null, string state = null, string provisioningState = null, string uri = null, string dataIngestionUri = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Kusto.Models.TrustedExternalTenant&gt; trustedExternalTenants = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string type, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, string location, class Microsoft.Azure.Management.Kusto.Models.AzureSku sku, string state, string provisioningState, string uri, string dataIngestionUri, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Kusto.Models.TrustedExternalTenant&gt; trustedExternalTenants) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Kusto.Models.ClusterUpdate.#ctor(System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,Microsoft.Azure.Management.Kusto.Models.AzureSku,System.String,System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.Azure.Management.Kusto.Models.TrustedExternalTenant})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional tags As IDictionary(Of String, String) = null, Optional location As String = null, Optional sku As AzureSku = null, Optional state As String = null, Optional provisioningState As String = null, Optional uri As String = null, Optional dataIngestionUri As String = null, Optional trustedExternalTenants As IList(Of TrustedExternalTenant) = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Kusto.Models.ClusterUpdate : string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * string * Microsoft.Azure.Management.Kusto.Models.AzureSku * string * string * string * string * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Kusto.Models.TrustedExternalTenant&gt; -&gt; Microsoft.Azure.Management.Kusto.Models.ClusterUpdate" Usage="new Microsoft.Azure.Management.Kusto.Models.ClusterUpdate (id, name, type, tags, location, sku, state, provisioningState, uri, dataIngestionUri, trustedExternalTenants)" />
+      <MemberSignature Language="C#" Value="public ClusterUpdate (string id = null, string name = null, string type = null, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = null, string location = null, Microsoft.Azure.Management.Kusto.Models.AzureSku sku = null, Microsoft.Azure.Management.Kusto.Models.Identity identity = null, string state = null, string provisioningState = null, string uri = null, string dataIngestionUri = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Kusto.Models.TrustedExternalTenant&gt; trustedExternalTenants = null, Microsoft.Azure.Management.Kusto.Models.OptimizedAutoscale optimizedAutoscale = null, Nullable&lt;bool&gt; enableDiskEncryption = null, Nullable&lt;bool&gt; enableStreamingIngest = null, Microsoft.Azure.Management.Kusto.Models.VirtualNetworkConfiguration virtualNetworkConfiguration = null, Microsoft.Azure.Management.Kusto.Models.KeyVaultProperties keyVaultProperties = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string type, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, string location, class Microsoft.Azure.Management.Kusto.Models.AzureSku sku, class Microsoft.Azure.Management.Kusto.Models.Identity identity, string state, string provisioningState, string uri, string dataIngestionUri, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Kusto.Models.TrustedExternalTenant&gt; trustedExternalTenants, class Microsoft.Azure.Management.Kusto.Models.OptimizedAutoscale optimizedAutoscale, valuetype System.Nullable`1&lt;bool&gt; enableDiskEncryption, valuetype System.Nullable`1&lt;bool&gt; enableStreamingIngest, class Microsoft.Azure.Management.Kusto.Models.VirtualNetworkConfiguration virtualNetworkConfiguration, class Microsoft.Azure.Management.Kusto.Models.KeyVaultProperties keyVaultProperties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Kusto.Models.ClusterUpdate.#ctor(System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,Microsoft.Azure.Management.Kusto.Models.AzureSku,Microsoft.Azure.Management.Kusto.Models.Identity,System.String,System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.Azure.Management.Kusto.Models.TrustedExternalTenant},Microsoft.Azure.Management.Kusto.Models.OptimizedAutoscale,System.Nullable{System.Boolean},System.Nullable{System.Boolean},Microsoft.Azure.Management.Kusto.Models.VirtualNetworkConfiguration,Microsoft.Azure.Management.Kusto.Models.KeyVaultProperties)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Kusto.Models.ClusterUpdate : string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * string * Microsoft.Azure.Management.Kusto.Models.AzureSku * Microsoft.Azure.Management.Kusto.Models.Identity * string * string * string * string * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Kusto.Models.TrustedExternalTenant&gt; * Microsoft.Azure.Management.Kusto.Models.OptimizedAutoscale * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Microsoft.Azure.Management.Kusto.Models.VirtualNetworkConfiguration * Microsoft.Azure.Management.Kusto.Models.KeyVaultProperties -&gt; Microsoft.Azure.Management.Kusto.Models.ClusterUpdate" Usage="new Microsoft.Azure.Management.Kusto.Models.ClusterUpdate (id, name, type, tags, location, sku, identity, state, provisioningState, uri, dataIngestionUri, trustedExternalTenants, optimizedAutoscale, enableDiskEncryption, enableStreamingIngest, virtualNetworkConfiguration, keyVaultProperties)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Kusto</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
@@ -60,11 +63,17 @@
         <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
         <Parameter Name="location" Type="System.String" />
         <Parameter Name="sku" Type="Microsoft.Azure.Management.Kusto.Models.AzureSku" />
+        <Parameter Name="identity" Type="Microsoft.Azure.Management.Kusto.Models.Identity" />
         <Parameter Name="state" Type="System.String" />
         <Parameter Name="provisioningState" Type="System.String" />
         <Parameter Name="uri" Type="System.String" />
         <Parameter Name="dataIngestionUri" Type="System.String" />
         <Parameter Name="trustedExternalTenants" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Kusto.Models.TrustedExternalTenant&gt;" />
+        <Parameter Name="optimizedAutoscale" Type="Microsoft.Azure.Management.Kusto.Models.OptimizedAutoscale" />
+        <Parameter Name="enableDiskEncryption" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="enableStreamingIngest" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="virtualNetworkConfiguration" Type="Microsoft.Azure.Management.Kusto.Models.VirtualNetworkConfiguration" />
+        <Parameter Name="keyVaultProperties" Type="Microsoft.Azure.Management.Kusto.Models.KeyVaultProperties" />
       </Parameters>
       <Docs>
         <param name="id">Fully qualified resource Id for the resource. Ex -
@@ -76,17 +85,29 @@
         <param name="tags">Resource tags.</param>
         <param name="location">Resource location.</param>
         <param name="sku">The SKU of the cluster.</param>
+        <param name="identity">The identity of the cluster, if
+            configured.</param>
         <param name="state">The state of the resource. Possible values
             include: 'Creating', 'Unavailable', 'Running', 'Deleting',
             'Deleted', 'Stopping', 'Stopped', 'Starting', 'Updating'</param>
         <param name="provisioningState">The provisioned state of the
             resource. Possible values include: 'Running', 'Creating',
-            'Deleting', 'Succeeded', 'Failed'</param>
+            'Deleting', 'Succeeded', 'Failed', 'Moving'</param>
         <param name="uri">The cluster URI.</param>
         <param name="dataIngestionUri">The cluster data ingestion
             URI.</param>
         <param name="trustedExternalTenants">The cluster's external
             tenants.</param>
+        <param name="optimizedAutoscale">Optimized auto scale
+            definition.</param>
+        <param name="enableDiskEncryption">A boolean value that indicates
+            if the cluster's disks are encrypted.</param>
+        <param name="enableStreamingIngest">A boolean value that indicates
+            if the streaming ingest is enabled.</param>
+        <param name="virtualNetworkConfiguration">Virtual network
+            definition.</param>
+        <param name="keyVaultProperties">KeyVault properties for the
+            cluster encryption.</param>
         <summary>
             Initializes a new instance of the ClusterUpdate class.
             </summary>
@@ -103,6 +124,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Kusto</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -120,6 +143,118 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="EnableDiskEncryption">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; EnableDiskEncryption { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; EnableDiskEncryption" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Kusto.Models.ClusterUpdate.EnableDiskEncryption" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableDiskEncryption As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.EnableDiskEncryption : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.Kusto.Models.ClusterUpdate.EnableDiskEncryption" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Kusto</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.enableDiskEncryption")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a boolean value that indicates if the cluster's disks
+            are encrypted.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableStreamingIngest">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; EnableStreamingIngest { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; EnableStreamingIngest" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Kusto.Models.ClusterUpdate.EnableStreamingIngest" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableStreamingIngest As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.EnableStreamingIngest : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.Kusto.Models.ClusterUpdate.EnableStreamingIngest" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Kusto</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.enableStreamingIngest")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a boolean value that indicates if the streaming ingest
+            is enabled.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Identity">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Kusto.Models.Identity Identity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Kusto.Models.Identity Identity" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Kusto.Models.ClusterUpdate.Identity" />
+      <MemberSignature Language="VB.NET" Value="Public Property Identity As Identity" />
+      <MemberSignature Language="F#" Value="member this.Identity : Microsoft.Azure.Management.Kusto.Models.Identity with get, set" Usage="Microsoft.Azure.Management.Kusto.Models.ClusterUpdate.Identity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Kusto</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="identity")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Kusto.Models.Identity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the identity of the cluster, if configured.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyVaultProperties">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Kusto.Models.KeyVaultProperties KeyVaultProperties { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Kusto.Models.KeyVaultProperties KeyVaultProperties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Kusto.Models.ClusterUpdate.KeyVaultProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyVaultProperties As KeyVaultProperties" />
+      <MemberSignature Language="F#" Value="member this.KeyVaultProperties : Microsoft.Azure.Management.Kusto.Models.KeyVaultProperties with get, set" Usage="Microsoft.Azure.Management.Kusto.Models.ClusterUpdate.KeyVaultProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Kusto</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.keyVaultProperties")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Kusto.Models.KeyVaultProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets keyVault properties for the cluster encryption.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Location">
       <MemberSignature Language="C#" Value="public string Location { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Location" />
@@ -130,6 +265,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Kusto</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -147,6 +284,34 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="OptimizedAutoscale">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Kusto.Models.OptimizedAutoscale OptimizedAutoscale { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Kusto.Models.OptimizedAutoscale OptimizedAutoscale" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Kusto.Models.ClusterUpdate.OptimizedAutoscale" />
+      <MemberSignature Language="VB.NET" Value="Public Property OptimizedAutoscale As OptimizedAutoscale" />
+      <MemberSignature Language="F#" Value="member this.OptimizedAutoscale : Microsoft.Azure.Management.Kusto.Models.OptimizedAutoscale with get, set" Usage="Microsoft.Azure.Management.Kusto.Models.ClusterUpdate.OptimizedAutoscale" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Kusto</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.optimizedAutoscale")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Kusto.Models.OptimizedAutoscale</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets optimized auto scale definition.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ProvisioningState">
       <MemberSignature Language="C#" Value="public string ProvisioningState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ProvisioningState" />
@@ -157,6 +322,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Kusto</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -169,7 +336,8 @@
       <Docs>
         <summary>
             Gets the provisioned state of the resource. Possible values
-            include: 'Running', 'Creating', 'Deleting', 'Succeeded', 'Failed'
+            include: 'Running', 'Creating', 'Deleting', 'Succeeded', 'Failed',
+            'Moving'
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -185,6 +353,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Kusto</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -212,6 +382,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Kusto</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -241,6 +413,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Kusto</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -268,6 +442,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Kusto</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -295,6 +471,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Kusto</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -322,6 +500,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Kusto</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -335,6 +515,34 @@
         <exception cref="T:Microsoft.Rest.ValidationException">
             Thrown if validation fails
             </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="VirtualNetworkConfiguration">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Kusto.Models.VirtualNetworkConfiguration VirtualNetworkConfiguration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Kusto.Models.VirtualNetworkConfiguration VirtualNetworkConfiguration" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Kusto.Models.ClusterUpdate.VirtualNetworkConfiguration" />
+      <MemberSignature Language="VB.NET" Value="Public Property VirtualNetworkConfiguration As VirtualNetworkConfiguration" />
+      <MemberSignature Language="F#" Value="member this.VirtualNetworkConfiguration : Microsoft.Azure.Management.Kusto.Models.VirtualNetworkConfiguration with get, set" Usage="Microsoft.Azure.Management.Kusto.Models.ClusterUpdate.VirtualNetworkConfiguration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Kusto</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.virtualNetworkConfiguration")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Kusto.Models.VirtualNetworkConfiguration</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets virtual network definition.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

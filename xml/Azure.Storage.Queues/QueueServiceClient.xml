@@ -1,4 +1,4 @@
-﻿<Type Name="QueueServiceClient" FullName="Azure.Storage.Queues.QueueServiceClient">
+<Type Name="QueueServiceClient" FullName="Azure.Storage.Queues.QueueServiceClient">
   <TypeSignature Language="C#" Value="public class QueueServiceClient" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QueueServiceClient extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Azure.Storage.Queues.QueueServiceClient" />
@@ -13,7 +13,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            A QueueServiceClient represents a URL to the Azure Storage Queue service.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,7 +31,10 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Azure.Storage.Queues.QueueServiceClient" />
+            class for mocking.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +53,17 @@
         <Parameter Name="connectionString" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="connectionString">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="connectionString">
+             A connection string includes the authentication information
+             required for your application to access data in an Azure Storage
+             account at runtime.
+            
+             For more information, <see href="https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string" />.
+             </param>
+        <summary>
+             Initializes a new instance of the <see cref="T:Azure.Storage.Queues.QueueServiceClient" />
+             class.
+             </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,9 +83,22 @@
         <Parameter Name="options" Type="Azure.Storage.Queues.QueueClientOptions" />
       </Parameters>
       <Docs>
-        <param name="connectionString">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="connectionString">
+             A connection string includes the authentication information
+             required for your application to access data in an Azure Storage
+             account at runtime.
+            
+             For more information, <see href="https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string" />.
+             </param>
+        <param name="options">
+             Optional client options that define the transport pipeline
+             policies for authentication, retries, etc., that are applied to
+             every request.
+             </param>
+        <summary>
+             Initializes a new instance of the <see cref="T:Azure.Storage.Queues.QueueServiceClient" />
+             class.
+             </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,9 +118,18 @@
         <Parameter Name="options" Type="Azure.Storage.Queues.QueueClientOptions" />
       </Parameters>
       <Docs>
-        <param name="serviceUri">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceUri">
+            A <see cref="P:Azure.Storage.Queues.QueueServiceClient.Uri" /> referencing the queue service.
+            </param>
+        <param name="options">
+            Optional client options that define the transport pipeline
+            policies for authentication, retries, etc., that are applied to
+            every request.
+            </param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Azure.Storage.Queues.QueueServiceClient" />
+            class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,10 +150,21 @@
         <Parameter Name="options" Type="Azure.Storage.Queues.QueueClientOptions" />
       </Parameters>
       <Docs>
-        <param name="serviceUri">To be added.</param>
-        <param name="credential">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceUri">
+            A <see cref="P:Azure.Storage.Queues.QueueServiceClient.Uri" /> referencing the queue service.
+            </param>
+        <param name="credential">
+            The token credential used to sign requests.
+            </param>
+        <param name="options">
+            Optional client options that define the transport pipeline
+            policies for authentication, retries, etc., that are applied to
+            every request.
+            </param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Azure.Storage.Queues.QueueServiceClient" />
+            class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,16 +185,49 @@
         <Parameter Name="options" Type="Azure.Storage.Queues.QueueClientOptions" />
       </Parameters>
       <Docs>
-        <param name="serviceUri">To be added.</param>
-        <param name="credential">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceUri">
+            A <see cref="P:Azure.Storage.Queues.QueueServiceClient.Uri" /> referencing the queue service.
+            </param>
+        <param name="credential">
+            The shared key credential used to sign requests.
+            </param>
+        <param name="options">
+            Optional client options that define the transport pipeline
+            policies for authentication, retries, etc., that are applied to
+            every request.
+            </param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Azure.Storage.Queues.QueueServiceClient" />
+            class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AccountName">
+      <MemberSignature Language="C#" Value="public virtual string AccountName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AccountName" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Queues.QueueServiceClient.AccountName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AccountName As String" />
+      <MemberSignature Language="F#" Value="member this.AccountName : string" Usage="Azure.Storage.Queues.QueueServiceClient.AccountName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Queues</AssemblyName>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the Storage account name corresponding to the service client.
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateQueue">
       <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Queues.QueueClient&gt; CreateQueue (string queueName, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = null, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Azure.Response`1&lt;class Azure.Storage.Queues.QueueClient&gt; CreateQueue(string queueName, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Queues.QueueClient&gt; CreateQueue(string queueName, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueServiceClient.CreateQueue(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member CreateQueue : string * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Queues.QueueClient&gt;&#xA;override this.CreateQueue : string * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Queues.QueueClient&gt;" Usage="queueServiceClient.CreateQueue (queueName, metadata, cancellationToken)" />
       <MemberType>Method</MemberType>
@@ -155,6 +235,11 @@
         <AssemblyName>Azure.Storage.Queues</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Azure.Core.ForwardsClientCalls</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Queues.QueueClient&gt;</ReturnType>
       </ReturnValue>
@@ -164,17 +249,29 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="queueName">To be added.</param>
-        <param name="metadata">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="queueName">
+             The name of the queue to create.
+             </param>
+        <param name="metadata">
+             Optional <see cref="T:System.Collections.Generic.IDictionary`2" />.
+             </param>
+        <param name="cancellationToken">
+          <see cref="T:System.Threading.CancellationToken" />
+        </param>
+        <summary>
+             Creates a queue.
+            
+             For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/create-queue4" />.
+             </summary>
+        <returns>
+             A newly created <see cref="T:Azure.Response`1" />.
+             </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateQueueAsync">
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.QueueClient&gt;&gt; CreateQueueAsync (string queueName, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = null, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;valuetype Azure.Response`1&lt;class Azure.Storage.Queues.QueueClient&gt;&gt; CreateQueueAsync(string queueName, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Queues.QueueClient&gt;&gt; CreateQueueAsync(string queueName, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueServiceClient.CreateQueueAsync(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member CreateQueueAsync : string * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.QueueClient&gt;&gt;&#xA;override this.CreateQueueAsync : string * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.QueueClient&gt;&gt;" Usage="queueServiceClient.CreateQueueAsync (queueName, metadata, cancellationToken)" />
       <MemberType>Method</MemberType>
@@ -184,7 +281,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+          <AttributeName>Azure.Core.ForwardsClientCalls</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -196,11 +293,23 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="queueName">To be added.</param>
-        <param name="metadata">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="queueName">
+             The name of the queue to create.
+             </param>
+        <param name="metadata">
+             Optional <see cref="T:System.Collections.Generic.IDictionary`2" />.
+             </param>
+        <param name="cancellationToken">
+          <see cref="T:System.Threading.CancellationToken" />
+        </param>
+        <summary>
+             Creates a queue.
+            
+             For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/create-queue4" />.
+             </summary>
+        <returns>
+             A newly created <see cref="T:Azure.Response`1" />.
+             </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -214,6 +323,11 @@
         <AssemblyName>Azure.Storage.Queues</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Azure.Core.ForwardsClientCalls</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.Response</ReturnType>
       </ReturnValue>
@@ -222,10 +336,20 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="queueName">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="queueName">
+             The name of the queue to delete.
+             </param>
+        <param name="cancellationToken">
+          <see cref="T:System.Threading.CancellationToken" />
+        </param>
+        <summary>
+             Deletes a queue.
+            
+             For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/delete-queue3" />.
+             </summary>
+        <returns>
+          <see cref="T:Azure.Response" />
+        </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,7 +365,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+          <AttributeName>Azure.Core.ForwardsClientCalls</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -252,16 +376,26 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="queueName">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="queueName">
+             The name of the queue to delete.
+             </param>
+        <param name="cancellationToken">
+          <see cref="T:System.Threading.CancellationToken" />
+        </param>
+        <summary>
+             Deletes a queue.
+            
+             For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/delete-queue3" />.
+             </summary>
+        <returns>
+          <see cref="T:Azure.Response" />
+        </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
       <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Queues.Models.QueueServiceProperties&gt; GetProperties (System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Azure.Response`1&lt;class Azure.Storage.Queues.Models.QueueServiceProperties&gt; GetProperties(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Queues.Models.QueueServiceProperties&gt; GetProperties(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueServiceClient.GetProperties(System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member GetProperties : System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Queues.Models.QueueServiceProperties&gt;&#xA;override this.GetProperties : System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Queues.Models.QueueServiceProperties&gt;" Usage="queueServiceClient.GetProperties cancellationToken" />
       <MemberType>Method</MemberType>
@@ -276,15 +410,22 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="cancellationToken">
+          <see cref="T:System.Threading.CancellationToken" />
+        </param>
+        <summary>
+            Gets the properties of the queue service.
+            For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/get-queue-service-properties" />.
+            </summary>
+        <returns>
+          <see cref="T:Azure.Response`1" />
+        </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPropertiesAsync">
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.QueueServiceProperties&gt;&gt; GetPropertiesAsync (System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;valuetype Azure.Response`1&lt;class Azure.Storage.Queues.Models.QueueServiceProperties&gt;&gt; GetPropertiesAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Queues.Models.QueueServiceProperties&gt;&gt; GetPropertiesAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueServiceClient.GetPropertiesAsync(System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member GetPropertiesAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.QueueServiceProperties&gt;&gt;&#xA;override this.GetPropertiesAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.QueueServiceProperties&gt;&gt;" Usage="queueServiceClient.GetPropertiesAsync cancellationToken" />
       <MemberType>Method</MemberType>
@@ -292,11 +433,6 @@
         <AssemblyName>Azure.Storage.Queues</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.QueueServiceProperties&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -304,9 +440,16 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="cancellationToken">
+          <see cref="T:System.Threading.CancellationToken" />
+        </param>
+        <summary>
+            Gets the properties of the queue service.
+            For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/get-queue-service-properties" />.
+            </summary>
+        <returns>
+          <see cref="T:Azure.Response`1" />
+        </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -328,65 +471,111 @@
         <Parameter Name="queueName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="queueName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="queueName">
+            The name of the queue to reference.
+            </param>
+        <summary>
+            Create a new <see cref="T:Azure.Storage.Queues.QueueClient" /> object by appending
+            <paramref name="queueName" /> to the end of <see cref="P:Azure.Storage.Queues.QueueServiceClient.Uri" />.
+            The new <see cref="T:Azure.Storage.Queues.QueueClient" /> uses the same request
+            policy pipeline as the <see cref="T:Azure.Storage.Queues.QueueServiceClient" />.
+            </summary>
+        <returns>
+            A <see cref="T:Azure.Storage.Queues.QueueClient" /> for the desired queue.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetQueues">
-      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Azure.Response&lt;Azure.Storage.Queues.Models.QueueItem&gt;&gt; GetQueues (Nullable&lt;Azure.Storage.Queues.Models.GetQueuesOptions&gt; options = null, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Response`1&lt;class Azure.Storage.Queues.Models.QueueItem&gt;&gt; GetQueues(valuetype System.Nullable`1&lt;valuetype Azure.Storage.Queues.Models.GetQueuesOptions&gt; options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueServiceClient.GetQueues(System.Nullable{Azure.Storage.Queues.Models.GetQueuesOptions},System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="abstract member GetQueues : Nullable&lt;Azure.Storage.Queues.Models.GetQueuesOptions&gt; * System.Threading.CancellationToken -&gt; seq&lt;Azure.Response&lt;Azure.Storage.Queues.Models.QueueItem&gt;&gt;&#xA;override this.GetQueues : Nullable&lt;Azure.Storage.Queues.Models.GetQueuesOptions&gt; * System.Threading.CancellationToken -&gt; seq&lt;Azure.Response&lt;Azure.Storage.Queues.Models.QueueItem&gt;&gt;" Usage="queueServiceClient.GetQueues (options, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.Storage.Queues.Models.QueueItem&gt; GetQueues (Azure.Storage.Queues.Models.QueueTraits traits = Azure.Storage.Queues.Models.QueueTraits.None, string prefix = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.Storage.Queues.Models.QueueItem&gt; GetQueues(valuetype Azure.Storage.Queues.Models.QueueTraits traits, string prefix, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueServiceClient.GetQueues(Azure.Storage.Queues.Models.QueueTraits,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetQueues : Azure.Storage.Queues.Models.QueueTraits * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.Storage.Queues.Models.QueueItem&gt;&#xA;override this.GetQueues : Azure.Storage.Queues.Models.QueueTraits * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.Storage.Queues.Models.QueueItem&gt;" Usage="queueServiceClient.GetQueues (traits, prefix, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Queues</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.IEnumerable&lt;Azure.Response&lt;Azure.Storage.Queues.Models.QueueItem&gt;&gt;</ReturnType>
+        <ReturnType>Azure.Pageable&lt;Azure.Storage.Queues.Models.QueueItem&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="options" Type="System.Nullable&lt;Azure.Storage.Queues.Models.GetQueuesOptions&gt;" />
+        <Parameter Name="traits" Type="Azure.Storage.Queues.Models.QueueTraits" />
+        <Parameter Name="prefix" Type="System.String" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="options">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="traits">
+             Optional trait options for shaping the queues.
+             </param>
+        <param name="prefix">
+             Optional string that filters the results to return only queues
+             whose name begins with the specified <paramref name="prefix" />.
+             </param>
+        <param name="cancellationToken">
+          <see cref="T:System.Threading.CancellationToken" />
+        </param>
+        <summary>
+             The <see cref="M:Azure.Storage.Queues.QueueServiceClient.GetQueues(Azure.Storage.Queues.Models.QueueTraits,System.String,System.Threading.CancellationToken)" /> operation returns an async
+             sequence of queues in the storage account.  Enumerating the
+             queues may make multiple requests to the service while fetching
+             all the values.  Queue names are returned in lexicographic order.
+            
+             For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/list-queues1" /></summary>
+        <returns>
+             The queues in the storage account.
+             </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetQueuesAsync">
-      <MemberSignature Language="C#" Value="public virtual Azure.AsyncCollection&lt;Azure.Storage.Queues.Models.QueueItem&gt; GetQueuesAsync (Nullable&lt;Azure.Storage.Queues.Models.GetQueuesOptions&gt; options = null, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncCollection`1&lt;class Azure.Storage.Queues.Models.QueueItem&gt; GetQueuesAsync(valuetype System.Nullable`1&lt;valuetype Azure.Storage.Queues.Models.GetQueuesOptions&gt; options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueServiceClient.GetQueuesAsync(System.Nullable{Azure.Storage.Queues.Models.GetQueuesOptions},System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="abstract member GetQueuesAsync : Nullable&lt;Azure.Storage.Queues.Models.GetQueuesOptions&gt; * System.Threading.CancellationToken -&gt; Azure.AsyncCollection&lt;Azure.Storage.Queues.Models.QueueItem&gt;&#xA;override this.GetQueuesAsync : Nullable&lt;Azure.Storage.Queues.Models.GetQueuesOptions&gt; * System.Threading.CancellationToken -&gt; Azure.AsyncCollection&lt;Azure.Storage.Queues.Models.QueueItem&gt;" Usage="queueServiceClient.GetQueuesAsync (options, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.Storage.Queues.Models.QueueItem&gt; GetQueuesAsync (Azure.Storage.Queues.Models.QueueTraits traits = Azure.Storage.Queues.Models.QueueTraits.None, string prefix = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.Storage.Queues.Models.QueueItem&gt; GetQueuesAsync(valuetype Azure.Storage.Queues.Models.QueueTraits traits, string prefix, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueServiceClient.GetQueuesAsync(Azure.Storage.Queues.Models.QueueTraits,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetQueuesAsync : Azure.Storage.Queues.Models.QueueTraits * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.Storage.Queues.Models.QueueItem&gt;&#xA;override this.GetQueuesAsync : Azure.Storage.Queues.Models.QueueTraits * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.Storage.Queues.Models.QueueItem&gt;" Usage="queueServiceClient.GetQueuesAsync (traits, prefix, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Queues</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AsyncCollection&lt;Azure.Storage.Queues.Models.QueueItem&gt;</ReturnType>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.Storage.Queues.Models.QueueItem&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="options" Type="System.Nullable&lt;Azure.Storage.Queues.Models.GetQueuesOptions&gt;" />
+        <Parameter Name="traits" Type="Azure.Storage.Queues.Models.QueueTraits" />
+        <Parameter Name="prefix" Type="System.String" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="options">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="traits">
+             Optional trait options for shaping the queues.
+             </param>
+        <param name="prefix">
+             Optional string that filters the results to return only queues
+             whose name begins with the specified <paramref name="prefix" />.
+             </param>
+        <param name="cancellationToken">
+          <see cref="T:System.Threading.CancellationToken" />
+        </param>
+        <summary>
+             The <see cref="M:Azure.Storage.Queues.QueueServiceClient.GetQueuesAsync(Azure.Storage.Queues.Models.QueueTraits,System.String,System.Threading.CancellationToken)" /> operation returns an async
+             collection of queues in the storage account.  Enumerating the
+             queues may make multiple requests to the service while fetching
+             all the values.  Queue names are returned in lexicographic order.
+            
+             For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/list-queues1" /></summary>
+        <returns>
+             The queues in the storage account.
+             </returns>
+        <remarks>
+             Use an empty marker to start enumeration from the beginning. Queue names are returned in lexicographic order.
+             After getting a segment, process it, and then call ListQueuesSegment again (passing in the next marker) to get the next segment.
+             </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetStatistics">
       <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Queues.Models.QueueServiceStatistics&gt; GetStatistics (System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Azure.Response`1&lt;class Azure.Storage.Queues.Models.QueueServiceStatistics&gt; GetStatistics(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Queues.Models.QueueServiceStatistics&gt; GetStatistics(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueServiceClient.GetStatistics(System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member GetStatistics : System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Queues.Models.QueueServiceStatistics&gt;&#xA;override this.GetStatistics : System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Queues.Models.QueueServiceStatistics&gt;" Usage="queueServiceClient.GetStatistics cancellationToken" />
       <MemberType>Method</MemberType>
@@ -401,15 +590,24 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="cancellationToken">
+          <see cref="T:System.Threading.CancellationToken" />
+        </param>
+        <summary>
+            Retrieves statistics related to replication for the Blob service. It is
+            only available on the secondary location endpoint when read-access
+            geo-redundant replication is enabled for the storage account.
+            For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/get-queue-service-stats" />.
+            </summary>
+        <returns>
+          <see cref="T:Azure.Response`1" />
+        </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetStatisticsAsync">
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.QueueServiceStatistics&gt;&gt; GetStatisticsAsync (System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;valuetype Azure.Response`1&lt;class Azure.Storage.Queues.Models.QueueServiceStatistics&gt;&gt; GetStatisticsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Queues.Models.QueueServiceStatistics&gt;&gt; GetStatisticsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Queues.QueueServiceClient.GetStatisticsAsync(System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member GetStatisticsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.QueueServiceStatistics&gt;&gt;&#xA;override this.GetStatisticsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.QueueServiceStatistics&gt;&gt;" Usage="queueServiceClient.GetStatisticsAsync cancellationToken" />
       <MemberType>Method</MemberType>
@@ -417,11 +615,6 @@
         <AssemblyName>Azure.Storage.Queues</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Queues.Models.QueueServiceStatistics&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -429,29 +622,18 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Pipeline">
-      <MemberSignature Language="C#" Value="protected virtual Azure.Core.Pipeline.HttpPipeline Pipeline { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.Pipeline.HttpPipeline Pipeline" />
-      <MemberSignature Language="DocId" Value="P:Azure.Storage.Queues.QueueServiceClient.Pipeline" />
-      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property Pipeline As HttpPipeline" />
-      <MemberSignature Language="F#" Value="member this.Pipeline : Azure.Core.Pipeline.HttpPipeline" Usage="Azure.Storage.Queues.QueueServiceClient.Pipeline" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Storage.Queues</AssemblyName>
-        <AssemblyVersion>12.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.Core.Pipeline.HttpPipeline</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="cancellationToken">
+          <see cref="T:System.Threading.CancellationToken" />
+        </param>
+        <summary>
+            Retrieves statistics related to replication for the Blob service. It is
+            only available on the secondary location endpoint when read-access
+            geo-redundant replication is enabled for the storage account.
+            For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/get-queue-service-stats" />.
+            </summary>
+        <returns>
+          <see cref="T:Azure.Response`1" />
+        </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -473,10 +655,19 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="properties">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="properties">
+          <see cref="T:Azure.Storage.Queues.Models.QueueServiceProperties" />
+        </param>
+        <param name="cancellationToken">
+          <see cref="T:System.Threading.CancellationToken" />
+        </param>
+        <summary>
+            Sets the properties of the queue service.
+            For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/set-queue-service-properties" />.
+            </summary>
+        <returns>
+          <see cref="T:Azure.Response" />
+        </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -490,11 +681,6 @@
         <AssemblyName>Azure.Storage.Queues</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
       </ReturnValue>
@@ -503,10 +689,19 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="properties">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="properties">
+          <see cref="T:Azure.Storage.Queues.Models.QueueServiceProperties" />
+        </param>
+        <param name="cancellationToken">
+          <see cref="T:System.Threading.CancellationToken" />
+        </param>
+        <summary>
+            Sets the properties of the queue service.
+            For more information, see <see href="https://docs.microsoft.com/en-us/rest/api/storageservices/set-queue-service-properties" />.
+            </summary>
+        <returns>
+          <see cref="T:Azure.Response" />
+        </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -525,7 +720,9 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The Uri endpoint used by the object.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

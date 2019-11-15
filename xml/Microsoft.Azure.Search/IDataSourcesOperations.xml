@@ -1,4 +1,4 @@
-﻿<Type Name="IDataSourcesOperations" FullName="Microsoft.Azure.Search.IDataSourcesOperations">
+<Type Name="IDataSourcesOperations" FullName="Microsoft.Azure.Search.IDataSourcesOperations">
   <TypeSignature Language="C#" Value="public interface IDataSourcesOperations" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataSourcesOperations" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Search.IDataSourcesOperations" />
@@ -6,8 +6,9 @@
   <TypeSignature Language="F#" Value="type IDataSourcesOperations = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-    <AssemblyVersion>9.0.0.0</AssemblyVersion>
-    <AssemblyVersion>9.1.0.0</AssemblyVersion>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+    <AssemblyVersion>10.0.1.0</AssemblyVersion>
+    <AssemblyVersion>10.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -25,8 +26,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.1.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.1.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DataSource&gt;&gt;</ReturnType>
@@ -55,7 +57,7 @@
             The cancellation token.
             </param>
         <summary>
-            Creates a new Azure Search datasource or updates a datasource if it already
+            Creates a new datasource or updates a datasource if it already
             exists.
             <see href="https://docs.microsoft.com/rest/api/searchservice/Update-Data-Source" /></summary>
         <returns>
@@ -84,8 +86,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.1.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.1.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DataSource&gt;&gt;</ReturnType>
@@ -118,8 +121,8 @@
             The cancellation token.
             </param>
         <summary>
-            Creates a new Azure Search datasource or updates a datasource if it
-            already exists.
+            Creates a new datasource or updates a datasource if it already
+            exists.
             <see href="https://docs.microsoft.com/rest/api/searchservice/Update-Data-Source" /></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -142,8 +145,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.1.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.1.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DataSource&gt;&gt;</ReturnType>
@@ -168,7 +172,7 @@
             The cancellation token.
             </param>
         <summary>
-            Creates a new Azure Search datasource.
+            Creates a new datasource.
             <see href="https://docs.microsoft.com/rest/api/searchservice/Create-Data-Source" /></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -191,8 +195,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.1.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.1.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&gt;</ReturnType>
@@ -221,7 +226,7 @@
             The cancellation token.
             </param>
         <summary>
-            Deletes an Azure Search datasource.
+            Deletes a datasource.
             <see href="https://docs.microsoft.com/rest/api/searchservice/Delete-Data-Source" /></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -241,8 +246,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.1.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.1.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;System.Boolean&gt;&gt;</ReturnType>
@@ -267,7 +273,7 @@
             The cancellation token.
             </param>
         <summary>
-            Determines whether or not the given data source exists in the Azure Search service.
+            Determines whether or not the given data source exists in the search service.
             </summary>
         <returns>
             A response with the value <c>true</c> if the data source exists; <c>false</c> otherwise.
@@ -295,8 +301,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.1.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.1.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DataSource&gt;&gt;</ReturnType>
@@ -321,7 +328,7 @@
             The cancellation token.
             </param>
         <summary>
-            Retrieves a datasource definition from Azure Search.
+            Retrieves a datasource definition.
             <see href="https://docs.microsoft.com/rest/api/searchservice/Get-Data-Source" /></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -344,8 +351,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.1.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.1.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DataSourceListResult&gt;&gt;</ReturnType>
@@ -366,7 +374,7 @@
             The cancellation token.
             </param>
         <summary>
-            Lists all datasources available for an Azure Search service.
+            Lists all datasources available for a search service.
             <see href="https://docs.microsoft.com/rest/api/searchservice/List-Data-Sources" /></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

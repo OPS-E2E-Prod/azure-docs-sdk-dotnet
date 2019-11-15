@@ -1,4 +1,4 @@
-﻿<Type Name="SearchContinuationTokenComparer" FullName="Microsoft.Azure.Search.Models.Internal.SearchContinuationTokenComparer">
+<Type Name="SearchContinuationTokenComparer" FullName="Microsoft.Azure.Search.Models.Internal.SearchContinuationTokenComparer">
   <TypeSignature Language="C#" Value="public class SearchContinuationTokenComparer : System.Collections.Generic.IEqualityComparer&lt;Microsoft.Azure.Search.Models.SearchContinuationToken&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SearchContinuationTokenComparer extends System.Object implements class System.Collections.Generic.IEqualityComparer`1&lt;class Microsoft.Azure.Search.Models.SearchContinuationToken&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Search.Models.Internal.SearchContinuationTokenComparer" />
@@ -6,7 +6,9 @@
   <TypeSignature Language="F#" Value="type SearchContinuationTokenComparer = class&#xA;    interface IEqualityComparer&lt;SearchContinuationToken&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-    <AssemblyVersion>9.1.0.0</AssemblyVersion>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+    <AssemblyVersion>10.0.1.0</AssemblyVersion>
+    <AssemblyVersion>10.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -17,8 +19,18 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Compares two <c cref="T:Microsoft.Azure.Search.Models.SearchContinuationToken">SearchContinuationToken</c> instances for equality.
+            </summary>
     <remarks>To be added.</remarks>
+    <para>
+            This class is part of the internal implementation of the Azure Search .NET SDK. It is not intended to be used directly by
+            application code.
+            </para>
+    <para>
+            This class is part of the internal implementation of the Azure Cognitive Search .NET SDK. It is not intended to be used directly by
+            application code.
+            </para>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -29,7 +41,9 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>9.1.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.1.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -49,7 +63,9 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>9.1.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.1.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -59,10 +75,13 @@
         <Parameter Name="second" Type="Microsoft.Azure.Search.Models.SearchContinuationToken" />
       </Parameters>
       <Docs>
-        <param name="first">To be added.</param>
-        <param name="second">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="first">The first continuation token to compare.</param>
+        <param name="second">The second continuation token to compare.</param>
+        <summary>
+            Compares the two given continuation tokens for equality.
+            </summary>
+        <returns>
+          <c>true</c> if the two tokens are equal, <c>false</c> otherwise.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,7 +97,9 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>9.1.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.1.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -87,9 +108,11 @@
         <Parameter Name="obj" Type="Microsoft.Azure.Search.Models.SearchContinuationToken" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object for which a hash code is to be returned.</param>
+        <summary>
+            Returns a hash code for the specified object.
+            </summary>
+        <returns>A hash code for the specified object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

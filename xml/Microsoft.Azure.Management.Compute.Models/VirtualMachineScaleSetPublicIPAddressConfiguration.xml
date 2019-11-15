@@ -1,4 +1,4 @@
-﻿<Type Name="VirtualMachineScaleSetPublicIPAddressConfiguration" FullName="Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetPublicIPAddressConfiguration">
+<Type Name="VirtualMachineScaleSetPublicIPAddressConfiguration" FullName="Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetPublicIPAddressConfiguration">
   <TypeSignature Language="C#" Value="public class VirtualMachineScaleSetPublicIPAddressConfiguration" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VirtualMachineScaleSetPublicIPAddressConfiguration extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetPublicIPAddressConfiguration" />
@@ -8,6 +8,9 @@
     <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
     <AssemblyVersion>27.0.0.0</AssemblyVersion>
     <AssemblyVersion>28.0.0.0</AssemblyVersion>
+    <AssemblyVersion>29.0.0.0</AssemblyVersion>
+    <AssemblyVersion>29.1.0.0</AssemblyVersion>
+    <AssemblyVersion>30.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -36,6 +39,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -47,16 +53,15 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public VirtualMachineScaleSetPublicIPAddressConfiguration (string name, Nullable&lt;int&gt; idleTimeoutInMinutes = null, Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettings dnsSettings = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetIpTag&gt; ipTags = null, Microsoft.Azure.Management.Compute.Models.SubResource publicIPPrefix = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Nullable`1&lt;int32&gt; idleTimeoutInMinutes, class Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettings dnsSettings, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetIpTag&gt; ipTags, class Microsoft.Azure.Management.Compute.Models.SubResource publicIPPrefix) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetPublicIPAddressConfiguration.#ctor(System.String,System.Nullable{System.Int32},Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettings,System.Collections.Generic.IList{Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetIpTag},Microsoft.Azure.Management.Compute.Models.SubResource)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, Optional idleTimeoutInMinutes As Nullable(Of Integer) = null, Optional dnsSettings As VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettings = null, Optional ipTags As IList(Of VirtualMachineScaleSetIpTag) = null, Optional publicIPPrefix As SubResource = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetPublicIPAddressConfiguration : string * Nullable&lt;int&gt; * Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettings * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetIpTag&gt; * Microsoft.Azure.Management.Compute.Models.SubResource -&gt; Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetPublicIPAddressConfiguration" Usage="new Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetPublicIPAddressConfiguration (name, idleTimeoutInMinutes, dnsSettings, ipTags, publicIPPrefix)" />
+      <MemberSignature Language="C#" Value="public VirtualMachineScaleSetPublicIPAddressConfiguration (string name, Nullable&lt;int&gt; idleTimeoutInMinutes = null, Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettings dnsSettings = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetIpTag&gt; ipTags = null, Microsoft.Azure.Management.Compute.Models.SubResource publicIPPrefix = null, string publicIPAddressVersion = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Nullable`1&lt;int32&gt; idleTimeoutInMinutes, class Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettings dnsSettings, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetIpTag&gt; ipTags, class Microsoft.Azure.Management.Compute.Models.SubResource publicIPPrefix, string publicIPAddressVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetPublicIPAddressConfiguration.#ctor(System.String,System.Nullable{System.Int32},Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettings,System.Collections.Generic.IList{Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetIpTag},Microsoft.Azure.Management.Compute.Models.SubResource,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, Optional idleTimeoutInMinutes As Nullable(Of Integer) = null, Optional dnsSettings As VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettings = null, Optional ipTags As IList(Of VirtualMachineScaleSetIpTag) = null, Optional publicIPPrefix As SubResource = null, Optional publicIPAddressVersion As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetPublicIPAddressConfiguration : string * Nullable&lt;int&gt; * Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettings * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetIpTag&gt; * Microsoft.Azure.Management.Compute.Models.SubResource * string -&gt; Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetPublicIPAddressConfiguration" Usage="new Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetPublicIPAddressConfiguration (name, idleTimeoutInMinutes, dnsSettings, ipTags, publicIPPrefix, publicIPAddressVersion)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
-        <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -64,6 +69,7 @@
         <Parameter Name="dnsSettings" Type="Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettings" />
         <Parameter Name="ipTags" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetIpTag&gt;" />
         <Parameter Name="publicIPPrefix" Type="Microsoft.Azure.Management.Compute.Models.SubResource" />
+        <Parameter Name="publicIPAddressVersion" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="name">The publicIP address configuration name.</param>
@@ -75,6 +81,11 @@
             IP address.</param>
         <param name="publicIPPrefix">The PublicIPPrefix from which to
             allocate publicIP addresses.</param>
+        <param name="publicIPAddressVersion">Available from Api-Version
+            2019-07-01 onwards, it represents whether the specific
+            ipconfiguration is IPv4 or IPv6. Default is taken as IPv4. Possible
+            values are: 'IPv4' and 'IPv6'. Possible values include: 'IPv4',
+            'IPv6'</param>
         <summary>
             Initializes a new instance of the
             VirtualMachineScaleSetPublicIPAddressConfiguration class.
@@ -93,6 +104,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -122,6 +136,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -150,6 +167,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -179,6 +199,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -196,6 +219,36 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="PublicIPAddressVersion">
+      <MemberSignature Language="C#" Value="public string PublicIPAddressVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PublicIPAddressVersion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetPublicIPAddressConfiguration.PublicIPAddressVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property PublicIPAddressVersion As String" />
+      <MemberSignature Language="F#" Value="member this.PublicIPAddressVersion : string with get, set" Usage="Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetPublicIPAddressConfiguration.PublicIPAddressVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.publicIPAddressVersion")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets available from Api-Version 2019-07-01 onwards, it
+            represents whether the specific ipconfiguration is IPv4 or IPv6.
+            Default is taken as IPv4. Possible values are: 'IPv4' and 'IPv6'.
+            Possible values include: 'IPv4', 'IPv6'
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="PublicIPPrefix">
       <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Compute.Models.SubResource PublicIPPrefix { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Compute.Models.SubResource PublicIPPrefix" />
@@ -207,6 +260,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -236,6 +292,9 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>27.0.0.0</AssemblyVersion>
         <AssemblyVersion>28.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.0.0.0</AssemblyVersion>
+        <AssemblyVersion>29.1.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
