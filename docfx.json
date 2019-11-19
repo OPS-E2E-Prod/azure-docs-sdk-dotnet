@@ -8,7 +8,8 @@
         ],
         "exclude": [
           "**/toc.yml",
-          "overwrites/**/*"
+          "overwrites/**/*",
+          "**/includes/**"
         ],
         "src": "api",
         "dest": "api"
@@ -37,6 +38,9 @@
         "files": [
           "**/*.md",
           "**/*.yml"
+        ],
+        "exclude": [
+          "**/includes/**"
         ],
         "src": "docs-ref-conceptual",
         "dest": "azure"
@@ -92,7 +96,7 @@
       }
     },
     "fileMetadata": {
-      "feedback_system": 
+      "feedback_system":
       {
         "api/**/*": "None"
       },
@@ -239,7 +243,7 @@
         "api/System.Web.http*.yml": "app-service",
         "api/TrackOne*.yml": "event-hubs",
         "docs-ref-conceptual/**/*.md": "multiple"
-      },      
+      },
       "version": {
         "api/overview/azure/**/*.yml": ["azure-dotnet", "azure-dotnet-preview", "azure-dotnet-legacy"],
         "api/overview/azure/**/*.md": ["azure-dotnet", "azure-dotnet-preview", "azure-dotnet-legacy"],
