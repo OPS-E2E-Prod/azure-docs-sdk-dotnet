@@ -6,8 +6,10 @@
   <TypeSignature Language="F#" Value="type ExpressRouteCircuitStatsInner = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
     <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,8 +30,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -41,7 +45,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ExpressRouteCircuitStatsInner (Nullable&lt;long&gt; primarybytesIn = null, Nullable&lt;long&gt; primarybytesOut = null, Nullable&lt;long&gt; secondarybytesIn = null, Nullable&lt;long&gt; secondarybytesOut = null);" />
+      <MemberSignature Language="C#" Value="public ExpressRouteCircuitStatsInner (Nullable&lt;long&gt; primarybytesIn = default, Nullable&lt;long&gt; primarybytesOut = default, Nullable&lt;long&gt; secondarybytesIn = default, Nullable&lt;long&gt; secondarybytesOut = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;int64&gt; primarybytesIn, valuetype System.Nullable`1&lt;int64&gt; primarybytesOut, valuetype System.Nullable`1&lt;int64&gt; secondarybytesIn, valuetype System.Nullable`1&lt;int64&gt; secondarybytesOut) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.Models.ExpressRouteCircuitStatsInner.#ctor(System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional primarybytesIn As Nullable(Of Long) = null, Optional primarybytesOut As Nullable(Of Long) = null, Optional secondarybytesIn As Nullable(Of Long) = null, Optional secondarybytesOut As Nullable(Of Long) = null)" />
@@ -49,8 +53,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="primarybytesIn" Type="System.Nullable&lt;System.Int64&gt;" />
@@ -59,10 +65,13 @@
         <Parameter Name="secondarybytesOut" Type="System.Nullable&lt;System.Int64&gt;" />
       </Parameters>
       <Docs>
-        <param name="primarybytesIn">Gets BytesIn of the peering.</param>
-        <param name="primarybytesOut">Gets BytesOut of the peering.</param>
-        <param name="secondarybytesIn">Gets BytesIn of the peering.</param>
-        <param name="secondarybytesOut">Gets BytesOut of the
+        <param name="primarybytesIn">The Primary BytesIn of the
+            peering.</param>
+        <param name="primarybytesOut">The primary BytesOut of the
+            peering.</param>
+        <param name="secondarybytesIn">The secondary BytesIn of the
+            peering.</param>
+        <param name="secondarybytesOut">The secondary BytesOut of the
             peering.</param>
         <summary>
             Initializes a new instance of the ExpressRouteCircuitStatsInner
@@ -80,8 +89,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -93,7 +104,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets BytesIn of the peering.
+            Gets or sets the Primary BytesIn of the peering.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -108,8 +119,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -121,7 +134,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets BytesOut of the peering.
+            Gets or sets the primary BytesOut of the peering.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -136,8 +149,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -149,7 +164,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets BytesIn of the peering.
+            Gets or sets the secondary BytesIn of the peering.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -164,8 +179,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -177,7 +194,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets BytesOut of the peering.
+            Gets or sets the secondary BytesOut of the peering.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

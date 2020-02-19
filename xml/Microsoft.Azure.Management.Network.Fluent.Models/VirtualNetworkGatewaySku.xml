@@ -6,8 +6,10 @@
   <TypeSignature Language="F#" Value="type VirtualNetworkGatewaySku = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
     <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,8 +30,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -40,7 +44,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public VirtualNetworkGatewaySku (Microsoft.Azure.Management.Network.Fluent.Models.VirtualNetworkGatewaySkuName name = null, Microsoft.Azure.Management.Network.Fluent.Models.VirtualNetworkGatewaySkuTier tier = null, Nullable&lt;int&gt; capacity = null);" />
+      <MemberSignature Language="C#" Value="public VirtualNetworkGatewaySku (Microsoft.Azure.Management.Network.Fluent.Models.VirtualNetworkGatewaySkuName name = default, Microsoft.Azure.Management.Network.Fluent.Models.VirtualNetworkGatewaySkuTier tier = default, Nullable&lt;int&gt; capacity = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.Management.Network.Fluent.Models.VirtualNetworkGatewaySkuName name, class Microsoft.Azure.Management.Network.Fluent.Models.VirtualNetworkGatewaySkuTier tier, valuetype System.Nullable`1&lt;int32&gt; capacity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.Models.VirtualNetworkGatewaySku.#ctor(Microsoft.Azure.Management.Network.Fluent.Models.VirtualNetworkGatewaySkuName,Microsoft.Azure.Management.Network.Fluent.Models.VirtualNetworkGatewaySkuTier,System.Nullable{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional name As VirtualNetworkGatewaySkuName = null, Optional tier As VirtualNetworkGatewaySkuTier = null, Optional capacity As Nullable(Of Integer) = null)" />
@@ -48,8 +52,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="Microsoft.Azure.Management.Network.Fluent.Models.VirtualNetworkGatewaySkuName" />
@@ -59,12 +65,14 @@
       <Docs>
         <param name="name">Gateway SKU name. Possible values include:
             'Basic', 'HighPerformance', 'Standard', 'UltraPerformance',
-            'VpnGw1', 'VpnGw2', 'VpnGw3', 'VpnGw1AZ', 'VpnGw2AZ', 'VpnGw3AZ',
-            'ErGw1AZ', 'ErGw2AZ', 'ErGw3AZ'</param>
+            'VpnGw1', 'VpnGw2', 'VpnGw3', 'VpnGw4', 'VpnGw5', 'VpnGw1AZ',
+            'VpnGw2AZ', 'VpnGw3AZ', 'VpnGw4AZ', 'VpnGw5AZ', 'ErGw1AZ',
+            'ErGw2AZ', 'ErGw3AZ'</param>
         <param name="tier">Gateway SKU tier. Possible values include:
             'Basic', 'HighPerformance', 'Standard', 'UltraPerformance',
-            'VpnGw1', 'VpnGw2', 'VpnGw3', 'VpnGw1AZ', 'VpnGw2AZ', 'VpnGw3AZ',
-            'ErGw1AZ', 'ErGw2AZ', 'ErGw3AZ'</param>
+            'VpnGw1', 'VpnGw2', 'VpnGw3', 'VpnGw4', 'VpnGw5', 'VpnGw1AZ',
+            'VpnGw2AZ', 'VpnGw3AZ', 'VpnGw4AZ', 'VpnGw5AZ', 'ErGw1AZ',
+            'ErGw2AZ', 'ErGw3AZ'</param>
         <param name="capacity">The capacity.</param>
         <summary>
             Initializes a new instance of the VirtualNetworkGatewaySku class.
@@ -73,16 +81,18 @@
       </Docs>
     </Member>
     <Member MemberName="Capacity">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; Capacity { get; set; }" />
+      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; Capacity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Capacity" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Fluent.Models.VirtualNetworkGatewaySku.Capacity" />
-      <MemberSignature Language="VB.NET" Value="Public Property Capacity As Nullable(Of Integer)" />
-      <MemberSignature Language="F#" Value="member this.Capacity : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.Network.Fluent.Models.VirtualNetworkGatewaySku.Capacity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Capacity As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.Capacity : Nullable&lt;int&gt;" Usage="Microsoft.Azure.Management.Network.Fluent.Models.VirtualNetworkGatewaySku.Capacity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -94,7 +104,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the capacity.
+            Gets the capacity.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -109,8 +119,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -124,8 +136,8 @@
         <summary>
             Gets or sets gateway SKU name. Possible values include: 'Basic',
             'HighPerformance', 'Standard', 'UltraPerformance', 'VpnGw1',
-            'VpnGw2', 'VpnGw3', 'VpnGw1AZ', 'VpnGw2AZ', 'VpnGw3AZ', 'ErGw1AZ',
-            'ErGw2AZ', 'ErGw3AZ'
+            'VpnGw2', 'VpnGw3', 'VpnGw4', 'VpnGw5', 'VpnGw1AZ', 'VpnGw2AZ',
+            'VpnGw3AZ', 'VpnGw4AZ', 'VpnGw5AZ', 'ErGw1AZ', 'ErGw2AZ', 'ErGw3AZ'
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -140,8 +152,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -155,8 +169,8 @@
         <summary>
             Gets or sets gateway SKU tier. Possible values include: 'Basic',
             'HighPerformance', 'Standard', 'UltraPerformance', 'VpnGw1',
-            'VpnGw2', 'VpnGw3', 'VpnGw1AZ', 'VpnGw2AZ', 'VpnGw3AZ', 'ErGw1AZ',
-            'ErGw2AZ', 'ErGw3AZ'
+            'VpnGw2', 'VpnGw3', 'VpnGw4', 'VpnGw5', 'VpnGw1AZ', 'VpnGw2AZ',
+            'VpnGw3AZ', 'VpnGw4AZ', 'VpnGw5AZ', 'ErGw1AZ', 'ErGw2AZ', 'ErGw3AZ'
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

@@ -6,7 +6,6 @@
   <TypeSignature Language="F#" Value="type Examples = class&#xA;    interface IServiceOperations&lt;LUISAuthoringClient&gt;&#xA;    interface IExamples" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>3.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -21,9 +20,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>
-            Examples operations.
-            </summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,27 +33,19 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="client" Type="Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.LUISAuthoringClient" />
       </Parameters>
       <Docs>
-        <param name="client">
-            Reference to the service client.
-            </param>
-        <summary>
-            Initializes a new instance of the Examples class.
-            </summary>
+        <param name="client">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-            Thrown when a required parameter is null
-            </exception>
       </Docs>
     </Member>
     <Member MemberName="AddWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.LabelExampleResponse&gt;&gt; AddWithHttpMessagesAsync (Guid appId, string versionId, Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.ExampleLabelObject exampleLabelObject, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.LabelExampleResponse&gt;&gt; AddWithHttpMessagesAsync (Guid appId, string versionId, Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.ExampleLabelObject exampleLabelObject, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.LabelExampleResponse&gt;&gt; AddWithHttpMessagesAsync(valuetype System.Guid appId, string versionId, class Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.ExampleLabelObject exampleLabelObject, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Examples.AddWithHttpMessagesAsync(System.Guid,System.String,Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.ExampleLabelObject,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member AddWithHttpMessagesAsync : Guid * string * Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.ExampleLabelObject * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.LabelExampleResponse&gt;&gt;&#xA;override this.AddWithHttpMessagesAsync : Guid * string * Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.ExampleLabelObject * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.LabelExampleResponse&gt;&gt;" Usage="examples.AddWithHttpMessagesAsync (appId, versionId, exampleLabelObject, customHeaders, cancellationToken)" />
@@ -66,7 +55,6 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -80,45 +68,18 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="appId">
-            The application ID.
-            </param>
-        <param name="versionId">
-            The version ID.
-            </param>
-        <param name="exampleLabelObject">
-            An example label with the expected intent and entities.
-            </param>
-        <param name="customHeaders">
-            Headers that will be added to request.
-            </param>
-        <param name="cancellationToken">
-            The cancellation token.
-            </param>
-        <summary>
-            Adds a labeled example to the application.
-            </summary>
+        <param name="appId">To be added.</param>
+        <param name="versionId">To be added.</param>
+        <param name="exampleLabelObject">To be added.</param>
+        <param name="customHeaders">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.ErrorResponseException">
-            Thrown when the operation returned an invalid status code
-            </exception>
-        <exception cref="T:Microsoft.Rest.SerializationException">
-            Thrown when unable to deserialize the response
-            </exception>
-        <exception cref="T:Microsoft.Rest.ValidationException">
-            Thrown when a required parameter is null
-            </exception>
-        <exception cref="T:System.ArgumentNullException">
-            Thrown when a required parameter is null
-            </exception>
-        <return>
-            A response object containing the response body and response headers.
-            </return>
       </Docs>
     </Member>
     <Member MemberName="BatchWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.BatchLabelExample&gt;&gt;&gt; BatchWithHttpMessagesAsync (Guid appId, string versionId, System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.ExampleLabelObject&gt; exampleLabelObjectArray, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.BatchLabelExample&gt;&gt;&gt; BatchWithHttpMessagesAsync (Guid appId, string versionId, System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.ExampleLabelObject&gt; exampleLabelObjectArray, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.BatchLabelExample&gt;&gt;&gt; BatchWithHttpMessagesAsync(valuetype System.Guid appId, string versionId, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.ExampleLabelObject&gt; exampleLabelObjectArray, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Examples.BatchWithHttpMessagesAsync(System.Guid,System.String,System.Collections.Generic.IList{Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.ExampleLabelObject},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member BatchWithHttpMessagesAsync : Guid * string * System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.ExampleLabelObject&gt; * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.BatchLabelExample&gt;&gt;&gt;&#xA;override this.BatchWithHttpMessagesAsync : Guid * string * System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.ExampleLabelObject&gt; * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.BatchLabelExample&gt;&gt;&gt;" Usage="examples.BatchWithHttpMessagesAsync (appId, versionId, exampleLabelObjectArray, customHeaders, cancellationToken)" />
@@ -128,7 +89,6 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -142,41 +102,14 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="appId">
-            The application ID.
-            </param>
-        <param name="versionId">
-            The version ID.
-            </param>
-        <param name="exampleLabelObjectArray">
-            Array of examples.
-            </param>
-        <param name="customHeaders">
-            Headers that will be added to request.
-            </param>
-        <param name="cancellationToken">
-            The cancellation token.
-            </param>
-        <summary>
-            Adds a batch of labeled examples to the application.
-            </summary>
+        <param name="appId">To be added.</param>
+        <param name="versionId">To be added.</param>
+        <param name="exampleLabelObjectArray">To be added.</param>
+        <param name="customHeaders">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.ErrorResponseException">
-            Thrown when the operation returned an invalid status code
-            </exception>
-        <exception cref="T:Microsoft.Rest.SerializationException">
-            Thrown when unable to deserialize the response
-            </exception>
-        <exception cref="T:Microsoft.Rest.ValidationException">
-            Thrown when a required parameter is null
-            </exception>
-        <exception cref="T:System.ArgumentNullException">
-            Thrown when a required parameter is null
-            </exception>
-        <return>
-            A response object containing the response body and response headers.
-            </return>
       </Docs>
     </Member>
     <Member MemberName="Client">
@@ -188,22 +121,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.LUISAuthoringClient</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Gets a reference to the LUISAuthoringClient
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.OperationStatus&gt;&gt; DeleteWithHttpMessagesAsync (Guid appId, string versionId, int exampleId, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.OperationStatus&gt;&gt; DeleteWithHttpMessagesAsync (Guid appId, string versionId, int exampleId, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.OperationStatus&gt;&gt; DeleteWithHttpMessagesAsync(valuetype System.Guid appId, string versionId, int32 exampleId, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Examples.DeleteWithHttpMessagesAsync(System.Guid,System.String,System.Int32,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member DeleteWithHttpMessagesAsync : Guid * string * int * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.OperationStatus&gt;&gt;&#xA;override this.DeleteWithHttpMessagesAsync : Guid * string * int * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.OperationStatus&gt;&gt;" Usage="examples.DeleteWithHttpMessagesAsync (appId, versionId, exampleId, customHeaders, cancellationToken)" />
@@ -213,7 +143,6 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -227,45 +156,18 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="appId">
-            The application ID.
-            </param>
-        <param name="versionId">
-            The version ID.
-            </param>
-        <param name="exampleId">
-            The example ID.
-            </param>
-        <param name="customHeaders">
-            Headers that will be added to request.
-            </param>
-        <param name="cancellationToken">
-            The cancellation token.
-            </param>
-        <summary>
-            Deletes the labeled example with the specified ID.
-            </summary>
+        <param name="appId">To be added.</param>
+        <param name="versionId">To be added.</param>
+        <param name="exampleId">To be added.</param>
+        <param name="customHeaders">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.ErrorResponseException">
-            Thrown when the operation returned an invalid status code
-            </exception>
-        <exception cref="T:Microsoft.Rest.SerializationException">
-            Thrown when unable to deserialize the response
-            </exception>
-        <exception cref="T:Microsoft.Rest.ValidationException">
-            Thrown when a required parameter is null
-            </exception>
-        <exception cref="T:System.ArgumentNullException">
-            Thrown when a required parameter is null
-            </exception>
-        <return>
-            A response object containing the response body and response headers.
-            </return>
       </Docs>
     </Member>
     <Member MemberName="ListWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.LabeledUtterance&gt;&gt;&gt; ListWithHttpMessagesAsync (Guid appId, string versionId, Nullable&lt;int&gt; skip = 0, Nullable&lt;int&gt; take = 100, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.LabeledUtterance&gt;&gt;&gt; ListWithHttpMessagesAsync (Guid appId, string versionId, Nullable&lt;int&gt; skip = 0, Nullable&lt;int&gt; take = 100, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.LabeledUtterance&gt;&gt;&gt; ListWithHttpMessagesAsync(valuetype System.Guid appId, string versionId, valuetype System.Nullable`1&lt;int32&gt; skip, valuetype System.Nullable`1&lt;int32&gt; take, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Examples.ListWithHttpMessagesAsync(System.Guid,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member ListWithHttpMessagesAsync : Guid * string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.LabeledUtterance&gt;&gt;&gt;&#xA;override this.ListWithHttpMessagesAsync : Guid * string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.LabeledUtterance&gt;&gt;&gt;" Usage="examples.ListWithHttpMessagesAsync (appId, versionId, skip, take, customHeaders, cancellationToken)" />
@@ -275,7 +177,6 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -290,44 +191,15 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="appId">
-            The application ID.
-            </param>
-        <param name="versionId">
-            The version ID.
-            </param>
-        <param name="skip">
-            The number of entries to skip. Default value is 0.
-            </param>
-        <param name="take">
-            The number of entries to return. Maximum page size is 500. Default is 100.
-            </param>
-        <param name="customHeaders">
-            Headers that will be added to request.
-            </param>
-        <param name="cancellationToken">
-            The cancellation token.
-            </param>
-        <summary>
-            Returns examples to be reviewed.
-            </summary>
+        <param name="appId">To be added.</param>
+        <param name="versionId">To be added.</param>
+        <param name="skip">To be added.</param>
+        <param name="take">To be added.</param>
+        <param name="customHeaders">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.ErrorResponseException">
-            Thrown when the operation returned an invalid status code
-            </exception>
-        <exception cref="T:Microsoft.Rest.SerializationException">
-            Thrown when unable to deserialize the response
-            </exception>
-        <exception cref="T:Microsoft.Rest.ValidationException">
-            Thrown when a required parameter is null
-            </exception>
-        <exception cref="T:System.ArgumentNullException">
-            Thrown when a required parameter is null
-            </exception>
-        <return>
-            A response object containing the response body and response headers.
-            </return>
       </Docs>
     </Member>
   </Members>

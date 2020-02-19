@@ -334,19 +334,30 @@
       uid: azure.net.sdk.landingPage.services.CosmosDB.Client
       landingPageType: Service
       children:
+      - 'Azure.Cosmos*'
       - 'Microsoft.Azure.Documents*'
       - 'Microsoft.Azure.Graphs*'
       - 'Microsoft.Azure.CosmosDB*'
       - 'Microsoft.Azure.Cosmos*'
   - name: Data Box
-    uid: azure.net.sdk.landingPage.services.DataBox
     landingPageType: Service
+    uid: azure.net.sdk.landingPage.services.databox
     items:
     - name: Management
-      uid: azure.net.sdk.landingPage.services.DataBox.Management
+      uid: azure.net.sdk.landingPage.services.databox.Management
       landingPageType: Service
       children:
-      - 'Microsoft.Azure.Management.DataBox*'
+      - 'Microsoft.Azure.Management.DataBox'
+      - 'Microsoft.Azure.Management.DataBox.*'
+  - name: Data Box Edge/Data Box Gateway
+    landingPageType: Service
+    uid: azure.net.sdk.landingPage.services.databoxedgegateway
+    items:
+    - name: Management
+      uid: azure.net.sdk.landingPage.services.databoxedgegateway.Management
+      landingPageType: Service
+      children:
+      - 'Microsoft.Azure.Management.DataBoxEdge*'
   - name: Data Explorer
     uid: azure.net.sdk.landingPage.services.DataExplorer
     landingPageType: Service
@@ -432,10 +443,10 @@
       - 'Microsoft.Azure.Management.Dns*'
   - name: Edge Gateway
     landingPageType: Service
-    uid: azure.net.sdk.landingPage.services.EdgeGateway
+    uid: azure.net.sdk.landingPage.services.edgegateway
     items:
     - name: Management
-      uid: azure.net.sdk.landingPage.services.EdgeGateway.Management
+      uid: azure.net.sdk.landingPage.services.edgegateway.Management
       landingPageType: Service
       children:
       - 'Microsoft.Azure.Management.EdgeGateway*'
@@ -559,6 +570,8 @@
       uid: azure.net.sdk.landingPage.services.ManagementGroups.Management
       landingPageType: Service
       children:
+      - 'Microsoft.Azure.Management.Maintenance*'
+      - 'Microsoft.Azure.Management.Maintenance.Models*'
       - 'Microsoft.Azure.Management.ManagementGroups*'
   - name: Media Services
     uid: azure.net.sdk.landingPage.services.MediaServices
@@ -647,6 +660,15 @@
       landingPageType: Service
       children:
       - 'Microsoft.Azure.OperationalInsights*'
+  - name: Policy Insights
+    landingPageType: Service
+    uid: azure.net.sdk.landingpage.services.PolicyInsights
+    items: 
+    - name: Management
+      uid: azure.net.sdk.landingpage.services.PolicyInsights.Management
+      landingPageType: Service
+      children:
+      - 'Microsoft.Azure.Management.PolicyInsights*'
   - name: PostgreSQL
     href: ~/api/overview/azure/postgresql.md
     uid: azure.net.sdk.landingpage.services.PostgreSQL
@@ -821,7 +843,7 @@
       - 'Azure.Storage.Blobs.Models*'
       - 'Azure.Storage.Blobs.Specialized*'
       - 'Azure.Storage.Common'
-      - 'Azure.Storage.Files'
+      - 'Azure.Storage.Files*'
       - 'Azure.Storage.Files.Models'
       - 'Azure.Storage.Sas'
       - 'Azure.Storage.Queues'
@@ -876,6 +898,25 @@
       landingPageType: Service
       children:
       - 'Microsoft.Azure.Management.StreamAnalytics*'
+  - name: Supportability
+    uid: azure.net.sdk.landingPage.services.Supportability
+    landingPageType: Service
+    items:
+    - name: Management
+      uid: azure.net.sdk.landingPage.services.Supportability.Management
+      landingPageType: Service
+      children:
+      - 'Microsoft.Azure.Management.Support*'
+      - 'Microsoft.Azure.Management.Support.Models*'
+  - name: Text Analytics
+    uid: azure.net.sdk.landingPage.services.TextAnalytics
+    landingPageType: Service
+    items:
+    - name: Client
+      uid: azure.net.sdk.landingPage.services.TextAnalytics.Client
+      landingPageType: Service
+      children:
+      - 'Azure.AI.TextAnalytics*'
   - name: Traffic Manager
     uid: azure.net.sdk.landingPage.services.TrafficManager
     href: ~/api/overview/azure/traffic-manager.md

@@ -6,13 +6,10 @@
   <TypeSignature Language="F#" Value="type Permission = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-    <AssemblyVersion>3.2.0.0</AssemblyVersion>
-    <AssemblyVersion>3.3.0.0</AssemblyVersion>
-    <AssemblyVersion>3.3.1.0</AssemblyVersion>
-    <AssemblyVersion>3.3.2.0</AssemblyVersion>
-    <AssemblyVersion>3.3.3.0</AssemblyVersion>
-    <AssemblyVersion>3.4.0.0</AssemblyVersion>
     <AssemblyVersion>3.4.1.0</AssemblyVersion>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+    <AssemblyVersion>3.5.1.0</AssemblyVersion>
+    <AssemblyVersion>3.6.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -33,13 +30,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.2.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.1.0</AssemblyVersion>
-        <AssemblyVersion>3.3.2.0</AssemblyVersion>
-        <AssemblyVersion>3.3.3.0</AssemblyVersion>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
         <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,20 +42,17 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteAsync">
-      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.PermissionResponse&gt; DeleteAsync (Microsoft.Azure.Cosmos.RequestOptions requestOptions = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.PermissionResponse&gt; DeleteAsync (Microsoft.Azure.Cosmos.RequestOptions requestOptions = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Cosmos.PermissionResponse&gt; DeleteAsync(class Microsoft.Azure.Cosmos.RequestOptions requestOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Permission.DeleteAsync(Microsoft.Azure.Cosmos.RequestOptions,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member DeleteAsync : Microsoft.Azure.Cosmos.RequestOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.PermissionResponse&gt;" Usage="permission.DeleteAsync (requestOptions, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.2.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.1.0</AssemblyVersion>
-        <AssemblyVersion>3.3.2.0</AssemblyVersion>
-        <AssemblyVersion>3.3.3.0</AssemblyVersion>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
         <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.PermissionResponse&gt;</ReturnType>
@@ -71,7 +62,7 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="requestOptions">(Optional) The options for the user request <see cref="T:Microsoft.Azure.Cosmos.RequestOptions" /></param>
+        <param name="requestOptions">(Optional) The options for the user request.</param>
         <param name="cancellationToken">(Optional) <see cref="T:System.Threading.CancellationToken" /> representing request cancellation.</param>
         <summary>
             Delete a <see cref="T:Microsoft.Azure.Cosmos.PermissionProperties" /> from the Azure Cosmos DB service as an asynchronous operation. This will not revoke existing ResourceTokens.
@@ -98,13 +89,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.2.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.1.0</AssemblyVersion>
-        <AssemblyVersion>3.3.2.0</AssemblyVersion>
-        <AssemblyVersion>3.3.3.0</AssemblyVersion>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
         <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -118,20 +106,17 @@
       </Docs>
     </Member>
     <Member MemberName="ReadAsync">
-      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.PermissionResponse&gt; ReadAsync (Nullable&lt;int&gt; tokenExpiryInSeconds = null, Microsoft.Azure.Cosmos.RequestOptions requestOptions = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.PermissionResponse&gt; ReadAsync (Nullable&lt;int&gt; tokenExpiryInSeconds = default, Microsoft.Azure.Cosmos.RequestOptions requestOptions = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Cosmos.PermissionResponse&gt; ReadAsync(valuetype System.Nullable`1&lt;int32&gt; tokenExpiryInSeconds, class Microsoft.Azure.Cosmos.RequestOptions requestOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Permission.ReadAsync(System.Nullable{System.Int32},Microsoft.Azure.Cosmos.RequestOptions,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member ReadAsync : Nullable&lt;int&gt; * Microsoft.Azure.Cosmos.RequestOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.PermissionResponse&gt;" Usage="permission.ReadAsync (tokenExpiryInSeconds, requestOptions, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.2.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.1.0</AssemblyVersion>
-        <AssemblyVersion>3.3.2.0</AssemblyVersion>
-        <AssemblyVersion>3.3.3.0</AssemblyVersion>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
         <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.PermissionResponse&gt;</ReturnType>
@@ -143,7 +128,7 @@
       </Parameters>
       <Docs>
         <param name="tokenExpiryInSeconds">(Optional) The expiry time for resource token in seconds. This value can range from 10 seconds, to 24 hours (or 86,400 seconds). The default value for this is 1 hour (or 3,600 seconds). This does not change the default value for future tokens.</param>
-        <param name="requestOptions">(Optional) The options for the permission request <see cref="T:Microsoft.Azure.Cosmos.RequestOptions" /></param>
+        <param name="requestOptions">(Optional) The options for the permission request.</param>
         <param name="cancellationToken">(Optional) <see cref="T:System.Threading.CancellationToken" /> representing request cancellation.</param>
         <summary>
             Reads a <see cref="T:Microsoft.Azure.Cosmos.PermissionProperties" /> from the Azure Cosmos service as an asynchronous operation. Each read will return a new ResourceToken with its respective expiration. 
@@ -164,20 +149,17 @@
       </Docs>
     </Member>
     <Member MemberName="ReplaceAsync">
-      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.PermissionResponse&gt; ReplaceAsync (Microsoft.Azure.Cosmos.PermissionProperties permissionProperties, Nullable&lt;int&gt; tokenExpiryInSeconds = null, Microsoft.Azure.Cosmos.RequestOptions requestOptions = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.PermissionResponse&gt; ReplaceAsync (Microsoft.Azure.Cosmos.PermissionProperties permissionProperties, Nullable&lt;int&gt; tokenExpiryInSeconds = default, Microsoft.Azure.Cosmos.RequestOptions requestOptions = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Cosmos.PermissionResponse&gt; ReplaceAsync(class Microsoft.Azure.Cosmos.PermissionProperties permissionProperties, valuetype System.Nullable`1&lt;int32&gt; tokenExpiryInSeconds, class Microsoft.Azure.Cosmos.RequestOptions requestOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Permission.ReplaceAsync(Microsoft.Azure.Cosmos.PermissionProperties,System.Nullable{System.Int32},Microsoft.Azure.Cosmos.RequestOptions,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member ReplaceAsync : Microsoft.Azure.Cosmos.PermissionProperties * Nullable&lt;int&gt; * Microsoft.Azure.Cosmos.RequestOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.PermissionResponse&gt;" Usage="permission.ReplaceAsync (permissionProperties, tokenExpiryInSeconds, requestOptions, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.2.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.1.0</AssemblyVersion>
-        <AssemblyVersion>3.3.2.0</AssemblyVersion>
-        <AssemblyVersion>3.3.3.0</AssemblyVersion>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
         <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.PermissionResponse&gt;</ReturnType>
@@ -191,7 +173,7 @@
       <Docs>
         <param name="permissionProperties">The <see cref="T:Microsoft.Azure.Cosmos.PermissionProperties" /> object.</param>
         <param name="tokenExpiryInSeconds">(Optional) The expiry time for resource token in seconds. This value can range from 10 seconds, to 24 hours (or 86,400 seconds). The default value for this is 1 hour (or 3,600 seconds). This does not change the default value for future tokens.</param>
-        <param name="requestOptions">(Optional) The options for the user request <see cref="T:Microsoft.Azure.Cosmos.RequestOptions" /></param>
+        <param name="requestOptions">(Optional) The options for the user request.</param>
         <param name="cancellationToken">(Optional) <see cref="T:System.Threading.CancellationToken" /> representing request cancellation.</param>
         <summary>
             Replace a <see cref="T:Microsoft.Azure.Cosmos.PermissionProperties" /> from the Azure Cosmos service as an asynchronous operation. This will not revoke existing ResourceTokens.

@@ -6,8 +6,10 @@
   <TypeSignature Language="F#" Value="type IRegistries = interface&#xA;    interface IBeta&#xA;    interface ISupportsCreating&lt;IBlank&gt;&#xA;    interface IHasManager&lt;IRegistryManager&gt;&#xA;    interface IHasInner&lt;IRegistriesOperations&gt;&#xA;    interface ISupportsBatchCreation&lt;IRegistry&gt;&#xA;    interface ISupportsGettingById&lt;IRegistry&gt;&#xA;    interface ISupportsDeletingById&#xA;    interface ISupportsDeletingByResourceGroup&#xA;    interface ISupportsListingByResourceGroup&lt;IRegistry&gt;&#xA;    interface ISupportsGettingByResourceGroup&lt;IRegistry&gt;&#xA;    interface ISupportsListing&lt;IRegistry&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.ContainerRegistry.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
     <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -60,8 +62,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.ContainerRegistry.Fluent.ICheckNameAvailabilityResult</ReturnType>
@@ -80,15 +84,17 @@
       </Docs>
     </Member>
     <Member MemberName="CheckNameAvailabilityAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ContainerRegistry.Fluent.ICheckNameAvailabilityResult&gt; CheckNameAvailabilityAsync (string name, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ContainerRegistry.Fluent.ICheckNameAvailabilityResult&gt; CheckNameAvailabilityAsync (string name, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.ContainerRegistry.Fluent.ICheckNameAvailabilityResult&gt; CheckNameAvailabilityAsync(string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ContainerRegistry.Fluent.IRegistries.CheckNameAvailabilityAsync(System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member CheckNameAvailabilityAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ContainerRegistry.Fluent.ICheckNameAvailabilityResult&gt;" Usage="iRegistries.CheckNameAvailabilityAsync (name, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ContainerRegistry.Fluent.ICheckNameAvailabilityResult&gt;</ReturnType>
@@ -117,8 +123,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.ContainerRegistry.Fluent.ISourceUploadDefinition</ReturnType>
@@ -139,15 +147,17 @@
       </Docs>
     </Member>
     <Member MemberName="GetBuildSourceUploadUrlAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ContainerRegistry.Fluent.ISourceUploadDefinition&gt; GetBuildSourceUploadUrlAsync (string rgName, string acrName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ContainerRegistry.Fluent.ISourceUploadDefinition&gt; GetBuildSourceUploadUrlAsync (string rgName, string acrName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.ContainerRegistry.Fluent.ISourceUploadDefinition&gt; GetBuildSourceUploadUrlAsync(string rgName, string acrName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ContainerRegistry.Fluent.IRegistries.GetBuildSourceUploadUrlAsync(System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member GetBuildSourceUploadUrlAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ContainerRegistry.Fluent.ISourceUploadDefinition&gt;" Usage="iRegistries.GetBuildSourceUploadUrlAsync (rgName, acrName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ContainerRegistry.Fluent.ISourceUploadDefinition&gt;</ReturnType>
@@ -178,8 +188,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.ContainerRegistry.Fluent.IRegistryCredentials</ReturnType>
@@ -200,15 +212,17 @@
       </Docs>
     </Member>
     <Member MemberName="GetCredentialsAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ContainerRegistry.Fluent.IRegistryCredentials&gt; GetCredentialsAsync (string resourceGroupName, string registryName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ContainerRegistry.Fluent.IRegistryCredentials&gt; GetCredentialsAsync (string resourceGroupName, string registryName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.ContainerRegistry.Fluent.IRegistryCredentials&gt; GetCredentialsAsync(string resourceGroupName, string registryName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ContainerRegistry.Fluent.IRegistries.GetCredentialsAsync(System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member GetCredentialsAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ContainerRegistry.Fluent.IRegistryCredentials&gt;" Usage="iRegistries.GetCredentialsAsync (resourceGroupName, registryName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ContainerRegistry.Fluent.IRegistryCredentials&gt;</ReturnType>
@@ -239,8 +253,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyCollection&lt;Microsoft.Azure.Management.ContainerRegistry.Fluent.Models.RegistryUsage&gt;</ReturnType>
@@ -261,15 +277,17 @@
       </Docs>
     </Member>
     <Member MemberName="ListQuotaUsagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IReadOnlyCollection&lt;Microsoft.Azure.Management.ContainerRegistry.Fluent.Models.RegistryUsage&gt;&gt; ListQuotaUsagesAsync (string resourceGroupName, string registryName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IReadOnlyCollection&lt;Microsoft.Azure.Management.ContainerRegistry.Fluent.Models.RegistryUsage&gt;&gt; ListQuotaUsagesAsync (string resourceGroupName, string registryName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IReadOnlyCollection`1&lt;class Microsoft.Azure.Management.ContainerRegistry.Fluent.Models.RegistryUsage&gt;&gt; ListQuotaUsagesAsync(string resourceGroupName, string registryName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ContainerRegistry.Fluent.IRegistries.ListQuotaUsagesAsync(System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member ListQuotaUsagesAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IReadOnlyCollection&lt;Microsoft.Azure.Management.ContainerRegistry.Fluent.Models.RegistryUsage&gt;&gt;" Usage="iRegistries.ListQuotaUsagesAsync (resourceGroupName, registryName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IReadOnlyCollection&lt;Microsoft.Azure.Management.ContainerRegistry.Fluent.Models.RegistryUsage&gt;&gt;</ReturnType>
@@ -299,8 +317,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.ContainerRegistry.Fluent.IRegistryCredentials</ReturnType>
@@ -323,15 +343,17 @@
       </Docs>
     </Member>
     <Member MemberName="RegenerateCredentialAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ContainerRegistry.Fluent.IRegistryCredentials&gt; RegenerateCredentialAsync (string resourceGroupName, string registryName, Microsoft.Azure.Management.ContainerRegistry.Fluent.AccessKeyType accessKeyType, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ContainerRegistry.Fluent.IRegistryCredentials&gt; RegenerateCredentialAsync (string resourceGroupName, string registryName, Microsoft.Azure.Management.ContainerRegistry.Fluent.AccessKeyType accessKeyType, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.ContainerRegistry.Fluent.IRegistryCredentials&gt; RegenerateCredentialAsync(string resourceGroupName, string registryName, class Microsoft.Azure.Management.ContainerRegistry.Fluent.AccessKeyType accessKeyType, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ContainerRegistry.Fluent.IRegistries.RegenerateCredentialAsync(System.String,System.String,Microsoft.Azure.Management.ContainerRegistry.Fluent.AccessKeyType,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member RegenerateCredentialAsync : string * string * Microsoft.Azure.Management.ContainerRegistry.Fluent.AccessKeyType * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ContainerRegistry.Fluent.IRegistryCredentials&gt;" Usage="iRegistries.RegenerateCredentialAsync (resourceGroupName, registryName, accessKeyType, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ContainerRegistry.Fluent.IRegistryCredentials&gt;</ReturnType>
@@ -364,8 +386,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.ContainerRegistry.Fluent.Registries.WebhooksClient.IWebhooksClient</ReturnType>

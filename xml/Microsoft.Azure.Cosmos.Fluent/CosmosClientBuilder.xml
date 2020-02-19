@@ -6,16 +6,10 @@
   <TypeSignature Language="F#" Value="type CosmosClientBuilder = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
-    <AssemblyVersion>3.1.0.0</AssemblyVersion>
-    <AssemblyVersion>3.1.1.0</AssemblyVersion>
-    <AssemblyVersion>3.2.0.0</AssemblyVersion>
-    <AssemblyVersion>3.3.0.0</AssemblyVersion>
-    <AssemblyVersion>3.3.1.0</AssemblyVersion>
-    <AssemblyVersion>3.3.2.0</AssemblyVersion>
-    <AssemblyVersion>3.3.3.0</AssemblyVersion>
-    <AssemblyVersion>3.4.0.0</AssemblyVersion>
     <AssemblyVersion>3.4.1.0</AssemblyVersion>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+    <AssemblyVersion>3.5.1.0</AssemblyVersion>
+    <AssemblyVersion>3.6.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -37,16 +31,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
-        <AssemblyVersion>3.1.1.0</AssemblyVersion>
-        <AssemblyVersion>3.2.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.1.0</AssemblyVersion>
-        <AssemblyVersion>3.3.2.0</AssemblyVersion>
-        <AssemblyVersion>3.3.3.0</AssemblyVersion>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
         <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="connectionString" Type="System.String" />
@@ -69,16 +57,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
-        <AssemblyVersion>3.1.1.0</AssemblyVersion>
-        <AssemblyVersion>3.2.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.1.0</AssemblyVersion>
-        <AssemblyVersion>3.3.2.0</AssemblyVersion>
-        <AssemblyVersion>3.3.3.0</AssemblyVersion>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
         <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="accountEndpoint" Type="System.String" />
@@ -91,33 +73,6 @@
             Initialize a new CosmosConfiguration class that holds all the properties the CosmosClient requires.
             </summary>
         <remarks>To be added.</remarks>
-        <example>
-            The example below creates a new <see cref="T:Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder" /> with a ConsistencyLevel and a list of preferred locations.
-            <code language="c#"><![CDATA[
-            CosmosClientBuilder cosmosClientBuilder = new CosmosClientBuilder(
-                accountEndpoint: "https://testcosmos.documents.azure.com:443/",
-                accountKey: "SuperSecretKey")
-            .UseConsistencyLevel(ConsistencyLevel.Strong)
-            .WithApplicationRegion("East US 2");
-            CosmosClient client = cosmosClientBuilder.Build();
-            ]]></code></example>
-        <example>
-            The example below creates a new <see cref="T:Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder" /><code language="c#"><![CDATA[
-            CosmosClientBuilder cosmosClientBuilder = new CosmosClientBuilder(
-                accountEndpoint: "https://testcosmos.documents.azure.com:443/",
-                accountKey: "SuperSecretKey");
-            CosmosClient client = cosmosClientBuilder.Build();
-            ]]></code></example>
-        <example>
-            The example below creates a new <see cref="T:Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder" /> with a ConsistencyLevel and a list of preferred locations.
-            <code language="c#"><![CDATA[
-            CosmosClientBuilder cosmosClientBuilder = new CosmosClientBuilder(
-                accountEndpoint: "https://testcosmos.documents.azure.com:443/",
-                accountKey: "SuperSecretKey")
-            .WithConsistencyLevel(ConsistencyLevel.Strong)
-            .WithApplicationRegion("East US 2");
-            CosmosClient client = cosmosClientBuilder.Build();
-            ]]></code></example>
         <example>
             The example below creates a new <see cref="T:Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder" /><code language="c#"><![CDATA[
             CosmosClientBuilder cosmosClientBuilder = new CosmosClientBuilder(
@@ -146,16 +101,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
-        <AssemblyVersion>3.1.1.0</AssemblyVersion>
-        <AssemblyVersion>3.2.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.1.0</AssemblyVersion>
-        <AssemblyVersion>3.3.2.0</AssemblyVersion>
-        <AssemblyVersion>3.3.3.0</AssemblyVersion>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
         <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder</ReturnType>
@@ -163,7 +112,7 @@
       <Parameters>
         <Parameter Name="customHandlers" Type="Microsoft.Azure.Cosmos.RequestHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="azure-dotnet">
+            <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -190,16 +139,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
-        <AssemblyVersion>3.1.1.0</AssemblyVersion>
-        <AssemblyVersion>3.2.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.1.0</AssemblyVersion>
-        <AssemblyVersion>3.3.2.0</AssemblyVersion>
-        <AssemblyVersion>3.3.3.0</AssemblyVersion>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
         <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.CosmosClient</ReturnType>
@@ -224,16 +167,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
-        <AssemblyVersion>3.1.1.0</AssemblyVersion>
-        <AssemblyVersion>3.2.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.1.0</AssemblyVersion>
-        <AssemblyVersion>3.3.2.0</AssemblyVersion>
-        <AssemblyVersion>3.3.3.0</AssemblyVersion>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
         <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder</ReturnType>
@@ -261,16 +198,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
-        <AssemblyVersion>3.1.1.0</AssemblyVersion>
-        <AssemblyVersion>3.2.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.1.0</AssemblyVersion>
-        <AssemblyVersion>3.3.2.0</AssemblyVersion>
-        <AssemblyVersion>3.3.3.0</AssemblyVersion>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
         <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder</ReturnType>
@@ -291,15 +222,6 @@
             <code language="c#"><![CDATA[
             CosmosClientBuilder cosmosClientBuilder = new CosmosClientBuilder(
                 accountEndpoint: "https://testcosmos.documents.azure.com:443/",
-                accountKey: "SuperSecretKey")
-            .WithApplicationRegion("East US 2");
-            CosmosClient client = cosmosClientBuilder.Build();
-            ]]></code></example>
-        <example>
-            The example below creates a new <see cref="T:Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder" /> with a of preferred region.
-            <code language="c#"><![CDATA[
-            CosmosClientBuilder cosmosClientBuilder = new CosmosClientBuilder(
-                accountEndpoint: "https://testcosmos.documents.azure.com:443/",
                 authKeyOrResourceToken: "SuperSecretKey")
             .WithApplicationRegion("East US 2");
             CosmosClient client = cosmosClientBuilder.Build();
@@ -315,8 +237,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
         <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder</ReturnType>
@@ -343,16 +267,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
-        <AssemblyVersion>3.1.1.0</AssemblyVersion>
-        <AssemblyVersion>3.2.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.1.0</AssemblyVersion>
-        <AssemblyVersion>3.3.2.0</AssemblyVersion>
-        <AssemblyVersion>3.3.3.0</AssemblyVersion>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
         <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder</ReturnType>
@@ -370,7 +288,7 @@
       </Docs>
     </Member>
     <Member MemberName="WithConnectionModeGateway">
-      <MemberSignature Language="C#" Value="public Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder WithConnectionModeGateway (Nullable&lt;int&gt; maxConnectionLimit = null, System.Net.IWebProxy webProxy = null);" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder WithConnectionModeGateway (Nullable&lt;int&gt; maxConnectionLimit = default, System.Net.IWebProxy webProxy = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder WithConnectionModeGateway(valuetype System.Nullable`1&lt;int32&gt; maxConnectionLimit, class System.Net.IWebProxy webProxy) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder.WithConnectionModeGateway(System.Nullable{System.Int32},System.Net.IWebProxy)" />
       <MemberSignature Language="VB.NET" Value="Public Function WithConnectionModeGateway (Optional maxConnectionLimit As Nullable(Of Integer) = null, Optional webProxy As IWebProxy = null) As CosmosClientBuilder" />
@@ -378,13 +296,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.2.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.1.0</AssemblyVersion>
-        <AssemblyVersion>3.3.2.0</AssemblyVersion>
-        <AssemblyVersion>3.3.3.0</AssemblyVersion>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
         <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder</ReturnType>
@@ -415,15 +330,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
-        <AssemblyVersion>3.1.1.0</AssemblyVersion>
-        <AssemblyVersion>3.2.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.1.0</AssemblyVersion>
-        <AssemblyVersion>3.3.2.0</AssemblyVersion>
-        <AssemblyVersion>3.3.3.0</AssemblyVersion>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
         <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder</ReturnType>
@@ -450,16 +360,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
-        <AssemblyVersion>3.1.1.0</AssemblyVersion>
-        <AssemblyVersion>3.2.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.1.0</AssemblyVersion>
-        <AssemblyVersion>3.3.2.0</AssemblyVersion>
-        <AssemblyVersion>3.3.3.0</AssemblyVersion>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
         <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder</ReturnType>
@@ -487,12 +391,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.3.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.1.0</AssemblyVersion>
-        <AssemblyVersion>3.3.2.0</AssemblyVersion>
-        <AssemblyVersion>3.3.3.0</AssemblyVersion>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
         <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder</ReturnType>
@@ -531,16 +433,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
-        <AssemblyVersion>3.1.1.0</AssemblyVersion>
-        <AssemblyVersion>3.2.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.1.0</AssemblyVersion>
-        <AssemblyVersion>3.3.2.0</AssemblyVersion>
-        <AssemblyVersion>3.3.3.0</AssemblyVersion>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
         <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder</ReturnType>
@@ -567,14 +463,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.1.1.0</AssemblyVersion>
-        <AssemblyVersion>3.2.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.1.0</AssemblyVersion>
-        <AssemblyVersion>3.3.2.0</AssemblyVersion>
-        <AssemblyVersion>3.3.3.0</AssemblyVersion>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
         <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder</ReturnType>
@@ -602,16 +494,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
-        <AssemblyVersion>3.1.1.0</AssemblyVersion>
-        <AssemblyVersion>3.2.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.1.0</AssemblyVersion>
-        <AssemblyVersion>3.3.2.0</AssemblyVersion>
-        <AssemblyVersion>3.3.3.0</AssemblyVersion>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
         <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder</ReturnType>

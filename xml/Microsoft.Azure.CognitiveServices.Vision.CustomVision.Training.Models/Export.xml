@@ -38,7 +38,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Export (string platform = null, string status = null, string downloadUri = null, string flavor = null, bool newerVersionAvailable = false);" />
+      <MemberSignature Language="C#" Value="public Export (string platform = default, string status = default, string downloadUri = default, string flavor = default, bool newerVersionAvailable = false);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string platform, string status, string downloadUri, string flavor, bool newerVersionAvailable) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training.Models.Export.#ctor(System.String,System.String,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional platform As String = null, Optional status As String = null, Optional downloadUri As String = null, Optional flavor As String = null, Optional newerVersionAvailable As Boolean = false)" />
@@ -58,12 +58,13 @@
       </Parameters>
       <Docs>
         <param name="platform">Platform of the export. Possible values
-            include: 'CoreML', 'TensorFlow', 'DockerFile', 'ONNX'</param>
+            include: 'CoreML', 'TensorFlow', 'DockerFile', 'ONNX',
+            'VAIDK'</param>
         <param name="status">Status of the export. Possible values include:
             'Exporting', 'Failed', 'Done'</param>
         <param name="downloadUri">URI used to download the model.</param>
         <param name="flavor">Flavor of the export. Possible values include:
-            'Linux', 'Windows', 'ONNX10', 'ONNX12'</param>
+            'Linux', 'Windows', 'ONNX10', 'ONNX12', 'ARM'</param>
         <param name="newerVersionAvailable">Indicates an updated version of
             the export package is available and should be re-exported for the
             latest changes.</param>
@@ -124,7 +125,7 @@
       <Docs>
         <summary>
             Gets flavor of the export. Possible values include: 'Linux',
-            'Windows', 'ONNX10', 'ONNX12'
+            'Windows', 'ONNX10', 'ONNX12', 'ARM'
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -182,7 +183,7 @@
       <Docs>
         <summary>
             Gets platform of the export. Possible values include: 'CoreML',
-            'TensorFlow', 'DockerFile', 'ONNX'
+            'TensorFlow', 'DockerFile', 'ONNX', 'VAIDK'
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

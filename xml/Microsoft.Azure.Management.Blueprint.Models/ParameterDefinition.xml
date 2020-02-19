@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
     <AssemblyVersion>0.10.0.0</AssemblyVersion>
     <AssemblyVersion>0.14.0.0</AssemblyVersion>
+    <AssemblyVersion>0.20.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -35,6 +36,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -45,7 +47,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ParameterDefinition (string type, string displayName = null, string description = null, string strongType = null, object defaultValue = null, System.Collections.Generic.IList&lt;object&gt; allowedValues = null);" />
+      <MemberSignature Language="C#" Value="public ParameterDefinition (string type, string displayName = default, string description = default, string strongType = default, object defaultValue = default, System.Collections.Generic.IList&lt;object&gt; allowedValues = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, string displayName, string description, string strongType, object defaultValue, class System.Collections.Generic.IList`1&lt;object&gt; allowedValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Blueprint.Models.ParameterDefinition.#ctor(System.String,System.String,System.String,System.String,System.Object,System.Collections.Generic.IList{System.Object})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (type As String, Optional displayName As String = null, Optional description As String = null, Optional strongType As String = null, Optional defaultValue As Object = null, Optional allowedValues As IList(Of Object) = null)" />
@@ -55,6 +57,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="type" Type="System.String" />
@@ -65,15 +68,15 @@
         <Parameter Name="allowedValues" Type="System.Collections.Generic.IList&lt;System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="type">Allowed data types for Azure Resource Manager
-            template parameters. Possible values include: 'string', 'array',
-            'bool', 'int', 'object', 'secureObject', 'secureString'</param>
+        <param name="type">Allowed data types for Resource Manager template
+            parameters. Possible values include: 'string', 'array', 'bool',
+            'int', 'object', 'secureObject', 'secureString'</param>
         <param name="displayName">DisplayName of this
             parameter/resourceGroup.</param>
         <param name="description">Description of this
             parameter/resourceGroup.</param>
         <param name="strongType">StrongType for UI to render rich
-            experience during assignment time.</param>
+            experience during blueprint assignment.</param>
         <param name="defaultValue">Default Value for this
             parameter.</param>
         <param name="allowedValues">Array of allowed values for this
@@ -95,6 +98,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -123,6 +127,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -151,6 +156,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -179,6 +185,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -207,6 +214,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -219,7 +227,7 @@
       <Docs>
         <summary>
             Gets or sets strongType for UI to render rich experience during
-            assignment time.
+            blueprint assignment.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -236,6 +244,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -247,7 +256,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets allowed data types for Azure Resource Manager template
+            Gets or sets allowed data types for Resource Manager template
             parameters. Possible values include: 'string', 'array', 'bool',
             'int', 'object', 'secureObject', 'secureString'
             </summary>
@@ -266,6 +275,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

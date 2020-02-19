@@ -7,6 +7,9 @@
   <AssemblyInfo>
     <AssemblyName>Azure.Storage.Blobs</AssemblyName>
     <AssemblyVersion>12.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.1.0.0</AssemblyVersion>
+    <AssemblyVersion>12.2.0.0</AssemblyVersion>
+    <AssemblyVersion>12.3.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.Storage.Blobs.Specialized.BlobBaseClient</BaseTypeName>
@@ -29,6 +32,9 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -40,7 +46,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public BlobClient (Uri blobUri, Azure.Storage.Blobs.BlobClientOptions options = null);" />
+      <MemberSignature Language="C#" Value="public BlobClient (Uri blobUri, Azure.Storage.Blobs.BlobClientOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri blobUri, class Azure.Storage.Blobs.BlobClientOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.BlobClient.#ctor(System.Uri,Azure.Storage.Blobs.BlobClientOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (blobUri As Uri, Optional options As BlobClientOptions = null)" />
@@ -49,6 +55,9 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="blobUri" Type="System.Uri" />
@@ -59,6 +68,7 @@
             A <see cref="T:System.Uri" /> referencing the blob that includes the
             name of the account, the name of the container, and the name of
             the blob.
+            This is likely to be similar to "https://{account_name}.blob.core.windows.net/{container_name}/{blob_name}".
             </param>
         <param name="options">
             Optional client options that define the transport pipeline
@@ -82,6 +92,9 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="connectionString" Type="System.String" />
@@ -110,7 +123,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public BlobClient (Uri blobUri, Azure.Core.TokenCredential credential, Azure.Storage.Blobs.BlobClientOptions options = null);" />
+      <MemberSignature Language="C#" Value="public BlobClient (Uri blobUri, Azure.Core.TokenCredential credential, Azure.Storage.Blobs.BlobClientOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri blobUri, class Azure.Core.TokenCredential credential, class Azure.Storage.Blobs.BlobClientOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.BlobClient.#ctor(System.Uri,Azure.Core.TokenCredential,Azure.Storage.Blobs.BlobClientOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (blobUri As Uri, credential As TokenCredential, Optional options As BlobClientOptions = null)" />
@@ -119,6 +132,9 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="blobUri" Type="System.Uri" />
@@ -130,6 +146,7 @@
             A <see cref="T:System.Uri" /> referencing the blob that includes the
             name of the account, the name of the container, and the name of
             the blob.
+            This is likely to be similar to "https://{account_name}.blob.core.windows.net/{container_name}/{blob_name}".
             </param>
         <param name="credential">
             The token credential used to sign requests.
@@ -147,7 +164,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public BlobClient (Uri blobUri, Azure.Storage.StorageSharedKeyCredential credential, Azure.Storage.Blobs.BlobClientOptions options = null);" />
+      <MemberSignature Language="C#" Value="public BlobClient (Uri blobUri, Azure.Storage.StorageSharedKeyCredential credential, Azure.Storage.Blobs.BlobClientOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri blobUri, class Azure.Storage.StorageSharedKeyCredential credential, class Azure.Storage.Blobs.BlobClientOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.BlobClient.#ctor(System.Uri,Azure.Storage.StorageSharedKeyCredential,Azure.Storage.Blobs.BlobClientOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (blobUri As Uri, credential As StorageSharedKeyCredential, Optional options As BlobClientOptions = null)" />
@@ -156,6 +173,9 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="blobUri" Type="System.Uri" />
@@ -167,6 +187,7 @@
             A <see cref="T:System.Uri" /> referencing the blob that includes the
             name of the account, the name of the container, and the name of
             the blob.
+            This is likely to be similar to "https://{account_name}.blob.core.windows.net/{container_name}/{blob_name}".
             </param>
         <param name="credential">
             The shared key credential used to sign requests.
@@ -193,6 +214,9 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="connectionString" Type="System.String" />
@@ -236,12 +260,10 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Azure.Core.ForwardsClientCalls</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;</ReturnType>
       </ReturnValue>
@@ -284,12 +306,10 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Azure.Core.ForwardsClientCalls</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;</ReturnType>
       </ReturnValue>
@@ -331,12 +351,10 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Azure.Core.ForwardsClientCalls</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;</ReturnType>
       </ReturnValue>
@@ -384,12 +402,10 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Azure.Core.ForwardsClientCalls</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;</ReturnType>
       </ReturnValue>
@@ -429,7 +445,7 @@
       </Docs>
     </Member>
     <Member MemberName="Upload">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt; Upload (System.IO.Stream content, bool overwrite = false, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt; Upload (System.IO.Stream content, bool overwrite = false, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Blobs.Models.BlobContentInfo&gt; Upload(class System.IO.Stream content, bool overwrite, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.BlobClient.Upload(System.IO.Stream,System.Boolean,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member Upload : System.IO.Stream * bool * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&#xA;override this.Upload : System.IO.Stream * bool * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;" Usage="blobClient.Upload (content, overwrite, cancellationToken)" />
@@ -437,12 +453,10 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Azure.Core.ForwardsClientCalls</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;</ReturnType>
       </ReturnValue>
@@ -487,7 +501,7 @@
       </Docs>
     </Member>
     <Member MemberName="Upload">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt; Upload (string path, bool overwrite = false, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt; Upload (string path, bool overwrite = false, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Blobs.Models.BlobContentInfo&gt; Upload(string path, bool overwrite, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.BlobClient.Upload(System.String,System.Boolean,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member Upload : string * bool * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&#xA;override this.Upload : string * bool * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;" Usage="blobClient.Upload (path, overwrite, cancellationToken)" />
@@ -495,12 +509,10 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Azure.Core.ForwardsClientCalls</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;</ReturnType>
       </ReturnValue>
@@ -545,7 +557,7 @@
       </Docs>
     </Member>
     <Member MemberName="Upload">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt; Upload (System.IO.Stream content, Azure.Storage.Blobs.Models.BlobHttpHeaders httpHeaders = null, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = null, Azure.Storage.Blobs.Models.BlobRequestConditions conditions = null, IProgress&lt;long&gt; progressHandler = null, Nullable&lt;Azure.Storage.Blobs.Models.AccessTier&gt; accessTier = null, Azure.Storage.StorageTransferOptions transferOptions = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt; Upload (System.IO.Stream content, Azure.Storage.Blobs.Models.BlobHttpHeaders httpHeaders = default, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = default, Azure.Storage.Blobs.Models.BlobRequestConditions conditions = default, IProgress&lt;long&gt; progressHandler = default, Nullable&lt;Azure.Storage.Blobs.Models.AccessTier&gt; accessTier = default, Azure.Storage.StorageTransferOptions transferOptions = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Blobs.Models.BlobContentInfo&gt; Upload(class System.IO.Stream content, class Azure.Storage.Blobs.Models.BlobHttpHeaders httpHeaders, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata, class Azure.Storage.Blobs.Models.BlobRequestConditions conditions, class System.IProgress`1&lt;int64&gt; progressHandler, valuetype System.Nullable`1&lt;valuetype Azure.Storage.Blobs.Models.AccessTier&gt; accessTier, valuetype Azure.Storage.StorageTransferOptions transferOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.BlobClient.Upload(System.IO.Stream,Azure.Storage.Blobs.Models.BlobHttpHeaders,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Storage.Blobs.Models.BlobRequestConditions,System.IProgress{System.Int64},System.Nullable{Azure.Storage.Blobs.Models.AccessTier},Azure.Storage.StorageTransferOptions,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member Upload : System.IO.Stream * Azure.Storage.Blobs.Models.BlobHttpHeaders * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Storage.Blobs.Models.BlobRequestConditions * IProgress&lt;int64&gt; * Nullable&lt;Azure.Storage.Blobs.Models.AccessTier&gt; * Azure.Storage.StorageTransferOptions * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&#xA;override this.Upload : System.IO.Stream * Azure.Storage.Blobs.Models.BlobHttpHeaders * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Storage.Blobs.Models.BlobRequestConditions * IProgress&lt;int64&gt; * Nullable&lt;Azure.Storage.Blobs.Models.AccessTier&gt; * Azure.Storage.StorageTransferOptions * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;" Usage="blobClient.Upload (content, httpHeaders, metadata, conditions, progressHandler, accessTier, transferOptions, cancellationToken)" />
@@ -553,12 +565,10 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Azure.Core.ForwardsClientCalls</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;</ReturnType>
       </ReturnValue>
@@ -627,7 +637,7 @@
       </Docs>
     </Member>
     <Member MemberName="Upload">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt; Upload (string path, Azure.Storage.Blobs.Models.BlobHttpHeaders httpHeaders = null, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = null, Azure.Storage.Blobs.Models.BlobRequestConditions conditions = null, IProgress&lt;long&gt; progressHandler = null, Nullable&lt;Azure.Storage.Blobs.Models.AccessTier&gt; accessTier = null, Azure.Storage.StorageTransferOptions transferOptions = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt; Upload (string path, Azure.Storage.Blobs.Models.BlobHttpHeaders httpHeaders = default, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = default, Azure.Storage.Blobs.Models.BlobRequestConditions conditions = default, IProgress&lt;long&gt; progressHandler = default, Nullable&lt;Azure.Storage.Blobs.Models.AccessTier&gt; accessTier = default, Azure.Storage.StorageTransferOptions transferOptions = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Blobs.Models.BlobContentInfo&gt; Upload(string path, class Azure.Storage.Blobs.Models.BlobHttpHeaders httpHeaders, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata, class Azure.Storage.Blobs.Models.BlobRequestConditions conditions, class System.IProgress`1&lt;int64&gt; progressHandler, valuetype System.Nullable`1&lt;valuetype Azure.Storage.Blobs.Models.AccessTier&gt; accessTier, valuetype Azure.Storage.StorageTransferOptions transferOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.BlobClient.Upload(System.String,Azure.Storage.Blobs.Models.BlobHttpHeaders,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Storage.Blobs.Models.BlobRequestConditions,System.IProgress{System.Int64},System.Nullable{Azure.Storage.Blobs.Models.AccessTier},Azure.Storage.StorageTransferOptions,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member Upload : string * Azure.Storage.Blobs.Models.BlobHttpHeaders * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Storage.Blobs.Models.BlobRequestConditions * IProgress&lt;int64&gt; * Nullable&lt;Azure.Storage.Blobs.Models.AccessTier&gt; * Azure.Storage.StorageTransferOptions * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&#xA;override this.Upload : string * Azure.Storage.Blobs.Models.BlobHttpHeaders * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Storage.Blobs.Models.BlobRequestConditions * IProgress&lt;int64&gt; * Nullable&lt;Azure.Storage.Blobs.Models.AccessTier&gt; * Azure.Storage.StorageTransferOptions * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;" Usage="blobClient.Upload (path, httpHeaders, metadata, conditions, progressHandler, accessTier, transferOptions, cancellationToken)" />
@@ -635,12 +645,10 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Azure.Core.ForwardsClientCalls</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;</ReturnType>
       </ReturnValue>
@@ -718,12 +726,10 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Azure.Core.ForwardsClientCalls</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -766,12 +772,10 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Azure.Core.ForwardsClientCalls</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -813,12 +817,10 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Azure.Core.ForwardsClientCalls</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -866,12 +868,10 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Azure.Core.ForwardsClientCalls</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -911,7 +911,7 @@
       </Docs>
     </Member>
     <Member MemberName="UploadAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt; UploadAsync (System.IO.Stream content, bool overwrite = false, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt; UploadAsync (System.IO.Stream content, bool overwrite = false, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt; UploadAsync(class System.IO.Stream content, bool overwrite, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.BlobClient.UploadAsync(System.IO.Stream,System.Boolean,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member UploadAsync : System.IO.Stream * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt;&#xA;override this.UploadAsync : System.IO.Stream * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt;" Usage="blobClient.UploadAsync (content, overwrite, cancellationToken)" />
@@ -919,12 +919,10 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Azure.Core.ForwardsClientCalls</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -969,7 +967,7 @@
       </Docs>
     </Member>
     <Member MemberName="UploadAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt; UploadAsync (string path, bool overwrite = false, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt; UploadAsync (string path, bool overwrite = false, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt; UploadAsync(string path, bool overwrite, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.BlobClient.UploadAsync(System.String,System.Boolean,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member UploadAsync : string * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt;&#xA;override this.UploadAsync : string * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt;" Usage="blobClient.UploadAsync (path, overwrite, cancellationToken)" />
@@ -977,12 +975,10 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Azure.Core.ForwardsClientCalls</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -1027,7 +1023,7 @@
       </Docs>
     </Member>
     <Member MemberName="UploadAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt; UploadAsync (System.IO.Stream content, Azure.Storage.Blobs.Models.BlobHttpHeaders httpHeaders = null, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = null, Azure.Storage.Blobs.Models.BlobRequestConditions conditions = null, IProgress&lt;long&gt; progressHandler = null, Nullable&lt;Azure.Storage.Blobs.Models.AccessTier&gt; accessTier = null, Azure.Storage.StorageTransferOptions transferOptions = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt; UploadAsync (System.IO.Stream content, Azure.Storage.Blobs.Models.BlobHttpHeaders httpHeaders = default, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = default, Azure.Storage.Blobs.Models.BlobRequestConditions conditions = default, IProgress&lt;long&gt; progressHandler = default, Nullable&lt;Azure.Storage.Blobs.Models.AccessTier&gt; accessTier = default, Azure.Storage.StorageTransferOptions transferOptions = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt; UploadAsync(class System.IO.Stream content, class Azure.Storage.Blobs.Models.BlobHttpHeaders httpHeaders, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata, class Azure.Storage.Blobs.Models.BlobRequestConditions conditions, class System.IProgress`1&lt;int64&gt; progressHandler, valuetype System.Nullable`1&lt;valuetype Azure.Storage.Blobs.Models.AccessTier&gt; accessTier, valuetype Azure.Storage.StorageTransferOptions transferOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.BlobClient.UploadAsync(System.IO.Stream,Azure.Storage.Blobs.Models.BlobHttpHeaders,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Storage.Blobs.Models.BlobRequestConditions,System.IProgress{System.Int64},System.Nullable{Azure.Storage.Blobs.Models.AccessTier},Azure.Storage.StorageTransferOptions,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member UploadAsync : System.IO.Stream * Azure.Storage.Blobs.Models.BlobHttpHeaders * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Storage.Blobs.Models.BlobRequestConditions * IProgress&lt;int64&gt; * Nullable&lt;Azure.Storage.Blobs.Models.AccessTier&gt; * Azure.Storage.StorageTransferOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt;&#xA;override this.UploadAsync : System.IO.Stream * Azure.Storage.Blobs.Models.BlobHttpHeaders * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Storage.Blobs.Models.BlobRequestConditions * IProgress&lt;int64&gt; * Nullable&lt;Azure.Storage.Blobs.Models.AccessTier&gt; * Azure.Storage.StorageTransferOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt;" Usage="blobClient.UploadAsync (content, httpHeaders, metadata, conditions, progressHandler, accessTier, transferOptions, cancellationToken)" />
@@ -1035,12 +1031,10 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Azure.Core.ForwardsClientCalls</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -1109,7 +1103,7 @@
       </Docs>
     </Member>
     <Member MemberName="UploadAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt; UploadAsync (string path, Azure.Storage.Blobs.Models.BlobHttpHeaders httpHeaders = null, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = null, Azure.Storage.Blobs.Models.BlobRequestConditions conditions = null, IProgress&lt;long&gt; progressHandler = null, Nullable&lt;Azure.Storage.Blobs.Models.AccessTier&gt; accessTier = null, Azure.Storage.StorageTransferOptions transferOptions = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt; UploadAsync (string path, Azure.Storage.Blobs.Models.BlobHttpHeaders httpHeaders = default, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = default, Azure.Storage.Blobs.Models.BlobRequestConditions conditions = default, IProgress&lt;long&gt; progressHandler = default, Nullable&lt;Azure.Storage.Blobs.Models.AccessTier&gt; accessTier = default, Azure.Storage.StorageTransferOptions transferOptions = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt; UploadAsync(string path, class Azure.Storage.Blobs.Models.BlobHttpHeaders httpHeaders, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata, class Azure.Storage.Blobs.Models.BlobRequestConditions conditions, class System.IProgress`1&lt;int64&gt; progressHandler, valuetype System.Nullable`1&lt;valuetype Azure.Storage.Blobs.Models.AccessTier&gt; accessTier, valuetype Azure.Storage.StorageTransferOptions transferOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.BlobClient.UploadAsync(System.String,Azure.Storage.Blobs.Models.BlobHttpHeaders,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Storage.Blobs.Models.BlobRequestConditions,System.IProgress{System.Int64},System.Nullable{Azure.Storage.Blobs.Models.AccessTier},Azure.Storage.StorageTransferOptions,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member UploadAsync : string * Azure.Storage.Blobs.Models.BlobHttpHeaders * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Storage.Blobs.Models.BlobRequestConditions * IProgress&lt;int64&gt; * Nullable&lt;Azure.Storage.Blobs.Models.AccessTier&gt; * Azure.Storage.StorageTransferOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt;&#xA;override this.UploadAsync : string * Azure.Storage.Blobs.Models.BlobHttpHeaders * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Storage.Blobs.Models.BlobRequestConditions * IProgress&lt;int64&gt; * Nullable&lt;Azure.Storage.Blobs.Models.AccessTier&gt; * Azure.Storage.StorageTransferOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt;" Usage="blobClient.UploadAsync (path, httpHeaders, metadata, conditions, progressHandler, accessTier, transferOptions, cancellationToken)" />
@@ -1117,12 +1111,10 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Azure.Core.ForwardsClientCalls</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt;</ReturnType>
       </ReturnValue>

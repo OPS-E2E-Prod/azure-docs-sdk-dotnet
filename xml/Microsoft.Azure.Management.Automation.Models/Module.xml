@@ -6,14 +6,16 @@
   <TypeSignature Language="F#" Value="type Module = class&#xA;    inherit TrackedResource" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>3.0.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.Automation.Models.TrackedResource</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="azure-dotnet">Microsoft.Azure.Management.Automation.Models.ResourceBase</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="azure-dotnet-preview">
       <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
     </Attribute>
   </Attributes>
@@ -32,6 +34,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -43,7 +46,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Module (string id = null, string name = null, string type = null, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = null, string location = null, Nullable&lt;bool&gt; isGlobal = null, string version = null, Nullable&lt;long&gt; sizeInBytes = null, Nullable&lt;int&gt; activityCount = null, Nullable&lt;Microsoft.Azure.Management.Automation.Models.ModuleProvisioningState&gt; provisioningState = null, Microsoft.Azure.Management.Automation.Models.ContentLink contentLink = null, Microsoft.Azure.Management.Automation.Models.ModuleErrorInfo error = null, DateTimeOffset creationTime = null, DateTimeOffset lastModifiedTime = null, string description = null, Nullable&lt;bool&gt; isComposite = null, string etag = null);" />
+      <MemberSignature Language="C#" Value="public Module (string id = default, string name = default, string type = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, string location = default, Nullable&lt;bool&gt; isGlobal = default, string version = default, Nullable&lt;long&gt; sizeInBytes = default, Nullable&lt;int&gt; activityCount = default, Nullable&lt;Microsoft.Azure.Management.Automation.Models.ModuleProvisioningState&gt; provisioningState = default, Microsoft.Azure.Management.Automation.Models.ContentLink contentLink = default, Microsoft.Azure.Management.Automation.Models.ModuleErrorInfo error = default, DateTimeOffset creationTime = default, DateTimeOffset lastModifiedTime = default, string description = default, Nullable&lt;bool&gt; isComposite = default, string etag = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string type, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, string location, valuetype System.Nullable`1&lt;bool&gt; isGlobal, string version, valuetype System.Nullable`1&lt;int64&gt; sizeInBytes, valuetype System.Nullable`1&lt;int32&gt; activityCount, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Automation.Models.ModuleProvisioningState&gt; provisioningState, class Microsoft.Azure.Management.Automation.Models.ContentLink contentLink, class Microsoft.Azure.Management.Automation.Models.ModuleErrorInfo error, valuetype System.DateTimeOffset creationTime, valuetype System.DateTimeOffset lastModifiedTime, string description, valuetype System.Nullable`1&lt;bool&gt; isComposite, string etag) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.Models.Module.#ctor(System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.Nullable{System.Boolean},System.String,System.Nullable{System.Int64},System.Nullable{System.Int32},System.Nullable{Microsoft.Azure.Management.Automation.Models.ModuleProvisioningState},Microsoft.Azure.Management.Automation.Models.ContentLink,Microsoft.Azure.Management.Automation.Models.ModuleErrorInfo,System.DateTimeOffset,System.DateTimeOffset,System.String,System.Nullable{System.Boolean},System.String)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Automation.Models.Module : string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * string * Nullable&lt;bool&gt; * string * Nullable&lt;int64&gt; * Nullable&lt;int&gt; * Nullable&lt;Microsoft.Azure.Management.Automation.Models.ModuleProvisioningState&gt; * Microsoft.Azure.Management.Automation.Models.ContentLink * Microsoft.Azure.Management.Automation.Models.ModuleErrorInfo * DateTimeOffset * DateTimeOffset * string * Nullable&lt;bool&gt; * string -&gt; Microsoft.Azure.Management.Automation.Models.Module" Usage="new Microsoft.Azure.Management.Automation.Models.Module (id, name, type, tags, location, isGlobal, version, sizeInBytes, activityCount, provisioningState, contentLink, error, creationTime, lastModifiedTime, description, isComposite, etag)" />
@@ -53,23 +56,23 @@
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="id" Type="System.String" />
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="type" Type="System.String" />
-        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
-        <Parameter Name="location" Type="System.String" />
-        <Parameter Name="isGlobal" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="version" Type="System.String" />
-        <Parameter Name="sizeInBytes" Type="System.Nullable&lt;System.Int64&gt;" />
-        <Parameter Name="activityCount" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="provisioningState" Type="System.Nullable&lt;Microsoft.Azure.Management.Automation.Models.ModuleProvisioningState&gt;" />
-        <Parameter Name="contentLink" Type="Microsoft.Azure.Management.Automation.Models.ContentLink" />
-        <Parameter Name="error" Type="Microsoft.Azure.Management.Automation.Models.ModuleErrorInfo" />
-        <Parameter Name="creationTime" Type="System.DateTimeOffset" />
-        <Parameter Name="lastModifiedTime" Type="System.DateTimeOffset" />
-        <Parameter Name="description" Type="System.String" />
-        <Parameter Name="isComposite" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="etag" Type="System.String" />
+        <Parameter Name="id" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="type" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="location" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="isGlobal" Type="System.Nullable&lt;System.Boolean&gt;" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="version" Type="System.String" Index="6" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="sizeInBytes" Type="System.Nullable&lt;System.Int64&gt;" Index="7" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="activityCount" Type="System.Nullable&lt;System.Int32&gt;" Index="8" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Microsoft.Azure.Management.Automation.Models.ModuleProvisioningState&gt;" Index="9" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="contentLink" Type="Microsoft.Azure.Management.Automation.Models.ContentLink" Index="10" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="error" Type="Microsoft.Azure.Management.Automation.Models.ModuleErrorInfo" Index="11" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="creationTime" Type="System.DateTimeOffset" Index="12" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="lastModifiedTime" Type="System.DateTimeOffset" Index="13" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="description" Type="System.String" Index="14" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="isComposite" Type="System.Nullable&lt;System.Boolean&gt;" Index="15" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="etag" Type="System.String" Index="16" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="id">Fully qualified resource Id for the
@@ -123,7 +126,7 @@
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.activityCount")</AttributeName>
         </Attribute>
       </Attributes>
@@ -150,7 +153,7 @@
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.contentLink")</AttributeName>
         </Attribute>
       </Attributes>
@@ -177,7 +180,7 @@
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.creationTime")</AttributeName>
         </Attribute>
       </Attributes>
@@ -204,7 +207,7 @@
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.description")</AttributeName>
         </Attribute>
       </Attributes>
@@ -231,7 +234,7 @@
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.error")</AttributeName>
         </Attribute>
       </Attributes>
@@ -258,7 +261,7 @@
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="etag")</AttributeName>
         </Attribute>
       </Attributes>
@@ -285,7 +288,7 @@
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.isComposite")</AttributeName>
         </Attribute>
       </Attributes>
@@ -312,7 +315,7 @@
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.isGlobal")</AttributeName>
         </Attribute>
       </Attributes>
@@ -339,7 +342,7 @@
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.lastModifiedTime")</AttributeName>
         </Attribute>
       </Attributes>
@@ -350,6 +353,26 @@
         <summary>
             Gets or sets the last modified time.
             </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Automation.Models.ModuleProperties Properties { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Automation.Models.ModuleProperties Properties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.Module.Properties" />
+      <MemberSignature Language="VB.NET" Value="Public Property Properties As ModuleProperties" />
+      <MemberSignature Language="F#" Value="member this.Properties : Microsoft.Azure.Management.Automation.Models.ModuleProperties with get, set" Usage="Microsoft.Azure.Management.Automation.Models.Module.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Automation.Models.ModuleProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -366,7 +389,7 @@
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.provisioningState")</AttributeName>
         </Attribute>
       </Attributes>
@@ -399,7 +422,7 @@
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.sizeInBytes")</AttributeName>
         </Attribute>
       </Attributes>
@@ -451,7 +474,7 @@
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.version")</AttributeName>
         </Attribute>
       </Attributes>

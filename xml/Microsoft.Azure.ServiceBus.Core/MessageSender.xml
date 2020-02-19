@@ -6,8 +6,6 @@
   <TypeSignature Language="F#" Value="type MessageSender = class&#xA;    inherit ClientEntity&#xA;    interface IMessageSender&#xA;    interface ISenderClient&#xA;    interface IClientEntity" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-    <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -30,15 +28,13 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MessageSender (Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder connectionStringBuilder, Microsoft.Azure.ServiceBus.RetryPolicy retryPolicy = null);" />
+      <MemberSignature Language="C#" Value="public MessageSender (Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder connectionStringBuilder, Microsoft.Azure.ServiceBus.RetryPolicy retryPolicy = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder connectionStringBuilder, class Microsoft.Azure.ServiceBus.RetryPolicy retryPolicy) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ServiceBus.Core.MessageSender.#ctor(Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder,Microsoft.Azure.ServiceBus.RetryPolicy)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.ServiceBus.Core.MessageSender : Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder * Microsoft.Azure.ServiceBus.RetryPolicy -&gt; Microsoft.Azure.ServiceBus.Core.MessageSender" Usage="new Microsoft.Azure.ServiceBus.Core.MessageSender (connectionStringBuilder, retryPolicy)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -53,15 +49,13 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MessageSender (Microsoft.Azure.ServiceBus.ServiceBusConnection serviceBusConnection, string entityPath, Microsoft.Azure.ServiceBus.RetryPolicy retryPolicy = null);" />
+      <MemberSignature Language="C#" Value="public MessageSender (Microsoft.Azure.ServiceBus.ServiceBusConnection serviceBusConnection, string entityPath, Microsoft.Azure.ServiceBus.RetryPolicy retryPolicy = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.ServiceBus.ServiceBusConnection serviceBusConnection, string entityPath, class Microsoft.Azure.ServiceBus.RetryPolicy retryPolicy) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ServiceBus.Core.MessageSender.#ctor(Microsoft.Azure.ServiceBus.ServiceBusConnection,System.String,Microsoft.Azure.ServiceBus.RetryPolicy)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.ServiceBus.Core.MessageSender : Microsoft.Azure.ServiceBus.ServiceBusConnection * string * Microsoft.Azure.ServiceBus.RetryPolicy -&gt; Microsoft.Azure.ServiceBus.Core.MessageSender" Usage="new Microsoft.Azure.ServiceBus.Core.MessageSender (serviceBusConnection, entityPath, retryPolicy)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -78,15 +72,13 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MessageSender (string connectionString, string entityPath, Microsoft.Azure.ServiceBus.RetryPolicy retryPolicy = null);" />
+      <MemberSignature Language="C#" Value="public MessageSender (string connectionString, string entityPath, Microsoft.Azure.ServiceBus.RetryPolicy retryPolicy = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string connectionString, string entityPath, class Microsoft.Azure.ServiceBus.RetryPolicy retryPolicy) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ServiceBus.Core.MessageSender.#ctor(System.String,System.String,Microsoft.Azure.ServiceBus.RetryPolicy)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.ServiceBus.Core.MessageSender : string * string * Microsoft.Azure.ServiceBus.RetryPolicy -&gt; Microsoft.Azure.ServiceBus.Core.MessageSender" Usage="new Microsoft.Azure.ServiceBus.Core.MessageSender (connectionString, entityPath, retryPolicy)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -103,15 +95,13 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MessageSender (Microsoft.Azure.ServiceBus.ServiceBusConnection serviceBusConnection, string entityPath, string viaEntityPath, Microsoft.Azure.ServiceBus.RetryPolicy retryPolicy = null);" />
+      <MemberSignature Language="C#" Value="public MessageSender (Microsoft.Azure.ServiceBus.ServiceBusConnection serviceBusConnection, string entityPath, string viaEntityPath, Microsoft.Azure.ServiceBus.RetryPolicy retryPolicy = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.ServiceBus.ServiceBusConnection serviceBusConnection, string entityPath, string viaEntityPath, class Microsoft.Azure.ServiceBus.RetryPolicy retryPolicy) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ServiceBus.Core.MessageSender.#ctor(Microsoft.Azure.ServiceBus.ServiceBusConnection,System.String,System.String,Microsoft.Azure.ServiceBus.RetryPolicy)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.ServiceBus.Core.MessageSender : Microsoft.Azure.ServiceBus.ServiceBusConnection * string * string * Microsoft.Azure.ServiceBus.RetryPolicy -&gt; Microsoft.Azure.ServiceBus.Core.MessageSender" Usage="new Microsoft.Azure.ServiceBus.Core.MessageSender (serviceBusConnection, entityPath, viaEntityPath, retryPolicy)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -130,15 +120,13 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MessageSender (string endpoint, string entityPath, Microsoft.Azure.ServiceBus.Primitives.ITokenProvider tokenProvider, Microsoft.Azure.ServiceBus.TransportType transportType = Microsoft.Azure.ServiceBus.TransportType.Amqp, Microsoft.Azure.ServiceBus.RetryPolicy retryPolicy = null);" />
+      <MemberSignature Language="C#" Value="public MessageSender (string endpoint, string entityPath, Microsoft.Azure.ServiceBus.Primitives.ITokenProvider tokenProvider, Microsoft.Azure.ServiceBus.TransportType transportType = Microsoft.Azure.ServiceBus.TransportType.Amqp, Microsoft.Azure.ServiceBus.RetryPolicy retryPolicy = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string endpoint, string entityPath, class Microsoft.Azure.ServiceBus.Primitives.ITokenProvider tokenProvider, valuetype Microsoft.Azure.ServiceBus.TransportType transportType, class Microsoft.Azure.ServiceBus.RetryPolicy retryPolicy) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ServiceBus.Core.MessageSender.#ctor(System.String,System.String,Microsoft.Azure.ServiceBus.Primitives.ITokenProvider,Microsoft.Azure.ServiceBus.TransportType,Microsoft.Azure.ServiceBus.RetryPolicy)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.ServiceBus.Core.MessageSender : string * string * Microsoft.Azure.ServiceBus.Primitives.ITokenProvider * Microsoft.Azure.ServiceBus.TransportType * Microsoft.Azure.ServiceBus.RetryPolicy -&gt; Microsoft.Azure.ServiceBus.Core.MessageSender" Usage="new Microsoft.Azure.ServiceBus.Core.MessageSender (endpoint, entityPath, tokenProvider, transportType, retryPolicy)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -170,8 +158,6 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -196,8 +182,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -222,8 +206,6 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -247,8 +229,6 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -272,8 +252,6 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -296,8 +274,6 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -323,8 +299,6 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -353,8 +327,6 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -382,8 +354,6 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -411,8 +381,6 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -433,8 +401,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -458,8 +424,6 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -483,8 +447,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

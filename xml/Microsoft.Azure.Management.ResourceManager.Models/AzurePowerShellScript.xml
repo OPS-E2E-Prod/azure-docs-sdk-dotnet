@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.ResourceManager</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.ResourceManager.Models.DeploymentScript</BaseTypeName>
@@ -36,6 +37,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -46,7 +48,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AzurePowerShellScript (Microsoft.Azure.Management.ResourceManager.Models.ManagedServiceIdentity identity, string location, TimeSpan retentionInterval, string azPowerShellVersion, string id = null, string name = null, string type = null, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = null, string cleanupPreference = null, string provisioningState = null, Microsoft.Azure.Management.ResourceManager.Models.ScriptStatus status = null, System.Collections.Generic.IDictionary&lt;string,object&gt; outputs = null, string primaryScriptUri = null, System.Collections.Generic.IList&lt;string&gt; supportingScriptUris = null, string scriptContent = null, string arguments = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.ResourceManager.Models.EnvironmentVariable&gt; environmentVariables = null, string forceUpdateTag = null, Nullable&lt;TimeSpan&gt; timeout = null);" />
+      <MemberSignature Language="C#" Value="public AzurePowerShellScript (Microsoft.Azure.Management.ResourceManager.Models.ManagedServiceIdentity identity, string location, TimeSpan retentionInterval, string azPowerShellVersion, string id = default, string name = default, string type = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, string cleanupPreference = default, string provisioningState = default, Microsoft.Azure.Management.ResourceManager.Models.ScriptStatus status = default, System.Collections.Generic.IDictionary&lt;string,object&gt; outputs = default, string primaryScriptUri = default, System.Collections.Generic.IList&lt;string&gt; supportingScriptUris = default, string scriptContent = default, string arguments = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.ResourceManager.Models.EnvironmentVariable&gt; environmentVariables = default, string forceUpdateTag = default, Nullable&lt;TimeSpan&gt; timeout = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.Management.ResourceManager.Models.ManagedServiceIdentity identity, string location, valuetype System.TimeSpan retentionInterval, string azPowerShellVersion, string id, string name, string type, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, string cleanupPreference, string provisioningState, class Microsoft.Azure.Management.ResourceManager.Models.ScriptStatus status, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; outputs, string primaryScriptUri, class System.Collections.Generic.IList`1&lt;string&gt; supportingScriptUris, string scriptContent, string arguments, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.ResourceManager.Models.EnvironmentVariable&gt; environmentVariables, string forceUpdateTag, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ResourceManager.Models.AzurePowerShellScript.#ctor(Microsoft.Azure.Management.ResourceManager.Models.ManagedServiceIdentity,System.String,System.TimeSpan,System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String,Microsoft.Azure.Management.ResourceManager.Models.ScriptStatus,System.Collections.Generic.IDictionary{System.String,System.Object},System.String,System.Collections.Generic.IList{System.String},System.String,System.String,System.Collections.Generic.IList{Microsoft.Azure.Management.ResourceManager.Models.EnvironmentVariable},System.String,System.Nullable{System.TimeSpan})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identity As ManagedServiceIdentity, location As String, retentionInterval As TimeSpan, azPowerShellVersion As String, Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional tags As IDictionary(Of String, String) = null, Optional cleanupPreference As String = null, Optional provisioningState As String = null, Optional status As ScriptStatus = null, Optional outputs As IDictionary(Of String, Object) = null, Optional primaryScriptUri As String = null, Optional supportingScriptUris As IList(Of String) = null, Optional scriptContent As String = null, Optional arguments As String = null, Optional environmentVariables As IList(Of EnvironmentVariable) = null, Optional forceUpdateTag As String = null, Optional timeout As Nullable(Of TimeSpan) = null)" />
@@ -55,6 +57,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="identity" Type="Microsoft.Azure.Management.ResourceManager.Models.ManagedServiceIdentity" />
@@ -101,7 +104,7 @@
         <param name="provisioningState">State of the script execution. This
             only appears in the response. Possible values include: 'Creating',
             'ProvisioningResources', 'Running', 'Succeeded', 'Failed',
-            'Canceled', 'Expiring'</param>
+            'Canceled'</param>
         <param name="status">Contains the results of script
             execution.</param>
         <param name="outputs">List of script outputs.</param>
@@ -136,6 +139,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -165,6 +169,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -192,6 +197,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -221,6 +227,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -248,6 +255,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -277,6 +285,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -304,6 +313,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -332,6 +342,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -346,7 +357,7 @@
             Gets state of the script execution. This only appears in the
             response. Possible values include: 'Creating',
             'ProvisioningResources', 'Running', 'Succeeded', 'Failed',
-            'Canceled', 'Expiring'
+            'Canceled'
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -362,6 +373,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -392,6 +404,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -419,6 +432,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -446,6 +460,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -473,6 +488,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -501,6 +517,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

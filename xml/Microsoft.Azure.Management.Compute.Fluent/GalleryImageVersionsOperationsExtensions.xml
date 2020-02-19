@@ -6,8 +6,10 @@
   <TypeSignature Language="F#" Value="type GalleryImageVersionsOperationsExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
     <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -21,15 +23,17 @@
   </Docs>
   <Members>
     <Member MemberName="BeginCreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner&gt; BeginCreateOrUpdateAsync (this Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations operations, string resourceGroupName, string galleryName, string galleryImageName, string galleryImageVersionName, Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner galleryImageVersion, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner&gt; BeginCreateOrUpdateAsync (this Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations operations, string resourceGroupName, string galleryName, string galleryImageName, string galleryImageVersionName, Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner galleryImageVersion, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner&gt; BeginCreateOrUpdateAsync(class Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations operations, string resourceGroupName, string galleryName, string galleryImageName, string galleryImageVersionName, class Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner galleryImageVersion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.GalleryImageVersionsOperationsExtensions.BeginCreateOrUpdateAsync(Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations,System.String,System.String,System.String,System.String,Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member BeginCreateOrUpdateAsync : Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations * string * string * string * string * Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner&gt;" Usage="Microsoft.Azure.Management.Compute.Fluent.GalleryImageVersionsOperationsExtensions.BeginCreateOrUpdateAsync (operations, resourceGroupName, galleryName, galleryImageName, galleryImageVersionName, galleryImageVersion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -83,15 +87,17 @@
       </Docs>
     </Member>
     <Member MemberName="BeginDeleteAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginDeleteAsync (this Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations operations, string resourceGroupName, string galleryName, string galleryImageName, string galleryImageVersionName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginDeleteAsync (this Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations operations, string resourceGroupName, string galleryName, string galleryImageName, string galleryImageVersionName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task BeginDeleteAsync(class Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations operations, string resourceGroupName, string galleryName, string galleryImageName, string galleryImageVersionName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.GalleryImageVersionsOperationsExtensions.BeginDeleteAsync(Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member BeginDeleteAsync : Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Compute.Fluent.GalleryImageVersionsOperationsExtensions.BeginDeleteAsync (operations, resourceGroupName, galleryName, galleryImageName, galleryImageVersionName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -136,16 +142,80 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="BeginUpdateAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner&gt; BeginUpdateAsync (this Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations operations, string resourceGroupName, string galleryName, string galleryImageName, string galleryImageVersionName, Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionUpdate galleryImageVersion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner&gt; BeginUpdateAsync(class Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations operations, string resourceGroupName, string galleryName, string galleryImageName, string galleryImageVersionName, class Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionUpdate galleryImageVersion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.GalleryImageVersionsOperationsExtensions.BeginUpdateAsync(Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations,System.String,System.String,System.String,System.String,Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionUpdate,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member BeginUpdateAsync : Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations * string * string * string * string * Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionUpdate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner&gt;" Usage="Microsoft.Azure.Management.Compute.Fluent.GalleryImageVersionsOperationsExtensions.BeginUpdateAsync (operations, resourceGroupName, galleryName, galleryImageName, galleryImageVersionName, galleryImageVersion, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations" RefType="this" />
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="galleryName" Type="System.String" />
+        <Parameter Name="galleryImageName" Type="System.String" />
+        <Parameter Name="galleryImageVersionName" Type="System.String" />
+        <Parameter Name="galleryImageVersion" Type="Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionUpdate" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="resourceGroupName">
+            The name of the resource group.
+            </param>
+        <param name="galleryName">
+            The name of the Shared Image Gallery in which the Image Definition resides.
+            </param>
+        <param name="galleryImageName">
+            The name of the gallery Image Definition in which the Image Version is to
+            be updated.
+            </param>
+        <param name="galleryImageVersionName">
+            The name of the gallery Image Version to be updated. Needs to follow
+            semantic version name pattern: The allowed characters are digit and period.
+            Digits must be within the range of a 32-bit integer. Format:
+            &lt;MajorVersion&gt;.&lt;MinorVersion&gt;.&lt;Patch&gt;
+            </param>
+        <param name="galleryImageVersion">
+            Parameters supplied to the update gallery Image Version operation.
+            </param>
+        <param name="cancellationToken">
+            The cancellation token.
+            </param>
+        <summary>
+            Update a gallery Image Version.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner&gt; CreateOrUpdateAsync (this Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations operations, string resourceGroupName, string galleryName, string galleryImageName, string galleryImageVersionName, Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner galleryImageVersion, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner&gt; CreateOrUpdateAsync (this Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations operations, string resourceGroupName, string galleryName, string galleryImageName, string galleryImageVersionName, Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner galleryImageVersion, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner&gt; CreateOrUpdateAsync(class Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations operations, string resourceGroupName, string galleryName, string galleryImageName, string galleryImageVersionName, class Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner galleryImageVersion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.GalleryImageVersionsOperationsExtensions.CreateOrUpdateAsync(Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations,System.String,System.String,System.String,System.String,Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member CreateOrUpdateAsync : Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations * string * string * string * string * Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner&gt;" Usage="Microsoft.Azure.Management.Compute.Fluent.GalleryImageVersionsOperationsExtensions.CreateOrUpdateAsync (operations, resourceGroupName, galleryName, galleryImageName, galleryImageVersionName, galleryImageVersion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -199,15 +269,17 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task DeleteAsync (this Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations operations, string resourceGroupName, string galleryName, string galleryImageName, string galleryImageVersionName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task DeleteAsync (this Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations operations, string resourceGroupName, string galleryName, string galleryImageName, string galleryImageVersionName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task DeleteAsync(class Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations operations, string resourceGroupName, string galleryName, string galleryImageName, string galleryImageVersionName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.GalleryImageVersionsOperationsExtensions.DeleteAsync(Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member DeleteAsync : Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Compute.Fluent.GalleryImageVersionsOperationsExtensions.DeleteAsync (operations, resourceGroupName, galleryName, galleryImageName, galleryImageVersionName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -253,15 +325,17 @@
       </Docs>
     </Member>
     <Member MemberName="GetAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner&gt; GetAsync (this Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations operations, string resourceGroupName, string galleryName, string galleryImageName, string galleryImageVersionName, Microsoft.Azure.Management.Compute.Fluent.Models.ReplicationStatusTypes expand = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner&gt; GetAsync (this Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations operations, string resourceGroupName, string galleryName, string galleryImageName, string galleryImageVersionName, Microsoft.Azure.Management.Compute.Fluent.Models.ReplicationStatusTypes expand = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner&gt; GetAsync(class Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations operations, string resourceGroupName, string galleryName, string galleryImageName, string galleryImageVersionName, class Microsoft.Azure.Management.Compute.Fluent.Models.ReplicationStatusTypes expand, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.GalleryImageVersionsOperationsExtensions.GetAsync(Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations,System.String,System.String,System.String,System.String,Microsoft.Azure.Management.Compute.Fluent.Models.ReplicationStatusTypes,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member GetAsync : Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations * string * string * string * string * Microsoft.Azure.Management.Compute.Fluent.Models.ReplicationStatusTypes * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner&gt;" Usage="Microsoft.Azure.Management.Compute.Fluent.GalleryImageVersionsOperationsExtensions.GetAsync (operations, resourceGroupName, galleryName, galleryImageName, galleryImageVersionName, expand, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -312,15 +386,17 @@
       </Docs>
     </Member>
     <Member MemberName="ListByGalleryImageAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner&gt;&gt; ListByGalleryImageAsync (this Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations operations, string resourceGroupName, string galleryName, string galleryImageName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner&gt;&gt; ListByGalleryImageAsync (this Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations operations, string resourceGroupName, string galleryName, string galleryImageName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner&gt;&gt; ListByGalleryImageAsync(class Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations operations, string resourceGroupName, string galleryName, string galleryImageName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.GalleryImageVersionsOperationsExtensions.ListByGalleryImageAsync(Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListByGalleryImageAsync : Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner&gt;&gt;" Usage="Microsoft.Azure.Management.Compute.Fluent.GalleryImageVersionsOperationsExtensions.ListByGalleryImageAsync (operations, resourceGroupName, galleryName, galleryImageName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -362,15 +438,17 @@
       </Docs>
     </Member>
     <Member MemberName="ListByGalleryImageNextAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner&gt;&gt; ListByGalleryImageNextAsync (this Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner&gt;&gt; ListByGalleryImageNextAsync (this Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner&gt;&gt; ListByGalleryImageNextAsync(class Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations operations, string nextPageLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.GalleryImageVersionsOperationsExtensions.ListByGalleryImageNextAsync(Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListByGalleryImageNextAsync : Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner&gt;&gt;" Usage="Microsoft.Azure.Management.Compute.Fluent.GalleryImageVersionsOperationsExtensions.ListByGalleryImageNextAsync (operations, nextPageLink, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -397,6 +475,68 @@
             </param>
         <summary>
             List gallery Image Versions in a gallery Image Definition.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner&gt; UpdateAsync (this Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations operations, string resourceGroupName, string galleryName, string galleryImageName, string galleryImageVersionName, Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionUpdate galleryImageVersion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner&gt; UpdateAsync(class Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations operations, string resourceGroupName, string galleryName, string galleryImageName, string galleryImageVersionName, class Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionUpdate galleryImageVersion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.GalleryImageVersionsOperationsExtensions.UpdateAsync(Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations,System.String,System.String,System.String,System.String,Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionUpdate,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member UpdateAsync : Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations * string * string * string * string * Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionUpdate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner&gt;" Usage="Microsoft.Azure.Management.Compute.Fluent.GalleryImageVersionsOperationsExtensions.UpdateAsync (operations, resourceGroupName, galleryName, galleryImageName, galleryImageVersionName, galleryImageVersion, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionInner&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Azure.Management.Compute.Fluent.IGalleryImageVersionsOperations" RefType="this" />
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="galleryName" Type="System.String" />
+        <Parameter Name="galleryImageName" Type="System.String" />
+        <Parameter Name="galleryImageVersionName" Type="System.String" />
+        <Parameter Name="galleryImageVersion" Type="Microsoft.Azure.Management.Compute.Fluent.Models.GalleryImageVersionUpdate" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="resourceGroupName">
+            The name of the resource group.
+            </param>
+        <param name="galleryName">
+            The name of the Shared Image Gallery in which the Image Definition resides.
+            </param>
+        <param name="galleryImageName">
+            The name of the gallery Image Definition in which the Image Version is to
+            be updated.
+            </param>
+        <param name="galleryImageVersionName">
+            The name of the gallery Image Version to be updated. Needs to follow
+            semantic version name pattern: The allowed characters are digit and period.
+            Digits must be within the range of a 32-bit integer. Format:
+            &lt;MajorVersion&gt;.&lt;MinorVersion&gt;.&lt;Patch&gt;
+            </param>
+        <param name="galleryImageVersion">
+            Parameters supplied to the update gallery Image Version operation.
+            </param>
+        <param name="cancellationToken">
+            The cancellation token.
+            </param>
+        <summary>
+            Update a gallery Image Version.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

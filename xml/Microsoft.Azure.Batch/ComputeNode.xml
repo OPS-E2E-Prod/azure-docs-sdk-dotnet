@@ -6,7 +6,6 @@
   <TypeSignature Language="F#" Value="type ComputeNode = class&#xA;    interface IRefreshable&#xA;    interface IInheritedBehaviors" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>11.0.0.0</AssemblyVersion>
     <AssemblyVersion>12.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -36,7 +35,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -59,7 +57,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -82,7 +79,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -97,14 +93,13 @@
       </Docs>
     </Member>
     <Member MemberName="CopyNodeFileContentToStream">
-      <MemberSignature Language="C#" Value="public void CopyNodeFileContentToStream (string filePath, System.IO.Stream stream, Microsoft.Azure.Batch.GetFileRequestByteRange byteRange = null, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = null);" />
+      <MemberSignature Language="C#" Value="public void CopyNodeFileContentToStream (string filePath, System.IO.Stream stream, Microsoft.Azure.Batch.GetFileRequestByteRange byteRange = default, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyNodeFileContentToStream(string filePath, class System.IO.Stream stream, class Microsoft.Azure.Batch.GetFileRequestByteRange byteRange, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.ComputeNode.CopyNodeFileContentToStream(System.String,System.IO.Stream,Microsoft.Azure.Batch.GetFileRequestByteRange,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})" />
       <MemberSignature Language="F#" Value="member this.CopyNodeFileContentToStream : string * System.IO.Stream * Microsoft.Azure.Batch.GetFileRequestByteRange * seq&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; -&gt; unit" Usage="computeNode.CopyNodeFileContentToStream (filePath, stream, byteRange, additionalBehaviors)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -129,14 +124,13 @@
       </Docs>
     </Member>
     <Member MemberName="CopyNodeFileContentToStreamAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task CopyNodeFileContentToStreamAsync (string filePath, System.IO.Stream stream, Microsoft.Azure.Batch.GetFileRequestByteRange byteRange = null, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task CopyNodeFileContentToStreamAsync (string filePath, System.IO.Stream stream, Microsoft.Azure.Batch.GetFileRequestByteRange byteRange = default, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task CopyNodeFileContentToStreamAsync(string filePath, class System.IO.Stream stream, class Microsoft.Azure.Batch.GetFileRequestByteRange byteRange, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.ComputeNode.CopyNodeFileContentToStreamAsync(System.String,System.IO.Stream,Microsoft.Azure.Batch.GetFileRequestByteRange,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="member this.CopyNodeFileContentToStreamAsync : string * System.IO.Stream * Microsoft.Azure.Batch.GetFileRequestByteRange * seq&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="computeNode.CopyNodeFileContentToStreamAsync (filePath, stream, byteRange, additionalBehaviors, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -163,14 +157,13 @@
       </Docs>
     </Member>
     <Member MemberName="CopyNodeFileContentToString">
-      <MemberSignature Language="C#" Value="public string CopyNodeFileContentToString (string filePath, System.Text.Encoding encoding = null, Microsoft.Azure.Batch.GetFileRequestByteRange byteRange = null, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = null);" />
+      <MemberSignature Language="C#" Value="public string CopyNodeFileContentToString (string filePath, System.Text.Encoding encoding = default, Microsoft.Azure.Batch.GetFileRequestByteRange byteRange = default, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string CopyNodeFileContentToString(string filePath, class System.Text.Encoding encoding, class Microsoft.Azure.Batch.GetFileRequestByteRange byteRange, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.ComputeNode.CopyNodeFileContentToString(System.String,System.Text.Encoding,Microsoft.Azure.Batch.GetFileRequestByteRange,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})" />
       <MemberSignature Language="F#" Value="member this.CopyNodeFileContentToString : string * System.Text.Encoding * Microsoft.Azure.Batch.GetFileRequestByteRange * seq&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; -&gt; string" Usage="computeNode.CopyNodeFileContentToString (filePath, encoding, byteRange, additionalBehaviors)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -195,14 +188,13 @@
       </Docs>
     </Member>
     <Member MemberName="CopyNodeFileContentToStringAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; CopyNodeFileContentToStringAsync (string filePath, System.Text.Encoding encoding = null, Microsoft.Azure.Batch.GetFileRequestByteRange byteRange = null, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; CopyNodeFileContentToStringAsync (string filePath, System.Text.Encoding encoding = default, Microsoft.Azure.Batch.GetFileRequestByteRange byteRange = default, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;string&gt; CopyNodeFileContentToStringAsync(string filePath, class System.Text.Encoding encoding, class Microsoft.Azure.Batch.GetFileRequestByteRange byteRange, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.ComputeNode.CopyNodeFileContentToStringAsync(System.String,System.Text.Encoding,Microsoft.Azure.Batch.GetFileRequestByteRange,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="member this.CopyNodeFileContentToStringAsync : string * System.Text.Encoding * Microsoft.Azure.Batch.GetFileRequestByteRange * seq&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="computeNode.CopyNodeFileContentToStringAsync (filePath, encoding, byteRange, additionalBehaviors, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -237,7 +229,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -264,7 +255,6 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -283,7 +273,7 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteComputeNodeUser">
-      <MemberSignature Language="C#" Value="public void DeleteComputeNodeUser (string userName, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = null);" />
+      <MemberSignature Language="C#" Value="public void DeleteComputeNodeUser (string userName, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeleteComputeNodeUser(string userName, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.ComputeNode.DeleteComputeNodeUser(System.String,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteComputeNodeUser (userName As String, Optional additionalBehaviors As IEnumerable(Of BatchClientBehavior) = null)" />
@@ -291,7 +281,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -311,14 +300,13 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteComputeNodeUserAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteComputeNodeUserAsync (string userName, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteComputeNodeUserAsync (string userName, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task DeleteComputeNodeUserAsync(string userName, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.ComputeNode.DeleteComputeNodeUserAsync(System.String,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="member this.DeleteComputeNodeUserAsync : string * seq&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="computeNode.DeleteComputeNodeUserAsync (userName, additionalBehaviors, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -341,7 +329,7 @@
       </Docs>
     </Member>
     <Member MemberName="DisableScheduling">
-      <MemberSignature Language="C#" Value="public void DisableScheduling (Nullable&lt;Microsoft.Azure.Batch.Common.DisableComputeNodeSchedulingOption&gt; disableComputeNodeSchedulingOption, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = null);" />
+      <MemberSignature Language="C#" Value="public void DisableScheduling (Nullable&lt;Microsoft.Azure.Batch.Common.DisableComputeNodeSchedulingOption&gt; disableComputeNodeSchedulingOption, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DisableScheduling(valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Batch.Common.DisableComputeNodeSchedulingOption&gt; disableComputeNodeSchedulingOption, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.ComputeNode.DisableScheduling(System.Nullable{Microsoft.Azure.Batch.Common.DisableComputeNodeSchedulingOption},System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})" />
       <MemberSignature Language="VB.NET" Value="Public Sub DisableScheduling (disableComputeNodeSchedulingOption As Nullable(Of DisableComputeNodeSchedulingOption), Optional additionalBehaviors As IEnumerable(Of BatchClientBehavior) = null)" />
@@ -349,7 +337,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -369,14 +356,13 @@
       </Docs>
     </Member>
     <Member MemberName="DisableSchedulingAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DisableSchedulingAsync (Nullable&lt;Microsoft.Azure.Batch.Common.DisableComputeNodeSchedulingOption&gt; disableComputeNodeSchedulingOption, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DisableSchedulingAsync (Nullable&lt;Microsoft.Azure.Batch.Common.DisableComputeNodeSchedulingOption&gt; disableComputeNodeSchedulingOption, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task DisableSchedulingAsync(valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Batch.Common.DisableComputeNodeSchedulingOption&gt; disableComputeNodeSchedulingOption, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.ComputeNode.DisableSchedulingAsync(System.Nullable{Microsoft.Azure.Batch.Common.DisableComputeNodeSchedulingOption},System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="member this.DisableSchedulingAsync : Nullable&lt;Microsoft.Azure.Batch.Common.DisableComputeNodeSchedulingOption&gt; * seq&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="computeNode.DisableSchedulingAsync (disableComputeNodeSchedulingOption, additionalBehaviors, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -399,7 +385,7 @@
       </Docs>
     </Member>
     <Member MemberName="EnableScheduling">
-      <MemberSignature Language="C#" Value="public void EnableScheduling (System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = null);" />
+      <MemberSignature Language="C#" Value="public void EnableScheduling (System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EnableScheduling(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.ComputeNode.EnableScheduling(System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})" />
       <MemberSignature Language="VB.NET" Value="Public Sub EnableScheduling (Optional additionalBehaviors As IEnumerable(Of BatchClientBehavior) = null)" />
@@ -407,7 +393,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -425,14 +410,13 @@
       </Docs>
     </Member>
     <Member MemberName="EnableSchedulingAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task EnableSchedulingAsync (System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task EnableSchedulingAsync (System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task EnableSchedulingAsync(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.ComputeNode.EnableSchedulingAsync(System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="member this.EnableSchedulingAsync : seq&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="computeNode.EnableSchedulingAsync (additionalBehaviors, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -461,7 +445,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -484,7 +467,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -499,7 +481,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetNodeFile">
-      <MemberSignature Language="C#" Value="public Microsoft.Azure.Batch.NodeFile GetNodeFile (string filePath, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = null);" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Batch.NodeFile GetNodeFile (string filePath, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Azure.Batch.NodeFile GetNodeFile(string filePath, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.ComputeNode.GetNodeFile(System.String,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNodeFile (filePath As String, Optional additionalBehaviors As IEnumerable(Of BatchClientBehavior) = null) As NodeFile" />
@@ -507,7 +489,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -528,14 +509,13 @@
       </Docs>
     </Member>
     <Member MemberName="GetNodeFileAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.NodeFile&gt; GetNodeFileAsync (string filePath, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.NodeFile&gt; GetNodeFileAsync (string filePath, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Batch.NodeFile&gt; GetNodeFileAsync(string filePath, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.ComputeNode.GetNodeFileAsync(System.String,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="member this.GetNodeFileAsync : string * seq&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.NodeFile&gt;" Usage="computeNode.GetNodeFileAsync (filePath, additionalBehaviors, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -558,7 +538,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetRDPFile">
-      <MemberSignature Language="C#" Value="public void GetRDPFile (System.IO.Stream rdpStream, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = null);" />
+      <MemberSignature Language="C#" Value="public void GetRDPFile (System.IO.Stream rdpStream, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetRDPFile(class System.IO.Stream rdpStream, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.ComputeNode.GetRDPFile(System.IO.Stream,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetRDPFile (rdpStream As Stream, Optional additionalBehaviors As IEnumerable(Of BatchClientBehavior) = null)" />
@@ -566,7 +546,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -586,7 +565,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetRDPFile">
-      <MemberSignature Language="C#" Value="public void GetRDPFile (string rdpFileNameToCreate, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = null);" />
+      <MemberSignature Language="C#" Value="public void GetRDPFile (string rdpFileNameToCreate, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetRDPFile(string rdpFileNameToCreate, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.ComputeNode.GetRDPFile(System.String,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetRDPFile (rdpFileNameToCreate As String, Optional additionalBehaviors As IEnumerable(Of BatchClientBehavior) = null)" />
@@ -594,7 +573,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -614,14 +592,13 @@
       </Docs>
     </Member>
     <Member MemberName="GetRDPFileAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task GetRDPFileAsync (System.IO.Stream rdpStream, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task GetRDPFileAsync (System.IO.Stream rdpStream, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task GetRDPFileAsync(class System.IO.Stream rdpStream, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.ComputeNode.GetRDPFileAsync(System.IO.Stream,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="member this.GetRDPFileAsync : System.IO.Stream * seq&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="computeNode.GetRDPFileAsync (rdpStream, additionalBehaviors, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -644,14 +621,13 @@
       </Docs>
     </Member>
     <Member MemberName="GetRDPFileAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task GetRDPFileAsync (string rdpFileNameToCreate, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task GetRDPFileAsync (string rdpFileNameToCreate, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task GetRDPFileAsync(string rdpFileNameToCreate, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.ComputeNode.GetRDPFileAsync(System.String,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="member this.GetRDPFileAsync : string * seq&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="computeNode.GetRDPFileAsync (rdpFileNameToCreate, additionalBehaviors, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -674,7 +650,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetRemoteLoginSettings">
-      <MemberSignature Language="C#" Value="public Microsoft.Azure.Batch.RemoteLoginSettings GetRemoteLoginSettings (System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = null);" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Batch.RemoteLoginSettings GetRemoteLoginSettings (System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Azure.Batch.RemoteLoginSettings GetRemoteLoginSettings(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.ComputeNode.GetRemoteLoginSettings(System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRemoteLoginSettings (Optional additionalBehaviors As IEnumerable(Of BatchClientBehavior) = null) As RemoteLoginSettings" />
@@ -682,7 +658,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -706,14 +681,13 @@
       </Docs>
     </Member>
     <Member MemberName="GetRemoteLoginSettingsAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.RemoteLoginSettings&gt; GetRemoteLoginSettingsAsync (System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.RemoteLoginSettings&gt; GetRemoteLoginSettingsAsync (System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Batch.RemoteLoginSettings&gt; GetRemoteLoginSettingsAsync(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.ComputeNode.GetRemoteLoginSettingsAsync(System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="member this.GetRemoteLoginSettingsAsync : seq&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.RemoteLoginSettings&gt;" Usage="computeNode.GetRemoteLoginSettingsAsync (additionalBehaviors, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -747,7 +721,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -770,7 +743,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -793,7 +765,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -816,7 +787,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -831,14 +801,13 @@
       </Docs>
     </Member>
     <Member MemberName="ListNodeFiles">
-      <MemberSignature Language="C#" Value="public Microsoft.Azure.Batch.IPagedEnumerable&lt;Microsoft.Azure.Batch.NodeFile&gt; ListNodeFiles (Nullable&lt;bool&gt; recursive = null, Microsoft.Azure.Batch.DetailLevel detailLevel = null, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = null);" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Batch.IPagedEnumerable&lt;Microsoft.Azure.Batch.NodeFile&gt; ListNodeFiles (Nullable&lt;bool&gt; recursive = default, Microsoft.Azure.Batch.DetailLevel detailLevel = default, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Azure.Batch.IPagedEnumerable`1&lt;class Microsoft.Azure.Batch.NodeFile&gt; ListNodeFiles(valuetype System.Nullable`1&lt;bool&gt; recursive, class Microsoft.Azure.Batch.DetailLevel detailLevel, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.ComputeNode.ListNodeFiles(System.Nullable{System.Boolean},Microsoft.Azure.Batch.DetailLevel,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})" />
       <MemberSignature Language="F#" Value="member this.ListNodeFiles : Nullable&lt;bool&gt; * Microsoft.Azure.Batch.DetailLevel * seq&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; -&gt; Microsoft.Azure.Batch.IPagedEnumerable&lt;Microsoft.Azure.Batch.NodeFile&gt;" Usage="computeNode.ListNodeFiles (recursive, detailLevel, additionalBehaviors)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -869,7 +838,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -884,7 +852,7 @@
       </Docs>
     </Member>
     <Member MemberName="Reboot">
-      <MemberSignature Language="C#" Value="public void Reboot (Nullable&lt;Microsoft.Azure.Batch.Common.ComputeNodeRebootOption&gt; rebootOption = null, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = null);" />
+      <MemberSignature Language="C#" Value="public void Reboot (Nullable&lt;Microsoft.Azure.Batch.Common.ComputeNodeRebootOption&gt; rebootOption = default, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Reboot(valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Batch.Common.ComputeNodeRebootOption&gt; rebootOption, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.ComputeNode.Reboot(System.Nullable{Microsoft.Azure.Batch.Common.ComputeNodeRebootOption},System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reboot (Optional rebootOption As Nullable(Of ComputeNodeRebootOption) = null, Optional additionalBehaviors As IEnumerable(Of BatchClientBehavior) = null)" />
@@ -892,7 +860,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -912,14 +879,13 @@
       </Docs>
     </Member>
     <Member MemberName="RebootAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task RebootAsync (Nullable&lt;Microsoft.Azure.Batch.Common.ComputeNodeRebootOption&gt; rebootOption = null, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task RebootAsync (Nullable&lt;Microsoft.Azure.Batch.Common.ComputeNodeRebootOption&gt; rebootOption = default, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task RebootAsync(valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Batch.Common.ComputeNodeRebootOption&gt; rebootOption, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.ComputeNode.RebootAsync(System.Nullable{Microsoft.Azure.Batch.Common.ComputeNodeRebootOption},System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="member this.RebootAsync : Nullable&lt;Microsoft.Azure.Batch.Common.ComputeNodeRebootOption&gt; * seq&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="computeNode.RebootAsync (rebootOption, additionalBehaviors, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -950,7 +916,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -967,7 +932,7 @@
       </Docs>
     </Member>
     <Member MemberName="Refresh">
-      <MemberSignature Language="C#" Value="public void Refresh (Microsoft.Azure.Batch.DetailLevel detailLevel = null, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = null);" />
+      <MemberSignature Language="C#" Value="public void Refresh (Microsoft.Azure.Batch.DetailLevel detailLevel = default, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Refresh(class Microsoft.Azure.Batch.DetailLevel detailLevel, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.ComputeNode.Refresh(Microsoft.Azure.Batch.DetailLevel,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})" />
       <MemberSignature Language="F#" Value="abstract member Refresh : Microsoft.Azure.Batch.DetailLevel * seq&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; -&gt; unit&#xA;override this.Refresh : Microsoft.Azure.Batch.DetailLevel * seq&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; -&gt; unit" Usage="computeNode.Refresh (detailLevel, additionalBehaviors)" />
@@ -977,7 +942,6 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -997,7 +961,7 @@
       </Docs>
     </Member>
     <Member MemberName="RefreshAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task RefreshAsync (Microsoft.Azure.Batch.DetailLevel detailLevel = null, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task RefreshAsync (Microsoft.Azure.Batch.DetailLevel detailLevel = default, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task RefreshAsync(class Microsoft.Azure.Batch.DetailLevel detailLevel, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.ComputeNode.RefreshAsync(Microsoft.Azure.Batch.DetailLevel,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member RefreshAsync : Microsoft.Azure.Batch.DetailLevel * seq&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.RefreshAsync : Microsoft.Azure.Batch.DetailLevel * seq&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="computeNode.RefreshAsync (detailLevel, additionalBehaviors, cancellationToken)" />
@@ -1007,7 +971,6 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1030,7 +993,7 @@
       </Docs>
     </Member>
     <Member MemberName="Reimage">
-      <MemberSignature Language="C#" Value="public void Reimage (Nullable&lt;Microsoft.Azure.Batch.Common.ComputeNodeReimageOption&gt; reimageOption = null, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = null);" />
+      <MemberSignature Language="C#" Value="public void Reimage (Nullable&lt;Microsoft.Azure.Batch.Common.ComputeNodeReimageOption&gt; reimageOption = default, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Reimage(valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Batch.Common.ComputeNodeReimageOption&gt; reimageOption, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.ComputeNode.Reimage(System.Nullable{Microsoft.Azure.Batch.Common.ComputeNodeReimageOption},System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reimage (Optional reimageOption As Nullable(Of ComputeNodeReimageOption) = null, Optional additionalBehaviors As IEnumerable(Of BatchClientBehavior) = null)" />
@@ -1038,7 +1001,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1058,14 +1020,13 @@
       </Docs>
     </Member>
     <Member MemberName="ReimageAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ReimageAsync (Nullable&lt;Microsoft.Azure.Batch.Common.ComputeNodeReimageOption&gt; reimageOption = null, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ReimageAsync (Nullable&lt;Microsoft.Azure.Batch.Common.ComputeNodeReimageOption&gt; reimageOption = default, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ReimageAsync(valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Batch.Common.ComputeNodeReimageOption&gt; reimageOption, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.ComputeNode.ReimageAsync(System.Nullable{Microsoft.Azure.Batch.Common.ComputeNodeReimageOption},System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="member this.ReimageAsync : Nullable&lt;Microsoft.Azure.Batch.Common.ComputeNodeReimageOption&gt; * seq&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="computeNode.ReimageAsync (reimageOption, additionalBehaviors, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1088,7 +1049,7 @@
       </Docs>
     </Member>
     <Member MemberName="RemoveFromPool">
-      <MemberSignature Language="C#" Value="public void RemoveFromPool (Nullable&lt;Microsoft.Azure.Batch.Common.ComputeNodeDeallocationOption&gt; deallocationOption = null, Nullable&lt;TimeSpan&gt; resizeTimeout = null, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = null);" />
+      <MemberSignature Language="C#" Value="public void RemoveFromPool (Nullable&lt;Microsoft.Azure.Batch.Common.ComputeNodeDeallocationOption&gt; deallocationOption = default, Nullable&lt;TimeSpan&gt; resizeTimeout = default, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveFromPool(valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Batch.Common.ComputeNodeDeallocationOption&gt; deallocationOption, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; resizeTimeout, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.ComputeNode.RemoveFromPool(System.Nullable{Microsoft.Azure.Batch.Common.ComputeNodeDeallocationOption},System.Nullable{System.TimeSpan},System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveFromPool (Optional deallocationOption As Nullable(Of ComputeNodeDeallocationOption) = null, Optional resizeTimeout As Nullable(Of TimeSpan) = null, Optional additionalBehaviors As IEnumerable(Of BatchClientBehavior) = null)" />
@@ -1096,7 +1057,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1120,14 +1080,13 @@
       </Docs>
     </Member>
     <Member MemberName="RemoveFromPoolAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task RemoveFromPoolAsync (Nullable&lt;Microsoft.Azure.Batch.Common.ComputeNodeDeallocationOption&gt; deallocationOption = null, Nullable&lt;TimeSpan&gt; resizeTimeout = null, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task RemoveFromPoolAsync (Nullable&lt;Microsoft.Azure.Batch.Common.ComputeNodeDeallocationOption&gt; deallocationOption = default, Nullable&lt;TimeSpan&gt; resizeTimeout = default, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task RemoveFromPoolAsync(valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Batch.Common.ComputeNodeDeallocationOption&gt; deallocationOption, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; resizeTimeout, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.ComputeNode.RemoveFromPoolAsync(System.Nullable{Microsoft.Azure.Batch.Common.ComputeNodeDeallocationOption},System.Nullable{System.TimeSpan},System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="member this.RemoveFromPoolAsync : Nullable&lt;Microsoft.Azure.Batch.Common.ComputeNodeDeallocationOption&gt; * Nullable&lt;TimeSpan&gt; * seq&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="computeNode.RemoveFromPoolAsync (deallocationOption, resizeTimeout, additionalBehaviors, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1162,7 +1121,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1186,7 +1144,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1209,7 +1166,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1232,7 +1188,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1256,7 +1211,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1279,7 +1233,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1302,7 +1255,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1326,7 +1278,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1342,7 +1293,7 @@
       </Docs>
     </Member>
     <Member MemberName="UploadComputeNodeBatchServiceLogs">
-      <MemberSignature Language="C#" Value="public Microsoft.Azure.Batch.UploadBatchServiceLogsResult UploadComputeNodeBatchServiceLogs (string containerUrl, DateTime startTime, Nullable&lt;DateTime&gt; endTime = null, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = null);" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Batch.UploadBatchServiceLogsResult UploadComputeNodeBatchServiceLogs (string containerUrl, DateTime startTime, Nullable&lt;DateTime&gt; endTime = default, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Azure.Batch.UploadBatchServiceLogsResult UploadComputeNodeBatchServiceLogs(string containerUrl, valuetype System.DateTime startTime, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; endTime, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.ComputeNode.UploadComputeNodeBatchServiceLogs(System.String,System.DateTime,System.Nullable{System.DateTime},System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})" />
       <MemberSignature Language="VB.NET" Value="Public Function UploadComputeNodeBatchServiceLogs (containerUrl As String, startTime As DateTime, Optional endTime As Nullable(Of DateTime) = null, Optional additionalBehaviors As IEnumerable(Of BatchClientBehavior) = null) As UploadBatchServiceLogsResult" />
@@ -1350,7 +1301,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1386,14 +1336,13 @@
       </Docs>
     </Member>
     <Member MemberName="UploadComputeNodeBatchServiceLogsAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.UploadBatchServiceLogsResult&gt; UploadComputeNodeBatchServiceLogsAsync (string containerUrl, DateTime startTime, Nullable&lt;DateTime&gt; endTime = null, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.UploadBatchServiceLogsResult&gt; UploadComputeNodeBatchServiceLogsAsync (string containerUrl, DateTime startTime, Nullable&lt;DateTime&gt; endTime = default, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Batch.UploadBatchServiceLogsResult&gt; UploadComputeNodeBatchServiceLogsAsync(string containerUrl, valuetype System.DateTime startTime, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; endTime, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Batch.BatchClientBehavior&gt; additionalBehaviors, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.ComputeNode.UploadComputeNodeBatchServiceLogsAsync(System.String,System.DateTime,System.Nullable{System.DateTime},System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="member this.UploadComputeNodeBatchServiceLogsAsync : string * DateTime * Nullable&lt;DateTime&gt; * seq&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.UploadBatchServiceLogsResult&gt;" Usage="computeNode.UploadComputeNodeBatchServiceLogsAsync (containerUrl, startTime, endTime, additionalBehaviors, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1439,7 +1388,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1462,7 +1410,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

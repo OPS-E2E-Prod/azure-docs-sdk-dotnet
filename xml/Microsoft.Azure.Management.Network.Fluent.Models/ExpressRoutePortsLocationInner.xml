@@ -6,8 +6,10 @@
   <TypeSignature Language="F#" Value="type ExpressRoutePortsLocationInner = class&#xA;    inherit Resource" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
     <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.ResourceManager.Fluent.Resource</BaseTypeName>
@@ -35,8 +37,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,16 +52,15 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ExpressRoutePortsLocationInner (string location = null, string id = null, string name = null, string type = null, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = null, string address = null, string contact = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Fluent.Models.ExpressRoutePortsLocationBandwidths&gt; availableBandwidths = null, string provisioningState = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string location, string id, string name, string type, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, string address, string contact, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Network.Fluent.Models.ExpressRoutePortsLocationBandwidths&gt; availableBandwidths, string provisioningState) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.Models.ExpressRoutePortsLocationInner.#ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String,System.Collections.Generic.IList{Microsoft.Azure.Management.Network.Fluent.Models.ExpressRoutePortsLocationBandwidths},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional location As String = null, Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional tags As IDictionary(Of String, String) = null, Optional address As String = null, Optional contact As String = null, Optional availableBandwidths As IList(Of ExpressRoutePortsLocationBandwidths) = null, Optional provisioningState As String = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Network.Fluent.Models.ExpressRoutePortsLocationInner : string * string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * string * string * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Fluent.Models.ExpressRoutePortsLocationBandwidths&gt; * string -&gt; Microsoft.Azure.Management.Network.Fluent.Models.ExpressRoutePortsLocationInner" Usage="new Microsoft.Azure.Management.Network.Fluent.Models.ExpressRoutePortsLocationInner (location, id, name, type, tags, address, contact, availableBandwidths, provisioningState)" />
+      <MemberSignature Language="C#" Value="public ExpressRoutePortsLocationInner (string location = default, string id = default, string name = default, string type = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, string address = default, string contact = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Fluent.Models.ExpressRoutePortsLocationBandwidths&gt; availableBandwidths = default, Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState provisioningState = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string location, string id, string name, string type, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, string address, string contact, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Network.Fluent.Models.ExpressRoutePortsLocationBandwidths&gt; availableBandwidths, class Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState provisioningState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.Models.ExpressRoutePortsLocationInner.#ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String,System.Collections.Generic.IList{Microsoft.Azure.Management.Network.Fluent.Models.ExpressRoutePortsLocationBandwidths},Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Network.Fluent.Models.ExpressRoutePortsLocationInner : string * string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * string * string * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Fluent.Models.ExpressRoutePortsLocationBandwidths&gt; * Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState -&gt; Microsoft.Azure.Management.Network.Fluent.Models.ExpressRoutePortsLocationInner" Usage="new Microsoft.Azure.Management.Network.Fluent.Models.ExpressRoutePortsLocationInner (location, id, name, type, tags, address, contact, availableBandwidths, provisioningState)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
-        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="location" Type="System.String" />
@@ -68,7 +71,7 @@
         <Parameter Name="address" Type="System.String" />
         <Parameter Name="contact" Type="System.String" />
         <Parameter Name="availableBandwidths" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Fluent.Models.ExpressRoutePortsLocationBandwidths&gt;" />
-        <Parameter Name="provisioningState" Type="System.String" />
+        <Parameter Name="provisioningState" Type="Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState" />
       </Parameters>
       <Docs>
         <param name="location">To be added.</param>
@@ -81,8 +84,8 @@
         <param name="availableBandwidths">The inventory of available
             ExpressRoutePort bandwidths.</param>
         <param name="provisioningState">The provisioning state of the
-            ExpressRoutePortLocation resource. Possible values are:
-            'Succeeded', 'Updating', 'Deleting', and 'Failed'.</param>
+            express route port location resource. Possible values include:
+            'Succeeded', 'Updating', 'Deleting', 'Failed'</param>
         <summary>
             Initializes a new instance of the ExpressRoutePortsLocationInner
             class.
@@ -99,8 +102,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -127,8 +132,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -156,8 +163,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -176,16 +185,18 @@
       </Docs>
     </Member>
     <Member MemberName="ProvisioningState">
-      <MemberSignature Language="C#" Value="public string ProvisioningState { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string ProvisioningState" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState ProvisioningState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState ProvisioningState" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Fluent.Models.ExpressRoutePortsLocationInner.ProvisioningState" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProvisioningState As String" />
-      <MemberSignature Language="F#" Value="member this.ProvisioningState : string" Usage="Microsoft.Azure.Management.Network.Fluent.Models.ExpressRoutePortsLocationInner.ProvisioningState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProvisioningState As ProvisioningState" />
+      <MemberSignature Language="F#" Value="member this.ProvisioningState : Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState" Usage="Microsoft.Azure.Management.Network.Fluent.Models.ExpressRoutePortsLocationInner.ProvisioningState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -193,13 +204,13 @@
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets the provisioning state of the ExpressRoutePortLocation
-            resource. Possible values are: 'Succeeded', 'Updating', 'Deleting',
-            and 'Failed'.
+            Gets the provisioning state of the express route port location
+            resource. Possible values include: 'Succeeded', 'Updating',
+            'Deleting', 'Failed'
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -214,8 +225,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

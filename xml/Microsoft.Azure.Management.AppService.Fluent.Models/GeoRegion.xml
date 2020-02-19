@@ -6,8 +6,10 @@
   <TypeSignature Language="F#" Value="type GeoRegion = class&#xA;    inherit ProxyOnlyResourceInner" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
     <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.AppService.Fluent.Models.ProxyOnlyResourceInner</BaseTypeName>
@@ -33,8 +35,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -45,16 +49,16 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public GeoRegion (string id = null, string name = null, string type = null, string kind = null, string description = null, string displayName = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string type, string kind, string description, string displayName) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.Models.GeoRegion.#ctor(System.String,System.String,System.String,System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional kind As String = null, Optional description As String = null, Optional displayName As String = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.AppService.Fluent.Models.GeoRegion : string * string * string * string * string * string -&gt; Microsoft.Azure.Management.AppService.Fluent.Models.GeoRegion" Usage="new Microsoft.Azure.Management.AppService.Fluent.Models.GeoRegion (id, name, type, kind, description, displayName)" />
+      <MemberSignature Language="C#" Value="public GeoRegion (string id = default, string name = default, string type = default, string kind = default, string description = default, string displayName = default, string orgDomain = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string type, string kind, string description, string displayName, string orgDomain) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.Models.GeoRegion.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional kind As String = null, Optional description As String = null, Optional displayName As String = null, Optional orgDomain As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.AppService.Fluent.Models.GeoRegion : string * string * string * string * string * string * string -&gt; Microsoft.Azure.Management.AppService.Fluent.Models.GeoRegion" Usage="new Microsoft.Azure.Management.AppService.Fluent.Models.GeoRegion (id, name, type, kind, description, displayName, orgDomain)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
-        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
@@ -63,6 +67,7 @@
         <Parameter Name="kind" Type="System.String" />
         <Parameter Name="description" Type="System.String" />
         <Parameter Name="displayName" Type="System.String" />
+        <Parameter Name="orgDomain" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="id">To be added.</param>
@@ -71,6 +76,7 @@
         <param name="kind">Kind of resource.</param>
         <param name="description">Region description.</param>
         <param name="displayName">Display name for region.</param>
+        <param name="orgDomain">Display name for region.</param>
         <summary>
             Initializes a new instance of the GeoRegion class.
             </summary>
@@ -86,8 +92,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -114,12 +122,42 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.displayName")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets display name for region.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OrgDomain">
+      <MemberSignature Language="C#" Value="public string OrgDomain { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OrgDomain" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.AppService.Fluent.Models.GeoRegion.OrgDomain" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OrgDomain As String" />
+      <MemberSignature Language="F#" Value="member this.OrgDomain : string" Usage="Microsoft.Azure.Management.AppService.Fluent.Models.GeoRegion.OrgDomain" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.orgDomain")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

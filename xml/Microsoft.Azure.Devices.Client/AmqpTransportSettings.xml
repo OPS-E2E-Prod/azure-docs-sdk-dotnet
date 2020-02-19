@@ -6,9 +6,11 @@
   <TypeSignature Language="F#" Value="type AmqpTransportSettings = class&#xA;    interface ITransportSettings" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Devices.Client</AssemblyName>
-    <AssemblyVersion>1.20.3.0</AssemblyVersion>
-    <AssemblyVersion>1.21.0.0</AssemblyVersion>
-    <AssemblyVersion>1.21.1.0</AssemblyVersion>
+    <AssemblyVersion>1.21.2.0</AssemblyVersion>
+    <AssemblyVersion>1.21.3.0</AssemblyVersion>
+    <AssemblyVersion>1.21.4.0</AssemblyVersion>
+    <AssemblyVersion>1.22.0.0</AssemblyVersion>
+    <AssemblyVersion>1.23.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -33,16 +35,19 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Client</AssemblyName>
-        <AssemblyVersion>1.20.3.0</AssemblyVersion>
-        <AssemblyVersion>1.21.0.0</AssemblyVersion>
-        <AssemblyVersion>1.21.1.0</AssemblyVersion>
+        <AssemblyVersion>1.21.2.0</AssemblyVersion>
+        <AssemblyVersion>1.21.3.0</AssemblyVersion>
+        <AssemblyVersion>1.21.4.0</AssemblyVersion>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="transportType" Type="Microsoft.Azure.Devices.Client.TransportType" />
       </Parameters>
       <Docs>
-        <param name="transportType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="transportType">The AMQP transport type.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Azure.Devices.Client.AmqpTransportSettings" /></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,18 +59,21 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Client</AssemblyName>
-        <AssemblyVersion>1.20.3.0</AssemblyVersion>
-        <AssemblyVersion>1.21.0.0</AssemblyVersion>
-        <AssemblyVersion>1.21.1.0</AssemblyVersion>
+        <AssemblyVersion>1.21.2.0</AssemblyVersion>
+        <AssemblyVersion>1.21.3.0</AssemblyVersion>
+        <AssemblyVersion>1.21.4.0</AssemblyVersion>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="transportType" Type="Microsoft.Azure.Devices.Client.TransportType" />
         <Parameter Name="prefetchCount" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="transportType">To be added.</param>
-        <param name="prefetchCount">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="transportType">The AMQP transport type.</param>
+        <param name="prefetchCount">The prefetch count.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Azure.Devices.Client.AmqpTransportSettings" /></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,9 +85,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Client</AssemblyName>
-        <AssemblyVersion>1.20.3.0</AssemblyVersion>
-        <AssemblyVersion>1.21.0.0</AssemblyVersion>
-        <AssemblyVersion>1.21.1.0</AssemblyVersion>
+        <AssemblyVersion>1.21.2.0</AssemblyVersion>
+        <AssemblyVersion>1.21.3.0</AssemblyVersion>
+        <AssemblyVersion>1.21.4.0</AssemblyVersion>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="transportType" Type="Microsoft.Azure.Devices.Client.TransportType" />
@@ -87,10 +97,11 @@
         <Parameter Name="amqpConnectionPoolSettings" Type="Microsoft.Azure.Devices.Client.AmqpConnectionPoolSettings" />
       </Parameters>
       <Docs>
-        <param name="transportType">To be added.</param>
-        <param name="prefetchCount">To be added.</param>
-        <param name="amqpConnectionPoolSettings">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="transportType">The AMQP transport type.</param>
+        <param name="prefetchCount">The prefetch count.</param>
+        <param name="amqpConnectionPoolSettings">AMQP connection pool settings.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Azure.Devices.Client.AmqpTransportSettings" /></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,16 +114,41 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Client</AssemblyName>
-        <AssemblyVersion>1.20.3.0</AssemblyVersion>
-        <AssemblyVersion>1.21.0.0</AssemblyVersion>
-        <AssemblyVersion>1.21.1.0</AssemblyVersion>
+        <AssemblyVersion>1.21.2.0</AssemblyVersion>
+        <AssemblyVersion>1.21.3.0</AssemblyVersion>
+        <AssemblyVersion>1.21.4.0</AssemblyVersion>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Devices.Client.AmqpConnectionPoolSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The connection pool settings for AMQP
+            </summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CertificateRevocationCheck">
+      <MemberSignature Language="C#" Value="public bool CertificateRevocationCheck;" />
+      <MemberSignature Language="ILAsm" Value=".field public bool CertificateRevocationCheck" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Devices.Client.AmqpTransportSettings.CertificateRevocationCheck" />
+      <MemberSignature Language="VB.NET" Value="Public CertificateRevocationCheck As Boolean " />
+      <MemberSignature Language="F#" Value="val mutable CertificateRevocationCheck : bool" Usage="Microsoft.Azure.Devices.Client.AmqpTransportSettings.CertificateRevocationCheck" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Devices.Client</AssemblyName>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            To enable certificate revocation check. Default to be false.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,16 +161,84 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Client</AssemblyName>
-        <AssemblyVersion>1.20.3.0</AssemblyVersion>
-        <AssemblyVersion>1.21.0.0</AssemblyVersion>
-        <AssemblyVersion>1.21.1.0</AssemblyVersion>
+        <AssemblyVersion>1.21.2.0</AssemblyVersion>
+        <AssemblyVersion>1.21.3.0</AssemblyVersion>
+        <AssemblyVersion>1.21.4.0</AssemblyVersion>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509Certificate2</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The client certificate to use for authenticating
+            </summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultOpenTimeout">
+      <MemberSignature Language="C#" Value="public static readonly TimeSpan DefaultOpenTimeout;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.TimeSpan DefaultOpenTimeout" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Devices.Client.AmqpTransportSettings.DefaultOpenTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultOpenTimeout As TimeSpan " />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultOpenTimeout : TimeSpan" Usage="Microsoft.Azure.Devices.Client.AmqpTransportSettings.DefaultOpenTimeout" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Devices.Client</AssemblyName>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The default open timeout
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultOperationTimeout">
+      <MemberSignature Language="C#" Value="public static readonly TimeSpan DefaultOperationTimeout;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.TimeSpan DefaultOperationTimeout" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Devices.Client.AmqpTransportSettings.DefaultOperationTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultOperationTimeout As TimeSpan " />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultOperationTimeout : TimeSpan" Usage="Microsoft.Azure.Devices.Client.AmqpTransportSettings.DefaultOperationTimeout" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Devices.Client</AssemblyName>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The default operation timeout
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultPrefetchCount">
+      <MemberSignature Language="C#" Value="public const uint DefaultPrefetchCount = 50;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 DefaultPrefetchCount = (50)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Devices.Client.AmqpTransportSettings.DefaultPrefetchCount" />
+      <MemberSignature Language="VB.NET" Value="Public Const DefaultPrefetchCount As UInteger  = 50" />
+      <MemberSignature Language="F#" Value="val mutable DefaultPrefetchCount : uint32" Usage="Microsoft.Azure.Devices.Client.AmqpTransportSettings.DefaultPrefetchCount" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Devices.Client</AssemblyName>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>50</MemberValue>
+      <Docs>
+        <summary>
+            The default prefetch count
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,15 +254,19 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Client</AssemblyName>
-        <AssemblyVersion>1.20.3.0</AssemblyVersion>
-        <AssemblyVersion>1.21.0.0</AssemblyVersion>
-        <AssemblyVersion>1.21.1.0</AssemblyVersion>
+        <AssemblyVersion>1.21.2.0</AssemblyVersion>
+        <AssemblyVersion>1.21.3.0</AssemblyVersion>
+        <AssemblyVersion>1.21.4.0</AssemblyVersion>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Returns the default current receive timeout
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -172,9 +280,11 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Client</AssemblyName>
-        <AssemblyVersion>1.20.3.0</AssemblyVersion>
-        <AssemblyVersion>1.21.0.0</AssemblyVersion>
-        <AssemblyVersion>1.21.1.0</AssemblyVersion>
+        <AssemblyVersion>1.21.2.0</AssemblyVersion>
+        <AssemblyVersion>1.21.3.0</AssemblyVersion>
+        <AssemblyVersion>1.21.4.0</AssemblyVersion>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -183,9 +293,11 @@
         <Parameter Name="other" Type="Microsoft.Azure.Devices.Client.AmqpTransportSettings" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The other instance to compare to</param>
+        <summary>
+            Compares the properties of this instance to another
+            </summary>
+        <returns>True if equal</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -201,17 +313,44 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Client</AssemblyName>
-        <AssemblyVersion>1.20.3.0</AssemblyVersion>
-        <AssemblyVersion>1.21.0.0</AssemblyVersion>
-        <AssemblyVersion>1.21.1.0</AssemblyVersion>
+        <AssemblyVersion>1.21.2.0</AssemblyVersion>
+        <AssemblyVersion>1.21.3.0</AssemblyVersion>
+        <AssemblyVersion>1.21.4.0</AssemblyVersion>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Devices.Client.TransportType</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Returns the configured transport type
+            </summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IdleTimeout">
+      <MemberSignature Language="C#" Value="public TimeSpan IdleTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan IdleTimeout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Devices.Client.AmqpTransportSettings.IdleTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property IdleTimeout As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.IdleTimeout : TimeSpan with get, set" Usage="Microsoft.Azure.Devices.Client.AmqpTransportSettings.IdleTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Devices.Client</AssemblyName>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Specify client-side heartbeat interval
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -224,15 +363,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Client</AssemblyName>
-        <AssemblyVersion>1.20.3.0</AssemblyVersion>
-        <AssemblyVersion>1.21.0.0</AssemblyVersion>
-        <AssemblyVersion>1.21.1.0</AssemblyVersion>
+        <AssemblyVersion>1.21.2.0</AssemblyVersion>
+        <AssemblyVersion>1.21.3.0</AssemblyVersion>
+        <AssemblyVersion>1.21.4.0</AssemblyVersion>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The open timeout
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -246,15 +389,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Client</AssemblyName>
-        <AssemblyVersion>1.20.3.0</AssemblyVersion>
-        <AssemblyVersion>1.21.0.0</AssemblyVersion>
-        <AssemblyVersion>1.21.1.0</AssemblyVersion>
+        <AssemblyVersion>1.21.2.0</AssemblyVersion>
+        <AssemblyVersion>1.21.3.0</AssemblyVersion>
+        <AssemblyVersion>1.21.4.0</AssemblyVersion>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The operation timeout
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -268,15 +415,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Client</AssemblyName>
-        <AssemblyVersion>1.20.3.0</AssemblyVersion>
-        <AssemblyVersion>1.21.0.0</AssemblyVersion>
-        <AssemblyVersion>1.21.1.0</AssemblyVersion>
+        <AssemblyVersion>1.21.2.0</AssemblyVersion>
+        <AssemblyVersion>1.21.3.0</AssemblyVersion>
+        <AssemblyVersion>1.21.4.0</AssemblyVersion>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The prefetch count
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -290,15 +441,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Client</AssemblyName>
-        <AssemblyVersion>1.20.3.0</AssemblyVersion>
-        <AssemblyVersion>1.21.0.0</AssemblyVersion>
-        <AssemblyVersion>1.21.1.0</AssemblyVersion>
+        <AssemblyVersion>1.21.2.0</AssemblyVersion>
+        <AssemblyVersion>1.21.3.0</AssemblyVersion>
+        <AssemblyVersion>1.21.4.0</AssemblyVersion>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.IWebProxy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The proxy
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -312,15 +467,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Client</AssemblyName>
-        <AssemblyVersion>1.20.3.0</AssemblyVersion>
-        <AssemblyVersion>1.21.0.0</AssemblyVersion>
-        <AssemblyVersion>1.21.1.0</AssemblyVersion>
+        <AssemblyVersion>1.21.2.0</AssemblyVersion>
+        <AssemblyVersion>1.21.3.0</AssemblyVersion>
+        <AssemblyVersion>1.21.4.0</AssemblyVersion>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Security.RemoteCertificateValidationCallback</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            A callback for remote certificate validation
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -6,8 +6,10 @@
   <TypeSignature Language="F#" Value="type IndependentChildImpl&lt;#'IResourceT, 'FluentParentModelT, 'InnerResourceT, 'FluentResourceT, 'IResourceT, 'IUpdatableT, 'ManagerT (requires 'FluentParentModelT : null and 'FluentParentModelT :&gt; IResource and 'FluentParentModelT :&gt; IHasResourceGroup and 'FluentResourceT : null and 'IResourceT : null and 'IUpdatableT : null)&gt; = class&#xA;    inherit CreatableUpdatable&lt;#'IResourceT, 'InnerResourceT, 'FluentResourceT, 'IResourceT, 'IUpdatableT (requires 'FluentResourceT : null and 'IResourceT : null and 'IUpdatableT : null)&gt;&#xA;    interface IIndependentChild&lt;'ManagerT&gt;&#xA;    interface IHasName&#xA;    interface IHasId&#xA;    interface IHasResourceGroup&#xA;    interface IHasManager&lt;'ManagerT&gt;&#xA;    interface IWithParentResource&lt;#'IResourceT, 'FluentParentModelT (requires 'FluentParentModelT : null and 'FluentParentModelT :&gt; IResource and 'FluentParentModelT :&gt; IHasResourceGroup)&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
     <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="IFluentResourceT">
@@ -95,8 +97,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -114,15 +118,17 @@
       </Docs>
     </Member>
     <Member MemberName="CreateChildResourceAsync">
-      <MemberSignature Language="C#" Value="protected abstract System.Threading.Tasks.Task&lt;IFluentResourceT&gt; CreateChildResourceAsync (System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="protected abstract System.Threading.Tasks.Task&lt;IFluentResourceT&gt; CreateChildResourceAsync (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;!IFluentResourceT&gt; CreateChildResourceAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ResourceManager.Fluent.Core.IndependentChildImpl`7.CreateChildResourceAsync(System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member CreateChildResourceAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;#'IResourceT&gt;" Usage="independentChildImpl.CreateChildResourceAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;IFluentResourceT&gt;</ReturnType>
@@ -138,15 +144,17 @@
       </Docs>
     </Member>
     <Member MemberName="CreateResourceAsync">
-      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;IFluentResourceT&gt; CreateResourceAsync (System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;IFluentResourceT&gt; CreateResourceAsync (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;!IFluentResourceT&gt; CreateResourceAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ResourceManager.Fluent.Core.IndependentChildImpl`7.CreateResourceAsync(System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="override this.CreateResourceAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;#'IResourceT&gt;" Usage="independentChildImpl.CreateResourceAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -178,8 +186,10 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -199,8 +209,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -223,8 +235,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>ManagerT</ReturnType>
@@ -244,8 +258,10 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -267,8 +283,10 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -288,8 +306,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -312,8 +332,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -339,8 +361,10 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.ResourceManager.Fluent.Core.ResourceActions.ICreatable&lt;IFluentResourceT&gt;</ReturnType>
@@ -367,8 +391,10 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.ResourceManager.Fluent.Core.ResourceActions.ICreatable&lt;IFluentResourceT&gt;</ReturnType>
@@ -397,8 +423,10 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.ResourceManager.Fluent.Core.ResourceActions.ICreatable&lt;IFluentResourceT&gt;</ReturnType>

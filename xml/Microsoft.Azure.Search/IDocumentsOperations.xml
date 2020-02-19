@@ -6,8 +6,6 @@
   <TypeSignature Language="F#" Value="type IDocumentsOperations = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-    <AssemblyVersion>10.0.0.0</AssemblyVersion>
-    <AssemblyVersion>10.0.1.0</AssemblyVersion>
     <AssemblyVersion>10.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -19,15 +17,13 @@
   </Docs>
   <Members>
     <Member MemberName="AutocompleteWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.AutocompleteResult&gt;&gt; AutocompleteWithHttpMessagesAsync (string searchText, string suggesterName, Microsoft.Azure.Search.Models.AutocompleteParameters autocompleteParameters = null, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.AutocompleteResult&gt;&gt; AutocompleteWithHttpMessagesAsync (string searchText, string suggesterName, Microsoft.Azure.Search.Models.AutocompleteParameters autocompleteParameters = default, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Azure.Search.Models.AutocompleteResult&gt;&gt; AutocompleteWithHttpMessagesAsync(string searchText, string suggesterName, class Microsoft.Azure.Search.Models.AutocompleteParameters autocompleteParameters, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.IDocumentsOperations.AutocompleteWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.Search.Models.AutocompleteParameters,Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member AutocompleteWithHttpMessagesAsync : string * string * Microsoft.Azure.Search.Models.AutocompleteParameters * Microsoft.Azure.Search.Models.SearchRequestOptions * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.AutocompleteResult&gt;&gt;" Usage="iDocumentsOperations.AutocompleteWithHttpMessagesAsync (searchText, suggesterName, autocompleteParameters, searchRequestOptions, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-        <AssemblyVersion>10.0.1.0</AssemblyVersion>
         <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -62,15 +58,13 @@
       </Docs>
     </Member>
     <Member MemberName="ContinueSearchWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DocumentSearchResult&lt;Microsoft.Azure.Search.Models.Document&gt;&gt;&gt; ContinueSearchWithHttpMessagesAsync (Microsoft.Azure.Search.Models.SearchContinuationToken continuationToken, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DocumentSearchResult&lt;Microsoft.Azure.Search.Models.Document&gt;&gt;&gt; ContinueSearchWithHttpMessagesAsync (Microsoft.Azure.Search.Models.SearchContinuationToken continuationToken, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Azure.Search.Models.DocumentSearchResult`1&lt;class Microsoft.Azure.Search.Models.Document&gt;&gt;&gt; ContinueSearchWithHttpMessagesAsync(class Microsoft.Azure.Search.Models.SearchContinuationToken continuationToken, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.IDocumentsOperations.ContinueSearchWithHttpMessagesAsync(Microsoft.Azure.Search.Models.SearchContinuationToken,Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member ContinueSearchWithHttpMessagesAsync : Microsoft.Azure.Search.Models.SearchContinuationToken * Microsoft.Azure.Search.Models.SearchRequestOptions * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DocumentSearchResult&lt;Microsoft.Azure.Search.Models.Document&gt;&gt;&gt;" Usage="iDocumentsOperations.ContinueSearchWithHttpMessagesAsync (continuationToken, searchRequestOptions, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-        <AssemblyVersion>10.0.1.0</AssemblyVersion>
         <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -126,15 +120,13 @@
       </Docs>
     </Member>
     <Member MemberName="ContinueSearchWithHttpMessagesAsync&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DocumentSearchResult&lt;T&gt;&gt;&gt; ContinueSearchWithHttpMessagesAsync&lt;T&gt; (Microsoft.Azure.Search.Models.SearchContinuationToken continuationToken, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DocumentSearchResult&lt;T&gt;&gt;&gt; ContinueSearchWithHttpMessagesAsync&lt;T&gt; (Microsoft.Azure.Search.Models.SearchContinuationToken continuationToken, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Azure.Search.Models.DocumentSearchResult`1&lt;!!T&gt;&gt;&gt; ContinueSearchWithHttpMessagesAsync&lt;T&gt;(class Microsoft.Azure.Search.Models.SearchContinuationToken continuationToken, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.IDocumentsOperations.ContinueSearchWithHttpMessagesAsync``1(Microsoft.Azure.Search.Models.SearchContinuationToken,Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member ContinueSearchWithHttpMessagesAsync : Microsoft.Azure.Search.Models.SearchContinuationToken * Microsoft.Azure.Search.Models.SearchRequestOptions * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DocumentSearchResult&lt;'T&gt;&gt;&gt;" Usage="iDocumentsOperations.ContinueSearchWithHttpMessagesAsync (continuationToken, searchRequestOptions, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-        <AssemblyVersion>10.0.1.0</AssemblyVersion>
         <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -196,15 +188,13 @@
       </Docs>
     </Member>
     <Member MemberName="CountWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;long&gt;&gt; CountWithHttpMessagesAsync (Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;long&gt;&gt; CountWithHttpMessagesAsync (Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;int64&gt;&gt; CountWithHttpMessagesAsync(class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.IDocumentsOperations.CountWithHttpMessagesAsync(Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member CountWithHttpMessagesAsync : Microsoft.Azure.Search.Models.SearchRequestOptions * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;int64&gt;&gt;" Usage="iDocumentsOperations.CountWithHttpMessagesAsync (searchRequestOptions, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-        <AssemblyVersion>10.0.1.0</AssemblyVersion>
         <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -233,15 +223,13 @@
       </Docs>
     </Member>
     <Member MemberName="GetWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.Document&gt;&gt; GetWithHttpMessagesAsync (string key, System.Collections.Generic.IEnumerable&lt;string&gt; selectedFields, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.Document&gt;&gt; GetWithHttpMessagesAsync (string key, System.Collections.Generic.IEnumerable&lt;string&gt; selectedFields, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Azure.Search.Models.Document&gt;&gt; GetWithHttpMessagesAsync(string key, class System.Collections.Generic.IEnumerable`1&lt;string&gt; selectedFields, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.IDocumentsOperations.GetWithHttpMessagesAsync(System.String,System.Collections.Generic.IEnumerable{System.String},Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member GetWithHttpMessagesAsync : string * seq&lt;string&gt; * Microsoft.Azure.Search.Models.SearchRequestOptions * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.Document&gt;&gt;" Usage="iDocumentsOperations.GetWithHttpMessagesAsync (key, selectedFields, searchRequestOptions, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-        <AssemblyVersion>10.0.1.0</AssemblyVersion>
         <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -310,15 +298,13 @@
       </Docs>
     </Member>
     <Member MemberName="GetWithHttpMessagesAsync&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;T&gt;&gt; GetWithHttpMessagesAsync&lt;T&gt; (string key, System.Collections.Generic.IEnumerable&lt;string&gt; selectedFields, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;T&gt;&gt; GetWithHttpMessagesAsync&lt;T&gt; (string key, System.Collections.Generic.IEnumerable&lt;string&gt; selectedFields, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;!!T&gt;&gt; GetWithHttpMessagesAsync&lt;T&gt;(string key, class System.Collections.Generic.IEnumerable`1&lt;string&gt; selectedFields, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.IDocumentsOperations.GetWithHttpMessagesAsync``1(System.String,System.Collections.Generic.IEnumerable{System.String},Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member GetWithHttpMessagesAsync : string * seq&lt;string&gt; * Microsoft.Azure.Search.Models.SearchRequestOptions * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;'T&gt;&gt;" Usage="iDocumentsOperations.GetWithHttpMessagesAsync (key, selectedFields, searchRequestOptions, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-        <AssemblyVersion>10.0.1.0</AssemblyVersion>
         <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -387,15 +373,13 @@
       </Docs>
     </Member>
     <Member MemberName="IndexWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DocumentIndexResult&gt;&gt; IndexWithHttpMessagesAsync (Microsoft.Azure.Search.Models.IndexBatch&lt;Microsoft.Azure.Search.Models.Document&gt; batch, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DocumentIndexResult&gt;&gt; IndexWithHttpMessagesAsync (Microsoft.Azure.Search.Models.IndexBatch&lt;Microsoft.Azure.Search.Models.Document&gt; batch, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Azure.Search.Models.DocumentIndexResult&gt;&gt; IndexWithHttpMessagesAsync(class Microsoft.Azure.Search.Models.IndexBatch`1&lt;class Microsoft.Azure.Search.Models.Document&gt; batch, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.IDocumentsOperations.IndexWithHttpMessagesAsync(Microsoft.Azure.Search.Models.IndexBatch{Microsoft.Azure.Search.Models.Document},Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member IndexWithHttpMessagesAsync : Microsoft.Azure.Search.Models.IndexBatch&lt;Microsoft.Azure.Search.Models.Document&gt; * Microsoft.Azure.Search.Models.SearchRequestOptions * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DocumentIndexResult&gt;&gt;" Usage="iDocumentsOperations.IndexWithHttpMessagesAsync (batch, searchRequestOptions, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-        <AssemblyVersion>10.0.1.0</AssemblyVersion>
         <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -443,15 +427,13 @@
       </Docs>
     </Member>
     <Member MemberName="IndexWithHttpMessagesAsync&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DocumentIndexResult&gt;&gt; IndexWithHttpMessagesAsync&lt;T&gt; (Microsoft.Azure.Search.Models.IndexBatch&lt;T&gt; batch, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DocumentIndexResult&gt;&gt; IndexWithHttpMessagesAsync&lt;T&gt; (Microsoft.Azure.Search.Models.IndexBatch&lt;T&gt; batch, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Azure.Search.Models.DocumentIndexResult&gt;&gt; IndexWithHttpMessagesAsync&lt;T&gt;(class Microsoft.Azure.Search.Models.IndexBatch`1&lt;!!T&gt; batch, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.IDocumentsOperations.IndexWithHttpMessagesAsync``1(Microsoft.Azure.Search.Models.IndexBatch{``0},Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member IndexWithHttpMessagesAsync : Microsoft.Azure.Search.Models.IndexBatch&lt;'T&gt; * Microsoft.Azure.Search.Models.SearchRequestOptions * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DocumentIndexResult&gt;&gt;" Usage="iDocumentsOperations.IndexWithHttpMessagesAsync (batch, searchRequestOptions, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-        <AssemblyVersion>10.0.1.0</AssemblyVersion>
         <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -505,15 +487,13 @@
       </Docs>
     </Member>
     <Member MemberName="SearchWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DocumentSearchResult&lt;Microsoft.Azure.Search.Models.Document&gt;&gt;&gt; SearchWithHttpMessagesAsync (string searchText, Microsoft.Azure.Search.Models.SearchParameters searchParameters, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DocumentSearchResult&lt;Microsoft.Azure.Search.Models.Document&gt;&gt;&gt; SearchWithHttpMessagesAsync (string searchText, Microsoft.Azure.Search.Models.SearchParameters searchParameters, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Azure.Search.Models.DocumentSearchResult`1&lt;class Microsoft.Azure.Search.Models.Document&gt;&gt;&gt; SearchWithHttpMessagesAsync(string searchText, class Microsoft.Azure.Search.Models.SearchParameters searchParameters, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.IDocumentsOperations.SearchWithHttpMessagesAsync(System.String,Microsoft.Azure.Search.Models.SearchParameters,Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member SearchWithHttpMessagesAsync : string * Microsoft.Azure.Search.Models.SearchParameters * Microsoft.Azure.Search.Models.SearchRequestOptions * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DocumentSearchResult&lt;Microsoft.Azure.Search.Models.Document&gt;&gt;&gt;" Usage="iDocumentsOperations.SearchWithHttpMessagesAsync (searchText, searchParameters, searchRequestOptions, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-        <AssemblyVersion>10.0.1.0</AssemblyVersion>
         <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -567,15 +547,13 @@
       </Docs>
     </Member>
     <Member MemberName="SearchWithHttpMessagesAsync&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DocumentSearchResult&lt;T&gt;&gt;&gt; SearchWithHttpMessagesAsync&lt;T&gt; (string searchText, Microsoft.Azure.Search.Models.SearchParameters searchParameters, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DocumentSearchResult&lt;T&gt;&gt;&gt; SearchWithHttpMessagesAsync&lt;T&gt; (string searchText, Microsoft.Azure.Search.Models.SearchParameters searchParameters, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Azure.Search.Models.DocumentSearchResult`1&lt;!!T&gt;&gt;&gt; SearchWithHttpMessagesAsync&lt;T&gt;(string searchText, class Microsoft.Azure.Search.Models.SearchParameters searchParameters, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.IDocumentsOperations.SearchWithHttpMessagesAsync``1(System.String,Microsoft.Azure.Search.Models.SearchParameters,Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member SearchWithHttpMessagesAsync : string * Microsoft.Azure.Search.Models.SearchParameters * Microsoft.Azure.Search.Models.SearchRequestOptions * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DocumentSearchResult&lt;'T&gt;&gt;&gt;" Usage="iDocumentsOperations.SearchWithHttpMessagesAsync (searchText, searchParameters, searchRequestOptions, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-        <AssemblyVersion>10.0.1.0</AssemblyVersion>
         <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -636,15 +614,13 @@
       </Docs>
     </Member>
     <Member MemberName="SuggestWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DocumentSuggestResult&lt;Microsoft.Azure.Search.Models.Document&gt;&gt;&gt; SuggestWithHttpMessagesAsync (string searchText, string suggesterName, Microsoft.Azure.Search.Models.SuggestParameters suggestParameters, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DocumentSuggestResult&lt;Microsoft.Azure.Search.Models.Document&gt;&gt;&gt; SuggestWithHttpMessagesAsync (string searchText, string suggesterName, Microsoft.Azure.Search.Models.SuggestParameters suggestParameters, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Azure.Search.Models.DocumentSuggestResult`1&lt;class Microsoft.Azure.Search.Models.Document&gt;&gt;&gt; SuggestWithHttpMessagesAsync(string searchText, string suggesterName, class Microsoft.Azure.Search.Models.SuggestParameters suggestParameters, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.IDocumentsOperations.SuggestWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.Search.Models.SuggestParameters,Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member SuggestWithHttpMessagesAsync : string * string * Microsoft.Azure.Search.Models.SuggestParameters * Microsoft.Azure.Search.Models.SearchRequestOptions * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DocumentSuggestResult&lt;Microsoft.Azure.Search.Models.Document&gt;&gt;&gt;" Usage="iDocumentsOperations.SuggestWithHttpMessagesAsync (searchText, suggesterName, suggestParameters, searchRequestOptions, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-        <AssemblyVersion>10.0.1.0</AssemblyVersion>
         <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -692,15 +668,13 @@
       </Docs>
     </Member>
     <Member MemberName="SuggestWithHttpMessagesAsync&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DocumentSuggestResult&lt;T&gt;&gt;&gt; SuggestWithHttpMessagesAsync&lt;T&gt; (string searchText, string suggesterName, Microsoft.Azure.Search.Models.SuggestParameters suggestParameters, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DocumentSuggestResult&lt;T&gt;&gt;&gt; SuggestWithHttpMessagesAsync&lt;T&gt; (string searchText, string suggesterName, Microsoft.Azure.Search.Models.SuggestParameters suggestParameters, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Azure.Search.Models.DocumentSuggestResult`1&lt;!!T&gt;&gt;&gt; SuggestWithHttpMessagesAsync&lt;T&gt;(string searchText, string suggesterName, class Microsoft.Azure.Search.Models.SuggestParameters suggestParameters, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.IDocumentsOperations.SuggestWithHttpMessagesAsync``1(System.String,System.String,Microsoft.Azure.Search.Models.SuggestParameters,Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member SuggestWithHttpMessagesAsync : string * string * Microsoft.Azure.Search.Models.SuggestParameters * Microsoft.Azure.Search.Models.SearchRequestOptions * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DocumentSuggestResult&lt;'T&gt;&gt;&gt;" Usage="iDocumentsOperations.SuggestWithHttpMessagesAsync (searchText, suggesterName, suggestParameters, searchRequestOptions, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-        <AssemblyVersion>10.0.1.0</AssemblyVersion>
         <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

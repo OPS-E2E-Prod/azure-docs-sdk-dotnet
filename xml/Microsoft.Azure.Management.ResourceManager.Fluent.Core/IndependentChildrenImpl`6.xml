@@ -6,8 +6,10 @@
   <TypeSignature Language="F#" Value="type IndependentChildrenImpl&lt;'T, #'T, 'InnerT, 'InnerCollectionT, 'ManagerT, 'ParentT (requires 'T : null and 'T :&gt; IHasId and 'ParentT :&gt; IResource and 'ParentT :&gt; IHasResourceGroup)&gt; = class&#xA;    inherit CreatableResources&lt;'T, #'T, 'InnerT (requires 'T : null and 'T :&gt; IHasId)&gt;&#xA;    interface ISupportsGettingById&lt;'T (requires 'T : null and 'T :&gt; IHasId)&gt;&#xA;    interface ISupportsGettingByParent&lt;'T, 'ParentT, 'ManagerT (requires 'T : null and 'T :&gt; IHasId and 'ParentT :&gt; IResource and 'ParentT :&gt; IHasResourceGroup)&gt;&#xA;    interface ISupportsListingByParent&lt;'T, 'ParentT, 'ManagerT (requires 'T : null and 'T :&gt; IHasId and 'ParentT :&gt; IResource and 'ParentT :&gt; IHasResourceGroup)&gt;&#xA;    interface ISupportsDeletingById&#xA;    interface ISupportsDeletingByParent&#xA;    interface IHasManager&lt;'ManagerT&gt;&#xA;    interface IHasInner&lt;'InnerCollectionT&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
     <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T">
@@ -86,8 +88,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="innerCollection" Type="InnerCollectionT" />
@@ -112,8 +116,10 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -128,7 +134,7 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteByIdAsync">
-      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task DeleteByIdAsync (string id, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task DeleteByIdAsync (string id, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task DeleteByIdAsync(string id, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ResourceManager.Fluent.Core.IndependentChildrenImpl`6.DeleteByIdAsync(System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="override this.DeleteByIdAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="independentChildrenImpl.DeleteByIdAsync (id, cancellationToken)" />
@@ -138,8 +144,10 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -173,8 +181,10 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -193,7 +203,7 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteByParentAsync">
-      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task DeleteByParentAsync (string groupName, string parentName, string name, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task DeleteByParentAsync (string groupName, string parentName, string name, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteByParentAsync(string groupName, string parentName, string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ResourceManager.Fluent.Core.IndependentChildrenImpl`6.DeleteByParentAsync(System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member DeleteByParentAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="independentChildrenImpl.DeleteByParentAsync (groupName, parentName, name, cancellationToken)" />
@@ -203,8 +213,10 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -237,8 +249,10 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -254,7 +268,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetByIdAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;T&gt; GetByIdAsync (string id, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;T&gt; GetByIdAsync (string id, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;!T&gt; GetByIdAsync(string id, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ResourceManager.Fluent.Core.IndependentChildrenImpl`6.GetByIdAsync(System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member GetByIdAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'T (requires 'T : null and 'T :&gt; Microsoft.Azure.Management.ResourceManager.Fluent.Core.IHasId)&gt;&#xA;override this.GetByIdAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'T (requires 'T : null and 'T :&gt; Microsoft.Azure.Management.ResourceManager.Fluent.Core.IHasId)&gt;" Usage="independentChildrenImpl.GetByIdAsync (id, cancellationToken)" />
@@ -264,8 +278,10 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -299,8 +315,10 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -329,8 +347,10 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -350,7 +370,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetByParentAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;T&gt; GetByParentAsync (ParentT parentResource, string name, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;T&gt; GetByParentAsync (ParentT parentResource, string name, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;!T&gt; GetByParentAsync(!ParentT parentResource, string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ResourceManager.Fluent.Core.IndependentChildrenImpl`6.GetByParentAsync(`5,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member GetByParentAsync : 'ParentT * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'T (requires 'T : null and 'T :&gt; Microsoft.Azure.Management.ResourceManager.Fluent.Core.IHasId)&gt;&#xA;override this.GetByParentAsync : 'ParentT * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'T (requires 'T : null and 'T :&gt; Microsoft.Azure.Management.ResourceManager.Fluent.Core.IHasId)&gt;" Usage="independentChildrenImpl.GetByParentAsync (parentResource, name, cancellationToken)" />
@@ -360,8 +380,10 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -386,7 +408,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetByParentAsync">
-      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task&lt;T&gt; GetByParentAsync (string resourceGroup, string parentName, string name, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task&lt;T&gt; GetByParentAsync (string resourceGroup, string parentName, string name, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;!T&gt; GetByParentAsync(string resourceGroup, string parentName, string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ResourceManager.Fluent.Core.IndependentChildrenImpl`6.GetByParentAsync(System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member GetByParentAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'T (requires 'T : null and 'T :&gt; Microsoft.Azure.Management.ResourceManager.Fluent.Core.IHasId)&gt;" Usage="independentChildrenImpl.GetByParentAsync (resourceGroup, parentName, name, cancellationToken)" />
@@ -396,8 +418,10 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
@@ -430,8 +454,10 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>InnerCollectionT</ReturnType>
@@ -454,8 +480,10 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;T&gt;</ReturnType>
@@ -482,8 +510,10 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;T&gt;</ReturnType>
@@ -501,7 +531,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListByParentAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ResourceManager.Fluent.Core.IPagedCollection&lt;T&gt;&gt; ListByParentAsync (ParentT parentResource, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ResourceManager.Fluent.Core.IPagedCollection&lt;T&gt;&gt; ListByParentAsync (ParentT parentResource, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.ResourceManager.Fluent.Core.IPagedCollection`1&lt;!T&gt;&gt; ListByParentAsync(!ParentT parentResource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ResourceManager.Fluent.Core.IndependentChildrenImpl`6.ListByParentAsync(`5,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member ListByParentAsync : 'ParentT * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ResourceManager.Fluent.Core.IPagedCollection&lt;'T&gt;&gt;&#xA;override this.ListByParentAsync : 'ParentT * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ResourceManager.Fluent.Core.IPagedCollection&lt;'T&gt;&gt;" Usage="independentChildrenImpl.ListByParentAsync (parentResource, cancellationToken)" />
@@ -511,8 +541,10 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -535,7 +567,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListByParentAsync">
-      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ResourceManager.Fluent.Core.IPagedCollection&lt;T&gt;&gt; ListByParentAsync (string resourceGroupName, string parentName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ResourceManager.Fluent.Core.IPagedCollection&lt;T&gt;&gt; ListByParentAsync (string resourceGroupName, string parentName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.ResourceManager.Fluent.Core.IPagedCollection`1&lt;!T&gt;&gt; ListByParentAsync(string resourceGroupName, string parentName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ResourceManager.Fluent.Core.IndependentChildrenImpl`6.ListByParentAsync(System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member ListByParentAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ResourceManager.Fluent.Core.IPagedCollection&lt;'T&gt;&gt;" Usage="independentChildrenImpl.ListByParentAsync (resourceGroupName, parentName, cancellationToken)" />
@@ -545,8 +577,10 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ResourceManager.Fluent.Core.IPagedCollection&lt;T&gt;&gt;</ReturnType>
@@ -574,8 +608,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>ManagerT</ReturnType>

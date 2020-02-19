@@ -6,8 +6,10 @@
   <TypeSignature Language="F#" Value="type IKubernetesClusters = interface&#xA;    interface IBeta&#xA;    interface IHasManager&lt;IContainerServiceManager&gt;&#xA;    interface IHasInner&lt;IManagedClustersOperations&gt;&#xA;    interface ISupportsCreating&lt;IBlank&gt;&#xA;    interface ISupportsBatchCreation&lt;IKubernetesCluster&gt;&#xA;    interface ISupportsListing&lt;IKubernetesCluster&gt;&#xA;    interface ISupportsGettingById&lt;IKubernetesCluster&gt;&#xA;    interface ISupportsDeletingById&#xA;    interface ISupportsDeletingByResourceGroup&#xA;    interface ISupportsListingByResourceGroup&lt;IKubernetesCluster&gt;&#xA;    interface ISupportsGettingByResourceGroup&lt;IKubernetesCluster&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.ContainerService.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
     <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -60,8 +62,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
@@ -82,15 +86,17 @@
       </Docs>
     </Member>
     <Member MemberName="GetAdminKubeConfigContentsAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;byte[]&gt; GetAdminKubeConfigContentsAsync (string resourceGroupName, string kubernetesClusterName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;byte[]&gt; GetAdminKubeConfigContentsAsync (string resourceGroupName, string kubernetesClusterName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;unsigned int8[]&gt; GetAdminKubeConfigContentsAsync(string resourceGroupName, string kubernetesClusterName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ContainerService.Fluent.IKubernetesClusters.GetAdminKubeConfigContentsAsync(System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member GetAdminKubeConfigContentsAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;byte[]&gt;" Usage="iKubernetesClusters.GetAdminKubeConfigContentsAsync (resourceGroupName, kubernetesClusterName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Byte[]&gt;</ReturnType>
@@ -121,8 +127,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
@@ -143,15 +151,17 @@
       </Docs>
     </Member>
     <Member MemberName="GetUserKubeConfigContentsAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;byte[]&gt; GetUserKubeConfigContentsAsync (string resourceGroupName, string kubernetesClusterName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;byte[]&gt; GetUserKubeConfigContentsAsync (string resourceGroupName, string kubernetesClusterName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;unsigned int8[]&gt; GetUserKubeConfigContentsAsync(string resourceGroupName, string kubernetesClusterName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ContainerService.Fluent.IKubernetesClusters.GetUserKubeConfigContentsAsync(System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member GetUserKubeConfigContentsAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;byte[]&gt;" Usage="iKubernetesClusters.GetUserKubeConfigContentsAsync (resourceGroupName, kubernetesClusterName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Byte[]&gt;</ReturnType>
@@ -181,8 +191,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.ISet&lt;System.String&gt;</ReturnType>
@@ -201,15 +213,17 @@
       </Docs>
     </Member>
     <Member MemberName="ListKubernetesVersionsAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.ISet&lt;string&gt;&gt; ListKubernetesVersionsAsync (Microsoft.Azure.Management.ResourceManager.Fluent.Core.Region region, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.ISet&lt;string&gt;&gt; ListKubernetesVersionsAsync (Microsoft.Azure.Management.ResourceManager.Fluent.Core.Region region, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.ISet`1&lt;string&gt;&gt; ListKubernetesVersionsAsync(class Microsoft.Azure.Management.ResourceManager.Fluent.Core.Region region, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ContainerService.Fluent.IKubernetesClusters.ListKubernetesVersionsAsync(Microsoft.Azure.Management.ResourceManager.Fluent.Core.Region,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member ListKubernetesVersionsAsync : Microsoft.Azure.Management.ResourceManager.Fluent.Core.Region * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.ISet&lt;string&gt;&gt;" Usage="iKubernetesClusters.ListKubernetesVersionsAsync (region, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.ISet&lt;System.String&gt;&gt;</ReturnType>

@@ -6,8 +6,10 @@
   <TypeSignature Language="F#" Value="type RampUpRule = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
     <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,8 +32,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -42,7 +46,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public RampUpRule (string actionHostName = null, Nullable&lt;double&gt; reroutePercentage = null, Nullable&lt;double&gt; changeStep = null, Nullable&lt;int&gt; changeIntervalInMinutes = null, Nullable&lt;double&gt; minReroutePercentage = null, Nullable&lt;double&gt; maxReroutePercentage = null, string changeDecisionCallbackUrl = null, string name = null);" />
+      <MemberSignature Language="C#" Value="public RampUpRule (string actionHostName = default, Nullable&lt;double&gt; reroutePercentage = default, Nullable&lt;double&gt; changeStep = default, Nullable&lt;int&gt; changeIntervalInMinutes = default, Nullable&lt;double&gt; minReroutePercentage = default, Nullable&lt;double&gt; maxReroutePercentage = default, string changeDecisionCallbackUrl = default, string name = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string actionHostName, valuetype System.Nullable`1&lt;float64&gt; reroutePercentage, valuetype System.Nullable`1&lt;float64&gt; changeStep, valuetype System.Nullable`1&lt;int32&gt; changeIntervalInMinutes, valuetype System.Nullable`1&lt;float64&gt; minReroutePercentage, valuetype System.Nullable`1&lt;float64&gt; maxReroutePercentage, string changeDecisionCallbackUrl, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.Models.RampUpRule.#ctor(System.String,System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Int32},System.Nullable{System.Double},System.Nullable{System.Double},System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional actionHostName As String = null, Optional reroutePercentage As Nullable(Of Double) = null, Optional changeStep As Nullable(Of Double) = null, Optional changeIntervalInMinutes As Nullable(Of Integer) = null, Optional minReroutePercentage As Nullable(Of Double) = null, Optional maxReroutePercentage As Nullable(Of Double) = null, Optional changeDecisionCallbackUrl As String = null, Optional name As String = null)" />
@@ -50,8 +54,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="actionHostName" Type="System.String" />
@@ -72,13 +78,13 @@
             &lt;code&gt;ActionHostName&lt;/code&gt;.</param>
         <param name="changeStep">In auto ramp up scenario this is the step
             to add/remove from &lt;code&gt;ReroutePercentage&lt;/code&gt; until
-            it reaches
-            &lt;code&gt;MinReroutePercentage&lt;/code&gt; or
+            it reaches \n&lt;code&gt;MinReroutePercentage&lt;/code&gt; or
             &lt;code&gt;MaxReroutePercentage&lt;/code&gt;. Site metrics are
             checked every N minutes specified in
-            &lt;code&gt;ChangeIntervalInMinutes&lt;/code&gt;.
-            Custom decision algorithm can be provided in TiPCallback site
-            extension which URL can be specified in
+            &lt;code&gt;ChangeIntervalInMinutes&lt;/code&gt;.\nCustom decision
+            algorithm
+            can be provided in TiPCallback site extension which URL can be
+            specified in
             &lt;code&gt;ChangeDecisionCallbackUrl&lt;/code&gt;.</param>
         <param name="changeIntervalInMinutes">Specifies interval in minutes
             to reevaluate ReroutePercentage.</param>
@@ -109,8 +115,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -138,8 +146,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -169,8 +179,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -198,8 +210,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -215,12 +229,13 @@
             add/remove from
             &amp;lt;code&amp;gt;ReroutePercentage&amp;lt;/code&amp;gt; until it
             reaches
-            &amp;lt;code&amp;gt;MinReroutePercentage&amp;lt;/code&amp;gt; or
+            \n&amp;lt;code&amp;gt;MinReroutePercentage&amp;lt;/code&amp;gt; or
             &amp;lt;code&amp;gt;MaxReroutePercentage&amp;lt;/code&amp;gt;. Site
             metrics are checked every N minutes specified in
-            &amp;lt;code&amp;gt;ChangeIntervalInMinutes&amp;lt;/code&amp;gt;.
-            Custom decision algorithm can be provided in TiPCallback site
-            extension which URL can be specified in
+            &amp;lt;code&amp;gt;ChangeIntervalInMinutes&amp;lt;/code&amp;gt;.\nCustom
+            decision algorithm
+            can be provided in TiPCallback site extension which URL can be
+            specified in
             &amp;lt;code&amp;gt;ChangeDecisionCallbackUrl&amp;lt;/code&amp;gt;.
             </summary>
         <value>To be added.</value>
@@ -236,8 +251,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -265,8 +282,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -294,8 +313,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -324,8 +345,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.DataShare</AssemblyName>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,6 +29,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataShare</AssemblyName>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.DataShare.Models.DataSetMapping</ReturnType>
@@ -54,7 +56,7 @@
             The name of the share subscription which will hold the data set sink.
             </param>
         <param name="dataSetMappingName">
-            The Id of the source data set being mapped.
+            The name of the data set mapping to be created.
             </param>
         <param name="dataSetMapping">
             Destination data set configuration details.
@@ -71,7 +73,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.DataShare.Models.DataSetMapping&gt; CreateAsync (this Microsoft.Azure.Management.DataShare.IDataSetMappingsOperations operations, string resourceGroupName, string accountName, string shareSubscriptionName, string dataSetMappingName, Microsoft.Azure.Management.DataShare.Models.DataSetMapping dataSetMapping, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.DataShare.Models.DataSetMapping&gt; CreateAsync (this Microsoft.Azure.Management.DataShare.IDataSetMappingsOperations operations, string resourceGroupName, string accountName, string shareSubscriptionName, string dataSetMappingName, Microsoft.Azure.Management.DataShare.Models.DataSetMapping dataSetMapping, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.DataShare.Models.DataSetMapping&gt; CreateAsync(class Microsoft.Azure.Management.DataShare.IDataSetMappingsOperations operations, string resourceGroupName, string accountName, string shareSubscriptionName, string dataSetMappingName, class Microsoft.Azure.Management.DataShare.Models.DataSetMapping dataSetMapping, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataShare.DataSetMappingsOperationsExtensions.CreateAsync(Microsoft.Azure.Management.DataShare.IDataSetMappingsOperations,System.String,System.String,System.String,System.String,Microsoft.Azure.Management.DataShare.Models.DataSetMapping,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member CreateAsync : Microsoft.Azure.Management.DataShare.IDataSetMappingsOperations * string * string * string * string * Microsoft.Azure.Management.DataShare.Models.DataSetMapping * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.DataShare.Models.DataSetMapping&gt;" Usage="Microsoft.Azure.Management.DataShare.DataSetMappingsOperationsExtensions.CreateAsync (operations, resourceGroupName, accountName, shareSubscriptionName, dataSetMappingName, dataSetMapping, cancellationToken)" />
@@ -79,6 +81,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataShare</AssemblyName>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -111,7 +114,7 @@
             The name of the share subscription which will hold the data set sink.
             </param>
         <param name="dataSetMappingName">
-            The Id of the source data set being mapped.
+            The name of the data set mapping to be created.
             </param>
         <param name="dataSetMapping">
             Destination data set configuration details.
@@ -140,6 +143,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataShare</AssemblyName>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -176,7 +180,7 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task DeleteAsync (this Microsoft.Azure.Management.DataShare.IDataSetMappingsOperations operations, string resourceGroupName, string accountName, string shareSubscriptionName, string dataSetMappingName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task DeleteAsync (this Microsoft.Azure.Management.DataShare.IDataSetMappingsOperations operations, string resourceGroupName, string accountName, string shareSubscriptionName, string dataSetMappingName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task DeleteAsync(class Microsoft.Azure.Management.DataShare.IDataSetMappingsOperations operations, string resourceGroupName, string accountName, string shareSubscriptionName, string dataSetMappingName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataShare.DataSetMappingsOperationsExtensions.DeleteAsync(Microsoft.Azure.Management.DataShare.IDataSetMappingsOperations,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member DeleteAsync : Microsoft.Azure.Management.DataShare.IDataSetMappingsOperations * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.DataShare.DataSetMappingsOperationsExtensions.DeleteAsync (operations, resourceGroupName, accountName, shareSubscriptionName, dataSetMappingName, cancellationToken)" />
@@ -184,6 +188,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataShare</AssemblyName>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -239,6 +244,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataShare</AssemblyName>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.DataShare.Models.DataSetMapping</ReturnType>
@@ -276,7 +282,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.DataShare.Models.DataSetMapping&gt; GetAsync (this Microsoft.Azure.Management.DataShare.IDataSetMappingsOperations operations, string resourceGroupName, string accountName, string shareSubscriptionName, string dataSetMappingName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.DataShare.Models.DataSetMapping&gt; GetAsync (this Microsoft.Azure.Management.DataShare.IDataSetMappingsOperations operations, string resourceGroupName, string accountName, string shareSubscriptionName, string dataSetMappingName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.DataShare.Models.DataSetMapping&gt; GetAsync(class Microsoft.Azure.Management.DataShare.IDataSetMappingsOperations operations, string resourceGroupName, string accountName, string shareSubscriptionName, string dataSetMappingName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataShare.DataSetMappingsOperationsExtensions.GetAsync(Microsoft.Azure.Management.DataShare.IDataSetMappingsOperations,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member GetAsync : Microsoft.Azure.Management.DataShare.IDataSetMappingsOperations * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.DataShare.Models.DataSetMapping&gt;" Usage="Microsoft.Azure.Management.DataShare.DataSetMappingsOperationsExtensions.GetAsync (operations, resourceGroupName, accountName, shareSubscriptionName, dataSetMappingName, cancellationToken)" />
@@ -284,6 +290,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataShare</AssemblyName>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -330,7 +337,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListByShareSubscription">
-      <MemberSignature Language="C#" Value="public static Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.DataShare.Models.DataSetMapping&gt; ListByShareSubscription (this Microsoft.Azure.Management.DataShare.IDataSetMappingsOperations operations, string resourceGroupName, string accountName, string shareSubscriptionName, string skipToken = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.DataShare.Models.DataSetMapping&gt; ListByShareSubscription (this Microsoft.Azure.Management.DataShare.IDataSetMappingsOperations operations, string resourceGroupName, string accountName, string shareSubscriptionName, string skipToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.DataShare.Models.DataSetMapping&gt; ListByShareSubscription(class Microsoft.Azure.Management.DataShare.IDataSetMappingsOperations operations, string resourceGroupName, string accountName, string shareSubscriptionName, string skipToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataShare.DataSetMappingsOperationsExtensions.ListByShareSubscription(Microsoft.Azure.Management.DataShare.IDataSetMappingsOperations,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListByShareSubscription (operations As IDataSetMappingsOperations, resourceGroupName As String, accountName As String, shareSubscriptionName As String, Optional skipToken As String = null) As IPage(Of DataSetMapping)" />
@@ -339,6 +346,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataShare</AssemblyName>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.DataShare.Models.DataSetMapping&gt;</ReturnType>
@@ -376,7 +384,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListByShareSubscriptionAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.DataShare.Models.DataSetMapping&gt;&gt; ListByShareSubscriptionAsync (this Microsoft.Azure.Management.DataShare.IDataSetMappingsOperations operations, string resourceGroupName, string accountName, string shareSubscriptionName, string skipToken = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.DataShare.Models.DataSetMapping&gt;&gt; ListByShareSubscriptionAsync (this Microsoft.Azure.Management.DataShare.IDataSetMappingsOperations operations, string resourceGroupName, string accountName, string shareSubscriptionName, string skipToken = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.DataShare.Models.DataSetMapping&gt;&gt; ListByShareSubscriptionAsync(class Microsoft.Azure.Management.DataShare.IDataSetMappingsOperations operations, string resourceGroupName, string accountName, string shareSubscriptionName, string skipToken, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataShare.DataSetMappingsOperationsExtensions.ListByShareSubscriptionAsync(Microsoft.Azure.Management.DataShare.IDataSetMappingsOperations,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListByShareSubscriptionAsync : Microsoft.Azure.Management.DataShare.IDataSetMappingsOperations * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.DataShare.Models.DataSetMapping&gt;&gt;" Usage="Microsoft.Azure.Management.DataShare.DataSetMappingsOperationsExtensions.ListByShareSubscriptionAsync (operations, resourceGroupName, accountName, shareSubscriptionName, skipToken, cancellationToken)" />
@@ -384,6 +392,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataShare</AssemblyName>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -439,6 +448,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataShare</AssemblyName>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.DataShare.Models.DataSetMapping&gt;</ReturnType>
@@ -464,7 +474,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListByShareSubscriptionNextAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.DataShare.Models.DataSetMapping&gt;&gt; ListByShareSubscriptionNextAsync (this Microsoft.Azure.Management.DataShare.IDataSetMappingsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.DataShare.Models.DataSetMapping&gt;&gt; ListByShareSubscriptionNextAsync (this Microsoft.Azure.Management.DataShare.IDataSetMappingsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.DataShare.Models.DataSetMapping&gt;&gt; ListByShareSubscriptionNextAsync(class Microsoft.Azure.Management.DataShare.IDataSetMappingsOperations operations, string nextPageLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataShare.DataSetMappingsOperationsExtensions.ListByShareSubscriptionNextAsync(Microsoft.Azure.Management.DataShare.IDataSetMappingsOperations,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListByShareSubscriptionNextAsync : Microsoft.Azure.Management.DataShare.IDataSetMappingsOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.DataShare.Models.DataSetMapping&gt;&gt;" Usage="Microsoft.Azure.Management.DataShare.DataSetMappingsOperationsExtensions.ListByShareSubscriptionNextAsync (operations, nextPageLink, cancellationToken)" />
@@ -472,6 +482,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataShare</AssemblyName>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

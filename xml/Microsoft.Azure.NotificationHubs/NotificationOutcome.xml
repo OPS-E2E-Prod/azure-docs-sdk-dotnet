@@ -6,9 +6,8 @@
   <TypeSignature Language="F#" Value="type NotificationOutcome = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-    <AssemblyVersion>3.0.3.0</AssemblyVersion>
-    <AssemblyVersion>3.2.0.0</AssemblyVersion>
     <AssemblyVersion>3.2.1.0</AssemblyVersion>
+    <AssemblyVersion>3.3.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -34,9 +33,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-        <AssemblyVersion>3.0.3.0</AssemblyVersion>
-        <AssemblyVersion>3.2.0.0</AssemblyVersion>
         <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -53,9 +51,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-        <AssemblyVersion>3.0.3.0</AssemblyVersion>
-        <AssemblyVersion>3.2.0.0</AssemblyVersion>
         <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -67,12 +64,15 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the failure value of the outcome.
+            Gets or sets the number of devices that failed to receive a notification.
             </summary>
         <value>
-            The failure value of the outcome.
+            The number of devices that failed to receive a notification.
             </value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            The property contains value only when <see cref="P:Microsoft.Azure.NotificationHubs.NotificationHubClient.EnableTestSend" /> property is turned on for troubleshooting purposes.
+            </remarks>
+        <altmember cref="P:Microsoft.Azure.NotificationHubs.NotificationHubClient.EnableTestSend" />
       </Docs>
     </Member>
     <Member MemberName="NotificationId">
@@ -84,9 +84,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-        <AssemblyVersion>3.0.3.0</AssemblyVersion>
-        <AssemblyVersion>3.2.0.0</AssemblyVersion>
         <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -96,9 +95,11 @@
             Gets or sets the notification ID.
             </summary>
         <value>
-            notification ID.
+            Notification ID.
             </value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            The property contains value only when using Standard tier Notification Hubs.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="Results">
@@ -110,9 +111,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-        <AssemblyVersion>3.0.3.0</AssemblyVersion>
-        <AssemblyVersion>3.2.0.0</AssemblyVersion>
         <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -124,12 +124,15 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the list of notification outcome results.
+            Gets or sets the list of notification outcome results for each device registered with the hub, to which this notification was sent.
             </summary>
         <value>
-            The list of notification outcome results.
+            The list of notification outcome results for each device registered with the hub, to which this notification was sent.
             </value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            The property contains value only when <see cref="P:Microsoft.Azure.NotificationHubs.NotificationHubClient.EnableTestSend" /> property is turned on for troubleshooting purposes.
+            </remarks>
+        <altmember cref="P:Microsoft.Azure.NotificationHubs.NotificationHubClient.EnableTestSend" />
       </Docs>
     </Member>
     <Member MemberName="State">
@@ -141,9 +144,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-        <AssemblyVersion>3.0.3.0</AssemblyVersion>
-        <AssemblyVersion>3.2.0.0</AssemblyVersion>
         <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.NotificationHubs.NotificationOutcomeState</ReturnType>
@@ -167,9 +169,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-        <AssemblyVersion>3.0.3.0</AssemblyVersion>
-        <AssemblyVersion>3.2.0.0</AssemblyVersion>
         <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -181,12 +182,15 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the success value of the outcome.
+            Gets or sets the number of devices that successfully received the notification.
             </summary>
         <value>
-            The success value of the outcome.
+            The number of devices that successfully received the notification.
             </value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            The property contains value only when <see cref="P:Microsoft.Azure.NotificationHubs.NotificationHubClient.EnableTestSend" /> property is turned on for troubleshooting purposes.
+            </remarks>
+        <altmember cref="P:Microsoft.Azure.NotificationHubs.NotificationHubClient.EnableTestSend" />
       </Docs>
     </Member>
     <Member MemberName="TrackingId">
@@ -198,9 +202,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-        <AssemblyVersion>3.0.3.0</AssemblyVersion>
-        <AssemblyVersion>3.2.0.0</AssemblyVersion>
         <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

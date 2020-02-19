@@ -14,7 +14,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            A certificate issuer used to sign certificates managed by Azure Key Vault
+            A certificate issuer used to sign certificates managed by Azure Key Vault.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -36,9 +36,47 @@
       <Docs>
         <param name="name">The name of the issuer, including values from <see cref="T:Azure.Security.KeyVault.Certificates.WellKnownIssuerNames" />.</param>
         <summary>
-            Initializes a new instance of the <see cref="T:Azure.Security.KeyVault.Certificates.CertificateContact" /> class with the given <paramref name="name" />.
+            Initializes a new instance of the <see cref="T:Azure.Security.KeyVault.Certificates.CertificateIssuer" /> class.
+            You can use this constructor to initialize a <see cref="T:Azure.Security.KeyVault.Certificates.CertificateIssuer" /> for
+            <see cref="M:Azure.Security.KeyVault.Certificates.CertificateClient.UpdateIssuer(Azure.Security.KeyVault.Certificates.CertificateIssuer,System.Threading.CancellationToken)" /> or
+            <see cref="M:Azure.Security.KeyVault.Certificates.CertificateClient.UpdateIssuerAsync(Azure.Security.KeyVault.Certificates.CertificateIssuer,System.Threading.CancellationToken)" />.
             </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is empty.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CertificateIssuer (string name, string provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Security.KeyVault.Certificates.CertificateIssuer.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, provider As String)" />
+      <MemberSignature Language="F#" Value="new Azure.Security.KeyVault.Certificates.CertificateIssuer : string * string -&gt; Azure.Security.KeyVault.Certificates.CertificateIssuer" Usage="new Azure.Security.KeyVault.Certificates.CertificateIssuer (name, provider)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Security.KeyVault.Certificates</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="provider" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the issuer, including values from <see cref="T:Azure.Security.KeyVault.Certificates.WellKnownIssuerNames" />.</param>
+        <param name="provider">The provider name of the certificate issuer.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Azure.Security.KeyVault.Certificates.CertificateIssuer" /> class.
+            You can use this constructor to initialize a <see cref="T:Azure.Security.KeyVault.Certificates.CertificateIssuer" /> for
+            <see cref="M:Azure.Security.KeyVault.Certificates.CertificateClient.CreateIssuer(Azure.Security.KeyVault.Certificates.CertificateIssuer,System.Threading.CancellationToken)" /> or
+            <see cref="M:Azure.Security.KeyVault.Certificates.CertificateClient.CreateIssuerAsync(Azure.Security.KeyVault.Certificates.CertificateIssuer,System.Threading.CancellationToken)" />.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> or <paramref name="provider" /> is empty.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> or <paramref name="provider" /> is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="AccountId">
@@ -57,18 +95,18 @@
       </ReturnValue>
       <Docs>
         <summary>
-            The account identifier or username used to authenticate to the certificate issuer
+            Gets or sets the account identifier or username used to authenticate to the certificate issuer.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Administrators">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.Security.KeyVault.Certificates.AdministratorContact&gt; Administrators { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Azure.Security.KeyVault.Certificates.AdministratorContact&gt; Administrators" />
-      <MemberSignature Language="DocId" Value="P:Azure.Security.KeyVault.Certificates.CertificateIssuer.Administrators" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Administrators As IList(Of AdministratorContact)" />
-      <MemberSignature Language="F#" Value="member this.Administrators : System.Collections.Generic.IList&lt;Azure.Security.KeyVault.Certificates.AdministratorContact&gt;" Usage="Azure.Security.KeyVault.Certificates.CertificateIssuer.Administrators" />
+    <Member MemberName="AdministratorContacts">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.Security.KeyVault.Certificates.AdministratorContact&gt; AdministratorContacts { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Azure.Security.KeyVault.Certificates.AdministratorContact&gt; AdministratorContacts" />
+      <MemberSignature Language="DocId" Value="P:Azure.Security.KeyVault.Certificates.CertificateIssuer.AdministratorContacts" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AdministratorContacts As IList(Of AdministratorContact)" />
+      <MemberSignature Language="F#" Value="member this.AdministratorContacts : System.Collections.Generic.IList&lt;Azure.Security.KeyVault.Certificates.AdministratorContact&gt;" Usage="Azure.Security.KeyVault.Certificates.CertificateIssuer.AdministratorContacts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Security.KeyVault.Certificates</AssemblyName>
@@ -79,7 +117,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            A list of contacts who administrate the certificate issuer account
+            Gets a list of contacts who administer the certificate issuer account.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -101,7 +139,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            The time the issuer was created in UTC
+            Gets a <see cref="T:System.DateTimeOffset" /> indicating when the certificate was created.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -145,7 +183,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            The unique identifier of the certificate issuer
+            Gets the unique identifier of the certificate issuer.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -167,7 +205,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            The name of the certificate issuer
+            Gets the name of the certificate issuer.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -189,7 +227,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            The organizational identifier for the issuer
+            Gets or sets the organizational identifier for the issuer.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -211,29 +249,29 @@
       </ReturnValue>
       <Docs>
         <summary>
-            The password or key used to authenticate to the certificate issuer
+            Gets or sets the password or key used to authenticate to the certificate issuer.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Properties">
-      <MemberSignature Language="C#" Value="public Azure.Security.KeyVault.Certificates.IssuerProperties Properties { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Security.KeyVault.Certificates.IssuerProperties Properties" />
-      <MemberSignature Language="DocId" Value="P:Azure.Security.KeyVault.Certificates.CertificateIssuer.Properties" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As IssuerProperties" />
-      <MemberSignature Language="F#" Value="member this.Properties : Azure.Security.KeyVault.Certificates.IssuerProperties" Usage="Azure.Security.KeyVault.Certificates.CertificateIssuer.Properties" />
+    <Member MemberName="Provider">
+      <MemberSignature Language="C#" Value="public string Provider { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Provider" />
+      <MemberSignature Language="DocId" Value="P:Azure.Security.KeyVault.Certificates.CertificateIssuer.Provider" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Provider As String" />
+      <MemberSignature Language="F#" Value="member this.Provider : string" Usage="Azure.Security.KeyVault.Certificates.CertificateIssuer.Provider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Security.KeyVault.Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Security.KeyVault.Certificates.IssuerProperties</ReturnType>
+        <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the attributes of the <see cref="T:Azure.Security.KeyVault.Certificates.CertificateIssuer" />.
+            Gets or sets the provider name of the certificate issuer.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -255,7 +293,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            The last modified time of the issuer in UTC
+            Gets a <see cref="T:System.DateTimeOffset" /> indicating when the certificate was updated.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

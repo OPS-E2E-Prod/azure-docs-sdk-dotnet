@@ -20,7 +20,7 @@
   </Docs>
   <Members>
     <Member MemberName="CertificateIssuer">
-      <MemberSignature Language="C#" Value="public static Azure.Security.KeyVault.Certificates.CertificateIssuer CertificateIssuer (Azure.Security.KeyVault.Certificates.IssuerProperties properties, Nullable&lt;DateTimeOffset&gt; createdOn = null, Nullable&lt;DateTimeOffset&gt; updatedOn = null);" />
+      <MemberSignature Language="C#" Value="public static Azure.Security.KeyVault.Certificates.CertificateIssuer CertificateIssuer (Azure.Security.KeyVault.Certificates.IssuerProperties properties, Nullable&lt;DateTimeOffset&gt; createdOn = default, Nullable&lt;DateTimeOffset&gt; updatedOn = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Security.KeyVault.Certificates.CertificateIssuer CertificateIssuer(class Azure.Security.KeyVault.Certificates.IssuerProperties properties, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; createdOn, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; updatedOn) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Security.KeyVault.Certificates.CertificateModelFactory.CertificateIssuer(Azure.Security.KeyVault.Certificates.IssuerProperties,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CertificateIssuer (properties As IssuerProperties, Optional createdOn As Nullable(Of DateTimeOffset) = null, Optional updatedOn As Nullable(Of DateTimeOffset) = null) As CertificateIssuer" />
@@ -39,7 +39,7 @@
         <Parameter Name="updatedOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
       </Parameters>
       <Docs>
-        <param name="properties">Sets the <see cref="P:Azure.Security.KeyVault.Certificates.CertificateIssuer.Properties" /> property.</param>
+        <param name="properties">Sets the <see cref="P:Azure.Security.KeyVault.Certificates.CertificateIssuer.Id" />, <see cref="P:Azure.Security.KeyVault.Certificates.CertificateIssuer.Name" />, and <see cref="P:Azure.Security.KeyVault.Certificates.CertificateIssuer.Provider" /> properties.</param>
         <param name="createdOn">Sets the <see cref="P:Azure.Security.KeyVault.Certificates.CertificateIssuer.CreatedOn" /> property.</param>
         <param name="updatedOn">Sets the <see cref="P:Azure.Security.KeyVault.Certificates.CertificateIssuer.UpdatedOn" /> property.</param>
         <summary>
@@ -50,7 +50,7 @@
       </Docs>
     </Member>
     <Member MemberName="CertificateOperationError">
-      <MemberSignature Language="C#" Value="public static Azure.Security.KeyVault.Certificates.CertificateOperationError CertificateOperationError (string code = null, string message = null, Azure.Security.KeyVault.Certificates.CertificateOperationError innerError = null);" />
+      <MemberSignature Language="C#" Value="public static Azure.Security.KeyVault.Certificates.CertificateOperationError CertificateOperationError (string code = default, string message = default, Azure.Security.KeyVault.Certificates.CertificateOperationError innerError = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Security.KeyVault.Certificates.CertificateOperationError CertificateOperationError(string code, string message, class Azure.Security.KeyVault.Certificates.CertificateOperationError innerError) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Security.KeyVault.Certificates.CertificateModelFactory.CertificateOperationError(System.String,System.String,Azure.Security.KeyVault.Certificates.CertificateOperationError)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CertificateOperationError (Optional code As String = null, Optional message As String = null, Optional innerError As CertificateOperationError = null) As CertificateOperationError" />
@@ -80,11 +80,11 @@
       </Docs>
     </Member>
     <Member MemberName="CertificateOperationProperties">
-      <MemberSignature Language="C#" Value="public static Azure.Security.KeyVault.Certificates.CertificateOperationProperties CertificateOperationProperties (Uri id = null, string name = null, Uri vaultUri = null, string issuerName = null, string certificateSigningRequest = null, bool cancellationRequested = false, string requestId = null, string status = null, string statusDetails = null, string target = null, Azure.Security.KeyVault.Certificates.CertificateOperationError error = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Security.KeyVault.Certificates.CertificateOperationProperties CertificateOperationProperties(class System.Uri id, string name, class System.Uri vaultUri, string issuerName, string certificateSigningRequest, bool cancellationRequested, string requestId, string status, string statusDetails, string target, class Azure.Security.KeyVault.Certificates.CertificateOperationError error) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Security.KeyVault.Certificates.CertificateModelFactory.CertificateOperationProperties(System.Uri,System.String,System.Uri,System.String,System.String,System.Boolean,System.String,System.String,System.String,System.String,Azure.Security.KeyVault.Certificates.CertificateOperationError)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function CertificateOperationProperties (Optional id As Uri = null, Optional name As String = null, Optional vaultUri As Uri = null, Optional issuerName As String = null, Optional certificateSigningRequest As String = null, Optional cancellationRequested As Boolean = false, Optional requestId As String = null, Optional status As String = null, Optional statusDetails As String = null, Optional target As String = null, Optional error As CertificateOperationError = null) As CertificateOperationProperties" />
-      <MemberSignature Language="F#" Value="static member CertificateOperationProperties : Uri * string * Uri * string * string * bool * string * string * string * string * Azure.Security.KeyVault.Certificates.CertificateOperationError -&gt; Azure.Security.KeyVault.Certificates.CertificateOperationProperties" Usage="Azure.Security.KeyVault.Certificates.CertificateModelFactory.CertificateOperationProperties (id, name, vaultUri, issuerName, certificateSigningRequest, cancellationRequested, requestId, status, statusDetails, target, error)" />
+      <MemberSignature Language="C#" Value="public static Azure.Security.KeyVault.Certificates.CertificateOperationProperties CertificateOperationProperties (Uri id = default, string name = default, Uri vaultUri = default, string issuerName = default, string certificateType = default, Nullable&lt;bool&gt; certificateTransparency = default, byte[] csr = default, bool cancellationRequested = false, string requestId = default, string status = default, string statusDetails = default, string target = default, Azure.Security.KeyVault.Certificates.CertificateOperationError error = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Security.KeyVault.Certificates.CertificateOperationProperties CertificateOperationProperties(class System.Uri id, string name, class System.Uri vaultUri, string issuerName, string certificateType, valuetype System.Nullable`1&lt;bool&gt; certificateTransparency, unsigned int8[] csr, bool cancellationRequested, string requestId, string status, string statusDetails, string target, class Azure.Security.KeyVault.Certificates.CertificateOperationError error) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Security.KeyVault.Certificates.CertificateModelFactory.CertificateOperationProperties(System.Uri,System.String,System.Uri,System.String,System.String,System.Nullable{System.Boolean},System.Byte[],System.Boolean,System.String,System.String,System.String,System.String,Azure.Security.KeyVault.Certificates.CertificateOperationError)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CertificateOperationProperties (Optional id As Uri = null, Optional name As String = null, Optional vaultUri As Uri = null, Optional issuerName As String = null, Optional certificateType As String = null, Optional certificateTransparency As Nullable(Of Boolean) = null, Optional csr As Byte() = null, Optional cancellationRequested As Boolean = false, Optional requestId As String = null, Optional status As String = null, Optional statusDetails As String = null, Optional target As String = null, Optional error As CertificateOperationError = null) As CertificateOperationProperties" />
+      <MemberSignature Language="F#" Value="static member CertificateOperationProperties : Uri * string * Uri * string * string * Nullable&lt;bool&gt; * byte[] * bool * string * string * string * string * Azure.Security.KeyVault.Certificates.CertificateOperationError -&gt; Azure.Security.KeyVault.Certificates.CertificateOperationProperties" Usage="Azure.Security.KeyVault.Certificates.CertificateModelFactory.CertificateOperationProperties (id, name, vaultUri, issuerName, certificateType, certificateTransparency, csr, cancellationRequested, requestId, status, statusDetails, target, error)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Security.KeyVault.Certificates</AssemblyName>
@@ -98,7 +98,9 @@
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="vaultUri" Type="System.Uri" />
         <Parameter Name="issuerName" Type="System.String" />
-        <Parameter Name="certificateSigningRequest" Type="System.String" />
+        <Parameter Name="certificateType" Type="System.String" />
+        <Parameter Name="certificateTransparency" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="csr" Type="System.Byte[]" />
         <Parameter Name="cancellationRequested" Type="System.Boolean" />
         <Parameter Name="requestId" Type="System.String" />
         <Parameter Name="status" Type="System.String" />
@@ -111,7 +113,9 @@
         <param name="name">Sets the <see cref="P:Azure.Security.KeyVault.Certificates.CertificateOperationProperties.Name" /> property.</param>
         <param name="vaultUri">Sets the <see cref="P:Azure.Security.KeyVault.Certificates.CertificateOperationProperties.VaultUri" /> property.</param>
         <param name="issuerName">Sets the <see cref="P:Azure.Security.KeyVault.Certificates.CertificateOperationProperties.IssuerName" /> property.</param>
-        <param name="certificateSigningRequest">Sets the <see cref="P:Azure.Security.KeyVault.Certificates.CertificateOperationProperties.CertificateSigningRequest" /> property.</param>
+        <param name="certificateType">Sets the <see cref="P:Azure.Security.KeyVault.Certificates.CertificateOperationProperties.CertificateType" /> property.</param>
+        <param name="certificateTransparency">Sets the <see cref="P:Azure.Security.KeyVault.Certificates.CertificateOperationProperties.CertificateTransparency" /> property.</param>
+        <param name="csr">Sets the <see cref="P:Azure.Security.KeyVault.Certificates.CertificateOperationProperties.Csr" /> property.</param>
         <param name="cancellationRequested">Sets the <see cref="P:Azure.Security.KeyVault.Certificates.CertificateOperationProperties.CancellationRequested" /> property.</param>
         <param name="requestId">Sets the <see cref="P:Azure.Security.KeyVault.Certificates.CertificateOperationProperties.RequestId" /> property.</param>
         <param name="status">Sets the <see cref="P:Azure.Security.KeyVault.Certificates.CertificateOperationProperties.Status" /> property.</param>
@@ -126,7 +130,7 @@
       </Docs>
     </Member>
     <Member MemberName="CertificatePolicy">
-      <MemberSignature Language="C#" Value="public static Azure.Security.KeyVault.Certificates.CertificatePolicy CertificatePolicy (string subject = null, Azure.Security.KeyVault.Certificates.SubjectAlternativeNames subjectAlternativeNames = null, string issuerName = null, Nullable&lt;DateTimeOffset&gt; createdOn = null, Nullable&lt;DateTimeOffset&gt; updatedOn = null);" />
+      <MemberSignature Language="C#" Value="public static Azure.Security.KeyVault.Certificates.CertificatePolicy CertificatePolicy (string subject = default, Azure.Security.KeyVault.Certificates.SubjectAlternativeNames subjectAlternativeNames = default, string issuerName = default, Nullable&lt;DateTimeOffset&gt; createdOn = default, Nullable&lt;DateTimeOffset&gt; updatedOn = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Security.KeyVault.Certificates.CertificatePolicy CertificatePolicy(string subject, class Azure.Security.KeyVault.Certificates.SubjectAlternativeNames subjectAlternativeNames, string issuerName, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; createdOn, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; updatedOn) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Security.KeyVault.Certificates.CertificateModelFactory.CertificatePolicy(System.String,Azure.Security.KeyVault.Certificates.SubjectAlternativeNames,System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset})" />
       <MemberSignature Language="F#" Value="static member CertificatePolicy : string * Azure.Security.KeyVault.Certificates.SubjectAlternativeNames * string * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; -&gt; Azure.Security.KeyVault.Certificates.CertificatePolicy" Usage="Azure.Security.KeyVault.Certificates.CertificateModelFactory.CertificatePolicy (subject, subjectAlternativeNames, issuerName, createdOn, updatedOn)" />
@@ -159,7 +163,7 @@
       </Docs>
     </Member>
     <Member MemberName="CertificateProperties">
-      <MemberSignature Language="C#" Value="public static Azure.Security.KeyVault.Certificates.CertificateProperties CertificateProperties (Uri id = null, string name = null, Uri vaultUri = null, string version = null, byte[] x509thumbprint = null, Nullable&lt;DateTimeOffset&gt; notBefore = null, Nullable&lt;DateTimeOffset&gt; expiresOn = null, Nullable&lt;DateTimeOffset&gt; createdOn = null, Nullable&lt;DateTimeOffset&gt; updatedOn = null, string recoveryLevel = null);" />
+      <MemberSignature Language="C#" Value="public static Azure.Security.KeyVault.Certificates.CertificateProperties CertificateProperties (Uri id = default, string name = default, Uri vaultUri = default, string version = default, byte[] x509thumbprint = default, Nullable&lt;DateTimeOffset&gt; notBefore = default, Nullable&lt;DateTimeOffset&gt; expiresOn = default, Nullable&lt;DateTimeOffset&gt; createdOn = default, Nullable&lt;DateTimeOffset&gt; updatedOn = default, string recoveryLevel = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Security.KeyVault.Certificates.CertificateProperties CertificateProperties(class System.Uri id, string name, class System.Uri vaultUri, string version, unsigned int8[] x509thumbprint, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; notBefore, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; expiresOn, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; createdOn, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; updatedOn, string recoveryLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Security.KeyVault.Certificates.CertificateModelFactory.CertificateProperties(System.Uri,System.String,System.Uri,System.String,System.Byte[],System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CertificateProperties (Optional id As Uri = null, Optional name As String = null, Optional vaultUri As Uri = null, Optional version As String = null, Optional x509thumbprint As Byte() = null, Optional notBefore As Nullable(Of DateTimeOffset) = null, Optional expiresOn As Nullable(Of DateTimeOffset) = null, Optional createdOn As Nullable(Of DateTimeOffset) = null, Optional updatedOn As Nullable(Of DateTimeOffset) = null, Optional recoveryLevel As String = null) As CertificateProperties" />
@@ -203,11 +207,11 @@
       </Docs>
     </Member>
     <Member MemberName="DeletedCertificate">
-      <MemberSignature Language="C#" Value="public static Azure.Security.KeyVault.Certificates.DeletedCertificate DeletedCertificate (Azure.Security.KeyVault.Certificates.CertificateProperties properties, Uri keyId = null, Uri secretId = null, Azure.Security.KeyVault.Certificates.CertificateContentType contentType = null, byte[] cer = null, Azure.Security.KeyVault.Certificates.CertificatePolicy policy = null, Uri recoveryId = null, Nullable&lt;DateTimeOffset&gt; deletedOn = null, Nullable&lt;DateTimeOffset&gt; scheduledPurgeDate = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Security.KeyVault.Certificates.DeletedCertificate DeletedCertificate(class Azure.Security.KeyVault.Certificates.CertificateProperties properties, class System.Uri keyId, class System.Uri secretId, valuetype Azure.Security.KeyVault.Certificates.CertificateContentType contentType, unsigned int8[] cer, class Azure.Security.KeyVault.Certificates.CertificatePolicy policy, class System.Uri recoveryId, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; deletedOn, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; scheduledPurgeDate) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Security.KeyVault.Certificates.CertificateModelFactory.DeletedCertificate(Azure.Security.KeyVault.Certificates.CertificateProperties,System.Uri,System.Uri,Azure.Security.KeyVault.Certificates.CertificateContentType,System.Byte[],Azure.Security.KeyVault.Certificates.CertificatePolicy,System.Uri,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function DeletedCertificate (properties As CertificateProperties, Optional keyId As Uri = null, Optional secretId As Uri = null, Optional contentType As CertificateContentType = null, Optional cer As Byte() = null, Optional policy As CertificatePolicy = null, Optional recoveryId As Uri = null, Optional deletedOn As Nullable(Of DateTimeOffset) = null, Optional scheduledPurgeDate As Nullable(Of DateTimeOffset) = null) As DeletedCertificate" />
-      <MemberSignature Language="F#" Value="static member DeletedCertificate : Azure.Security.KeyVault.Certificates.CertificateProperties * Uri * Uri * Azure.Security.KeyVault.Certificates.CertificateContentType * byte[] * Azure.Security.KeyVault.Certificates.CertificatePolicy * Uri * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; -&gt; Azure.Security.KeyVault.Certificates.DeletedCertificate" Usage="Azure.Security.KeyVault.Certificates.CertificateModelFactory.DeletedCertificate (properties, keyId, secretId, contentType, cer, policy, recoveryId, deletedOn, scheduledPurgeDate)" />
+      <MemberSignature Language="C#" Value="public static Azure.Security.KeyVault.Certificates.DeletedCertificate DeletedCertificate (Azure.Security.KeyVault.Certificates.CertificateProperties properties, Uri keyId = default, Uri secretId = default, byte[] cer = default, Azure.Security.KeyVault.Certificates.CertificatePolicy policy = default, Uri recoveryId = default, Nullable&lt;DateTimeOffset&gt; deletedOn = default, Nullable&lt;DateTimeOffset&gt; scheduledPurgeDate = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Security.KeyVault.Certificates.DeletedCertificate DeletedCertificate(class Azure.Security.KeyVault.Certificates.CertificateProperties properties, class System.Uri keyId, class System.Uri secretId, unsigned int8[] cer, class Azure.Security.KeyVault.Certificates.CertificatePolicy policy, class System.Uri recoveryId, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; deletedOn, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; scheduledPurgeDate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Security.KeyVault.Certificates.CertificateModelFactory.DeletedCertificate(Azure.Security.KeyVault.Certificates.CertificateProperties,System.Uri,System.Uri,System.Byte[],Azure.Security.KeyVault.Certificates.CertificatePolicy,System.Uri,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeletedCertificate (properties As CertificateProperties, Optional keyId As Uri = null, Optional secretId As Uri = null, Optional cer As Byte() = null, Optional policy As CertificatePolicy = null, Optional recoveryId As Uri = null, Optional deletedOn As Nullable(Of DateTimeOffset) = null, Optional scheduledPurgeDate As Nullable(Of DateTimeOffset) = null) As DeletedCertificate" />
+      <MemberSignature Language="F#" Value="static member DeletedCertificate : Azure.Security.KeyVault.Certificates.CertificateProperties * Uri * Uri * byte[] * Azure.Security.KeyVault.Certificates.CertificatePolicy * Uri * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; -&gt; Azure.Security.KeyVault.Certificates.DeletedCertificate" Usage="Azure.Security.KeyVault.Certificates.CertificateModelFactory.DeletedCertificate (properties, keyId, secretId, cer, policy, recoveryId, deletedOn, scheduledPurgeDate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Security.KeyVault.Certificates</AssemblyName>
@@ -220,7 +224,6 @@
         <Parameter Name="properties" Type="Azure.Security.KeyVault.Certificates.CertificateProperties" />
         <Parameter Name="keyId" Type="System.Uri" />
         <Parameter Name="secretId" Type="System.Uri" />
-        <Parameter Name="contentType" Type="Azure.Security.KeyVault.Certificates.CertificateContentType" />
         <Parameter Name="cer" Type="System.Byte[]" />
         <Parameter Name="policy" Type="Azure.Security.KeyVault.Certificates.CertificatePolicy" />
         <Parameter Name="recoveryId" Type="System.Uri" />
@@ -231,7 +234,6 @@
         <param name="properties">Sets the <see cref="P:Azure.Security.KeyVault.Certificates.KeyVaultCertificate.Properties" /> property.</param>
         <param name="keyId">Sets the <see cref="P:Azure.Security.KeyVault.Certificates.KeyVaultCertificate.KeyId" /> property.</param>
         <param name="secretId">Sets the <see cref="P:Azure.Security.KeyVault.Certificates.KeyVaultCertificate.SecretId" /> property.</param>
-        <param name="contentType">Sets the <see cref="P:Azure.Security.KeyVault.Certificates.KeyVaultCertificate.ContentType" /> property.</param>
         <param name="cer">Sets the <see cref="P:Azure.Security.KeyVault.Certificates.KeyVaultCertificate.Cer" /> property.</param>
         <param name="policy">Sets the <see cref="P:Azure.Security.KeyVault.Certificates.KeyVaultCertificateWithPolicy.Policy" /> property.</param>
         <param name="recoveryId">Sets the <see cref="P:Azure.Security.KeyVault.Certificates.DeletedCertificate.RecoveryId" /> property.</param>
@@ -245,7 +247,7 @@
       </Docs>
     </Member>
     <Member MemberName="IssuerProperties">
-      <MemberSignature Language="C#" Value="public static Azure.Security.KeyVault.Certificates.IssuerProperties IssuerProperties (Uri id = null, string name = null);" />
+      <MemberSignature Language="C#" Value="public static Azure.Security.KeyVault.Certificates.IssuerProperties IssuerProperties (Uri id = default, string name = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Security.KeyVault.Certificates.IssuerProperties IssuerProperties(class System.Uri id, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Security.KeyVault.Certificates.CertificateModelFactory.IssuerProperties(System.Uri,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IssuerProperties (Optional id As Uri = null, Optional name As String = null) As IssuerProperties" />
@@ -273,11 +275,11 @@
       </Docs>
     </Member>
     <Member MemberName="KeyVaultCertificate">
-      <MemberSignature Language="C#" Value="public static Azure.Security.KeyVault.Certificates.KeyVaultCertificate KeyVaultCertificate (Azure.Security.KeyVault.Certificates.CertificateProperties properties, Uri keyId = null, Uri secretId = null, Azure.Security.KeyVault.Certificates.CertificateContentType contentType = null, byte[] cer = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Security.KeyVault.Certificates.KeyVaultCertificate KeyVaultCertificate(class Azure.Security.KeyVault.Certificates.CertificateProperties properties, class System.Uri keyId, class System.Uri secretId, valuetype Azure.Security.KeyVault.Certificates.CertificateContentType contentType, unsigned int8[] cer) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Security.KeyVault.Certificates.CertificateModelFactory.KeyVaultCertificate(Azure.Security.KeyVault.Certificates.CertificateProperties,System.Uri,System.Uri,Azure.Security.KeyVault.Certificates.CertificateContentType,System.Byte[])" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function KeyVaultCertificate (properties As CertificateProperties, Optional keyId As Uri = null, Optional secretId As Uri = null, Optional contentType As CertificateContentType = null, Optional cer As Byte() = null) As KeyVaultCertificate" />
-      <MemberSignature Language="F#" Value="static member KeyVaultCertificate : Azure.Security.KeyVault.Certificates.CertificateProperties * Uri * Uri * Azure.Security.KeyVault.Certificates.CertificateContentType * byte[] -&gt; Azure.Security.KeyVault.Certificates.KeyVaultCertificate" Usage="Azure.Security.KeyVault.Certificates.CertificateModelFactory.KeyVaultCertificate (properties, keyId, secretId, contentType, cer)" />
+      <MemberSignature Language="C#" Value="public static Azure.Security.KeyVault.Certificates.KeyVaultCertificate KeyVaultCertificate (Azure.Security.KeyVault.Certificates.CertificateProperties properties, Uri keyId = default, Uri secretId = default, byte[] cer = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Security.KeyVault.Certificates.KeyVaultCertificate KeyVaultCertificate(class Azure.Security.KeyVault.Certificates.CertificateProperties properties, class System.Uri keyId, class System.Uri secretId, unsigned int8[] cer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Security.KeyVault.Certificates.CertificateModelFactory.KeyVaultCertificate(Azure.Security.KeyVault.Certificates.CertificateProperties,System.Uri,System.Uri,System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function KeyVaultCertificate (properties As CertificateProperties, Optional keyId As Uri = null, Optional secretId As Uri = null, Optional cer As Byte() = null) As KeyVaultCertificate" />
+      <MemberSignature Language="F#" Value="static member KeyVaultCertificate : Azure.Security.KeyVault.Certificates.CertificateProperties * Uri * Uri * byte[] -&gt; Azure.Security.KeyVault.Certificates.KeyVaultCertificate" Usage="Azure.Security.KeyVault.Certificates.CertificateModelFactory.KeyVaultCertificate (properties, keyId, secretId, cer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Security.KeyVault.Certificates</AssemblyName>
@@ -290,14 +292,12 @@
         <Parameter Name="properties" Type="Azure.Security.KeyVault.Certificates.CertificateProperties" />
         <Parameter Name="keyId" Type="System.Uri" />
         <Parameter Name="secretId" Type="System.Uri" />
-        <Parameter Name="contentType" Type="Azure.Security.KeyVault.Certificates.CertificateContentType" />
         <Parameter Name="cer" Type="System.Byte[]" />
       </Parameters>
       <Docs>
         <param name="properties">Sets the <see cref="P:Azure.Security.KeyVault.Certificates.KeyVaultCertificate.Properties" /> property.</param>
         <param name="keyId">Sets the <see cref="P:Azure.Security.KeyVault.Certificates.KeyVaultCertificate.KeyId" /> property.</param>
         <param name="secretId">Sets the <see cref="P:Azure.Security.KeyVault.Certificates.KeyVaultCertificate.SecretId" /> property.</param>
-        <param name="contentType">Sets the <see cref="P:Azure.Security.KeyVault.Certificates.KeyVaultCertificate.ContentType" /> property.</param>
         <param name="cer">Sets the <see cref="P:Azure.Security.KeyVault.Certificates.KeyVaultCertificate.Cer" /> property.</param>
         <summary>
             Initializes a new instance of the <see cref="T:Azure.Security.KeyVault.Certificates.KeyVaultCertificate" /> for mocking purposes.
@@ -307,11 +307,11 @@
       </Docs>
     </Member>
     <Member MemberName="KeyVaultCertificateWithPolicy">
-      <MemberSignature Language="C#" Value="public static Azure.Security.KeyVault.Certificates.KeyVaultCertificateWithPolicy KeyVaultCertificateWithPolicy (Azure.Security.KeyVault.Certificates.CertificateProperties properties, Uri keyId = null, Uri secretId = null, Azure.Security.KeyVault.Certificates.CertificateContentType contentType = null, byte[] cer = null, Azure.Security.KeyVault.Certificates.CertificatePolicy policy = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Security.KeyVault.Certificates.KeyVaultCertificateWithPolicy KeyVaultCertificateWithPolicy(class Azure.Security.KeyVault.Certificates.CertificateProperties properties, class System.Uri keyId, class System.Uri secretId, valuetype Azure.Security.KeyVault.Certificates.CertificateContentType contentType, unsigned int8[] cer, class Azure.Security.KeyVault.Certificates.CertificatePolicy policy) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Security.KeyVault.Certificates.CertificateModelFactory.KeyVaultCertificateWithPolicy(Azure.Security.KeyVault.Certificates.CertificateProperties,System.Uri,System.Uri,Azure.Security.KeyVault.Certificates.CertificateContentType,System.Byte[],Azure.Security.KeyVault.Certificates.CertificatePolicy)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function KeyVaultCertificateWithPolicy (properties As CertificateProperties, Optional keyId As Uri = null, Optional secretId As Uri = null, Optional contentType As CertificateContentType = null, Optional cer As Byte() = null, Optional policy As CertificatePolicy = null) As KeyVaultCertificateWithPolicy" />
-      <MemberSignature Language="F#" Value="static member KeyVaultCertificateWithPolicy : Azure.Security.KeyVault.Certificates.CertificateProperties * Uri * Uri * Azure.Security.KeyVault.Certificates.CertificateContentType * byte[] * Azure.Security.KeyVault.Certificates.CertificatePolicy -&gt; Azure.Security.KeyVault.Certificates.KeyVaultCertificateWithPolicy" Usage="Azure.Security.KeyVault.Certificates.CertificateModelFactory.KeyVaultCertificateWithPolicy (properties, keyId, secretId, contentType, cer, policy)" />
+      <MemberSignature Language="C#" Value="public static Azure.Security.KeyVault.Certificates.KeyVaultCertificateWithPolicy KeyVaultCertificateWithPolicy (Azure.Security.KeyVault.Certificates.CertificateProperties properties, Uri keyId = default, Uri secretId = default, byte[] cer = default, Azure.Security.KeyVault.Certificates.CertificatePolicy policy = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Security.KeyVault.Certificates.KeyVaultCertificateWithPolicy KeyVaultCertificateWithPolicy(class Azure.Security.KeyVault.Certificates.CertificateProperties properties, class System.Uri keyId, class System.Uri secretId, unsigned int8[] cer, class Azure.Security.KeyVault.Certificates.CertificatePolicy policy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Security.KeyVault.Certificates.CertificateModelFactory.KeyVaultCertificateWithPolicy(Azure.Security.KeyVault.Certificates.CertificateProperties,System.Uri,System.Uri,System.Byte[],Azure.Security.KeyVault.Certificates.CertificatePolicy)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function KeyVaultCertificateWithPolicy (properties As CertificateProperties, Optional keyId As Uri = null, Optional secretId As Uri = null, Optional cer As Byte() = null, Optional policy As CertificatePolicy = null) As KeyVaultCertificateWithPolicy" />
+      <MemberSignature Language="F#" Value="static member KeyVaultCertificateWithPolicy : Azure.Security.KeyVault.Certificates.CertificateProperties * Uri * Uri * byte[] * Azure.Security.KeyVault.Certificates.CertificatePolicy -&gt; Azure.Security.KeyVault.Certificates.KeyVaultCertificateWithPolicy" Usage="Azure.Security.KeyVault.Certificates.CertificateModelFactory.KeyVaultCertificateWithPolicy (properties, keyId, secretId, cer, policy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Security.KeyVault.Certificates</AssemblyName>
@@ -324,7 +324,6 @@
         <Parameter Name="properties" Type="Azure.Security.KeyVault.Certificates.CertificateProperties" />
         <Parameter Name="keyId" Type="System.Uri" />
         <Parameter Name="secretId" Type="System.Uri" />
-        <Parameter Name="contentType" Type="Azure.Security.KeyVault.Certificates.CertificateContentType" />
         <Parameter Name="cer" Type="System.Byte[]" />
         <Parameter Name="policy" Type="Azure.Security.KeyVault.Certificates.CertificatePolicy" />
       </Parameters>
@@ -332,7 +331,6 @@
         <param name="properties">Sets the <see cref="P:Azure.Security.KeyVault.Certificates.KeyVaultCertificate.Properties" /> property.</param>
         <param name="keyId">Sets the <see cref="P:Azure.Security.KeyVault.Certificates.KeyVaultCertificate.KeyId" /> property.</param>
         <param name="secretId">Sets the <see cref="P:Azure.Security.KeyVault.Certificates.KeyVaultCertificate.SecretId" /> property.</param>
-        <param name="contentType">Sets the <see cref="P:Azure.Security.KeyVault.Certificates.KeyVaultCertificate.ContentType" /> property.</param>
         <param name="cer">Sets the <see cref="P:Azure.Security.KeyVault.Certificates.KeyVaultCertificate.Cer" /> property.</param>
         <param name="policy">Sets the <see cref="P:Azure.Security.KeyVault.Certificates.KeyVaultCertificateWithPolicy.Policy" /> property.</param>
         <summary>

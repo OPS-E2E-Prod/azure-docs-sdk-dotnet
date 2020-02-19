@@ -6,7 +6,6 @@
   <TypeSignature Language="F#" Value="type CloudBlobContainer = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-    <AssemblyVersion>11.0.1.0</AssemblyVersion>
     <AssemblyVersion>11.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -29,7 +28,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -52,7 +50,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -77,7 +74,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -94,14 +90,13 @@
       </Docs>
     </Member>
     <Member MemberName="AcquireLease">
-      <MemberSignature Language="C#" Value="public virtual string AcquireLease (Nullable&lt;TimeSpan&gt; leaseTime, string proposedLeaseId, Microsoft.Azure.Storage.AccessCondition accessCondition = null, Microsoft.Azure.Storage.Blob.BlobRequestOptions options = null, Microsoft.Azure.Storage.OperationContext operationContext = null);" />
+      <MemberSignature Language="C#" Value="public virtual string AcquireLease (Nullable&lt;TimeSpan&gt; leaseTime, string proposedLeaseId, Microsoft.Azure.Storage.AccessCondition accessCondition = default, Microsoft.Azure.Storage.Blob.BlobRequestOptions options = default, Microsoft.Azure.Storage.OperationContext operationContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string AcquireLease(valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; leaseTime, string proposedLeaseId, class Microsoft.Azure.Storage.AccessCondition accessCondition, class Microsoft.Azure.Storage.Blob.BlobRequestOptions options, class Microsoft.Azure.Storage.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Storage.Blob.CloudBlobContainer.AcquireLease(System.Nullable{System.TimeSpan},System.String,Microsoft.Azure.Storage.AccessCondition,Microsoft.Azure.Storage.Blob.BlobRequestOptions,Microsoft.Azure.Storage.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member AcquireLease : Nullable&lt;TimeSpan&gt; * string * Microsoft.Azure.Storage.AccessCondition * Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; string&#xA;override this.AcquireLease : Nullable&lt;TimeSpan&gt; * string * Microsoft.Azure.Storage.AccessCondition * Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; string" Usage="cloudBlobContainer.AcquireLease (leaseTime, proposedLeaseId, accessCondition, options, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -135,7 +130,7 @@
       </Docs>
     </Member>
     <Member MemberName="AcquireLeaseAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;string&gt; AcquireLeaseAsync (Nullable&lt;TimeSpan&gt; leaseTime, string proposedLeaseId = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;string&gt; AcquireLeaseAsync (Nullable&lt;TimeSpan&gt; leaseTime, string proposedLeaseId = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;string&gt; AcquireLeaseAsync(valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; leaseTime, string proposedLeaseId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Storage.Blob.CloudBlobContainer.AcquireLeaseAsync(System.Nullable{System.TimeSpan},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function AcquireLeaseAsync (leaseTime As Nullable(Of TimeSpan), Optional proposedLeaseId As String = null) As Task(Of String)" />
@@ -143,7 +138,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -178,7 +172,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -215,7 +208,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -256,7 +248,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -300,7 +291,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -339,7 +329,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -385,7 +374,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -422,7 +410,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -465,7 +452,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -502,7 +488,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -539,7 +524,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -572,7 +556,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -609,7 +592,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -649,7 +631,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -682,7 +663,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -719,7 +699,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -759,7 +738,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -792,7 +770,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -832,7 +809,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -865,7 +841,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -905,7 +880,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -938,7 +912,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -976,7 +949,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1009,7 +981,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1049,7 +1020,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1082,7 +1052,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1120,7 +1089,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1155,7 +1123,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1197,7 +1164,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1230,7 +1196,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1270,7 +1235,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1307,7 +1271,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1345,7 +1308,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1394,7 +1356,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1429,7 +1390,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1468,7 +1428,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1503,7 +1462,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1543,7 +1501,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1576,7 +1533,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1616,7 +1572,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1651,7 +1606,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1685,14 +1639,13 @@
       </Docs>
     </Member>
     <Member MemberName="BreakLease">
-      <MemberSignature Language="C#" Value="public virtual TimeSpan BreakLease (Nullable&lt;TimeSpan&gt; breakPeriod = null, Microsoft.Azure.Storage.AccessCondition accessCondition = null, Microsoft.Azure.Storage.Blob.BlobRequestOptions options = null, Microsoft.Azure.Storage.OperationContext operationContext = null);" />
+      <MemberSignature Language="C#" Value="public virtual TimeSpan BreakLease (Nullable&lt;TimeSpan&gt; breakPeriod = default, Microsoft.Azure.Storage.AccessCondition accessCondition = default, Microsoft.Azure.Storage.Blob.BlobRequestOptions options = default, Microsoft.Azure.Storage.OperationContext operationContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.TimeSpan BreakLease(valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; breakPeriod, class Microsoft.Azure.Storage.AccessCondition accessCondition, class Microsoft.Azure.Storage.Blob.BlobRequestOptions options, class Microsoft.Azure.Storage.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Storage.Blob.CloudBlobContainer.BreakLease(System.Nullable{System.TimeSpan},Microsoft.Azure.Storage.AccessCondition,Microsoft.Azure.Storage.Blob.BlobRequestOptions,Microsoft.Azure.Storage.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member BreakLease : Nullable&lt;TimeSpan&gt; * Microsoft.Azure.Storage.AccessCondition * Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; TimeSpan&#xA;override this.BreakLease : Nullable&lt;TimeSpan&gt; * Microsoft.Azure.Storage.AccessCondition * Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; TimeSpan" Usage="cloudBlobContainer.BreakLease (breakPeriod, accessCondition, options, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1732,7 +1685,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1765,7 +1717,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1800,7 +1751,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1839,7 +1789,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1873,14 +1822,13 @@
       </Docs>
     </Member>
     <Member MemberName="ChangeLease">
-      <MemberSignature Language="C#" Value="public virtual string ChangeLease (string proposedLeaseId, Microsoft.Azure.Storage.AccessCondition accessCondition = null, Microsoft.Azure.Storage.Blob.BlobRequestOptions options = null, Microsoft.Azure.Storage.OperationContext operationContext = null);" />
+      <MemberSignature Language="C#" Value="public virtual string ChangeLease (string proposedLeaseId, Microsoft.Azure.Storage.AccessCondition accessCondition = default, Microsoft.Azure.Storage.Blob.BlobRequestOptions options = default, Microsoft.Azure.Storage.OperationContext operationContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ChangeLease(string proposedLeaseId, class Microsoft.Azure.Storage.AccessCondition accessCondition, class Microsoft.Azure.Storage.Blob.BlobRequestOptions options, class Microsoft.Azure.Storage.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Storage.Blob.CloudBlobContainer.ChangeLease(System.String,Microsoft.Azure.Storage.AccessCondition,Microsoft.Azure.Storage.Blob.BlobRequestOptions,Microsoft.Azure.Storage.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member ChangeLease : string * Microsoft.Azure.Storage.AccessCondition * Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; string&#xA;override this.ChangeLease : string * Microsoft.Azure.Storage.AccessCondition * Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; string" Usage="cloudBlobContainer.ChangeLease (proposedLeaseId, accessCondition, options, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1917,7 +1865,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1950,7 +1897,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1985,7 +1931,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2022,7 +1967,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2054,14 +1998,13 @@
       </Docs>
     </Member>
     <Member MemberName="Create">
-      <MemberSignature Language="C#" Value="public virtual void Create (Microsoft.Azure.Storage.Blob.BlobRequestOptions requestOptions = null, Microsoft.Azure.Storage.OperationContext operationContext = null);" />
+      <MemberSignature Language="C#" Value="public virtual void Create (Microsoft.Azure.Storage.Blob.BlobRequestOptions requestOptions = default, Microsoft.Azure.Storage.OperationContext operationContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Create(class Microsoft.Azure.Storage.Blob.BlobRequestOptions requestOptions, class Microsoft.Azure.Storage.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Storage.Blob.CloudBlobContainer.Create(Microsoft.Azure.Storage.Blob.BlobRequestOptions,Microsoft.Azure.Storage.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member Create : Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; unit&#xA;override this.Create : Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; unit" Usage="cloudBlobContainer.Create (requestOptions, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2086,14 +2029,13 @@
       </Docs>
     </Member>
     <Member MemberName="Create">
-      <MemberSignature Language="C#" Value="public virtual void Create (Microsoft.Azure.Storage.Blob.BlobContainerPublicAccessType accessType, Microsoft.Azure.Storage.Blob.BlobRequestOptions requestOptions = null, Microsoft.Azure.Storage.OperationContext operationContext = null);" />
+      <MemberSignature Language="C#" Value="public virtual void Create (Microsoft.Azure.Storage.Blob.BlobContainerPublicAccessType accessType, Microsoft.Azure.Storage.Blob.BlobRequestOptions requestOptions = default, Microsoft.Azure.Storage.OperationContext operationContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Create(valuetype Microsoft.Azure.Storage.Blob.BlobContainerPublicAccessType accessType, class Microsoft.Azure.Storage.Blob.BlobRequestOptions requestOptions, class Microsoft.Azure.Storage.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Storage.Blob.CloudBlobContainer.Create(Microsoft.Azure.Storage.Blob.BlobContainerPublicAccessType,Microsoft.Azure.Storage.Blob.BlobRequestOptions,Microsoft.Azure.Storage.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member Create : Microsoft.Azure.Storage.Blob.BlobContainerPublicAccessType * Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; unit&#xA;override this.Create : Microsoft.Azure.Storage.Blob.BlobContainerPublicAccessType * Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; unit" Usage="cloudBlobContainer.Create (accessType, requestOptions, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2128,7 +2070,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2156,7 +2097,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2187,7 +2127,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2222,7 +2161,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2252,14 +2190,13 @@
       </Docs>
     </Member>
     <Member MemberName="CreateIfNotExists">
-      <MemberSignature Language="C#" Value="public virtual bool CreateIfNotExists (Microsoft.Azure.Storage.Blob.BlobRequestOptions requestOptions = null, Microsoft.Azure.Storage.OperationContext operationContext = null);" />
+      <MemberSignature Language="C#" Value="public virtual bool CreateIfNotExists (Microsoft.Azure.Storage.Blob.BlobRequestOptions requestOptions = default, Microsoft.Azure.Storage.OperationContext operationContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CreateIfNotExists(class Microsoft.Azure.Storage.Blob.BlobRequestOptions requestOptions, class Microsoft.Azure.Storage.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Storage.Blob.CloudBlobContainer.CreateIfNotExists(Microsoft.Azure.Storage.Blob.BlobRequestOptions,Microsoft.Azure.Storage.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member CreateIfNotExists : Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; bool&#xA;override this.CreateIfNotExists : Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; bool" Usage="cloudBlobContainer.CreateIfNotExists (requestOptions, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2286,14 +2223,13 @@
       </Docs>
     </Member>
     <Member MemberName="CreateIfNotExists">
-      <MemberSignature Language="C#" Value="public virtual bool CreateIfNotExists (Microsoft.Azure.Storage.Blob.BlobContainerPublicAccessType accessType, Microsoft.Azure.Storage.Blob.BlobRequestOptions requestOptions = null, Microsoft.Azure.Storage.OperationContext operationContext = null);" />
+      <MemberSignature Language="C#" Value="public virtual bool CreateIfNotExists (Microsoft.Azure.Storage.Blob.BlobContainerPublicAccessType accessType, Microsoft.Azure.Storage.Blob.BlobRequestOptions requestOptions = default, Microsoft.Azure.Storage.OperationContext operationContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CreateIfNotExists(valuetype Microsoft.Azure.Storage.Blob.BlobContainerPublicAccessType accessType, class Microsoft.Azure.Storage.Blob.BlobRequestOptions requestOptions, class Microsoft.Azure.Storage.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Storage.Blob.CloudBlobContainer.CreateIfNotExists(Microsoft.Azure.Storage.Blob.BlobContainerPublicAccessType,Microsoft.Azure.Storage.Blob.BlobRequestOptions,Microsoft.Azure.Storage.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member CreateIfNotExists : Microsoft.Azure.Storage.Blob.BlobContainerPublicAccessType * Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; bool&#xA;override this.CreateIfNotExists : Microsoft.Azure.Storage.Blob.BlobContainerPublicAccessType * Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; bool" Usage="cloudBlobContainer.CreateIfNotExists (accessType, requestOptions, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2330,7 +2266,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2358,7 +2293,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2389,7 +2323,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2422,7 +2355,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2457,7 +2389,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2492,7 +2423,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2522,14 +2452,13 @@
       </Docs>
     </Member>
     <Member MemberName="Delete">
-      <MemberSignature Language="C#" Value="public virtual void Delete (Microsoft.Azure.Storage.AccessCondition accessCondition = null, Microsoft.Azure.Storage.Blob.BlobRequestOptions options = null, Microsoft.Azure.Storage.OperationContext operationContext = null);" />
+      <MemberSignature Language="C#" Value="public virtual void Delete (Microsoft.Azure.Storage.AccessCondition accessCondition = default, Microsoft.Azure.Storage.Blob.BlobRequestOptions options = default, Microsoft.Azure.Storage.OperationContext operationContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete(class Microsoft.Azure.Storage.AccessCondition accessCondition, class Microsoft.Azure.Storage.Blob.BlobRequestOptions options, class Microsoft.Azure.Storage.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Storage.Blob.CloudBlobContainer.Delete(Microsoft.Azure.Storage.AccessCondition,Microsoft.Azure.Storage.Blob.BlobRequestOptions,Microsoft.Azure.Storage.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member Delete : Microsoft.Azure.Storage.AccessCondition * Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; unit&#xA;override this.Delete : Microsoft.Azure.Storage.AccessCondition * Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; unit" Usage="cloudBlobContainer.Delete (accessCondition, options, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2564,7 +2493,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2592,7 +2520,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2623,7 +2550,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2658,7 +2584,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2688,14 +2613,13 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteIfExists">
-      <MemberSignature Language="C#" Value="public virtual bool DeleteIfExists (Microsoft.Azure.Storage.AccessCondition accessCondition = null, Microsoft.Azure.Storage.Blob.BlobRequestOptions options = null, Microsoft.Azure.Storage.OperationContext operationContext = null);" />
+      <MemberSignature Language="C#" Value="public virtual bool DeleteIfExists (Microsoft.Azure.Storage.AccessCondition accessCondition = default, Microsoft.Azure.Storage.Blob.BlobRequestOptions options = default, Microsoft.Azure.Storage.OperationContext operationContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool DeleteIfExists(class Microsoft.Azure.Storage.AccessCondition accessCondition, class Microsoft.Azure.Storage.Blob.BlobRequestOptions options, class Microsoft.Azure.Storage.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Storage.Blob.CloudBlobContainer.DeleteIfExists(Microsoft.Azure.Storage.AccessCondition,Microsoft.Azure.Storage.Blob.BlobRequestOptions,Microsoft.Azure.Storage.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member DeleteIfExists : Microsoft.Azure.Storage.AccessCondition * Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; bool&#xA;override this.DeleteIfExists : Microsoft.Azure.Storage.AccessCondition * Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; bool" Usage="cloudBlobContainer.DeleteIfExists (accessCondition, options, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2732,7 +2656,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2760,7 +2683,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2791,7 +2713,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2826,7 +2747,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2864,7 +2784,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2891,7 +2810,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2918,7 +2836,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2945,7 +2862,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2971,7 +2887,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2999,7 +2914,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3025,7 +2939,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3053,7 +2966,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3081,7 +2993,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3107,7 +3018,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3134,7 +3044,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3161,7 +3070,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3188,7 +3096,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3216,7 +3123,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3242,7 +3148,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3268,7 +3173,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3294,7 +3198,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3312,14 +3215,13 @@
       </Docs>
     </Member>
     <Member MemberName="Exists">
-      <MemberSignature Language="C#" Value="public virtual bool Exists (Microsoft.Azure.Storage.Blob.BlobRequestOptions requestOptions = null, Microsoft.Azure.Storage.OperationContext operationContext = null);" />
+      <MemberSignature Language="C#" Value="public virtual bool Exists (Microsoft.Azure.Storage.Blob.BlobRequestOptions requestOptions = default, Microsoft.Azure.Storage.OperationContext operationContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Exists(class Microsoft.Azure.Storage.Blob.BlobRequestOptions requestOptions, class Microsoft.Azure.Storage.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Storage.Blob.CloudBlobContainer.Exists(Microsoft.Azure.Storage.Blob.BlobRequestOptions,Microsoft.Azure.Storage.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member Exists : Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; bool&#xA;override this.Exists : Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; bool" Usage="cloudBlobContainer.Exists (requestOptions, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3354,7 +3256,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3382,7 +3283,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3413,7 +3313,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3446,7 +3345,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3481,7 +3379,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3511,14 +3408,13 @@
       </Docs>
     </Member>
     <Member MemberName="FetchAttributes">
-      <MemberSignature Language="C#" Value="public virtual void FetchAttributes (Microsoft.Azure.Storage.AccessCondition accessCondition = null, Microsoft.Azure.Storage.Blob.BlobRequestOptions options = null, Microsoft.Azure.Storage.OperationContext operationContext = null);" />
+      <MemberSignature Language="C#" Value="public virtual void FetchAttributes (Microsoft.Azure.Storage.AccessCondition accessCondition = default, Microsoft.Azure.Storage.Blob.BlobRequestOptions options = default, Microsoft.Azure.Storage.OperationContext operationContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FetchAttributes(class Microsoft.Azure.Storage.AccessCondition accessCondition, class Microsoft.Azure.Storage.Blob.BlobRequestOptions options, class Microsoft.Azure.Storage.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Storage.Blob.CloudBlobContainer.FetchAttributes(Microsoft.Azure.Storage.AccessCondition,Microsoft.Azure.Storage.Blob.BlobRequestOptions,Microsoft.Azure.Storage.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member FetchAttributes : Microsoft.Azure.Storage.AccessCondition * Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; unit&#xA;override this.FetchAttributes : Microsoft.Azure.Storage.AccessCondition * Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; unit" Usage="cloudBlobContainer.FetchAttributes (accessCondition, options, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3553,7 +3449,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3581,7 +3476,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3612,7 +3506,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3647,7 +3540,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3677,14 +3569,13 @@
       </Docs>
     </Member>
     <Member MemberName="GetAccountProperties">
-      <MemberSignature Language="C#" Value="public virtual Microsoft.Azure.Storage.Shared.Protocol.AccountProperties GetAccountProperties (Microsoft.Azure.Storage.Blob.BlobRequestOptions requestOptions = null, Microsoft.Azure.Storage.OperationContext operationContext = null);" />
+      <MemberSignature Language="C#" Value="public virtual Microsoft.Azure.Storage.Shared.Protocol.AccountProperties GetAccountProperties (Microsoft.Azure.Storage.Blob.BlobRequestOptions requestOptions = default, Microsoft.Azure.Storage.OperationContext operationContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Azure.Storage.Shared.Protocol.AccountProperties GetAccountProperties(class Microsoft.Azure.Storage.Blob.BlobRequestOptions requestOptions, class Microsoft.Azure.Storage.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Storage.Blob.CloudBlobContainer.GetAccountProperties(Microsoft.Azure.Storage.Blob.BlobRequestOptions,Microsoft.Azure.Storage.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member GetAccountProperties : Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; Microsoft.Azure.Storage.Shared.Protocol.AccountProperties&#xA;override this.GetAccountProperties : Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; Microsoft.Azure.Storage.Shared.Protocol.AccountProperties" Usage="cloudBlobContainer.GetAccountProperties (requestOptions, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3718,7 +3609,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3746,7 +3636,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3777,7 +3666,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3810,7 +3698,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3846,7 +3733,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3873,7 +3759,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3902,7 +3787,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3929,7 +3813,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3950,14 +3833,13 @@
       </Docs>
     </Member>
     <Member MemberName="GetBlobReferenceFromServer">
-      <MemberSignature Language="C#" Value="public virtual Microsoft.Azure.Storage.Blob.ICloudBlob GetBlobReferenceFromServer (string blobName, Microsoft.Azure.Storage.AccessCondition accessCondition = null, Microsoft.Azure.Storage.Blob.BlobRequestOptions options = null, Microsoft.Azure.Storage.OperationContext operationContext = null);" />
+      <MemberSignature Language="C#" Value="public virtual Microsoft.Azure.Storage.Blob.ICloudBlob GetBlobReferenceFromServer (string blobName, Microsoft.Azure.Storage.AccessCondition accessCondition = default, Microsoft.Azure.Storage.Blob.BlobRequestOptions options = default, Microsoft.Azure.Storage.OperationContext operationContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Azure.Storage.Blob.ICloudBlob GetBlobReferenceFromServer(string blobName, class Microsoft.Azure.Storage.AccessCondition accessCondition, class Microsoft.Azure.Storage.Blob.BlobRequestOptions options, class Microsoft.Azure.Storage.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Storage.Blob.CloudBlobContainer.GetBlobReferenceFromServer(System.String,Microsoft.Azure.Storage.AccessCondition,Microsoft.Azure.Storage.Blob.BlobRequestOptions,Microsoft.Azure.Storage.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member GetBlobReferenceFromServer : string * Microsoft.Azure.Storage.AccessCondition * Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; Microsoft.Azure.Storage.Blob.ICloudBlob&#xA;override this.GetBlobReferenceFromServer : string * Microsoft.Azure.Storage.AccessCondition * Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; Microsoft.Azure.Storage.Blob.ICloudBlob" Usage="cloudBlobContainer.GetBlobReferenceFromServer (blobName, accessCondition, options, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3995,7 +3877,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -4026,7 +3907,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -4059,7 +3939,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -4096,7 +3975,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -4136,7 +4014,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -4166,7 +4043,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -4195,7 +4071,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -4222,7 +4097,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -4249,7 +4123,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -4270,14 +4143,13 @@
       </Docs>
     </Member>
     <Member MemberName="GetPermissions">
-      <MemberSignature Language="C#" Value="public virtual Microsoft.Azure.Storage.Blob.BlobContainerPermissions GetPermissions (Microsoft.Azure.Storage.AccessCondition accessCondition = null, Microsoft.Azure.Storage.Blob.BlobRequestOptions options = null, Microsoft.Azure.Storage.OperationContext operationContext = null);" />
+      <MemberSignature Language="C#" Value="public virtual Microsoft.Azure.Storage.Blob.BlobContainerPermissions GetPermissions (Microsoft.Azure.Storage.AccessCondition accessCondition = default, Microsoft.Azure.Storage.Blob.BlobRequestOptions options = default, Microsoft.Azure.Storage.OperationContext operationContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Azure.Storage.Blob.BlobContainerPermissions GetPermissions(class Microsoft.Azure.Storage.AccessCondition accessCondition, class Microsoft.Azure.Storage.Blob.BlobRequestOptions options, class Microsoft.Azure.Storage.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Storage.Blob.CloudBlobContainer.GetPermissions(Microsoft.Azure.Storage.AccessCondition,Microsoft.Azure.Storage.Blob.BlobRequestOptions,Microsoft.Azure.Storage.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member GetPermissions : Microsoft.Azure.Storage.AccessCondition * Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; Microsoft.Azure.Storage.Blob.BlobContainerPermissions&#xA;override this.GetPermissions : Microsoft.Azure.Storage.AccessCondition * Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; Microsoft.Azure.Storage.Blob.BlobContainerPermissions" Usage="cloudBlobContainer.GetPermissions (accessCondition, options, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -4313,7 +4185,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -4341,7 +4212,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -4372,7 +4242,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -4407,7 +4276,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -4445,7 +4313,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -4472,7 +4339,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -4500,7 +4366,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -4525,14 +4390,13 @@
       </Docs>
     </Member>
     <Member MemberName="GetUserDelegationSharedAccessSignature">
-      <MemberSignature Language="C#" Value="public string GetUserDelegationSharedAccessSignature (Microsoft.Azure.Storage.UserDelegationKey delegationKey, Microsoft.Azure.Storage.Blob.SharedAccessBlobPolicy policy, Microsoft.Azure.Storage.Blob.SharedAccessBlobHeaders headers = null, Nullable&lt;Microsoft.Azure.Storage.SharedAccessProtocol&gt; protocols = null, Microsoft.Azure.Storage.IPAddressOrRange ipAddressOrRange = null);" />
+      <MemberSignature Language="C#" Value="public string GetUserDelegationSharedAccessSignature (Microsoft.Azure.Storage.UserDelegationKey delegationKey, Microsoft.Azure.Storage.Blob.SharedAccessBlobPolicy policy, Microsoft.Azure.Storage.Blob.SharedAccessBlobHeaders headers = default, Nullable&lt;Microsoft.Azure.Storage.SharedAccessProtocol&gt; protocols = default, Microsoft.Azure.Storage.IPAddressOrRange ipAddressOrRange = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetUserDelegationSharedAccessSignature(class Microsoft.Azure.Storage.UserDelegationKey delegationKey, class Microsoft.Azure.Storage.Blob.SharedAccessBlobPolicy policy, class Microsoft.Azure.Storage.Blob.SharedAccessBlobHeaders headers, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Storage.SharedAccessProtocol&gt; protocols, class Microsoft.Azure.Storage.IPAddressOrRange ipAddressOrRange) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Storage.Blob.CloudBlobContainer.GetUserDelegationSharedAccessSignature(Microsoft.Azure.Storage.UserDelegationKey,Microsoft.Azure.Storage.Blob.SharedAccessBlobPolicy,Microsoft.Azure.Storage.Blob.SharedAccessBlobHeaders,System.Nullable{Microsoft.Azure.Storage.SharedAccessProtocol},Microsoft.Azure.Storage.IPAddressOrRange)" />
       <MemberSignature Language="F#" Value="member this.GetUserDelegationSharedAccessSignature : Microsoft.Azure.Storage.UserDelegationKey * Microsoft.Azure.Storage.Blob.SharedAccessBlobPolicy * Microsoft.Azure.Storage.Blob.SharedAccessBlobHeaders * Nullable&lt;Microsoft.Azure.Storage.SharedAccessProtocol&gt; * Microsoft.Azure.Storage.IPAddressOrRange -&gt; string" Usage="cloudBlobContainer.GetUserDelegationSharedAccessSignature (delegationKey, policy, headers, protocols, ipAddressOrRange)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -4560,14 +4424,13 @@
       </Docs>
     </Member>
     <Member MemberName="ListBlobs">
-      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Storage.Blob.IListBlobItem&gt; ListBlobs (string prefix = null, bool useFlatBlobListing = false, Microsoft.Azure.Storage.Blob.BlobListingDetails blobListingDetails = Microsoft.Azure.Storage.Blob.BlobListingDetails.None, Microsoft.Azure.Storage.Blob.BlobRequestOptions options = null, Microsoft.Azure.Storage.OperationContext operationContext = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Storage.Blob.IListBlobItem&gt; ListBlobs (string prefix = default, bool useFlatBlobListing = false, Microsoft.Azure.Storage.Blob.BlobListingDetails blobListingDetails = Microsoft.Azure.Storage.Blob.BlobListingDetails.None, Microsoft.Azure.Storage.Blob.BlobRequestOptions options = default, Microsoft.Azure.Storage.OperationContext operationContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Storage.Blob.IListBlobItem&gt; ListBlobs(string prefix, bool useFlatBlobListing, valuetype Microsoft.Azure.Storage.Blob.BlobListingDetails blobListingDetails, class Microsoft.Azure.Storage.Blob.BlobRequestOptions options, class Microsoft.Azure.Storage.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Storage.Blob.CloudBlobContainer.ListBlobs(System.String,System.Boolean,Microsoft.Azure.Storage.Blob.BlobListingDetails,Microsoft.Azure.Storage.Blob.BlobRequestOptions,Microsoft.Azure.Storage.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member ListBlobs : string * bool * Microsoft.Azure.Storage.Blob.BlobListingDetails * Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; seq&lt;Microsoft.Azure.Storage.Blob.IListBlobItem&gt;&#xA;override this.ListBlobs : string * bool * Microsoft.Azure.Storage.Blob.BlobListingDetails * Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; seq&lt;Microsoft.Azure.Storage.Blob.IListBlobItem&gt;" Usage="cloudBlobContainer.ListBlobs (prefix, useFlatBlobListing, blobListingDetails, options, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -4607,7 +4470,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -4640,7 +4502,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -4674,7 +4535,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -4720,7 +4580,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -4752,7 +4611,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -4787,7 +4645,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -4821,7 +4678,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -4857,7 +4713,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -4902,7 +4757,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -4950,7 +4804,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -4973,7 +4826,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -4996,7 +4848,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -5011,14 +4862,13 @@
       </Docs>
     </Member>
     <Member MemberName="ReleaseLease">
-      <MemberSignature Language="C#" Value="public virtual void ReleaseLease (Microsoft.Azure.Storage.AccessCondition accessCondition, Microsoft.Azure.Storage.Blob.BlobRequestOptions options = null, Microsoft.Azure.Storage.OperationContext operationContext = null);" />
+      <MemberSignature Language="C#" Value="public virtual void ReleaseLease (Microsoft.Azure.Storage.AccessCondition accessCondition, Microsoft.Azure.Storage.Blob.BlobRequestOptions options = default, Microsoft.Azure.Storage.OperationContext operationContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReleaseLease(class Microsoft.Azure.Storage.AccessCondition accessCondition, class Microsoft.Azure.Storage.Blob.BlobRequestOptions options, class Microsoft.Azure.Storage.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Storage.Blob.CloudBlobContainer.ReleaseLease(Microsoft.Azure.Storage.AccessCondition,Microsoft.Azure.Storage.Blob.BlobRequestOptions,Microsoft.Azure.Storage.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member ReleaseLease : Microsoft.Azure.Storage.AccessCondition * Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; unit&#xA;override this.ReleaseLease : Microsoft.Azure.Storage.AccessCondition * Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; unit" Usage="cloudBlobContainer.ReleaseLease (accessCondition, options, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -5052,7 +4902,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -5083,7 +4932,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -5116,7 +4964,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -5151,7 +4998,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -5181,14 +5027,13 @@
       </Docs>
     </Member>
     <Member MemberName="RenewLease">
-      <MemberSignature Language="C#" Value="public virtual void RenewLease (Microsoft.Azure.Storage.AccessCondition accessCondition, Microsoft.Azure.Storage.Blob.BlobRequestOptions options = null, Microsoft.Azure.Storage.OperationContext operationContext = null);" />
+      <MemberSignature Language="C#" Value="public virtual void RenewLease (Microsoft.Azure.Storage.AccessCondition accessCondition, Microsoft.Azure.Storage.Blob.BlobRequestOptions options = default, Microsoft.Azure.Storage.OperationContext operationContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenewLease(class Microsoft.Azure.Storage.AccessCondition accessCondition, class Microsoft.Azure.Storage.Blob.BlobRequestOptions options, class Microsoft.Azure.Storage.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Storage.Blob.CloudBlobContainer.RenewLease(Microsoft.Azure.Storage.AccessCondition,Microsoft.Azure.Storage.Blob.BlobRequestOptions,Microsoft.Azure.Storage.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member RenewLease : Microsoft.Azure.Storage.AccessCondition * Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; unit&#xA;override this.RenewLease : Microsoft.Azure.Storage.AccessCondition * Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; unit" Usage="cloudBlobContainer.RenewLease (accessCondition, options, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -5222,7 +5067,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -5253,7 +5097,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -5286,7 +5129,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -5321,7 +5163,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -5359,7 +5200,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -5374,14 +5214,13 @@
       </Docs>
     </Member>
     <Member MemberName="SetMetadata">
-      <MemberSignature Language="C#" Value="public virtual void SetMetadata (Microsoft.Azure.Storage.AccessCondition accessCondition = null, Microsoft.Azure.Storage.Blob.BlobRequestOptions options = null, Microsoft.Azure.Storage.OperationContext operationContext = null);" />
+      <MemberSignature Language="C#" Value="public virtual void SetMetadata (Microsoft.Azure.Storage.AccessCondition accessCondition = default, Microsoft.Azure.Storage.Blob.BlobRequestOptions options = default, Microsoft.Azure.Storage.OperationContext operationContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetMetadata(class Microsoft.Azure.Storage.AccessCondition accessCondition, class Microsoft.Azure.Storage.Blob.BlobRequestOptions options, class Microsoft.Azure.Storage.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Storage.Blob.CloudBlobContainer.SetMetadata(Microsoft.Azure.Storage.AccessCondition,Microsoft.Azure.Storage.Blob.BlobRequestOptions,Microsoft.Azure.Storage.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member SetMetadata : Microsoft.Azure.Storage.AccessCondition * Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; unit&#xA;override this.SetMetadata : Microsoft.Azure.Storage.AccessCondition * Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; unit" Usage="cloudBlobContainer.SetMetadata (accessCondition, options, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -5416,7 +5255,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -5444,7 +5282,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -5475,7 +5312,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -5510,7 +5346,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -5540,14 +5375,13 @@
       </Docs>
     </Member>
     <Member MemberName="SetPermissions">
-      <MemberSignature Language="C#" Value="public virtual void SetPermissions (Microsoft.Azure.Storage.Blob.BlobContainerPermissions permissions, Microsoft.Azure.Storage.AccessCondition accessCondition = null, Microsoft.Azure.Storage.Blob.BlobRequestOptions options = null, Microsoft.Azure.Storage.OperationContext operationContext = null);" />
+      <MemberSignature Language="C#" Value="public virtual void SetPermissions (Microsoft.Azure.Storage.Blob.BlobContainerPermissions permissions, Microsoft.Azure.Storage.AccessCondition accessCondition = default, Microsoft.Azure.Storage.Blob.BlobRequestOptions options = default, Microsoft.Azure.Storage.OperationContext operationContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetPermissions(class Microsoft.Azure.Storage.Blob.BlobContainerPermissions permissions, class Microsoft.Azure.Storage.AccessCondition accessCondition, class Microsoft.Azure.Storage.Blob.BlobRequestOptions options, class Microsoft.Azure.Storage.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Storage.Blob.CloudBlobContainer.SetPermissions(Microsoft.Azure.Storage.Blob.BlobContainerPermissions,Microsoft.Azure.Storage.AccessCondition,Microsoft.Azure.Storage.Blob.BlobRequestOptions,Microsoft.Azure.Storage.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member SetPermissions : Microsoft.Azure.Storage.Blob.BlobContainerPermissions * Microsoft.Azure.Storage.AccessCondition * Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; unit&#xA;override this.SetPermissions : Microsoft.Azure.Storage.Blob.BlobContainerPermissions * Microsoft.Azure.Storage.AccessCondition * Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; unit" Usage="cloudBlobContainer.SetPermissions (permissions, accessCondition, options, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -5584,7 +5418,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -5615,7 +5448,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -5648,7 +5480,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -5685,7 +5516,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -5725,7 +5555,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -5748,7 +5577,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>11.0.1.0</AssemblyVersion>
         <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

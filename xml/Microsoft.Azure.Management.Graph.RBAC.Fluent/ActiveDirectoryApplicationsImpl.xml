@@ -6,8 +6,10 @@
   <TypeSignature Language="F#" Value="type ActiveDirectoryApplicationsImpl = class&#xA;    inherit CreatableResources&lt;IActiveDirectoryApplication, ActiveDirectoryApplicationImpl, ApplicationInner&gt;&#xA;    interface IActiveDirectoryApplications&#xA;    interface IBeta&#xA;    interface ISupportsListing&lt;IActiveDirectoryApplication&gt;&#xA;    interface ISupportsGettingById&lt;IActiveDirectoryApplication&gt;&#xA;    interface ISupportsGettingByName&lt;IActiveDirectoryApplication&gt;&#xA;    interface ISupportsCreating&lt;IBlank&gt;&#xA;    interface ISupportsBatchCreation&lt;IActiveDirectoryApplication&gt;&#xA;    interface ISupportsDeletingById&#xA;    interface IHasManager&lt;GraphRbacManager&gt;&#xA;    interface IHasInner&lt;IApplicationsOperations&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
     <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.ResourceManager.Fluent.Core.CreatableResources&lt;Microsoft.Azure.Management.Graph.RBAC.Fluent.IActiveDirectoryApplication,Microsoft.Azure.Management.Graph.RBAC.Fluent.ActiveDirectoryApplicationImpl,Microsoft.Azure.Management.Graph.RBAC.Fluent.Models.ApplicationInner&gt;</BaseTypeName>
@@ -65,8 +67,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Graph.RBAC.Fluent.ActiveDirectoryApplicationImpl</ReturnType>
@@ -93,8 +97,10 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -109,7 +115,7 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteByIdAsync">
-      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task DeleteByIdAsync (string id, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task DeleteByIdAsync (string id, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task DeleteByIdAsync(string id, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Graph.RBAC.Fluent.ActiveDirectoryApplicationsImpl.DeleteByIdAsync(System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="override this.DeleteByIdAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="activeDirectoryApplicationsImpl.DeleteByIdAsync (id, cancellationToken)" />
@@ -119,8 +125,10 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -151,8 +159,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Graph.RBAC.Fluent.ActiveDirectoryApplicationImpl</ReturnType>
@@ -168,7 +178,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetByIdAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Graph.RBAC.Fluent.IActiveDirectoryApplication&gt; GetByIdAsync (string id, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Graph.RBAC.Fluent.IActiveDirectoryApplication&gt; GetByIdAsync (string id, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Graph.RBAC.Fluent.IActiveDirectoryApplication&gt; GetByIdAsync(string id, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Graph.RBAC.Fluent.ActiveDirectoryApplicationsImpl.GetByIdAsync(System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member GetByIdAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Graph.RBAC.Fluent.IActiveDirectoryApplication&gt;&#xA;override this.GetByIdAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Graph.RBAC.Fluent.IActiveDirectoryApplication&gt;" Usage="activeDirectoryApplicationsImpl.GetByIdAsync (id, cancellationToken)" />
@@ -178,8 +188,10 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -213,8 +225,10 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Graph.RBAC.Fluent.IActiveDirectoryApplication</ReturnType>
@@ -230,7 +244,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetByNameAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Graph.RBAC.Fluent.IActiveDirectoryApplication&gt; GetByNameAsync (string name, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Graph.RBAC.Fluent.IActiveDirectoryApplication&gt; GetByNameAsync (string name, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Graph.RBAC.Fluent.IActiveDirectoryApplication&gt; GetByNameAsync(string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Graph.RBAC.Fluent.ActiveDirectoryApplicationsImpl.GetByNameAsync(System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member GetByNameAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Graph.RBAC.Fluent.IActiveDirectoryApplication&gt;&#xA;override this.GetByNameAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Graph.RBAC.Fluent.IActiveDirectoryApplication&gt;" Usage="activeDirectoryApplicationsImpl.GetByNameAsync (name, cancellationToken)" />
@@ -240,8 +254,10 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -275,8 +291,10 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Graph.RBAC.Fluent.IApplicationsOperations</ReturnType>
@@ -299,8 +317,10 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Management.Graph.RBAC.Fluent.IActiveDirectoryApplication&gt;</ReturnType>
@@ -313,7 +333,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ResourceManager.Fluent.Core.IPagedCollection&lt;Microsoft.Azure.Management.Graph.RBAC.Fluent.IActiveDirectoryApplication&gt;&gt; ListAsync (bool loadAllPages = true, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ResourceManager.Fluent.Core.IPagedCollection&lt;Microsoft.Azure.Management.Graph.RBAC.Fluent.IActiveDirectoryApplication&gt;&gt; ListAsync (bool loadAllPages = true, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.ResourceManager.Fluent.Core.IPagedCollection`1&lt;class Microsoft.Azure.Management.Graph.RBAC.Fluent.IActiveDirectoryApplication&gt;&gt; ListAsync(bool loadAllPages, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Graph.RBAC.Fluent.ActiveDirectoryApplicationsImpl.ListAsync(System.Boolean,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member ListAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ResourceManager.Fluent.Core.IPagedCollection&lt;Microsoft.Azure.Management.Graph.RBAC.Fluent.IActiveDirectoryApplication&gt;&gt;&#xA;override this.ListAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ResourceManager.Fluent.Core.IPagedCollection&lt;Microsoft.Azure.Management.Graph.RBAC.Fluent.IActiveDirectoryApplication&gt;&gt;" Usage="activeDirectoryApplicationsImpl.ListAsync (loadAllPages, cancellationToken)" />
@@ -323,8 +343,10 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -357,8 +379,10 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Graph.RBAC.Fluent.ActiveDirectoryApplication.Definition.IBlank</ReturnType>
@@ -384,8 +408,10 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Graph.RBAC.Fluent.IActiveDirectoryApplication</ReturnType>
@@ -412,8 +438,10 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Graph.RBAC.Fluent.GraphRbacManager</ReturnType>
@@ -432,8 +460,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Graph.RBAC.Fluent.IActiveDirectoryApplication</ReturnType>
@@ -457,8 +487,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Graph.RBAC.Fluent.ActiveDirectoryApplicationImpl</ReturnType>

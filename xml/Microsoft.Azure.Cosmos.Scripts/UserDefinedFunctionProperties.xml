@@ -6,16 +6,10 @@
   <TypeSignature Language="F#" Value="type UserDefinedFunctionProperties = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
-    <AssemblyVersion>3.1.0.0</AssemblyVersion>
-    <AssemblyVersion>3.1.1.0</AssemblyVersion>
-    <AssemblyVersion>3.2.0.0</AssemblyVersion>
-    <AssemblyVersion>3.3.0.0</AssemblyVersion>
-    <AssemblyVersion>3.3.1.0</AssemblyVersion>
-    <AssemblyVersion>3.3.2.0</AssemblyVersion>
-    <AssemblyVersion>3.3.3.0</AssemblyVersion>
-    <AssemblyVersion>3.4.0.0</AssemblyVersion>
     <AssemblyVersion>3.4.1.0</AssemblyVersion>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+    <AssemblyVersion>3.5.1.0</AssemblyVersion>
+    <AssemblyVersion>3.6.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,33 +24,6 @@
              Refer to https://docs.microsoft.com/azure/cosmos-db/sql-api-sql-query#javascript-integration for how to use UDFs within queries.
              Refer to https://docs.microsoft.com/azure/cosmos-db/programming#udf for more details about implementing UDFs in JavaScript.
              </remarks>
-    <example>
-             The following examples show how to register and use UDFs.
-             <code language="c#"><![CDATA[
-             await this.container.UserDefinedFunctions.CreateUserDefinedFunctionAsync(
-                 new UserDefinedFunctionProperties 
-                 { 
-                     Id = "calculateTax", 
-                     Body = @"function(amt) { return amt * 0.05; }" 
-                 });
-            
-             QueryDefinition sqlQuery = new QueryDefinition(
-                 "SELECT VALUE udf.calculateTax(t.cost) FROM toDoActivity t where t.cost > @expensive and t.status = @status")
-                 .WithParameter("@expensive", 9000)
-                 .WithParameter("@status", "Done");
-            
-             FeedIterator<double> feedIterator = this.container.Items.GetItemsQueryIterator<double>(
-                 sqlQueryDefinition: sqlQuery,
-                 partitionKey: "Done");
-            
-             while (feedIterator.HasMoreResults)
-             {
-                 foreach (var tax in await feedIterator.FetchNextSetAsync())
-                 {
-                     Console.WriteLine(tax);
-                 }
-             }
-             ]]></code></example>
     <example>
              The following examples show how to register and use UDFs.
              <code language="c#"><![CDATA[
@@ -94,16 +61,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
-        <AssemblyVersion>3.1.1.0</AssemblyVersion>
-        <AssemblyVersion>3.2.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.1.0</AssemblyVersion>
-        <AssemblyVersion>3.3.2.0</AssemblyVersion>
-        <AssemblyVersion>3.3.3.0</AssemblyVersion>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
         <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -120,16 +81,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
-        <AssemblyVersion>3.1.1.0</AssemblyVersion>
-        <AssemblyVersion>3.2.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.1.0</AssemblyVersion>
-        <AssemblyVersion>3.3.2.0</AssemblyVersion>
-        <AssemblyVersion>3.3.3.0</AssemblyVersion>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
         <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -156,20 +111,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
-        <AssemblyVersion>3.1.1.0</AssemblyVersion>
-        <AssemblyVersion>3.2.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.1.0</AssemblyVersion>
-        <AssemblyVersion>3.3.2.0</AssemblyVersion>
-        <AssemblyVersion>3.3.3.0</AssemblyVersion>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
         <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="_etag")</AttributeName>
+          <AttributeName>Newtonsoft.Json.JsonProperty(NullValueHandling=Newtonsoft.Json.NullValueHandling.Ignore, PropertyName="_etag")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -196,16 +145,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.1.0.0</AssemblyVersion>
-        <AssemblyVersion>3.1.1.0</AssemblyVersion>
-        <AssemblyVersion>3.2.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.0.0</AssemblyVersion>
-        <AssemblyVersion>3.3.1.0</AssemblyVersion>
-        <AssemblyVersion>3.3.2.0</AssemblyVersion>
-        <AssemblyVersion>3.3.3.0</AssemblyVersion>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
         <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -237,6 +180,38 @@
              '/', '\\', '?', '#'
             </para>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelfLink">
+      <MemberSignature Language="C#" Value="public string SelfLink { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SelfLink" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Cosmos.Scripts.UserDefinedFunctionProperties.SelfLink" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelfLink As String" />
+      <MemberSignature Language="F#" Value="member this.SelfLink : string" Usage="Microsoft.Azure.Cosmos.Scripts.UserDefinedFunctionProperties.SelfLink" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(NullValueHandling=Newtonsoft.Json.NullValueHandling.Ignore, PropertyName="_self")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the self-link associated with the resource from the Azure Cosmos DB service.
+            </summary>
+        <value>The self-link associated with the resource.</value>
+        <remarks>
+            A self-link is a static addressable Uri for each resource within a database account and follows the Azure Cosmos DB resource model.
+            E.g. a self-link for a document could be dbs/db_resourceid/colls/coll_resourceid/documents/doc_resourceid
+            </remarks>
       </Docs>
     </Member>
   </Members>

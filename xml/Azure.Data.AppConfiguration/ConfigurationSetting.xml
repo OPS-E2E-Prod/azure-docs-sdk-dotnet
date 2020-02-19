@@ -11,8 +11,7 @@
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
-  <Interfaces>
-  </Interfaces>
+  <Interfaces />
   <Attributes>
     <Attribute>
       <AttributeName>System.Text.Json.Serialization.JsonConverter(typeof(Azure.Data.AppConfiguration.ConfigurationSettingJsonConverter))</AttributeName>
@@ -26,7 +25,7 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ConfigurationSetting (string key, string value, string label = null);" />
+      <MemberSignature Language="C#" Value="public ConfigurationSetting (string key, string value, string label = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string key, string value, string label) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Data.AppConfiguration.ConfigurationSetting.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (key As String, value As String, Optional label As String = null)" />
@@ -87,7 +86,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -140,7 +139,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -149,7 +148,7 @@
       <Parameters />
       <Docs>
         <summary>
-            Get a hash code for the ConfigurationSetting
+            Get a hash code for the ConfigurationSetting.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -282,7 +281,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

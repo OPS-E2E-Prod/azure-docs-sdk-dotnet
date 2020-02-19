@@ -7,6 +7,9 @@
   <AssemblyInfo>
     <AssemblyName>Azure.Storage.Blobs</AssemblyName>
     <AssemblyVersion>12.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.1.0.0</AssemblyVersion>
+    <AssemblyVersion>12.2.0.0</AssemblyVersion>
+    <AssemblyVersion>12.3.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.Storage.Blobs.Specialized.BlobBaseClient</BaseTypeName>
@@ -40,6 +43,9 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -51,7 +57,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AppendBlobClient (Uri blobUri, Azure.Storage.Blobs.BlobClientOptions options = null);" />
+      <MemberSignature Language="C#" Value="public AppendBlobClient (Uri blobUri, Azure.Storage.Blobs.BlobClientOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri blobUri, class Azure.Storage.Blobs.BlobClientOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.Specialized.AppendBlobClient.#ctor(System.Uri,Azure.Storage.Blobs.BlobClientOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (blobUri As Uri, Optional options As BlobClientOptions = null)" />
@@ -60,6 +66,9 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="blobUri" Type="System.Uri" />
@@ -70,6 +79,7 @@
             A <see cref="T:System.Uri" /> referencing the append blob that includes the
             name of the account, the name of the container, and the name of
             the blob.
+            This is likely to be similar to "https://{account_name}.blob.core.windows.net/{container_name}/{blob_name}".
             </param>
         <param name="options">
             Optional client options that define the transport pipeline
@@ -93,6 +103,9 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="connectionString" Type="System.String" />
@@ -121,7 +134,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AppendBlobClient (Uri blobUri, Azure.Core.TokenCredential credential, Azure.Storage.Blobs.BlobClientOptions options = null);" />
+      <MemberSignature Language="C#" Value="public AppendBlobClient (Uri blobUri, Azure.Core.TokenCredential credential, Azure.Storage.Blobs.BlobClientOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri blobUri, class Azure.Core.TokenCredential credential, class Azure.Storage.Blobs.BlobClientOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.Specialized.AppendBlobClient.#ctor(System.Uri,Azure.Core.TokenCredential,Azure.Storage.Blobs.BlobClientOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (blobUri As Uri, credential As TokenCredential, Optional options As BlobClientOptions = null)" />
@@ -130,6 +143,9 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="blobUri" Type="System.Uri" />
@@ -141,6 +157,7 @@
             A <see cref="T:System.Uri" /> referencing the append blob that includes the
             name of the account, the name of the container, and the name of
             the blob.
+            This is likely to be similar to "https://{account_name}.blob.core.windows.net/{container_name}/{blob_name}".
             </param>
         <param name="credential">
             The token credential used to sign requests.
@@ -158,7 +175,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AppendBlobClient (Uri blobUri, Azure.Storage.StorageSharedKeyCredential credential, Azure.Storage.Blobs.BlobClientOptions options = null);" />
+      <MemberSignature Language="C#" Value="public AppendBlobClient (Uri blobUri, Azure.Storage.StorageSharedKeyCredential credential, Azure.Storage.Blobs.BlobClientOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri blobUri, class Azure.Storage.StorageSharedKeyCredential credential, class Azure.Storage.Blobs.BlobClientOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.Specialized.AppendBlobClient.#ctor(System.Uri,Azure.Storage.StorageSharedKeyCredential,Azure.Storage.Blobs.BlobClientOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (blobUri As Uri, credential As StorageSharedKeyCredential, Optional options As BlobClientOptions = null)" />
@@ -167,6 +184,9 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="blobUri" Type="System.Uri" />
@@ -178,6 +198,7 @@
             A <see cref="T:System.Uri" /> referencing the append blob that includes the
             name of the account, the name of the container, and the name of
             the blob.
+            This is likely to be similar to "https://{account_name}.blob.core.windows.net/{container_name}/{blob_name}".
             </param>
         <param name="credential">
             The shared key credential used to sign requests.
@@ -204,6 +225,9 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="connectionString" Type="System.String" />
@@ -247,6 +271,9 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -270,6 +297,9 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -283,7 +313,7 @@
       </Docs>
     </Member>
     <Member MemberName="AppendBlock">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Blobs.Models.BlobAppendInfo&gt; AppendBlock (System.IO.Stream content, byte[] transactionalContentHash = null, Azure.Storage.Blobs.Models.AppendBlobRequestConditions conditions = null, IProgress&lt;long&gt; progressHandler = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Blobs.Models.BlobAppendInfo&gt; AppendBlock (System.IO.Stream content, byte[] transactionalContentHash = default, Azure.Storage.Blobs.Models.AppendBlobRequestConditions conditions = default, IProgress&lt;long&gt; progressHandler = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Blobs.Models.BlobAppendInfo&gt; AppendBlock(class System.IO.Stream content, unsigned int8[] transactionalContentHash, class Azure.Storage.Blobs.Models.AppendBlobRequestConditions conditions, class System.IProgress`1&lt;int64&gt; progressHandler, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.Specialized.AppendBlobClient.AppendBlock(System.IO.Stream,System.Byte[],Azure.Storage.Blobs.Models.AppendBlobRequestConditions,System.IProgress{System.Int64},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member AppendBlock : System.IO.Stream * byte[] * Azure.Storage.Blobs.Models.AppendBlobRequestConditions * IProgress&lt;int64&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Blobs.Models.BlobAppendInfo&gt;&#xA;override this.AppendBlock : System.IO.Stream * byte[] * Azure.Storage.Blobs.Models.AppendBlobRequestConditions * IProgress&lt;int64&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Blobs.Models.BlobAppendInfo&gt;" Usage="appendBlobClient.AppendBlock (content, transactionalContentHash, conditions, progressHandler, cancellationToken)" />
@@ -291,6 +321,9 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Blobs.Models.BlobAppendInfo&gt;</ReturnType>
@@ -347,7 +380,7 @@
       </Docs>
     </Member>
     <Member MemberName="AppendBlockAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobAppendInfo&gt;&gt; AppendBlockAsync (System.IO.Stream content, byte[] transactionalContentHash = null, Azure.Storage.Blobs.Models.AppendBlobRequestConditions conditions = null, IProgress&lt;long&gt; progressHandler = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobAppendInfo&gt;&gt; AppendBlockAsync (System.IO.Stream content, byte[] transactionalContentHash = default, Azure.Storage.Blobs.Models.AppendBlobRequestConditions conditions = default, IProgress&lt;long&gt; progressHandler = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Blobs.Models.BlobAppendInfo&gt;&gt; AppendBlockAsync(class System.IO.Stream content, unsigned int8[] transactionalContentHash, class Azure.Storage.Blobs.Models.AppendBlobRequestConditions conditions, class System.IProgress`1&lt;int64&gt; progressHandler, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.Specialized.AppendBlobClient.AppendBlockAsync(System.IO.Stream,System.Byte[],Azure.Storage.Blobs.Models.AppendBlobRequestConditions,System.IProgress{System.Int64},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member AppendBlockAsync : System.IO.Stream * byte[] * Azure.Storage.Blobs.Models.AppendBlobRequestConditions * IProgress&lt;int64&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobAppendInfo&gt;&gt;&#xA;override this.AppendBlockAsync : System.IO.Stream * byte[] * Azure.Storage.Blobs.Models.AppendBlobRequestConditions * IProgress&lt;int64&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobAppendInfo&gt;&gt;" Usage="appendBlobClient.AppendBlockAsync (content, transactionalContentHash, conditions, progressHandler, cancellationToken)" />
@@ -355,6 +388,9 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobAppendInfo&gt;&gt;</ReturnType>
@@ -411,7 +447,7 @@
       </Docs>
     </Member>
     <Member MemberName="AppendBlockFromUri">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Blobs.Models.BlobAppendInfo&gt; AppendBlockFromUri (Uri sourceUri, Azure.HttpRange sourceRange = null, byte[] sourceContentHash = null, Azure.Storage.Blobs.Models.AppendBlobRequestConditions conditions = null, Azure.Storage.Blobs.Models.AppendBlobRequestConditions sourceConditions = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Blobs.Models.BlobAppendInfo&gt; AppendBlockFromUri (Uri sourceUri, Azure.HttpRange sourceRange = default, byte[] sourceContentHash = default, Azure.Storage.Blobs.Models.AppendBlobRequestConditions conditions = default, Azure.Storage.Blobs.Models.AppendBlobRequestConditions sourceConditions = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Blobs.Models.BlobAppendInfo&gt; AppendBlockFromUri(class System.Uri sourceUri, valuetype Azure.HttpRange sourceRange, unsigned int8[] sourceContentHash, class Azure.Storage.Blobs.Models.AppendBlobRequestConditions conditions, class Azure.Storage.Blobs.Models.AppendBlobRequestConditions sourceConditions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.Specialized.AppendBlobClient.AppendBlockFromUri(System.Uri,Azure.HttpRange,System.Byte[],Azure.Storage.Blobs.Models.AppendBlobRequestConditions,Azure.Storage.Blobs.Models.AppendBlobRequestConditions,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member AppendBlockFromUri : Uri * Azure.HttpRange * byte[] * Azure.Storage.Blobs.Models.AppendBlobRequestConditions * Azure.Storage.Blobs.Models.AppendBlobRequestConditions * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Blobs.Models.BlobAppendInfo&gt;&#xA;override this.AppendBlockFromUri : Uri * Azure.HttpRange * byte[] * Azure.Storage.Blobs.Models.AppendBlobRequestConditions * Azure.Storage.Blobs.Models.AppendBlobRequestConditions * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Blobs.Models.BlobAppendInfo&gt;" Usage="appendBlobClient.AppendBlockFromUri (sourceUri, sourceRange, sourceContentHash, conditions, sourceConditions, cancellationToken)" />
@@ -419,6 +455,9 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Blobs.Models.BlobAppendInfo&gt;</ReturnType>
@@ -487,7 +526,7 @@
       </Docs>
     </Member>
     <Member MemberName="AppendBlockFromUriAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobAppendInfo&gt;&gt; AppendBlockFromUriAsync (Uri sourceUri, Azure.HttpRange sourceRange = null, byte[] sourceContentHash = null, Azure.Storage.Blobs.Models.AppendBlobRequestConditions conditions = null, Azure.Storage.Blobs.Models.AppendBlobRequestConditions sourceConditions = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobAppendInfo&gt;&gt; AppendBlockFromUriAsync (Uri sourceUri, Azure.HttpRange sourceRange = default, byte[] sourceContentHash = default, Azure.Storage.Blobs.Models.AppendBlobRequestConditions conditions = default, Azure.Storage.Blobs.Models.AppendBlobRequestConditions sourceConditions = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Blobs.Models.BlobAppendInfo&gt;&gt; AppendBlockFromUriAsync(class System.Uri sourceUri, valuetype Azure.HttpRange sourceRange, unsigned int8[] sourceContentHash, class Azure.Storage.Blobs.Models.AppendBlobRequestConditions conditions, class Azure.Storage.Blobs.Models.AppendBlobRequestConditions sourceConditions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.Specialized.AppendBlobClient.AppendBlockFromUriAsync(System.Uri,Azure.HttpRange,System.Byte[],Azure.Storage.Blobs.Models.AppendBlobRequestConditions,Azure.Storage.Blobs.Models.AppendBlobRequestConditions,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member AppendBlockFromUriAsync : Uri * Azure.HttpRange * byte[] * Azure.Storage.Blobs.Models.AppendBlobRequestConditions * Azure.Storage.Blobs.Models.AppendBlobRequestConditions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobAppendInfo&gt;&gt;&#xA;override this.AppendBlockFromUriAsync : Uri * Azure.HttpRange * byte[] * Azure.Storage.Blobs.Models.AppendBlobRequestConditions * Azure.Storage.Blobs.Models.AppendBlobRequestConditions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobAppendInfo&gt;&gt;" Usage="appendBlobClient.AppendBlockFromUriAsync (sourceUri, sourceRange, sourceContentHash, conditions, sourceConditions, cancellationToken)" />
@@ -495,6 +534,9 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobAppendInfo&gt;&gt;</ReturnType>
@@ -563,7 +605,7 @@
       </Docs>
     </Member>
     <Member MemberName="Create">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt; Create (Azure.Storage.Blobs.Models.BlobHttpHeaders httpHeaders = null, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = null, Azure.Storage.Blobs.Models.AppendBlobRequestConditions conditions = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt; Create (Azure.Storage.Blobs.Models.BlobHttpHeaders httpHeaders = default, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = default, Azure.Storage.Blobs.Models.AppendBlobRequestConditions conditions = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Blobs.Models.BlobContentInfo&gt; Create(class Azure.Storage.Blobs.Models.BlobHttpHeaders httpHeaders, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata, class Azure.Storage.Blobs.Models.AppendBlobRequestConditions conditions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.Specialized.AppendBlobClient.Create(Azure.Storage.Blobs.Models.BlobHttpHeaders,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Storage.Blobs.Models.AppendBlobRequestConditions,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member Create : Azure.Storage.Blobs.Models.BlobHttpHeaders * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Storage.Blobs.Models.AppendBlobRequestConditions * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&#xA;override this.Create : Azure.Storage.Blobs.Models.BlobHttpHeaders * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Storage.Blobs.Models.AppendBlobRequestConditions * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;" Usage="appendBlobClient.Create (httpHeaders, metadata, conditions, cancellationToken)" />
@@ -571,6 +613,9 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;</ReturnType>
@@ -616,7 +661,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt; CreateAsync (Azure.Storage.Blobs.Models.BlobHttpHeaders httpHeaders = null, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = null, Azure.Storage.Blobs.Models.AppendBlobRequestConditions conditions = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt; CreateAsync (Azure.Storage.Blobs.Models.BlobHttpHeaders httpHeaders = default, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = default, Azure.Storage.Blobs.Models.AppendBlobRequestConditions conditions = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt; CreateAsync(class Azure.Storage.Blobs.Models.BlobHttpHeaders httpHeaders, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata, class Azure.Storage.Blobs.Models.AppendBlobRequestConditions conditions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.Specialized.AppendBlobClient.CreateAsync(Azure.Storage.Blobs.Models.BlobHttpHeaders,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Storage.Blobs.Models.AppendBlobRequestConditions,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member CreateAsync : Azure.Storage.Blobs.Models.BlobHttpHeaders * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Storage.Blobs.Models.AppendBlobRequestConditions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt;&#xA;override this.CreateAsync : Azure.Storage.Blobs.Models.BlobHttpHeaders * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Storage.Blobs.Models.AppendBlobRequestConditions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt;" Usage="appendBlobClient.CreateAsync (httpHeaders, metadata, conditions, cancellationToken)" />
@@ -624,6 +669,9 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt;</ReturnType>
@@ -669,7 +717,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateIfNotExists">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt; CreateIfNotExists (Azure.Storage.Blobs.Models.BlobHttpHeaders httpHeaders = null, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt; CreateIfNotExists (Azure.Storage.Blobs.Models.BlobHttpHeaders httpHeaders = default, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Blobs.Models.BlobContentInfo&gt; CreateIfNotExists(class Azure.Storage.Blobs.Models.BlobHttpHeaders httpHeaders, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.Specialized.AppendBlobClient.CreateIfNotExists(Azure.Storage.Blobs.Models.BlobHttpHeaders,System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member CreateIfNotExists : Azure.Storage.Blobs.Models.BlobHttpHeaders * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&#xA;override this.CreateIfNotExists : Azure.Storage.Blobs.Models.BlobHttpHeaders * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;" Usage="appendBlobClient.CreateIfNotExists (httpHeaders, metadata, cancellationToken)" />
@@ -677,6 +725,9 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;</ReturnType>
@@ -707,8 +758,8 @@
              For more information, see <see href="https://docs.microsoft.com/rest/api/storageservices/put-blob" />.
              </summary>
         <returns>
-             A <see cref="T:Azure.Response`1" /> describing the
-             newly created append blob.
+             If the append blob does not already exist, a <see cref="T:Azure.Response`1" />
+             describing the newly created append blob. Otherwise, <c>null</c>.
              </returns>
         <remarks>
              A <see cref="T:Azure.RequestFailedException" /> will be thrown if
@@ -717,7 +768,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateIfNotExistsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt; CreateIfNotExistsAsync (Azure.Storage.Blobs.Models.BlobHttpHeaders httpHeaders = null, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt; CreateIfNotExistsAsync (Azure.Storage.Blobs.Models.BlobHttpHeaders httpHeaders = default, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt; CreateIfNotExistsAsync(class Azure.Storage.Blobs.Models.BlobHttpHeaders httpHeaders, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.Specialized.AppendBlobClient.CreateIfNotExistsAsync(Azure.Storage.Blobs.Models.BlobHttpHeaders,System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member CreateIfNotExistsAsync : Azure.Storage.Blobs.Models.BlobHttpHeaders * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt;&#xA;override this.CreateIfNotExistsAsync : Azure.Storage.Blobs.Models.BlobHttpHeaders * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt;" Usage="appendBlobClient.CreateIfNotExistsAsync (httpHeaders, metadata, cancellationToken)" />
@@ -725,6 +776,9 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobContentInfo&gt;&gt;</ReturnType>
@@ -755,8 +809,8 @@
              For more information, see <see href="https://docs.microsoft.com/rest/api/storageservices/put-blob" />.
              </summary>
         <returns>
-             A <see cref="T:Azure.Response`1" /> describing the
-             newly created append blob.
+             If the append blob does not already exist, a <see cref="T:Azure.Response`1" />
+             describing the newly created append blob. Otherwise, <c>null</c>.
              </returns>
         <remarks>
              A <see cref="T:Azure.RequestFailedException" /> will be thrown if
@@ -774,6 +828,9 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+        <AssemblyVersion>12.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Storage.Blobs.Specialized.AppendBlobClient</ReturnType>

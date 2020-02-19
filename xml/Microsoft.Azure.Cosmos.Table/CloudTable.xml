@@ -6,9 +6,8 @@
   <TypeSignature Language="F#" Value="type CloudTable = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-    <AssemblyVersion>1.0.1.0</AssemblyVersion>
-    <AssemblyVersion>1.0.4.0</AssemblyVersion>
     <AssemblyVersion>1.0.5.0</AssemblyVersion>
+    <AssemblyVersion>1.0.6.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -31,11 +30,6 @@
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Cosmos.Table.CloudTable : Uri -&gt; Microsoft.Azure.Cosmos.Table.CloudTable" Usage="new Microsoft.Azure.Cosmos.Table.CloudTable tableAddress" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -55,11 +49,6 @@
       <MemberSignature Language="VB.NET" Value="Public Sub New (tableAddress As StorageUri, credentials As StorageCredentials)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Cosmos.Table.CloudTable : Microsoft.Azure.Cosmos.Table.StorageUri * Microsoft.Azure.Cosmos.Table.StorageCredentials -&gt; Microsoft.Azure.Cosmos.Table.CloudTable" Usage="new Microsoft.Azure.Cosmos.Table.CloudTable (tableAddress, credentials)" />
       <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -83,11 +72,6 @@
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Cosmos.Table.CloudTable : Uri * Microsoft.Azure.Cosmos.Table.StorageCredentials -&gt; Microsoft.Azure.Cosmos.Table.CloudTable" Usage="new Microsoft.Azure.Cosmos.Table.CloudTable (tableAbsoluteUri, credentials)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -103,7 +87,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CloudTable (Uri tableAddress, Microsoft.Azure.Cosmos.Table.TableClientConfiguration configuration = null);" />
+      <MemberSignature Language="C#" Value="public CloudTable (Uri tableAddress, Microsoft.Azure.Cosmos.Table.TableClientConfiguration configuration = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri tableAddress, class Microsoft.Azure.Cosmos.Table.TableClientConfiguration configuration) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Table.CloudTable.#ctor(System.Uri,Microsoft.Azure.Cosmos.Table.TableClientConfiguration)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (tableAddress As Uri, Optional configuration As TableClientConfiguration = null)" />
@@ -112,6 +96,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="tableAddress" Type="System.Uri" Index="0" FrameworkAlternate="azure-dotnet" />
@@ -125,7 +110,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CloudTable (Microsoft.Azure.Cosmos.Table.StorageUri tableAddress, Microsoft.Azure.Cosmos.Table.StorageCredentials credentials, Microsoft.Azure.Cosmos.Table.TableClientConfiguration configuration = null);" />
+      <MemberSignature Language="C#" Value="public CloudTable (Microsoft.Azure.Cosmos.Table.StorageUri tableAddress, Microsoft.Azure.Cosmos.Table.StorageCredentials credentials, Microsoft.Azure.Cosmos.Table.TableClientConfiguration configuration = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.Cosmos.Table.StorageUri tableAddress, class Microsoft.Azure.Cosmos.Table.StorageCredentials credentials, class Microsoft.Azure.Cosmos.Table.TableClientConfiguration configuration) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Table.CloudTable.#ctor(Microsoft.Azure.Cosmos.Table.StorageUri,Microsoft.Azure.Cosmos.Table.StorageCredentials,Microsoft.Azure.Cosmos.Table.TableClientConfiguration)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (tableAddress As StorageUri, credentials As StorageCredentials, Optional configuration As TableClientConfiguration = null)" />
@@ -134,6 +119,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="tableAddress" Type="Microsoft.Azure.Cosmos.Table.StorageUri" Index="0" FrameworkAlternate="azure-dotnet" />
@@ -149,7 +135,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CloudTable (Uri tableAbsoluteUri, Microsoft.Azure.Cosmos.Table.StorageCredentials credentials, Microsoft.Azure.Cosmos.Table.TableClientConfiguration configuration = null);" />
+      <MemberSignature Language="C#" Value="public CloudTable (Uri tableAbsoluteUri, Microsoft.Azure.Cosmos.Table.StorageCredentials credentials, Microsoft.Azure.Cosmos.Table.TableClientConfiguration configuration = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri tableAbsoluteUri, class Microsoft.Azure.Cosmos.Table.StorageCredentials credentials, class Microsoft.Azure.Cosmos.Table.TableClientConfiguration configuration) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Table.CloudTable.#ctor(System.Uri,Microsoft.Azure.Cosmos.Table.StorageCredentials,Microsoft.Azure.Cosmos.Table.TableClientConfiguration)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (tableAbsoluteUri As Uri, credentials As StorageCredentials, Optional configuration As TableClientConfiguration = null)" />
@@ -158,6 +144,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="tableAbsoluteUri" Type="System.Uri" Index="0" FrameworkAlternate="azure-dotnet" />
@@ -217,7 +204,7 @@
       </Docs>
     </Member>
     <Member MemberName="Create">
-      <MemberSignature Language="C#" Value="public virtual void Create (Nullable&lt;Microsoft.Azure.Cosmos.IndexingMode&gt; indexingMode, Nullable&lt;int&gt; throughput = null);" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public virtual void Create (Nullable&lt;Microsoft.Azure.Cosmos.IndexingMode&gt; indexingMode, Nullable&lt;int&gt; throughput = default);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Create(valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Cosmos.IndexingMode&gt; indexingMode, valuetype System.Nullable`1&lt;int32&gt; throughput) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Table.CloudTable.Create(System.Nullable{Microsoft.Azure.Cosmos.IndexingMode},System.Nullable{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Create (indexingMode As Nullable(Of IndexingMode), Optional throughput As Nullable(Of Integer) = null)" FrameworkAlternate="azure-dotnet" />
@@ -227,9 +214,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -278,16 +264,15 @@
       </Docs>
     </Member>
     <Member MemberName="Create">
-      <MemberSignature Language="C#" Value="public virtual void Create (Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions = null, Microsoft.Azure.Cosmos.Table.OperationContext operationContext = null, string serializedIndexingPolicy = null, Nullable&lt;int&gt; throughput = null);" />
+      <MemberSignature Language="C#" Value="public virtual void Create (Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions = default, Microsoft.Azure.Cosmos.Table.OperationContext operationContext = default, string serializedIndexingPolicy = default, Nullable&lt;int&gt; throughput = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Create(class Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions, class Microsoft.Azure.Cosmos.Table.OperationContext operationContext, string serializedIndexingPolicy, valuetype System.Nullable`1&lt;int32&gt; throughput) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Table.CloudTable.Create(Microsoft.Azure.Cosmos.Table.TableRequestOptions,Microsoft.Azure.Cosmos.Table.OperationContext,System.String,System.Nullable{System.Int32})" />
       <MemberSignature Language="F#" Value="abstract member Create : Microsoft.Azure.Cosmos.Table.TableRequestOptions * Microsoft.Azure.Cosmos.Table.OperationContext * string * Nullable&lt;int&gt; -&gt; unit&#xA;override this.Create : Microsoft.Azure.Cosmos.Table.TableRequestOptions * Microsoft.Azure.Cosmos.Table.OperationContext * string * Nullable&lt;int&gt; -&gt; unit" Usage="cloudTable.Create (requestOptions, operationContext, serializedIndexingPolicy, throughput)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -316,9 +301,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -342,9 +326,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -371,9 +354,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -402,9 +384,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -462,9 +443,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -491,9 +471,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -551,9 +530,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -598,16 +576,15 @@
       </Docs>
     </Member>
     <Member MemberName="CreateIfNotExists">
-      <MemberSignature Language="C#" Value="public virtual bool CreateIfNotExists (Microsoft.Azure.Cosmos.IndexingMode indexingMode, Nullable&lt;int&gt; throughput = null);" />
+      <MemberSignature Language="C#" Value="public virtual bool CreateIfNotExists (Microsoft.Azure.Cosmos.IndexingMode indexingMode, Nullable&lt;int&gt; throughput = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CreateIfNotExists(valuetype Microsoft.Azure.Cosmos.IndexingMode indexingMode, valuetype System.Nullable`1&lt;int32&gt; throughput) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Table.CloudTable.CreateIfNotExists(Microsoft.Azure.Cosmos.IndexingMode,System.Nullable{System.Int32})" />
       <MemberSignature Language="F#" Value="abstract member CreateIfNotExists : Microsoft.Azure.Cosmos.IndexingMode * Nullable&lt;int&gt; -&gt; bool&#xA;override this.CreateIfNotExists : Microsoft.Azure.Cosmos.IndexingMode * Nullable&lt;int&gt; -&gt; bool" Usage="cloudTable.CreateIfNotExists (indexingMode, throughput)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -650,7 +627,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateIfNotExists">
-      <MemberSignature Language="C#" Value="public virtual bool CreateIfNotExists (Nullable&lt;Microsoft.Azure.Cosmos.IndexingMode&gt; indexingMode, Nullable&lt;int&gt; throughput = null);" />
+      <MemberSignature Language="C#" Value="public virtual bool CreateIfNotExists (Nullable&lt;Microsoft.Azure.Cosmos.IndexingMode&gt; indexingMode, Nullable&lt;int&gt; throughput = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CreateIfNotExists(valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Cosmos.IndexingMode&gt; indexingMode, valuetype System.Nullable`1&lt;int32&gt; throughput) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Table.CloudTable.CreateIfNotExists(System.Nullable{Microsoft.Azure.Cosmos.IndexingMode},System.Nullable{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateIfNotExists (indexingMode As Nullable(Of IndexingMode), Optional throughput As Nullable(Of Integer) = null) As Boolean" />
@@ -705,16 +682,15 @@
       </Docs>
     </Member>
     <Member MemberName="CreateIfNotExists">
-      <MemberSignature Language="C#" Value="public virtual bool CreateIfNotExists (Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions = null, Microsoft.Azure.Cosmos.Table.OperationContext operationContext = null, string serializedIndexingPolicy = null, Nullable&lt;int&gt; throughput = null);" />
+      <MemberSignature Language="C#" Value="public virtual bool CreateIfNotExists (Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions = default, Microsoft.Azure.Cosmos.Table.OperationContext operationContext = default, string serializedIndexingPolicy = default, Nullable&lt;int&gt; throughput = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CreateIfNotExists(class Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions, class Microsoft.Azure.Cosmos.Table.OperationContext operationContext, string serializedIndexingPolicy, valuetype System.Nullable`1&lt;int32&gt; throughput) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Table.CloudTable.CreateIfNotExists(Microsoft.Azure.Cosmos.Table.TableRequestOptions,Microsoft.Azure.Cosmos.Table.OperationContext,System.String,System.Nullable{System.Int32})" />
       <MemberSignature Language="F#" Value="abstract member CreateIfNotExists : Microsoft.Azure.Cosmos.Table.TableRequestOptions * Microsoft.Azure.Cosmos.Table.OperationContext * string * Nullable&lt;int&gt; -&gt; bool&#xA;override this.CreateIfNotExists : Microsoft.Azure.Cosmos.Table.TableRequestOptions * Microsoft.Azure.Cosmos.Table.OperationContext * string * Nullable&lt;int&gt; -&gt; bool" Usage="cloudTable.CreateIfNotExists (requestOptions, operationContext, serializedIndexingPolicy, throughput)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -744,9 +720,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -770,9 +745,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -799,9 +773,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -830,9 +803,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -863,9 +835,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -927,9 +898,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -961,9 +931,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -989,16 +958,15 @@
       </Docs>
     </Member>
     <Member MemberName="Delete">
-      <MemberSignature Language="C#" Value="public virtual void Delete (Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions = null, Microsoft.Azure.Cosmos.Table.OperationContext operationContext = null);" />
+      <MemberSignature Language="C#" Value="public virtual void Delete (Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions = default, Microsoft.Azure.Cosmos.Table.OperationContext operationContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete(class Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions, class Microsoft.Azure.Cosmos.Table.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Table.CloudTable.Delete(Microsoft.Azure.Cosmos.Table.TableRequestOptions,Microsoft.Azure.Cosmos.Table.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member Delete : Microsoft.Azure.Cosmos.Table.TableRequestOptions * Microsoft.Azure.Cosmos.Table.OperationContext -&gt; unit&#xA;override this.Delete : Microsoft.Azure.Cosmos.Table.TableRequestOptions * Microsoft.Azure.Cosmos.Table.OperationContext -&gt; unit" Usage="cloudTable.Delete (requestOptions, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -1027,9 +995,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -1053,9 +1020,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -1082,9 +1048,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -1113,9 +1078,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -1139,16 +1103,15 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteIfExists">
-      <MemberSignature Language="C#" Value="public virtual bool DeleteIfExists (Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions = null, Microsoft.Azure.Cosmos.Table.OperationContext operationContext = null);" />
+      <MemberSignature Language="C#" Value="public virtual bool DeleteIfExists (Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions = default, Microsoft.Azure.Cosmos.Table.OperationContext operationContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool DeleteIfExists(class Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions, class Microsoft.Azure.Cosmos.Table.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Table.CloudTable.DeleteIfExists(Microsoft.Azure.Cosmos.Table.TableRequestOptions,Microsoft.Azure.Cosmos.Table.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member DeleteIfExists : Microsoft.Azure.Cosmos.Table.TableRequestOptions * Microsoft.Azure.Cosmos.Table.OperationContext -&gt; bool&#xA;override this.DeleteIfExists : Microsoft.Azure.Cosmos.Table.TableRequestOptions * Microsoft.Azure.Cosmos.Table.OperationContext -&gt; bool" Usage="cloudTable.DeleteIfExists (requestOptions, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -1178,9 +1141,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -1204,9 +1166,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -1233,9 +1194,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -1264,9 +1224,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -1290,16 +1249,15 @@
       </Docs>
     </Member>
     <Member MemberName="Execute">
-      <MemberSignature Language="C#" Value="public virtual Microsoft.Azure.Cosmos.Table.TableResult Execute (Microsoft.Azure.Cosmos.Table.TableOperation operation, Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions = null, Microsoft.Azure.Cosmos.Table.OperationContext operationContext = null);" />
+      <MemberSignature Language="C#" Value="public virtual Microsoft.Azure.Cosmos.Table.TableResult Execute (Microsoft.Azure.Cosmos.Table.TableOperation operation, Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions = default, Microsoft.Azure.Cosmos.Table.OperationContext operationContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Azure.Cosmos.Table.TableResult Execute(class Microsoft.Azure.Cosmos.Table.TableOperation operation, class Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions, class Microsoft.Azure.Cosmos.Table.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Table.CloudTable.Execute(Microsoft.Azure.Cosmos.Table.TableOperation,Microsoft.Azure.Cosmos.Table.TableRequestOptions,Microsoft.Azure.Cosmos.Table.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member Execute : Microsoft.Azure.Cosmos.Table.TableOperation * Microsoft.Azure.Cosmos.Table.TableRequestOptions * Microsoft.Azure.Cosmos.Table.OperationContext -&gt; Microsoft.Azure.Cosmos.Table.TableResult&#xA;override this.Execute : Microsoft.Azure.Cosmos.Table.TableOperation * Microsoft.Azure.Cosmos.Table.TableRequestOptions * Microsoft.Azure.Cosmos.Table.OperationContext -&gt; Microsoft.Azure.Cosmos.Table.TableResult" Usage="cloudTable.Execute (operation, requestOptions, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -1331,9 +1289,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -1360,9 +1317,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -1391,9 +1347,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -1424,9 +1379,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -1452,16 +1406,15 @@
       </Docs>
     </Member>
     <Member MemberName="ExecuteBatch">
-      <MemberSignature Language="C#" Value="public virtual Microsoft.Azure.Cosmos.Table.TableBatchResult ExecuteBatch (Microsoft.Azure.Cosmos.Table.TableBatchOperation batch, Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions = null, Microsoft.Azure.Cosmos.Table.OperationContext operationContext = null);" />
+      <MemberSignature Language="C#" Value="public virtual Microsoft.Azure.Cosmos.Table.TableBatchResult ExecuteBatch (Microsoft.Azure.Cosmos.Table.TableBatchOperation batch, Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions = default, Microsoft.Azure.Cosmos.Table.OperationContext operationContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Azure.Cosmos.Table.TableBatchResult ExecuteBatch(class Microsoft.Azure.Cosmos.Table.TableBatchOperation batch, class Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions, class Microsoft.Azure.Cosmos.Table.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Table.CloudTable.ExecuteBatch(Microsoft.Azure.Cosmos.Table.TableBatchOperation,Microsoft.Azure.Cosmos.Table.TableRequestOptions,Microsoft.Azure.Cosmos.Table.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member ExecuteBatch : Microsoft.Azure.Cosmos.Table.TableBatchOperation * Microsoft.Azure.Cosmos.Table.TableRequestOptions * Microsoft.Azure.Cosmos.Table.OperationContext -&gt; Microsoft.Azure.Cosmos.Table.TableBatchResult&#xA;override this.ExecuteBatch : Microsoft.Azure.Cosmos.Table.TableBatchOperation * Microsoft.Azure.Cosmos.Table.TableRequestOptions * Microsoft.Azure.Cosmos.Table.OperationContext -&gt; Microsoft.Azure.Cosmos.Table.TableBatchResult" Usage="cloudTable.ExecuteBatch (batch, requestOptions, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -1493,9 +1446,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -1522,9 +1474,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -1553,9 +1504,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -1586,9 +1536,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -1614,16 +1563,15 @@
       </Docs>
     </Member>
     <Member MemberName="ExecuteQuery">
-      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Cosmos.Table.DynamicTableEntity&gt; ExecuteQuery (Microsoft.Azure.Cosmos.Table.TableQuery query, Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions = null, Microsoft.Azure.Cosmos.Table.OperationContext operationContext = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Cosmos.Table.DynamicTableEntity&gt; ExecuteQuery (Microsoft.Azure.Cosmos.Table.TableQuery query, Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions = default, Microsoft.Azure.Cosmos.Table.OperationContext operationContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Cosmos.Table.DynamicTableEntity&gt; ExecuteQuery(class Microsoft.Azure.Cosmos.Table.TableQuery query, class Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions, class Microsoft.Azure.Cosmos.Table.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Table.CloudTable.ExecuteQuery(Microsoft.Azure.Cosmos.Table.TableQuery,Microsoft.Azure.Cosmos.Table.TableRequestOptions,Microsoft.Azure.Cosmos.Table.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member ExecuteQuery : Microsoft.Azure.Cosmos.Table.TableQuery * Microsoft.Azure.Cosmos.Table.TableRequestOptions * Microsoft.Azure.Cosmos.Table.OperationContext -&gt; seq&lt;Microsoft.Azure.Cosmos.Table.DynamicTableEntity&gt;&#xA;override this.ExecuteQuery : Microsoft.Azure.Cosmos.Table.TableQuery * Microsoft.Azure.Cosmos.Table.TableRequestOptions * Microsoft.Azure.Cosmos.Table.OperationContext -&gt; seq&lt;Microsoft.Azure.Cosmos.Table.DynamicTableEntity&gt;" Usage="cloudTable.ExecuteQuery (query, requestOptions, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -1647,16 +1595,15 @@
       </Docs>
     </Member>
     <Member MemberName="ExecuteQuery&lt;TElement&gt;">
-      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;TElement&gt; ExecuteQuery&lt;TElement&gt; (Microsoft.Azure.Cosmos.Table.TableQuery&lt;TElement&gt; query, Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions = null, Microsoft.Azure.Cosmos.Table.OperationContext operationContext = null) where TElement : Microsoft.Azure.Cosmos.Table.ITableEntitynew();" />
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;TElement&gt; ExecuteQuery&lt;TElement&gt; (Microsoft.Azure.Cosmos.Table.TableQuery&lt;TElement&gt; query, Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions = default, Microsoft.Azure.Cosmos.Table.OperationContext operationContext = default) where TElement : Microsoft.Azure.Cosmos.Table.ITableEntitynew();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;!!TElement&gt; ExecuteQuery&lt;.ctor (class Microsoft.Azure.Cosmos.Table.ITableEntity) TElement&gt;(class Microsoft.Azure.Cosmos.Table.TableQuery`1&lt;!!TElement&gt; query, class Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions, class Microsoft.Azure.Cosmos.Table.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Table.CloudTable.ExecuteQuery``1(Microsoft.Azure.Cosmos.Table.TableQuery{``0},Microsoft.Azure.Cosmos.Table.TableRequestOptions,Microsoft.Azure.Cosmos.Table.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member ExecuteQuery : Microsoft.Azure.Cosmos.Table.TableQuery&lt;'Element (requires 'Element :&gt; Microsoft.Azure.Cosmos.Table.ITableEntity and 'Element : (new : unit -&gt; 'Element))&gt; * Microsoft.Azure.Cosmos.Table.TableRequestOptions * Microsoft.Azure.Cosmos.Table.OperationContext -&gt; seq&lt;'Element (requires 'Element :&gt; Microsoft.Azure.Cosmos.Table.ITableEntity and 'Element : (new : unit -&gt; 'Element))&gt; (requires 'Element :&gt; Microsoft.Azure.Cosmos.Table.ITableEntity and 'Element : (new : unit -&gt; 'Element))&#xA;override this.ExecuteQuery : Microsoft.Azure.Cosmos.Table.TableQuery&lt;'Element (requires 'Element :&gt; Microsoft.Azure.Cosmos.Table.ITableEntity and 'Element : (new : unit -&gt; 'Element))&gt; * Microsoft.Azure.Cosmos.Table.TableRequestOptions * Microsoft.Azure.Cosmos.Table.OperationContext -&gt; seq&lt;'Element (requires 'Element :&gt; Microsoft.Azure.Cosmos.Table.ITableEntity and 'Element : (new : unit -&gt; 'Element))&gt; (requires 'Element :&gt; Microsoft.Azure.Cosmos.Table.ITableEntity and 'Element : (new : unit -&gt; 'Element))" Usage="cloudTable.ExecuteQuery (query, requestOptions, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -1689,16 +1636,15 @@
       </Docs>
     </Member>
     <Member MemberName="ExecuteQuery&lt;TResult&gt;">
-      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;TResult&gt; ExecuteQuery&lt;TResult&gt; (Microsoft.Azure.Cosmos.Table.TableQuery query, Microsoft.Azure.Cosmos.Table.EntityResolver&lt;TResult&gt; resolver, Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions = null, Microsoft.Azure.Cosmos.Table.OperationContext operationContext = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;TResult&gt; ExecuteQuery&lt;TResult&gt; (Microsoft.Azure.Cosmos.Table.TableQuery query, Microsoft.Azure.Cosmos.Table.EntityResolver&lt;TResult&gt; resolver, Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions = default, Microsoft.Azure.Cosmos.Table.OperationContext operationContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;!!TResult&gt; ExecuteQuery&lt;TResult&gt;(class Microsoft.Azure.Cosmos.Table.TableQuery query, class Microsoft.Azure.Cosmos.Table.EntityResolver`1&lt;!!TResult&gt; resolver, class Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions, class Microsoft.Azure.Cosmos.Table.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Table.CloudTable.ExecuteQuery``1(Microsoft.Azure.Cosmos.Table.TableQuery,Microsoft.Azure.Cosmos.Table.EntityResolver{``0},Microsoft.Azure.Cosmos.Table.TableRequestOptions,Microsoft.Azure.Cosmos.Table.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member ExecuteQuery : Microsoft.Azure.Cosmos.Table.TableQuery * Microsoft.Azure.Cosmos.Table.EntityResolver&lt;'Result&gt; * Microsoft.Azure.Cosmos.Table.TableRequestOptions * Microsoft.Azure.Cosmos.Table.OperationContext -&gt; seq&lt;'Result&gt;&#xA;override this.ExecuteQuery : Microsoft.Azure.Cosmos.Table.TableQuery * Microsoft.Azure.Cosmos.Table.EntityResolver&lt;'Result&gt; * Microsoft.Azure.Cosmos.Table.TableRequestOptions * Microsoft.Azure.Cosmos.Table.OperationContext -&gt; seq&lt;'Result&gt;" Usage="cloudTable.ExecuteQuery (query, resolver, requestOptions, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -1728,16 +1674,15 @@
       </Docs>
     </Member>
     <Member MemberName="ExecuteQuery&lt;TElement,TResult&gt;">
-      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;TResult&gt; ExecuteQuery&lt;TElement,TResult&gt; (Microsoft.Azure.Cosmos.Table.TableQuery&lt;TElement&gt; query, Microsoft.Azure.Cosmos.Table.EntityResolver&lt;TResult&gt; resolver, Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions = null, Microsoft.Azure.Cosmos.Table.OperationContext operationContext = null) where TElement : Microsoft.Azure.Cosmos.Table.ITableEntitynew();" />
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;TResult&gt; ExecuteQuery&lt;TElement,TResult&gt; (Microsoft.Azure.Cosmos.Table.TableQuery&lt;TElement&gt; query, Microsoft.Azure.Cosmos.Table.EntityResolver&lt;TResult&gt; resolver, Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions = default, Microsoft.Azure.Cosmos.Table.OperationContext operationContext = default) where TElement : Microsoft.Azure.Cosmos.Table.ITableEntitynew();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;!!TResult&gt; ExecuteQuery&lt;.ctor (class Microsoft.Azure.Cosmos.Table.ITableEntity) TElement, TResult&gt;(class Microsoft.Azure.Cosmos.Table.TableQuery`1&lt;!!TElement&gt; query, class Microsoft.Azure.Cosmos.Table.EntityResolver`1&lt;!!TResult&gt; resolver, class Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions, class Microsoft.Azure.Cosmos.Table.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Table.CloudTable.ExecuteQuery``2(Microsoft.Azure.Cosmos.Table.TableQuery{``0},Microsoft.Azure.Cosmos.Table.EntityResolver{``1},Microsoft.Azure.Cosmos.Table.TableRequestOptions,Microsoft.Azure.Cosmos.Table.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member ExecuteQuery : Microsoft.Azure.Cosmos.Table.TableQuery&lt;'Element (requires 'Element :&gt; Microsoft.Azure.Cosmos.Table.ITableEntity and 'Element : (new : unit -&gt; 'Element))&gt; * Microsoft.Azure.Cosmos.Table.EntityResolver&lt;'Result&gt; * Microsoft.Azure.Cosmos.Table.TableRequestOptions * Microsoft.Azure.Cosmos.Table.OperationContext -&gt; seq&lt;'Result&gt; (requires 'Element :&gt; Microsoft.Azure.Cosmos.Table.ITableEntity and 'Element : (new : unit -&gt; 'Element))&#xA;override this.ExecuteQuery : Microsoft.Azure.Cosmos.Table.TableQuery&lt;'Element (requires 'Element :&gt; Microsoft.Azure.Cosmos.Table.ITableEntity and 'Element : (new : unit -&gt; 'Element))&gt; * Microsoft.Azure.Cosmos.Table.EntityResolver&lt;'Result&gt; * Microsoft.Azure.Cosmos.Table.TableRequestOptions * Microsoft.Azure.Cosmos.Table.OperationContext -&gt; seq&lt;'Result&gt; (requires 'Element :&gt; Microsoft.Azure.Cosmos.Table.ITableEntity and 'Element : (new : unit -&gt; 'Element))" Usage="cloudTable.ExecuteQuery (query, resolver, requestOptions, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -1774,16 +1719,15 @@
       </Docs>
     </Member>
     <Member MemberName="ExecuteQuerySegmented">
-      <MemberSignature Language="C#" Value="public virtual Microsoft.Azure.Cosmos.Table.TableQuerySegment&lt;Microsoft.Azure.Cosmos.Table.DynamicTableEntity&gt; ExecuteQuerySegmented (Microsoft.Azure.Cosmos.Table.TableQuery query, Microsoft.Azure.Cosmos.Table.TableContinuationToken token, Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions = null, Microsoft.Azure.Cosmos.Table.OperationContext operationContext = null);" />
+      <MemberSignature Language="C#" Value="public virtual Microsoft.Azure.Cosmos.Table.TableQuerySegment&lt;Microsoft.Azure.Cosmos.Table.DynamicTableEntity&gt; ExecuteQuerySegmented (Microsoft.Azure.Cosmos.Table.TableQuery query, Microsoft.Azure.Cosmos.Table.TableContinuationToken token, Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions = default, Microsoft.Azure.Cosmos.Table.OperationContext operationContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Azure.Cosmos.Table.TableQuerySegment`1&lt;class Microsoft.Azure.Cosmos.Table.DynamicTableEntity&gt; ExecuteQuerySegmented(class Microsoft.Azure.Cosmos.Table.TableQuery query, class Microsoft.Azure.Cosmos.Table.TableContinuationToken token, class Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions, class Microsoft.Azure.Cosmos.Table.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Table.CloudTable.ExecuteQuerySegmented(Microsoft.Azure.Cosmos.Table.TableQuery,Microsoft.Azure.Cosmos.Table.TableContinuationToken,Microsoft.Azure.Cosmos.Table.TableRequestOptions,Microsoft.Azure.Cosmos.Table.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member ExecuteQuerySegmented : Microsoft.Azure.Cosmos.Table.TableQuery * Microsoft.Azure.Cosmos.Table.TableContinuationToken * Microsoft.Azure.Cosmos.Table.TableRequestOptions * Microsoft.Azure.Cosmos.Table.OperationContext -&gt; Microsoft.Azure.Cosmos.Table.TableQuerySegment&lt;Microsoft.Azure.Cosmos.Table.DynamicTableEntity&gt;&#xA;override this.ExecuteQuerySegmented : Microsoft.Azure.Cosmos.Table.TableQuery * Microsoft.Azure.Cosmos.Table.TableContinuationToken * Microsoft.Azure.Cosmos.Table.TableRequestOptions * Microsoft.Azure.Cosmos.Table.OperationContext -&gt; Microsoft.Azure.Cosmos.Table.TableQuerySegment&lt;Microsoft.Azure.Cosmos.Table.DynamicTableEntity&gt;" Usage="cloudTable.ExecuteQuerySegmented (query, token, requestOptions, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -1809,16 +1753,15 @@
       </Docs>
     </Member>
     <Member MemberName="ExecuteQuerySegmented&lt;TElement&gt;">
-      <MemberSignature Language="C#" Value="public virtual Microsoft.Azure.Cosmos.Table.TableQuerySegment&lt;TElement&gt; ExecuteQuerySegmented&lt;TElement&gt; (Microsoft.Azure.Cosmos.Table.TableQuery&lt;TElement&gt; query, Microsoft.Azure.Cosmos.Table.TableContinuationToken token, Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions = null, Microsoft.Azure.Cosmos.Table.OperationContext operationContext = null) where TElement : Microsoft.Azure.Cosmos.Table.ITableEntitynew();" />
+      <MemberSignature Language="C#" Value="public virtual Microsoft.Azure.Cosmos.Table.TableQuerySegment&lt;TElement&gt; ExecuteQuerySegmented&lt;TElement&gt; (Microsoft.Azure.Cosmos.Table.TableQuery&lt;TElement&gt; query, Microsoft.Azure.Cosmos.Table.TableContinuationToken token, Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions = default, Microsoft.Azure.Cosmos.Table.OperationContext operationContext = default) where TElement : Microsoft.Azure.Cosmos.Table.ITableEntitynew();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Azure.Cosmos.Table.TableQuerySegment`1&lt;!!TElement&gt; ExecuteQuerySegmented&lt;.ctor (class Microsoft.Azure.Cosmos.Table.ITableEntity) TElement&gt;(class Microsoft.Azure.Cosmos.Table.TableQuery`1&lt;!!TElement&gt; query, class Microsoft.Azure.Cosmos.Table.TableContinuationToken token, class Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions, class Microsoft.Azure.Cosmos.Table.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Table.CloudTable.ExecuteQuerySegmented``1(Microsoft.Azure.Cosmos.Table.TableQuery{``0},Microsoft.Azure.Cosmos.Table.TableContinuationToken,Microsoft.Azure.Cosmos.Table.TableRequestOptions,Microsoft.Azure.Cosmos.Table.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member ExecuteQuerySegmented : Microsoft.Azure.Cosmos.Table.TableQuery&lt;'Element (requires 'Element :&gt; Microsoft.Azure.Cosmos.Table.ITableEntity and 'Element : (new : unit -&gt; 'Element))&gt; * Microsoft.Azure.Cosmos.Table.TableContinuationToken * Microsoft.Azure.Cosmos.Table.TableRequestOptions * Microsoft.Azure.Cosmos.Table.OperationContext -&gt; Microsoft.Azure.Cosmos.Table.TableQuerySegment&lt;'Element (requires 'Element :&gt; Microsoft.Azure.Cosmos.Table.ITableEntity and 'Element : (new : unit -&gt; 'Element))&gt; (requires 'Element :&gt; Microsoft.Azure.Cosmos.Table.ITableEntity and 'Element : (new : unit -&gt; 'Element))&#xA;override this.ExecuteQuerySegmented : Microsoft.Azure.Cosmos.Table.TableQuery&lt;'Element (requires 'Element :&gt; Microsoft.Azure.Cosmos.Table.ITableEntity and 'Element : (new : unit -&gt; 'Element))&gt; * Microsoft.Azure.Cosmos.Table.TableContinuationToken * Microsoft.Azure.Cosmos.Table.TableRequestOptions * Microsoft.Azure.Cosmos.Table.OperationContext -&gt; Microsoft.Azure.Cosmos.Table.TableQuerySegment&lt;'Element (requires 'Element :&gt; Microsoft.Azure.Cosmos.Table.ITableEntity and 'Element : (new : unit -&gt; 'Element))&gt; (requires 'Element :&gt; Microsoft.Azure.Cosmos.Table.ITableEntity and 'Element : (new : unit -&gt; 'Element))" Usage="cloudTable.ExecuteQuerySegmented (query, token, requestOptions, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -1853,16 +1796,15 @@
       </Docs>
     </Member>
     <Member MemberName="ExecuteQuerySegmented&lt;TResult&gt;">
-      <MemberSignature Language="C#" Value="public virtual Microsoft.Azure.Cosmos.Table.TableQuerySegment&lt;TResult&gt; ExecuteQuerySegmented&lt;TResult&gt; (Microsoft.Azure.Cosmos.Table.TableQuery query, Microsoft.Azure.Cosmos.Table.EntityResolver&lt;TResult&gt; resolver, Microsoft.Azure.Cosmos.Table.TableContinuationToken token, Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions = null, Microsoft.Azure.Cosmos.Table.OperationContext operationContext = null);" />
+      <MemberSignature Language="C#" Value="public virtual Microsoft.Azure.Cosmos.Table.TableQuerySegment&lt;TResult&gt; ExecuteQuerySegmented&lt;TResult&gt; (Microsoft.Azure.Cosmos.Table.TableQuery query, Microsoft.Azure.Cosmos.Table.EntityResolver&lt;TResult&gt; resolver, Microsoft.Azure.Cosmos.Table.TableContinuationToken token, Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions = default, Microsoft.Azure.Cosmos.Table.OperationContext operationContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Azure.Cosmos.Table.TableQuerySegment`1&lt;!!TResult&gt; ExecuteQuerySegmented&lt;TResult&gt;(class Microsoft.Azure.Cosmos.Table.TableQuery query, class Microsoft.Azure.Cosmos.Table.EntityResolver`1&lt;!!TResult&gt; resolver, class Microsoft.Azure.Cosmos.Table.TableContinuationToken token, class Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions, class Microsoft.Azure.Cosmos.Table.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Table.CloudTable.ExecuteQuerySegmented``1(Microsoft.Azure.Cosmos.Table.TableQuery,Microsoft.Azure.Cosmos.Table.EntityResolver{``0},Microsoft.Azure.Cosmos.Table.TableContinuationToken,Microsoft.Azure.Cosmos.Table.TableRequestOptions,Microsoft.Azure.Cosmos.Table.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member ExecuteQuerySegmented : Microsoft.Azure.Cosmos.Table.TableQuery * Microsoft.Azure.Cosmos.Table.EntityResolver&lt;'Result&gt; * Microsoft.Azure.Cosmos.Table.TableContinuationToken * Microsoft.Azure.Cosmos.Table.TableRequestOptions * Microsoft.Azure.Cosmos.Table.OperationContext -&gt; Microsoft.Azure.Cosmos.Table.TableQuerySegment&lt;'Result&gt;&#xA;override this.ExecuteQuerySegmented : Microsoft.Azure.Cosmos.Table.TableQuery * Microsoft.Azure.Cosmos.Table.EntityResolver&lt;'Result&gt; * Microsoft.Azure.Cosmos.Table.TableContinuationToken * Microsoft.Azure.Cosmos.Table.TableRequestOptions * Microsoft.Azure.Cosmos.Table.OperationContext -&gt; Microsoft.Azure.Cosmos.Table.TableQuerySegment&lt;'Result&gt;" Usage="cloudTable.ExecuteQuerySegmented (query, resolver, token, requestOptions, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -1894,16 +1836,15 @@
       </Docs>
     </Member>
     <Member MemberName="ExecuteQuerySegmented&lt;TElement,TResult&gt;">
-      <MemberSignature Language="C#" Value="public virtual Microsoft.Azure.Cosmos.Table.TableQuerySegment&lt;TResult&gt; ExecuteQuerySegmented&lt;TElement,TResult&gt; (Microsoft.Azure.Cosmos.Table.TableQuery&lt;TElement&gt; query, Microsoft.Azure.Cosmos.Table.EntityResolver&lt;TResult&gt; resolver, Microsoft.Azure.Cosmos.Table.TableContinuationToken token, Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions = null, Microsoft.Azure.Cosmos.Table.OperationContext operationContext = null) where TElement : Microsoft.Azure.Cosmos.Table.ITableEntitynew();" />
+      <MemberSignature Language="C#" Value="public virtual Microsoft.Azure.Cosmos.Table.TableQuerySegment&lt;TResult&gt; ExecuteQuerySegmented&lt;TElement,TResult&gt; (Microsoft.Azure.Cosmos.Table.TableQuery&lt;TElement&gt; query, Microsoft.Azure.Cosmos.Table.EntityResolver&lt;TResult&gt; resolver, Microsoft.Azure.Cosmos.Table.TableContinuationToken token, Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions = default, Microsoft.Azure.Cosmos.Table.OperationContext operationContext = default) where TElement : Microsoft.Azure.Cosmos.Table.ITableEntitynew();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Azure.Cosmos.Table.TableQuerySegment`1&lt;!!TResult&gt; ExecuteQuerySegmented&lt;.ctor (class Microsoft.Azure.Cosmos.Table.ITableEntity) TElement, TResult&gt;(class Microsoft.Azure.Cosmos.Table.TableQuery`1&lt;!!TElement&gt; query, class Microsoft.Azure.Cosmos.Table.EntityResolver`1&lt;!!TResult&gt; resolver, class Microsoft.Azure.Cosmos.Table.TableContinuationToken token, class Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions, class Microsoft.Azure.Cosmos.Table.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Table.CloudTable.ExecuteQuerySegmented``2(Microsoft.Azure.Cosmos.Table.TableQuery{``0},Microsoft.Azure.Cosmos.Table.EntityResolver{``1},Microsoft.Azure.Cosmos.Table.TableContinuationToken,Microsoft.Azure.Cosmos.Table.TableRequestOptions,Microsoft.Azure.Cosmos.Table.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member ExecuteQuerySegmented : Microsoft.Azure.Cosmos.Table.TableQuery&lt;'Element (requires 'Element :&gt; Microsoft.Azure.Cosmos.Table.ITableEntity and 'Element : (new : unit -&gt; 'Element))&gt; * Microsoft.Azure.Cosmos.Table.EntityResolver&lt;'Result&gt; * Microsoft.Azure.Cosmos.Table.TableContinuationToken * Microsoft.Azure.Cosmos.Table.TableRequestOptions * Microsoft.Azure.Cosmos.Table.OperationContext -&gt; Microsoft.Azure.Cosmos.Table.TableQuerySegment&lt;'Result&gt; (requires 'Element :&gt; Microsoft.Azure.Cosmos.Table.ITableEntity and 'Element : (new : unit -&gt; 'Element))&#xA;override this.ExecuteQuerySegmented : Microsoft.Azure.Cosmos.Table.TableQuery&lt;'Element (requires 'Element :&gt; Microsoft.Azure.Cosmos.Table.ITableEntity and 'Element : (new : unit -&gt; 'Element))&gt; * Microsoft.Azure.Cosmos.Table.EntityResolver&lt;'Result&gt; * Microsoft.Azure.Cosmos.Table.TableContinuationToken * Microsoft.Azure.Cosmos.Table.TableRequestOptions * Microsoft.Azure.Cosmos.Table.OperationContext -&gt; Microsoft.Azure.Cosmos.Table.TableQuerySegment&lt;'Result&gt; (requires 'Element :&gt; Microsoft.Azure.Cosmos.Table.ITableEntity and 'Element : (new : unit -&gt; 'Element))" Usage="cloudTable.ExecuteQuerySegmented (query, resolver, token, requestOptions, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -1950,9 +1891,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -1981,9 +1921,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -2014,9 +1953,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -2049,9 +1987,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -2087,9 +2024,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -2127,9 +2063,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -2169,9 +2104,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -2213,9 +2147,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -2260,9 +2193,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -2297,9 +2229,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -2336,9 +2267,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -2377,9 +2307,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -2421,9 +2350,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -2465,9 +2393,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -2511,9 +2438,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -2559,9 +2485,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -2602,16 +2527,15 @@
       </Docs>
     </Member>
     <Member MemberName="Exists">
-      <MemberSignature Language="C#" Value="public bool Exists (Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions = null, Microsoft.Azure.Cosmos.Table.OperationContext operationContext = null);" />
+      <MemberSignature Language="C#" Value="public bool Exists (Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions = default, Microsoft.Azure.Cosmos.Table.OperationContext operationContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Exists(class Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions, class Microsoft.Azure.Cosmos.Table.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Table.CloudTable.Exists(Microsoft.Azure.Cosmos.Table.TableRequestOptions,Microsoft.Azure.Cosmos.Table.OperationContext)" />
       <MemberSignature Language="F#" Value="member this.Exists : Microsoft.Azure.Cosmos.Table.TableRequestOptions * Microsoft.Azure.Cosmos.Table.OperationContext -&gt; bool" Usage="cloudTable.Exists (requestOptions, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -2641,9 +2565,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -2667,9 +2590,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -2696,9 +2618,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -2727,9 +2648,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -2753,16 +2673,15 @@
       </Docs>
     </Member>
     <Member MemberName="GetPermissions">
-      <MemberSignature Language="C#" Value="public virtual Microsoft.Azure.Cosmos.Table.TablePermissions GetPermissions (Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions = null, Microsoft.Azure.Cosmos.Table.OperationContext operationContext = null);" />
+      <MemberSignature Language="C#" Value="public virtual Microsoft.Azure.Cosmos.Table.TablePermissions GetPermissions (Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions = default, Microsoft.Azure.Cosmos.Table.OperationContext operationContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Azure.Cosmos.Table.TablePermissions GetPermissions(class Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions, class Microsoft.Azure.Cosmos.Table.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Table.CloudTable.GetPermissions(Microsoft.Azure.Cosmos.Table.TableRequestOptions,Microsoft.Azure.Cosmos.Table.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member GetPermissions : Microsoft.Azure.Cosmos.Table.TableRequestOptions * Microsoft.Azure.Cosmos.Table.OperationContext -&gt; Microsoft.Azure.Cosmos.Table.TablePermissions&#xA;override this.GetPermissions : Microsoft.Azure.Cosmos.Table.TableRequestOptions * Microsoft.Azure.Cosmos.Table.OperationContext -&gt; Microsoft.Azure.Cosmos.Table.TablePermissions" Usage="cloudTable.GetPermissions (requestOptions, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -2792,9 +2711,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -2818,9 +2736,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -2847,9 +2764,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -2878,9 +2794,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -2912,9 +2827,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -2942,9 +2856,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -2974,9 +2887,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -3013,9 +2925,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -3057,9 +2968,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -3083,9 +2993,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -3101,16 +3010,15 @@
       </Docs>
     </Member>
     <Member MemberName="SetPermissions">
-      <MemberSignature Language="C#" Value="public virtual void SetPermissions (Microsoft.Azure.Cosmos.Table.TablePermissions permissions, Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions = null, Microsoft.Azure.Cosmos.Table.OperationContext operationContext = null);" />
+      <MemberSignature Language="C#" Value="public virtual void SetPermissions (Microsoft.Azure.Cosmos.Table.TablePermissions permissions, Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions = default, Microsoft.Azure.Cosmos.Table.OperationContext operationContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetPermissions(class Microsoft.Azure.Cosmos.Table.TablePermissions permissions, class Microsoft.Azure.Cosmos.Table.TableRequestOptions requestOptions, class Microsoft.Azure.Cosmos.Table.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Table.CloudTable.SetPermissions(Microsoft.Azure.Cosmos.Table.TablePermissions,Microsoft.Azure.Cosmos.Table.TableRequestOptions,Microsoft.Azure.Cosmos.Table.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member SetPermissions : Microsoft.Azure.Cosmos.Table.TablePermissions * Microsoft.Azure.Cosmos.Table.TableRequestOptions * Microsoft.Azure.Cosmos.Table.OperationContext -&gt; unit&#xA;override this.SetPermissions : Microsoft.Azure.Cosmos.Table.TablePermissions * Microsoft.Azure.Cosmos.Table.TableRequestOptions * Microsoft.Azure.Cosmos.Table.OperationContext -&gt; unit" Usage="cloudTable.SetPermissions (permissions, requestOptions, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -3141,9 +3049,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -3170,9 +3077,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -3201,9 +3107,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -3234,9 +3139,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -3270,9 +3174,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -3296,9 +3199,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>
@@ -3323,9 +3225,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table</AssemblyName>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <AssemblyVersion>1.0.4.0</AssemblyVersion>
         <AssemblyVersion>1.0.5.0</AssemblyVersion>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Table.Client</AssemblyName>

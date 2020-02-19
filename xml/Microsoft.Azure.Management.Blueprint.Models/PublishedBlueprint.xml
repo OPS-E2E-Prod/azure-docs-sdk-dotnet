@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
     <AssemblyVersion>0.10.0.0</AssemblyVersion>
     <AssemblyVersion>0.14.0.0</AssemblyVersion>
+    <AssemblyVersion>0.20.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.Blueprint.Models.AzureResourceBase</BaseTypeName>
@@ -20,7 +21,7 @@
   </Attributes>
   <Docs>
     <summary>
-            Represents a published Blueprint.
+            Represents a published blueprint.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -35,6 +36,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -45,7 +47,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PublishedBlueprint (string id = null, string type = null, string name = null, string displayName = null, string description = null, Microsoft.Azure.Management.Blueprint.Models.BlueprintStatus status = null, string targetScope = null, System.Collections.Generic.IDictionary&lt;string,Microsoft.Azure.Management.Blueprint.Models.ParameterDefinition&gt; parameters = null, System.Collections.Generic.IDictionary&lt;string,Microsoft.Azure.Management.Blueprint.Models.ResourceGroupDefinition&gt; resourceGroups = null, string blueprintName = null, string changeNotes = null);" />
+      <MemberSignature Language="C#" Value="public PublishedBlueprint (string id = default, string type = default, string name = default, string displayName = default, string description = default, Microsoft.Azure.Management.Blueprint.Models.BlueprintStatus status = default, string targetScope = default, System.Collections.Generic.IDictionary&lt;string,Microsoft.Azure.Management.Blueprint.Models.ParameterDefinition&gt; parameters = default, System.Collections.Generic.IDictionary&lt;string,Microsoft.Azure.Management.Blueprint.Models.ResourceGroupDefinition&gt; resourceGroups = default, string blueprintName = default, string changeNotes = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string type, string name, string displayName, string description, class Microsoft.Azure.Management.Blueprint.Models.BlueprintStatus status, string targetScope, class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.Azure.Management.Blueprint.Models.ParameterDefinition&gt; parameters, class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.Azure.Management.Blueprint.Models.ResourceGroupDefinition&gt; resourceGroups, string blueprintName, string changeNotes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Blueprint.Models.PublishedBlueprint.#ctor(System.String,System.String,System.String,System.String,System.String,Microsoft.Azure.Management.Blueprint.Models.BlueprintStatus,System.String,System.Collections.Generic.IDictionary{System.String,Microsoft.Azure.Management.Blueprint.Models.ParameterDefinition},System.Collections.Generic.IDictionary{System.String,Microsoft.Azure.Management.Blueprint.Models.ResourceGroupDefinition},System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional type As String = null, Optional name As String = null, Optional displayName As String = null, Optional description As String = null, Optional status As BlueprintStatus = null, Optional targetScope As String = null, Optional parameters As IDictionary(Of String, ParameterDefinition) = null, Optional resourceGroups As IDictionary(Of String, ResourceGroupDefinition) = null, Optional blueprintName As String = null, Optional changeNotes As String = null)" />
@@ -55,6 +57,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
@@ -77,18 +80,18 @@
         <param name="displayName">One-liner string explain this
             resource.</param>
         <param name="description">Multi-line explain this resource.</param>
-        <param name="status">Status of the Blueprint. This field is
+        <param name="status">Status of the blueprint. This field is
             readonly.</param>
-        <param name="targetScope">The scope where this Blueprint can be
-            applied. Possible values include: 'subscription',
+        <param name="targetScope">The scope where this blueprint definition
+            can be assigned. Possible values include: 'subscription',
             'managementGroup'</param>
-        <param name="parameters">Parameters required by this Blueprint
+        <param name="parameters">Parameters required by this blueprint
             definition.</param>
         <param name="resourceGroups">Resource group placeholders defined by
-            this Blueprint definition.</param>
-        <param name="blueprintName">Name of the Blueprint
+            this blueprint definition.</param>
+        <param name="blueprintName">Name of the published blueprint
             definition.</param>
-        <param name="changeNotes">Version-specific change notes</param>
+        <param name="changeNotes">Version-specific change notes.</param>
         <summary>
             Initializes a new instance of the PublishedBlueprint class.
             </summary>
@@ -106,6 +109,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -117,7 +121,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets name of the Blueprint definition.
+            Gets or sets name of the published blueprint definition.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -134,6 +138,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -145,7 +150,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets version-specific change notes
+            Gets or sets version-specific change notes.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -162,6 +167,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -190,6 +196,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -218,6 +225,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -229,7 +237,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets parameters required by this Blueprint definition.
+            Gets or sets parameters required by this blueprint definition.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -246,6 +254,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -257,7 +266,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets resource group placeholders defined by this Blueprint
+            Gets or sets resource group placeholders defined by this blueprint
             definition.
             </summary>
         <value>To be added.</value>
@@ -275,6 +284,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -286,7 +296,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets status of the Blueprint. This field is readonly.
+            Gets status of the blueprint. This field is readonly.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -303,6 +313,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -314,8 +325,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the scope where this Blueprint can be applied.
-            Possible values include: 'subscription', 'managementGroup'
+            Gets or sets the scope where this blueprint definition can be
+            assigned. Possible values include: 'subscription',
+            'managementGroup'
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -332,6 +344,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

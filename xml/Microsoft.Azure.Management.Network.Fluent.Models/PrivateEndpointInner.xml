@@ -6,8 +6,10 @@
   <TypeSignature Language="F#" Value="type PrivateEndpointInner = class&#xA;    inherit Resource" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
     <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.ResourceManager.Fluent.Resource</BaseTypeName>
@@ -33,8 +35,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -45,16 +49,15 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PrivateEndpointInner (string location = null, string id = null, string name = null, string type = null, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = null, Microsoft.Azure.Management.ResourceManager.Fluent.SubResource subnet = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Fluent.Models.NetworkInterfaceInner&gt; networkInterfaces = null, string provisioningState = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Fluent.Models.PrivateLinkServiceConnectionInner&gt; privateLinkServiceConnections = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Fluent.Models.PrivateLinkServiceConnectionInner&gt; manualPrivateLinkServiceConnections = null, string etag = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string location, string id, string name, string type, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, class Microsoft.Azure.Management.ResourceManager.Fluent.SubResource subnet, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Network.Fluent.Models.NetworkInterfaceInner&gt; networkInterfaces, string provisioningState, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Network.Fluent.Models.PrivateLinkServiceConnectionInner&gt; privateLinkServiceConnections, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Network.Fluent.Models.PrivateLinkServiceConnectionInner&gt; manualPrivateLinkServiceConnections, string etag) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.Models.PrivateEndpointInner.#ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},Microsoft.Azure.Management.ResourceManager.Fluent.SubResource,System.Collections.Generic.IList{Microsoft.Azure.Management.Network.Fluent.Models.NetworkInterfaceInner},System.String,System.Collections.Generic.IList{Microsoft.Azure.Management.Network.Fluent.Models.PrivateLinkServiceConnectionInner},System.Collections.Generic.IList{Microsoft.Azure.Management.Network.Fluent.Models.PrivateLinkServiceConnectionInner},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional location As String = null, Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional tags As IDictionary(Of String, String) = null, Optional subnet As SubResource = null, Optional networkInterfaces As IList(Of NetworkInterfaceInner) = null, Optional provisioningState As String = null, Optional privateLinkServiceConnections As IList(Of PrivateLinkServiceConnectionInner) = null, Optional manualPrivateLinkServiceConnections As IList(Of PrivateLinkServiceConnectionInner) = null, Optional etag As String = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Network.Fluent.Models.PrivateEndpointInner : string * string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * Microsoft.Azure.Management.ResourceManager.Fluent.SubResource * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Fluent.Models.NetworkInterfaceInner&gt; * string * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Fluent.Models.PrivateLinkServiceConnectionInner&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Fluent.Models.PrivateLinkServiceConnectionInner&gt; * string -&gt; Microsoft.Azure.Management.Network.Fluent.Models.PrivateEndpointInner" Usage="new Microsoft.Azure.Management.Network.Fluent.Models.PrivateEndpointInner (location, id, name, type, tags, subnet, networkInterfaces, provisioningState, privateLinkServiceConnections, manualPrivateLinkServiceConnections, etag)" />
+      <MemberSignature Language="C#" Value="public PrivateEndpointInner (string location = default, string id = default, string name = default, string type = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Microsoft.Azure.Management.ResourceManager.Fluent.SubResource subnet = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Fluent.Models.NetworkInterfaceInner&gt; networkInterfaces = default, Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState provisioningState = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Fluent.Models.PrivateLinkServiceConnectionInner&gt; privateLinkServiceConnections = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Fluent.Models.PrivateLinkServiceConnectionInner&gt; manualPrivateLinkServiceConnections = default, string etag = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string location, string id, string name, string type, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, class Microsoft.Azure.Management.ResourceManager.Fluent.SubResource subnet, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Network.Fluent.Models.NetworkInterfaceInner&gt; networkInterfaces, class Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState provisioningState, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Network.Fluent.Models.PrivateLinkServiceConnectionInner&gt; privateLinkServiceConnections, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Network.Fluent.Models.PrivateLinkServiceConnectionInner&gt; manualPrivateLinkServiceConnections, string etag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.Models.PrivateEndpointInner.#ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},Microsoft.Azure.Management.ResourceManager.Fluent.SubResource,System.Collections.Generic.IList{Microsoft.Azure.Management.Network.Fluent.Models.NetworkInterfaceInner},Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState,System.Collections.Generic.IList{Microsoft.Azure.Management.Network.Fluent.Models.PrivateLinkServiceConnectionInner},System.Collections.Generic.IList{Microsoft.Azure.Management.Network.Fluent.Models.PrivateLinkServiceConnectionInner},System.String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Network.Fluent.Models.PrivateEndpointInner : string * string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * Microsoft.Azure.Management.ResourceManager.Fluent.SubResource * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Fluent.Models.NetworkInterfaceInner&gt; * Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Fluent.Models.PrivateLinkServiceConnectionInner&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Fluent.Models.PrivateLinkServiceConnectionInner&gt; * string -&gt; Microsoft.Azure.Management.Network.Fluent.Models.PrivateEndpointInner" Usage="new Microsoft.Azure.Management.Network.Fluent.Models.PrivateEndpointInner (location, id, name, type, tags, subnet, networkInterfaces, provisioningState, privateLinkServiceConnections, manualPrivateLinkServiceConnections, etag)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
-        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="location" Type="System.String" />
@@ -64,7 +67,7 @@
         <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
         <Parameter Name="subnet" Type="Microsoft.Azure.Management.ResourceManager.Fluent.SubResource" />
         <Parameter Name="networkInterfaces" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Fluent.Models.NetworkInterfaceInner&gt;" />
-        <Parameter Name="provisioningState" Type="System.String" />
+        <Parameter Name="provisioningState" Type="Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState" />
         <Parameter Name="privateLinkServiceConnections" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Fluent.Models.PrivateLinkServiceConnectionInner&gt;" />
         <Parameter Name="manualPrivateLinkServiceConnections" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Fluent.Models.PrivateLinkServiceConnectionInner&gt;" />
         <Parameter Name="etag" Type="System.String" />
@@ -77,19 +80,19 @@
         <param name="tags">To be added.</param>
         <param name="subnet">The ID of the subnet from which the private IP
             will be allocated.</param>
-        <param name="networkInterfaces">Gets an array of references to the
+        <param name="networkInterfaces">An array of references to the
             network interfaces created for this private endpoint.</param>
         <param name="provisioningState">The provisioning state of the
-            private endpoint. Possible values are: 'Updating', 'Deleting', and
-            'Failed'.</param>
+            private endpoint resource. Possible values include: 'Succeeded',
+            'Updating', 'Deleting', 'Failed'</param>
         <param name="privateLinkServiceConnections">A grouping of
             information about the connection to the remote resource.</param>
         <param name="manualPrivateLinkServiceConnections">A grouping of
             information about the connection to the remote resource. Used when
             the network admin does not have access to approve connections to
             the remote resource.</param>
-        <param name="etag">Gets a unique read-only string that changes
-            whenever the resource is updated.</param>
+        <param name="etag">A unique read-only string that changes whenever
+            the resource is updated.</param>
         <summary>
             Initializes a new instance of the PrivateEndpointInner class.
             </summary>
@@ -97,16 +100,18 @@
       </Docs>
     </Member>
     <Member MemberName="Etag">
-      <MemberSignature Language="C#" Value="public string Etag { get; set; }" />
+      <MemberSignature Language="C#" Value="public string Etag { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Etag" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Fluent.Models.PrivateEndpointInner.Etag" />
-      <MemberSignature Language="VB.NET" Value="Public Property Etag As String" />
-      <MemberSignature Language="F#" Value="member this.Etag : string with get, set" Usage="Microsoft.Azure.Management.Network.Fluent.Models.PrivateEndpointInner.Etag" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Etag As String" />
+      <MemberSignature Language="F#" Value="member this.Etag : string" Usage="Microsoft.Azure.Management.Network.Fluent.Models.PrivateEndpointInner.Etag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -134,8 +139,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -164,8 +171,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -193,8 +202,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -214,16 +225,18 @@
       </Docs>
     </Member>
     <Member MemberName="ProvisioningState">
-      <MemberSignature Language="C#" Value="public string ProvisioningState { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string ProvisioningState" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState ProvisioningState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState ProvisioningState" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Fluent.Models.PrivateEndpointInner.ProvisioningState" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProvisioningState As String" />
-      <MemberSignature Language="F#" Value="member this.ProvisioningState : string" Usage="Microsoft.Azure.Management.Network.Fluent.Models.PrivateEndpointInner.ProvisioningState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProvisioningState As ProvisioningState" />
+      <MemberSignature Language="F#" Value="member this.ProvisioningState : Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState" Usage="Microsoft.Azure.Management.Network.Fluent.Models.PrivateEndpointInner.ProvisioningState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -231,12 +244,13 @@
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets the provisioning state of the private endpoint. Possible
-            values are: 'Updating', 'Deleting', and 'Failed'.
+            Gets the provisioning state of the private endpoint resource.
+            Possible values include: 'Succeeded', 'Updating', 'Deleting',
+            'Failed'
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -251,8 +265,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -280,8 +296,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
         <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

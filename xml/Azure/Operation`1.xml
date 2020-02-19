@@ -7,6 +7,8 @@
   <AssemblyInfo>
     <AssemblyName>Azure.Core</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -16,9 +18,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">The final result of the LRO.</typeparam>
+    <typeparam name="T">The final result of the long-running operation.</typeparam>
     <summary>
-            Represents a long running operation (LRO).
+            Represents a long-running operation.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -32,6 +34,8 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -49,12 +53,11 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -82,12 +85,11 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -116,6 +118,8 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response</ReturnType>
@@ -143,13 +147,15 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Returns true if the LRO completed.
+            Returns true if the long-running operation completed.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -165,13 +171,15 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Returns true if the LRO completed successfully and has produced final result (accessible by Value property).
+            Returns true if the long-running operation completed successfully and has produced final result (accessible by Value property).
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -186,7 +194,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -194,7 +203,7 @@
       <Docs>
         <summary>
             Gets an ID representing the operation that can be used to poll for
-            the status of the LRO.
+            the status of the long-running operation.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -215,14 +224,9 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Polling interval used by WaitCompletionAsync method.
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>
-            The interval can change based on information returned from the server.
-            For example, the server might communicate to the client that there is not reason to poll for status change sooner than some time.
-            </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetRawResponse">
@@ -257,12 +261,11 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -278,7 +281,7 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateStatus">
-      <MemberSignature Language="C#" Value="public abstract Azure.Response UpdateStatus (System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public abstract Azure.Response UpdateStatus (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response UpdateStatus(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Operation`1.UpdateStatus(System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member UpdateStatus : System.Threading.CancellationToken -&gt; Azure.Response" Usage="operation.UpdateStatus cancellationToken" />
@@ -286,6 +289,8 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response</ReturnType>
@@ -297,7 +302,7 @@
         <param name="cancellationToken">
         </param>
         <summary>
-            Calls the server to get updated status of the LRO.
+            Calls the server to get updated status of the long-running operation.
             </summary>
         <returns />
         <remarks>
@@ -306,7 +311,7 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateStatusAsync">
-      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.ValueTask&lt;Azure.Response&gt; UpdateStatusAsync (System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.ValueTask&lt;Azure.Response&gt; UpdateStatusAsync (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;class Azure.Response&gt; UpdateStatusAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Operation`1.UpdateStatusAsync(System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member UpdateStatusAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;Azure.Response&gt;" Usage="operation.UpdateStatusAsync cancellationToken" />
@@ -314,6 +319,8 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ValueTask&lt;Azure.Response&gt;</ReturnType>
@@ -325,7 +332,7 @@
         <param name="cancellationToken">
         </param>
         <summary>
-            Calls the server to get updated status of the LRO.
+            Calls the server to get updated status of the long-running operation.
             </summary>
         <returns />
         <remarks>
@@ -346,13 +353,15 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Final result of the LRO.
+            Final result of the long-running operation.
             </summary>
         <value>To be added.</value>
         <remarks>
@@ -361,7 +370,7 @@
       </Docs>
     </Member>
     <Member MemberName="WaitCompletionAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.ValueTask&lt;Azure.Response&lt;T&gt;&gt; WaitCompletionAsync (System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.ValueTask&lt;Azure.Response&lt;T&gt;&gt; WaitCompletionAsync (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;valuetype Azure.Response`1&lt;!T&gt;&gt; WaitCompletionAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Operation`1.WaitCompletionAsync(System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member WaitCompletionAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;Azure.Response&lt;'T&gt;&gt;&#xA;override this.WaitCompletionAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;Azure.Response&lt;'T&gt;&gt;" Usage="operation.WaitCompletionAsync cancellationToken" />
@@ -382,26 +391,22 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="0" FrameworkAlternate="azure-dotnet" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken">
-        </param>
-        <summary>
-            Periodically calls the server till the LRO completes.
-            </summary>
-        <returns />
-        <remarks>
-            This method will periodically call UpdateStatusAsync till HasCompleted is true, then return the final result of the operation.
-            </remarks>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WaitForCompletionAsync">
-      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.ValueTask&lt;Azure.Response&lt;T&gt;&gt; WaitForCompletionAsync (System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.ValueTask&lt;Azure.Response&lt;T&gt;&gt; WaitForCompletionAsync (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;class Azure.Response`1&lt;!T&gt;&gt; WaitForCompletionAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Operation`1.WaitForCompletionAsync(System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member WaitForCompletionAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;Azure.Response&lt;'T&gt;&gt;" Usage="operation.WaitForCompletionAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ValueTask&lt;Azure.Response&lt;T&gt;&gt;</ReturnType>
@@ -413,7 +418,7 @@
         <param name="cancellationToken">
         </param>
         <summary>
-            Periodically calls the server till the LRO completes.
+            Periodically calls the server till the long-running operation completes.
             </summary>
         <returns />
         <remarks>
@@ -429,7 +434,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ValueTask&lt;Azure.Response&lt;T&gt;&gt;</ReturnType>
@@ -447,7 +453,7 @@
         <param name="cancellationToken">
         </param>
         <summary>
-            Periodically calls the server till the LRO completes.
+            Periodically calls the server till the long-running operation completes.
             </summary>
         <returns />
         <remarks>

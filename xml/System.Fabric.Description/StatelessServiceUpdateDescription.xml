@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type StatelessServiceUpdateDescription = class&#xA;    inherit ServiceUpdateDescription" />
   <AssemblyInfo>
     <AssemblyName>System.Fabric</AssemblyName>
-    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Fabric.Description.ServiceUpdateDescription</BaseTypeName>
@@ -30,7 +30,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,6 +43,33 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="InstanceCloseDelayDuration">
+      <MemberSignature Language="C#" Value="public Nullable&lt;TimeSpan&gt; InstanceCloseDelayDuration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; InstanceCloseDelayDuration" />
+      <MemberSignature Language="DocId" Value="P:System.Fabric.Description.StatelessServiceUpdateDescription.InstanceCloseDelayDuration" />
+      <MemberSignature Language="VB.NET" Value="Public Property InstanceCloseDelayDuration As Nullable(Of TimeSpan)" />
+      <MemberSignature Language="F#" Value="member this.InstanceCloseDelayDuration : Nullable&lt;TimeSpan&gt; with get, set" Usage="System.Fabric.Description.StatelessServiceUpdateDescription.InstanceCloseDelayDuration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Fabric</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.TimeSpan&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <para>Gets or sets the InstanceCloseDelayDuration</para>
+        </summary>
+        <value>
+          <para>The duration for which the graceful close of a stateless instance is delayed. This would be effective when the instance is closing during the application/cluster upgrade and disabling node.
+            The endpoint exposed on this instance is removed prior to starting the delay, which prevents new connections to this instance.</para>
+        </value>
+        <remarks>
+          <para>See <see cref="P:System.Fabric.Description.StatelessServiceDescription.InstanceCloseDelayDuration" /></para>
+        </remarks>
+      </Docs>
+    </Member>
     <Member MemberName="InstanceCount">
       <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; InstanceCount { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; InstanceCount" />
@@ -52,7 +79,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
@@ -66,6 +93,58 @@
         </value>
         <remarks>
           <para>See <see cref="P:System.Fabric.Description.StatelessServiceDescription.InstanceCount" /></para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinInstanceCount">
+      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; MinInstanceCount { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; MinInstanceCount" />
+      <MemberSignature Language="DocId" Value="P:System.Fabric.Description.StatelessServiceUpdateDescription.MinInstanceCount" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinInstanceCount As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.MinInstanceCount : Nullable&lt;int&gt; with get, set" Usage="System.Fabric.Description.StatelessServiceUpdateDescription.MinInstanceCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Fabric</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <para>Gets or sets the minimum instance count. </para>
+        </summary>
+        <value>
+          <para>The minimum instance count</para>
+        </value>
+        <remarks>
+          <para>See <see cref="P:System.Fabric.Description.StatelessServiceDescription.MinInstanceCount" /></para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinInstancePercentage">
+      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; MinInstancePercentage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; MinInstancePercentage" />
+      <MemberSignature Language="DocId" Value="P:System.Fabric.Description.StatelessServiceUpdateDescription.MinInstancePercentage" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinInstancePercentage As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.MinInstancePercentage : Nullable&lt;int&gt; with get, set" Usage="System.Fabric.Description.StatelessServiceUpdateDescription.MinInstancePercentage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Fabric</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <para>Gets or sets the minimum instance percentage. </para>
+        </summary>
+        <value>
+          <para>The minimum instance percentage</para>
+        </value>
+        <remarks>
+          <para>See <see cref="P:System.Fabric.Description.StatelessServiceDescription.MinInstancePercentage" /></para>
         </remarks>
       </Docs>
     </Member>
