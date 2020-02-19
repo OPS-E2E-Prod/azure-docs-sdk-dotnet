@@ -1,4 +1,4 @@
-﻿<Type Name="ISqlServerDnsAliasOperations" FullName="Microsoft.Azure.Management.Sql.Fluent.ISqlServerDnsAliasOperations">
+<Type Name="ISqlServerDnsAliasOperations" FullName="Microsoft.Azure.Management.Sql.Fluent.ISqlServerDnsAliasOperations">
   <TypeSignature Language="C#" Value="public interface ISqlServerDnsAliasOperations : Microsoft.Azure.Management.ResourceManager.Fluent.Core.CollectionActions.ISupportsCreating&lt;Microsoft.Azure.Management.Sql.Fluent.SqlServerDnsAliasOperations.Definition.IWithSqlServer&gt;, Microsoft.Azure.Management.ResourceManager.Fluent.Core.IBeta, Microsoft.Azure.Management.Sql.Fluent.ISqlChildrenOperations&lt;Microsoft.Azure.Management.Sql.Fluent.ISqlServerDnsAlias&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISqlServerDnsAliasOperations implements class Microsoft.Azure.Management.ResourceManager.Fluent.Core.CollectionActions.ISupportsCreating`1&lt;class Microsoft.Azure.Management.Sql.Fluent.SqlServerDnsAliasOperations.Definition.IWithSqlServer&gt;, class Microsoft.Azure.Management.ResourceManager.Fluent.Core.IBeta, class Microsoft.Azure.Management.Sql.Fluent.ISqlChildrenOperations`1&lt;class Microsoft.Azure.Management.Sql.Fluent.ISqlServerDnsAlias&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Sql.Fluent.ISqlServerDnsAliasOperations" />
@@ -6,7 +6,10 @@
   <TypeSignature Language="F#" Value="type ISqlServerDnsAliasOperations = interface&#xA;    interface IBeta&#xA;    interface ISupportsCreating&lt;IWithSqlServer&gt;&#xA;    interface ISqlChildrenOperations&lt;ISqlServerDnsAlias&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -35,7 +38,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -64,7 +70,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -87,14 +96,17 @@
       </Docs>
     </Member>
     <Member MemberName="AcquireAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task AcquireAsync (string dnsAliasName, string oldSqlServerId, string newSqlServerId, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task AcquireAsync (string dnsAliasName, string oldSqlServerId, string newSqlServerId, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task AcquireAsync(string dnsAliasName, string oldSqlServerId, string newSqlServerId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Fluent.ISqlServerDnsAliasOperations.AcquireAsync(System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member AcquireAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="iSqlServerDnsAliasOperations.AcquireAsync (dnsAliasName, oldSqlServerId, newSqlServerId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -119,14 +131,17 @@
       </Docs>
     </Member>
     <Member MemberName="AcquireAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task AcquireAsync (string resourceGroupName, string serverName, string dnsAliasName, string sqlServerId, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task AcquireAsync (string resourceGroupName, string serverName, string dnsAliasName, string sqlServerId, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task AcquireAsync(string resourceGroupName, string serverName, string dnsAliasName, string sqlServerId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Fluent.ISqlServerDnsAliasOperations.AcquireAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member AcquireAsync : string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="iSqlServerDnsAliasOperations.AcquireAsync (resourceGroupName, serverName, dnsAliasName, sqlServerId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>

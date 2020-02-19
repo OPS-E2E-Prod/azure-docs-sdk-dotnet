@@ -1,4 +1,4 @@
-﻿<Type Name="OperationsExtensions" FullName="Microsoft.Azure.Management.Monitor.OperationsExtensions">
+<Type Name="OperationsExtensions" FullName="Microsoft.Azure.Management.Monitor.OperationsExtensions">
   <TypeSignature Language="C#" Value="public static class OperationsExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit OperationsExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Monitor.OperationsExtensions" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type OperationsExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-    <AssemblyVersion>0.22.0.0</AssemblyVersion>
+    <AssemblyVersion>0.24.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,7 +28,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.22.0.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Monitor.Models.OperationListResult</ReturnType>
@@ -48,15 +48,20 @@
       </Docs>
     </Member>
     <Member MemberName="ListAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Monitor.Models.OperationListResult&gt; ListAsync (this Microsoft.Azure.Management.Monitor.IOperations operations, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Monitor.Models.OperationListResult&gt; ListAsync (this Microsoft.Azure.Management.Monitor.IOperations operations, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Monitor.Models.OperationListResult&gt; ListAsync(class Microsoft.Azure.Management.Monitor.IOperations operations, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Monitor.OperationsExtensions.ListAsync(Microsoft.Azure.Management.Monitor.IOperations,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListAsync : Microsoft.Azure.Management.Monitor.IOperations * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Monitor.Models.OperationListResult&gt;" Usage="Microsoft.Azure.Management.Monitor.OperationsExtensions.ListAsync (operations, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.22.0.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Monitor.Models.OperationListResult&gt;</ReturnType>
       </ReturnValue>

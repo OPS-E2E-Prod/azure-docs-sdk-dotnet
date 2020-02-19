@@ -1,4 +1,4 @@
-﻿<Type Name="StatelessServiceType" FullName="System.Fabric.Management.ServiceModel.StatelessServiceType">
+<Type Name="StatelessServiceType" FullName="System.Fabric.Management.ServiceModel.StatelessServiceType">
   <TypeSignature Language="C#" Value="public class StatelessServiceType : System.Fabric.Management.ServiceModel.ServiceType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StatelessServiceType extends System.Fabric.Management.ServiceModel.ServiceType" />
   <TypeSignature Language="DocId" Value="T:System.Fabric.Management.ServiceModel.StatelessServiceType" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type StatelessServiceType = class&#xA;    inherit ServiceType" />
   <AssemblyInfo>
     <AssemblyName>System.Fabric.Management.ServiceModel</AssemblyName>
-    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Fabric.Management.ServiceModel.ServiceType</BaseTypeName>
@@ -39,11 +39,39 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric.Management.ServiceModel</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstanceCloseDelayDurationSeconds">
+      <MemberSignature Language="C#" Value="public string InstanceCloseDelayDurationSeconds { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InstanceCloseDelayDurationSeconds" />
+      <MemberSignature Language="DocId" Value="P:System.Fabric.Management.ServiceModel.StatelessServiceType.InstanceCloseDelayDurationSeconds" />
+      <MemberSignature Language="VB.NET" Value="Public Property InstanceCloseDelayDurationSeconds As String" />
+      <MemberSignature Language="F#" Value="member this.InstanceCloseDelayDurationSeconds : string with get, set" Usage="System.Fabric.Management.ServiceModel.StatelessServiceType.InstanceCloseDelayDurationSeconds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Fabric.Management.ServiceModel</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,11 +84,67 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric.Management.ServiceModel</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue("1")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinInstanceCount">
+      <MemberSignature Language="C#" Value="public string MinInstanceCount { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MinInstanceCount" />
+      <MemberSignature Language="DocId" Value="P:System.Fabric.Management.ServiceModel.StatelessServiceType.MinInstanceCount" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinInstanceCount As String" />
+      <MemberSignature Language="F#" Value="member this.MinInstanceCount : string with get, set" Usage="System.Fabric.Management.ServiceModel.StatelessServiceType.MinInstanceCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Fabric.Management.ServiceModel</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("1")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinInstancePercentage">
+      <MemberSignature Language="C#" Value="public string MinInstancePercentage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MinInstancePercentage" />
+      <MemberSignature Language="DocId" Value="P:System.Fabric.Management.ServiceModel.StatelessServiceType.MinInstancePercentage" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinInstancePercentage As String" />
+      <MemberSignature Language="F#" Value="member this.MinInstancePercentage : string with get, set" Usage="System.Fabric.Management.ServiceModel.StatelessServiceType.MinInstancePercentage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Fabric.Management.ServiceModel</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("0")</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>

@@ -1,4 +1,4 @@
-﻿<Type Name="RestorableDroppedManagedDatabasesOperationsExtensions" FullName="Microsoft.Azure.Management.Sql.RestorableDroppedManagedDatabasesOperationsExtensions">
+<Type Name="RestorableDroppedManagedDatabasesOperationsExtensions" FullName="Microsoft.Azure.Management.Sql.RestorableDroppedManagedDatabasesOperationsExtensions">
   <TypeSignature Language="C#" Value="public static class RestorableDroppedManagedDatabasesOperationsExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit RestorableDroppedManagedDatabasesOperationsExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Sql.RestorableDroppedManagedDatabasesOperationsExtensions" />
@@ -50,7 +50,8 @@
         <param name="managedInstanceName">
             The name of the managed instance.
             </param>
-        <param name="restorableDroppedDatabaseId"></param>
+        <param name="restorableDroppedDatabaseId">
+        </param>
         <summary>
             Gets a restorable dropped managed database.
             </summary>
@@ -59,7 +60,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.RestorableDroppedManagedDatabase&gt; GetAsync (this Microsoft.Azure.Management.Sql.IRestorableDroppedManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.RestorableDroppedManagedDatabase&gt; GetAsync (this Microsoft.Azure.Management.Sql.IRestorableDroppedManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Sql.Models.RestorableDroppedManagedDatabase&gt; GetAsync(class Microsoft.Azure.Management.Sql.IRestorableDroppedManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.RestorableDroppedManagedDatabasesOperationsExtensions.GetAsync(Microsoft.Azure.Management.Sql.IRestorableDroppedManagedDatabasesOperations,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member GetAsync : Microsoft.Azure.Management.Sql.IRestorableDroppedManagedDatabasesOperations * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.RestorableDroppedManagedDatabase&gt;" Usage="Microsoft.Azure.Management.Sql.RestorableDroppedManagedDatabasesOperationsExtensions.GetAsync (operations, resourceGroupName, managedInstanceName, restorableDroppedDatabaseId, cancellationToken)" />
@@ -68,6 +69,11 @@
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.RestorableDroppedManagedDatabase&gt;</ReturnType>
       </ReturnValue>
@@ -89,7 +95,8 @@
         <param name="managedInstanceName">
             The name of the managed instance.
             </param>
-        <param name="restorableDroppedDatabaseId"></param>
+        <param name="restorableDroppedDatabaseId">
+        </param>
         <param name="cancellationToken">
             The cancellation token.
             </param>
@@ -138,7 +145,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListByInstanceAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.RestorableDroppedManagedDatabase&gt;&gt; ListByInstanceAsync (this Microsoft.Azure.Management.Sql.IRestorableDroppedManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.RestorableDroppedManagedDatabase&gt;&gt; ListByInstanceAsync (this Microsoft.Azure.Management.Sql.IRestorableDroppedManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Sql.Models.RestorableDroppedManagedDatabase&gt;&gt; ListByInstanceAsync(class Microsoft.Azure.Management.Sql.IRestorableDroppedManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.RestorableDroppedManagedDatabasesOperationsExtensions.ListByInstanceAsync(Microsoft.Azure.Management.Sql.IRestorableDroppedManagedDatabasesOperations,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListByInstanceAsync : Microsoft.Azure.Management.Sql.IRestorableDroppedManagedDatabasesOperations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.RestorableDroppedManagedDatabase&gt;&gt;" Usage="Microsoft.Azure.Management.Sql.RestorableDroppedManagedDatabasesOperationsExtensions.ListByInstanceAsync (operations, resourceGroupName, managedInstanceName, cancellationToken)" />
@@ -147,6 +154,11 @@
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.RestorableDroppedManagedDatabase&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -210,7 +222,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListByInstanceNextAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.RestorableDroppedManagedDatabase&gt;&gt; ListByInstanceNextAsync (this Microsoft.Azure.Management.Sql.IRestorableDroppedManagedDatabasesOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.RestorableDroppedManagedDatabase&gt;&gt; ListByInstanceNextAsync (this Microsoft.Azure.Management.Sql.IRestorableDroppedManagedDatabasesOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Sql.Models.RestorableDroppedManagedDatabase&gt;&gt; ListByInstanceNextAsync(class Microsoft.Azure.Management.Sql.IRestorableDroppedManagedDatabasesOperations operations, string nextPageLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.RestorableDroppedManagedDatabasesOperationsExtensions.ListByInstanceNextAsync(Microsoft.Azure.Management.Sql.IRestorableDroppedManagedDatabasesOperations,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListByInstanceNextAsync : Microsoft.Azure.Management.Sql.IRestorableDroppedManagedDatabasesOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.RestorableDroppedManagedDatabase&gt;&gt;" Usage="Microsoft.Azure.Management.Sql.RestorableDroppedManagedDatabasesOperationsExtensions.ListByInstanceNextAsync (operations, nextPageLink, cancellationToken)" />
@@ -219,6 +231,11 @@
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.RestorableDroppedManagedDatabase&gt;&gt;</ReturnType>
       </ReturnValue>

@@ -1,4 +1,4 @@
-﻿<Type Name="BgpPeerStatus" FullName="Microsoft.Azure.Management.Network.Fluent.Models.BgpPeerStatus">
+<Type Name="BgpPeerStatus" FullName="Microsoft.Azure.Management.Network.Fluent.Models.BgpPeerStatus">
   <TypeSignature Language="C#" Value="public class BgpPeerStatus" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BgpPeerStatus extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Network.Fluent.Models.BgpPeerStatus" />
@@ -6,7 +6,10 @@
   <TypeSignature Language="F#" Value="type BgpPeerStatus = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -14,7 +17,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            BGP peer status details
+            BGP peer status details.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -27,7 +30,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,7 +44,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public BgpPeerStatus (string localAddress = null, string neighbor = null, Nullable&lt;int&gt; asn = null, Microsoft.Azure.Management.Network.Fluent.Models.BgpPeerState state = null, string connectedDuration = null, Nullable&lt;long&gt; routesReceived = null, Nullable&lt;long&gt; messagesSent = null, Nullable&lt;long&gt; messagesReceived = null);" />
+      <MemberSignature Language="C#" Value="public BgpPeerStatus (string localAddress = default, string neighbor = default, Nullable&lt;int&gt; asn = default, Microsoft.Azure.Management.Network.Fluent.Models.BgpPeerState state = default, string connectedDuration = default, Nullable&lt;long&gt; routesReceived = default, Nullable&lt;long&gt; messagesSent = default, Nullable&lt;long&gt; messagesReceived = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string localAddress, string neighbor, valuetype System.Nullable`1&lt;int32&gt; asn, class Microsoft.Azure.Management.Network.Fluent.Models.BgpPeerState state, string connectedDuration, valuetype System.Nullable`1&lt;int64&gt; routesReceived, valuetype System.Nullable`1&lt;int64&gt; messagesSent, valuetype System.Nullable`1&lt;int64&gt; messagesReceived) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.Models.BgpPeerStatus.#ctor(System.String,System.String,System.Nullable{System.Int32},Microsoft.Azure.Management.Network.Fluent.Models.BgpPeerState,System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional localAddress As String = null, Optional neighbor As String = null, Optional asn As Nullable(Of Integer) = null, Optional state As BgpPeerState = null, Optional connectedDuration As String = null, Optional routesReceived As Nullable(Of Long) = null, Optional messagesSent As Nullable(Of Long) = null, Optional messagesReceived As Nullable(Of Long) = null)" />
@@ -46,7 +52,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="localAddress" Type="System.String" />
@@ -60,19 +69,19 @@
       </Parameters>
       <Docs>
         <param name="localAddress">The virtual network gateway's local
-            address</param>
-        <param name="neighbor">The remote BGP peer</param>
+            address.</param>
+        <param name="neighbor">The remote BGP peer.</param>
         <param name="asn">The autonomous system number of the remote BGP
-            peer</param>
+            peer.</param>
         <param name="state">The BGP peer state. Possible values include:
             'Unknown', 'Stopped', 'Idle', 'Connecting', 'Connected'</param>
         <param name="connectedDuration">For how long the peering has been
-            up</param>
+            up.</param>
         <param name="routesReceived">The number of routes learned from this
-            peer</param>
-        <param name="messagesSent">The number of BGP messages sent</param>
+            peer.</param>
+        <param name="messagesSent">The number of BGP messages sent.</param>
         <param name="messagesReceived">The number of BGP messages
-            received</param>
+            received.</param>
         <summary>
             Initializes a new instance of the BgpPeerStatus class.
             </summary>
@@ -88,7 +97,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -100,7 +112,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets the autonomous system number of the remote BGP peer
+            Gets the autonomous system number of the remote BGP peer.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -115,7 +127,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -127,7 +142,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets for how long the peering has been up
+            Gets for how long the peering has been up.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -142,7 +157,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -154,7 +172,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets the virtual network gateway's local address
+            Gets the virtual network gateway's local address.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -169,7 +187,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -181,7 +202,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets the number of BGP messages received
+            Gets the number of BGP messages received.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -196,7 +217,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -208,7 +232,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets the number of BGP messages sent
+            Gets the number of BGP messages sent.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -223,7 +247,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -235,7 +262,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets the remote BGP peer
+            Gets the remote BGP peer.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -250,7 +277,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -262,7 +292,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets the number of routes learned from this peer
+            Gets the number of routes learned from this peer.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -277,7 +307,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

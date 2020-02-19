@@ -1,4 +1,4 @@
-﻿<Type Name="ManagedDatabasesOperationsExtensions" FullName="Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions">
+<Type Name="ManagedDatabasesOperationsExtensions" FullName="Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions">
   <TypeSignature Language="C#" Value="public static class ManagedDatabasesOperationsExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ManagedDatabasesOperationsExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions" />
@@ -20,11 +20,11 @@
   </Docs>
   <Members>
     <Member MemberName="BeginCompleteRestore">
-      <MemberSignature Language="C#" Value="public static void BeginCompleteRestore (this Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string locationName, Guid operationId, Microsoft.Azure.Management.Sql.Models.CompleteDatabaseRestoreDefinition parameters);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void BeginCompleteRestore(class Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string locationName, valuetype System.Guid operationId, class Microsoft.Azure.Management.Sql.Models.CompleteDatabaseRestoreDefinition parameters) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions.BeginCompleteRestore(Microsoft.Azure.Management.Sql.IManagedDatabasesOperations,System.String,System.Guid,Microsoft.Azure.Management.Sql.Models.CompleteDatabaseRestoreDefinition)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub BeginCompleteRestore (operations As IManagedDatabasesOperations, locationName As String, operationId As Guid, parameters As CompleteDatabaseRestoreDefinition)" />
-      <MemberSignature Language="F#" Value="static member BeginCompleteRestore : Microsoft.Azure.Management.Sql.IManagedDatabasesOperations * string * Guid * Microsoft.Azure.Management.Sql.Models.CompleteDatabaseRestoreDefinition -&gt; unit" Usage="Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions.BeginCompleteRestore (operations, locationName, operationId, parameters)" />
+      <MemberSignature Language="C#" Value="public static void BeginCompleteRestore (this Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, string databaseName, Microsoft.Azure.Management.Sql.Models.CompleteDatabaseRestoreDefinition parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void BeginCompleteRestore(class Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, string databaseName, class Microsoft.Azure.Management.Sql.Models.CompleteDatabaseRestoreDefinition parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions.BeginCompleteRestore(Microsoft.Azure.Management.Sql.IManagedDatabasesOperations,System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Models.CompleteDatabaseRestoreDefinition)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub BeginCompleteRestore (operations As IManagedDatabasesOperations, resourceGroupName As String, managedInstanceName As String, databaseName As String, parameters As CompleteDatabaseRestoreDefinition)" />
+      <MemberSignature Language="F#" Value="static member BeginCompleteRestore : Microsoft.Azure.Management.Sql.IManagedDatabasesOperations * string * string * string * Microsoft.Azure.Management.Sql.Models.CompleteDatabaseRestoreDefinition -&gt; unit" Usage="Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions.BeginCompleteRestore (operations, resourceGroupName, managedInstanceName, databaseName, parameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -35,19 +35,24 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="operations" Type="Microsoft.Azure.Management.Sql.IManagedDatabasesOperations" RefType="this" />
-        <Parameter Name="locationName" Type="System.String" />
-        <Parameter Name="operationId" Type="System.Guid" />
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
         <Parameter Name="parameters" Type="Microsoft.Azure.Management.Sql.Models.CompleteDatabaseRestoreDefinition" />
       </Parameters>
       <Docs>
         <param name="operations">
             The operations group for this extension method.
             </param>
-        <param name="locationName">
-            The name of the region where the resource is located.
+        <param name="resourceGroupName">
+            The name of the resource group that contains the resource. You can obtain
+            this value from the Azure Resource Manager API or the portal.
             </param>
-        <param name="operationId">
-            Management operation id that this request tries to complete.
+        <param name="managedInstanceName">
+            The name of the managed instance.
+            </param>
+        <param name="databaseName">
+            The name of the database.
             </param>
         <param name="parameters">
             The definition for completing the restore of this managed database.
@@ -59,22 +64,28 @@
       </Docs>
     </Member>
     <Member MemberName="BeginCompleteRestoreAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginCompleteRestoreAsync (this Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string locationName, Guid operationId, Microsoft.Azure.Management.Sql.Models.CompleteDatabaseRestoreDefinition parameters, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task BeginCompleteRestoreAsync(class Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string locationName, valuetype System.Guid operationId, class Microsoft.Azure.Management.Sql.Models.CompleteDatabaseRestoreDefinition parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions.BeginCompleteRestoreAsync(Microsoft.Azure.Management.Sql.IManagedDatabasesOperations,System.String,System.Guid,Microsoft.Azure.Management.Sql.Models.CompleteDatabaseRestoreDefinition,System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="static member BeginCompleteRestoreAsync : Microsoft.Azure.Management.Sql.IManagedDatabasesOperations * string * Guid * Microsoft.Azure.Management.Sql.Models.CompleteDatabaseRestoreDefinition * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions.BeginCompleteRestoreAsync (operations, locationName, operationId, parameters, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginCompleteRestoreAsync (this Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, string databaseName, Microsoft.Azure.Management.Sql.Models.CompleteDatabaseRestoreDefinition parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task BeginCompleteRestoreAsync(class Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, string databaseName, class Microsoft.Azure.Management.Sql.Models.CompleteDatabaseRestoreDefinition parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions.BeginCompleteRestoreAsync(Microsoft.Azure.Management.Sql.IManagedDatabasesOperations,System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Models.CompleteDatabaseRestoreDefinition,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member BeginCompleteRestoreAsync : Microsoft.Azure.Management.Sql.IManagedDatabasesOperations * string * string * string * Microsoft.Azure.Management.Sql.Models.CompleteDatabaseRestoreDefinition * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions.BeginCompleteRestoreAsync (operations, resourceGroupName, managedInstanceName, databaseName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="operations" Type="Microsoft.Azure.Management.Sql.IManagedDatabasesOperations" RefType="this" />
-        <Parameter Name="locationName" Type="System.String" />
-        <Parameter Name="operationId" Type="System.Guid" />
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
         <Parameter Name="parameters" Type="Microsoft.Azure.Management.Sql.Models.CompleteDatabaseRestoreDefinition" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
@@ -82,11 +93,15 @@
         <param name="operations">
             The operations group for this extension method.
             </param>
-        <param name="locationName">
-            The name of the region where the resource is located.
+        <param name="resourceGroupName">
+            The name of the resource group that contains the resource. You can obtain
+            this value from the Azure Resource Manager API or the portal.
             </param>
-        <param name="operationId">
-            Management operation id that this request tries to complete.
+        <param name="managedInstanceName">
+            The name of the managed instance.
+            </param>
+        <param name="databaseName">
+            The name of the database.
             </param>
         <param name="parameters">
             The definition for completing the restore of this managed database.
@@ -147,7 +162,7 @@
       </Docs>
     </Member>
     <Member MemberName="BeginCreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedDatabase&gt; BeginCreateOrUpdateAsync (this Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, string databaseName, Microsoft.Azure.Management.Sql.Models.ManagedDatabase parameters, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedDatabase&gt; BeginCreateOrUpdateAsync (this Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, string databaseName, Microsoft.Azure.Management.Sql.Models.ManagedDatabase parameters, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Sql.Models.ManagedDatabase&gt; BeginCreateOrUpdateAsync(class Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, string databaseName, class Microsoft.Azure.Management.Sql.Models.ManagedDatabase parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions.BeginCreateOrUpdateAsync(Microsoft.Azure.Management.Sql.IManagedDatabasesOperations,System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Models.ManagedDatabase,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member BeginCreateOrUpdateAsync : Microsoft.Azure.Management.Sql.IManagedDatabasesOperations * string * string * string * Microsoft.Azure.Management.Sql.Models.ManagedDatabase * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedDatabase&gt;" Usage="Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions.BeginCreateOrUpdateAsync (operations, resourceGroupName, managedInstanceName, databaseName, parameters, cancellationToken)" />
@@ -156,6 +171,11 @@
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedDatabase&gt;</ReturnType>
       </ReturnValue>
@@ -235,7 +255,7 @@
       </Docs>
     </Member>
     <Member MemberName="BeginDeleteAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginDeleteAsync (this Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, string databaseName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginDeleteAsync (this Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, string databaseName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task BeginDeleteAsync(class Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, string databaseName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions.BeginDeleteAsync(Microsoft.Azure.Management.Sql.IManagedDatabasesOperations,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member BeginDeleteAsync : Microsoft.Azure.Management.Sql.IManagedDatabasesOperations * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions.BeginDeleteAsync (operations, resourceGroupName, managedInstanceName, databaseName, cancellationToken)" />
@@ -244,6 +264,11 @@
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -324,7 +349,7 @@
       </Docs>
     </Member>
     <Member MemberName="BeginUpdateAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedDatabase&gt; BeginUpdateAsync (this Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, string databaseName, Microsoft.Azure.Management.Sql.Models.ManagedDatabaseUpdate parameters, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedDatabase&gt; BeginUpdateAsync (this Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, string databaseName, Microsoft.Azure.Management.Sql.Models.ManagedDatabaseUpdate parameters, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Sql.Models.ManagedDatabase&gt; BeginUpdateAsync(class Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, string databaseName, class Microsoft.Azure.Management.Sql.Models.ManagedDatabaseUpdate parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions.BeginUpdateAsync(Microsoft.Azure.Management.Sql.IManagedDatabasesOperations,System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Models.ManagedDatabaseUpdate,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member BeginUpdateAsync : Microsoft.Azure.Management.Sql.IManagedDatabasesOperations * string * string * string * Microsoft.Azure.Management.Sql.Models.ManagedDatabaseUpdate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedDatabase&gt;" Usage="Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions.BeginUpdateAsync (operations, resourceGroupName, managedInstanceName, databaseName, parameters, cancellationToken)" />
@@ -333,6 +358,11 @@
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedDatabase&gt;</ReturnType>
       </ReturnValue>
@@ -372,11 +402,11 @@
       </Docs>
     </Member>
     <Member MemberName="CompleteRestore">
-      <MemberSignature Language="C#" Value="public static void CompleteRestore (this Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string locationName, Guid operationId, Microsoft.Azure.Management.Sql.Models.CompleteDatabaseRestoreDefinition parameters);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CompleteRestore(class Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string locationName, valuetype System.Guid operationId, class Microsoft.Azure.Management.Sql.Models.CompleteDatabaseRestoreDefinition parameters) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions.CompleteRestore(Microsoft.Azure.Management.Sql.IManagedDatabasesOperations,System.String,System.Guid,Microsoft.Azure.Management.Sql.Models.CompleteDatabaseRestoreDefinition)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub CompleteRestore (operations As IManagedDatabasesOperations, locationName As String, operationId As Guid, parameters As CompleteDatabaseRestoreDefinition)" />
-      <MemberSignature Language="F#" Value="static member CompleteRestore : Microsoft.Azure.Management.Sql.IManagedDatabasesOperations * string * Guid * Microsoft.Azure.Management.Sql.Models.CompleteDatabaseRestoreDefinition -&gt; unit" Usage="Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions.CompleteRestore (operations, locationName, operationId, parameters)" />
+      <MemberSignature Language="C#" Value="public static void CompleteRestore (this Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, string databaseName, Microsoft.Azure.Management.Sql.Models.CompleteDatabaseRestoreDefinition parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CompleteRestore(class Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, string databaseName, class Microsoft.Azure.Management.Sql.Models.CompleteDatabaseRestoreDefinition parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions.CompleteRestore(Microsoft.Azure.Management.Sql.IManagedDatabasesOperations,System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Models.CompleteDatabaseRestoreDefinition)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub CompleteRestore (operations As IManagedDatabasesOperations, resourceGroupName As String, managedInstanceName As String, databaseName As String, parameters As CompleteDatabaseRestoreDefinition)" />
+      <MemberSignature Language="F#" Value="static member CompleteRestore : Microsoft.Azure.Management.Sql.IManagedDatabasesOperations * string * string * string * Microsoft.Azure.Management.Sql.Models.CompleteDatabaseRestoreDefinition -&gt; unit" Usage="Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions.CompleteRestore (operations, resourceGroupName, managedInstanceName, databaseName, parameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -387,19 +417,24 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="operations" Type="Microsoft.Azure.Management.Sql.IManagedDatabasesOperations" RefType="this" />
-        <Parameter Name="locationName" Type="System.String" />
-        <Parameter Name="operationId" Type="System.Guid" />
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
         <Parameter Name="parameters" Type="Microsoft.Azure.Management.Sql.Models.CompleteDatabaseRestoreDefinition" />
       </Parameters>
       <Docs>
         <param name="operations">
             The operations group for this extension method.
             </param>
-        <param name="locationName">
-            The name of the region where the resource is located.
+        <param name="resourceGroupName">
+            The name of the resource group that contains the resource. You can obtain
+            this value from the Azure Resource Manager API or the portal.
             </param>
-        <param name="operationId">
-            Management operation id that this request tries to complete.
+        <param name="managedInstanceName">
+            The name of the managed instance.
+            </param>
+        <param name="databaseName">
+            The name of the database.
             </param>
         <param name="parameters">
             The definition for completing the restore of this managed database.
@@ -411,22 +446,28 @@
       </Docs>
     </Member>
     <Member MemberName="CompleteRestoreAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task CompleteRestoreAsync (this Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string locationName, Guid operationId, Microsoft.Azure.Management.Sql.Models.CompleteDatabaseRestoreDefinition parameters, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task CompleteRestoreAsync(class Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string locationName, valuetype System.Guid operationId, class Microsoft.Azure.Management.Sql.Models.CompleteDatabaseRestoreDefinition parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions.CompleteRestoreAsync(Microsoft.Azure.Management.Sql.IManagedDatabasesOperations,System.String,System.Guid,Microsoft.Azure.Management.Sql.Models.CompleteDatabaseRestoreDefinition,System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="static member CompleteRestoreAsync : Microsoft.Azure.Management.Sql.IManagedDatabasesOperations * string * Guid * Microsoft.Azure.Management.Sql.Models.CompleteDatabaseRestoreDefinition * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions.CompleteRestoreAsync (operations, locationName, operationId, parameters, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task CompleteRestoreAsync (this Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, string databaseName, Microsoft.Azure.Management.Sql.Models.CompleteDatabaseRestoreDefinition parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task CompleteRestoreAsync(class Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, string databaseName, class Microsoft.Azure.Management.Sql.Models.CompleteDatabaseRestoreDefinition parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions.CompleteRestoreAsync(Microsoft.Azure.Management.Sql.IManagedDatabasesOperations,System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Models.CompleteDatabaseRestoreDefinition,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member CompleteRestoreAsync : Microsoft.Azure.Management.Sql.IManagedDatabasesOperations * string * string * string * Microsoft.Azure.Management.Sql.Models.CompleteDatabaseRestoreDefinition * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions.CompleteRestoreAsync (operations, resourceGroupName, managedInstanceName, databaseName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="operations" Type="Microsoft.Azure.Management.Sql.IManagedDatabasesOperations" RefType="this" />
-        <Parameter Name="locationName" Type="System.String" />
-        <Parameter Name="operationId" Type="System.Guid" />
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="managedInstanceName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
         <Parameter Name="parameters" Type="Microsoft.Azure.Management.Sql.Models.CompleteDatabaseRestoreDefinition" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
@@ -434,11 +475,15 @@
         <param name="operations">
             The operations group for this extension method.
             </param>
-        <param name="locationName">
-            The name of the region where the resource is located.
+        <param name="resourceGroupName">
+            The name of the resource group that contains the resource. You can obtain
+            this value from the Azure Resource Manager API or the portal.
             </param>
-        <param name="operationId">
-            Management operation id that this request tries to complete.
+        <param name="managedInstanceName">
+            The name of the managed instance.
+            </param>
+        <param name="databaseName">
+            The name of the database.
             </param>
         <param name="parameters">
             The definition for completing the restore of this managed database.
@@ -499,7 +544,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedDatabase&gt; CreateOrUpdateAsync (this Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, string databaseName, Microsoft.Azure.Management.Sql.Models.ManagedDatabase parameters, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedDatabase&gt; CreateOrUpdateAsync (this Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, string databaseName, Microsoft.Azure.Management.Sql.Models.ManagedDatabase parameters, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Sql.Models.ManagedDatabase&gt; CreateOrUpdateAsync(class Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, string databaseName, class Microsoft.Azure.Management.Sql.Models.ManagedDatabase parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions.CreateOrUpdateAsync(Microsoft.Azure.Management.Sql.IManagedDatabasesOperations,System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Models.ManagedDatabase,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member CreateOrUpdateAsync : Microsoft.Azure.Management.Sql.IManagedDatabasesOperations * string * string * string * Microsoft.Azure.Management.Sql.Models.ManagedDatabase * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedDatabase&gt;" Usage="Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions.CreateOrUpdateAsync (operations, resourceGroupName, managedInstanceName, databaseName, parameters, cancellationToken)" />
@@ -508,6 +553,11 @@
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedDatabase&gt;</ReturnType>
       </ReturnValue>
@@ -587,7 +637,7 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task DeleteAsync (this Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, string databaseName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task DeleteAsync (this Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, string databaseName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task DeleteAsync(class Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, string databaseName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions.DeleteAsync(Microsoft.Azure.Management.Sql.IManagedDatabasesOperations,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member DeleteAsync : Microsoft.Azure.Management.Sql.IManagedDatabasesOperations * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions.DeleteAsync (operations, resourceGroupName, managedInstanceName, databaseName, cancellationToken)" />
@@ -596,6 +646,11 @@
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -672,7 +727,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedDatabase&gt; GetAsync (this Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, string databaseName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedDatabase&gt; GetAsync (this Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, string databaseName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Sql.Models.ManagedDatabase&gt; GetAsync(class Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, string databaseName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions.GetAsync(Microsoft.Azure.Management.Sql.IManagedDatabasesOperations,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member GetAsync : Microsoft.Azure.Management.Sql.IManagedDatabasesOperations * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedDatabase&gt;" Usage="Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions.GetAsync (operations, resourceGroupName, managedInstanceName, databaseName, cancellationToken)" />
@@ -681,6 +736,11 @@
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedDatabase&gt;</ReturnType>
       </ReturnValue>
@@ -753,7 +813,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListByInstanceAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.ManagedDatabase&gt;&gt; ListByInstanceAsync (this Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.ManagedDatabase&gt;&gt; ListByInstanceAsync (this Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Sql.Models.ManagedDatabase&gt;&gt; ListByInstanceAsync(class Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions.ListByInstanceAsync(Microsoft.Azure.Management.Sql.IManagedDatabasesOperations,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListByInstanceAsync : Microsoft.Azure.Management.Sql.IManagedDatabasesOperations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.ManagedDatabase&gt;&gt;" Usage="Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions.ListByInstanceAsync (operations, resourceGroupName, managedInstanceName, cancellationToken)" />
@@ -762,6 +822,11 @@
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.ManagedDatabase&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -825,7 +890,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListByInstanceNextAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.ManagedDatabase&gt;&gt; ListByInstanceNextAsync (this Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.ManagedDatabase&gt;&gt; ListByInstanceNextAsync (this Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Sql.Models.ManagedDatabase&gt;&gt; ListByInstanceNextAsync(class Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string nextPageLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions.ListByInstanceNextAsync(Microsoft.Azure.Management.Sql.IManagedDatabasesOperations,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListByInstanceNextAsync : Microsoft.Azure.Management.Sql.IManagedDatabasesOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.ManagedDatabase&gt;&gt;" Usage="Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions.ListByInstanceNextAsync (operations, nextPageLink, cancellationToken)" />
@@ -834,6 +899,11 @@
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.ManagedDatabase&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -905,7 +975,7 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedDatabase&gt; UpdateAsync (this Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, string databaseName, Microsoft.Azure.Management.Sql.Models.ManagedDatabaseUpdate parameters, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedDatabase&gt; UpdateAsync (this Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, string databaseName, Microsoft.Azure.Management.Sql.Models.ManagedDatabaseUpdate parameters, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Sql.Models.ManagedDatabase&gt; UpdateAsync(class Microsoft.Azure.Management.Sql.IManagedDatabasesOperations operations, string resourceGroupName, string managedInstanceName, string databaseName, class Microsoft.Azure.Management.Sql.Models.ManagedDatabaseUpdate parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions.UpdateAsync(Microsoft.Azure.Management.Sql.IManagedDatabasesOperations,System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Models.ManagedDatabaseUpdate,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member UpdateAsync : Microsoft.Azure.Management.Sql.IManagedDatabasesOperations * string * string * string * Microsoft.Azure.Management.Sql.Models.ManagedDatabaseUpdate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedDatabase&gt;" Usage="Microsoft.Azure.Management.Sql.ManagedDatabasesOperationsExtensions.UpdateAsync (operations, resourceGroupName, managedInstanceName, databaseName, parameters, cancellationToken)" />
@@ -914,6 +984,11 @@
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedDatabase&gt;</ReturnType>
       </ReturnValue>

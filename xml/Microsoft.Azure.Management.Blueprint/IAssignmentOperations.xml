@@ -1,4 +1,4 @@
-﻿<Type Name="IAssignmentOperations" FullName="Microsoft.Azure.Management.Blueprint.IAssignmentOperations">
+<Type Name="IAssignmentOperations" FullName="Microsoft.Azure.Management.Blueprint.IAssignmentOperations">
   <TypeSignature Language="C#" Value="public interface IAssignmentOperations" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAssignmentOperations" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Blueprint.IAssignmentOperations" />
@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
     <AssemblyVersion>0.10.0.0</AssemblyVersion>
     <AssemblyVersion>0.14.0.0</AssemblyVersion>
+    <AssemblyVersion>0.20.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -18,7 +19,7 @@
   </Docs>
   <Members>
     <Member MemberName="GetWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Blueprint.Models.AssignmentOperation&gt;&gt; GetWithHttpMessagesAsync (string scope, string assignmentName, string assignmentOperationName, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Blueprint.Models.AssignmentOperation&gt;&gt; GetWithHttpMessagesAsync (string scope, string assignmentName, string assignmentOperationName, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Azure.Management.Blueprint.Models.AssignmentOperation&gt;&gt; GetWithHttpMessagesAsync(string scope, string assignmentName, string assignmentOperationName, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Blueprint.IAssignmentOperations.GetWithHttpMessagesAsync(System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member GetWithHttpMessagesAsync : string * string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Blueprint.Models.AssignmentOperation&gt;&gt;" Usage="iAssignmentOperations.GetWithHttpMessagesAsync (scope, assignmentName, assignmentOperationName, customHeaders, cancellationToken)" />
@@ -27,6 +28,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Blueprint.Models.AssignmentOperation&gt;&gt;</ReturnType>
@@ -43,13 +45,15 @@
             The scope of the resource. Valid scopes are: management group
             (format:
             '/providers/Microsoft.Management/managementGroups/{managementGroup}'),
-            subscription (format: '/subscriptions/{subscriptionId}').
+            subscription (format: '/subscriptions/{subscriptionId}'). For
+            blueprint assignments management group scope is reserved for future
+            use.
             </param>
         <param name="assignmentName">
-            name of the assignment.
+            Name of the blueprint assignment.
             </param>
         <param name="assignmentOperationName">
-            Name of the assignment operation.
+            Name of the blueprint assignment operation.
             </param>
         <param name="customHeaders">
             The headers that will be added to request.
@@ -58,7 +62,7 @@
             The cancellation token.
             </param>
         <summary>
-            Get a Blueprint assignment operation.
+            Get a blueprint assignment operation.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -74,7 +78,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListNextWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Blueprint.Models.AssignmentOperation&gt;&gt;&gt; ListNextWithHttpMessagesAsync (string nextPageLink, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Blueprint.Models.AssignmentOperation&gt;&gt;&gt; ListNextWithHttpMessagesAsync (string nextPageLink, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Blueprint.Models.AssignmentOperation&gt;&gt;&gt; ListNextWithHttpMessagesAsync(string nextPageLink, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Blueprint.IAssignmentOperations.ListNextWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member ListNextWithHttpMessagesAsync : string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Blueprint.Models.AssignmentOperation&gt;&gt;&gt;" Usage="iAssignmentOperations.ListNextWithHttpMessagesAsync (nextPageLink, customHeaders, cancellationToken)" />
@@ -83,6 +87,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Blueprint.Models.AssignmentOperation&gt;&gt;&gt;</ReturnType>
@@ -103,7 +108,7 @@
             The cancellation token.
             </param>
         <summary>
-            List Operations for given blueprint assignment within a
+            List operations for given blueprint assignment within a
             subscription.
             </summary>
         <returns>To be added.</returns>
@@ -120,7 +125,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Blueprint.Models.AssignmentOperation&gt;&gt;&gt; ListWithHttpMessagesAsync (string scope, string assignmentName, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Blueprint.Models.AssignmentOperation&gt;&gt;&gt; ListWithHttpMessagesAsync (string scope, string assignmentName, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Blueprint.Models.AssignmentOperation&gt;&gt;&gt; ListWithHttpMessagesAsync(string scope, string assignmentName, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Blueprint.IAssignmentOperations.ListWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member ListWithHttpMessagesAsync : string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Blueprint.Models.AssignmentOperation&gt;&gt;&gt;" Usage="iAssignmentOperations.ListWithHttpMessagesAsync (scope, assignmentName, customHeaders, cancellationToken)" />
@@ -129,6 +134,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Blueprint.Models.AssignmentOperation&gt;&gt;&gt;</ReturnType>
@@ -144,10 +150,12 @@
             The scope of the resource. Valid scopes are: management group
             (format:
             '/providers/Microsoft.Management/managementGroups/{managementGroup}'),
-            subscription (format: '/subscriptions/{subscriptionId}').
+            subscription (format: '/subscriptions/{subscriptionId}'). For
+            blueprint assignments management group scope is reserved for future
+            use.
             </param>
         <param name="assignmentName">
-            name of the assignment.
+            Name of the blueprint assignment.
             </param>
         <param name="customHeaders">
             The headers that will be added to request.
@@ -156,7 +164,7 @@
             The cancellation token.
             </param>
         <summary>
-            List Operations for given blueprint assignment within a
+            List operations for given blueprint assignment within a
             subscription.
             </summary>
         <returns>To be added.</returns>

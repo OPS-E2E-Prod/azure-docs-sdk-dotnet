@@ -1,4 +1,4 @@
-﻿<Type Name="ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperationsExtensions" FullName="Microsoft.Azure.Management.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperationsExtensions">
+<Type Name="ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperationsExtensions" FullName="Microsoft.Azure.Management.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperationsExtensions">
   <TypeSignature Language="C#" Value="public static class ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperationsExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperationsExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperationsExtensions" />
@@ -51,7 +51,8 @@
         <param name="managedInstanceName">
             The name of the managed instance.
             </param>
-        <param name="restorableDroppedDatabaseId"></param>
+        <param name="restorableDroppedDatabaseId">
+        </param>
         <param name="parameters">
             The long term retention policy info.
             </param>
@@ -63,7 +64,7 @@
       </Docs>
     </Member>
     <Member MemberName="BeginCreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt; BeginCreateOrUpdateAsync (this Microsoft.Azure.Management.Sql.IManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations operations, string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy parameters, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt; BeginCreateOrUpdateAsync (this Microsoft.Azure.Management.Sql.IManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations operations, string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy parameters, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt; BeginCreateOrUpdateAsync(class Microsoft.Azure.Management.Sql.IManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations operations, string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, class Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperationsExtensions.BeginCreateOrUpdateAsync(Microsoft.Azure.Management.Sql.IManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations,System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member BeginCreateOrUpdateAsync : Microsoft.Azure.Management.Sql.IManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations * string * string * string * Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt;" Usage="Microsoft.Azure.Management.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperationsExtensions.BeginCreateOrUpdateAsync (operations, resourceGroupName, managedInstanceName, restorableDroppedDatabaseId, parameters, cancellationToken)" />
@@ -72,6 +73,11 @@
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt;</ReturnType>
       </ReturnValue>
@@ -94,7 +100,8 @@
         <param name="managedInstanceName">
             The name of the managed instance.
             </param>
-        <param name="restorableDroppedDatabaseId"></param>
+        <param name="restorableDroppedDatabaseId">
+        </param>
         <param name="parameters">
             The long term retention policy info.
             </param>
@@ -140,7 +147,8 @@
         <param name="managedInstanceName">
             The name of the managed instance.
             </param>
-        <param name="restorableDroppedDatabaseId"></param>
+        <param name="restorableDroppedDatabaseId">
+        </param>
         <param name="parameters">
             The long term retention policy info.
             </param>
@@ -152,7 +160,7 @@
       </Docs>
     </Member>
     <Member MemberName="BeginUpdateAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt; BeginUpdateAsync (this Microsoft.Azure.Management.Sql.IManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations operations, string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy parameters, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt; BeginUpdateAsync (this Microsoft.Azure.Management.Sql.IManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations operations, string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy parameters, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt; BeginUpdateAsync(class Microsoft.Azure.Management.Sql.IManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations operations, string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, class Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperationsExtensions.BeginUpdateAsync(Microsoft.Azure.Management.Sql.IManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations,System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member BeginUpdateAsync : Microsoft.Azure.Management.Sql.IManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations * string * string * string * Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt;" Usage="Microsoft.Azure.Management.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperationsExtensions.BeginUpdateAsync (operations, resourceGroupName, managedInstanceName, restorableDroppedDatabaseId, parameters, cancellationToken)" />
@@ -161,6 +169,11 @@
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt;</ReturnType>
       </ReturnValue>
@@ -183,7 +196,8 @@
         <param name="managedInstanceName">
             The name of the managed instance.
             </param>
-        <param name="restorableDroppedDatabaseId"></param>
+        <param name="restorableDroppedDatabaseId">
+        </param>
         <param name="parameters">
             The long term retention policy info.
             </param>
@@ -229,7 +243,8 @@
         <param name="managedInstanceName">
             The name of the managed instance.
             </param>
-        <param name="restorableDroppedDatabaseId"></param>
+        <param name="restorableDroppedDatabaseId">
+        </param>
         <param name="parameters">
             The long term retention policy info.
             </param>
@@ -241,7 +256,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt; CreateOrUpdateAsync (this Microsoft.Azure.Management.Sql.IManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations operations, string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy parameters, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt; CreateOrUpdateAsync (this Microsoft.Azure.Management.Sql.IManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations operations, string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy parameters, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt; CreateOrUpdateAsync(class Microsoft.Azure.Management.Sql.IManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations operations, string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, class Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperationsExtensions.CreateOrUpdateAsync(Microsoft.Azure.Management.Sql.IManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations,System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member CreateOrUpdateAsync : Microsoft.Azure.Management.Sql.IManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations * string * string * string * Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt;" Usage="Microsoft.Azure.Management.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperationsExtensions.CreateOrUpdateAsync (operations, resourceGroupName, managedInstanceName, restorableDroppedDatabaseId, parameters, cancellationToken)" />
@@ -250,6 +265,11 @@
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt;</ReturnType>
       </ReturnValue>
@@ -272,7 +292,8 @@
         <param name="managedInstanceName">
             The name of the managed instance.
             </param>
-        <param name="restorableDroppedDatabaseId"></param>
+        <param name="restorableDroppedDatabaseId">
+        </param>
         <param name="parameters">
             The long term retention policy info.
             </param>
@@ -317,7 +338,8 @@
         <param name="managedInstanceName">
             The name of the managed instance.
             </param>
-        <param name="restorableDroppedDatabaseId"></param>
+        <param name="restorableDroppedDatabaseId">
+        </param>
         <summary>
             Gets a dropped database's short term retention policy.
             </summary>
@@ -326,7 +348,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt; GetAsync (this Microsoft.Azure.Management.Sql.IManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations operations, string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt; GetAsync (this Microsoft.Azure.Management.Sql.IManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations operations, string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt; GetAsync(class Microsoft.Azure.Management.Sql.IManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations operations, string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperationsExtensions.GetAsync(Microsoft.Azure.Management.Sql.IManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member GetAsync : Microsoft.Azure.Management.Sql.IManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt;" Usage="Microsoft.Azure.Management.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperationsExtensions.GetAsync (operations, resourceGroupName, managedInstanceName, restorableDroppedDatabaseId, cancellationToken)" />
@@ -335,6 +357,11 @@
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt;</ReturnType>
       </ReturnValue>
@@ -356,7 +383,8 @@
         <param name="managedInstanceName">
             The name of the managed instance.
             </param>
-        <param name="restorableDroppedDatabaseId"></param>
+        <param name="restorableDroppedDatabaseId">
+        </param>
         <param name="cancellationToken">
             The cancellation token.
             </param>
@@ -398,7 +426,8 @@
         <param name="managedInstanceName">
             The name of the managed instance.
             </param>
-        <param name="restorableDroppedDatabaseId"></param>
+        <param name="restorableDroppedDatabaseId">
+        </param>
         <summary>
             Gets a dropped database's short term retention policy list.
             </summary>
@@ -407,7 +436,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListByRestorableDroppedDatabaseAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt;&gt; ListByRestorableDroppedDatabaseAsync (this Microsoft.Azure.Management.Sql.IManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations operations, string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt;&gt; ListByRestorableDroppedDatabaseAsync (this Microsoft.Azure.Management.Sql.IManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations operations, string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt;&gt; ListByRestorableDroppedDatabaseAsync(class Microsoft.Azure.Management.Sql.IManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations operations, string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperationsExtensions.ListByRestorableDroppedDatabaseAsync(Microsoft.Azure.Management.Sql.IManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListByRestorableDroppedDatabaseAsync : Microsoft.Azure.Management.Sql.IManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt;&gt;" Usage="Microsoft.Azure.Management.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperationsExtensions.ListByRestorableDroppedDatabaseAsync (operations, resourceGroupName, managedInstanceName, restorableDroppedDatabaseId, cancellationToken)" />
@@ -416,6 +445,11 @@
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -437,7 +471,8 @@
         <param name="managedInstanceName">
             The name of the managed instance.
             </param>
-        <param name="restorableDroppedDatabaseId"></param>
+        <param name="restorableDroppedDatabaseId">
+        </param>
         <param name="cancellationToken">
             The cancellation token.
             </param>
@@ -481,7 +516,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListByRestorableDroppedDatabaseNextAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt;&gt; ListByRestorableDroppedDatabaseNextAsync (this Microsoft.Azure.Management.Sql.IManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt;&gt; ListByRestorableDroppedDatabaseNextAsync (this Microsoft.Azure.Management.Sql.IManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt;&gt; ListByRestorableDroppedDatabaseNextAsync(class Microsoft.Azure.Management.Sql.IManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations operations, string nextPageLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperationsExtensions.ListByRestorableDroppedDatabaseNextAsync(Microsoft.Azure.Management.Sql.IManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListByRestorableDroppedDatabaseNextAsync : Microsoft.Azure.Management.Sql.IManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt;&gt;" Usage="Microsoft.Azure.Management.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperationsExtensions.ListByRestorableDroppedDatabaseNextAsync (operations, nextPageLink, cancellationToken)" />
@@ -490,6 +525,11 @@
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -547,7 +587,8 @@
         <param name="managedInstanceName">
             The name of the managed instance.
             </param>
-        <param name="restorableDroppedDatabaseId"></param>
+        <param name="restorableDroppedDatabaseId">
+        </param>
         <param name="parameters">
             The long term retention policy info.
             </param>
@@ -559,7 +600,7 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt; UpdateAsync (this Microsoft.Azure.Management.Sql.IManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations operations, string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy parameters, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt; UpdateAsync (this Microsoft.Azure.Management.Sql.IManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations operations, string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy parameters, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt; UpdateAsync(class Microsoft.Azure.Management.Sql.IManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations operations, string resourceGroupName, string managedInstanceName, string restorableDroppedDatabaseId, class Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperationsExtensions.UpdateAsync(Microsoft.Azure.Management.Sql.IManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations,System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member UpdateAsync : Microsoft.Azure.Management.Sql.IManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperations * string * string * string * Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt;" Usage="Microsoft.Azure.Management.Sql.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPoliciesOperationsExtensions.UpdateAsync (operations, resourceGroupName, managedInstanceName, restorableDroppedDatabaseId, parameters, cancellationToken)" />
@@ -568,6 +609,11 @@
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.ManagedBackupShortTermRetentionPolicy&gt;</ReturnType>
       </ReturnValue>
@@ -590,7 +636,8 @@
         <param name="managedInstanceName">
             The name of the managed instance.
             </param>
-        <param name="restorableDroppedDatabaseId"></param>
+        <param name="restorableDroppedDatabaseId">
+        </param>
         <param name="parameters">
             The long term retention policy info.
             </param>

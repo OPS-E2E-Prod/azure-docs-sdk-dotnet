@@ -1,4 +1,4 @@
-﻿<Type Name="CertificateConfiguration" FullName="Microsoft.Azure.Management.ApiManagement.Models.CertificateConfiguration">
+<Type Name="CertificateConfiguration" FullName="Microsoft.Azure.Management.ApiManagement.Models.CertificateConfiguration">
   <TypeSignature Language="C#" Value="public class CertificateConfiguration" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CertificateConfiguration extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.ApiManagement.Models.CertificateConfiguration" />
@@ -39,7 +39,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CertificateConfiguration (string storeName, string encodedCertificate = null, string certificatePassword = null, Microsoft.Azure.Management.ApiManagement.Models.CertificateInformation certificate = null);" />
+      <MemberSignature Language="C#" Value="public CertificateConfiguration (string storeName, string encodedCertificate = default, string certificatePassword = default, Microsoft.Azure.Management.ApiManagement.Models.CertificateInformation certificate = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string storeName, string encodedCertificate, string certificatePassword, class Microsoft.Azure.Management.ApiManagement.Models.CertificateInformation certificate) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.Models.CertificateConfiguration.#ctor(System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.Models.CertificateInformation)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (storeName As String, Optional encodedCertificate As String = null, Optional certificatePassword As String = null, Optional certificate As CertificateInformation = null)" />
@@ -57,7 +57,7 @@
       </Parameters>
       <Docs>
         <param name="storeName">The
-            System.Security.Cryptography.x509certificates.Storename certificate
+            System.Security.Cryptography.x509certificates.StoreName certificate
             store location. Only Root and CertificateAuthority are valid
             locations. Possible values include: 'CertificateAuthority',
             'Root'</param>
@@ -174,7 +174,7 @@
       <Docs>
         <summary>
             Gets or sets the
-            System.Security.Cryptography.x509certificates.Storename certificate
+            System.Security.Cryptography.x509certificates.StoreName certificate
             store location. Only Root and CertificateAuthority are valid
             locations. Possible values include: 'CertificateAuthority', 'Root'
             </summary>

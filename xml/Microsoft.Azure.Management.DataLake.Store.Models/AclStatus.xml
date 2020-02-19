@@ -1,4 +1,4 @@
-﻿<Type Name="AclStatus" FullName="Microsoft.Azure.Management.DataLake.Store.Models.AclStatus">
+<Type Name="AclStatus" FullName="Microsoft.Azure.Management.DataLake.Store.Models.AclStatus">
   <TypeSignature Language="C#" Value="public class AclStatus" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AclStatus extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.DataLake.Store.Models.AclStatus" />
@@ -38,7 +38,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AclStatus (System.Collections.Generic.IList&lt;string&gt; entries = null, string group = null, string owner = null, Nullable&lt;int&gt; permission = null, Nullable&lt;bool&gt; stickyBit = null);" />
+      <MemberSignature Language="C#" Value="public AclStatus (System.Collections.Generic.IList&lt;string&gt; entries = default, string group = default, string owner = default, Nullable&lt;int&gt; permission = default, Nullable&lt;bool&gt; stickyBit = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;string&gt; entries, string group, string owner, valuetype System.Nullable`1&lt;int32&gt; permission, valuetype System.Nullable`1&lt;bool&gt; stickyBit) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataLake.Store.Models.AclStatus.#ctor(System.Collections.Generic.IList{System.String},System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Boolean})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional entries As IList(Of String) = null, Optional group As String = null, Optional owner As String = null, Optional permission As Nullable(Of Integer) = null, Optional stickyBit As Nullable(Of Boolean) = null)" />
@@ -71,7 +71,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AclStatus (System.Collections.Generic.IList&lt;string&gt; entries = null, string group = null, string owner = null, string permission = null, Nullable&lt;bool&gt; stickyBit = null);" />
+      <MemberSignature Language="C#" Value="public AclStatus (System.Collections.Generic.IList&lt;string&gt; entries = default, string group = default, string owner = default, string permission = default, Nullable&lt;bool&gt; stickyBit = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;string&gt; entries, string group, string owner, string permission, valuetype System.Nullable`1&lt;bool&gt; stickyBit) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataLake.Store.Models.AclStatus.#ctor(System.Collections.Generic.IList{System.String},System.String,System.String,System.String,System.Nullable{System.Boolean})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional entries As IList(Of String) = null, Optional group As String = null, Optional owner As String = null, Optional permission As String = null, Optional stickyBit As Nullable(Of Boolean) = null)" />
@@ -185,11 +185,15 @@
       </Docs>
     </Member>
     <Member MemberName="Permission">
-      <MemberSignature Language="C#" Value="public string Permission { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string Permission" />
+      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; Permission { get; set; }" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Permission" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.DataLake.Store.Models.AclStatus.Permission" />
-      <MemberSignature Language="VB.NET" Value="Public Property Permission As String" />
-      <MemberSignature Language="F#" Value="member this.Permission : string with get, set" Usage="Microsoft.Azure.Management.DataLake.Store.Models.AclStatus.Permission" />
+      <MemberSignature Language="VB.NET" Value="Public Property Permission As Nullable(Of Integer)" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="F#" Value="member this.Permission : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.DataLake.Store.Models.AclStatus.Permission" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public string Permission { get; set; }" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Permission" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Property Permission As String" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="member this.Permission : string with get, set" Usage="Microsoft.Azure.Management.DataLake.Store.Models.AclStatus.Permission" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataLake.Store</AssemblyName>

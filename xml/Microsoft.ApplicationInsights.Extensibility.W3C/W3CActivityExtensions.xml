@@ -1,4 +1,4 @@
-﻿<Type Name="W3CActivityExtensions" FullName="Microsoft.ApplicationInsights.Extensibility.W3C.W3CActivityExtensions">
+<Type Name="W3CActivityExtensions" FullName="Microsoft.ApplicationInsights.Extensibility.W3C.W3CActivityExtensions">
   <TypeSignature Language="C#" Value="public static class W3CActivityExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit W3CActivityExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.ApplicationInsights.Extensibility.W3C.W3CActivityExtensions" />
@@ -6,7 +6,9 @@
   <TypeSignature Language="F#" Value="type W3CActivityExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-    <AssemblyVersion>2.10.0.0</AssemblyVersion>
+    <AssemblyVersion>2.11.0.0</AssemblyVersion>
+    <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+    <AssemblyVersion>2.12.1.36699</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -15,6 +17,9 @@
   <Attributes>
     <Attribute>
       <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("Activity from System.Diagnostics.DiagnosticSource 4.6.0 onwards natively support W3C making extension methods in this class no longer required.")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -32,11 +37,16 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("Activity from System.Diagnostics.DiagnosticSource 4.6.0 onwards natively support W3C.")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -62,11 +72,16 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("Activity from System.Diagnostics.DiagnosticSource 4.6.0 onwards natively support W3C. Use Activity.ParentSpanId to get ParentSpan ID")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -79,7 +94,6 @@
         <param name="activity">Activity to get ParentSpanId from.</param>
         <summary>
             Gets ParentSpanId from the Activity.
-            Use carefully: if may cause iteration over all tags!
             </summary>
         <returns>ParentSpanId value or null if it does not exist.</returns>
         <remarks>To be added.</remarks>
@@ -93,11 +107,16 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("Activity from System.Diagnostics.DiagnosticSource 4.6.0 onwards natively support W3C. Use Activity.SpanId to get Span ID")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -109,8 +128,7 @@
       <Docs>
         <param name="activity">Activity to get spanId from.</param>
         <summary>
-            Gets SpanId from the Activity.
-            Use carefully: if may cause iteration over all tags!
+            Gets SpanId from the Activity.        
             </summary>
         <returns>SpanId value or null if it does not exist.</returns>
         <remarks>To be added.</remarks>
@@ -124,11 +142,16 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("Activity from System.Diagnostics.DiagnosticSource 4.6.0 onwards natively support W3C. Use Activity.TraceId to get Trace ID")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -141,7 +164,6 @@
         <param name="activity">Activity to get traceId from.</param>
         <summary>
             Gets TraceId from the Activity.
-            Use carefully: if may cause iteration over all tags!
             </summary>
         <returns>TraceId value or null if it does not exist.</returns>
         <remarks>To be added.</remarks>
@@ -155,11 +177,16 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("Activity from System.Diagnostics.DiagnosticSource 4.6.0 onwards natively support W3C.")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -185,11 +212,16 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("Activity from System.Diagnostics.DiagnosticSource 4.6.0 onwards natively support W3C.")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -215,11 +247,16 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("Activity from System.Diagnostics.DiagnosticSource 4.6.0 onwards natively support W3C.")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -245,11 +282,16 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("Activity from System.Diagnostics.DiagnosticSource 4.6.0 onwards natively support W3C.")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -276,11 +318,16 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("Activity from System.Diagnostics.DiagnosticSource 4.6.0 onwards natively support W3C.")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -307,11 +354,16 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("Activity from System.Diagnostics.DiagnosticSource 4.6.0 onwards natively support W3C.")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -337,14 +389,16 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA1801:ReviewUnusedParameters", Justification="This method has different code for Net45/NetCore")</AttributeName>
+          <AttributeName>System.Obsolete("Activity from System.Diagnostics.DiagnosticSource 4.6.0 onwards natively support W3C. OperationCorrelationTelemetryInitializer is W3C aware and is recommended to update telemetry from current Activity.")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

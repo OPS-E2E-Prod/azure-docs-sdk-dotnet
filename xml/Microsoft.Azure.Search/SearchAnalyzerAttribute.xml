@@ -1,4 +1,4 @@
-﻿<Type Name="SearchAnalyzerAttribute" FullName="Microsoft.Azure.Search.SearchAnalyzerAttribute">
+<Type Name="SearchAnalyzerAttribute" FullName="Microsoft.Azure.Search.SearchAnalyzerAttribute">
   <TypeSignature Language="C#" Value="public class SearchAnalyzerAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SearchAnalyzerAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Search.SearchAnalyzerAttribute" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type SearchAnalyzerAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-    <AssemblyVersion>9.0.0.0</AssemblyVersion>
+    <AssemblyVersion>10.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -35,14 +35,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="analyzerName" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="analyzerName">
-            The name of the analyzer. Use one of the names in <see cref="T:Microsoft.Azure.Search.Models.AnalyzerName.AsString" />
+            The name of the analyzer. Use one of the names in <c cref="T:Microsoft.Azure.Search.Models.AnalyzerName.AsString">AnalyzerName.AsString</c>
             or the name of a custom analyzer.
             </param>
         <summary>
@@ -60,13 +60,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The name of the analyzer.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,12 +1,14 @@
-﻿<Type Name="PageViewPerformanceTelemetry" FullName="Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry">
-  <TypeSignature Language="C#" Value="public sealed class PageViewPerformanceTelemetry : Microsoft.ApplicationInsights.Channel.ITelemetry, Microsoft.ApplicationInsights.DataContracts.ISupportProperties, Microsoft.ApplicationInsights.DataContracts.ISupportSampling" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PageViewPerformanceTelemetry extends System.Object implements class Microsoft.ApplicationInsights.Channel.ITelemetry, class Microsoft.ApplicationInsights.DataContracts.ISupportProperties, class Microsoft.ApplicationInsights.DataContracts.ISupportSampling" />
+<Type Name="PageViewPerformanceTelemetry" FullName="Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry">
+  <TypeSignature Language="C#" Value="public sealed class PageViewPerformanceTelemetry : Microsoft.ApplicationInsights.Channel.ITelemetry, Microsoft.ApplicationInsights.DataContracts.ISupportAdvancedSampling, Microsoft.ApplicationInsights.DataContracts.ISupportProperties" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PageViewPerformanceTelemetry extends System.Object implements class Microsoft.ApplicationInsights.Channel.ITelemetry, class Microsoft.ApplicationInsights.DataContracts.ISupportAdvancedSampling, class Microsoft.ApplicationInsights.DataContracts.ISupportProperties, class Microsoft.ApplicationInsights.DataContracts.ISupportSampling" />
   <TypeSignature Language="DocId" Value="T:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry" />
-  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PageViewPerformanceTelemetry&#xA;Implements ISupportProperties, ISupportSampling, ITelemetry" />
-  <TypeSignature Language="F#" Value="type PageViewPerformanceTelemetry = class&#xA;    interface ITelemetry&#xA;    interface ISupportProperties&#xA;    interface ISupportSampling" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PageViewPerformanceTelemetry&#xA;Implements ISupportAdvancedSampling, ISupportProperties, ITelemetry" />
+  <TypeSignature Language="F#" Value="type PageViewPerformanceTelemetry = class&#xA;    interface ITelemetry&#xA;    interface ISupportProperties&#xA;    interface ISupportAdvancedSampling&#xA;    interface ISupportSampling" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-    <AssemblyVersion>2.10.0.0</AssemblyVersion>
+    <AssemblyVersion>2.11.0.0</AssemblyVersion>
+    <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+    <AssemblyVersion>2.12.1.36699</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -14,6 +16,9 @@
   <Interfaces>
     <Interface>
       <InterfaceName>Microsoft.ApplicationInsights.Channel.ITelemetry</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.ApplicationInsights.DataContracts.ISupportAdvancedSampling</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.ApplicationInsights.DataContracts.ISupportProperties</InterfaceName>
@@ -37,7 +42,9 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -56,7 +63,9 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="pageName" Type="System.String" />
@@ -80,7 +89,9 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.DataContracts.TelemetryContext</ReturnType>
@@ -105,7 +116,9 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.Channel.ITelemetry</ReturnType>
@@ -128,7 +141,9 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
@@ -150,7 +165,9 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
@@ -175,7 +192,9 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.Extensibility.IExtension</ReturnType>
@@ -197,7 +216,9 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -205,6 +226,33 @@
       <Docs>
         <summary>
             Gets or sets page view ID.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemTypeFlag">
+      <MemberSignature Language="C#" Value="public Microsoft.ApplicationInsights.DataContracts.SamplingTelemetryItemTypes ItemTypeFlag { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.ApplicationInsights.DataContracts.SamplingTelemetryItemTypes ItemTypeFlag" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.ItemTypeFlag" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemTypeFlag As SamplingTelemetryItemTypes" />
+      <MemberSignature Language="F#" Value="member this.ItemTypeFlag : Microsoft.ApplicationInsights.DataContracts.SamplingTelemetryItemTypes" Usage="Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.ItemTypeFlag" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.ApplicationInsights.DataContracts.ISupportAdvancedSampling.ItemTypeFlag</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.ApplicationInsights.DataContracts.SamplingTelemetryItemTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets item type for sampling evaluation.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -219,7 +267,9 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Double&gt;</ReturnType>
@@ -243,7 +293,9 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -268,7 +320,9 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
@@ -290,7 +344,9 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -312,7 +368,9 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
@@ -334,7 +392,9 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
@@ -345,6 +405,32 @@
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProactiveSamplingDecision">
+      <MemberSignature Language="C#" Value="public Microsoft.ApplicationInsights.DataContracts.SamplingDecision ProactiveSamplingDecision { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.ApplicationInsights.DataContracts.SamplingDecision ProactiveSamplingDecision" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.ProactiveSamplingDecision" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProactiveSamplingDecision As SamplingDecision" />
+      <MemberSignature Language="F#" Value="member this.ProactiveSamplingDecision : Microsoft.ApplicationInsights.DataContracts.SamplingDecision with get, set" Usage="Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.ProactiveSamplingDecision" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.ApplicationInsights.DataContracts.ISupportAdvancedSampling.ProactiveSamplingDecision</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.ApplicationInsights.DataContracts.SamplingDecision</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -359,7 +445,9 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
@@ -381,7 +469,9 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
@@ -403,7 +493,9 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
@@ -428,7 +520,9 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -453,7 +547,9 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -480,7 +576,9 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTimeOffset</ReturnType>
@@ -502,7 +600,9 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>

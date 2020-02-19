@@ -1,4 +1,4 @@
-﻿<Type Name="ApplicationGatewaySslCertificateInner" FullName="Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySslCertificateInner">
+<Type Name="ApplicationGatewaySslCertificateInner" FullName="Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySslCertificateInner">
   <TypeSignature Language="C#" Value="public class ApplicationGatewaySslCertificateInner : Microsoft.Azure.Management.ResourceManager.Fluent.SubResource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ApplicationGatewaySslCertificateInner extends Microsoft.Azure.Management.ResourceManager.Fluent.SubResource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySslCertificateInner" />
@@ -6,7 +6,10 @@
   <TypeSignature Language="F#" Value="type ApplicationGatewaySslCertificateInner = class&#xA;    inherit SubResource" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.ResourceManager.Fluent.SubResource</BaseTypeName>
@@ -32,7 +35,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -44,22 +50,23 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ApplicationGatewaySslCertificateInner (string id = null, string data = null, string password = null, string publicCertData = null, string provisioningState = null, string name = null, string etag = null, string type = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string data, string password, string publicCertData, string provisioningState, string name, string etag, string type) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySslCertificateInner.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional data As String = null, Optional password As String = null, Optional publicCertData As String = null, Optional provisioningState As String = null, Optional name As String = null, Optional etag As String = null, Optional type As String = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySslCertificateInner : string * string * string * string * string * string * string * string -&gt; Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySslCertificateInner" Usage="new Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySslCertificateInner (id, data, password, publicCertData, provisioningState, name, etag, type)" />
+      <MemberSignature Language="C#" Value="public ApplicationGatewaySslCertificateInner (string id = default, string data = default, string password = default, string publicCertData = default, string keyVaultSecretId = default, Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState provisioningState = default, string name = default, string etag = default, string type = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string data, string password, string publicCertData, string keyVaultSecretId, class Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState provisioningState, string name, string etag, string type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySslCertificateInner.#ctor(System.String,System.String,System.String,System.String,System.String,Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState,System.String,System.String,System.String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySslCertificateInner : string * string * string * string * string * Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState * string * string * string -&gt; Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySslCertificateInner" Usage="new Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySslCertificateInner (id, data, password, publicCertData, keyVaultSecretId, provisioningState, name, etag, type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
         <Parameter Name="data" Type="System.String" />
         <Parameter Name="password" Type="System.String" />
         <Parameter Name="publicCertData" Type="System.String" />
-        <Parameter Name="provisioningState" Type="System.String" />
+        <Parameter Name="keyVaultSecretId" Type="System.String" />
+        <Parameter Name="provisioningState" Type="Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState" />
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="etag" Type="System.String" />
         <Parameter Name="type" Type="System.String" />
@@ -73,9 +80,12 @@
         <param name="publicCertData">Base-64 encoded Public cert data
             corresponding to pfx specified in data. Only applicable in GET
             request.</param>
-        <param name="provisioningState">Provisioning state of the SSL
-            certificate resource Possible values are: 'Updating', 'Deleting',
-            and 'Failed'.</param>
+        <param name="keyVaultSecretId">Secret Id of (base-64 encoded
+            unencrypted pfx) 'Secret' or 'Certificate' object stored in
+            KeyVault.</param>
+        <param name="provisioningState">The provisioning state of the SSL
+            certificate resource. Possible values include: 'Succeeded',
+            'Updating', 'Deleting', 'Failed'</param>
         <param name="name">Name of the SSL certificate that is unique
             within an Application Gateway.</param>
         <param name="etag">A unique read-only string that changes whenever
@@ -97,7 +107,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -117,15 +130,18 @@
       </Docs>
     </Member>
     <Member MemberName="Etag">
-      <MemberSignature Language="C#" Value="public string Etag { get; set; }" />
+      <MemberSignature Language="C#" Value="public string Etag { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Etag" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySslCertificateInner.Etag" />
-      <MemberSignature Language="VB.NET" Value="Public Property Etag As String" />
-      <MemberSignature Language="F#" Value="member this.Etag : string with get, set" Usage="Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySslCertificateInner.Etag" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Etag As String" />
+      <MemberSignature Language="F#" Value="member this.Etag : string" Usage="Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySslCertificateInner.Etag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -137,8 +153,39 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets a unique read-only string that changes whenever the
-            resource is updated.
+            Gets a unique read-only string that changes whenever the resource
+            is updated.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyVaultSecretId">
+      <MemberSignature Language="C#" Value="public string KeyVaultSecretId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string KeyVaultSecretId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySslCertificateInner.KeyVaultSecretId" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyVaultSecretId As String" />
+      <MemberSignature Language="F#" Value="member this.KeyVaultSecretId : string with get, set" Usage="Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySslCertificateInner.KeyVaultSecretId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.keyVaultSecretId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets secret Id of (base-64 encoded unencrypted pfx)
+            'Secret' or 'Certificate' object stored in KeyVault.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -153,7 +200,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -181,7 +231,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -201,15 +254,18 @@
       </Docs>
     </Member>
     <Member MemberName="ProvisioningState">
-      <MemberSignature Language="C#" Value="public string ProvisioningState { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string ProvisioningState" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState ProvisioningState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState ProvisioningState" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySslCertificateInner.ProvisioningState" />
-      <MemberSignature Language="VB.NET" Value="Public Property ProvisioningState As String" />
-      <MemberSignature Language="F#" Value="member this.ProvisioningState : string with get, set" Usage="Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySslCertificateInner.ProvisioningState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProvisioningState As ProvisioningState" />
+      <MemberSignature Language="F#" Value="member this.ProvisioningState : Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState" Usage="Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySslCertificateInner.ProvisioningState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -217,27 +273,31 @@
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets provisioning state of the SSL certificate resource
-            Possible values are: 'Updating', 'Deleting', and 'Failed'.
+            Gets the provisioning state of the SSL certificate resource.
+            Possible values include: 'Succeeded', 'Updating', 'Deleting',
+            'Failed'
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PublicCertData">
-      <MemberSignature Language="C#" Value="public string PublicCertData { get; set; }" />
+      <MemberSignature Language="C#" Value="public string PublicCertData { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PublicCertData" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySslCertificateInner.PublicCertData" />
-      <MemberSignature Language="VB.NET" Value="Public Property PublicCertData As String" />
-      <MemberSignature Language="F#" Value="member this.PublicCertData : string with get, set" Usage="Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySslCertificateInner.PublicCertData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PublicCertData As String" />
+      <MemberSignature Language="F#" Value="member this.PublicCertData : string" Usage="Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySslCertificateInner.PublicCertData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -249,7 +309,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets base-64 encoded Public cert data corresponding to pfx
+            Gets base-64 encoded Public cert data corresponding to pfx
             specified in data. Only applicable in GET request.
             </summary>
         <value>To be added.</value>
@@ -257,15 +317,18 @@
       </Docs>
     </Member>
     <Member MemberName="Type">
-      <MemberSignature Language="C#" Value="public string Type { get; set; }" />
+      <MemberSignature Language="C#" Value="public string Type { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Type" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySslCertificateInner.Type" />
-      <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
-      <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySslCertificateInner.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As String" />
+      <MemberSignature Language="F#" Value="member this.Type : string" Usage="Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySslCertificateInner.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -277,7 +340,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets type of the resource.
+            Gets type of the resource.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

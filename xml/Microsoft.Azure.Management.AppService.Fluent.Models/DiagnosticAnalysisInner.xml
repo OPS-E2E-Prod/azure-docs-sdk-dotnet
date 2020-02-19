@@ -1,4 +1,4 @@
-﻿<Type Name="DiagnosticAnalysisInner" FullName="Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticAnalysisInner">
+<Type Name="DiagnosticAnalysisInner" FullName="Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticAnalysisInner">
   <TypeSignature Language="C#" Value="public class DiagnosticAnalysisInner : Microsoft.Azure.Management.AppService.Fluent.Models.ProxyOnlyResourceInner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DiagnosticAnalysisInner extends Microsoft.Azure.Management.AppService.Fluent.Models.ProxyOnlyResourceInner" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticAnalysisInner" />
@@ -6,7 +6,10 @@
   <TypeSignature Language="F#" Value="type DiagnosticAnalysisInner = class&#xA;    inherit ProxyOnlyResourceInner" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.AppService.Fluent.Models.ProxyOnlyResourceInner</BaseTypeName>
@@ -32,7 +35,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,15 +49,16 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public DiagnosticAnalysisInner (string id = null, string name = null, string type = null, string kind = null, Nullable&lt;DateTime&gt; startTime = null, Nullable&lt;DateTime&gt; endTime = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.AbnormalTimePeriod&gt; abnormalTimePeriods = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.AnalysisData&gt; payload = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinition&gt; nonCorrelatedDetectors = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string type, string kind, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startTime, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; endTime, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.AbnormalTimePeriod&gt; abnormalTimePeriods, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.AnalysisData&gt; payload, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinition&gt; nonCorrelatedDetectors) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticAnalysisInner.#ctor(System.String,System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Collections.Generic.IList{Microsoft.Azure.Management.AppService.Fluent.Models.AbnormalTimePeriod},System.Collections.Generic.IList{Microsoft.Azure.Management.AppService.Fluent.Models.AnalysisData},System.Collections.Generic.IList{Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinition})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional kind As String = null, Optional startTime As Nullable(Of DateTime) = null, Optional endTime As Nullable(Of DateTime) = null, Optional abnormalTimePeriods As IList(Of AbnormalTimePeriod) = null, Optional payload As IList(Of AnalysisData) = null, Optional nonCorrelatedDetectors As IList(Of DetectorDefinition) = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticAnalysisInner : string * string * string * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.AbnormalTimePeriod&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.AnalysisData&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinition&gt; -&gt; Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticAnalysisInner" Usage="new Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticAnalysisInner (id, name, type, kind, startTime, endTime, abnormalTimePeriods, payload, nonCorrelatedDetectors)" />
+      <MemberSignature Language="C#" Value="public DiagnosticAnalysisInner (string id = default, string name = default, string type = default, string kind = default, Nullable&lt;DateTime&gt; startTime = default, Nullable&lt;DateTime&gt; endTime = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.AbnormalTimePeriod&gt; abnormalTimePeriods = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.AnalysisData&gt; payload = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinitionInner&gt; nonCorrelatedDetectors = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string type, string kind, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startTime, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; endTime, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.AbnormalTimePeriod&gt; abnormalTimePeriods, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.AnalysisData&gt; payload, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinitionInner&gt; nonCorrelatedDetectors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticAnalysisInner.#ctor(System.String,System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Collections.Generic.IList{Microsoft.Azure.Management.AppService.Fluent.Models.AbnormalTimePeriod},System.Collections.Generic.IList{Microsoft.Azure.Management.AppService.Fluent.Models.AnalysisData},System.Collections.Generic.IList{Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinitionInner})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional kind As String = null, Optional startTime As Nullable(Of DateTime) = null, Optional endTime As Nullable(Of DateTime) = null, Optional abnormalTimePeriods As IList(Of AbnormalTimePeriod) = null, Optional payload As IList(Of AnalysisData) = null, Optional nonCorrelatedDetectors As IList(Of DetectorDefinitionInner) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticAnalysisInner : string * string * string * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.AbnormalTimePeriod&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.AnalysisData&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinitionInner&gt; -&gt; Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticAnalysisInner" Usage="new Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticAnalysisInner (id, name, type, kind, startTime, endTime, abnormalTimePeriods, payload, nonCorrelatedDetectors)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
@@ -62,7 +69,7 @@
         <Parameter Name="endTime" Type="System.Nullable&lt;System.DateTime&gt;" />
         <Parameter Name="abnormalTimePeriods" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.AbnormalTimePeriod&gt;" />
         <Parameter Name="payload" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.AnalysisData&gt;" />
-        <Parameter Name="nonCorrelatedDetectors" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinition&gt;" />
+        <Parameter Name="nonCorrelatedDetectors" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinitionInner&gt;" />
       </Parameters>
       <Docs>
         <param name="id">To be added.</param>
@@ -90,7 +97,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -117,7 +127,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -136,15 +149,18 @@
       </Docs>
     </Member>
     <Member MemberName="NonCorrelatedDetectors">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinition&gt; NonCorrelatedDetectors { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinition&gt; NonCorrelatedDetectors" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinitionInner&gt; NonCorrelatedDetectors { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinitionInner&gt; NonCorrelatedDetectors" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticAnalysisInner.NonCorrelatedDetectors" />
-      <MemberSignature Language="VB.NET" Value="Public Property NonCorrelatedDetectors As IList(Of DetectorDefinition)" />
-      <MemberSignature Language="F#" Value="member this.NonCorrelatedDetectors : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinition&gt; with get, set" Usage="Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticAnalysisInner.NonCorrelatedDetectors" />
+      <MemberSignature Language="VB.NET" Value="Public Property NonCorrelatedDetectors As IList(Of DetectorDefinitionInner)" />
+      <MemberSignature Language="F#" Value="member this.NonCorrelatedDetectors : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinitionInner&gt; with get, set" Usage="Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticAnalysisInner.NonCorrelatedDetectors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -152,7 +168,7 @@
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinition&gt;</ReturnType>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinitionInner&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -172,7 +188,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -199,7 +218,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

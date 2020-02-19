@@ -1,4 +1,4 @@
-﻿<Type Name="IPublishedArtifactsOperations" FullName="Microsoft.Azure.Management.Blueprint.IPublishedArtifactsOperations">
+<Type Name="IPublishedArtifactsOperations" FullName="Microsoft.Azure.Management.Blueprint.IPublishedArtifactsOperations">
   <TypeSignature Language="C#" Value="public interface IPublishedArtifactsOperations" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPublishedArtifactsOperations" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Blueprint.IPublishedArtifactsOperations" />
@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
     <AssemblyVersion>0.10.0.0</AssemblyVersion>
     <AssemblyVersion>0.14.0.0</AssemblyVersion>
+    <AssemblyVersion>0.20.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -18,7 +19,7 @@
   </Docs>
   <Members>
     <Member MemberName="GetWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Blueprint.Models.Artifact&gt;&gt; GetWithHttpMessagesAsync (string scope, string blueprintName, string versionId, string artifactName, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Blueprint.Models.Artifact&gt;&gt; GetWithHttpMessagesAsync (string scope, string blueprintName, string versionId, string artifactName, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Azure.Management.Blueprint.Models.Artifact&gt;&gt; GetWithHttpMessagesAsync(string scope, string blueprintName, string versionId, string artifactName, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Blueprint.IPublishedArtifactsOperations.GetWithHttpMessagesAsync(System.String,System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member GetWithHttpMessagesAsync : string * string * string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Blueprint.Models.Artifact&gt;&gt;" Usage="iPublishedArtifactsOperations.GetWithHttpMessagesAsync (scope, blueprintName, versionId, artifactName, customHeaders, cancellationToken)" />
@@ -27,6 +28,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Blueprint.Models.Artifact&gt;&gt;</ReturnType>
@@ -44,16 +46,18 @@
             The scope of the resource. Valid scopes are: management group
             (format:
             '/providers/Microsoft.Management/managementGroups/{managementGroup}'),
-            subscription (format: '/subscriptions/{subscriptionId}').
+            subscription (format: '/subscriptions/{subscriptionId}'). For
+            blueprint assignments management group scope is reserved for future
+            use.
             </param>
         <param name="blueprintName">
-            name of the blueprint.
+            Name of the blueprint definition.
             </param>
         <param name="versionId">
-            version of the published blueprint.
+            Version of the published blueprint definition.
             </param>
         <param name="artifactName">
-            name of the artifact.
+            Name of the blueprint artifact.
             </param>
         <param name="customHeaders">
             The headers that will be added to request.
@@ -62,7 +66,7 @@
             The cancellation token.
             </param>
         <summary>
-            Get an artifact for a published Blueprint.
+            Get an artifact for a published blueprint definition.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -78,7 +82,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListNextWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Blueprint.Models.Artifact&gt;&gt;&gt; ListNextWithHttpMessagesAsync (string nextPageLink, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Blueprint.Models.Artifact&gt;&gt;&gt; ListNextWithHttpMessagesAsync (string nextPageLink, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Blueprint.Models.Artifact&gt;&gt;&gt; ListNextWithHttpMessagesAsync(string nextPageLink, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Blueprint.IPublishedArtifactsOperations.ListNextWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member ListNextWithHttpMessagesAsync : string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Blueprint.Models.Artifact&gt;&gt;&gt;" Usage="iPublishedArtifactsOperations.ListNextWithHttpMessagesAsync (nextPageLink, customHeaders, cancellationToken)" />
@@ -87,6 +91,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Blueprint.Models.Artifact&gt;&gt;&gt;</ReturnType>
@@ -107,7 +112,7 @@
             The cancellation token.
             </param>
         <summary>
-            List artifacts for a published Blueprint.
+            List artifacts for a version of a published blueprint definition.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -123,7 +128,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Blueprint.Models.Artifact&gt;&gt;&gt; ListWithHttpMessagesAsync (string scope, string blueprintName, string versionId, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Blueprint.Models.Artifact&gt;&gt;&gt; ListWithHttpMessagesAsync (string scope, string blueprintName, string versionId, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Blueprint.Models.Artifact&gt;&gt;&gt; ListWithHttpMessagesAsync(string scope, string blueprintName, string versionId, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Blueprint.IPublishedArtifactsOperations.ListWithHttpMessagesAsync(System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member ListWithHttpMessagesAsync : string * string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Blueprint.Models.Artifact&gt;&gt;&gt;" Usage="iPublishedArtifactsOperations.ListWithHttpMessagesAsync (scope, blueprintName, versionId, customHeaders, cancellationToken)" />
@@ -132,6 +137,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Blueprint.Models.Artifact&gt;&gt;&gt;</ReturnType>
@@ -148,13 +154,15 @@
             The scope of the resource. Valid scopes are: management group
             (format:
             '/providers/Microsoft.Management/managementGroups/{managementGroup}'),
-            subscription (format: '/subscriptions/{subscriptionId}').
+            subscription (format: '/subscriptions/{subscriptionId}'). For
+            blueprint assignments management group scope is reserved for future
+            use.
             </param>
         <param name="blueprintName">
-            name of the blueprint.
+            Name of the blueprint definition.
             </param>
         <param name="versionId">
-            version of the published blueprint.
+            Version of the published blueprint definition.
             </param>
         <param name="customHeaders">
             The headers that will be added to request.
@@ -163,7 +171,7 @@
             The cancellation token.
             </param>
         <summary>
-            List artifacts for a published Blueprint.
+            List artifacts for a version of a published blueprint definition.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

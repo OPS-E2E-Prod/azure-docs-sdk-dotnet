@@ -1,4 +1,4 @@
-﻿<Type Name="ExponentialBackoff" FullName="Microsoft.Azure.Devices.Client.ExponentialBackoff">
+<Type Name="ExponentialBackoff" FullName="Microsoft.Azure.Devices.Client.ExponentialBackoff">
   <TypeSignature Language="C#" Value="public class ExponentialBackoff : Microsoft.Azure.Devices.Client.IRetryPolicy" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExponentialBackoff extends System.Object implements class Microsoft.Azure.Devices.Client.IRetryPolicy" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Devices.Client.ExponentialBackoff" />
@@ -6,7 +6,11 @@
   <TypeSignature Language="F#" Value="type ExponentialBackoff = class&#xA;    interface IRetryPolicy" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Devices.Client</AssemblyName>
-    <AssemblyVersion>1.20.3.0</AssemblyVersion>
+    <AssemblyVersion>1.21.2.0</AssemblyVersion>
+    <AssemblyVersion>1.21.3.0</AssemblyVersion>
+    <AssemblyVersion>1.21.4.0</AssemblyVersion>
+    <AssemblyVersion>1.22.0.0</AssemblyVersion>
+    <AssemblyVersion>1.23.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -32,7 +36,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Client</AssemblyName>
-        <AssemblyVersion>1.20.3.0</AssemblyVersion>
+        <AssemblyVersion>1.21.2.0</AssemblyVersion>
+        <AssemblyVersion>1.21.3.0</AssemblyVersion>
+        <AssemblyVersion>1.21.4.0</AssemblyVersion>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="retryCount" Type="System.Int32" />
@@ -56,14 +64,18 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ShouldRetry(int32 currentRetryCount, class System.Exception lastException, [out] valuetype System.TimeSpan&amp; retryInterval) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Client.ExponentialBackoff.ShouldRetry(System.Int32,System.Exception,System.TimeSpan@)" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldRetry (currentRetryCount As Integer, lastException As Exception, ByRef retryInterval As TimeSpan) As Boolean" />
-      <MemberSignature Language="F#" Value="abstract member ShouldRetry : int * Exception *  -&gt; bool&#xA;override this.ShouldRetry : int * Exception *  -&gt; bool" Usage="exponentialBackoff.ShouldRetry (currentRetryCount, lastException, retryInterval)" />
+      <MemberSignature Language="F#" Value="abstract member ShouldRetry : int * Exception * TimeSpan -&gt; bool&#xA;override this.ShouldRetry : int * Exception * TimeSpan -&gt; bool" Usage="exponentialBackoff.ShouldRetry (currentRetryCount, lastException, retryInterval)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Azure.Devices.Client.IRetryPolicy.ShouldRetry(System.Int32,System.Exception,System.TimeSpan@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Client</AssemblyName>
-        <AssemblyVersion>1.20.3.0</AssemblyVersion>
+        <AssemblyVersion>1.21.2.0</AssemblyVersion>
+        <AssemblyVersion>1.21.3.0</AssemblyVersion>
+        <AssemblyVersion>1.21.4.0</AssemblyVersion>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

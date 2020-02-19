@@ -1,4 +1,4 @@
-﻿<Type Name="AuthorizationManagementClient" FullName="Microsoft.Azure.Management.Graph.RBAC.Fluent.AuthorizationManagementClient">
+<Type Name="AuthorizationManagementClient" FullName="Microsoft.Azure.Management.Graph.RBAC.Fluent.AuthorizationManagementClient">
   <TypeSignature Language="C#" Value="public class AuthorizationManagementClient : Microsoft.Azure.Management.ResourceManager.Fluent.Core.FluentServiceClientBase&lt;Microsoft.Azure.Management.Graph.RBAC.Fluent.AuthorizationManagementClient&gt;, IDisposable, Microsoft.Azure.Management.Graph.RBAC.Fluent.IAuthorizationManagementClient, Microsoft.Rest.Azure.IAzureClient" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AuthorizationManagementClient extends Microsoft.Azure.Management.ResourceManager.Fluent.Core.FluentServiceClientBase`1&lt;class Microsoft.Azure.Management.Graph.RBAC.Fluent.AuthorizationManagementClient&gt; implements class Microsoft.Azure.Management.Graph.RBAC.Fluent.IAuthorizationManagementClient, class Microsoft.Rest.Azure.IAzureClient, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Graph.RBAC.Fluent.AuthorizationManagementClient" />
@@ -6,7 +6,10 @@
   <TypeSignature Language="F#" Value="type AuthorizationManagementClient = class&#xA;    inherit FluentServiceClientBase&lt;AuthorizationManagementClient&gt;&#xA;    interface IAuthorizationManagementClient&#xA;    interface IDisposable&#xA;    interface IAzureClient" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.ResourceManager.Fluent.Core.FluentServiceClientBase&lt;Microsoft.Azure.Management.Graph.RBAC.Fluent.AuthorizationManagementClient&gt;</BaseTypeName>
@@ -26,14 +29,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>
-            Role based access control provides you a way to apply granular level
-            policy administration down to individual resources or resource groups.
-            These operations enable you to manage role definitions and role
-            assignments. A role definition describes the set of actions that can be
-            performed on resources. A role assignment grants access to Azure Active
-            Directory users.
-            </summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +41,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="restClient" Type="Microsoft.Azure.Management.ResourceManager.Fluent.Core.RestClient" />
@@ -73,14 +72,17 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the preferred language for the response.
+            The preferred language for the response.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -95,7 +97,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Graph.RBAC.Fluent.IClassicAdministratorsOperations</ReturnType>
@@ -103,6 +108,31 @@
       <Docs>
         <summary>
             Gets the IClassicAdministratorsOperations.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DenyAssignments">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Graph.RBAC.Fluent.IDenyAssignmentsOperations DenyAssignments { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Graph.RBAC.Fluent.IDenyAssignmentsOperations DenyAssignments" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Graph.RBAC.Fluent.AuthorizationManagementClient.DenyAssignments" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DenyAssignments As IDenyAssignmentsOperations" />
+      <MemberSignature Language="F#" Value="member this.DenyAssignments : Microsoft.Azure.Management.Graph.RBAC.Fluent.IDenyAssignmentsOperations" Usage="Microsoft.Azure.Management.Graph.RBAC.Fluent.AuthorizationManagementClient.DenyAssignments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Graph.RBAC.Fluent.IDenyAssignmentsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the IDenyAssignmentsOperations.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -117,7 +147,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Newtonsoft.Json.JsonSerializerSettings</ReturnType>
@@ -143,15 +176,44 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            When set to true a unique x-ms-client-request-id value is generated and
-            included in each request. Default is true.
+            Whether a unique x-ms-client-request-id should be generated. When set to
+            true a unique x-ms-client-request-id value is generated and included in
+            each request. Default is true.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GlobalAdministrator">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Graph.RBAC.Fluent.IGlobalAdministratorOperations GlobalAdministrator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Graph.RBAC.Fluent.IGlobalAdministratorOperations GlobalAdministrator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Graph.RBAC.Fluent.AuthorizationManagementClient.GlobalAdministrator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GlobalAdministrator As IGlobalAdministratorOperations" />
+      <MemberSignature Language="F#" Value="member this.GlobalAdministrator : Microsoft.Azure.Management.Graph.RBAC.Fluent.IGlobalAdministratorOperations" Usage="Microsoft.Azure.Management.Graph.RBAC.Fluent.AuthorizationManagementClient.GlobalAdministrator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Graph.RBAC.Fluent.IGlobalAdministratorOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the IGlobalAdministratorOperations.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -166,7 +228,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -192,15 +257,18 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the retry timeout in seconds for Long Running Operations.
-            Default value is 30.
+            The retry timeout in seconds for Long Running Operations. Default value is
+            30.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -215,7 +283,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Graph.RBAC.Fluent.IPermissionsOperations</ReturnType>
@@ -237,7 +308,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Graph.RBAC.Fluent.IProviderOperationsMetadataOperations</ReturnType>
@@ -259,7 +333,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Graph.RBAC.Fluent.IRoleAssignmentsOperations</ReturnType>
@@ -281,7 +358,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Graph.RBAC.Fluent.IRoleDefinitionsOperations</ReturnType>
@@ -303,7 +383,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Newtonsoft.Json.JsonSerializerSettings</ReturnType>
@@ -328,7 +411,10 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

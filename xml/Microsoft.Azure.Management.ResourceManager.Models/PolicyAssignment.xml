@@ -1,4 +1,4 @@
-﻿<Type Name="PolicyAssignment" FullName="Microsoft.Azure.Management.ResourceManager.Models.PolicyAssignment">
+<Type Name="PolicyAssignment" FullName="Microsoft.Azure.Management.ResourceManager.Models.PolicyAssignment">
   <TypeSignature Language="C#" Value="public class PolicyAssignment : Microsoft.Rest.Azure.IResource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PolicyAssignment extends System.Object implements class Microsoft.Rest.Azure.IResource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.ResourceManager.Models.PolicyAssignment" />
@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.ResourceManager</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -37,6 +38,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -47,23 +49,24 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PolicyAssignment (string displayName = null, string policyDefinitionId = null, string scope = null, System.Collections.Generic.IList&lt;string&gt; notScopes = null, object parameters = null, string description = null, object metadata = null, string id = null, string type = null, string name = null, Microsoft.Azure.Management.ResourceManager.Models.PolicySku sku = null, string location = null, Microsoft.Azure.Management.ResourceManager.Models.Identity identity = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string displayName, string policyDefinitionId, string scope, class System.Collections.Generic.IList`1&lt;string&gt; notScopes, object parameters, string description, object metadata, string id, string type, string name, class Microsoft.Azure.Management.ResourceManager.Models.PolicySku sku, string location, class Microsoft.Azure.Management.ResourceManager.Models.Identity identity) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ResourceManager.Models.PolicyAssignment.#ctor(System.String,System.String,System.String,System.Collections.Generic.IList{System.String},System.Object,System.String,System.Object,System.String,System.String,System.String,Microsoft.Azure.Management.ResourceManager.Models.PolicySku,System.String,Microsoft.Azure.Management.ResourceManager.Models.Identity)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.ResourceManager.Models.PolicyAssignment : string * string * string * System.Collections.Generic.IList&lt;string&gt; * obj * string * obj * string * string * string * Microsoft.Azure.Management.ResourceManager.Models.PolicySku * string * Microsoft.Azure.Management.ResourceManager.Models.Identity -&gt; Microsoft.Azure.Management.ResourceManager.Models.PolicyAssignment" Usage="new Microsoft.Azure.Management.ResourceManager.Models.PolicyAssignment (displayName, policyDefinitionId, scope, notScopes, parameters, description, metadata, id, type, name, sku, location, identity)" />
+      <MemberSignature Language="C#" Value="public PolicyAssignment (string displayName = default, string policyDefinitionId = default, string scope = default, System.Collections.Generic.IList&lt;string&gt; notScopes = default, System.Collections.Generic.IDictionary&lt;string,Microsoft.Azure.Management.ResourceManager.Models.ParameterValuesValue&gt; parameters = default, string description = default, object metadata = default, string enforcementMode = default, string id = default, string type = default, string name = default, Microsoft.Azure.Management.ResourceManager.Models.PolicySku sku = default, string location = default, Microsoft.Azure.Management.ResourceManager.Models.Identity identity = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string displayName, string policyDefinitionId, string scope, class System.Collections.Generic.IList`1&lt;string&gt; notScopes, class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.Azure.Management.ResourceManager.Models.ParameterValuesValue&gt; parameters, string description, object metadata, string enforcementMode, string id, string type, string name, class Microsoft.Azure.Management.ResourceManager.Models.PolicySku sku, string location, class Microsoft.Azure.Management.ResourceManager.Models.Identity identity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ResourceManager.Models.PolicyAssignment.#ctor(System.String,System.String,System.String,System.Collections.Generic.IList{System.String},System.Collections.Generic.IDictionary{System.String,Microsoft.Azure.Management.ResourceManager.Models.ParameterValuesValue},System.String,System.Object,System.String,System.String,System.String,System.String,Microsoft.Azure.Management.ResourceManager.Models.PolicySku,System.String,Microsoft.Azure.Management.ResourceManager.Models.Identity)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.ResourceManager.Models.PolicyAssignment : string * string * string * System.Collections.Generic.IList&lt;string&gt; * System.Collections.Generic.IDictionary&lt;string, Microsoft.Azure.Management.ResourceManager.Models.ParameterValuesValue&gt; * string * obj * string * string * string * string * Microsoft.Azure.Management.ResourceManager.Models.PolicySku * string * Microsoft.Azure.Management.ResourceManager.Models.Identity -&gt; Microsoft.Azure.Management.ResourceManager.Models.PolicyAssignment" Usage="new Microsoft.Azure.Management.ResourceManager.Models.PolicyAssignment (displayName, policyDefinitionId, scope, notScopes, parameters, description, metadata, enforcementMode, id, type, name, sku, location, identity)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="displayName" Type="System.String" />
         <Parameter Name="policyDefinitionId" Type="System.String" />
         <Parameter Name="scope" Type="System.String" />
         <Parameter Name="notScopes" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
-        <Parameter Name="parameters" Type="System.Object" />
+        <Parameter Name="parameters" Type="System.Collections.Generic.IDictionary&lt;System.String,Microsoft.Azure.Management.ResourceManager.Models.ParameterValuesValue&gt;" />
         <Parameter Name="description" Type="System.String" />
         <Parameter Name="metadata" Type="System.Object" />
+        <Parameter Name="enforcementMode" Type="System.String" />
         <Parameter Name="id" Type="System.String" />
         <Parameter Name="type" Type="System.String" />
         <Parameter Name="name" Type="System.String" />
@@ -78,11 +81,16 @@
             policy set definition being assigned.</param>
         <param name="scope">The scope for the policy assignment.</param>
         <param name="notScopes">The policy's excluded scopes.</param>
-        <param name="parameters">Required if a parameter is used in policy
-            rule.</param>
+        <param name="parameters">The parameter values for the assigned
+            policy rule. The keys are the parameter names.</param>
         <param name="description">This message will be part of response in
             case of policy violation.</param>
-        <param name="metadata">The policy assignment metadata.</param>
+        <param name="metadata">The policy assignment metadata. Metadata is
+            an open ended object and is typically a collection of key value
+            pairs.</param>
+        <param name="enforcementMode">The policy assignment enforcement
+            mode. Possible values are Default and DoNotEnforce. Possible values
+            include: 'Default', 'DoNotEnforce'</param>
         <param name="id">The ID of the policy assignment.</param>
         <param name="type">The type of the policy assignment.</param>
         <param name="name">The name of the policy assignment.</param>
@@ -108,6 +116,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -136,6 +145,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -153,6 +163,36 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="EnforcementMode">
+      <MemberSignature Language="C#" Value="public string EnforcementMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string EnforcementMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ResourceManager.Models.PolicyAssignment.EnforcementMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnforcementMode As String" />
+      <MemberSignature Language="F#" Value="member this.EnforcementMode : string with get, set" Usage="Microsoft.Azure.Management.ResourceManager.Models.PolicyAssignment.EnforcementMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.ResourceManager</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.enforcementMode")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the policy assignment enforcement mode. Possible
+            values are Default and DoNotEnforce. Possible values include:
+            'Default', 'DoNotEnforce'
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Id">
       <MemberSignature Language="C#" Value="public string Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
@@ -163,6 +203,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -190,6 +231,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -218,6 +260,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -246,6 +289,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -257,7 +301,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the policy assignment metadata.
+            Gets or sets the policy assignment metadata. Metadata is an open
+            ended object and is typically a collection of key value pairs.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -273,6 +318,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -300,6 +346,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -318,15 +365,16 @@
       </Docs>
     </Member>
     <Member MemberName="Parameters">
-      <MemberSignature Language="C#" Value="public object Parameters { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance object Parameters" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,Microsoft.Azure.Management.ResourceManager.Models.ParameterValuesValue&gt; Parameters { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.Azure.Management.ResourceManager.Models.ParameterValuesValue&gt; Parameters" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ResourceManager.Models.PolicyAssignment.Parameters" />
-      <MemberSignature Language="VB.NET" Value="Public Property Parameters As Object" />
-      <MemberSignature Language="F#" Value="member this.Parameters : obj with get, set" Usage="Microsoft.Azure.Management.ResourceManager.Models.PolicyAssignment.Parameters" />
+      <MemberSignature Language="VB.NET" Value="Public Property Parameters As IDictionary(Of String, ParameterValuesValue)" />
+      <MemberSignature Language="F#" Value="member this.Parameters : System.Collections.Generic.IDictionary&lt;string, Microsoft.Azure.Management.ResourceManager.Models.ParameterValuesValue&gt; with get, set" Usage="Microsoft.Azure.Management.ResourceManager.Models.PolicyAssignment.Parameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -334,11 +382,12 @@
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Object</ReturnType>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,Microsoft.Azure.Management.ResourceManager.Models.ParameterValuesValue&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets required if a parameter is used in policy rule.
+            Gets or sets the parameter values for the assigned policy rule. The
+            keys are the parameter names.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -354,6 +403,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -382,6 +432,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -409,6 +460,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -437,6 +489,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -464,6 +517,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

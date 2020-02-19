@@ -1,4 +1,4 @@
-﻿<Type Name="IRedisCachePremiumBeta" FullName="Microsoft.Azure.Management.Redis.Fluent.IRedisCachePremiumBeta">
+<Type Name="IRedisCachePremiumBeta" FullName="Microsoft.Azure.Management.Redis.Fluent.IRedisCachePremiumBeta">
   <TypeSignature Language="C#" Value="public interface IRedisCachePremiumBeta : Microsoft.Azure.Management.ResourceManager.Fluent.Core.IBeta" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRedisCachePremiumBeta implements class Microsoft.Azure.Management.ResourceManager.Fluent.Core.IBeta" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Redis.Fluent.IRedisCachePremiumBeta" />
@@ -6,7 +6,10 @@
   <TypeSignature Language="F#" Value="type IRedisCachePremiumBeta = interface&#xA;    interface IBeta" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Redis.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -29,7 +32,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Redis.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -52,14 +58,17 @@
       </Docs>
     </Member>
     <Member MemberName="AddLinkedServerAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; AddLinkedServerAsync (string linkedRedisCacheId, string linkedServerLocation, Microsoft.Azure.Management.Redis.Fluent.Models.ReplicationRole role, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; AddLinkedServerAsync (string linkedRedisCacheId, string linkedServerLocation, Microsoft.Azure.Management.Redis.Fluent.Models.ReplicationRole role, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;string&gt; AddLinkedServerAsync(string linkedRedisCacheId, string linkedServerLocation, valuetype Microsoft.Azure.Management.Redis.Fluent.Models.ReplicationRole role, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Redis.Fluent.IRedisCachePremiumBeta.AddLinkedServerAsync(System.String,System.String,Microsoft.Azure.Management.Redis.Fluent.Models.ReplicationRole,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member AddLinkedServerAsync : string * string * Microsoft.Azure.Management.Redis.Fluent.Models.ReplicationRole * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="iRedisCachePremiumBeta.AddLinkedServerAsync (linkedRedisCacheId, linkedServerLocation, role, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Redis.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -92,7 +101,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Redis.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Redis.Fluent.Models.ReplicationRole</ReturnType>
@@ -111,14 +123,17 @@
       </Docs>
     </Member>
     <Member MemberName="GetLinkedServerRoleAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Redis.Fluent.Models.ReplicationRole&gt; GetLinkedServerRoleAsync (string linkedServerName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Redis.Fluent.Models.ReplicationRole&gt; GetLinkedServerRoleAsync (string linkedServerName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;valuetype Microsoft.Azure.Management.Redis.Fluent.Models.ReplicationRole&gt; GetLinkedServerRoleAsync(string linkedServerName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Redis.Fluent.IRedisCachePremiumBeta.GetLinkedServerRoleAsync(System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member GetLinkedServerRoleAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Redis.Fluent.Models.ReplicationRole&gt;" Usage="iRedisCachePremiumBeta.GetLinkedServerRoleAsync (linkedServerName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Redis.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Redis.Fluent.Models.ReplicationRole&gt;</ReturnType>
@@ -147,7 +162,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Redis.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyDictionary&lt;System.String,Microsoft.Azure.Management.Redis.Fluent.Models.ReplicationRole&gt;</ReturnType>
@@ -163,14 +181,17 @@
       </Docs>
     </Member>
     <Member MemberName="ListLinkedServersAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IReadOnlyDictionary&lt;string,Microsoft.Azure.Management.Redis.Fluent.Models.ReplicationRole&gt;&gt; ListLinkedServersAsync (System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IReadOnlyDictionary&lt;string,Microsoft.Azure.Management.Redis.Fluent.Models.ReplicationRole&gt;&gt; ListLinkedServersAsync (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, valuetype Microsoft.Azure.Management.Redis.Fluent.Models.ReplicationRole&gt;&gt; ListLinkedServersAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Redis.Fluent.IRedisCachePremiumBeta.ListLinkedServersAsync(System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member ListLinkedServersAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IReadOnlyDictionary&lt;string, Microsoft.Azure.Management.Redis.Fluent.Models.ReplicationRole&gt;&gt;" Usage="iRedisCachePremiumBeta.ListLinkedServersAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Redis.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IReadOnlyDictionary&lt;System.String,Microsoft.Azure.Management.Redis.Fluent.Models.ReplicationRole&gt;&gt;</ReturnType>
@@ -197,7 +218,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Redis.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -214,14 +238,17 @@
       </Docs>
     </Member>
     <Member MemberName="RemoveLinkedServerAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task RemoveLinkedServerAsync (string linkedServerName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task RemoveLinkedServerAsync (string linkedServerName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task RemoveLinkedServerAsync(string linkedServerName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Redis.Fluent.IRedisCachePremiumBeta.RemoveLinkedServerAsync(System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member RemoveLinkedServerAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="iRedisCachePremiumBeta.RemoveLinkedServerAsync (linkedServerName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Redis.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>

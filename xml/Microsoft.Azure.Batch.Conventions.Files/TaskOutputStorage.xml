@@ -1,4 +1,4 @@
-﻿<Type Name="TaskOutputStorage" FullName="Microsoft.Azure.Batch.Conventions.Files.TaskOutputStorage">
+<Type Name="TaskOutputStorage" FullName="Microsoft.Azure.Batch.Conventions.Files.TaskOutputStorage">
   <TypeSignature Language="C#" Value="public class TaskOutputStorage" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TaskOutputStorage extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.Conventions.Files.TaskOutputStorage" />
@@ -6,8 +6,7 @@
   <TypeSignature Language="F#" Value="type TaskOutputStorage = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch.Conventions.Files</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
-    <AssemblyVersion>3.4.0.0</AssemblyVersion>
+    <AssemblyVersion>3.5.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -35,8 +34,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch.Conventions.Files</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="jobOutputContainerUri" Type="System.Uri" />
@@ -64,8 +62,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch.Conventions.Files</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="storageAccount" Type="Microsoft.WindowsAzure.Storage.CloudStorageAccount" />
@@ -93,8 +90,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch.Conventions.Files</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="jobOutputContainerUri" Type="System.Uri" />
@@ -124,8 +120,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch.Conventions.Files</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="storageAccount" Type="Microsoft.WindowsAzure.Storage.CloudStorageAccount" />
@@ -147,21 +142,15 @@
       </Docs>
     </Member>
     <Member MemberName="GetOutputAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Conventions.Files.OutputFileReference&gt; GetOutputAsync (Microsoft.Azure.Batch.Conventions.Files.TaskOutputKind kind, string filePath, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Conventions.Files.OutputFileReference&gt; GetOutputAsync (Microsoft.Azure.Batch.Conventions.Files.TaskOutputKind kind, string filePath, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Batch.Conventions.Files.OutputFileReference&gt; GetOutputAsync(class Microsoft.Azure.Batch.Conventions.Files.TaskOutputKind kind, string filePath, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Conventions.Files.TaskOutputStorage.GetOutputAsync(Microsoft.Azure.Batch.Conventions.Files.TaskOutputKind,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="member this.GetOutputAsync : Microsoft.Azure.Batch.Conventions.Files.TaskOutputKind * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Conventions.Files.OutputFileReference&gt;" Usage="taskOutputStorage.GetOutputAsync (kind, filePath, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch.Conventions.Files</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Conventions.Files.OutputFileReference&gt;</ReturnType>
       </ReturnValue>
@@ -182,6 +171,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetOutputStoragePath">
+      <MemberSignature Language="C#" Value="public string GetOutputStoragePath (Microsoft.Azure.Batch.Conventions.Files.TaskOutputKind kind);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetOutputStoragePath(class Microsoft.Azure.Batch.Conventions.Files.TaskOutputKind kind) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Conventions.Files.TaskOutputStorage.GetOutputStoragePath(Microsoft.Azure.Batch.Conventions.Files.TaskOutputKind)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOutputStoragePath (kind As TaskOutputKind) As String" />
+      <MemberSignature Language="F#" Value="member this.GetOutputStoragePath : Microsoft.Azure.Batch.Conventions.Files.TaskOutputKind -&gt; string" Usage="taskOutputStorage.GetOutputStoragePath kind" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Batch.Conventions.Files</AssemblyName>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="kind" Type="Microsoft.Azure.Batch.Conventions.Files.TaskOutputKind" />
+      </Parameters>
+      <Docs>
+        <param name="kind">The output kind.</param>
+        <summary>
+            Gets the Blob name prefix/folder where files of the given kind are stored
+            </summary>
+        <returns>The Blob name prefix/folder where files of the given kind are stored.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ListOutputs">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.Conventions.Files.OutputFileReference&gt; ListOutputs (Microsoft.Azure.Batch.Conventions.Files.TaskOutputKind kind);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Batch.Conventions.Files.OutputFileReference&gt; ListOutputs(class Microsoft.Azure.Batch.Conventions.Files.TaskOutputKind kind) cil managed" />
@@ -191,8 +206,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch.Conventions.Files</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Batch.Conventions.Files.OutputFileReference&gt;</ReturnType>
@@ -211,21 +225,15 @@
       </Docs>
     </Member>
     <Member MemberName="SaveAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SaveAsync (Microsoft.Azure.Batch.Conventions.Files.TaskOutputKind kind, string relativePath, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SaveAsync (Microsoft.Azure.Batch.Conventions.Files.TaskOutputKind kind, string relativePath, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task SaveAsync(class Microsoft.Azure.Batch.Conventions.Files.TaskOutputKind kind, string relativePath, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Conventions.Files.TaskOutputStorage.SaveAsync(Microsoft.Azure.Batch.Conventions.Files.TaskOutputKind,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="member this.SaveAsync : Microsoft.Azure.Batch.Conventions.Files.TaskOutputKind * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="taskOutputStorage.SaveAsync (kind, relativePath, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch.Conventions.Files</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -253,21 +261,15 @@
       </Docs>
     </Member>
     <Member MemberName="SaveAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SaveAsync (Microsoft.Azure.Batch.Conventions.Files.TaskOutputKind kind, string sourcePath, string destinationRelativePath, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SaveAsync (Microsoft.Azure.Batch.Conventions.Files.TaskOutputKind kind, string sourcePath, string destinationRelativePath, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task SaveAsync(class Microsoft.Azure.Batch.Conventions.Files.TaskOutputKind kind, string sourcePath, string destinationRelativePath, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Conventions.Files.TaskOutputStorage.SaveAsync(Microsoft.Azure.Batch.Conventions.Files.TaskOutputKind,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="member this.SaveAsync : Microsoft.Azure.Batch.Conventions.Files.TaskOutputKind * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="taskOutputStorage.SaveAsync (kind, sourcePath, destinationRelativePath, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch.Conventions.Files</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -294,21 +296,15 @@
       </Docs>
     </Member>
     <Member MemberName="SaveTextAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SaveTextAsync (Microsoft.Azure.Batch.Conventions.Files.TaskOutputKind kind, string text, string destinationRelativePath, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SaveTextAsync (Microsoft.Azure.Batch.Conventions.Files.TaskOutputKind kind, string text, string destinationRelativePath, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task SaveTextAsync(class Microsoft.Azure.Batch.Conventions.Files.TaskOutputKind kind, string text, string destinationRelativePath, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Conventions.Files.TaskOutputStorage.SaveTextAsync(Microsoft.Azure.Batch.Conventions.Files.TaskOutputKind,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="member this.SaveTextAsync : Microsoft.Azure.Batch.Conventions.Files.TaskOutputKind * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="taskOutputStorage.SaveTextAsync (kind, text, destinationRelativePath, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch.Conventions.Files</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -343,14 +339,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch.Conventions.Files</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Conventions.Files.ITrackedSaveOperation&gt;</ReturnType>
       </ReturnValue>
@@ -392,14 +382,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch.Conventions.Files</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Conventions.Files.ITrackedSaveOperation&gt;</ReturnType>
       </ReturnValue>

@@ -1,4 +1,4 @@
-﻿<Type Name="PagedDeployedApplicationQueryDescription" FullName="System.Fabric.Description.PagedDeployedApplicationQueryDescription">
+<Type Name="PagedDeployedApplicationQueryDescription" FullName="System.Fabric.Description.PagedDeployedApplicationQueryDescription">
   <TypeSignature Language="C#" Value="public sealed class PagedDeployedApplicationQueryDescription : System.Fabric.Description.PagedQueryDescriptionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PagedDeployedApplicationQueryDescription extends System.Fabric.Description.PagedQueryDescriptionBase" />
   <TypeSignature Language="DocId" Value="T:System.Fabric.Description.PagedDeployedApplicationQueryDescription" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type PagedDeployedApplicationQueryDescription = class&#xA;    inherit PagedQueryDescriptionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Fabric</AssemblyName>
-    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Fabric.Description.PagedQueryDescriptionBase</BaseTypeName>
@@ -31,7 +31,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="nodeName" Type="System.String" />
@@ -53,7 +53,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -70,7 +70,7 @@
             </para>
           <para>
             This parameter matches against the case sensitive exact application names.
-            For example, the value "Test" does not match "TestApp" because it is only a partial match.
+            For example, the value "fabric:/Test" does not match "fabric:/TestApp" because it is only a partial match.
             To request all the applications on the given node, do not set this value.
             An empty <see cref="T:System.Fabric.Query.DeployedApplicationPagedList" /> will be returned if the name does not match any applications on the node.
             </para>
@@ -86,7 +86,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -115,7 +115,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -146,7 +146,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

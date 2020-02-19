@@ -1,4 +1,4 @@
-﻿<Type Name="AssignmentDeploymentJob" FullName="Microsoft.Azure.Management.Blueprint.Models.AssignmentDeploymentJob">
+<Type Name="AssignmentDeploymentJob" FullName="Microsoft.Azure.Management.Blueprint.Models.AssignmentDeploymentJob">
   <TypeSignature Language="C#" Value="public class AssignmentDeploymentJob" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AssignmentDeploymentJob extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Blueprint.Models.AssignmentDeploymentJob" />
@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
     <AssemblyVersion>0.10.0.0</AssemblyVersion>
     <AssemblyVersion>0.14.0.0</AssemblyVersion>
+    <AssemblyVersion>0.20.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -15,7 +16,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            Represents individual job in given assignment operation.
+            Represents individual job in given blueprint assignment operation.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -30,6 +31,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -40,7 +42,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AssignmentDeploymentJob (string kind = null, string action = null, string jobId = null, string jobState = null, Microsoft.Azure.Management.Blueprint.Models.AssignmentDeploymentJobResult result = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Blueprint.Models.AssignmentDeploymentJobResult&gt; history = null, string requestUri = null);" />
+      <MemberSignature Language="C#" Value="public AssignmentDeploymentJob (string kind = default, string action = default, string jobId = default, string jobState = default, Microsoft.Azure.Management.Blueprint.Models.AssignmentDeploymentJobResult result = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Blueprint.Models.AssignmentDeploymentJobResult&gt; history = default, string requestUri = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string kind, string action, string jobId, string jobState, class Microsoft.Azure.Management.Blueprint.Models.AssignmentDeploymentJobResult result, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Blueprint.Models.AssignmentDeploymentJobResult&gt; history, string requestUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Blueprint.Models.AssignmentDeploymentJob.#ctor(System.String,System.String,System.String,System.String,Microsoft.Azure.Management.Blueprint.Models.AssignmentDeploymentJobResult,System.Collections.Generic.IList{Microsoft.Azure.Management.Blueprint.Models.AssignmentDeploymentJobResult},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional kind As String = null, Optional action As String = null, Optional jobId As String = null, Optional jobState As String = null, Optional result As AssignmentDeploymentJobResult = null, Optional history As IList(Of AssignmentDeploymentJobResult) = null, Optional requestUri As String = null)" />
@@ -50,6 +52,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="kind" Type="System.String" />
@@ -61,7 +64,7 @@
         <Parameter Name="requestUri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="kind">Kind of the job.</param>
+        <param name="kind">Kind of job.</param>
         <param name="action">Name of the action performed in this
             job.</param>
         <param name="jobId">Id of this job.</param>
@@ -88,6 +91,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -116,6 +120,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -144,6 +149,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -172,6 +178,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -200,6 +207,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -211,7 +219,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets kind of the job.
+            Gets or sets kind of job.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -228,6 +236,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -256,6 +265,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

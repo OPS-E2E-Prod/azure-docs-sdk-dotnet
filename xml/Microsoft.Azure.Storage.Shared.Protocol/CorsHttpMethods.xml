@@ -1,4 +1,4 @@
-﻿<Type Name="CorsHttpMethods" FullName="Microsoft.Azure.Storage.Shared.Protocol.CorsHttpMethods">
+<Type Name="CorsHttpMethods" FullName="Microsoft.Azure.Storage.Shared.Protocol.CorsHttpMethods">
   <TypeSignature Language="C#" Value="public enum CorsHttpMethods" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CorsHttpMethods extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Storage.Shared.Protocol.CorsHttpMethods" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type CorsHttpMethods = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Storage.Common</AssemblyName>
-    <AssemblyVersion>10.0.3.0</AssemblyVersion>
+    <AssemblyVersion>11.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -17,7 +17,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            HTTP methods that are supported by CORS.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,14 +32,16 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Common</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Shared.Protocol.CorsHttpMethods</ReturnType>
       </ReturnValue>
       <MemberValue>128</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Represents the CONNECT HTTP method in a CORS rule.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -49,14 +53,16 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Common</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Shared.Protocol.CorsHttpMethods</ReturnType>
       </ReturnValue>
       <MemberValue>16</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Represents the DELETE HTTP method in a CORS rule.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Get">
@@ -68,14 +74,16 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Common</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Shared.Protocol.CorsHttpMethods</ReturnType>
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Represents the GET HTTP method in a CORS rule.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Head">
@@ -87,14 +95,16 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Common</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Shared.Protocol.CorsHttpMethods</ReturnType>
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Represents the HEAD HTTP method in a CORS rule.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Merge">
@@ -106,14 +116,16 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Common</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Shared.Protocol.CorsHttpMethods</ReturnType>
       </ReturnValue>
       <MemberValue>256</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Represents the MERGE HTTP method in a CORS rule.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -125,14 +137,16 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Common</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Shared.Protocol.CorsHttpMethods</ReturnType>
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Represents no HTTP method in a CORS rule.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Options">
@@ -144,14 +158,37 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Common</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Shared.Protocol.CorsHttpMethods</ReturnType>
       </ReturnValue>
       <MemberValue>64</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Represents the OPTIONS HTTP method in a CORS rule.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Patch">
+      <MemberSignature Language="C#" Value="Patch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Azure.Storage.Shared.Protocol.CorsHttpMethods Patch = int32(512)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Storage.Shared.Protocol.CorsHttpMethods.Patch" />
+      <MemberSignature Language="VB.NET" Value="Patch" />
+      <MemberSignature Language="F#" Value="Patch = 512" Usage="Microsoft.Azure.Storage.Shared.Protocol.CorsHttpMethods.Patch" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Storage.Common</AssemblyName>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Storage.Shared.Protocol.CorsHttpMethods</ReturnType>
+      </ReturnValue>
+      <MemberValue>512</MemberValue>
+      <Docs>
+        <summary>
+            Represents the PATCH HTTP method in a CORS rule.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Post">
@@ -163,14 +200,16 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Common</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Shared.Protocol.CorsHttpMethods</ReturnType>
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Represents the POST HTTP method in a CORS rule.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Put">
@@ -182,14 +221,16 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Common</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Shared.Protocol.CorsHttpMethods</ReturnType>
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Represents the PUT HTTP method in a CORS rule.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Trace">
@@ -201,14 +242,16 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Common</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Shared.Protocol.CorsHttpMethods</ReturnType>
       </ReturnValue>
       <MemberValue>32</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Represents the TRACE HTTP method in a CORS rule.
+            </summary>
       </Docs>
     </Member>
   </Members>

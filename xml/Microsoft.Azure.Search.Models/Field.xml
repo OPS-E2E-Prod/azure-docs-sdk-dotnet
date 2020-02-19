@@ -1,4 +1,4 @@
-﻿<Type Name="Field" FullName="Microsoft.Azure.Search.Models.Field">
+<Type Name="Field" FullName="Microsoft.Azure.Search.Models.Field">
   <TypeSignature Language="C#" Value="public class Field" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Field extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Search.Models.Field" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type Field = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-    <AssemblyVersion>9.0.0.0</AssemblyVersion>
+    <AssemblyVersion>10.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -14,8 +14,8 @@
   <Interfaces />
   <Docs>
     <summary>
-            Represents a field in an index definition in Azure Search, which
-            describes the name, data type, and search behavior of a field.
+            Represents a field in an index definition, which describes the name,
+            data type, and search behavior of a field.
             <see href="https://docs.microsoft.com/rest/api/searchservice/Create-Index" /></summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -28,7 +28,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -51,7 +51,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -75,7 +75,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -101,7 +101,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -130,7 +130,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -185,7 +185,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -214,7 +214,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -269,7 +269,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -303,7 +303,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -338,7 +338,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -370,7 +370,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -405,7 +405,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -426,7 +426,7 @@
             fields of type Edm.String or Collection(Edm.String), and it must be
             null for complex fields. Default is false for simple fields and null for
             complex fields. Note: searchable fields consume extra space in your
-            index since Azure Search will store an additional tokenized version
+            index since Azure Cognitive Search will store an additional tokenized version
             of the field value for full-text searches. If you want to save space
             in your index and you don't need a field to be included in searches,
             set searchable to false.
@@ -444,7 +444,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -457,7 +457,7 @@
       <Docs>
         <summary>
             Gets or sets a value indicating whether to enable the field to be
-            referenced in $orderby expressions. By default Azure Search sorts
+            referenced in $orderby expressions. By default Azure Cognitive Search sorts
             results by score, but in many experiences users will want to sort
             by fields in the documents. A simple field can be sortable only if
             it is single-valued (it has a single value in the scope of the
@@ -483,7 +483,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -503,14 +503,14 @@
       </Docs>
     </Member>
     <Member MemberName="New">
-      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Search.Models.Field New (string name, Microsoft.Azure.Search.Models.DataType dataType, bool isKey = false, bool isRetrievable = true, bool isSearchable = false, bool isFilterable = false, bool isSortable = false, bool isFacetable = false, Nullable&lt;Microsoft.Azure.Search.Models.AnalyzerName&gt; analyzerName = null, Nullable&lt;Microsoft.Azure.Search.Models.AnalyzerName&gt; searchAnalyzerName = null, Nullable&lt;Microsoft.Azure.Search.Models.AnalyzerName&gt; indexAnalyzerName = null, System.Collections.Generic.IList&lt;string&gt; synonymMaps = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Search.Models.Field New (string name, Microsoft.Azure.Search.Models.DataType dataType, bool isKey = false, bool isRetrievable = true, bool isSearchable = false, bool isFilterable = false, bool isSortable = false, bool isFacetable = false, Nullable&lt;Microsoft.Azure.Search.Models.AnalyzerName&gt; analyzerName = default, Nullable&lt;Microsoft.Azure.Search.Models.AnalyzerName&gt; searchAnalyzerName = default, Nullable&lt;Microsoft.Azure.Search.Models.AnalyzerName&gt; indexAnalyzerName = default, System.Collections.Generic.IList&lt;string&gt; synonymMaps = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.Search.Models.Field New(string name, valuetype Microsoft.Azure.Search.Models.DataType dataType, bool isKey, bool isRetrievable, bool isSearchable, bool isFilterable, bool isSortable, bool isFacetable, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Search.Models.AnalyzerName&gt; analyzerName, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Search.Models.AnalyzerName&gt; searchAnalyzerName, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Search.Models.AnalyzerName&gt; indexAnalyzerName, class System.Collections.Generic.IList`1&lt;string&gt; synonymMaps) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.Models.Field.New(System.String,Microsoft.Azure.Search.Models.DataType,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Nullable{Microsoft.Azure.Search.Models.AnalyzerName},System.Nullable{Microsoft.Azure.Search.Models.AnalyzerName},System.Nullable{Microsoft.Azure.Search.Models.AnalyzerName},System.Collections.Generic.IList{System.String})" />
       <MemberSignature Language="F#" Value="static member New : string * Microsoft.Azure.Search.Models.DataType * bool * bool * bool * bool * bool * bool * Nullable&lt;Microsoft.Azure.Search.Models.AnalyzerName&gt; * Nullable&lt;Microsoft.Azure.Search.Models.AnalyzerName&gt; * Nullable&lt;Microsoft.Azure.Search.Models.AnalyzerName&gt; * System.Collections.Generic.IList&lt;string&gt; -&gt; Microsoft.Azure.Search.Models.Field" Usage="Microsoft.Azure.Search.Models.Field.New (name, dataType, isKey, isRetrievable, isSearchable, isFilterable, isSortable, isFacetable, analyzerName, searchAnalyzerName, indexAnalyzerName, synonymMaps)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Search.Models.Field</ReturnType>
@@ -569,7 +569,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Search.Models.Field</ReturnType>
@@ -595,14 +595,14 @@
       </Docs>
     </Member>
     <Member MemberName="NewSearchableCollection">
-      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Search.Models.Field NewSearchableCollection (string name, Microsoft.Azure.Search.Models.AnalyzerName analyzerName, bool isKey = false, bool isRetrievable = true, bool isFilterable = false, bool isFacetable = false, System.Collections.Generic.IList&lt;string&gt; synonymMaps = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Search.Models.Field NewSearchableCollection (string name, Microsoft.Azure.Search.Models.AnalyzerName analyzerName, bool isKey = false, bool isRetrievable = true, bool isFilterable = false, bool isFacetable = false, System.Collections.Generic.IList&lt;string&gt; synonymMaps = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.Search.Models.Field NewSearchableCollection(string name, valuetype Microsoft.Azure.Search.Models.AnalyzerName analyzerName, bool isKey, bool isRetrievable, bool isFilterable, bool isFacetable, class System.Collections.Generic.IList`1&lt;string&gt; synonymMaps) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.Models.Field.NewSearchableCollection(System.String,Microsoft.Azure.Search.Models.AnalyzerName,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Collections.Generic.IList{System.String})" />
       <MemberSignature Language="F#" Value="static member NewSearchableCollection : string * Microsoft.Azure.Search.Models.AnalyzerName * bool * bool * bool * bool * System.Collections.Generic.IList&lt;string&gt; -&gt; Microsoft.Azure.Search.Models.Field" Usage="Microsoft.Azure.Search.Models.Field.NewSearchableCollection (name, analyzerName, isKey, isRetrievable, isFilterable, isFacetable, synonymMaps)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Search.Models.Field</ReturnType>
@@ -637,14 +637,14 @@
       </Docs>
     </Member>
     <Member MemberName="NewSearchableString">
-      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Search.Models.Field NewSearchableString (string name, Microsoft.Azure.Search.Models.AnalyzerName analyzerName, bool isKey = false, bool isRetrievable = true, bool isFilterable = false, bool isSortable = false, bool isFacetable = false, System.Collections.Generic.IList&lt;string&gt; synonymMaps = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Search.Models.Field NewSearchableString (string name, Microsoft.Azure.Search.Models.AnalyzerName analyzerName, bool isKey = false, bool isRetrievable = true, bool isFilterable = false, bool isSortable = false, bool isFacetable = false, System.Collections.Generic.IList&lt;string&gt; synonymMaps = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.Search.Models.Field NewSearchableString(string name, valuetype Microsoft.Azure.Search.Models.AnalyzerName analyzerName, bool isKey, bool isRetrievable, bool isFilterable, bool isSortable, bool isFacetable, class System.Collections.Generic.IList`1&lt;string&gt; synonymMaps) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.Models.Field.NewSearchableString(System.String,Microsoft.Azure.Search.Models.AnalyzerName,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Collections.Generic.IList{System.String})" />
       <MemberSignature Language="F#" Value="static member NewSearchableString : string * Microsoft.Azure.Search.Models.AnalyzerName * bool * bool * bool * bool * bool * System.Collections.Generic.IList&lt;string&gt; -&gt; Microsoft.Azure.Search.Models.Field" Usage="Microsoft.Azure.Search.Models.Field.NewSearchableString (name, analyzerName, isKey, isRetrievable, isFilterable, isSortable, isFacetable, synonymMaps)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Search.Models.Field</ReturnType>
@@ -690,7 +690,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -745,7 +745,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -778,7 +778,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -808,7 +808,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

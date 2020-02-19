@@ -1,12 +1,14 @@
-﻿<Type Name="TelemetryConfiguration" FullName="Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration">
+<Type Name="TelemetryConfiguration" FullName="Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration">
   <TypeSignature Language="C#" Value="public sealed class TelemetryConfiguration : IDisposable" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TelemetryConfiguration extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TelemetryConfiguration extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TelemetryConfiguration&#xA;Implements IDisposable" />
   <TypeSignature Language="F#" Value="type TelemetryConfiguration = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-    <AssemblyVersion>2.10.0.0</AssemblyVersion>
+    <AssemblyVersion>2.11.0.0</AssemblyVersion>
+    <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+    <AssemblyVersion>2.12.1.36699</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -34,7 +36,9 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -58,7 +62,9 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="instrumentationKey" Type="System.String" />
@@ -80,7 +86,9 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="instrumentationKey" Type="System.String" />
@@ -104,7 +112,9 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration</ReturnType>
@@ -128,7 +138,9 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.Extensibility.IApplicationIdProvider</ReturnType>
@@ -143,6 +155,29 @@
             </remarks>
       </Docs>
     </Member>
+    <Member MemberName="ConnectionString">
+      <MemberSignature Language="C#" Value="public string ConnectionString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConnectionString" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration.ConnectionString" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConnectionString As String" />
+      <MemberSignature Language="F#" Value="member this.ConnectionString : string with get, set" Usage="Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration.ConnectionString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the connection string. Setting this value will also set (and overwrite) the <see cref="P:Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration.InstrumentationKey" />. The endpoints are validated and will be set (and overwritten) for <see cref="T:Microsoft.ApplicationInsights.Channel.InMemoryChannel" /> and ServerTelemetryChannel as well as the <see cref="P:Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration.ApplicationIdProvider" />.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CreateDefault">
       <MemberSignature Language="C#" Value="public static Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration CreateDefault ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration CreateDefault() cil managed" />
@@ -152,7 +187,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration</ReturnType>
@@ -177,7 +214,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration</ReturnType>
@@ -204,7 +243,9 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.Extensibility.TelemetrySink</ReturnType>
@@ -226,7 +267,9 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -254,7 +297,9 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -267,6 +312,63 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="EndpointContainer">
+      <MemberSignature Language="C#" Value="public Microsoft.ApplicationInsights.Extensibility.Implementation.Endpoints.EndpointContainer EndpointContainer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.ApplicationInsights.Extensibility.Implementation.Endpoints.EndpointContainer EndpointContainer" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration.EndpointContainer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndpointContainer As EndpointContainer" />
+      <MemberSignature Language="F#" Value="member this.EndpointContainer : Microsoft.ApplicationInsights.Extensibility.Implementation.Endpoints.EndpointContainer" Usage="Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration.EndpointContainer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.ApplicationInsights.Extensibility.Implementation.Endpoints.EndpointContainer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the Endpoint Container responsible for making service endpoints available.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExperimentalFeatures">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; ExperimentalFeatures { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; ExperimentalFeatures" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration.ExperimentalFeatures" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExperimentalFeatures As IList(Of String)" />
+      <MemberSignature Language="F#" Value="member this.ExperimentalFeatures : System.Collections.Generic.IList&lt;string&gt;" Usage="Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration.ExperimentalFeatures" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a collection of strings indicating if an experimental feature should be enabled.
+            The presence of a string in this collection will be evaluated as 'true'.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            This property allows the dev team to ship and evaluate features before adding these to the public API.
+            We are not committing to support any features enabled through this property.
+            Use this at your own risk.
+            </remarks>
+      </Docs>
+    </Member>
     <Member MemberName="InstrumentationKey">
       <MemberSignature Language="C#" Value="public string InstrumentationKey { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InstrumentationKey" />
@@ -276,7 +378,9 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -303,14 +407,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.Channel.ITelemetryChannel</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the telemetry channel for the default sink.
+            Gets or sets the telemetry channel for the default sink. Will also attempt to set the Channel's endpoint.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -325,7 +431,9 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.ApplicationInsights.Extensibility.ITelemetryInitializer&gt;</ReturnType>
@@ -353,7 +461,9 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryProcessorChainBuilder</ReturnType>
@@ -375,7 +485,9 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor&gt;</ReturnType>
@@ -397,7 +509,9 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.ApplicationInsights.Extensibility.TelemetrySink&gt;</ReturnType>

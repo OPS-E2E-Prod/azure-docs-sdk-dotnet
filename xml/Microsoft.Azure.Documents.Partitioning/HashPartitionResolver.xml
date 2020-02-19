@@ -1,4 +1,4 @@
-﻿<Type Name="HashPartitionResolver" FullName="Microsoft.Azure.Documents.Partitioning.HashPartitionResolver">
+<Type Name="HashPartitionResolver" FullName="Microsoft.Azure.Documents.Partitioning.HashPartitionResolver">
   <TypeSignature Language="C#" Value="public class HashPartitionResolver : IDisposable, Microsoft.Azure.Documents.Client.IPartitionResolver" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HashPartitionResolver extends System.Object implements class Microsoft.Azure.Documents.Client.IPartitionResolver, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Documents.Partitioning.HashPartitionResolver" />
@@ -6,11 +6,13 @@
   <TypeSignature Language="F#" Value="type HashPartitionResolver = class&#xA;    interface IPartitionResolver&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.DocumentDB.Core</AssemblyName>
-    <AssemblyVersion>2.5.1.0</AssemblyVersion>
+    <AssemblyVersion>2.9.2.0</AssemblyVersion>
+    <AssemblyVersion>2.9.3.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Documents.Client</AssemblyName>
-    <AssemblyVersion>2.5.1.0</AssemblyVersion>
+    <AssemblyVersion>2.9.2.0</AssemblyVersion>
+    <AssemblyVersion>2.9.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -53,7 +55,7 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public HashPartitionResolver (Func&lt;object,string&gt; partitionKeyExtractor, System.Collections.Generic.IEnumerable&lt;string&gt; collectionLinks, int numberOfVirtualNodesPerCollection = 128, Microsoft.Azure.Documents.Partitioning.IHashGenerator hashGenerator = null);" />
+      <MemberSignature Language="C#" Value="public HashPartitionResolver (Func&lt;object,string&gt; partitionKeyExtractor, System.Collections.Generic.IEnumerable&lt;string&gt; collectionLinks, int numberOfVirtualNodesPerCollection = 128, Microsoft.Azure.Documents.Partitioning.IHashGenerator hashGenerator = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`2&lt;object, string&gt; partitionKeyExtractor, class System.Collections.Generic.IEnumerable`1&lt;string&gt; collectionLinks, int32 numberOfVirtualNodesPerCollection, class Microsoft.Azure.Documents.Partitioning.IHashGenerator hashGenerator) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Documents.Partitioning.HashPartitionResolver.#ctor(System.Func{System.Object,System.String},System.Collections.Generic.IEnumerable{System.String},System.Int32,Microsoft.Azure.Documents.Partitioning.IHashGenerator)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (partitionKeyExtractor As Func(Of Object, String), collectionLinks As IEnumerable(Of String), Optional numberOfVirtualNodesPerCollection As Integer = 128, Optional hashGenerator As IHashGenerator = null)" />
@@ -61,11 +63,13 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DocumentDB.Core</AssemblyName>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Documents.Client</AssemblyName>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="partitionKeyExtractor" Type="System.Func&lt;System.Object,System.String&gt;" />
@@ -85,7 +89,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public HashPartitionResolver (string partitionKeyPropertyName, System.Collections.Generic.IEnumerable&lt;string&gt; collectionLinks, int numberOfVirtualNodesPerCollection = 128, Microsoft.Azure.Documents.Partitioning.IHashGenerator hashGenerator = null);" />
+      <MemberSignature Language="C#" Value="public HashPartitionResolver (string partitionKeyPropertyName, System.Collections.Generic.IEnumerable&lt;string&gt; collectionLinks, int numberOfVirtualNodesPerCollection = 128, Microsoft.Azure.Documents.Partitioning.IHashGenerator hashGenerator = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string partitionKeyPropertyName, class System.Collections.Generic.IEnumerable`1&lt;string&gt; collectionLinks, int32 numberOfVirtualNodesPerCollection, class Microsoft.Azure.Documents.Partitioning.IHashGenerator hashGenerator) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Documents.Partitioning.HashPartitionResolver.#ctor(System.String,System.Collections.Generic.IEnumerable{System.String},System.Int32,Microsoft.Azure.Documents.Partitioning.IHashGenerator)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (partitionKeyPropertyName As String, collectionLinks As IEnumerable(Of String), Optional numberOfVirtualNodesPerCollection As Integer = 128, Optional hashGenerator As IHashGenerator = null)" />
@@ -93,11 +97,13 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DocumentDB.Core</AssemblyName>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Documents.Client</AssemblyName>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="partitionKeyPropertyName" Type="System.String" />
@@ -128,11 +134,13 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DocumentDB.Core</AssemblyName>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Documents.Client</AssemblyName>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
@@ -157,11 +165,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DocumentDB.Core</AssemblyName>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Documents.Client</AssemblyName>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -186,11 +196,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DocumentDB.Core</AssemblyName>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Documents.Client</AssemblyName>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -218,11 +230,13 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DocumentDB.Core</AssemblyName>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Documents.Client</AssemblyName>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -249,11 +263,13 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DocumentDB.Core</AssemblyName>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Documents.Client</AssemblyName>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -275,11 +291,13 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DocumentDB.Core</AssemblyName>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Documents.Client</AssemblyName>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Func&lt;System.Object,System.String&gt;</ReturnType>
@@ -301,11 +319,13 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DocumentDB.Core</AssemblyName>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Documents.Client</AssemblyName>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -333,11 +353,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DocumentDB.Core</AssemblyName>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Documents.Client</AssemblyName>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -367,11 +389,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DocumentDB.Core</AssemblyName>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Documents.Client</AssemblyName>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>

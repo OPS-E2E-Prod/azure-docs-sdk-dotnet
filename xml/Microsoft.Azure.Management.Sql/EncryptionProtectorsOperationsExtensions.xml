@@ -1,4 +1,4 @@
-﻿<Type Name="EncryptionProtectorsOperationsExtensions" FullName="Microsoft.Azure.Management.Sql.EncryptionProtectorsOperationsExtensions">
+<Type Name="EncryptionProtectorsOperationsExtensions" FullName="Microsoft.Azure.Management.Sql.EncryptionProtectorsOperationsExtensions">
   <TypeSignature Language="C#" Value="public static class EncryptionProtectorsOperationsExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit EncryptionProtectorsOperationsExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Sql.EncryptionProtectorsOperationsExtensions" />
@@ -61,7 +61,7 @@
       </Docs>
     </Member>
     <Member MemberName="BeginCreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.EncryptionProtector&gt; BeginCreateOrUpdateAsync (this Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations operations, string resourceGroupName, string serverName, Microsoft.Azure.Management.Sql.Models.EncryptionProtector parameters, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.EncryptionProtector&gt; BeginCreateOrUpdateAsync (this Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations operations, string resourceGroupName, string serverName, Microsoft.Azure.Management.Sql.Models.EncryptionProtector parameters, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Sql.Models.EncryptionProtector&gt; BeginCreateOrUpdateAsync(class Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations operations, string resourceGroupName, string serverName, class Microsoft.Azure.Management.Sql.Models.EncryptionProtector parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.EncryptionProtectorsOperationsExtensions.BeginCreateOrUpdateAsync(Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations,System.String,System.String,Microsoft.Azure.Management.Sql.Models.EncryptionProtector,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member BeginCreateOrUpdateAsync : Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations * string * string * Microsoft.Azure.Management.Sql.Models.EncryptionProtector * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.EncryptionProtector&gt;" Usage="Microsoft.Azure.Management.Sql.EncryptionProtectorsOperationsExtensions.BeginCreateOrUpdateAsync (operations, resourceGroupName, serverName, parameters, cancellationToken)" />
@@ -70,6 +70,11 @@
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.EncryptionProtector&gt;</ReturnType>
       </ReturnValue>
@@ -99,6 +104,87 @@
             </param>
         <summary>
             Updates an existing encryption protector.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginRevalidate">
+      <MemberSignature Language="C#" Value="public static void BeginRevalidate (this Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations operations, string resourceGroupName, string serverName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void BeginRevalidate(class Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations operations, string resourceGroupName, string serverName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.EncryptionProtectorsOperationsExtensions.BeginRevalidate(Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub BeginRevalidate (operations As IEncryptionProtectorsOperations, resourceGroupName As String, serverName As String)" />
+      <MemberSignature Language="F#" Value="static member BeginRevalidate : Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations * string * string -&gt; unit" Usage="Microsoft.Azure.Management.Sql.EncryptionProtectorsOperationsExtensions.BeginRevalidate (operations, resourceGroupName, serverName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations" RefType="this" />
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="resourceGroupName">
+            The name of the resource group that contains the resource. You can obtain
+            this value from the Azure Resource Manager API or the portal.
+            </param>
+        <param name="serverName">
+            The name of the server.
+            </param>
+        <summary>
+            Revalidates an existing encryption protector.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginRevalidateAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginRevalidateAsync (this Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations operations, string resourceGroupName, string serverName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task BeginRevalidateAsync(class Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations operations, string resourceGroupName, string serverName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.EncryptionProtectorsOperationsExtensions.BeginRevalidateAsync(Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member BeginRevalidateAsync : Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Sql.EncryptionProtectorsOperationsExtensions.BeginRevalidateAsync (operations, resourceGroupName, serverName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations" RefType="this" />
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="resourceGroupName">
+            The name of the resource group that contains the resource. You can obtain
+            this value from the Azure Resource Manager API or the portal.
+            </param>
+        <param name="serverName">
+            The name of the server.
+            </param>
+        <param name="cancellationToken">
+            The cancellation token.
+            </param>
+        <summary>
+            Revalidates an existing encryption protector.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -146,7 +232,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.EncryptionProtector&gt; CreateOrUpdateAsync (this Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations operations, string resourceGroupName, string serverName, Microsoft.Azure.Management.Sql.Models.EncryptionProtector parameters, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.EncryptionProtector&gt; CreateOrUpdateAsync (this Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations operations, string resourceGroupName, string serverName, Microsoft.Azure.Management.Sql.Models.EncryptionProtector parameters, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Sql.Models.EncryptionProtector&gt; CreateOrUpdateAsync(class Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations operations, string resourceGroupName, string serverName, class Microsoft.Azure.Management.Sql.Models.EncryptionProtector parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.EncryptionProtectorsOperationsExtensions.CreateOrUpdateAsync(Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations,System.String,System.String,Microsoft.Azure.Management.Sql.Models.EncryptionProtector,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member CreateOrUpdateAsync : Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations * string * string * Microsoft.Azure.Management.Sql.Models.EncryptionProtector * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.EncryptionProtector&gt;" Usage="Microsoft.Azure.Management.Sql.EncryptionProtectorsOperationsExtensions.CreateOrUpdateAsync (operations, resourceGroupName, serverName, parameters, cancellationToken)" />
@@ -155,6 +241,11 @@
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.EncryptionProtector&gt;</ReturnType>
       </ReturnValue>
@@ -227,7 +318,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.EncryptionProtector&gt; GetAsync (this Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations operations, string resourceGroupName, string serverName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.EncryptionProtector&gt; GetAsync (this Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations operations, string resourceGroupName, string serverName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Sql.Models.EncryptionProtector&gt; GetAsync(class Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations operations, string resourceGroupName, string serverName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.EncryptionProtectorsOperationsExtensions.GetAsync(Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member GetAsync : Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.EncryptionProtector&gt;" Usage="Microsoft.Azure.Management.Sql.EncryptionProtectorsOperationsExtensions.GetAsync (operations, resourceGroupName, serverName, cancellationToken)" />
@@ -236,6 +327,11 @@
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.EncryptionProtector&gt;</ReturnType>
       </ReturnValue>
@@ -304,7 +400,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListByServerAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.EncryptionProtector&gt;&gt; ListByServerAsync (this Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations operations, string resourceGroupName, string serverName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.EncryptionProtector&gt;&gt; ListByServerAsync (this Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations operations, string resourceGroupName, string serverName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Sql.Models.EncryptionProtector&gt;&gt; ListByServerAsync(class Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations operations, string resourceGroupName, string serverName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.EncryptionProtectorsOperationsExtensions.ListByServerAsync(Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListByServerAsync : Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.EncryptionProtector&gt;&gt;" Usage="Microsoft.Azure.Management.Sql.EncryptionProtectorsOperationsExtensions.ListByServerAsync (operations, resourceGroupName, serverName, cancellationToken)" />
@@ -313,6 +409,11 @@
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.EncryptionProtector&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -376,7 +477,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListByServerNextAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.EncryptionProtector&gt;&gt; ListByServerNextAsync (this Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.EncryptionProtector&gt;&gt; ListByServerNextAsync (this Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Sql.Models.EncryptionProtector&gt;&gt; ListByServerNextAsync(class Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations operations, string nextPageLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.EncryptionProtectorsOperationsExtensions.ListByServerNextAsync(Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListByServerNextAsync : Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.EncryptionProtector&gt;&gt;" Usage="Microsoft.Azure.Management.Sql.EncryptionProtectorsOperationsExtensions.ListByServerNextAsync (operations, nextPageLink, cancellationToken)" />
@@ -385,6 +486,11 @@
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.EncryptionProtector&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -405,6 +511,87 @@
             </param>
         <summary>
             Gets a list of server encryption protectors
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Revalidate">
+      <MemberSignature Language="C#" Value="public static void Revalidate (this Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations operations, string resourceGroupName, string serverName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Revalidate(class Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations operations, string resourceGroupName, string serverName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.EncryptionProtectorsOperationsExtensions.Revalidate(Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Revalidate (operations As IEncryptionProtectorsOperations, resourceGroupName As String, serverName As String)" />
+      <MemberSignature Language="F#" Value="static member Revalidate : Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations * string * string -&gt; unit" Usage="Microsoft.Azure.Management.Sql.EncryptionProtectorsOperationsExtensions.Revalidate (operations, resourceGroupName, serverName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations" RefType="this" />
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="resourceGroupName">
+            The name of the resource group that contains the resource. You can obtain
+            this value from the Azure Resource Manager API or the portal.
+            </param>
+        <param name="serverName">
+            The name of the server.
+            </param>
+        <summary>
+            Revalidates an existing encryption protector.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RevalidateAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task RevalidateAsync (this Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations operations, string resourceGroupName, string serverName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task RevalidateAsync(class Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations operations, string resourceGroupName, string serverName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.EncryptionProtectorsOperationsExtensions.RevalidateAsync(Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member RevalidateAsync : Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Sql.EncryptionProtectorsOperationsExtensions.RevalidateAsync (operations, resourceGroupName, serverName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Azure.Management.Sql.IEncryptionProtectorsOperations" RefType="this" />
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="resourceGroupName">
+            The name of the resource group that contains the resource. You can obtain
+            this value from the Azure Resource Manager API or the portal.
+            </param>
+        <param name="serverName">
+            The name of the server.
+            </param>
+        <param name="cancellationToken">
+            The cancellation token.
+            </param>
+        <summary>
+            Revalidates an existing encryption protector.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

@@ -1,4 +1,4 @@
-﻿<Type Name="SymmetricKey" FullName="Microsoft.Azure.KeyVault.SymmetricKey">
+<Type Name="SymmetricKey" FullName="Microsoft.Azure.KeyVault.SymmetricKey">
   <TypeSignature Language="C#" Value="public class SymmetricKey : IDisposable, Microsoft.Azure.KeyVault.Core.IKey" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SymmetricKey extends System.Object implements class Microsoft.Azure.KeyVault.Core.IKey, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.KeyVault.SymmetricKey" />
@@ -6,7 +6,8 @@
   <TypeSignature Language="F#" Value="type SymmetricKey = class&#xA;    interface IKey&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.KeyVault.Cryptography</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.0.4.0</AssemblyVersion>
+    <AssemblyVersion>3.0.5.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -20,9 +21,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>
-            A simple Symmetric Key
-            </summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,13 +33,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.KeyVault.Cryptography</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
+        <AssemblyVersion>3.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>
-            Default constructor
-            </summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,16 +51,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.KeyVault.Cryptography</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
+        <AssemblyVersion>3.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="kid" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="kid">The key identifier to use</param>
-        <summary>
-            Constructor.
-            </summary>
+        <param name="kid">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,18 +72,17 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.KeyVault.Cryptography</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
+        <AssemblyVersion>3.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="kid" Type="System.String" />
         <Parameter Name="keyBytes" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="kid">The key identifier</param>
-        <param name="keyBytes">The key material</param>
-        <summary>
-            Constructor
-            </summary>
+        <param name="kid">To be added.</param>
+        <param name="keyBytes">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,23 +95,22 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.KeyVault.Cryptography</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
+        <AssemblyVersion>3.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="kid" Type="System.String" />
         <Parameter Name="keySize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="kid">The key identifier to use</param>
-        <param name="keySize">The key size in bytes</param>
-        <summary>
-            Constructor
-            </summary>
+        <param name="kid">To be added.</param>
+        <param name="keySize">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DecryptAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;byte[]&gt; DecryptAsync (byte[] ciphertext, byte[] iv, byte[] authenticationData = null, byte[] authenticationTag = null, string algorithm = null, System.Threading.CancellationToken token = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;byte[]&gt; DecryptAsync (byte[] ciphertext, byte[] iv, byte[] authenticationData = default, byte[] authenticationTag = default, string algorithm = default, System.Threading.CancellationToken token = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;unsigned int8[]&gt; DecryptAsync(unsigned int8[] ciphertext, unsigned int8[] iv, unsigned int8[] authenticationData, unsigned int8[] authenticationTag, string algorithm, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.KeyVault.SymmetricKey.DecryptAsync(System.Byte[],System.Byte[],System.Byte[],System.Byte[],System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Function DecryptAsync (ciphertext As Byte(), iv As Byte(), Optional authenticationData As Byte() = null, Optional authenticationTag As Byte() = null, Optional algorithm As String = null, Optional token As CancellationToken = null) As Task(Of Byte())" />
@@ -126,7 +121,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.KeyVault.Cryptography</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
+        <AssemblyVersion>3.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Byte[]&gt;</ReturnType>
@@ -163,7 +159,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.KeyVault.Cryptography</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
+        <AssemblyVersion>3.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -186,7 +183,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.KeyVault.Cryptography</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
+        <AssemblyVersion>3.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -209,7 +207,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.KeyVault.Cryptography</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
+        <AssemblyVersion>3.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -232,7 +231,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.KeyVault.Cryptography</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
+        <AssemblyVersion>3.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -252,7 +252,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.KeyVault.Cryptography</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
+        <AssemblyVersion>3.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -267,7 +268,7 @@
       </Docs>
     </Member>
     <Member MemberName="EncryptAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Tuple&lt;byte[],byte[],string&gt;&gt; EncryptAsync (byte[] plaintext, byte[] iv, byte[] authenticationData = null, string algorithm = null, System.Threading.CancellationToken token = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Tuple&lt;byte[],byte[],string&gt;&gt; EncryptAsync (byte[] plaintext, byte[] iv, byte[] authenticationData = default, string algorithm = default, System.Threading.CancellationToken token = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Tuple`3&lt;unsigned int8[], unsigned int8[], string&gt;&gt; EncryptAsync(unsigned int8[] plaintext, unsigned int8[] iv, unsigned int8[] authenticationData, string algorithm, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.KeyVault.SymmetricKey.EncryptAsync(System.Byte[],System.Byte[],System.Byte[],System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Function EncryptAsync (plaintext As Byte(), iv As Byte(), Optional authenticationData As Byte() = null, Optional algorithm As String = null, Optional token As CancellationToken = null) As Task(Of Tuple(Of Byte(), Byte(), String))" />
@@ -278,7 +279,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.KeyVault.Cryptography</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
+        <AssemblyVersion>3.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Tuple&lt;System.Byte[],System.Byte[],System.String&gt;&gt;</ReturnType>
@@ -310,7 +312,8 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.KeyVault.Cryptography</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
+        <AssemblyVersion>3.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -330,7 +333,8 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.KeyVault.Cryptography</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
+        <AssemblyVersion>3.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -350,7 +354,8 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.KeyVault.Cryptography</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
+        <AssemblyVersion>3.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -370,7 +375,8 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.KeyVault.Cryptography</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
+        <AssemblyVersion>3.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -390,7 +396,8 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.KeyVault.Cryptography</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
+        <AssemblyVersion>3.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -410,7 +417,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.KeyVault.Cryptography</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
+        <AssemblyVersion>3.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -422,7 +430,7 @@
       </Docs>
     </Member>
     <Member MemberName="SignAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Tuple&lt;byte[],string&gt;&gt; SignAsync (byte[] digest, string algorithm = null, System.Threading.CancellationToken token = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Tuple&lt;byte[],string&gt;&gt; SignAsync (byte[] digest, string algorithm = default, System.Threading.CancellationToken token = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Tuple`2&lt;unsigned int8[], string&gt;&gt; SignAsync(unsigned int8[] digest, string algorithm, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.KeyVault.SymmetricKey.SignAsync(System.Byte[],System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Function SignAsync (digest As Byte(), Optional algorithm As String = null, Optional token As CancellationToken = null) As Task(Of Tuple(Of Byte(), String))" />
@@ -433,7 +441,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.KeyVault.Cryptography</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
+        <AssemblyVersion>3.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Tuple&lt;System.Byte[],System.String&gt;&gt;</ReturnType>
@@ -453,7 +462,7 @@
       </Docs>
     </Member>
     <Member MemberName="UnwrapKeyAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;byte[]&gt; UnwrapKeyAsync (byte[] encryptedKey, string algorithm = null, System.Threading.CancellationToken token = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;byte[]&gt; UnwrapKeyAsync (byte[] encryptedKey, string algorithm = default, System.Threading.CancellationToken token = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;unsigned int8[]&gt; UnwrapKeyAsync(unsigned int8[] encryptedKey, string algorithm, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.KeyVault.SymmetricKey.UnwrapKeyAsync(System.Byte[],System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Function UnwrapKeyAsync (encryptedKey As Byte(), Optional algorithm As String = null, Optional token As CancellationToken = null) As Task(Of Byte())" />
@@ -464,7 +473,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.KeyVault.Cryptography</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
+        <AssemblyVersion>3.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Byte[]&gt;</ReturnType>
@@ -484,7 +494,7 @@
       </Docs>
     </Member>
     <Member MemberName="VerifyAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; VerifyAsync (byte[] digest, byte[] signature, string algorithm = null, System.Threading.CancellationToken token = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; VerifyAsync (byte[] digest, byte[] signature, string algorithm = default, System.Threading.CancellationToken token = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; VerifyAsync(unsigned int8[] digest, unsigned int8[] signature, string algorithm, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.KeyVault.SymmetricKey.VerifyAsync(System.Byte[],System.Byte[],System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Function VerifyAsync (digest As Byte(), signature As Byte(), Optional algorithm As String = null, Optional token As CancellationToken = null) As Task(Of Boolean)" />
@@ -495,7 +505,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.KeyVault.Cryptography</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
+        <AssemblyVersion>3.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -517,7 +528,7 @@
       </Docs>
     </Member>
     <Member MemberName="WrapKeyAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Tuple&lt;byte[],string&gt;&gt; WrapKeyAsync (byte[] key, string algorithm = null, System.Threading.CancellationToken token = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Tuple&lt;byte[],string&gt;&gt; WrapKeyAsync (byte[] key, string algorithm = default, System.Threading.CancellationToken token = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Tuple`2&lt;unsigned int8[], string&gt;&gt; WrapKeyAsync(unsigned int8[] key, string algorithm, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.KeyVault.SymmetricKey.WrapKeyAsync(System.Byte[],System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Function WrapKeyAsync (key As Byte(), Optional algorithm As String = null, Optional token As CancellationToken = null) As Task(Of Tuple(Of Byte(), String))" />
@@ -528,7 +539,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.KeyVault.Cryptography</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
+        <AssemblyVersion>3.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Tuple&lt;System.Byte[],System.String&gt;&gt;</ReturnType>

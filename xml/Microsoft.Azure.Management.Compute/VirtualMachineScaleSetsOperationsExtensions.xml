@@ -1,4 +1,4 @@
-﻿<Type Name="VirtualMachineScaleSetsOperationsExtensions" FullName="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions">
+<Type Name="VirtualMachineScaleSetsOperationsExtensions" FullName="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions">
   <TypeSignature Language="C#" Value="public static class VirtualMachineScaleSetsOperationsExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit VirtualMachineScaleSetsOperationsExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions" />
@@ -6,7 +6,8 @@
   <TypeSignature Language="F#" Value="type VirtualMachineScaleSetsOperationsExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-    <AssemblyVersion>27.0.0.0</AssemblyVersion>
+    <AssemblyVersion>30.0.0.0</AssemblyVersion>
+    <AssemblyVersion>31.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,7 +29,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet</ReturnType>
@@ -60,14 +62,15 @@
       </Docs>
     </Member>
     <Member MemberName="BeginCreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt; BeginCreateOrUpdateAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet parameters, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt; BeginCreateOrUpdateAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet parameters, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt; BeginCreateOrUpdateAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, class Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.BeginCreateOrUpdateAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member BeginCreateOrUpdateAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * string * Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt;" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.BeginCreateOrUpdateAsync (operations, resourceGroupName, vmScaleSetName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -108,7 +111,7 @@
       </Docs>
     </Member>
     <Member MemberName="BeginDeallocate">
-      <MemberSignature Language="C#" Value="public static void BeginDeallocate (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = null);" />
+      <MemberSignature Language="C#" Value="public static void BeginDeallocate (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void BeginDeallocate(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, class System.Collections.Generic.IList`1&lt;string&gt; instanceIds) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.BeginDeallocate(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Collections.Generic.IList{System.String})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub BeginDeallocate (operations As IVirtualMachineScaleSetsOperations, resourceGroupName As String, vmScaleSetName As String, Optional instanceIds As IList(Of String) = null)" />
@@ -116,7 +119,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -151,14 +155,15 @@
       </Docs>
     </Member>
     <Member MemberName="BeginDeallocateAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginDeallocateAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginDeallocateAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task BeginDeallocateAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, class System.Collections.Generic.IList`1&lt;string&gt; instanceIds, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.BeginDeallocateAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Collections.Generic.IList{System.String},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member BeginDeallocateAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * string * System.Collections.Generic.IList&lt;string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.BeginDeallocateAsync (operations, resourceGroupName, vmScaleSetName, instanceIds, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -211,7 +216,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -238,14 +244,15 @@
       </Docs>
     </Member>
     <Member MemberName="BeginDeleteAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginDeleteAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginDeleteAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task BeginDeleteAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.BeginDeleteAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member BeginDeleteAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.BeginDeleteAsync (operations, resourceGroupName, vmScaleSetName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -290,7 +297,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -321,14 +329,15 @@
       </Docs>
     </Member>
     <Member MemberName="BeginDeleteInstancesAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginDeleteInstancesAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginDeleteInstancesAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task BeginDeleteInstancesAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, class System.Collections.Generic.IList`1&lt;string&gt; instanceIds, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.BeginDeleteInstancesAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Collections.Generic.IList{System.String},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member BeginDeleteInstancesAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * string * System.Collections.Generic.IList&lt;string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.BeginDeleteInstancesAsync (operations, resourceGroupName, vmScaleSetName, instanceIds, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -369,7 +378,7 @@
       </Docs>
     </Member>
     <Member MemberName="BeginPerformMaintenance">
-      <MemberSignature Language="C#" Value="public static void BeginPerformMaintenance (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = null);" />
+      <MemberSignature Language="C#" Value="public static void BeginPerformMaintenance (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void BeginPerformMaintenance(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, class System.Collections.Generic.IList`1&lt;string&gt; instanceIds) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.BeginPerformMaintenance(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Collections.Generic.IList{System.String})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub BeginPerformMaintenance (operations As IVirtualMachineScaleSetsOperations, resourceGroupName As String, vmScaleSetName As String, Optional instanceIds As IList(Of String) = null)" />
@@ -377,7 +386,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -413,14 +423,15 @@
       </Docs>
     </Member>
     <Member MemberName="BeginPerformMaintenanceAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginPerformMaintenanceAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginPerformMaintenanceAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task BeginPerformMaintenanceAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, class System.Collections.Generic.IList`1&lt;string&gt; instanceIds, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.BeginPerformMaintenanceAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Collections.Generic.IList{System.String},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member BeginPerformMaintenanceAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * string * System.Collections.Generic.IList&lt;string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.BeginPerformMaintenanceAsync (operations, resourceGroupName, vmScaleSetName, instanceIds, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -466,7 +477,7 @@
       </Docs>
     </Member>
     <Member MemberName="BeginPowerOff">
-      <MemberSignature Language="C#" Value="public static void BeginPowerOff (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, Nullable&lt;bool&gt; skipShutdown = false, System.Collections.Generic.IList&lt;string&gt; instanceIds = null);" />
+      <MemberSignature Language="C#" Value="public static void BeginPowerOff (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, Nullable&lt;bool&gt; skipShutdown = false, System.Collections.Generic.IList&lt;string&gt; instanceIds = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void BeginPowerOff(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, valuetype System.Nullable`1&lt;bool&gt; skipShutdown, class System.Collections.Generic.IList`1&lt;string&gt; instanceIds) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.BeginPowerOff(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Nullable{System.Boolean},System.Collections.Generic.IList{System.String})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub BeginPowerOff (operations As IVirtualMachineScaleSetsOperations, resourceGroupName As String, vmScaleSetName As String, Optional skipShutdown As Nullable(Of Boolean) = false, Optional instanceIds As IList(Of String) = null)" />
@@ -474,7 +485,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -515,14 +527,15 @@
       </Docs>
     </Member>
     <Member MemberName="BeginPowerOffAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginPowerOffAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, Nullable&lt;bool&gt; skipShutdown = false, System.Collections.Generic.IList&lt;string&gt; instanceIds = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginPowerOffAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, Nullable&lt;bool&gt; skipShutdown = false, System.Collections.Generic.IList&lt;string&gt; instanceIds = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task BeginPowerOffAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, valuetype System.Nullable`1&lt;bool&gt; skipShutdown, class System.Collections.Generic.IList`1&lt;string&gt; instanceIds, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.BeginPowerOffAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Nullable{System.Boolean},System.Collections.Generic.IList{System.String},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member BeginPowerOffAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * string * Nullable&lt;bool&gt; * System.Collections.Generic.IList&lt;string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.BeginPowerOffAsync (operations, resourceGroupName, vmScaleSetName, skipShutdown, instanceIds, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -573,7 +586,7 @@
       </Docs>
     </Member>
     <Member MemberName="BeginRedeploy">
-      <MemberSignature Language="C#" Value="public static void BeginRedeploy (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = null);" />
+      <MemberSignature Language="C#" Value="public static void BeginRedeploy (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void BeginRedeploy(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, class System.Collections.Generic.IList`1&lt;string&gt; instanceIds) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.BeginRedeploy(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Collections.Generic.IList{System.String})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub BeginRedeploy (operations As IVirtualMachineScaleSetsOperations, resourceGroupName As String, vmScaleSetName As String, Optional instanceIds As IList(Of String) = null)" />
@@ -581,7 +594,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -608,20 +622,22 @@
             virtual machines in the virtual machine scale set.
             </param>
         <summary>
-            Redeploy one or more virtual machines in a VM scale set.
+            Shuts down all the virtual machines in the virtual machine scale set, moves
+            them to a new node, and powers them back on.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginRedeployAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginRedeployAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginRedeployAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task BeginRedeployAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, class System.Collections.Generic.IList`1&lt;string&gt; instanceIds, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.BeginRedeployAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Collections.Generic.IList{System.String},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member BeginRedeployAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * string * System.Collections.Generic.IList&lt;string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.BeginRedeployAsync (operations, resourceGroupName, vmScaleSetName, instanceIds, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -657,14 +673,15 @@
             The cancellation token.
             </param>
         <summary>
-            Redeploy one or more virtual machines in a VM scale set.
+            Shuts down all the virtual machines in the virtual machine scale set, moves
+            them to a new node, and powers them back on.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginReimage">
-      <MemberSignature Language="C#" Value="public static void BeginReimage (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetReimageParameters vmScaleSetReimageInput = null);" />
+      <MemberSignature Language="C#" Value="public static void BeginReimage (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetReimageParameters vmScaleSetReimageInput = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void BeginReimage(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, class Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetReimageParameters vmScaleSetReimageInput) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.BeginReimage(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetReimageParameters)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub BeginReimage (operations As IVirtualMachineScaleSetsOperations, resourceGroupName As String, vmScaleSetName As String, Optional vmScaleSetReimageInput As VirtualMachineScaleSetReimageParameters = null)" />
@@ -672,7 +689,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -705,7 +723,7 @@
       </Docs>
     </Member>
     <Member MemberName="BeginReimageAll">
-      <MemberSignature Language="C#" Value="public static void BeginReimageAll (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = null);" />
+      <MemberSignature Language="C#" Value="public static void BeginReimageAll (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void BeginReimageAll(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, class System.Collections.Generic.IList`1&lt;string&gt; instanceIds) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.BeginReimageAll(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Collections.Generic.IList{System.String})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub BeginReimageAll (operations As IVirtualMachineScaleSetsOperations, resourceGroupName As String, vmScaleSetName As String, Optional instanceIds As IList(Of String) = null)" />
@@ -713,7 +731,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -747,14 +766,15 @@
       </Docs>
     </Member>
     <Member MemberName="BeginReimageAllAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginReimageAllAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginReimageAllAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task BeginReimageAllAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, class System.Collections.Generic.IList`1&lt;string&gt; instanceIds, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.BeginReimageAllAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Collections.Generic.IList{System.String},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member BeginReimageAllAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * string * System.Collections.Generic.IList&lt;string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.BeginReimageAllAsync (operations, resourceGroupName, vmScaleSetName, instanceIds, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -798,14 +818,15 @@
       </Docs>
     </Member>
     <Member MemberName="BeginReimageAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginReimageAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetReimageParameters vmScaleSetReimageInput = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginReimageAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetReimageParameters vmScaleSetReimageInput = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task BeginReimageAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, class Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetReimageParameters vmScaleSetReimageInput, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.BeginReimageAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetReimageParameters,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member BeginReimageAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * string * Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetReimageParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.BeginReimageAsync (operations, resourceGroupName, vmScaleSetName, vmScaleSetReimageInput, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -848,7 +869,7 @@
       </Docs>
     </Member>
     <Member MemberName="BeginRestart">
-      <MemberSignature Language="C#" Value="public static void BeginRestart (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = null);" />
+      <MemberSignature Language="C#" Value="public static void BeginRestart (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void BeginRestart(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, class System.Collections.Generic.IList`1&lt;string&gt; instanceIds) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.BeginRestart(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Collections.Generic.IList{System.String})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub BeginRestart (operations As IVirtualMachineScaleSetsOperations, resourceGroupName As String, vmScaleSetName As String, Optional instanceIds As IList(Of String) = null)" />
@@ -856,7 +877,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -889,14 +911,15 @@
       </Docs>
     </Member>
     <Member MemberName="BeginRestartAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginRestartAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginRestartAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task BeginRestartAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, class System.Collections.Generic.IList`1&lt;string&gt; instanceIds, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.BeginRestartAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Collections.Generic.IList{System.String},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member BeginRestartAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * string * System.Collections.Generic.IList&lt;string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.BeginRestartAsync (operations, resourceGroupName, vmScaleSetName, instanceIds, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -939,7 +962,7 @@
       </Docs>
     </Member>
     <Member MemberName="BeginStart">
-      <MemberSignature Language="C#" Value="public static void BeginStart (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = null);" />
+      <MemberSignature Language="C#" Value="public static void BeginStart (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void BeginStart(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, class System.Collections.Generic.IList`1&lt;string&gt; instanceIds) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.BeginStart(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Collections.Generic.IList{System.String})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub BeginStart (operations As IVirtualMachineScaleSetsOperations, resourceGroupName As String, vmScaleSetName As String, Optional instanceIds As IList(Of String) = null)" />
@@ -947,7 +970,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -980,14 +1004,15 @@
       </Docs>
     </Member>
     <Member MemberName="BeginStartAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginStartAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginStartAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task BeginStartAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, class System.Collections.Generic.IList`1&lt;string&gt; instanceIds, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.BeginStartAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Collections.Generic.IList{System.String},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member BeginStartAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * string * System.Collections.Generic.IList&lt;string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.BeginStartAsync (operations, resourceGroupName, vmScaleSetName, instanceIds, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1038,7 +1063,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet</ReturnType>
@@ -1070,14 +1096,15 @@
       </Docs>
     </Member>
     <Member MemberName="BeginUpdateAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt; BeginUpdateAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetUpdate parameters, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt; BeginUpdateAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetUpdate parameters, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt; BeginUpdateAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, class Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetUpdate parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.BeginUpdateAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetUpdate,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member BeginUpdateAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * string * Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetUpdate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt;" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.BeginUpdateAsync (operations, resourceGroupName, vmScaleSetName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1126,7 +1153,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1158,14 +1186,15 @@
       </Docs>
     </Member>
     <Member MemberName="BeginUpdateInstancesAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginUpdateInstancesAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginUpdateInstancesAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task BeginUpdateInstancesAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, class System.Collections.Generic.IList`1&lt;string&gt; instanceIds, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.BeginUpdateInstancesAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Collections.Generic.IList{System.String},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member BeginUpdateInstancesAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * string * System.Collections.Generic.IList&lt;string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.BeginUpdateInstancesAsync (operations, resourceGroupName, vmScaleSetName, instanceIds, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1207,7 +1236,7 @@
       </Docs>
     </Member>
     <Member MemberName="ConvertToSinglePlacementGroup">
-      <MemberSignature Language="C#" Value="public static void ConvertToSinglePlacementGroup (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, string activePlacementGroupId = null);" />
+      <MemberSignature Language="C#" Value="public static void ConvertToSinglePlacementGroup (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, string activePlacementGroupId = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ConvertToSinglePlacementGroup(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, string activePlacementGroupId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.ConvertToSinglePlacementGroup(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub ConvertToSinglePlacementGroup (operations As IVirtualMachineScaleSetsOperations, resourceGroupName As String, vmScaleSetName As String, Optional activePlacementGroupId As String = null)" />
@@ -1215,7 +1244,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1250,14 +1280,15 @@
       </Docs>
     </Member>
     <Member MemberName="ConvertToSinglePlacementGroupAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task ConvertToSinglePlacementGroupAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, string activePlacementGroupId = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task ConvertToSinglePlacementGroupAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, string activePlacementGroupId = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task ConvertToSinglePlacementGroupAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, string activePlacementGroupId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.ConvertToSinglePlacementGroupAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ConvertToSinglePlacementGroupAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.ConvertToSinglePlacementGroupAsync (operations, resourceGroupName, vmScaleSetName, activePlacementGroupId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1310,7 +1341,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet</ReturnType>
@@ -1342,14 +1374,15 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt; CreateOrUpdateAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet parameters, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt; CreateOrUpdateAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet parameters, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt; CreateOrUpdateAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, class Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.CreateOrUpdateAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member CreateOrUpdateAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * string * Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt;" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.CreateOrUpdateAsync (operations, resourceGroupName, vmScaleSetName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1390,7 +1423,7 @@
       </Docs>
     </Member>
     <Member MemberName="Deallocate">
-      <MemberSignature Language="C#" Value="public static void Deallocate (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = null);" />
+      <MemberSignature Language="C#" Value="public static void Deallocate (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Deallocate(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, class System.Collections.Generic.IList`1&lt;string&gt; instanceIds) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.Deallocate(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Collections.Generic.IList{System.String})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Deallocate (operations As IVirtualMachineScaleSetsOperations, resourceGroupName As String, vmScaleSetName As String, Optional instanceIds As IList(Of String) = null)" />
@@ -1398,7 +1431,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1433,14 +1467,15 @@
       </Docs>
     </Member>
     <Member MemberName="DeallocateAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task DeallocateAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task DeallocateAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task DeallocateAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, class System.Collections.Generic.IList`1&lt;string&gt; instanceIds, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.DeallocateAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Collections.Generic.IList{System.String},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member DeallocateAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * string * System.Collections.Generic.IList&lt;string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.DeallocateAsync (operations, resourceGroupName, vmScaleSetName, instanceIds, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1493,7 +1528,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1520,14 +1556,15 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task DeleteAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task DeleteAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task DeleteAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.DeleteAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member DeleteAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.DeleteAsync (operations, resourceGroupName, vmScaleSetName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1572,7 +1609,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1603,14 +1641,15 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteInstancesAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task DeleteInstancesAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task DeleteInstancesAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task DeleteInstancesAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, class System.Collections.Generic.IList`1&lt;string&gt; instanceIds, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.DeleteInstancesAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Collections.Generic.IList{System.String},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member DeleteInstancesAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * string * System.Collections.Generic.IList&lt;string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.DeleteInstancesAsync (operations, resourceGroupName, vmScaleSetName, instanceIds, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1659,7 +1698,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Compute.Models.RecoveryWalkResponse</ReturnType>
@@ -1692,14 +1732,15 @@
       </Docs>
     </Member>
     <Member MemberName="ForceRecoveryServiceFabricPlatformUpdateDomainWalkAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Models.RecoveryWalkResponse&gt; ForceRecoveryServiceFabricPlatformUpdateDomainWalkAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, int platformUpdateDomain, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Models.RecoveryWalkResponse&gt; ForceRecoveryServiceFabricPlatformUpdateDomainWalkAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, int platformUpdateDomain, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Compute.Models.RecoveryWalkResponse&gt; ForceRecoveryServiceFabricPlatformUpdateDomainWalkAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, int32 platformUpdateDomain, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.ForceRecoveryServiceFabricPlatformUpdateDomainWalkAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Int32,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ForceRecoveryServiceFabricPlatformUpdateDomainWalkAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * string * int * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Models.RecoveryWalkResponse&gt;" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.ForceRecoveryServiceFabricPlatformUpdateDomainWalkAsync (operations, resourceGroupName, vmScaleSetName, platformUpdateDomain, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1749,7 +1790,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet</ReturnType>
@@ -1777,14 +1819,15 @@
       </Docs>
     </Member>
     <Member MemberName="GetAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt; GetAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt; GetAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt; GetAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.GetAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member GetAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt;" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.GetAsync (operations, resourceGroupName, vmScaleSetName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1829,7 +1872,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetInstanceView</ReturnType>
@@ -1857,14 +1901,15 @@
       </Docs>
     </Member>
     <Member MemberName="GetInstanceViewAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetInstanceView&gt; GetInstanceViewAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetInstanceView&gt; GetInstanceViewAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetInstanceView&gt; GetInstanceViewAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.GetInstanceViewAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member GetInstanceViewAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetInstanceView&gt;" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.GetInstanceViewAsync (operations, resourceGroupName, vmScaleSetName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1909,7 +1954,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Models.UpgradeOperationHistoricalStatusInfo&gt;</ReturnType>
@@ -1937,14 +1983,15 @@
       </Docs>
     </Member>
     <Member MemberName="GetOSUpgradeHistoryAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Models.UpgradeOperationHistoricalStatusInfo&gt;&gt; GetOSUpgradeHistoryAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Models.UpgradeOperationHistoricalStatusInfo&gt;&gt; GetOSUpgradeHistoryAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Compute.Models.UpgradeOperationHistoricalStatusInfo&gt;&gt; GetOSUpgradeHistoryAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.GetOSUpgradeHistoryAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member GetOSUpgradeHistoryAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Models.UpgradeOperationHistoricalStatusInfo&gt;&gt;" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.GetOSUpgradeHistoryAsync (operations, resourceGroupName, vmScaleSetName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1989,7 +2036,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Models.UpgradeOperationHistoricalStatusInfo&gt;</ReturnType>
@@ -2013,14 +2061,15 @@
       </Docs>
     </Member>
     <Member MemberName="GetOSUpgradeHistoryNextAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Models.UpgradeOperationHistoricalStatusInfo&gt;&gt; GetOSUpgradeHistoryNextAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Models.UpgradeOperationHistoricalStatusInfo&gt;&gt; GetOSUpgradeHistoryNextAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Compute.Models.UpgradeOperationHistoricalStatusInfo&gt;&gt; GetOSUpgradeHistoryNextAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string nextPageLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.GetOSUpgradeHistoryNextAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member GetOSUpgradeHistoryNextAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Models.UpgradeOperationHistoricalStatusInfo&gt;&gt;" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.GetOSUpgradeHistoryNextAsync (operations, nextPageLink, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2061,7 +2110,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt;</ReturnType>
@@ -2093,7 +2143,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt;</ReturnType>
@@ -2116,14 +2167,15 @@
       </Docs>
     </Member>
     <Member MemberName="ListAllAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt;&gt; ListAllAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt;&gt; ListAllAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt;&gt; ListAllAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.ListAllAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListAllAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt;&gt;" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.ListAllAsync (operations, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2163,7 +2215,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt;</ReturnType>
@@ -2190,14 +2243,15 @@
       </Docs>
     </Member>
     <Member MemberName="ListAllNextAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt;&gt; ListAllNextAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt;&gt; ListAllNextAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt;&gt; ListAllNextAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string nextPageLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.ListAllNextAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListAllNextAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt;&gt;" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.ListAllNextAsync (operations, nextPageLink, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2233,14 +2287,15 @@
       </Docs>
     </Member>
     <Member MemberName="ListAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt;&gt; ListAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt;&gt; ListAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt;&gt; ListAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.ListAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt;&gt;" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.ListAsync (operations, resourceGroupName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2281,7 +2336,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt;</ReturnType>
@@ -2305,14 +2361,15 @@
       </Docs>
     </Member>
     <Member MemberName="ListNextAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt;&gt; ListNextAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt;&gt; ListNextAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt;&gt; ListNextAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string nextPageLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.ListNextAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListNextAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt;&gt;" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.ListNextAsync (operations, nextPageLink, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2353,7 +2410,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetSku&gt;</ReturnType>
@@ -2382,14 +2440,15 @@
       </Docs>
     </Member>
     <Member MemberName="ListSkusAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetSku&gt;&gt; ListSkusAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetSku&gt;&gt; ListSkusAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetSku&gt;&gt; ListSkusAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.ListSkusAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListSkusAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetSku&gt;&gt;" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.ListSkusAsync (operations, resourceGroupName, vmScaleSetName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2435,7 +2494,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetSku&gt;</ReturnType>
@@ -2460,14 +2520,15 @@
       </Docs>
     </Member>
     <Member MemberName="ListSkusNextAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetSku&gt;&gt; ListSkusNextAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetSku&gt;&gt; ListSkusNextAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetSku&gt;&gt; ListSkusNextAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string nextPageLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.ListSkusNextAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListSkusNextAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetSku&gt;&gt;" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.ListSkusNextAsync (operations, nextPageLink, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2501,7 +2562,7 @@
       </Docs>
     </Member>
     <Member MemberName="PerformMaintenance">
-      <MemberSignature Language="C#" Value="public static void PerformMaintenance (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = null);" />
+      <MemberSignature Language="C#" Value="public static void PerformMaintenance (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void PerformMaintenance(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, class System.Collections.Generic.IList`1&lt;string&gt; instanceIds) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.PerformMaintenance(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Collections.Generic.IList{System.String})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub PerformMaintenance (operations As IVirtualMachineScaleSetsOperations, resourceGroupName As String, vmScaleSetName As String, Optional instanceIds As IList(Of String) = null)" />
@@ -2509,7 +2570,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2545,14 +2607,15 @@
       </Docs>
     </Member>
     <Member MemberName="PerformMaintenanceAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task PerformMaintenanceAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task PerformMaintenanceAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task PerformMaintenanceAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, class System.Collections.Generic.IList`1&lt;string&gt; instanceIds, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.PerformMaintenanceAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Collections.Generic.IList{System.String},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member PerformMaintenanceAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * string * System.Collections.Generic.IList&lt;string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.PerformMaintenanceAsync (operations, resourceGroupName, vmScaleSetName, instanceIds, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2598,7 +2661,7 @@
       </Docs>
     </Member>
     <Member MemberName="PowerOff">
-      <MemberSignature Language="C#" Value="public static void PowerOff (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, Nullable&lt;bool&gt; skipShutdown = false, System.Collections.Generic.IList&lt;string&gt; instanceIds = null);" />
+      <MemberSignature Language="C#" Value="public static void PowerOff (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, Nullable&lt;bool&gt; skipShutdown = false, System.Collections.Generic.IList&lt;string&gt; instanceIds = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void PowerOff(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, valuetype System.Nullable`1&lt;bool&gt; skipShutdown, class System.Collections.Generic.IList`1&lt;string&gt; instanceIds) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.PowerOff(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Nullable{System.Boolean},System.Collections.Generic.IList{System.String})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub PowerOff (operations As IVirtualMachineScaleSetsOperations, resourceGroupName As String, vmScaleSetName As String, Optional skipShutdown As Nullable(Of Boolean) = false, Optional instanceIds As IList(Of String) = null)" />
@@ -2606,7 +2669,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2647,14 +2711,15 @@
       </Docs>
     </Member>
     <Member MemberName="PowerOffAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task PowerOffAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, Nullable&lt;bool&gt; skipShutdown = false, System.Collections.Generic.IList&lt;string&gt; instanceIds = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task PowerOffAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, Nullable&lt;bool&gt; skipShutdown = false, System.Collections.Generic.IList&lt;string&gt; instanceIds = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task PowerOffAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, valuetype System.Nullable`1&lt;bool&gt; skipShutdown, class System.Collections.Generic.IList`1&lt;string&gt; instanceIds, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.PowerOffAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Nullable{System.Boolean},System.Collections.Generic.IList{System.String},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member PowerOffAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * string * Nullable&lt;bool&gt; * System.Collections.Generic.IList&lt;string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.PowerOffAsync (operations, resourceGroupName, vmScaleSetName, skipShutdown, instanceIds, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2705,7 +2770,7 @@
       </Docs>
     </Member>
     <Member MemberName="Redeploy">
-      <MemberSignature Language="C#" Value="public static void Redeploy (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = null);" />
+      <MemberSignature Language="C#" Value="public static void Redeploy (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Redeploy(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, class System.Collections.Generic.IList`1&lt;string&gt; instanceIds) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.Redeploy(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Collections.Generic.IList{System.String})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Redeploy (operations As IVirtualMachineScaleSetsOperations, resourceGroupName As String, vmScaleSetName As String, Optional instanceIds As IList(Of String) = null)" />
@@ -2713,7 +2778,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2740,20 +2806,22 @@
             virtual machines in the virtual machine scale set.
             </param>
         <summary>
-            Redeploy one or more virtual machines in a VM scale set.
+            Shuts down all the virtual machines in the virtual machine scale set, moves
+            them to a new node, and powers them back on.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RedeployAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task RedeployAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task RedeployAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task RedeployAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, class System.Collections.Generic.IList`1&lt;string&gt; instanceIds, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.RedeployAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Collections.Generic.IList{System.String},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member RedeployAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * string * System.Collections.Generic.IList&lt;string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.RedeployAsync (operations, resourceGroupName, vmScaleSetName, instanceIds, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2789,14 +2857,15 @@
             The cancellation token.
             </param>
         <summary>
-            Redeploy one or more virtual machines in a VM scale set.
+            Shuts down all the virtual machines in the virtual machine scale set, moves
+            them to a new node, and powers them back on.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Reimage">
-      <MemberSignature Language="C#" Value="public static void Reimage (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetReimageParameters vmScaleSetReimageInput = null);" />
+      <MemberSignature Language="C#" Value="public static void Reimage (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetReimageParameters vmScaleSetReimageInput = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Reimage(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, class Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetReimageParameters vmScaleSetReimageInput) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.Reimage(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetReimageParameters)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Reimage (operations As IVirtualMachineScaleSetsOperations, resourceGroupName As String, vmScaleSetName As String, Optional vmScaleSetReimageInput As VirtualMachineScaleSetReimageParameters = null)" />
@@ -2804,7 +2873,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2837,7 +2907,7 @@
       </Docs>
     </Member>
     <Member MemberName="ReimageAll">
-      <MemberSignature Language="C#" Value="public static void ReimageAll (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = null);" />
+      <MemberSignature Language="C#" Value="public static void ReimageAll (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ReimageAll(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, class System.Collections.Generic.IList`1&lt;string&gt; instanceIds) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.ReimageAll(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Collections.Generic.IList{System.String})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub ReimageAll (operations As IVirtualMachineScaleSetsOperations, resourceGroupName As String, vmScaleSetName As String, Optional instanceIds As IList(Of String) = null)" />
@@ -2845,7 +2915,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2879,14 +2950,15 @@
       </Docs>
     </Member>
     <Member MemberName="ReimageAllAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task ReimageAllAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task ReimageAllAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task ReimageAllAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, class System.Collections.Generic.IList`1&lt;string&gt; instanceIds, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.ReimageAllAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Collections.Generic.IList{System.String},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ReimageAllAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * string * System.Collections.Generic.IList&lt;string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.ReimageAllAsync (operations, resourceGroupName, vmScaleSetName, instanceIds, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2930,14 +3002,15 @@
       </Docs>
     </Member>
     <Member MemberName="ReimageAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task ReimageAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetReimageParameters vmScaleSetReimageInput = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task ReimageAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetReimageParameters vmScaleSetReimageInput = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task ReimageAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, class Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetReimageParameters vmScaleSetReimageInput, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.ReimageAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetReimageParameters,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ReimageAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * string * Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetReimageParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.ReimageAsync (operations, resourceGroupName, vmScaleSetName, vmScaleSetReimageInput, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2980,7 +3053,7 @@
       </Docs>
     </Member>
     <Member MemberName="Restart">
-      <MemberSignature Language="C#" Value="public static void Restart (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = null);" />
+      <MemberSignature Language="C#" Value="public static void Restart (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Restart(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, class System.Collections.Generic.IList`1&lt;string&gt; instanceIds) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.Restart(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Collections.Generic.IList{System.String})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Restart (operations As IVirtualMachineScaleSetsOperations, resourceGroupName As String, vmScaleSetName As String, Optional instanceIds As IList(Of String) = null)" />
@@ -2988,7 +3061,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -3021,14 +3095,15 @@
       </Docs>
     </Member>
     <Member MemberName="RestartAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task RestartAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task RestartAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task RestartAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, class System.Collections.Generic.IList`1&lt;string&gt; instanceIds, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.RestartAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Collections.Generic.IList{System.String},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member RestartAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * string * System.Collections.Generic.IList&lt;string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.RestartAsync (operations, resourceGroupName, vmScaleSetName, instanceIds, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -3071,7 +3146,7 @@
       </Docs>
     </Member>
     <Member MemberName="Start">
-      <MemberSignature Language="C#" Value="public static void Start (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = null);" />
+      <MemberSignature Language="C#" Value="public static void Start (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Start(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, class System.Collections.Generic.IList`1&lt;string&gt; instanceIds) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.Start(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Collections.Generic.IList{System.String})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Start (operations As IVirtualMachineScaleSetsOperations, resourceGroupName As String, vmScaleSetName As String, Optional instanceIds As IList(Of String) = null)" />
@@ -3079,7 +3154,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -3112,14 +3188,15 @@
       </Docs>
     </Member>
     <Member MemberName="StartAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task StartAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task StartAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task StartAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, class System.Collections.Generic.IList`1&lt;string&gt; instanceIds, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.StartAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Collections.Generic.IList{System.String},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member StartAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * string * System.Collections.Generic.IList&lt;string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.StartAsync (operations, resourceGroupName, vmScaleSetName, instanceIds, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -3170,7 +3247,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet</ReturnType>
@@ -3202,14 +3280,15 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt; UpdateAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetUpdate parameters, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt; UpdateAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetUpdate parameters, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt; UpdateAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, class Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetUpdate parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.UpdateAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetUpdate,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member UpdateAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * string * Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetUpdate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet&gt;" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.UpdateAsync (operations, resourceGroupName, vmScaleSetName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -3258,7 +3337,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -3290,14 +3370,15 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateInstancesAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task UpdateInstancesAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task UpdateInstancesAsync (this Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, System.Collections.Generic.IList&lt;string&gt; instanceIds, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task UpdateInstancesAsync(class Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations operations, string resourceGroupName, string vmScaleSetName, class System.Collections.Generic.IList`1&lt;string&gt; instanceIds, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.UpdateInstancesAsync(Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations,System.String,System.String,System.Collections.Generic.IList{System.String},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member UpdateInstancesAsync : Microsoft.Azure.Management.Compute.IVirtualMachineScaleSetsOperations * string * string * System.Collections.Generic.IList&lt;string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Compute.VirtualMachineScaleSetsOperationsExtensions.UpdateInstancesAsync (operations, resourceGroupName, vmScaleSetName, instanceIds, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

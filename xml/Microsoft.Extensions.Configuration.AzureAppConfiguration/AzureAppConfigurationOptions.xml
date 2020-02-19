@@ -1,4 +1,4 @@
-﻿<Type Name="AzureAppConfigurationOptions" FullName="Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions">
+<Type Name="AzureAppConfigurationOptions" FullName="Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions">
   <TypeSignature Language="C#" Value="public class AzureAppConfigurationOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AzureAppConfigurationOptions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions" />
@@ -6,8 +6,8 @@
   <TypeSignature Language="F#" Value="type AzureAppConfigurationOptions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Extensions.Configuration.AzureAppConfiguration</AssemblyName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,12 +28,38 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Extensions.Configuration.AzureAppConfiguration</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConfigureKeyVault">
+      <MemberSignature Language="C#" Value="public Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions ConfigureKeyVault (Action&lt;Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationKeyVaultOptions&gt; configure);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions ConfigureKeyVault(class System.Action`1&lt;class Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationKeyVaultOptions&gt; configure) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions.ConfigureKeyVault(System.Action{Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationKeyVaultOptions})" />
+      <MemberSignature Language="VB.NET" Value="Public Function ConfigureKeyVault (configure As Action(Of AzureAppConfigurationKeyVaultOptions)) As AzureAppConfigurationOptions" />
+      <MemberSignature Language="F#" Value="member this.ConfigureKeyVault : Action&lt;Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationKeyVaultOptions&gt; -&gt; Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions" Usage="azureAppConfigurationOptions.ConfigureKeyVault configure" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Extensions.Configuration.AzureAppConfiguration</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="configure" Type="System.Action&lt;Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationKeyVaultOptions&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="configure">A callback used to configure Azure App Configuration key vault options.</param>
+        <summary>
+            Configures the Azure App Configuration provider to use the provided Key Vault configuration to resolve key vault references.
+            </summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,7 +72,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Extensions.Configuration.AzureAppConfiguration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions</ReturnType>
@@ -72,8 +99,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Extensions.Configuration.AzureAppConfiguration</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions</ReturnType>
@@ -92,53 +119,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ConnectionString">
-      <MemberSignature Language="C#" Value="public string ConnectionString { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string ConnectionString" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions.ConnectionString" />
-      <MemberSignature Language="VB.NET" Value="Public Property ConnectionString As String" />
-      <MemberSignature Language="F#" Value="member this.ConnectionString : string with get, set" Usage="Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions.ConnectionString" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Extensions.Configuration.AzureAppConfiguration</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            The connection string to use to connect to Azure App Configuration.
-            </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ConnectWithManagedIdentity">
-      <MemberSignature Language="C#" Value="public Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions ConnectWithManagedIdentity (string endpoint);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions ConnectWithManagedIdentity(string endpoint) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions.ConnectWithManagedIdentity(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Function ConnectWithManagedIdentity (endpoint As String) As AzureAppConfigurationOptions" />
-      <MemberSignature Language="F#" Value="member this.ConnectWithManagedIdentity : string -&gt; Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions" Usage="azureAppConfigurationOptions.ConnectWithManagedIdentity endpoint" />
+    <Member MemberName="Connect">
+      <MemberSignature Language="C#" Value="public Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions Connect (Uri endpoint, Azure.Core.TokenCredential credential);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions Connect(class System.Uri endpoint, class Azure.Core.TokenCredential credential) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions.Connect(System.Uri,Azure.Core.TokenCredential)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Connect (endpoint As Uri, credential As TokenCredential) As AzureAppConfigurationOptions" />
+      <MemberSignature Language="F#" Value="member this.Connect : Uri * Azure.Core.TokenCredential -&gt; Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions" Usage="azureAppConfigurationOptions.Connect (endpoint, credential)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Extensions.Configuration.AzureAppConfiguration</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="endpoint" Type="System.String" />
+        <Parameter Name="endpoint" Type="System.Uri" />
+        <Parameter Name="credential" Type="Azure.Core.TokenCredential" />
       </Parameters>
       <Docs>
-        <param name="endpoint">
-            The endpoint of the Azure App Configuration store to connect to.
-            </param>
+        <param name="endpoint">The endpoint of the Azure App Configuration to connect to.</param>
+        <param name="credential">Token credentials to use to connect.</param>
         <summary>
-            Connect the provider to Azure App Configuration using the managed identity of an Azure resource.
+            Connect the provider to Azure App Configuration using endpoint and token credentials.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -153,7 +156,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Extensions.Configuration.AzureAppConfiguration</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Extensions.Configuration.AzureAppConfiguration.IConfigurationRefresher</ReturnType>
@@ -176,8 +180,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Extensions.Configuration.AzureAppConfiguration</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Extensions.Configuration.AzureAppConfiguration.Models.KeyValueSelector&gt;</ReturnType>
@@ -199,8 +203,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Extensions.Configuration.AzureAppConfiguration</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Extensions.Configuration.AzureAppConfiguration.IOfflineCache</ReturnType>
@@ -213,6 +217,42 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Select">
+      <MemberSignature Language="C#" Value="public Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions Select (string keyFilter, string labelFilter = &quot;\0&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions Select(string keyFilter, string labelFilter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions.Select(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Select (keyFilter As String, Optional labelFilter As String = &quot;\0&quot;) As AzureAppConfigurationOptions" />
+      <MemberSignature Language="F#" Value="member this.Select : string * string -&gt; Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions" Usage="azureAppConfigurationOptions.Select (keyFilter, labelFilter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Extensions.Configuration.AzureAppConfiguration</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keyFilter" Type="System.String" />
+        <Parameter Name="labelFilter" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="keyFilter">
+            The key filter to apply when querying Azure App Configuration for key-values.
+            The characters asterisk (*), comma (,) and backslash (\) are reserved and must be escaped using a backslash (\).
+            Built-in key filter options: <see cref="T:Microsoft.Extensions.Configuration.AzureAppConfiguration.KeyFilter" />.
+            </param>
+        <param name="labelFilter">
+            The label filter to apply when querying Azure App Configuration for key-values. By default the null label will be used. Built-in label filter options: <see cref="T:Microsoft.Extensions.Configuration.AzureAppConfiguration.LabelFilter" />
+            The characters asterisk (*) and comma (,) are not supported. Backslash (\) character is reserved and must be escaped using another backslash (\).
+            </param>
+        <summary>
+            Specify what key-values to include in the configuration provider.
+            <see cref="M:Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions.Select(System.String,System.String)" /> can be called multiple times to include multiple sets of key-values.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SetOfflineCache">
       <MemberSignature Language="C#" Value="public Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions SetOfflineCache (Microsoft.Extensions.Configuration.AzureAppConfiguration.IOfflineCache offlineCache);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions SetOfflineCache(class Microsoft.Extensions.Configuration.AzureAppConfiguration.IOfflineCache offlineCache) cil managed" />
@@ -222,8 +262,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Extensions.Configuration.AzureAppConfiguration</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions</ReturnType>
@@ -249,8 +289,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Extensions.Configuration.AzureAppConfiguration</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions</ReturnType>
@@ -267,46 +307,8 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Use">
-      <MemberSignature Language="C#" Value="public Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions Use (string keyFilter, string labelFilter = &quot;\0&quot;, Nullable&lt;DateTimeOffset&gt; preferredDateTime = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions Use(string keyFilter, string labelFilter, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; preferredDateTime) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions.Use(System.String,System.String,System.Nullable{System.DateTimeOffset})" />
-      <MemberSignature Language="VB.NET" Value="Public Function Use (keyFilter As String, Optional labelFilter As String = &quot;\0&quot;, Optional preferredDateTime As Nullable(Of DateTimeOffset) = null) As AzureAppConfigurationOptions" />
-      <MemberSignature Language="F#" Value="member this.Use : string * string * Nullable&lt;DateTimeOffset&gt; -&gt; Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions" Usage="azureAppConfigurationOptions.Use (keyFilter, labelFilter, preferredDateTime)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Extensions.Configuration.AzureAppConfiguration</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="keyFilter" Type="System.String" />
-        <Parameter Name="labelFilter" Type="System.String" />
-        <Parameter Name="preferredDateTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
-      </Parameters>
-      <Docs>
-        <param name="keyFilter">
-            The key filter to apply when querying Azure App Configuration for key-values. Built-in key filter options: <see cref="T:Microsoft.Extensions.Configuration.AzureAppConfiguration.KeyFilter" /></param>
-        <param name="labelFilter">
-            The label filter to apply when querying Azure App Configuration for key-values. By default the null label will be used. Built-in label filter options: <see cref="T:Microsoft.Extensions.Configuration.AzureAppConfiguration.LabelFilter" />
-            Does not support '*' and ','.
-            </param>
-        <param name="preferredDateTime">
-            Used to query key-values in the state that they existed at the time provided.
-            </param>
-        <summary>
-            Specify what key-values to include in the configuration provider.
-            <see cref="M:Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions.Use(System.String,System.String,System.Nullable{System.DateTimeOffset})" /> can be called multiple times to include multiple sets of key-values.
-            </summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="UseFeatureFlags">
-      <MemberSignature Language="C#" Value="public Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions UseFeatureFlags (Action&lt;Microsoft.Extensions.Configuration.AzureAppConfiguration.FeatureManagement.FeatureFlagOptions&gt; configure = null);" />
+      <MemberSignature Language="C#" Value="public Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions UseFeatureFlags (Action&lt;Microsoft.Extensions.Configuration.AzureAppConfiguration.FeatureManagement.FeatureFlagOptions&gt; configure = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions UseFeatureFlags(class System.Action`1&lt;class Microsoft.Extensions.Configuration.AzureAppConfiguration.FeatureManagement.FeatureFlagOptions&gt; configure) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions.UseFeatureFlags(System.Action{Microsoft.Extensions.Configuration.AzureAppConfiguration.FeatureManagement.FeatureFlagOptions})" />
       <MemberSignature Language="VB.NET" Value="Public Function UseFeatureFlags (Optional configure As Action(Of FeatureFlagOptions) = null) As AzureAppConfigurationOptions" />
@@ -314,8 +316,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Extensions.Configuration.AzureAppConfiguration</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Extensions.Configuration.AzureAppConfiguration.AzureAppConfigurationOptions</ReturnType>

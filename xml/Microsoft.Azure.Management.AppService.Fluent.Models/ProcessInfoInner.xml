@@ -1,4 +1,4 @@
-﻿<Type Name="ProcessInfoInner" FullName="Microsoft.Azure.Management.AppService.Fluent.Models.ProcessInfoInner">
+<Type Name="ProcessInfoInner" FullName="Microsoft.Azure.Management.AppService.Fluent.Models.ProcessInfoInner">
   <TypeSignature Language="C#" Value="public class ProcessInfoInner : Microsoft.Azure.Management.AppService.Fluent.Models.ProxyOnlyResourceInner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProcessInfoInner extends Microsoft.Azure.Management.AppService.Fluent.Models.ProxyOnlyResourceInner" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.AppService.Fluent.Models.ProcessInfoInner" />
@@ -6,7 +6,10 @@
   <TypeSignature Language="F#" Value="type ProcessInfoInner = class&#xA;    inherit ProxyOnlyResourceInner" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.AppService.Fluent.Models.ProxyOnlyResourceInner</BaseTypeName>
@@ -32,7 +35,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,15 +49,16 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ProcessInfoInner (string id = null, string name = null, string type = null, string kind = null, Nullable&lt;int&gt; identifier = null, string deploymentName = null, string href = null, string minidump = null, Nullable&lt;bool&gt; isProfileRunning = null, Nullable&lt;bool&gt; isIisProfileRunning = null, Nullable&lt;double&gt; iisProfileTimeoutInSeconds = null, string parent = null, System.Collections.Generic.IList&lt;string&gt; children = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.ProcessThreadInfoInner&gt; threads = null, System.Collections.Generic.IList&lt;string&gt; openFileHandles = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.ProcessModuleInfoInner&gt; modules = null, string fileName = null, string commandLine = null, string userName = null, Nullable&lt;int&gt; handleCount = null, Nullable&lt;int&gt; moduleCount = null, Nullable&lt;int&gt; threadCount = null, Nullable&lt;DateTime&gt; startTime = null, string totalCpuTime = null, string userCpuTime = null, string privilegedCpuTime = null, Nullable&lt;long&gt; workingSet = null, Nullable&lt;long&gt; peakWorkingSet = null, Nullable&lt;long&gt; privateMemory = null, Nullable&lt;long&gt; virtualMemory = null, Nullable&lt;long&gt; peakVirtualMemory = null, Nullable&lt;long&gt; pagedSystemMemory = null, Nullable&lt;long&gt; nonPagedSystemMemory = null, Nullable&lt;long&gt; pagedMemory = null, Nullable&lt;long&gt; peakPagedMemory = null, Nullable&lt;DateTime&gt; timeStamp = null, System.Collections.Generic.IDictionary&lt;string,string&gt; environmentVariables = null, Nullable&lt;bool&gt; isScmSite = null, Nullable&lt;bool&gt; isWebjob = null, string description = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string type, string kind, valuetype System.Nullable`1&lt;int32&gt; identifier, string deploymentName, string href, string minidump, valuetype System.Nullable`1&lt;bool&gt; isProfileRunning, valuetype System.Nullable`1&lt;bool&gt; isIisProfileRunning, valuetype System.Nullable`1&lt;float64&gt; iisProfileTimeoutInSeconds, string parent, class System.Collections.Generic.IList`1&lt;string&gt; children, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.ProcessThreadInfoInner&gt; threads, class System.Collections.Generic.IList`1&lt;string&gt; openFileHandles, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.ProcessModuleInfoInner&gt; modules, string fileName, string commandLine, string userName, valuetype System.Nullable`1&lt;int32&gt; handleCount, valuetype System.Nullable`1&lt;int32&gt; moduleCount, valuetype System.Nullable`1&lt;int32&gt; threadCount, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startTime, string totalCpuTime, string userCpuTime, string privilegedCpuTime, valuetype System.Nullable`1&lt;int64&gt; workingSet, valuetype System.Nullable`1&lt;int64&gt; peakWorkingSet, valuetype System.Nullable`1&lt;int64&gt; privateMemory, valuetype System.Nullable`1&lt;int64&gt; virtualMemory, valuetype System.Nullable`1&lt;int64&gt; peakVirtualMemory, valuetype System.Nullable`1&lt;int64&gt; pagedSystemMemory, valuetype System.Nullable`1&lt;int64&gt; nonPagedSystemMemory, valuetype System.Nullable`1&lt;int64&gt; pagedMemory, valuetype System.Nullable`1&lt;int64&gt; peakPagedMemory, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; timeStamp, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; environmentVariables, valuetype System.Nullable`1&lt;bool&gt; isScmSite, valuetype System.Nullable`1&lt;bool&gt; isWebjob, string description) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.Models.ProcessInfoInner.#ctor(System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Double},System.String,System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{Microsoft.Azure.Management.AppService.Fluent.Models.ProcessThreadInfoInner},System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{Microsoft.Azure.Management.AppService.Fluent.Models.ProcessModuleInfoInner},System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.DateTime},System.String,System.String,System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.DateTime},System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional kind As String = null, Optional identifier As Nullable(Of Integer) = null, Optional deploymentName As String = null, Optional href As String = null, Optional minidump As String = null, Optional isProfileRunning As Nullable(Of Boolean) = null, Optional isIisProfileRunning As Nullable(Of Boolean) = null, Optional iisProfileTimeoutInSeconds As Nullable(Of Double) = null, Optional parent As String = null, Optional children As IList(Of String) = null, Optional threads As IList(Of ProcessThreadInfoInner) = null, Optional openFileHandles As IList(Of String) = null, Optional modules As IList(Of ProcessModuleInfoInner) = null, Optional fileName As String = null, Optional commandLine As String = null, Optional userName As String = null, Optional handleCount As Nullable(Of Integer) = null, Optional moduleCount As Nullable(Of Integer) = null, Optional threadCount As Nullable(Of Integer) = null, Optional startTime As Nullable(Of DateTime) = null, Optional totalCpuTime As String = null, Optional userCpuTime As String = null, Optional privilegedCpuTime As String = null, Optional workingSet As Nullable(Of Long) = null, Optional peakWorkingSet As Nullable(Of Long) = null, Optional privateMemory As Nullable(Of Long) = null, Optional virtualMemory As Nullable(Of Long) = null, Optional peakVirtualMemory As Nullable(Of Long) = null, Optional pagedSystemMemory As Nullable(Of Long) = null, Optional nonPagedSystemMemory As Nullable(Of Long) = null, Optional pagedMemory As Nullable(Of Long) = null, Optional peakPagedMemory As Nullable(Of Long) = null, Optional timeStamp As Nullable(Of DateTime) = null, Optional environmentVariables As IDictionary(Of String, String) = null, Optional isScmSite As Nullable(Of Boolean) = null, Optional isWebjob As Nullable(Of Boolean) = null, Optional description As String = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.AppService.Fluent.Models.ProcessInfoInner : string * string * string * string * Nullable&lt;int&gt; * string * string * string * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;double&gt; * string * System.Collections.Generic.IList&lt;string&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.ProcessThreadInfoInner&gt; * System.Collections.Generic.IList&lt;string&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.ProcessModuleInfoInner&gt; * string * string * string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;DateTime&gt; * string * string * string * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; * Nullable&lt;DateTime&gt; * System.Collections.Generic.IDictionary&lt;string, string&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * string -&gt; Microsoft.Azure.Management.AppService.Fluent.Models.ProcessInfoInner" Usage="new Microsoft.Azure.Management.AppService.Fluent.Models.ProcessInfoInner (id, name, type, kind, identifier, deploymentName, href, minidump, isProfileRunning, isIisProfileRunning, iisProfileTimeoutInSeconds, parent, children, threads, openFileHandles, modules, fileName, commandLine, userName, handleCount, moduleCount, threadCount, startTime, totalCpuTime, userCpuTime, privilegedCpuTime, workingSet, peakWorkingSet, privateMemory, virtualMemory, peakVirtualMemory, pagedSystemMemory, nonPagedSystemMemory, pagedMemory, peakPagedMemory, timeStamp, environmentVariables, isScmSite, isWebjob, description)" />
+      <MemberSignature Language="C#" Value="public ProcessInfoInner (string id = default, string name = default, string type = default, string kind = default, Nullable&lt;int&gt; identifier = default, string deploymentName = default, string href = default, string minidump = default, Nullable&lt;bool&gt; isProfileRunning = default, Nullable&lt;bool&gt; isIisProfileRunning = default, Nullable&lt;double&gt; iisProfileTimeoutInSeconds = default, string parent = default, System.Collections.Generic.IList&lt;string&gt; children = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.ProcessThreadInfo&gt; threads = default, System.Collections.Generic.IList&lt;string&gt; openFileHandles = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.ProcessModuleInfoInner&gt; modules = default, string fileName = default, string commandLine = default, string userName = default, Nullable&lt;int&gt; handleCount = default, Nullable&lt;int&gt; moduleCount = default, Nullable&lt;int&gt; threadCount = default, Nullable&lt;DateTime&gt; startTime = default, string totalCpuTime = default, string userCpuTime = default, string privilegedCpuTime = default, Nullable&lt;long&gt; workingSet = default, Nullable&lt;long&gt; peakWorkingSet = default, Nullable&lt;long&gt; privateMemory = default, Nullable&lt;long&gt; virtualMemory = default, Nullable&lt;long&gt; peakVirtualMemory = default, Nullable&lt;long&gt; pagedSystemMemory = default, Nullable&lt;long&gt; nonPagedSystemMemory = default, Nullable&lt;long&gt; pagedMemory = default, Nullable&lt;long&gt; peakPagedMemory = default, Nullable&lt;DateTime&gt; timeStamp = default, System.Collections.Generic.IDictionary&lt;string,string&gt; environmentVariables = default, Nullable&lt;bool&gt; isScmSite = default, Nullable&lt;bool&gt; isWebjob = default, string description = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string type, string kind, valuetype System.Nullable`1&lt;int32&gt; identifier, string deploymentName, string href, string minidump, valuetype System.Nullable`1&lt;bool&gt; isProfileRunning, valuetype System.Nullable`1&lt;bool&gt; isIisProfileRunning, valuetype System.Nullable`1&lt;float64&gt; iisProfileTimeoutInSeconds, string parent, class System.Collections.Generic.IList`1&lt;string&gt; children, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.ProcessThreadInfo&gt; threads, class System.Collections.Generic.IList`1&lt;string&gt; openFileHandles, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.ProcessModuleInfoInner&gt; modules, string fileName, string commandLine, string userName, valuetype System.Nullable`1&lt;int32&gt; handleCount, valuetype System.Nullable`1&lt;int32&gt; moduleCount, valuetype System.Nullable`1&lt;int32&gt; threadCount, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startTime, string totalCpuTime, string userCpuTime, string privilegedCpuTime, valuetype System.Nullable`1&lt;int64&gt; workingSet, valuetype System.Nullable`1&lt;int64&gt; peakWorkingSet, valuetype System.Nullable`1&lt;int64&gt; privateMemory, valuetype System.Nullable`1&lt;int64&gt; virtualMemory, valuetype System.Nullable`1&lt;int64&gt; peakVirtualMemory, valuetype System.Nullable`1&lt;int64&gt; pagedSystemMemory, valuetype System.Nullable`1&lt;int64&gt; nonPagedSystemMemory, valuetype System.Nullable`1&lt;int64&gt; pagedMemory, valuetype System.Nullable`1&lt;int64&gt; peakPagedMemory, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; timeStamp, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; environmentVariables, valuetype System.Nullable`1&lt;bool&gt; isScmSite, valuetype System.Nullable`1&lt;bool&gt; isWebjob, string description) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.Models.ProcessInfoInner.#ctor(System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Double},System.String,System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{Microsoft.Azure.Management.AppService.Fluent.Models.ProcessThreadInfo},System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{Microsoft.Azure.Management.AppService.Fluent.Models.ProcessModuleInfoInner},System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.DateTime},System.String,System.String,System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.DateTime},System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional kind As String = null, Optional identifier As Nullable(Of Integer) = null, Optional deploymentName As String = null, Optional href As String = null, Optional minidump As String = null, Optional isProfileRunning As Nullable(Of Boolean) = null, Optional isIisProfileRunning As Nullable(Of Boolean) = null, Optional iisProfileTimeoutInSeconds As Nullable(Of Double) = null, Optional parent As String = null, Optional children As IList(Of String) = null, Optional threads As IList(Of ProcessThreadInfo) = null, Optional openFileHandles As IList(Of String) = null, Optional modules As IList(Of ProcessModuleInfoInner) = null, Optional fileName As String = null, Optional commandLine As String = null, Optional userName As String = null, Optional handleCount As Nullable(Of Integer) = null, Optional moduleCount As Nullable(Of Integer) = null, Optional threadCount As Nullable(Of Integer) = null, Optional startTime As Nullable(Of DateTime) = null, Optional totalCpuTime As String = null, Optional userCpuTime As String = null, Optional privilegedCpuTime As String = null, Optional workingSet As Nullable(Of Long) = null, Optional peakWorkingSet As Nullable(Of Long) = null, Optional privateMemory As Nullable(Of Long) = null, Optional virtualMemory As Nullable(Of Long) = null, Optional peakVirtualMemory As Nullable(Of Long) = null, Optional pagedSystemMemory As Nullable(Of Long) = null, Optional nonPagedSystemMemory As Nullable(Of Long) = null, Optional pagedMemory As Nullable(Of Long) = null, Optional peakPagedMemory As Nullable(Of Long) = null, Optional timeStamp As Nullable(Of DateTime) = null, Optional environmentVariables As IDictionary(Of String, String) = null, Optional isScmSite As Nullable(Of Boolean) = null, Optional isWebjob As Nullable(Of Boolean) = null, Optional description As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.AppService.Fluent.Models.ProcessInfoInner : string * string * string * string * Nullable&lt;int&gt; * string * string * string * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;double&gt; * string * System.Collections.Generic.IList&lt;string&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.ProcessThreadInfo&gt; * System.Collections.Generic.IList&lt;string&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.ProcessModuleInfoInner&gt; * string * string * string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;DateTime&gt; * string * string * string * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; * Nullable&lt;DateTime&gt; * System.Collections.Generic.IDictionary&lt;string, string&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * string -&gt; Microsoft.Azure.Management.AppService.Fluent.Models.ProcessInfoInner" Usage="new Microsoft.Azure.Management.AppService.Fluent.Models.ProcessInfoInner (id, name, type, kind, identifier, deploymentName, href, minidump, isProfileRunning, isIisProfileRunning, iisProfileTimeoutInSeconds, parent, children, threads, openFileHandles, modules, fileName, commandLine, userName, handleCount, moduleCount, threadCount, startTime, totalCpuTime, userCpuTime, privilegedCpuTime, workingSet, peakWorkingSet, privateMemory, virtualMemory, peakVirtualMemory, pagedSystemMemory, nonPagedSystemMemory, pagedMemory, peakPagedMemory, timeStamp, environmentVariables, isScmSite, isWebjob, description)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
@@ -67,7 +74,7 @@
         <Parameter Name="iisProfileTimeoutInSeconds" Type="System.Nullable&lt;System.Double&gt;" />
         <Parameter Name="parent" Type="System.String" />
         <Parameter Name="children" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
-        <Parameter Name="threads" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.ProcessThreadInfoInner&gt;" />
+        <Parameter Name="threads" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.ProcessThreadInfo&gt;" />
         <Parameter Name="openFileHandles" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
         <Parameter Name="modules" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.ProcessModuleInfoInner&gt;" />
         <Parameter Name="fileName" Type="System.String" />
@@ -154,7 +161,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -181,7 +191,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -208,7 +221,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -235,7 +251,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -262,7 +281,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -289,7 +311,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -316,7 +341,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -343,7 +371,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -370,7 +401,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -397,7 +431,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -424,7 +461,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -451,7 +491,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -478,7 +521,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -505,7 +551,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -532,7 +581,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -559,7 +611,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -586,7 +641,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -613,7 +671,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -640,7 +701,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -667,7 +731,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -694,7 +761,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -721,7 +791,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -748,7 +821,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -775,7 +851,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -802,7 +881,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -829,7 +911,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -856,7 +941,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -883,7 +971,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -910,7 +1001,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -929,15 +1023,18 @@
       </Docs>
     </Member>
     <Member MemberName="Threads">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.ProcessThreadInfoInner&gt; Threads { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.ProcessThreadInfoInner&gt; Threads" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.ProcessThreadInfo&gt; Threads { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.ProcessThreadInfo&gt; Threads" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.AppService.Fluent.Models.ProcessInfoInner.Threads" />
-      <MemberSignature Language="VB.NET" Value="Public Property Threads As IList(Of ProcessThreadInfoInner)" />
-      <MemberSignature Language="F#" Value="member this.Threads : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.ProcessThreadInfoInner&gt; with get, set" Usage="Microsoft.Azure.Management.AppService.Fluent.Models.ProcessInfoInner.Threads" />
+      <MemberSignature Language="VB.NET" Value="Public Property Threads As IList(Of ProcessThreadInfo)" />
+      <MemberSignature Language="F#" Value="member this.Threads : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.ProcessThreadInfo&gt; with get, set" Usage="Microsoft.Azure.Management.AppService.Fluent.Models.ProcessInfoInner.Threads" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -945,7 +1042,7 @@
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.ProcessThreadInfoInner&gt;</ReturnType>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.ProcessThreadInfo&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -964,7 +1061,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -991,7 +1091,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1018,7 +1121,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1045,7 +1151,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1072,7 +1181,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1099,7 +1211,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

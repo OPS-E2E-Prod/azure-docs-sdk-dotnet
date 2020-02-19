@@ -1,4 +1,4 @@
-﻿<Type Name="SentimentBatchResultItem" FullName="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.SentimentBatchResultItem">
+<Type Name="SentimentBatchResultItem" FullName="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.SentimentBatchResultItem">
   <TypeSignature Language="C#" Value="public class SentimentBatchResultItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SentimentBatchResultItem extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.SentimentBatchResultItem" />
@@ -6,8 +6,7 @@
   <TypeSignature Language="F#" Value="type SentimentBatchResultItem = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.CognitiveServices.Language.TextAnalytics</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,46 +25,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.CognitiveServices.Language.TextAnalytics</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>
-            Initializes a new instance of the SentimentBatchResultItem class.
-            </summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SentimentBatchResultItem (Nullable&lt;double&gt; score = null, string id = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;float64&gt; score, string id) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.SentimentBatchResultItem.#ctor(System.Nullable{System.Double},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional score As Nullable(Of Double) = null, Optional id As String = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.SentimentBatchResultItem : Nullable&lt;double&gt; * string -&gt; Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.SentimentBatchResultItem" Usage="new Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.SentimentBatchResultItem (score, id)" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.CognitiveServices.Language.TextAnalytics</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="score" Type="System.Nullable&lt;System.Double&gt;" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="id" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="score">A decimal number between 0 and 1 denoting the
-            sentiment of the document. A score above 0.7 usually refers to a
-            positive document while a score below 0.3 normally has a negative
-            connotation. Mid values refer to neutral text.</param>
-        <param name="id">Unique document identifier.</param>
-        <summary>
-            Initializes a new instance of the SentimentBatchResultItem class.
-            </summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SentimentBatchResultItem (string id = null, Nullable&lt;double&gt; score = null, Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.DocumentStatistics statistics = null);" />
+      <MemberSignature Language="C#" Value="public SentimentBatchResultItem (string id = default, Nullable&lt;double&gt; score = default, Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.DocumentStatistics statistics = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, valuetype System.Nullable`1&lt;float64&gt; score, class Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.DocumentStatistics statistics) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.SentimentBatchResultItem.#ctor(System.String,System.Nullable{System.Double},Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.DocumentStatistics)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional score As Nullable(Of Double) = null, Optional statistics As DocumentStatistics = null)" />
@@ -73,39 +42,31 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.CognitiveServices.Language.TextAnalytics</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="id" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="score" Type="System.Nullable&lt;System.Double&gt;" Index="1" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="statistics" Type="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.DocumentStatistics" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="score" Type="System.Nullable&lt;System.Double&gt;" />
+        <Parameter Name="statistics" Type="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.DocumentStatistics" />
       </Parameters>
       <Docs>
-        <param name="id">Unique, non-empty document identifier.</param>
-        <param name="score">A decimal number between 0 and 1 denoting the
-            sentiment of the document. A score above 0.7 usually refers to a
-            positive document while a score below 0.3 normally has a negative
-            connotation. Mid values refer to neutral text.</param>
-        <param name="statistics">(Optional) if showStats=true was specified
-            in the request this field will contain information about the
-            document payload.</param>
-        <summary>
-            Initializes a new instance of the SentimentBatchResultItem class.
-            </summary>
+        <param name="id">To be added.</param>
+        <param name="score">To be added.</param>
+        <param name="statistics">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Id">
-      <MemberSignature Language="C#" Value="public string Id { get; }" />
+      <MemberSignature Language="C#" Value="public string Id { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.SentimentBatchResultItem.Id" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As String" />
-      <MemberSignature Language="F#" Value="member this.Id : string" Usage="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.SentimentBatchResultItem.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.SentimentBatchResultItem.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.CognitiveServices.Language.TextAnalytics</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -116,24 +77,21 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Gets unique document identifier.
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Score">
-      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; Score { get; }" />
+      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; Score { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; Score" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.SentimentBatchResultItem.Score" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Score As Nullable(Of Double)" />
-      <MemberSignature Language="F#" Value="member this.Score : Nullable&lt;double&gt;" Usage="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.SentimentBatchResultItem.Score" />
+      <MemberSignature Language="VB.NET" Value="Public Property Score As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.Score : Nullable&lt;double&gt; with get, set" Usage="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.SentimentBatchResultItem.Score" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.CognitiveServices.Language.TextAnalytics</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -144,12 +102,7 @@
         <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Gets a decimal number between 0 and 1 denoting the sentiment of the
-            document. A score above 0.7 usually refers to a positive document
-            while a score below 0.3 normally has a negative connotation. Mid
-            values refer to neutral text.
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -163,10 +116,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.CognitiveServices.Language.TextAnalytics</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="statistics")</AttributeName>
         </Attribute>
       </Attributes>
@@ -174,11 +127,7 @@
         <ReturnType>Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.DocumentStatistics</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Gets or sets (Optional) if showStats=true was specified in the
-            request this field will contain information about the document
-            payload.
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

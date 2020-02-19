@@ -1,4 +1,4 @@
-﻿<Type Name="DiagnosticsOperationsExtensions" FullName="Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions">
+<Type Name="DiagnosticsOperationsExtensions" FullName="Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions">
   <TypeSignature Language="C#" Value="public static class DiagnosticsOperationsExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DiagnosticsOperationsExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions" />
@@ -6,7 +6,10 @@
   <TypeSignature Language="F#" Value="type DiagnosticsOperationsExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -20,14 +23,17 @@
   </Docs>
   <Members>
     <Member MemberName="ExecuteSiteAnalysisAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticAnalysisInner&gt; ExecuteSiteAnalysisAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string diagnosticCategory, string analysisName, Nullable&lt;DateTime&gt; startTime = null, Nullable&lt;DateTime&gt; endTime = null, string timeGrain = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticAnalysisInner&gt; ExecuteSiteAnalysisAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string diagnosticCategory, string analysisName, Nullable&lt;DateTime&gt; startTime = default, Nullable&lt;DateTime&gt; endTime = default, string timeGrain = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticAnalysisInner&gt; ExecuteSiteAnalysisAsync(class Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string diagnosticCategory, string analysisName, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startTime, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; endTime, string timeGrain, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.ExecuteSiteAnalysisAsync(Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations,System.String,System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ExecuteSiteAnalysisAsync : Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations * string * string * string * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticAnalysisInner&gt;" Usage="Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.ExecuteSiteAnalysisAsync (operations, resourceGroupName, siteName, diagnosticCategory, analysisName, startTime, endTime, timeGrain, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -81,19 +87,22 @@
             </summary>
         <returns>To be added.</returns>
         <remarks>
-            Execute Analysis
+            Description for Execute Analysis
             </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExecuteSiteAnalysisSlotAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticAnalysisInner&gt; ExecuteSiteAnalysisSlotAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string diagnosticCategory, string analysisName, string slot, Nullable&lt;DateTime&gt; startTime = null, Nullable&lt;DateTime&gt; endTime = null, string timeGrain = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticAnalysisInner&gt; ExecuteSiteAnalysisSlotAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string diagnosticCategory, string analysisName, string slot, Nullable&lt;DateTime&gt; startTime = default, Nullable&lt;DateTime&gt; endTime = default, string timeGrain = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticAnalysisInner&gt; ExecuteSiteAnalysisSlotAsync(class Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string diagnosticCategory, string analysisName, string slot, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startTime, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; endTime, string timeGrain, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.ExecuteSiteAnalysisSlotAsync(Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ExecuteSiteAnalysisSlotAsync : Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations * string * string * string * string * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticAnalysisInner&gt;" Usage="Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.ExecuteSiteAnalysisSlotAsync (operations, resourceGroupName, siteName, diagnosticCategory, analysisName, slot, startTime, endTime, timeGrain, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -151,19 +160,22 @@
             </summary>
         <returns>To be added.</returns>
         <remarks>
-            Execute Analysis
+            Description for Execute Analysis
             </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExecuteSiteDetectorAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticDetectorResponseInner&gt; ExecuteSiteDetectorAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string detectorName, string diagnosticCategory, Nullable&lt;DateTime&gt; startTime = null, Nullable&lt;DateTime&gt; endTime = null, string timeGrain = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticDetectorResponseInner&gt; ExecuteSiteDetectorAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string detectorName, string diagnosticCategory, Nullable&lt;DateTime&gt; startTime = default, Nullable&lt;DateTime&gt; endTime = default, string timeGrain = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticDetectorResponseInner&gt; ExecuteSiteDetectorAsync(class Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string detectorName, string diagnosticCategory, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startTime, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; endTime, string timeGrain, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.ExecuteSiteDetectorAsync(Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations,System.String,System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ExecuteSiteDetectorAsync : Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations * string * string * string * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticDetectorResponseInner&gt;" Usage="Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.ExecuteSiteDetectorAsync (operations, resourceGroupName, siteName, detectorName, diagnosticCategory, startTime, endTime, timeGrain, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -217,19 +229,22 @@
             </summary>
         <returns>To be added.</returns>
         <remarks>
-            Execute Detector
+            Description for Execute Detector
             </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExecuteSiteDetectorSlotAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticDetectorResponseInner&gt; ExecuteSiteDetectorSlotAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string detectorName, string diagnosticCategory, string slot, Nullable&lt;DateTime&gt; startTime = null, Nullable&lt;DateTime&gt; endTime = null, string timeGrain = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticDetectorResponseInner&gt; ExecuteSiteDetectorSlotAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string detectorName, string diagnosticCategory, string slot, Nullable&lt;DateTime&gt; startTime = default, Nullable&lt;DateTime&gt; endTime = default, string timeGrain = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticDetectorResponseInner&gt; ExecuteSiteDetectorSlotAsync(class Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string detectorName, string diagnosticCategory, string slot, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startTime, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; endTime, string timeGrain, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.ExecuteSiteDetectorSlotAsync(Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ExecuteSiteDetectorSlotAsync : Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations * string * string * string * string * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticDetectorResponseInner&gt;" Usage="Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.ExecuteSiteDetectorSlotAsync (operations, resourceGroupName, siteName, detectorName, diagnosticCategory, slot, startTime, endTime, timeGrain, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -287,19 +302,22 @@
             </summary>
         <returns>To be added.</returns>
         <remarks>
-            Execute Detector
+            Description for Execute Detector
             </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHostingEnvironmentDetectorResponseAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorResponseInner&gt; GetHostingEnvironmentDetectorResponseAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string name, string detectorName, Nullable&lt;DateTime&gt; startTime = null, Nullable&lt;DateTime&gt; endTime = null, string timeGrain = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorResponseInner&gt; GetHostingEnvironmentDetectorResponseAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string name, string detectorName, Nullable&lt;DateTime&gt; startTime = default, Nullable&lt;DateTime&gt; endTime = default, string timeGrain = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DetectorResponseInner&gt; GetHostingEnvironmentDetectorResponseAsync(class Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string name, string detectorName, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startTime, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; endTime, string timeGrain, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.GetHostingEnvironmentDetectorResponseAsync(Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations,System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member GetHostingEnvironmentDetectorResponseAsync : Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations * string * string * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorResponseInner&gt;" Usage="Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.GetHostingEnvironmentDetectorResponseAsync (operations, resourceGroupName, name, detectorName, startTime, endTime, timeGrain, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -349,19 +367,20 @@
             </summary>
         <returns>To be added.</returns>
         <remarks>
-            Get Hosting Environment Detector Response
+            Description for Get Hosting Environment Detector Response
             </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSiteAnalysisAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticAnalysisInner&gt; GetSiteAnalysisAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string diagnosticCategory, string analysisName, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticAnalysisInner&gt; GetSiteAnalysisAsync(class Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string diagnosticCategory, string analysisName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.AnalysisDefinitionInner&gt; GetSiteAnalysisAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string diagnosticCategory, string analysisName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.AnalysisDefinitionInner&gt; GetSiteAnalysisAsync(class Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string diagnosticCategory, string analysisName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.GetSiteAnalysisAsync(Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="static member GetSiteAnalysisAsync : Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticAnalysisInner&gt;" Usage="Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.GetSiteAnalysisAsync (operations, resourceGroupName, siteName, diagnosticCategory, analysisName, cancellationToken)" />
+      <MemberSignature Language="F#" Value="static member GetSiteAnalysisAsync : Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.AnalysisDefinitionInner&gt;" Usage="Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.GetSiteAnalysisAsync (operations, resourceGroupName, siteName, diagnosticCategory, analysisName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -369,7 +388,7 @@
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticAnalysisInner&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.AnalysisDefinitionInner&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="operations" Type="Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations" RefType="this" />
@@ -403,19 +422,20 @@
             </summary>
         <returns>To be added.</returns>
         <remarks>
-            Get Site Analysis
+            Description for Get Site Analysis
             </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSiteAnalysisSlotAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticAnalysisInner&gt; GetSiteAnalysisSlotAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string diagnosticCategory, string analysisName, string slot, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticAnalysisInner&gt; GetSiteAnalysisSlotAsync(class Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string diagnosticCategory, string analysisName, string slot, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.AnalysisDefinitionInner&gt; GetSiteAnalysisSlotAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string diagnosticCategory, string analysisName, string slot, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.AnalysisDefinitionInner&gt; GetSiteAnalysisSlotAsync(class Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string diagnosticCategory, string analysisName, string slot, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.GetSiteAnalysisSlotAsync(Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations,System.String,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="static member GetSiteAnalysisSlotAsync : Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations * string * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticAnalysisInner&gt;" Usage="Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.GetSiteAnalysisSlotAsync (operations, resourceGroupName, siteName, diagnosticCategory, analysisName, slot, cancellationToken)" />
+      <MemberSignature Language="F#" Value="static member GetSiteAnalysisSlotAsync : Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations * string * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.AnalysisDefinitionInner&gt;" Usage="Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.GetSiteAnalysisSlotAsync (operations, resourceGroupName, siteName, diagnosticCategory, analysisName, slot, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -423,7 +443,7 @@
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticAnalysisInner&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.AnalysisDefinitionInner&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="operations" Type="Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations" RefType="this" />
@@ -461,19 +481,20 @@
             </summary>
         <returns>To be added.</returns>
         <remarks>
-            Get Site Analysis
+            Description for Get Site Analysis
             </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSiteDetectorAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinition&gt;&gt; GetSiteDetectorAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string diagnosticCategory, string detectorName, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinition&gt;&gt; GetSiteDetectorAsync(class Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string diagnosticCategory, string detectorName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinitionInner&gt; GetSiteDetectorAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string diagnosticCategory, string detectorName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinitionInner&gt; GetSiteDetectorAsync(class Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string diagnosticCategory, string detectorName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.GetSiteDetectorAsync(Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="static member GetSiteDetectorAsync : Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinition&gt;&gt;" Usage="Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.GetSiteDetectorAsync (operations, resourceGroupName, siteName, diagnosticCategory, detectorName, cancellationToken)" />
+      <MemberSignature Language="F#" Value="static member GetSiteDetectorAsync : Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinitionInner&gt;" Usage="Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.GetSiteDetectorAsync (operations, resourceGroupName, siteName, diagnosticCategory, detectorName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -481,7 +502,7 @@
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinition&gt;&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinitionInner&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="operations" Type="Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations" RefType="this" />
@@ -515,61 +536,22 @@
             </summary>
         <returns>To be added.</returns>
         <remarks>
-            Get Detector
-            </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetSiteDetectorNextAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinition&gt;&gt; GetSiteDetectorNextAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinition&gt;&gt; GetSiteDetectorNextAsync(class Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string nextPageLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.GetSiteDetectorNextAsync(Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="static member GetSiteDetectorNextAsync : Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinition&gt;&gt;" Usage="Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.GetSiteDetectorNextAsync (operations, nextPageLink, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinition&gt;&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations" RefType="this" />
-        <Parameter Name="nextPageLink" Type="System.String" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="operations">
-            The operations group for this extension method.
-            </param>
-        <param name="nextPageLink">
-            The NextLink from the previous successful call to List operation.
-            </param>
-        <param name="cancellationToken">
-            The cancellation token.
-            </param>
-        <summary>
-            Get Detector
-            </summary>
-        <returns>To be added.</returns>
-        <remarks>
-            Get Detector
+            Description for Get Detector
             </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSiteDetectorResponseAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorResponseInner&gt; GetSiteDetectorResponseAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string detectorName, Nullable&lt;DateTime&gt; startTime = null, Nullable&lt;DateTime&gt; endTime = null, string timeGrain = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorResponseInner&gt; GetSiteDetectorResponseAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string detectorName, Nullable&lt;DateTime&gt; startTime = default, Nullable&lt;DateTime&gt; endTime = default, string timeGrain = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DetectorResponseInner&gt; GetSiteDetectorResponseAsync(class Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string detectorName, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startTime, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; endTime, string timeGrain, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.GetSiteDetectorResponseAsync(Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations,System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member GetSiteDetectorResponseAsync : Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations * string * string * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorResponseInner&gt;" Usage="Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.GetSiteDetectorResponseAsync (operations, resourceGroupName, siteName, detectorName, startTime, endTime, timeGrain, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -619,19 +601,22 @@
             </summary>
         <returns>To be added.</returns>
         <remarks>
-            Get site detector response
+            Description for Get site detector response
             </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSiteDetectorResponseSlotAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorResponseInner&gt; GetSiteDetectorResponseSlotAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string detectorName, string slot, Nullable&lt;DateTime&gt; startTime = null, Nullable&lt;DateTime&gt; endTime = null, string timeGrain = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorResponseInner&gt; GetSiteDetectorResponseSlotAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string detectorName, string slot, Nullable&lt;DateTime&gt; startTime = default, Nullable&lt;DateTime&gt; endTime = default, string timeGrain = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DetectorResponseInner&gt; GetSiteDetectorResponseSlotAsync(class Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string detectorName, string slot, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startTime, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; endTime, string timeGrain, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.GetSiteDetectorResponseSlotAsync(Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations,System.String,System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member GetSiteDetectorResponseSlotAsync : Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations * string * string * string * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorResponseInner&gt;" Usage="Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.GetSiteDetectorResponseSlotAsync (operations, resourceGroupName, siteName, detectorName, slot, startTime, endTime, timeGrain, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -685,19 +670,20 @@
             </summary>
         <returns>To be added.</returns>
         <remarks>
-            Get site detector response
+            Description for Get site detector response
             </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSiteDetectorSlotAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinition&gt;&gt; GetSiteDetectorSlotAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string diagnosticCategory, string detectorName, string slot, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinition&gt;&gt; GetSiteDetectorSlotAsync(class Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string diagnosticCategory, string detectorName, string slot, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinitionInner&gt; GetSiteDetectorSlotAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string diagnosticCategory, string detectorName, string slot, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinitionInner&gt; GetSiteDetectorSlotAsync(class Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string diagnosticCategory, string detectorName, string slot, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.GetSiteDetectorSlotAsync(Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations,System.String,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="static member GetSiteDetectorSlotAsync : Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations * string * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinition&gt;&gt;" Usage="Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.GetSiteDetectorSlotAsync (operations, resourceGroupName, siteName, diagnosticCategory, detectorName, slot, cancellationToken)" />
+      <MemberSignature Language="F#" Value="static member GetSiteDetectorSlotAsync : Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations * string * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinitionInner&gt;" Usage="Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.GetSiteDetectorSlotAsync (operations, resourceGroupName, siteName, diagnosticCategory, detectorName, slot, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -705,7 +691,7 @@
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinition&gt;&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinitionInner&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="operations" Type="Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations" RefType="this" />
@@ -743,61 +729,22 @@
             </summary>
         <returns>To be added.</returns>
         <remarks>
-            Get Detector
-            </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetSiteDetectorSlotNextAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinition&gt;&gt; GetSiteDetectorSlotNextAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinition&gt;&gt; GetSiteDetectorSlotNextAsync(class Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string nextPageLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.GetSiteDetectorSlotNextAsync(Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="static member GetSiteDetectorSlotNextAsync : Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinition&gt;&gt;" Usage="Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.GetSiteDetectorSlotNextAsync (operations, nextPageLink, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinition&gt;&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations" RefType="this" />
-        <Parameter Name="nextPageLink" Type="System.String" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="operations">
-            The operations group for this extension method.
-            </param>
-        <param name="nextPageLink">
-            The NextLink from the previous successful call to List operation.
-            </param>
-        <param name="cancellationToken">
-            The cancellation token.
-            </param>
-        <summary>
-            Get Detector
-            </summary>
-        <returns>To be added.</returns>
-        <remarks>
-            Get Detector
+            Description for Get Detector
             </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSiteDiagnosticCategoryAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticCategoryInner&gt; GetSiteDiagnosticCategoryAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string diagnosticCategory, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticCategoryInner&gt; GetSiteDiagnosticCategoryAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string diagnosticCategory, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticCategoryInner&gt; GetSiteDiagnosticCategoryAsync(class Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string diagnosticCategory, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.GetSiteDiagnosticCategoryAsync(Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member GetSiteDiagnosticCategoryAsync : Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticCategoryInner&gt;" Usage="Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.GetSiteDiagnosticCategoryAsync (operations, resourceGroupName, siteName, diagnosticCategory, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -835,19 +782,22 @@
             </summary>
         <returns>To be added.</returns>
         <remarks>
-            Get Diagnostics Category
+            Description for Get Diagnostics Category
             </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSiteDiagnosticCategorySlotAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticCategoryInner&gt; GetSiteDiagnosticCategorySlotAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string diagnosticCategory, string slot, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticCategoryInner&gt; GetSiteDiagnosticCategorySlotAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string diagnosticCategory, string slot, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticCategoryInner&gt; GetSiteDiagnosticCategorySlotAsync(class Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string diagnosticCategory, string slot, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.GetSiteDiagnosticCategorySlotAsync(Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member GetSiteDiagnosticCategorySlotAsync : Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticCategoryInner&gt;" Usage="Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.GetSiteDiagnosticCategorySlotAsync (operations, resourceGroupName, siteName, diagnosticCategory, slot, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -889,19 +839,22 @@
             </summary>
         <returns>To be added.</returns>
         <remarks>
-            Get Diagnostics Category
+            Description for Get Diagnostics Category
             </remarks>
       </Docs>
     </Member>
     <Member MemberName="ListHostingEnvironmentDetectorResponsesAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorResponseInner&gt;&gt; ListHostingEnvironmentDetectorResponsesAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string name, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorResponseInner&gt;&gt; ListHostingEnvironmentDetectorResponsesAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string name, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DetectorResponseInner&gt;&gt; ListHostingEnvironmentDetectorResponsesAsync(class Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.ListHostingEnvironmentDetectorResponsesAsync(Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListHostingEnvironmentDetectorResponsesAsync : Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorResponseInner&gt;&gt;" Usage="Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.ListHostingEnvironmentDetectorResponsesAsync (operations, resourceGroupName, name, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -935,19 +888,22 @@
             </summary>
         <returns>To be added.</returns>
         <remarks>
-            List Hosting Environment Detector Responses
+            Description for List Hosting Environment Detector Responses
             </remarks>
       </Docs>
     </Member>
     <Member MemberName="ListHostingEnvironmentDetectorResponsesNextAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorResponseInner&gt;&gt; ListHostingEnvironmentDetectorResponsesNextAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorResponseInner&gt;&gt; ListHostingEnvironmentDetectorResponsesNextAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DetectorResponseInner&gt;&gt; ListHostingEnvironmentDetectorResponsesNextAsync(class Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string nextPageLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.ListHostingEnvironmentDetectorResponsesNextAsync(Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListHostingEnvironmentDetectorResponsesNextAsync : Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorResponseInner&gt;&gt;" Usage="Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.ListHostingEnvironmentDetectorResponsesNextAsync (operations, nextPageLink, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -977,7 +933,7 @@
             </summary>
         <returns>To be added.</returns>
         <remarks>
-            List Hosting Environment Detector Responses
+            Description for List Hosting Environment Detector Responses
             </remarks>
       </Docs>
     </Member>
@@ -989,7 +945,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1039,7 +997,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1081,7 +1041,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1135,7 +1097,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1170,14 +1134,17 @@
       </Docs>
     </Member>
     <Member MemberName="ListSiteDetectorResponsesAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorResponseInner&gt;&gt; ListSiteDetectorResponsesAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorResponseInner&gt;&gt; ListSiteDetectorResponsesAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DetectorResponseInner&gt;&gt; ListSiteDetectorResponsesAsync(class Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.ListSiteDetectorResponsesAsync(Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListSiteDetectorResponsesAsync : Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorResponseInner&gt;&gt;" Usage="Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.ListSiteDetectorResponsesAsync (operations, resourceGroupName, siteName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1211,19 +1178,22 @@
             </summary>
         <returns>To be added.</returns>
         <remarks>
-            List Site Detector Responses
+            Description for List Site Detector Responses
             </remarks>
       </Docs>
     </Member>
     <Member MemberName="ListSiteDetectorResponsesNextAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorResponseInner&gt;&gt; ListSiteDetectorResponsesNextAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorResponseInner&gt;&gt; ListSiteDetectorResponsesNextAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DetectorResponseInner&gt;&gt; ListSiteDetectorResponsesNextAsync(class Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string nextPageLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.ListSiteDetectorResponsesNextAsync(Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListSiteDetectorResponsesNextAsync : Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorResponseInner&gt;&gt;" Usage="Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.ListSiteDetectorResponsesNextAsync (operations, nextPageLink, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1253,19 +1223,22 @@
             </summary>
         <returns>To be added.</returns>
         <remarks>
-            List Site Detector Responses
+            Description for List Site Detector Responses
             </remarks>
       </Docs>
     </Member>
     <Member MemberName="ListSiteDetectorResponsesSlotAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorResponseInner&gt;&gt; ListSiteDetectorResponsesSlotAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string slot, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorResponseInner&gt;&gt; ListSiteDetectorResponsesSlotAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string slot, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DetectorResponseInner&gt;&gt; ListSiteDetectorResponsesSlotAsync(class Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string slot, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.ListSiteDetectorResponsesSlotAsync(Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListSiteDetectorResponsesSlotAsync : Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorResponseInner&gt;&gt;" Usage="Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.ListSiteDetectorResponsesSlotAsync (operations, resourceGroupName, siteName, slot, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1303,19 +1276,22 @@
             </summary>
         <returns>To be added.</returns>
         <remarks>
-            List Site Detector Responses
+            Description for List Site Detector Responses
             </remarks>
       </Docs>
     </Member>
     <Member MemberName="ListSiteDetectorResponsesSlotNextAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorResponseInner&gt;&gt; ListSiteDetectorResponsesSlotNextAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorResponseInner&gt;&gt; ListSiteDetectorResponsesSlotNextAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DetectorResponseInner&gt;&gt; ListSiteDetectorResponsesSlotNextAsync(class Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string nextPageLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.ListSiteDetectorResponsesSlotNextAsync(Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListSiteDetectorResponsesSlotNextAsync : Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorResponseInner&gt;&gt;" Usage="Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.ListSiteDetectorResponsesSlotNextAsync (operations, nextPageLink, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1345,7 +1321,7 @@
             </summary>
         <returns>To be added.</returns>
         <remarks>
-            List Site Detector Responses
+            Description for List Site Detector Responses
             </remarks>
       </Docs>
     </Member>
@@ -1357,7 +1333,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1407,7 +1385,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1449,7 +1429,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1503,7 +1485,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1538,14 +1522,17 @@
       </Docs>
     </Member>
     <Member MemberName="ListSiteDiagnosticCategoriesAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticCategoryInner&gt;&gt; ListSiteDiagnosticCategoriesAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticCategoryInner&gt;&gt; ListSiteDiagnosticCategoriesAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticCategoryInner&gt;&gt; ListSiteDiagnosticCategoriesAsync(class Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.ListSiteDiagnosticCategoriesAsync(Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListSiteDiagnosticCategoriesAsync : Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticCategoryInner&gt;&gt;" Usage="Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.ListSiteDiagnosticCategoriesAsync (operations, resourceGroupName, siteName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1579,19 +1566,22 @@
             </summary>
         <returns>To be added.</returns>
         <remarks>
-            Get Diagnostics Categories
+            Description for Get Diagnostics Categories
             </remarks>
       </Docs>
     </Member>
     <Member MemberName="ListSiteDiagnosticCategoriesNextAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticCategoryInner&gt;&gt; ListSiteDiagnosticCategoriesNextAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticCategoryInner&gt;&gt; ListSiteDiagnosticCategoriesNextAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticCategoryInner&gt;&gt; ListSiteDiagnosticCategoriesNextAsync(class Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string nextPageLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.ListSiteDiagnosticCategoriesNextAsync(Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListSiteDiagnosticCategoriesNextAsync : Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticCategoryInner&gt;&gt;" Usage="Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.ListSiteDiagnosticCategoriesNextAsync (operations, nextPageLink, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1621,19 +1611,22 @@
             </summary>
         <returns>To be added.</returns>
         <remarks>
-            Get Diagnostics Categories
+            Description for Get Diagnostics Categories
             </remarks>
       </Docs>
     </Member>
     <Member MemberName="ListSiteDiagnosticCategoriesSlotAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticCategoryInner&gt;&gt; ListSiteDiagnosticCategoriesSlotAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string slot, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticCategoryInner&gt;&gt; ListSiteDiagnosticCategoriesSlotAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string slot, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticCategoryInner&gt;&gt; ListSiteDiagnosticCategoriesSlotAsync(class Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string resourceGroupName, string siteName, string slot, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.ListSiteDiagnosticCategoriesSlotAsync(Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListSiteDiagnosticCategoriesSlotAsync : Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticCategoryInner&gt;&gt;" Usage="Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.ListSiteDiagnosticCategoriesSlotAsync (operations, resourceGroupName, siteName, slot, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1671,19 +1664,22 @@
             </summary>
         <returns>To be added.</returns>
         <remarks>
-            Get Diagnostics Categories
+            Description for Get Diagnostics Categories
             </remarks>
       </Docs>
     </Member>
     <Member MemberName="ListSiteDiagnosticCategoriesSlotNextAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticCategoryInner&gt;&gt; ListSiteDiagnosticCategoriesSlotNextAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticCategoryInner&gt;&gt; ListSiteDiagnosticCategoriesSlotNextAsync (this Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticCategoryInner&gt;&gt; ListSiteDiagnosticCategoriesSlotNextAsync(class Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations operations, string nextPageLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.ListSiteDiagnosticCategoriesSlotNextAsync(Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListSiteDiagnosticCategoriesSlotNextAsync : Microsoft.Azure.Management.AppService.Fluent.IDiagnosticsOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticCategoryInner&gt;&gt;" Usage="Microsoft.Azure.Management.AppService.Fluent.DiagnosticsOperationsExtensions.ListSiteDiagnosticCategoriesSlotNextAsync (operations, nextPageLink, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1713,7 +1709,7 @@
             </summary>
         <returns>To be added.</returns>
         <remarks>
-            Get Diagnostics Categories
+            Description for Get Diagnostics Categories
             </remarks>
       </Docs>
     </Member>

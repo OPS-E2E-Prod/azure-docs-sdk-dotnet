@@ -1,4 +1,4 @@
-﻿<Type Name="ContainerDefinition&lt;T&gt;" FullName="Microsoft.Azure.Cosmos.Fluent.ContainerDefinition&lt;T&gt;">
+<Type Name="ContainerDefinition&lt;T&gt;" FullName="Microsoft.Azure.Cosmos.Fluent.ContainerDefinition&lt;T&gt;">
   <TypeSignature Language="C#" Value="public abstract class ContainerDefinition&lt;T&gt; where T : ContainerDefinition&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ContainerDefinition`1&lt;(class Microsoft.Azure.Cosmos.Fluent.ContainerDefinition`1&lt;!T&gt;) T&gt; extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Cosmos.Fluent.ContainerDefinition`1" />
@@ -6,7 +6,10 @@
   <TypeSignature Language="F#" Value="type ContainerDefinition&lt;'T (requires 'T :&gt; ContainerDefinition&lt;'T&gt;)&gt; = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.4.1.0</AssemblyVersion>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+    <AssemblyVersion>3.5.1.0</AssemblyVersion>
+    <AssemblyVersion>3.6.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T">
@@ -36,7 +39,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -55,7 +61,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.ContainerProperties</ReturnType>
@@ -78,7 +87,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -106,7 +118,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -134,7 +149,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.Fluent.IndexingPolicyDefinition&lt;T&gt;</ReturnType>
@@ -148,6 +166,42 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="WithPartitionKeyDefinitionVersion">
+      <MemberSignature Language="C#" Value="public T WithPartitionKeyDefinitionVersion (Microsoft.Azure.Cosmos.PartitionKeyDefinitionVersion partitionKeyDefinitionVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T WithPartitionKeyDefinitionVersion(valuetype Microsoft.Azure.Cosmos.PartitionKeyDefinitionVersion partitionKeyDefinitionVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Fluent.ContainerDefinition`1.WithPartitionKeyDefinitionVersion(Microsoft.Azure.Cosmos.PartitionKeyDefinitionVersion)" />
+      <MemberSignature Language="F#" Value="member this.WithPartitionKeyDefinitionVersion : Microsoft.Azure.Cosmos.PartitionKeyDefinitionVersion -&gt; 'T" Usage="containerDefinition.WithPartitionKeyDefinitionVersion partitionKeyDefinitionVersion" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
+        <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="partitionKeyDefinitionVersion" Type="Microsoft.Azure.Cosmos.PartitionKeyDefinitionVersion" />
+      </Parameters>
+      <Docs>
+        <param name="partitionKeyDefinitionVersion">The partition key definition version</param>
+        <summary>
+             Sets the <see cref="T:Microsoft.Azure.Cosmos.PartitionKeyDefinitionVersion" />
+            
+             The partition key definition version 1 uses a hash function that computes
+             hash based on the first 100 bytes of the partition key. This can cause
+             conflicts for documents with partition keys greater than 100 bytes.
+             
+             The partition key definition version 2 uses a hash function that computes
+             hash based on the first 2 KB of the partition key.
+             </summary>
+        <returns>An instance of the current Fluent builder.</returns>
+        <remarks>To be added.</remarks>
+        <altmember cref="P:Microsoft.Azure.Cosmos.ContainerProperties.PartitionKeyDefinitionVersion" />
+      </Docs>
+    </Member>
     <Member MemberName="WithTimeToLivePropertyPath">
       <MemberSignature Language="C#" Value="public T WithTimeToLivePropertyPath (string propertyPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T WithTimeToLivePropertyPath(string propertyPath) cil managed" />
@@ -157,7 +211,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>

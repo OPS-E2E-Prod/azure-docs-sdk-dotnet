@@ -1,4 +1,4 @@
-﻿<Type Name="LocationOperationsExtensions" FullName="Microsoft.Azure.Management.Batch.LocationOperationsExtensions">
+<Type Name="LocationOperationsExtensions" FullName="Microsoft.Azure.Management.Batch.LocationOperationsExtensions">
   <TypeSignature Language="C#" Value="public static class LocationOperationsExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit LocationOperationsExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Batch.LocationOperationsExtensions" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type LocationOperationsExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,7 +28,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Batch.Models.CheckNameAvailabilityResult</ReturnType>
@@ -56,15 +56,20 @@
       </Docs>
     </Member>
     <Member MemberName="CheckNameAvailabilityAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Batch.Models.CheckNameAvailabilityResult&gt; CheckNameAvailabilityAsync (this Microsoft.Azure.Management.Batch.ILocationOperations operations, string locationName, string name, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Batch.Models.CheckNameAvailabilityResult&gt; CheckNameAvailabilityAsync (this Microsoft.Azure.Management.Batch.ILocationOperations operations, string locationName, string name, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Batch.Models.CheckNameAvailabilityResult&gt; CheckNameAvailabilityAsync(class Microsoft.Azure.Management.Batch.ILocationOperations operations, string locationName, string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Batch.LocationOperationsExtensions.CheckNameAvailabilityAsync(Microsoft.Azure.Management.Batch.ILocationOperations,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member CheckNameAvailabilityAsync : Microsoft.Azure.Management.Batch.ILocationOperations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Batch.Models.CheckNameAvailabilityResult&gt;" Usage="Microsoft.Azure.Management.Batch.LocationOperationsExtensions.CheckNameAvailabilityAsync (operations, locationName, name, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Batch.Models.CheckNameAvailabilityResult&gt;</ReturnType>
       </ReturnValue>
@@ -103,7 +108,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Batch.Models.BatchLocationQuota</ReturnType>
@@ -128,15 +133,20 @@
       </Docs>
     </Member>
     <Member MemberName="GetQuotasAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Batch.Models.BatchLocationQuota&gt; GetQuotasAsync (this Microsoft.Azure.Management.Batch.ILocationOperations operations, string locationName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Batch.Models.BatchLocationQuota&gt; GetQuotasAsync (this Microsoft.Azure.Management.Batch.ILocationOperations operations, string locationName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Batch.Models.BatchLocationQuota&gt; GetQuotasAsync(class Microsoft.Azure.Management.Batch.ILocationOperations operations, string locationName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Batch.LocationOperationsExtensions.GetQuotasAsync(Microsoft.Azure.Management.Batch.ILocationOperations,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member GetQuotasAsync : Microsoft.Azure.Management.Batch.ILocationOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Batch.Models.BatchLocationQuota&gt;" Usage="Microsoft.Azure.Management.Batch.LocationOperationsExtensions.GetQuotasAsync (operations, locationName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Batch.Models.BatchLocationQuota&gt;</ReturnType>
       </ReturnValue>

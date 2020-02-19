@@ -1,4 +1,4 @@
-﻿<Type Name="UserAccount" FullName="Microsoft.Azure.Batch.Protocol.Models.UserAccount">
+<Type Name="UserAccount" FullName="Microsoft.Azure.Batch.Protocol.Models.UserAccount">
   <TypeSignature Language="C#" Value="public class UserAccount" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UserAccount extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.Protocol.Models.UserAccount" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type UserAccount = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -14,8 +14,8 @@
   <Interfaces />
   <Docs>
     <summary>
-            Properties used to create a user used to execute tasks on an Azure
-            Batch node.
+            Properties used to create a user used to execute Tasks on an Azure
+            Batch Compute Node.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -28,7 +28,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -39,14 +39,14 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public UserAccount (string name, string password, Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.ElevationLevel&gt; elevationLevel = null, Microsoft.Azure.Batch.Protocol.Models.LinuxUserConfiguration linuxUserConfiguration = null, Microsoft.Azure.Batch.Protocol.Models.WindowsUserConfiguration windowsUserConfiguration = null);" />
+      <MemberSignature Language="C#" Value="public UserAccount (string name, string password, Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.ElevationLevel&gt; elevationLevel = default, Microsoft.Azure.Batch.Protocol.Models.LinuxUserConfiguration linuxUserConfiguration = default, Microsoft.Azure.Batch.Protocol.Models.WindowsUserConfiguration windowsUserConfiguration = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string password, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Batch.Protocol.Models.ElevationLevel&gt; elevationLevel, class Microsoft.Azure.Batch.Protocol.Models.LinuxUserConfiguration linuxUserConfiguration, class Microsoft.Azure.Batch.Protocol.Models.WindowsUserConfiguration windowsUserConfiguration) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.UserAccount.#ctor(System.String,System.String,System.Nullable{Microsoft.Azure.Batch.Protocol.Models.ElevationLevel},Microsoft.Azure.Batch.Protocol.Models.LinuxUserConfiguration,Microsoft.Azure.Batch.Protocol.Models.WindowsUserConfiguration)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Batch.Protocol.Models.UserAccount : string * string * Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.ElevationLevel&gt; * Microsoft.Azure.Batch.Protocol.Models.LinuxUserConfiguration * Microsoft.Azure.Batch.Protocol.Models.WindowsUserConfiguration -&gt; Microsoft.Azure.Batch.Protocol.Models.UserAccount" Usage="new Microsoft.Azure.Batch.Protocol.Models.UserAccount (name, password, elevationLevel, linuxUserConfiguration, windowsUserConfiguration)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -56,14 +56,14 @@
         <Parameter Name="windowsUserConfiguration" Type="Microsoft.Azure.Batch.Protocol.Models.WindowsUserConfiguration" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the user account.</param>
-        <param name="password">The password for the user account.</param>
+        <param name="name">The name of the user Account.</param>
+        <param name="password">The password for the user Account.</param>
         <param name="elevationLevel">The elevation level of the user
-            account.</param>
+            Account.</param>
         <param name="linuxUserConfiguration">The Linux-specific user
-            configuration for the user account.</param>
+            configuration for the user Account.</param>
         <param name="windowsUserConfiguration">The Windows-specific user
-            configuration for the user account.</param>
+            configuration for the user Account.</param>
         <summary>
             Initializes a new instance of the UserAccount class.
             </summary>
@@ -79,7 +79,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -91,7 +91,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the elevation level of the user account.
+            Gets or sets the elevation level of the user Account.
             </summary>
         <value>To be added.</value>
         <remarks>
@@ -109,7 +109,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -122,11 +122,11 @@
       <Docs>
         <summary>
             Gets or sets the Linux-specific user configuration for the user
-            account.
+            Account.
             </summary>
         <value>To be added.</value>
         <remarks>
-            This property is ignored if specified on a Windows pool. If not
+            This property is ignored if specified on a Windows Pool. If not
             specified, the user is created with the default options.
             </remarks>
       </Docs>
@@ -140,7 +140,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -152,7 +152,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the name of the user account.
+            Gets or sets the name of the user Account.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -167,7 +167,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -179,7 +179,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the password for the user account.
+            Gets or sets the password for the user Account.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -194,7 +194,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -207,12 +207,12 @@
       <Docs>
         <summary>
             Gets or sets the Windows-specific user configuration for the user
-            account.
+            Account.
             </summary>
         <value>To be added.</value>
         <remarks>
             This property can only be specified if the user is on a Windows
-            pool. If not specified and on a Windows pool, the user is created
+            Pool. If not specified and on a Windows Pool, the user is created
             with the default options.
             </remarks>
       </Docs>

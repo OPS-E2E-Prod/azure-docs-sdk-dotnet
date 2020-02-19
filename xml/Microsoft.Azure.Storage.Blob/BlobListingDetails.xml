@@ -1,4 +1,4 @@
-﻿<Type Name="BlobListingDetails" FullName="Microsoft.Azure.Storage.Blob.BlobListingDetails">
+<Type Name="BlobListingDetails" FullName="Microsoft.Azure.Storage.Blob.BlobListingDetails">
   <TypeSignature Language="C#" Value="public enum BlobListingDetails" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BlobListingDetails extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Storage.Blob.BlobListingDetails" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type BlobListingDetails = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-    <AssemblyVersion>10.0.3.0</AssemblyVersion>
+    <AssemblyVersion>11.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -17,7 +17,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Specifies which items to include when listing a set of blobs.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,14 +32,16 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Blob.BlobListingDetails</ReturnType>
       </ReturnValue>
       <MemberValue>31</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            List all available committed blobs, uncommitted blobs, snapshots and deleted blobs and return all metadata and copy status for those blobs.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -49,14 +53,16 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Blob.BlobListingDetails</ReturnType>
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Include copy properties in the listing.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Deleted">
@@ -68,14 +74,16 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Blob.BlobListingDetails</ReturnType>
       </ReturnValue>
       <MemberValue>16</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Include deleted blobs in the listing.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Metadata">
@@ -87,14 +95,16 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Blob.BlobListingDetails</ReturnType>
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Retrieve blob metadata for each blob returned in the listing.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -106,14 +116,16 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Blob.BlobListingDetails</ReturnType>
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            List only committed blobs, and do not return blob metadata.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Snapshots">
@@ -125,14 +137,16 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Blob.BlobListingDetails</ReturnType>
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            List committed blobs and blob snapshots.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="UncommittedBlobs">
@@ -144,14 +158,16 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Blob.BlobListingDetails</ReturnType>
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            List committed and uncommitted blobs.
+            </summary>
       </Docs>
     </Member>
   </Members>

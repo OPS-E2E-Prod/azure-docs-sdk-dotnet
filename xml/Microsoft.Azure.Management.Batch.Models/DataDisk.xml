@@ -1,4 +1,4 @@
-﻿<Type Name="DataDisk" FullName="Microsoft.Azure.Management.Batch.Models.DataDisk">
+<Type Name="DataDisk" FullName="Microsoft.Azure.Management.Batch.Models.DataDisk">
   <TypeSignature Language="C#" Value="public class DataDisk" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataDisk extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Batch.Models.DataDisk" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type DataDisk = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -14,8 +14,9 @@
   <Interfaces />
   <Docs>
     <summary>
-            Data Disk settings which will be used by the data disks associated to
-            Compute Nodes in the pool.
+            Settings which will be used by the data disks associated to Compute
+            Nodes in the Pool. When using attached data disks, you need to mount
+            and format the disks from within a VM to use them.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -28,7 +29,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -39,7 +40,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public DataDisk (int lun, int diskSizeGB, Nullable&lt;Microsoft.Azure.Management.Batch.Models.CachingType&gt; caching = null, Nullable&lt;Microsoft.Azure.Management.Batch.Models.StorageAccountType&gt; storageAccountType = null);" />
+      <MemberSignature Language="C#" Value="public DataDisk (int lun, int diskSizeGB, Nullable&lt;Microsoft.Azure.Management.Batch.Models.CachingType&gt; caching = default, Nullable&lt;Microsoft.Azure.Management.Batch.Models.StorageAccountType&gt; storageAccountType = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 lun, int32 diskSizeGB, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Batch.Models.CachingType&gt; caching, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Batch.Models.StorageAccountType&gt; storageAccountType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Batch.Models.DataDisk.#ctor(System.Int32,System.Int32,System.Nullable{Microsoft.Azure.Management.Batch.Models.CachingType},System.Nullable{Microsoft.Azure.Management.Batch.Models.StorageAccountType})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (lun As Integer, diskSizeGB As Integer, Optional caching As Nullable(Of CachingType) = null, Optional storageAccountType As Nullable(Of StorageAccountType) = null)" />
@@ -47,7 +48,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="lun" Type="System.Int32" />
@@ -78,7 +79,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -116,7 +117,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -144,7 +145,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -174,7 +175,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -208,7 +209,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

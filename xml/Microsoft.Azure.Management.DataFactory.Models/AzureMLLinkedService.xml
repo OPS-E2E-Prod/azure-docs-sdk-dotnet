@@ -1,4 +1,4 @@
-﻿<Type Name="AzureMLLinkedService" FullName="Microsoft.Azure.Management.DataFactory.Models.AzureMLLinkedService">
+<Type Name="AzureMLLinkedService" FullName="Microsoft.Azure.Management.DataFactory.Models.AzureMLLinkedService">
   <TypeSignature Language="C#" Value="public class AzureMLLinkedService : Microsoft.Azure.Management.DataFactory.Models.LinkedService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AzureMLLinkedService extends Microsoft.Azure.Management.DataFactory.Models.LinkedService" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.DataFactory.Models.AzureMLLinkedService" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type AzureMLLinkedService = class&#xA;    inherit LinkedService" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.DataFactory</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.3.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.DataFactory.Models.LinkedService</BaseTypeName>
@@ -22,7 +22,7 @@
   </Attributes>
   <Docs>
     <summary>
-            Azure ML Web Service linked service.
+            Azure ML Studio Web Service linked service.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -35,7 +35,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataFactory</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -46,7 +46,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AzureMLLinkedService (object mlEndpoint, Microsoft.Azure.Management.DataFactory.Models.SecretBase apiKey, System.Collections.Generic.IDictionary&lt;string,object&gt; additionalProperties = null, Microsoft.Azure.Management.DataFactory.Models.IntegrationRuntimeReference connectVia = null, string description = null, System.Collections.Generic.IDictionary&lt;string,Microsoft.Azure.Management.DataFactory.Models.ParameterSpecification&gt; parameters = null, System.Collections.Generic.IList&lt;object&gt; annotations = null, object updateResourceEndpoint = null, object servicePrincipalId = null, Microsoft.Azure.Management.DataFactory.Models.SecretBase servicePrincipalKey = null, object tenant = null, object encryptedCredential = null);" />
+      <MemberSignature Language="C#" Value="public AzureMLLinkedService (object mlEndpoint, Microsoft.Azure.Management.DataFactory.Models.SecretBase apiKey, System.Collections.Generic.IDictionary&lt;string,object&gt; additionalProperties = default, Microsoft.Azure.Management.DataFactory.Models.IntegrationRuntimeReference connectVia = default, string description = default, System.Collections.Generic.IDictionary&lt;string,Microsoft.Azure.Management.DataFactory.Models.ParameterSpecification&gt; parameters = default, System.Collections.Generic.IList&lt;object&gt; annotations = default, object updateResourceEndpoint = default, object servicePrincipalId = default, Microsoft.Azure.Management.DataFactory.Models.SecretBase servicePrincipalKey = default, object tenant = default, object encryptedCredential = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object mlEndpoint, class Microsoft.Azure.Management.DataFactory.Models.SecretBase apiKey, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; additionalProperties, class Microsoft.Azure.Management.DataFactory.Models.IntegrationRuntimeReference connectVia, string description, class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.Azure.Management.DataFactory.Models.ParameterSpecification&gt; parameters, class System.Collections.Generic.IList`1&lt;object&gt; annotations, object updateResourceEndpoint, object servicePrincipalId, class Microsoft.Azure.Management.DataFactory.Models.SecretBase servicePrincipalKey, object tenant, object encryptedCredential) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataFactory.Models.AzureMLLinkedService.#ctor(System.Object,Microsoft.Azure.Management.DataFactory.Models.SecretBase,System.Collections.Generic.IDictionary{System.String,System.Object},Microsoft.Azure.Management.DataFactory.Models.IntegrationRuntimeReference,System.String,System.Collections.Generic.IDictionary{System.String,Microsoft.Azure.Management.DataFactory.Models.ParameterSpecification},System.Collections.Generic.IList{System.Object},System.Object,System.Object,Microsoft.Azure.Management.DataFactory.Models.SecretBase,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (mlEndpoint As Object, apiKey As SecretBase, Optional additionalProperties As IDictionary(Of String, Object) = null, Optional connectVia As IntegrationRuntimeReference = null, Optional description As String = null, Optional parameters As IDictionary(Of String, ParameterSpecification) = null, Optional annotations As IList(Of Object) = null, Optional updateResourceEndpoint As Object = null, Optional servicePrincipalId As Object = null, Optional servicePrincipalKey As SecretBase = null, Optional tenant As Object = null, Optional encryptedCredential As Object = null)" />
@@ -54,7 +54,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataFactory</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="mlEndpoint" Type="System.Object" />
@@ -72,7 +72,7 @@
       </Parameters>
       <Docs>
         <param name="mlEndpoint">The Batch Execution REST URL for an Azure
-            ML Web Service endpoint. Type: string (or Expression with
+            ML Studio Web Service endpoint. Type: string (or Expression with
             resultType string).</param>
         <param name="apiKey">The API key for accessing the Azure ML model
             endpoint.</param>
@@ -84,15 +84,15 @@
         <param name="annotations">List of tags that can be used for
             describing the linked service.</param>
         <param name="updateResourceEndpoint">The Update Resource REST URL
-            for an Azure ML Web Service endpoint. Type: string (or Expression
-            with resultType string).</param>
+            for an Azure ML Studio Web Service endpoint. Type: string (or
+            Expression with resultType string).</param>
         <param name="servicePrincipalId">The ID of the service principal
             used to authenticate against the ARM-based updateResourceEndpoint
-            of an Azure ML web service. Type: string (or Expression with
+            of an Azure ML Studio web service. Type: string (or Expression with
             resultType string).</param>
         <param name="servicePrincipalKey">The key of the service principal
             used to authenticate against the ARM-based updateResourceEndpoint
-            of an Azure ML web service.</param>
+            of an Azure ML Studio web service.</param>
         <param name="tenant">The name or ID of the tenant to which the
             service principal belongs. Type: string (or Expression with
             resultType string).</param>
@@ -115,7 +115,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataFactory</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -142,7 +142,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataFactory</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -171,7 +171,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataFactory</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -183,8 +183,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the Batch Execution REST URL for an Azure ML Web
-            Service endpoint. Type: string (or Expression with resultType
+            Gets or sets the Batch Execution REST URL for an Azure ML Studio
+            Web Service endpoint. Type: string (or Expression with resultType
             string).
             </summary>
         <value>To be added.</value>
@@ -200,7 +200,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataFactory</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -213,8 +213,8 @@
       <Docs>
         <summary>
             Gets or sets the ID of the service principal used to authenticate
-            against the ARM-based updateResourceEndpoint of an Azure ML web
-            service. Type: string (or Expression with resultType string).
+            against the ARM-based updateResourceEndpoint of an Azure ML Studio
+            web service. Type: string (or Expression with resultType string).
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -229,7 +229,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataFactory</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -242,8 +242,8 @@
       <Docs>
         <summary>
             Gets or sets the key of the service principal used to authenticate
-            against the ARM-based updateResourceEndpoint of an Azure ML web
-            service.
+            against the ARM-based updateResourceEndpoint of an Azure ML Studio
+            web service.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -258,7 +258,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataFactory</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -287,7 +287,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataFactory</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -299,8 +299,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the Update Resource REST URL for an Azure ML Web
-            Service endpoint. Type: string (or Expression with resultType
+            Gets or sets the Update Resource REST URL for an Azure ML Studio
+            Web Service endpoint. Type: string (or Expression with resultType
             string).
             </summary>
         <value>To be added.</value>
@@ -316,7 +316,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataFactory</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

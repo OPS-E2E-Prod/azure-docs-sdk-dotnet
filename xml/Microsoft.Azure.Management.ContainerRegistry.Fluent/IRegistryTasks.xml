@@ -1,4 +1,4 @@
-﻿<Type Name="IRegistryTasks" FullName="Microsoft.Azure.Management.ContainerRegistry.Fluent.IRegistryTasks">
+<Type Name="IRegistryTasks" FullName="Microsoft.Azure.Management.ContainerRegistry.Fluent.IRegistryTasks">
   <TypeSignature Language="C#" Value="public interface IRegistryTasks : Microsoft.Azure.Management.ResourceManager.Fluent.Core.CollectionActions.ISupportsCreating&lt;Microsoft.Azure.Management.ContainerRegistry.Fluent.RegistryTask.Definition.IBlank&gt;, Microsoft.Azure.Management.ResourceManager.Fluent.Core.IBeta, Microsoft.Azure.Management.ResourceManager.Fluent.Core.IHasInner&lt;Microsoft.Azure.Management.ContainerRegistry.Fluent.ITasksOperations&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRegistryTasks implements class Microsoft.Azure.Management.ResourceManager.Fluent.Core.CollectionActions.ISupportsCreating`1&lt;class Microsoft.Azure.Management.ContainerRegistry.Fluent.RegistryTask.Definition.IBlank&gt;, class Microsoft.Azure.Management.ResourceManager.Fluent.Core.IBeta, class Microsoft.Azure.Management.ResourceManager.Fluent.Core.IHasInner`1&lt;class Microsoft.Azure.Management.ContainerRegistry.Fluent.ITasksOperations&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.ContainerRegistry.Fluent.IRegistryTasks" />
@@ -6,7 +6,10 @@
   <TypeSignature Language="F#" Value="type IRegistryTasks = interface&#xA;    interface IBeta&#xA;    interface IHasInner&lt;ITasksOperations&gt;&#xA;    interface ISupportsCreating&lt;IBlank&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.ContainerRegistry.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -35,7 +38,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -56,14 +62,17 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteByRegistryAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteByRegistryAsync (string resourceGroupName, string registryName, string taskName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteByRegistryAsync (string resourceGroupName, string registryName, string taskName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteByRegistryAsync(string resourceGroupName, string registryName, string taskName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ContainerRegistry.Fluent.IRegistryTasks.DeleteByRegistryAsync(System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member DeleteByRegistryAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="iRegistryTasks.DeleteByRegistryAsync (resourceGroupName, registryName, taskName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -96,7 +105,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.ContainerRegistry.Fluent.IRegistryTask</ReturnType>
@@ -121,14 +133,17 @@
       </Docs>
     </Member>
     <Member MemberName="GetByRegistryAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ContainerRegistry.Fluent.IRegistryTask&gt; GetByRegistryAsync (string resourceGroupName, string registryName, string taskName, bool includeSecrets, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ContainerRegistry.Fluent.IRegistryTask&gt; GetByRegistryAsync (string resourceGroupName, string registryName, string taskName, bool includeSecrets, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.ContainerRegistry.Fluent.IRegistryTask&gt; GetByRegistryAsync(string resourceGroupName, string registryName, string taskName, bool includeSecrets, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ContainerRegistry.Fluent.IRegistryTasks.GetByRegistryAsync(System.String,System.String,System.String,System.Boolean,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member GetByRegistryAsync : string * string * string * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ContainerRegistry.Fluent.IRegistryTask&gt;" Usage="iRegistryTasks.GetByRegistryAsync (resourceGroupName, registryName, taskName, includeSecrets, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ContainerRegistry.Fluent.IRegistryTask&gt;</ReturnType>
@@ -163,7 +178,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Management.ContainerRegistry.Fluent.IRegistryTask&gt;</ReturnType>
@@ -184,14 +202,17 @@
       </Docs>
     </Member>
     <Member MemberName="ListByRegistryAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ResourceManager.Fluent.Core.IPagedCollection&lt;Microsoft.Azure.Management.ContainerRegistry.Fluent.IRegistryTask&gt;&gt; ListByRegistryAsync (string resourceGroupName, string registryName, bool loadAllPages = true, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ResourceManager.Fluent.Core.IPagedCollection&lt;Microsoft.Azure.Management.ContainerRegistry.Fluent.IRegistryTask&gt;&gt; ListByRegistryAsync (string resourceGroupName, string registryName, bool loadAllPages = true, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.ResourceManager.Fluent.Core.IPagedCollection`1&lt;class Microsoft.Azure.Management.ContainerRegistry.Fluent.IRegistryTask&gt;&gt; ListByRegistryAsync(string resourceGroupName, string registryName, bool loadAllPages, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ContainerRegistry.Fluent.IRegistryTasks.ListByRegistryAsync(System.String,System.String,System.Boolean,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member ListByRegistryAsync : string * string * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ResourceManager.Fluent.Core.IPagedCollection&lt;Microsoft.Azure.Management.ContainerRegistry.Fluent.IRegistryTask&gt;&gt;" Usage="iRegistryTasks.ListByRegistryAsync (resourceGroupName, registryName, loadAllPages, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ResourceManager.Fluent.Core.IPagedCollection&lt;Microsoft.Azure.Management.ContainerRegistry.Fluent.IRegistryTask&gt;&gt;</ReturnType>

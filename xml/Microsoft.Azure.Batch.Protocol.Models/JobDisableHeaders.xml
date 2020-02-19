@@ -1,4 +1,4 @@
-﻿<Type Name="JobDisableHeaders" FullName="Microsoft.Azure.Batch.Protocol.Models.JobDisableHeaders">
+<Type Name="JobDisableHeaders" FullName="Microsoft.Azure.Batch.Protocol.Models.JobDisableHeaders">
   <TypeSignature Language="C#" Value="public class JobDisableHeaders" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit JobDisableHeaders extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.Protocol.Models.JobDisableHeaders" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type JobDisableHeaders = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,7 +38,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public JobDisableHeaders (Nullable&lt;Guid&gt; clientRequestId = null, Nullable&lt;Guid&gt; requestId = null, string eTag = null, Nullable&lt;DateTime&gt; lastModified = null, string dataServiceId = null);" />
+      <MemberSignature Language="C#" Value="public JobDisableHeaders (Nullable&lt;Guid&gt; clientRequestId = default, Nullable&lt;Guid&gt; requestId = default, string eTag = default, Nullable&lt;DateTime&gt; lastModified = default, string dataServiceId = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;valuetype System.Guid&gt; clientRequestId, valuetype System.Nullable`1&lt;valuetype System.Guid&gt; requestId, string eTag, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; lastModified, string dataServiceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.JobDisableHeaders.#ctor(System.Nullable{System.Guid},System.Nullable{System.Guid},System.String,System.Nullable{System.DateTime},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional clientRequestId As Nullable(Of Guid) = null, Optional requestId As Nullable(Of Guid) = null, Optional eTag As String = null, Optional lastModified As Nullable(Of DateTime) = null, Optional dataServiceId As String = null)" />
@@ -46,7 +46,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="clientRequestId" Type="System.Nullable&lt;System.Guid&gt;" />
@@ -64,8 +64,8 @@
             and you have verified that the request is properly formulated, you
             may use this value to report the error to Microsoft. In your
             report, include the value of this request ID, the approximate time
-            that the request was made, the Batch account against which the
-            request was made, and the region that account resides in.</param>
+            that the request was made, the Batch Account against which the
+            request was made, and the region that Account resides in.</param>
         <param name="eTag">The ETag HTTP response header. This is an opaque
             string. You can use it to detect whether the resource has changed
             between requests. In particular, you can pass the ETag to one of
@@ -90,7 +90,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -119,7 +119,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -147,7 +147,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -178,7 +178,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -208,7 +208,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -225,8 +225,8 @@
             have verified that the request is properly formulated, you may use
             this value to report the error to Microsoft. In your report,
             include the value of this request ID, the approximate time that the
-            request was made, the Batch account against which the request was
-            made, and the region that account resides in.
+            request was made, the Batch Account against which the request was
+            made, and the region that Account resides in.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

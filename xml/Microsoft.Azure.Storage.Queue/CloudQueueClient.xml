@@ -1,4 +1,4 @@
-﻿<Type Name="CloudQueueClient" FullName="Microsoft.Azure.Storage.Queue.CloudQueueClient">
+<Type Name="CloudQueueClient" FullName="Microsoft.Azure.Storage.Queue.CloudQueueClient">
   <TypeSignature Language="C#" Value="public class CloudQueueClient" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CloudQueueClient extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Storage.Queue.CloudQueueClient" />
@@ -6,26 +6,28 @@
   <TypeSignature Language="F#" Value="type CloudQueueClient = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-    <AssemblyVersion>10.0.3.0</AssemblyVersion>
+    <AssemblyVersion>11.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>
+            Provides a client-side logical representation of the Microsoft Azure Queue service. This client is used to configure and execute requests against the Queue service.
+            </summary>
+    <remarks>The service client encapsulates the endpoint or endpoints for the Queue service. If the service client will be used for authenticated access, it also encapsulates the credentials for accessing the storage account.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CloudQueueClient (Microsoft.Azure.Storage.StorageUri storageUri, Microsoft.Azure.Storage.Auth.StorageCredentials credentials, System.Net.Http.DelegatingHandler delegatingHandler = null);" />
+      <MemberSignature Language="C#" Value="public CloudQueueClient (Microsoft.Azure.Storage.StorageUri storageUri, Microsoft.Azure.Storage.Auth.StorageCredentials credentials, System.Net.Http.DelegatingHandler delegatingHandler = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.Storage.StorageUri storageUri, class Microsoft.Azure.Storage.Auth.StorageCredentials credentials, class System.Net.Http.DelegatingHandler delegatingHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Storage.Queue.CloudQueueClient.#ctor(Microsoft.Azure.Storage.StorageUri,Microsoft.Azure.Storage.Auth.StorageCredentials,System.Net.Http.DelegatingHandler)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Storage.Queue.CloudQueueClient : Microsoft.Azure.Storage.StorageUri * Microsoft.Azure.Storage.Auth.StorageCredentials * System.Net.Http.DelegatingHandler -&gt; Microsoft.Azure.Storage.Queue.CloudQueueClient" Usage="new Microsoft.Azure.Storage.Queue.CloudQueueClient (storageUri, credentials, delegatingHandler)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="storageUri" Type="Microsoft.Azure.Storage.StorageUri" />
@@ -33,22 +35,25 @@
         <Parameter Name="delegatingHandler" Type="System.Net.Http.DelegatingHandler" />
       </Parameters>
       <Docs>
-        <param name="storageUri">To be added.</param>
-        <param name="credentials">To be added.</param>
-        <param name="delegatingHandler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="storageUri">A <see cref="P:Microsoft.Azure.Storage.Queue.CloudQueueClient.StorageUri" /> object containing the Queue service endpoint to use to create the client.</param>
+        <param name="credentials">A <see cref="T:Microsoft.Azure.Storage.Auth.StorageCredentials" /> object.</param>
+        <param name="delegatingHandler">A chain of 1 or more DelegatingHandler instances, the innermost of which must have a null InnerHandler.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Azure.Storage.Queue.CloudQueueClient" /> class using the specified Queue service endpoint
+            and account credentials.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CloudQueueClient (Uri baseUri, Microsoft.Azure.Storage.Auth.StorageCredentials credentials, System.Net.Http.DelegatingHandler delegatingHandler = null);" />
+      <MemberSignature Language="C#" Value="public CloudQueueClient (Uri baseUri, Microsoft.Azure.Storage.Auth.StorageCredentials credentials, System.Net.Http.DelegatingHandler delegatingHandler = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUri, class Microsoft.Azure.Storage.Auth.StorageCredentials credentials, class System.Net.Http.DelegatingHandler delegatingHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Storage.Queue.CloudQueueClient.#ctor(System.Uri,Microsoft.Azure.Storage.Auth.StorageCredentials,System.Net.Http.DelegatingHandler)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Storage.Queue.CloudQueueClient : Uri * Microsoft.Azure.Storage.Auth.StorageCredentials * System.Net.Http.DelegatingHandler -&gt; Microsoft.Azure.Storage.Queue.CloudQueueClient" Usage="new Microsoft.Azure.Storage.Queue.CloudQueueClient (baseUri, credentials, delegatingHandler)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="baseUri" Type="System.Uri" />
@@ -56,10 +61,13 @@
         <Parameter Name="delegatingHandler" Type="System.Net.Http.DelegatingHandler" />
       </Parameters>
       <Docs>
-        <param name="baseUri">To be added.</param>
-        <param name="credentials">To be added.</param>
-        <param name="delegatingHandler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="baseUri">The <see cref="T:System.Uri" /> containing the Queue service endpoint to use to create the client.</param>
+        <param name="credentials">A <see cref="T:Microsoft.Azure.Storage.Auth.StorageCredentials" /> object.</param>
+        <param name="delegatingHandler">A chain of 1 or more DelegatingHandler instances, the innermost of which must have a null InnerHandler.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Azure.Storage.Queue.CloudQueueClient" /> class using the specified Queue service endpoint
+            and account credentials.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,13 +80,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.AuthenticationScheme</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the authentication scheme to use to sign HTTP requests.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -92,14 +102,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the base URI for the Queue service client, at the primary location.
+            </summary>
+        <value>A <see cref="T:System.Uri" /> object for the Queue service client, at the primary location.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,7 +124,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -127,10 +139,12 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="callback">An <see cref="T:System.AsyncCallback" /> delegate that will receive notification when the asynchronous operation completes.</param>
+        <param name="state">A user-defined object to be passed to the callback delegate.</param>
+        <summary>
+            Begins an asynchronous operation to get service properties for the Queue service.
+            </summary>
+        <returns>An <see cref="T:Microsoft.Azure.Storage.ICancellableAsyncResult" /> that references the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,7 +156,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -159,12 +173,14 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="options">To be added.</param>
-        <param name="operationContext">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="options">A <see cref="T:Microsoft.Azure.Storage.Queue.QueueRequestOptions" /> object that specifies additional options for the request.</param>
+        <param name="operationContext">An <see cref="T:Microsoft.Azure.Storage.OperationContext" /> object that represents the context for the current operation.</param>
+        <param name="callback">An <see cref="T:System.AsyncCallback" /> delegate that will receive notification when the asynchronous operation completes.</param>
+        <param name="state">A user-defined object to be passed to the callback delegate.</param>
+        <summary>
+            Begins an asynchronous operation to get service properties for the Queue service.
+            </summary>
+        <returns>An <see cref="T:Microsoft.Azure.Storage.ICancellableAsyncResult" /> that references the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,7 +193,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -192,10 +208,12 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="callback">An <see cref="T:System.AsyncCallback" /> delegate that will receive notification when the asynchronous operation completes.</param>
+        <param name="state">A user-defined object to be passed to the callback delegate.</param>
+        <summary>
+            Begins an asynchronous operation to get service stats for the secondary Queue service endpoint.
+            </summary>
+        <returns>An <see cref="T:Microsoft.Azure.Storage.ICancellableAsyncResult" /> that references the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,7 +225,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -224,12 +242,14 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="options">To be added.</param>
-        <param name="operationContext">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="options">A <see cref="T:Microsoft.Azure.Storage.Queue.QueueRequestOptions" /> object that specifies additional options for the request.</param>
+        <param name="operationContext">An <see cref="T:Microsoft.Azure.Storage.OperationContext" /> object that represents the context for the current operation.</param>
+        <param name="callback">An <see cref="T:System.AsyncCallback" /> delegate that will receive notification when the asynchronous operation completes.</param>
+        <param name="state">A user-defined object to be passed to the callback delegate.</param>
+        <summary>
+            Begins an asynchronous operation to get service stats for the secondary Queue service endpoint.
+            </summary>
+        <returns>An <see cref="T:Microsoft.Azure.Storage.ICancellableAsyncResult" /> that references the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -242,7 +262,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.ICancellableAsyncResult</ReturnType>
@@ -253,11 +273,13 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="currentToken">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="currentToken">A <see cref="T:Microsoft.Azure.Storage.Queue.QueueContinuationToken" /> returned by a previous listing operation.</param>
+        <param name="callback">An <see cref="T:System.AsyncCallback" /> delegate that will receive notification when the asynchronous operation completes.</param>
+        <param name="state">A user-defined object that will be passed to the callback delegate.</param>
+        <summary>
+            Begins an asynchronous operation to return a result segment containing a collection of queues.
+            </summary>
+        <returns>An <see cref="T:Microsoft.Azure.Storage.ICancellableAsyncResult" /> that references the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -270,7 +292,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.ICancellableAsyncResult</ReturnType>
@@ -282,12 +304,14 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="prefix">To be added.</param>
-        <param name="currentToken">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="prefix">A string containing the queue name prefix.</param>
+        <param name="currentToken">A <see cref="T:Microsoft.Azure.Storage.Queue.QueueContinuationToken" /> returned by a previous listing operation.</param>
+        <param name="callback">An <see cref="T:System.AsyncCallback" /> delegate that will receive notification when the asynchronous operation completes.</param>
+        <param name="state">A user-defined object that will be passed to the callback delegate.</param>
+        <summary>
+            Begins an asynchronous operation to return a result segment containing a collection of queues.
+            </summary>
+        <returns>An <see cref="T:Microsoft.Azure.Storage.ICancellableAsyncResult" /> that references the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -299,7 +323,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.ICancellableAsyncResult</ReturnType>
@@ -315,16 +339,19 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="prefix">To be added.</param>
-        <param name="queueListingDetails">To be added.</param>
-        <param name="maxResults">To be added.</param>
-        <param name="currentToken">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="operationContext">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="prefix">A string containing the queue name prefix.</param>
+        <param name="queueListingDetails">A <see cref="T:Microsoft.Azure.Storage.Queue.Protocol.QueueListingDetails" /> enumeration describing which items to include in the listing.</param>
+        <param name="maxResults">A non-negative integer value that indicates the maximum number of results to be returned at a time, up to the 
+            per-operation limit of 5000. If this value is <c>null</c>, the maximum possible number of results will be returned, up to 5000.</param>
+        <param name="currentToken">A <see cref="T:Microsoft.Azure.Storage.Queue.QueueContinuationToken" /> returned by a previous listing operation.</param>
+        <param name="options">A <see cref="T:Microsoft.Azure.Storage.Queue.QueueRequestOptions" /> object that specifies additional options for the request.</param>
+        <param name="operationContext">An <see cref="T:Microsoft.Azure.Storage.OperationContext" /> object that represents the context for the current operation.</param>
+        <param name="callback">An <see cref="T:System.AsyncCallback" /> delegate that will receive notification when the asynchronous operation completes.</param>
+        <param name="state">A user-defined object that will be passed to the callback delegate.</param>
+        <summary>
+            Begins an asynchronous operation to return a result segment containing a collection of queues.
+            </summary>
+        <returns>An <see cref="T:Microsoft.Azure.Storage.ICancellableAsyncResult" /> that references the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -337,7 +364,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -353,11 +380,13 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="properties">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="properties">A <see cref="T:Microsoft.Azure.Storage.Shared.Protocol.ServiceProperties" /> object.</param>
+        <param name="callback">An <see cref="T:System.AsyncCallback" /> delegate that will receive notification when the asynchronous operation completes.</param>
+        <param name="state">A user-defined object to be passed to the callback delegate.</param>
+        <summary>
+            Begins an asynchronous operation to set service properties for the Queue service.
+            </summary>
+        <returns>An <see cref="T:Microsoft.Azure.Storage.ICancellableAsyncResult" /> that references the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -369,7 +398,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -387,13 +416,15 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="properties">To be added.</param>
-        <param name="requestOptions">To be added.</param>
-        <param name="operationContext">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="properties">A <see cref="T:Microsoft.Azure.Storage.Shared.Protocol.ServiceProperties" /> object.</param>
+        <param name="requestOptions">A <see cref="T:Microsoft.Azure.Storage.Queue.QueueRequestOptions" /> object that specifies additional options for the request.</param>
+        <param name="operationContext">An <see cref="T:Microsoft.Azure.Storage.OperationContext" /> object that represents the context for the current operation.</param>
+        <param name="callback">An <see cref="T:System.AsyncCallback" /> delegate that will receive notification when the asynchronous operation completes.</param>
+        <param name="state">A user-defined object to be passed to the callback delegate.</param>
+        <summary>
+            Begins an asynchronous operation to set service properties for the Queue service.
+            </summary>
+        <returns>An <see cref="T:Microsoft.Azure.Storage.ICancellableAsyncResult" /> that references the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -406,14 +437,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.IBufferManager</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets a buffer manager that implements the <see cref="T:Microsoft.Azure.Storage.IBufferManager" /> interface, 
+            specifying a buffer pool for use with operations against the Queue service client.
+            </summary>
+        <value>An object of type <see cref="T:Microsoft.Azure.Storage.IBufferManager" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -426,14 +460,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Auth.StorageCredentials</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the account credentials used to create the Queue service client.
+            </summary>
+        <value>A <see cref="T:Microsoft.Azure.Storage.Auth.StorageCredentials" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -446,14 +482,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Queue.QueueRequestOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets and sets the default request options for requests made via the Queue service client.
+            </summary>
+        <value>A <see cref="T:Microsoft.Azure.Storage.Queue.QueueRequestOptions" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -466,7 +504,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Shared.Protocol.ServiceProperties</ReturnType>
@@ -475,9 +513,11 @@
         <Parameter Name="asyncResult" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="asyncResult">The result returned from a prior call to <see cref="M:Microsoft.Azure.Storage.Queue.CloudQueueClient.BeginGetServiceProperties(System.AsyncCallback,System.Object)" />.</param>
+        <summary>
+            Ends an asynchronous operation to get service properties for the Queue service.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Azure.Storage.Shared.Protocol.ServiceProperties" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -490,7 +530,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Shared.Protocol.ServiceStats</ReturnType>
@@ -499,9 +539,11 @@
         <Parameter Name="asyncResult" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="asyncResult">An <see cref="T:System.IAsyncResult" /> that references the pending asynchronous operation.</param>
+        <summary>
+            Ends an asynchronous operation to get service stats for the secondary Queue service endpoint.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Azure.Storage.Shared.Protocol.ServiceStats" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -514,7 +556,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Queue.QueueResultSegment</ReturnType>
@@ -523,9 +565,11 @@
         <Parameter Name="asyncResult" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="asyncResult">An <see cref="T:System.IAsyncResult" /> that references the pending asynchronous operation.</param>
+        <summary>
+            Ends an asynchronous operation to return a result segment containing a collection of queues.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Azure.Storage.Queue.QueueResultSegment" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -538,7 +582,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -547,8 +591,10 @@
         <Parameter Name="asyncResult" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> returned from a prior call to <see cref="M:Microsoft.Azure.Storage.Queue.CloudQueueClient.BeginSetServiceProperties(Microsoft.Azure.Storage.Shared.Protocol.ServiceProperties,System.AsyncCallback,System.Object)" />.</param>
+        <summary>
+            Ends an asynchronous operation to set service properties for the Queue service.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -561,7 +607,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Queue.CloudQueue</ReturnType>
@@ -570,21 +616,23 @@
         <Parameter Name="queueName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="queueName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="queueName">A string containing the name of the queue.</param>
+        <summary>
+            Returns a reference to a <see cref="T:Microsoft.Azure.Storage.Queue.CloudQueue" /> object with the specified name.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Azure.Storage.Queue.CloudQueue" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetServiceProperties">
-      <MemberSignature Language="C#" Value="public virtual Microsoft.Azure.Storage.Shared.Protocol.ServiceProperties GetServiceProperties (Microsoft.Azure.Storage.Queue.QueueRequestOptions requestOptions = null, Microsoft.Azure.Storage.OperationContext operationContext = null);" />
+      <MemberSignature Language="C#" Value="public virtual Microsoft.Azure.Storage.Shared.Protocol.ServiceProperties GetServiceProperties (Microsoft.Azure.Storage.Queue.QueueRequestOptions requestOptions = default, Microsoft.Azure.Storage.OperationContext operationContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Azure.Storage.Shared.Protocol.ServiceProperties GetServiceProperties(class Microsoft.Azure.Storage.Queue.QueueRequestOptions requestOptions, class Microsoft.Azure.Storage.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Storage.Queue.CloudQueueClient.GetServiceProperties(Microsoft.Azure.Storage.Queue.QueueRequestOptions,Microsoft.Azure.Storage.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member GetServiceProperties : Microsoft.Azure.Storage.Queue.QueueRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; Microsoft.Azure.Storage.Shared.Protocol.ServiceProperties&#xA;override this.GetServiceProperties : Microsoft.Azure.Storage.Queue.QueueRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; Microsoft.Azure.Storage.Shared.Protocol.ServiceProperties" Usage="cloudQueueClient.GetServiceProperties (requestOptions, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -599,10 +647,12 @@
         <Parameter Name="operationContext" Type="Microsoft.Azure.Storage.OperationContext" />
       </Parameters>
       <Docs>
-        <param name="requestOptions">To be added.</param>
-        <param name="operationContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="requestOptions">A <see cref="T:Microsoft.Azure.Storage.Queue.QueueRequestOptions" /> object that specifies additional options for the request.</param>
+        <param name="operationContext">An <see cref="T:Microsoft.Azure.Storage.OperationContext" /> object that represents the context for the current operation.</param>
+        <summary>
+            Gets service properties for the Queue service.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Azure.Storage.Shared.Protocol.ServiceProperties" /> containing the Queue service properties.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -615,7 +665,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -627,8 +677,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Initiates an asynchronous operation to get service properties for the Queue service.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> object of type <see cref="T:Microsoft.Azure.Storage.Shared.Protocol.ServiceProperties" /> that represents the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -640,7 +692,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -654,9 +706,11 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> to observe while waiting for a task to complete.</param>
+        <summary>
+            Initiates an asynchronous operation to get service properties for the Queue service.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> object of type <see cref="T:Microsoft.Azure.Storage.Shared.Protocol.ServiceProperties" /> that represents the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -668,7 +722,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -683,10 +737,12 @@
         <Parameter Name="operationContext" Type="Microsoft.Azure.Storage.OperationContext" />
       </Parameters>
       <Docs>
-        <param name="requestOptions">To be added.</param>
-        <param name="operationContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="requestOptions">A <see cref="T:Microsoft.Azure.Storage.Queue.QueueRequestOptions" /> object that specifies additional options for the request.</param>
+        <param name="operationContext">An <see cref="T:Microsoft.Azure.Storage.OperationContext" /> object that represents the context for the current operation.</param>
+        <summary>
+            Initiates an asynchronous operation to get service properties for the Queue service.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> object of type <see cref="T:Microsoft.Azure.Storage.Shared.Protocol.ServiceProperties" /> that represents the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -698,7 +754,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -714,23 +770,25 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="options">To be added.</param>
-        <param name="operationContext">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="options">A <see cref="T:Microsoft.Azure.Storage.Queue.QueueRequestOptions" /> object that specifies additional options for the request.</param>
+        <param name="operationContext">An <see cref="T:Microsoft.Azure.Storage.OperationContext" /> object that represents the context for the current operation.</param>
+        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> to observe while waiting for a task to complete.</param>
+        <summary>
+            Initiates an asynchronous operation to get service properties for the Queue service.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> object of type <see cref="T:Microsoft.Azure.Storage.Shared.Protocol.ServiceProperties" /> that represents the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetServiceStats">
-      <MemberSignature Language="C#" Value="public virtual Microsoft.Azure.Storage.Shared.Protocol.ServiceStats GetServiceStats (Microsoft.Azure.Storage.Queue.QueueRequestOptions requestOptions = null, Microsoft.Azure.Storage.OperationContext operationContext = null);" />
+      <MemberSignature Language="C#" Value="public virtual Microsoft.Azure.Storage.Shared.Protocol.ServiceStats GetServiceStats (Microsoft.Azure.Storage.Queue.QueueRequestOptions requestOptions = default, Microsoft.Azure.Storage.OperationContext operationContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Azure.Storage.Shared.Protocol.ServiceStats GetServiceStats(class Microsoft.Azure.Storage.Queue.QueueRequestOptions requestOptions, class Microsoft.Azure.Storage.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Storage.Queue.CloudQueueClient.GetServiceStats(Microsoft.Azure.Storage.Queue.QueueRequestOptions,Microsoft.Azure.Storage.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member GetServiceStats : Microsoft.Azure.Storage.Queue.QueueRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; Microsoft.Azure.Storage.Shared.Protocol.ServiceStats&#xA;override this.GetServiceStats : Microsoft.Azure.Storage.Queue.QueueRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; Microsoft.Azure.Storage.Shared.Protocol.ServiceStats" Usage="cloudQueueClient.GetServiceStats (requestOptions, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -745,10 +803,12 @@
         <Parameter Name="operationContext" Type="Microsoft.Azure.Storage.OperationContext" />
       </Parameters>
       <Docs>
-        <param name="requestOptions">To be added.</param>
-        <param name="operationContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="requestOptions">A <see cref="T:Microsoft.Azure.Storage.Queue.QueueRequestOptions" /> object that specifies additional options for the request.</param>
+        <param name="operationContext">An <see cref="T:Microsoft.Azure.Storage.OperationContext" /> object that represents the context for the current operation.</param>
+        <summary>
+            Gets service stats for the secondary Queue service endpoint.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Azure.Storage.Shared.Protocol.ServiceStats" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -761,7 +821,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -773,8 +833,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Initiates an asynchronous operation to get service stats for the secondary Queue service endpoint.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> object of type <see cref="T:Microsoft.Azure.Storage.Shared.Protocol.ServiceStats" /> that represents the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -786,7 +848,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -800,9 +862,11 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> to observe while waiting for a task to complete.</param>
+        <summary>
+            Initiates an asynchronous operation to get service stats for the secondary Queue service endpoint.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> object of type <see cref="T:Microsoft.Azure.Storage.Shared.Protocol.ServiceStats" /> that represents the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -814,7 +878,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -829,10 +893,12 @@
         <Parameter Name="operationContext" Type="Microsoft.Azure.Storage.OperationContext" />
       </Parameters>
       <Docs>
-        <param name="requestOptions">To be added.</param>
-        <param name="operationContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="requestOptions">A <see cref="T:Microsoft.Azure.Storage.Queue.QueueRequestOptions" /> object that specifies additional options for the request.</param>
+        <param name="operationContext">An <see cref="T:Microsoft.Azure.Storage.OperationContext" /> object that represents the context for the current operation.</param>
+        <summary>
+            Initiates an asynchronous operation to get service stats for the secondary Queue service endpoint.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> object of type <see cref="T:Microsoft.Azure.Storage.Shared.Protocol.ServiceStats" /> that represents the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -844,7 +910,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -860,23 +926,25 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="options">To be added.</param>
-        <param name="operationContext">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="options">A <see cref="T:Microsoft.Azure.Storage.Queue.QueueRequestOptions" /> object that specifies additional options for the request.</param>
+        <param name="operationContext">An <see cref="T:Microsoft.Azure.Storage.OperationContext" /> object that represents the context for the current operation.</param>
+        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> to observe while waiting for a task to complete.</param>
+        <summary>
+            Initiates an asynchronous operation to get service stats for the secondary Queue service endpoint.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> object of type <see cref="T:Microsoft.Azure.Storage.Shared.Protocol.ServiceStats" /> that represents the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ListQueues">
-      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Storage.Queue.CloudQueue&gt; ListQueues (string prefix = null, Microsoft.Azure.Storage.Queue.Protocol.QueueListingDetails queueListingDetails = Microsoft.Azure.Storage.Queue.Protocol.QueueListingDetails.None, Microsoft.Azure.Storage.Queue.QueueRequestOptions options = null, Microsoft.Azure.Storage.OperationContext operationContext = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Storage.Queue.CloudQueue&gt; ListQueues (string prefix = default, Microsoft.Azure.Storage.Queue.Protocol.QueueListingDetails queueListingDetails = Microsoft.Azure.Storage.Queue.Protocol.QueueListingDetails.None, Microsoft.Azure.Storage.Queue.QueueRequestOptions options = default, Microsoft.Azure.Storage.OperationContext operationContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Storage.Queue.CloudQueue&gt; ListQueues(string prefix, valuetype Microsoft.Azure.Storage.Queue.Protocol.QueueListingDetails queueListingDetails, class Microsoft.Azure.Storage.Queue.QueueRequestOptions options, class Microsoft.Azure.Storage.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Storage.Queue.CloudQueueClient.ListQueues(System.String,Microsoft.Azure.Storage.Queue.Protocol.QueueListingDetails,Microsoft.Azure.Storage.Queue.QueueRequestOptions,Microsoft.Azure.Storage.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member ListQueues : string * Microsoft.Azure.Storage.Queue.Protocol.QueueListingDetails * Microsoft.Azure.Storage.Queue.QueueRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; seq&lt;Microsoft.Azure.Storage.Queue.CloudQueue&gt;&#xA;override this.ListQueues : string * Microsoft.Azure.Storage.Queue.Protocol.QueueListingDetails * Microsoft.Azure.Storage.Queue.QueueRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; seq&lt;Microsoft.Azure.Storage.Queue.CloudQueue&gt;" Usage="cloudQueueClient.ListQueues (prefix, queueListingDetails, options, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Storage.Queue.CloudQueue&gt;</ReturnType>
@@ -888,12 +956,14 @@
         <Parameter Name="operationContext" Type="Microsoft.Azure.Storage.OperationContext" />
       </Parameters>
       <Docs>
-        <param name="prefix">To be added.</param>
-        <param name="queueListingDetails">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="operationContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="prefix">A string containing the queue name prefix.</param>
+        <param name="queueListingDetails">A <see cref="T:Microsoft.Azure.Storage.Queue.Protocol.QueueListingDetails" /> enumeration value that indicates which details to include in the listing.</param>
+        <param name="options">A <see cref="T:Microsoft.Azure.Storage.Queue.QueueRequestOptions" /> object that specifies additional options for the request. If <c>null</c>, default options are applied to the request.</param>
+        <param name="operationContext">An <see cref="T:Microsoft.Azure.Storage.OperationContext" /> object that represents the context for the current operation.</param>
+        <summary>
+            Returns an enumerable collection of the queues in the storage account whose names begin with the specified prefix and that are retrieved lazily.
+            </summary>
+        <returns>An enumerable collection of objects of type <see cref="T:Microsoft.Azure.Storage.Queue.CloudQueue" /> that are retrieved lazily.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -906,7 +976,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Queue.QueueResultSegment</ReturnType>
@@ -915,9 +985,11 @@
         <Parameter Name="currentToken" Type="Microsoft.Azure.Storage.Queue.QueueContinuationToken" />
       </Parameters>
       <Docs>
-        <param name="currentToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="currentToken">A <see cref="T:Microsoft.Azure.Storage.Queue.QueueContinuationToken" /> continuation token returned by a previous listing operation.</param>
+        <summary>
+            Returns a result segment containing a collection of queues.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Azure.Storage.Queue.QueueResultSegment" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -930,7 +1002,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Queue.QueueResultSegment</ReturnType>
@@ -940,22 +1012,24 @@
         <Parameter Name="currentToken" Type="Microsoft.Azure.Storage.Queue.QueueContinuationToken" />
       </Parameters>
       <Docs>
-        <param name="prefix">To be added.</param>
-        <param name="currentToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="prefix">A string containing the queue name prefix.</param>
+        <param name="currentToken">A <see cref="T:Microsoft.Azure.Storage.Queue.QueueContinuationToken" /> continuation token returned by a previous listing operation.</param>
+        <summary>
+            Returns a result segment containing a collection of queues.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Azure.Storage.Queue.QueueResultSegment" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ListQueuesSegmented">
-      <MemberSignature Language="C#" Value="public virtual Microsoft.Azure.Storage.Queue.QueueResultSegment ListQueuesSegmented (string prefix, Microsoft.Azure.Storage.Queue.Protocol.QueueListingDetails queueListingDetails, Nullable&lt;int&gt; maxResults, Microsoft.Azure.Storage.Queue.QueueContinuationToken currentToken, Microsoft.Azure.Storage.Queue.QueueRequestOptions options = null, Microsoft.Azure.Storage.OperationContext operationContext = null);" />
+      <MemberSignature Language="C#" Value="public virtual Microsoft.Azure.Storage.Queue.QueueResultSegment ListQueuesSegmented (string prefix, Microsoft.Azure.Storage.Queue.Protocol.QueueListingDetails queueListingDetails, Nullable&lt;int&gt; maxResults, Microsoft.Azure.Storage.Queue.QueueContinuationToken currentToken, Microsoft.Azure.Storage.Queue.QueueRequestOptions options = default, Microsoft.Azure.Storage.OperationContext operationContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Azure.Storage.Queue.QueueResultSegment ListQueuesSegmented(string prefix, valuetype Microsoft.Azure.Storage.Queue.Protocol.QueueListingDetails queueListingDetails, valuetype System.Nullable`1&lt;int32&gt; maxResults, class Microsoft.Azure.Storage.Queue.QueueContinuationToken currentToken, class Microsoft.Azure.Storage.Queue.QueueRequestOptions options, class Microsoft.Azure.Storage.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Storage.Queue.CloudQueueClient.ListQueuesSegmented(System.String,Microsoft.Azure.Storage.Queue.Protocol.QueueListingDetails,System.Nullable{System.Int32},Microsoft.Azure.Storage.Queue.QueueContinuationToken,Microsoft.Azure.Storage.Queue.QueueRequestOptions,Microsoft.Azure.Storage.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member ListQueuesSegmented : string * Microsoft.Azure.Storage.Queue.Protocol.QueueListingDetails * Nullable&lt;int&gt; * Microsoft.Azure.Storage.Queue.QueueContinuationToken * Microsoft.Azure.Storage.Queue.QueueRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; Microsoft.Azure.Storage.Queue.QueueResultSegment&#xA;override this.ListQueuesSegmented : string * Microsoft.Azure.Storage.Queue.Protocol.QueueListingDetails * Nullable&lt;int&gt; * Microsoft.Azure.Storage.Queue.QueueContinuationToken * Microsoft.Azure.Storage.Queue.QueueRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; Microsoft.Azure.Storage.Queue.QueueResultSegment" Usage="cloudQueueClient.ListQueuesSegmented (prefix, queueListingDetails, maxResults, currentToken, options, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Queue.QueueResultSegment</ReturnType>
@@ -969,14 +1043,17 @@
         <Parameter Name="operationContext" Type="Microsoft.Azure.Storage.OperationContext" />
       </Parameters>
       <Docs>
-        <param name="prefix">To be added.</param>
-        <param name="queueListingDetails">To be added.</param>
-        <param name="maxResults">To be added.</param>
-        <param name="currentToken">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="operationContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="prefix">A string containing the queue name prefix.</param>
+        <param name="queueListingDetails">A <see cref="T:Microsoft.Azure.Storage.Queue.Protocol.QueueListingDetails" /> enumeration describing which items to include in the listing.</param>
+        <param name="maxResults">A non-negative integer value that indicates the maximum number of results to be returned at a time, up to the 
+            per-operation limit of 5000. If this value is <c>null</c>, the maximum possible number of results will be returned, up to 5000.</param>
+        <param name="currentToken">A <see cref="T:Microsoft.Azure.Storage.Queue.QueueContinuationToken" /> returned by a previous listing operation.</param>
+        <param name="options">A <see cref="T:Microsoft.Azure.Storage.Queue.QueueRequestOptions" /> object that specifies additional options for the request. If <c>null</c>, default options are applied to the request.</param>
+        <param name="operationContext">An <see cref="T:Microsoft.Azure.Storage.OperationContext" /> object that represents the context for the current operation.</param>
+        <summary>
+            Returns a result segment containing a collection of queues.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Azure.Storage.Queue.QueueResultSegment" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -989,7 +1066,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1003,9 +1080,11 @@
         <Parameter Name="currentToken" Type="Microsoft.Azure.Storage.Queue.QueueContinuationToken" />
       </Parameters>
       <Docs>
-        <param name="currentToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="currentToken">A <see cref="T:Microsoft.Azure.Storage.Queue.QueueContinuationToken" /> returned by a previous listing operation.</param>
+        <summary>
+            Initiates an asynchronous operation to return a result segment containing a collection of queues.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> object of type <see cref="T:Microsoft.Azure.Storage.Queue.QueueResultSegment" /> that represents the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1017,7 +1096,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1032,10 +1111,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="currentToken">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="currentToken">A <see cref="T:Microsoft.Azure.Storage.Queue.QueueContinuationToken" /> returned by a previous listing operation.</param>
+        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> to observe while waiting for a task to complete.</param>
+        <summary>
+            Initiates an asynchronous operation to return a result segment containing a collection of queues.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> object of type <see cref="T:Microsoft.Azure.Storage.Queue.QueueResultSegment" /> that represents the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1048,7 +1129,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1063,10 +1144,12 @@
         <Parameter Name="currentToken" Type="Microsoft.Azure.Storage.Queue.QueueContinuationToken" />
       </Parameters>
       <Docs>
-        <param name="prefix">To be added.</param>
-        <param name="currentToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="prefix">A string containing the queue name prefix.</param>
+        <param name="currentToken">A <see cref="T:Microsoft.Azure.Storage.Queue.QueueContinuationToken" /> returned by a previous listing operation.</param>
+        <summary>
+            Initiates an asynchronous operation to return a result segment containing a collection of queues.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> object of type <see cref="T:Microsoft.Azure.Storage.Queue.QueueResultSegment" /> that represents the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1078,7 +1161,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1094,11 +1177,13 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="prefix">To be added.</param>
-        <param name="currentToken">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="prefix">A string containing the queue name prefix.</param>
+        <param name="currentToken">A <see cref="T:Microsoft.Azure.Storage.Queue.QueueContinuationToken" /> returned by a previous listing operation.</param>
+        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> to observe while waiting for a task to complete.</param>
+        <summary>
+            Initiates an asynchronous operation to return a result segment containing a collection of queues.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> object of type <see cref="T:Microsoft.Azure.Storage.Queue.QueueResultSegment" /> that represents the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1110,7 +1195,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1129,14 +1214,17 @@
         <Parameter Name="operationContext" Type="Microsoft.Azure.Storage.OperationContext" />
       </Parameters>
       <Docs>
-        <param name="prefix">To be added.</param>
-        <param name="queueListingDetails">To be added.</param>
-        <param name="maxResults">To be added.</param>
-        <param name="currentToken">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="operationContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="prefix">A string containing the queue name prefix.</param>
+        <param name="queueListingDetails">A <see cref="T:Microsoft.Azure.Storage.Queue.Protocol.QueueListingDetails" /> enumeration describing which items to include in the listing.</param>
+        <param name="maxResults">A non-negative integer value that indicates the maximum number of results to be returned at a time, up to the 
+            per-operation limit of 5000. If this value is <c>null</c>, the maximum possible number of results will be returned, up to 5000.</param>
+        <param name="currentToken">A <see cref="T:Microsoft.Azure.Storage.Queue.QueueContinuationToken" /> returned by a previous listing operation.</param>
+        <param name="options">A <see cref="T:Microsoft.Azure.Storage.Queue.QueueRequestOptions" /> object that specifies additional options for the request.</param>
+        <param name="operationContext">An <see cref="T:Microsoft.Azure.Storage.OperationContext" /> object that represents the context for the current operation.</param>
+        <summary>
+            Initiates an asynchronous operation to return a result segment containing a collection of queues.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> object of type <see cref="T:Microsoft.Azure.Storage.Queue.QueueResultSegment" /> that represents the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1148,7 +1236,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1168,27 +1256,30 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="prefix">To be added.</param>
-        <param name="queueListingDetails">To be added.</param>
-        <param name="maxResults">To be added.</param>
-        <param name="currentToken">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="operationContext">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="prefix">A string containing the queue name prefix.</param>
+        <param name="queueListingDetails">A <see cref="T:Microsoft.Azure.Storage.Queue.Protocol.QueueListingDetails" /> enumeration describing which items to include in the listing.</param>
+        <param name="maxResults">A non-negative integer value that indicates the maximum number of results to be returned at a time, up to the 
+            per-operation limit of 5000. If this value is null, the maximum possible number of results will be returned, up to 5000.</param>
+        <param name="currentToken">A <see cref="T:Microsoft.Azure.Storage.Queue.QueueContinuationToken" /> returned by a previous listing operation.</param>
+        <param name="options">A <see cref="T:Microsoft.Azure.Storage.Queue.QueueRequestOptions" /> object that specifies additional options for the request.</param>
+        <param name="operationContext">An <see cref="T:Microsoft.Azure.Storage.OperationContext" /> object that represents the context for the current operation.</param>
+        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> to observe while waiting for a task to complete.</param>
+        <summary>
+            Initiates an asynchronous operation to return a result segment containing a collection of queues.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> object of type <see cref="T:Microsoft.Azure.Storage.Queue.QueueResultSegment" /> that represents the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetServiceProperties">
-      <MemberSignature Language="C#" Value="public virtual void SetServiceProperties (Microsoft.Azure.Storage.Shared.Protocol.ServiceProperties properties, Microsoft.Azure.Storage.Queue.QueueRequestOptions requestOptions = null, Microsoft.Azure.Storage.OperationContext operationContext = null);" />
+      <MemberSignature Language="C#" Value="public virtual void SetServiceProperties (Microsoft.Azure.Storage.Shared.Protocol.ServiceProperties properties, Microsoft.Azure.Storage.Queue.QueueRequestOptions requestOptions = default, Microsoft.Azure.Storage.OperationContext operationContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetServiceProperties(class Microsoft.Azure.Storage.Shared.Protocol.ServiceProperties properties, class Microsoft.Azure.Storage.Queue.QueueRequestOptions requestOptions, class Microsoft.Azure.Storage.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Storage.Queue.CloudQueueClient.SetServiceProperties(Microsoft.Azure.Storage.Shared.Protocol.ServiceProperties,Microsoft.Azure.Storage.Queue.QueueRequestOptions,Microsoft.Azure.Storage.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member SetServiceProperties : Microsoft.Azure.Storage.Shared.Protocol.ServiceProperties * Microsoft.Azure.Storage.Queue.QueueRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; unit&#xA;override this.SetServiceProperties : Microsoft.Azure.Storage.Shared.Protocol.ServiceProperties * Microsoft.Azure.Storage.Queue.QueueRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; unit" Usage="cloudQueueClient.SetServiceProperties (properties, requestOptions, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1204,10 +1295,12 @@
         <Parameter Name="operationContext" Type="Microsoft.Azure.Storage.OperationContext" />
       </Parameters>
       <Docs>
-        <param name="properties">To be added.</param>
-        <param name="requestOptions">To be added.</param>
-        <param name="operationContext">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="properties">A <see cref="T:Microsoft.Azure.Storage.Shared.Protocol.ServiceProperties" /> object.</param>
+        <param name="requestOptions">A <see cref="T:Microsoft.Azure.Storage.Queue.QueueRequestOptions" /> object that specifies additional options for the request.</param>
+        <param name="operationContext">An <see cref="T:Microsoft.Azure.Storage.OperationContext" /> object that represents the context for the current operation.</param>
+        <summary>
+            Sets service properties for the Queue service.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1220,7 +1313,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1234,9 +1327,11 @@
         <Parameter Name="properties" Type="Microsoft.Azure.Storage.Shared.Protocol.ServiceProperties" />
       </Parameters>
       <Docs>
-        <param name="properties">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="properties">A <see cref="T:Microsoft.Azure.Storage.Shared.Protocol.ServiceProperties" /> object.</param>
+        <summary>
+            Initiates an asynchronous operation to set service properties for the Queue service.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object that represents the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1248,7 +1343,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1263,10 +1358,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="properties">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="properties">A <see cref="T:Microsoft.Azure.Storage.Shared.Protocol.ServiceProperties" /> object.</param>
+        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> to observe while waiting for a task to complete.</param>
+        <summary>
+            Initiates an asynchronous operation to set service properties for the Queue service.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object that represents the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1278,7 +1375,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1294,11 +1391,13 @@
         <Parameter Name="operationContext" Type="Microsoft.Azure.Storage.OperationContext" />
       </Parameters>
       <Docs>
-        <param name="properties">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="operationContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="properties">A <see cref="T:Microsoft.Azure.Storage.Shared.Protocol.ServiceProperties" /> object.</param>
+        <param name="options">A <see cref="T:Microsoft.Azure.Storage.Queue.QueueRequestOptions" /> object that specifies additional options for the request.</param>
+        <param name="operationContext">An <see cref="T:Microsoft.Azure.Storage.OperationContext" /> object that represents the context for the current operation.</param>
+        <summary>
+            Initiates an asynchronous operation to set service properties for the Queue service.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object that represents the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1310,7 +1409,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1327,12 +1426,14 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="properties">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="operationContext">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="properties">A <see cref="T:Microsoft.Azure.Storage.Shared.Protocol.ServiceProperties" /> object.</param>
+        <param name="options">A <see cref="T:Microsoft.Azure.Storage.Queue.QueueRequestOptions" /> object that specifies additional options for the request.</param>
+        <param name="operationContext">An <see cref="T:Microsoft.Azure.Storage.OperationContext" /> object that represents the context for the current operation.</param>
+        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> to observe while waiting for a task to complete.</param>
+        <summary>
+            Initiates an asynchronous operation to set service properties for the Queue service.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object that represents the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1345,14 +1446,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Queue</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.StorageUri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the Queue service endpoints for both the primary and secondary locations.
+            </summary>
+        <value>An object of type <see cref="P:Microsoft.Azure.Storage.Queue.CloudQueueClient.StorageUri" /> containing Queue service URIs for both the primary and secondary locations.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

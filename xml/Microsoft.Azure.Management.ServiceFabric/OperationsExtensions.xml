@@ -1,4 +1,4 @@
-﻿<Type Name="OperationsExtensions" FullName="Microsoft.Azure.Management.ServiceFabric.OperationsExtensions">
+<Type Name="OperationsExtensions" FullName="Microsoft.Azure.Management.ServiceFabric.OperationsExtensions">
   <TypeSignature Language="C#" Value="public static class OperationsExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit OperationsExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.ServiceFabric.OperationsExtensions" />
@@ -42,7 +42,7 @@
             The operations group for this extension method.
             </param>
         <param name="apiVersion">
-            The version of the Service Fabric resouce provider API
+            The version of the Service Fabric resource provider API
             </param>
         <summary>
             Lists all of the available Service Fabric resource provider API operations.
@@ -54,7 +54,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ServiceFabric.Models.OperationResult&gt;&gt; ListAsync (this Microsoft.Azure.Management.ServiceFabric.IOperations operations, string apiVersion, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ServiceFabric.Models.OperationResult&gt;&gt; ListAsync (this Microsoft.Azure.Management.ServiceFabric.IOperations operations, string apiVersion, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.ServiceFabric.Models.OperationResult&gt;&gt; ListAsync(class Microsoft.Azure.Management.ServiceFabric.IOperations operations, string apiVersion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ServiceFabric.OperationsExtensions.ListAsync(Microsoft.Azure.Management.ServiceFabric.IOperations,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListAsync : Microsoft.Azure.Management.ServiceFabric.IOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ServiceFabric.Models.OperationResult&gt;&gt;" Usage="Microsoft.Azure.Management.ServiceFabric.OperationsExtensions.ListAsync (operations, apiVersion, cancellationToken)" />
@@ -63,6 +63,11 @@
         <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ServiceFabric.Models.OperationResult&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -76,7 +81,7 @@
             The operations group for this extension method.
             </param>
         <param name="apiVersion">
-            The version of the Service Fabric resouce provider API
+            The version of the Service Fabric resource provider API
             </param>
         <param name="cancellationToken">
             The cancellation token.
@@ -125,7 +130,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListNextAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ServiceFabric.Models.OperationResult&gt;&gt; ListNextAsync (this Microsoft.Azure.Management.ServiceFabric.IOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ServiceFabric.Models.OperationResult&gt;&gt; ListNextAsync (this Microsoft.Azure.Management.ServiceFabric.IOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.ServiceFabric.Models.OperationResult&gt;&gt; ListNextAsync(class Microsoft.Azure.Management.ServiceFabric.IOperations operations, string nextPageLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ServiceFabric.OperationsExtensions.ListNextAsync(Microsoft.Azure.Management.ServiceFabric.IOperations,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListNextAsync : Microsoft.Azure.Management.ServiceFabric.IOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ServiceFabric.Models.OperationResult&gt;&gt;" Usage="Microsoft.Azure.Management.ServiceFabric.OperationsExtensions.ListNextAsync (operations, nextPageLink, cancellationToken)" />
@@ -134,6 +139,11 @@
         <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ServiceFabric.Models.OperationResult&gt;&gt;</ReturnType>
       </ReturnValue>

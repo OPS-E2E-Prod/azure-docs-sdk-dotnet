@@ -1,4 +1,4 @@
-﻿<Type Name="DeleteRetentionPolicy" FullName="Microsoft.Azure.Management.Storage.Models.DeleteRetentionPolicy">
+<Type Name="DeleteRetentionPolicy" FullName="Microsoft.Azure.Management.Storage.Models.DeleteRetentionPolicy">
   <TypeSignature Language="C#" Value="public class DeleteRetentionPolicy" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DeleteRetentionPolicy extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Storage.Models.DeleteRetentionPolicy" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type DeleteRetentionPolicy = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
-    <AssemblyVersion>12.0.0.0</AssemblyVersion>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -14,7 +14,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            The blob service properties for soft delete.
+            The service properties for soft delete.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -27,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
-        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,7 +38,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public DeleteRetentionPolicy (Nullable&lt;bool&gt; enabled = null, Nullable&lt;int&gt; days = null);" />
+      <MemberSignature Language="C#" Value="public DeleteRetentionPolicy (Nullable&lt;bool&gt; enabled = default, Nullable&lt;int&gt; days = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;bool&gt; enabled, valuetype System.Nullable`1&lt;int32&gt; days) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.Models.DeleteRetentionPolicy.#ctor(System.Nullable{System.Boolean},System.Nullable{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional enabled As Nullable(Of Boolean) = null, Optional days As Nullable(Of Integer) = null)" />
@@ -46,7 +46,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
-        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="enabled" Type="System.Nullable&lt;System.Boolean&gt;" />
@@ -54,9 +54,9 @@
       </Parameters>
       <Docs>
         <param name="enabled">Indicates whether DeleteRetentionPolicy is
-            enabled for the Blob service.</param>
+            enabled.</param>
         <param name="days">Indicates the number of days that the deleted
-            blob should be retained. The minimum specified value can be 1 and
+            item should be retained. The minimum specified value can be 1 and
             the maximum value can be 365.</param>
         <summary>
             Initializes a new instance of the DeleteRetentionPolicy class.
@@ -73,7 +73,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
-        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -85,7 +85,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets indicates the number of days that the deleted blob
+            Gets or sets indicates the number of days that the deleted item
             should be retained. The minimum specified value can be 1 and the
             maximum value can be 365.
             </summary>
@@ -102,7 +102,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
-        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -114,8 +114,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets indicates whether DeleteRetentionPolicy is enabled for
-            the Blob service.
+            Gets or sets indicates whether DeleteRetentionPolicy is enabled.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -130,7 +129,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
-        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

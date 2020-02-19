@@ -1,4 +1,4 @@
-﻿<Type Name="TopLevelDomainsOperationsExtensions" FullName="Microsoft.Azure.Management.AppService.Fluent.TopLevelDomainsOperationsExtensions">
+<Type Name="TopLevelDomainsOperationsExtensions" FullName="Microsoft.Azure.Management.AppService.Fluent.TopLevelDomainsOperationsExtensions">
   <TypeSignature Language="C#" Value="public static class TopLevelDomainsOperationsExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit TopLevelDomainsOperationsExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.AppService.Fluent.TopLevelDomainsOperationsExtensions" />
@@ -6,7 +6,10 @@
   <TypeSignature Language="F#" Value="type TopLevelDomainsOperationsExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -20,14 +23,17 @@
   </Docs>
   <Members>
     <Member MemberName="GetAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.TopLevelDomainInner&gt; GetAsync (this Microsoft.Azure.Management.AppService.Fluent.ITopLevelDomainsOperations operations, string name, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.TopLevelDomainInner&gt; GetAsync (this Microsoft.Azure.Management.AppService.Fluent.ITopLevelDomainsOperations operations, string name, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.TopLevelDomainInner&gt; GetAsync(class Microsoft.Azure.Management.AppService.Fluent.ITopLevelDomainsOperations operations, string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.TopLevelDomainsOperationsExtensions.GetAsync(Microsoft.Azure.Management.AppService.Fluent.ITopLevelDomainsOperations,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member GetAsync : Microsoft.Azure.Management.AppService.Fluent.ITopLevelDomainsOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.AppService.Fluent.Models.TopLevelDomainInner&gt;" Usage="Microsoft.Azure.Management.AppService.Fluent.TopLevelDomainsOperationsExtensions.GetAsync (operations, name, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -57,19 +63,22 @@
             </summary>
         <returns>To be added.</returns>
         <remarks>
-            Get details of a top-level domain.
+            Description for Get details of a top-level domain.
             </remarks>
       </Docs>
     </Member>
     <Member MemberName="ListAgreementsAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.TldLegalAgreement&gt;&gt; ListAgreementsAsync (this Microsoft.Azure.Management.AppService.Fluent.ITopLevelDomainsOperations operations, string name, Microsoft.Azure.Management.AppService.Fluent.Models.TopLevelDomainAgreementOption agreementOption, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.TldLegalAgreement&gt;&gt; ListAgreementsAsync (this Microsoft.Azure.Management.AppService.Fluent.ITopLevelDomainsOperations operations, string name, Microsoft.Azure.Management.AppService.Fluent.Models.TopLevelDomainAgreementOption agreementOption, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.TldLegalAgreement&gt;&gt; ListAgreementsAsync(class Microsoft.Azure.Management.AppService.Fluent.ITopLevelDomainsOperations operations, string name, class Microsoft.Azure.Management.AppService.Fluent.Models.TopLevelDomainAgreementOption agreementOption, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.TopLevelDomainsOperationsExtensions.ListAgreementsAsync(Microsoft.Azure.Management.AppService.Fluent.ITopLevelDomainsOperations,System.String,Microsoft.Azure.Management.AppService.Fluent.Models.TopLevelDomainAgreementOption,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListAgreementsAsync : Microsoft.Azure.Management.AppService.Fluent.ITopLevelDomainsOperations * string * Microsoft.Azure.Management.AppService.Fluent.Models.TopLevelDomainAgreementOption * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.TldLegalAgreement&gt;&gt;" Usage="Microsoft.Azure.Management.AppService.Fluent.TopLevelDomainsOperationsExtensions.ListAgreementsAsync (operations, name, agreementOption, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -104,20 +113,23 @@
             </summary>
         <returns>To be added.</returns>
         <remarks>
-            Gets all legal agreements that user needs to accept before purchasing a
-            domain.
+            Description for Gets all legal agreements that user needs to accept before
+            purchasing a domain.
             </remarks>
       </Docs>
     </Member>
     <Member MemberName="ListAgreementsNextAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.TldLegalAgreement&gt;&gt; ListAgreementsNextAsync (this Microsoft.Azure.Management.AppService.Fluent.ITopLevelDomainsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.TldLegalAgreement&gt;&gt; ListAgreementsNextAsync (this Microsoft.Azure.Management.AppService.Fluent.ITopLevelDomainsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.TldLegalAgreement&gt;&gt; ListAgreementsNextAsync(class Microsoft.Azure.Management.AppService.Fluent.ITopLevelDomainsOperations operations, string nextPageLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.TopLevelDomainsOperationsExtensions.ListAgreementsNextAsync(Microsoft.Azure.Management.AppService.Fluent.ITopLevelDomainsOperations,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListAgreementsNextAsync : Microsoft.Azure.Management.AppService.Fluent.ITopLevelDomainsOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.TldLegalAgreement&gt;&gt;" Usage="Microsoft.Azure.Management.AppService.Fluent.TopLevelDomainsOperationsExtensions.ListAgreementsNextAsync (operations, nextPageLink, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -148,20 +160,23 @@
             </summary>
         <returns>To be added.</returns>
         <remarks>
-            Gets all legal agreements that user needs to accept before purchasing a
-            domain.
+            Description for Gets all legal agreements that user needs to accept before
+            purchasing a domain.
             </remarks>
       </Docs>
     </Member>
     <Member MemberName="ListAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.TopLevelDomainInner&gt;&gt; ListAsync (this Microsoft.Azure.Management.AppService.Fluent.ITopLevelDomainsOperations operations, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.TopLevelDomainInner&gt;&gt; ListAsync (this Microsoft.Azure.Management.AppService.Fluent.ITopLevelDomainsOperations operations, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.TopLevelDomainInner&gt;&gt; ListAsync(class Microsoft.Azure.Management.AppService.Fluent.ITopLevelDomainsOperations operations, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.TopLevelDomainsOperationsExtensions.ListAsync(Microsoft.Azure.Management.AppService.Fluent.ITopLevelDomainsOperations,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListAsync : Microsoft.Azure.Management.AppService.Fluent.ITopLevelDomainsOperations * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.TopLevelDomainInner&gt;&gt;" Usage="Microsoft.Azure.Management.AppService.Fluent.TopLevelDomainsOperationsExtensions.ListAsync (operations, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -187,19 +202,22 @@
             </summary>
         <returns>To be added.</returns>
         <remarks>
-            Get all top-level domains supported for registration.
+            Description for Get all top-level domains supported for registration.
             </remarks>
       </Docs>
     </Member>
     <Member MemberName="ListNextAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.TopLevelDomainInner&gt;&gt; ListNextAsync (this Microsoft.Azure.Management.AppService.Fluent.ITopLevelDomainsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.TopLevelDomainInner&gt;&gt; ListNextAsync (this Microsoft.Azure.Management.AppService.Fluent.ITopLevelDomainsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.TopLevelDomainInner&gt;&gt; ListNextAsync(class Microsoft.Azure.Management.AppService.Fluent.ITopLevelDomainsOperations operations, string nextPageLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.TopLevelDomainsOperationsExtensions.ListNextAsync(Microsoft.Azure.Management.AppService.Fluent.ITopLevelDomainsOperations,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListNextAsync : Microsoft.Azure.Management.AppService.Fluent.ITopLevelDomainsOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.TopLevelDomainInner&gt;&gt;" Usage="Microsoft.Azure.Management.AppService.Fluent.TopLevelDomainsOperationsExtensions.ListNextAsync (operations, nextPageLink, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -229,7 +247,7 @@
             </summary>
         <returns>To be added.</returns>
         <remarks>
-            Get all top-level domains supported for registration.
+            Description for Get all top-level domains supported for registration.
             </remarks>
       </Docs>
     </Member>

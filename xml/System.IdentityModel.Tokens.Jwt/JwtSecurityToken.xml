@@ -1,4 +1,4 @@
-﻿<Type Name="JwtSecurityToken" FullName="System.IdentityModel.Tokens.Jwt.JwtSecurityToken">
+<Type Name="JwtSecurityToken" FullName="System.IdentityModel.Tokens.Jwt.JwtSecurityToken">
   <TypeSignature Language="C#" Value="public class JwtSecurityToken : Microsoft.IdentityModel.Tokens.SecurityToken" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit JwtSecurityToken extends Microsoft.IdentityModel.Tokens.SecurityToken" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.Jwt.JwtSecurityToken" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type JwtSecurityToken = class&#xA;    inherit SecurityToken" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-    <AssemblyVersion>5.5.0.0</AssemblyVersion>
+    <AssemblyVersion>5.6.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.IdentityModel.Tokens.SecurityToken</BaseTypeName>
@@ -28,7 +28,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="jwtEncodedString" Type="System.String" />
@@ -53,7 +53,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="header" Type="System.IdentityModel.Tokens.Jwt.JwtHeader" />
@@ -78,7 +78,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="header" Type="System.IdentityModel.Tokens.Jwt.JwtHeader" />
@@ -102,14 +102,14 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public JwtSecurityToken (string issuer = null, string audience = null, System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt; claims = null, Nullable&lt;DateTime&gt; notBefore = null, Nullable&lt;DateTime&gt; expires = null, Microsoft.IdentityModel.Tokens.SigningCredentials signingCredentials = null);" />
+      <MemberSignature Language="C#" Value="public JwtSecurityToken (string issuer = default, string audience = default, System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt; claims = default, Nullable&lt;DateTime&gt; notBefore = default, Nullable&lt;DateTime&gt; expires = default, Microsoft.IdentityModel.Tokens.SigningCredentials signingCredentials = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string issuer, string audience, class System.Collections.Generic.IEnumerable`1&lt;class System.Security.Claims.Claim&gt; claims, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; notBefore, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; expires, class Microsoft.IdentityModel.Tokens.SigningCredentials signingCredentials) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Jwt.JwtSecurityToken.#ctor(System.String,System.String,System.Collections.Generic.IEnumerable{System.Security.Claims.Claim},System.Nullable{System.DateTime},System.Nullable{System.DateTime},Microsoft.IdentityModel.Tokens.SigningCredentials)" />
       <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.Jwt.JwtSecurityToken : string * string * seq&lt;System.Security.Claims.Claim&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Microsoft.IdentityModel.Tokens.SigningCredentials -&gt; System.IdentityModel.Tokens.Jwt.JwtSecurityToken" Usage="new System.IdentityModel.Tokens.Jwt.JwtSecurityToken (issuer, audience, claims, notBefore, expires, signingCredentials)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="issuer" Type="System.String" />
@@ -142,7 +142,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="header" Type="System.IdentityModel.Tokens.Jwt.JwtHeader" />
@@ -155,7 +155,8 @@
       </Parameters>
       <Docs>
         <param name="header">Defines cryptographic operations applied to the 'innerToken'.</param>
-        <param name="innerToken"></param>
+        <param name="innerToken">
+        </param>
         <param name="rawHeader">base64urlencoded JwtHeader</param>
         <param name="rawEncryptedKey">base64urlencoded key</param>
         <param name="rawInitializationVector">base64urlencoded initialization vector.</param>
@@ -177,7 +178,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -199,7 +200,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
@@ -221,7 +222,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt;</ReturnType>
@@ -248,7 +249,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -270,7 +271,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -292,7 +293,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.IdentityModel.Tokens.EncryptingCredentials</ReturnType>
@@ -314,7 +315,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IdentityModel.Tokens.Jwt.JwtHeader</ReturnType>
@@ -336,7 +337,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -358,7 +359,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IdentityModel.Tokens.Jwt.JwtSecurityToken</ReturnType>
@@ -371,6 +372,28 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="IssuedAt">
+      <MemberSignature Language="C#" Value="public virtual DateTime IssuedAt { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime IssuedAt" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Jwt.JwtSecurityToken.IssuedAt" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IssuedAt As DateTime" />
+      <MemberSignature Language="F#" Value="member this.IssuedAt : DateTime" Usage="System.IdentityModel.Tokens.Jwt.JwtSecurityToken.IssuedAt" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the 'value' of the 'issued at' claim { iat, 'value' } converted to a <see cref="T:System.DateTime" /> assuming 'value' is seconds since UnixEpoch (UTC 1970-01-01T0:0:0Z).
+            </summary>
+        <value>To be added.</value>
+        <remarks>If the 'issued at' claim is not found, then <see cref="F:System.DateTime.MinValue" /> is returned.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Issuer">
       <MemberSignature Language="C#" Value="public override string Issuer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Issuer" />
@@ -380,7 +403,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -402,7 +425,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IdentityModel.Tokens.Jwt.JwtPayload</ReturnType>
@@ -427,7 +450,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -450,7 +473,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -473,7 +496,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -496,7 +519,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -519,7 +542,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -542,7 +565,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -565,7 +588,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -588,7 +611,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -611,7 +634,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.IdentityModel.Tokens.SecurityKey</ReturnType>
@@ -633,7 +656,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -655,7 +678,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.IdentityModel.Tokens.SigningCredentials</ReturnType>
@@ -677,7 +700,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.IdentityModel.Tokens.SecurityKey</ReturnType>
@@ -700,7 +723,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -722,7 +745,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -744,7 +767,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -766,7 +789,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>

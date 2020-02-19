@@ -39,7 +39,7 @@ var account = CloudStorageAccount.Parse(storageConnectionString);
 // Do things with the account here...
 ```
 
-Service connection strings are used in other Azure services like [CosmosDB](/azure/documentdb/documentdb-dotnet-application#a-nametoc395637769astep-5-wiring-up-azure-cosmos-db), [Redis Cache](/azure/redis-cache/cache-dotnet-how-to-use-azure-redis-cache), and [Service Bus](/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues) and you can get those strings using the Azure portal, CLI, or PowerShell.  You can also use the Azure management libraries for .NET to query resources to build connection strings in your code. 
+Service connection strings are used in other Azure services like [CosmosDB](/azure/documentdb/documentdb-dotnet-application#a-nametoc395637769astep-5-wiring-up-azure-cosmos-db), [Azure Cache for Redis](/azure/azure-cache-for-redis/cache-dotnet-how-to-use-azure-redis-cache), and [Service Bus](/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues) and you can get those strings using the Azure portal, CLI, or PowerShell.  You can also use the Azure management libraries for .NET to query resources to build connection strings in your code. 
 
 This snippet uses the management libraries to create a storage account connection string:
 
@@ -70,9 +70,9 @@ Other libraries require your application to run with a [service principal](https
 
 Now that the service principal is created, two options are available to authenticate to the service principal to create and manage resources.
 
-For both options you will need to add the following nuget packages to your project.
+For both options you will need to add the following NuGet packages to your project.
 
-```
+```powershell
 Install-Package Microsoft.Azure.Management.Fluent
 Install-Package Microsoft.Azure.Management.ResourceManager.Fluent
 ```

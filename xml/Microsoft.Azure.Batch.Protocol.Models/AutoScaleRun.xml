@@ -1,4 +1,4 @@
-﻿<Type Name="AutoScaleRun" FullName="Microsoft.Azure.Batch.Protocol.Models.AutoScaleRun">
+<Type Name="AutoScaleRun" FullName="Microsoft.Azure.Batch.Protocol.Models.AutoScaleRun">
   <TypeSignature Language="C#" Value="public class AutoScaleRun" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AutoScaleRun extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.Protocol.Models.AutoScaleRun" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type AutoScaleRun = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -14,7 +14,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            The results and errors from an execution of a pool autoscale formula.
+            The results and errors from an execution of a Pool autoscale formula.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -27,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,7 +38,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AutoScaleRun (DateTime timestamp, string results = null, Microsoft.Azure.Batch.Protocol.Models.AutoScaleRunError error = null);" />
+      <MemberSignature Language="C#" Value="public AutoScaleRun (DateTime timestamp, string results = default, Microsoft.Azure.Batch.Protocol.Models.AutoScaleRunError error = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DateTime timestamp, string results, class Microsoft.Azure.Batch.Protocol.Models.AutoScaleRunError error) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.AutoScaleRun.#ctor(System.DateTime,System.String,Microsoft.Azure.Batch.Protocol.Models.AutoScaleRunError)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (timestamp As DateTime, Optional results As String = null, Optional error As AutoScaleRunError = null)" />
@@ -46,7 +46,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="timestamp" Type="System.DateTime" />
@@ -59,7 +59,7 @@
         <param name="results">The final values of all variables used in the
             evaluation of the autoscale formula.</param>
         <param name="error">Details of the error encountered evaluating the
-            autoscale formula on the pool, if the evaluation was
+            autoscale formula on the Pool, if the evaluation was
             unsuccessful.</param>
         <summary>
             Initializes a new instance of the AutoScaleRun class.
@@ -76,7 +76,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -89,7 +89,7 @@
       <Docs>
         <summary>
             Gets or sets details of the error encountered evaluating the
-            autoscale formula on the pool, if the evaluation was unsuccessful.
+            autoscale formula on the Pool, if the evaluation was unsuccessful.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -104,7 +104,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -135,7 +135,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

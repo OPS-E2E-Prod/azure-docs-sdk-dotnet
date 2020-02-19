@@ -1,4 +1,4 @@
-﻿<Type Name="FileProperties" FullName="Microsoft.Azure.Batch.Protocol.Models.FileProperties">
+<Type Name="FileProperties" FullName="Microsoft.Azure.Batch.Protocol.Models.FileProperties">
   <TypeSignature Language="C#" Value="public class FileProperties" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FileProperties extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.Protocol.Models.FileProperties" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type FileProperties = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -14,7 +14,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            The properties of a file on a compute node.
+            The properties of a file on a Compute Node.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -27,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,7 +38,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public FileProperties (DateTime lastModified, long contentLength, Nullable&lt;DateTime&gt; creationTime = null, string contentType = null, string fileMode = null);" />
+      <MemberSignature Language="C#" Value="public FileProperties (DateTime lastModified, long contentLength, Nullable&lt;DateTime&gt; creationTime = default, string contentType = default, string fileMode = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DateTime lastModified, int64 contentLength, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; creationTime, string contentType, string fileMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.FileProperties.#ctor(System.DateTime,System.Int64,System.Nullable{System.DateTime},System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (lastModified As DateTime, contentLength As Long, Optional creationTime As Nullable(Of DateTime) = null, Optional contentType As String = null, Optional fileMode As String = null)" />
@@ -46,7 +46,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="lastModified" Type="System.DateTime" />
@@ -78,7 +78,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -105,7 +105,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -132,7 +132,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -148,7 +148,7 @@
             </summary>
         <value>To be added.</value>
         <remarks>
-            The creation time is not returned for files on Linux compute nodes.
+            The creation time is not returned for files on Linux Compute Nodes.
             </remarks>
       </Docs>
     </Member>
@@ -161,7 +161,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -177,7 +177,7 @@
             </summary>
         <value>To be added.</value>
         <remarks>
-            The file mode is returned only for files on Linux compute nodes.
+            The file mode is returned only for files on Linux Compute Nodes.
             </remarks>
       </Docs>
     </Member>
@@ -190,7 +190,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

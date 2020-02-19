@@ -1,4 +1,4 @@
-﻿<Type Name="SaveConfigurationParameter" FullName="Microsoft.Azure.Management.ApiManagement.Models.SaveConfigurationParameter">
+<Type Name="SaveConfigurationParameter" FullName="Microsoft.Azure.Management.ApiManagement.Models.SaveConfigurationParameter">
   <TypeSignature Language="C#" Value="public class SaveConfigurationParameter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SaveConfigurationParameter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.ApiManagement.Models.SaveConfigurationParameter" />
@@ -13,13 +13,13 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="azure-dotnet">
+    <Attribute>
       <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
     <summary>
-            Parameters supplied to the Save Tenant Configuration operation.
+            Save Tenant Configuration Contract details.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -43,7 +43,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SaveConfigurationParameter (string branch, Nullable&lt;bool&gt; force = null);" />
+      <MemberSignature Language="C#" Value="public SaveConfigurationParameter (string branch, Nullable&lt;bool&gt; force = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string branch, valuetype System.Nullable`1&lt;bool&gt; force) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.Models.SaveConfigurationParameter.#ctor(System.String,System.Nullable{System.Boolean})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (branch As String, Optional force As Nullable(Of Boolean) = null)" />
@@ -81,11 +81,8 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.branch")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="branch")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -112,11 +109,8 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.force")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="azure-dotnet-preview">
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="force")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

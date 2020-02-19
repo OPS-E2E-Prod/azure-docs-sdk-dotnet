@@ -1,4 +1,4 @@
-﻿<Type Name="DocumentsOperationsExtensions" FullName="Microsoft.Azure.Search.DocumentsOperationsExtensions">
+<Type Name="DocumentsOperationsExtensions" FullName="Microsoft.Azure.Search.DocumentsOperationsExtensions">
   <TypeSignature Language="C#" Value="public static class DocumentsOperationsExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DocumentsOperationsExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Search.DocumentsOperationsExtensions" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type DocumentsOperationsExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-    <AssemblyVersion>9.0.0.0</AssemblyVersion>
+    <AssemblyVersion>10.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -20,14 +20,14 @@
   </Docs>
   <Members>
     <Member MemberName="Autocomplete">
-      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Search.Models.AutocompleteResult Autocomplete (this Microsoft.Azure.Search.IDocumentsOperations operations, string searchText, string suggesterName, Microsoft.Azure.Search.Models.AutocompleteParameters autocompleteParameters = null, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Search.Models.AutocompleteResult Autocomplete (this Microsoft.Azure.Search.IDocumentsOperations operations, string searchText, string suggesterName, Microsoft.Azure.Search.Models.AutocompleteParameters autocompleteParameters = default, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.Search.Models.AutocompleteResult Autocomplete(class Microsoft.Azure.Search.IDocumentsOperations operations, string searchText, string suggesterName, class Microsoft.Azure.Search.Models.AutocompleteParameters autocompleteParameters, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.DocumentsOperationsExtensions.Autocomplete(Microsoft.Azure.Search.IDocumentsOperations,System.String,System.String,Microsoft.Azure.Search.Models.AutocompleteParameters,Microsoft.Azure.Search.Models.SearchRequestOptions)" />
       <MemberSignature Language="F#" Value="static member Autocomplete : Microsoft.Azure.Search.IDocumentsOperations * string * string * Microsoft.Azure.Search.Models.AutocompleteParameters * Microsoft.Azure.Search.Models.SearchRequestOptions -&gt; Microsoft.Azure.Search.Models.AutocompleteResult" Usage="Microsoft.Azure.Search.DocumentsOperationsExtensions.Autocomplete (operations, searchText, suggesterName, autocompleteParameters, searchRequestOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Search.Models.AutocompleteResult</ReturnType>
@@ -50,21 +50,21 @@
             Additional parameters for the operation
             </param>
         <summary>
-            Queries the number of documents in the Azure Search index.
+            Queries the number of documents in the search index.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutocompleteAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.AutocompleteResult&gt; AutocompleteAsync (this Microsoft.Azure.Search.IDocumentsOperations operations, string searchText, string suggesterName, Microsoft.Azure.Search.Models.AutocompleteParameters autocompleteParameters = null, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.AutocompleteResult&gt; AutocompleteAsync (this Microsoft.Azure.Search.IDocumentsOperations operations, string searchText, string suggesterName, Microsoft.Azure.Search.Models.AutocompleteParameters autocompleteParameters = default, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Search.Models.AutocompleteResult&gt; AutocompleteAsync(class Microsoft.Azure.Search.IDocumentsOperations operations, string searchText, string suggesterName, class Microsoft.Azure.Search.Models.AutocompleteParameters autocompleteParameters, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.DocumentsOperationsExtensions.AutocompleteAsync(Microsoft.Azure.Search.IDocumentsOperations,System.String,System.String,Microsoft.Azure.Search.Models.AutocompleteParameters,Microsoft.Azure.Search.Models.SearchRequestOptions,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member AutocompleteAsync : Microsoft.Azure.Search.IDocumentsOperations * string * string * Microsoft.Azure.Search.Models.AutocompleteParameters * Microsoft.Azure.Search.Models.SearchRequestOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.AutocompleteResult&gt;" Usage="Microsoft.Azure.Search.DocumentsOperationsExtensions.AutocompleteAsync (operations, searchText, suggesterName, autocompleteParameters, searchRequestOptions, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.AutocompleteResult&gt;</ReturnType>
@@ -91,21 +91,21 @@
             The cancellation token.
             </param>
         <summary>
-            Queries the number of documents in the Azure Search index.
+            Queries the number of documents in the search index.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContinueSearch">
-      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Search.Models.DocumentSearchResult&lt;Microsoft.Azure.Search.Models.Document&gt; ContinueSearch (this Microsoft.Azure.Search.IDocumentsOperations operations, Microsoft.Azure.Search.Models.SearchContinuationToken continuationToken, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Search.Models.DocumentSearchResult&lt;Microsoft.Azure.Search.Models.Document&gt; ContinueSearch (this Microsoft.Azure.Search.IDocumentsOperations operations, Microsoft.Azure.Search.Models.SearchContinuationToken continuationToken, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.Search.Models.DocumentSearchResult`1&lt;class Microsoft.Azure.Search.Models.Document&gt; ContinueSearch(class Microsoft.Azure.Search.IDocumentsOperations operations, class Microsoft.Azure.Search.Models.SearchContinuationToken continuationToken, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.DocumentsOperationsExtensions.ContinueSearch(Microsoft.Azure.Search.IDocumentsOperations,Microsoft.Azure.Search.Models.SearchContinuationToken,Microsoft.Azure.Search.Models.SearchRequestOptions)" />
       <MemberSignature Language="F#" Value="static member ContinueSearch : Microsoft.Azure.Search.IDocumentsOperations * Microsoft.Azure.Search.Models.SearchContinuationToken * Microsoft.Azure.Search.Models.SearchRequestOptions -&gt; Microsoft.Azure.Search.Models.DocumentSearchResult&lt;Microsoft.Azure.Search.Models.Document&gt;" Usage="Microsoft.Azure.Search.DocumentsOperationsExtensions.ContinueSearch (operations, continuationToken, searchRequestOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Search.Models.DocumentSearchResult&lt;Microsoft.Azure.Search.Models.Document&gt;</ReturnType>
@@ -126,7 +126,7 @@
             Additional parameters for the operation
             </param>
         <summary>
-            Retrieves the next page of search results from the Azure Search index. 
+            Retrieves the next page of search results from the search index. 
             <see href="https://docs.microsoft.com/rest/api/searchservice/Search-Documents" /></summary>
         <returns>
             Response containing the documents matching the query.
@@ -140,7 +140,7 @@
             for more information.
             </para>
           <para>
-            If Azure Search can't include all results in a single response, the response returned will include a
+            If Azure Cognitive Search can't include all results in a single response, the response returned will include a
             continuation token that can be passed to ContinueSearch to retrieve more results.
             See <c cref="P:Microsoft.Azure.Search.Models.DocumentSearchResult`1.ContinuationToken">DocumentSearchResult.ContinuationToken</c>
             for more information.
@@ -156,14 +156,14 @@
       </Docs>
     </Member>
     <Member MemberName="ContinueSearch&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Search.Models.DocumentSearchResult&lt;T&gt; ContinueSearch&lt;T&gt; (this Microsoft.Azure.Search.IDocumentsOperations operations, Microsoft.Azure.Search.Models.SearchContinuationToken continuationToken, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Search.Models.DocumentSearchResult&lt;T&gt; ContinueSearch&lt;T&gt; (this Microsoft.Azure.Search.IDocumentsOperations operations, Microsoft.Azure.Search.Models.SearchContinuationToken continuationToken, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.Search.Models.DocumentSearchResult`1&lt;!!T&gt; ContinueSearch&lt;T&gt;(class Microsoft.Azure.Search.IDocumentsOperations operations, class Microsoft.Azure.Search.Models.SearchContinuationToken continuationToken, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.DocumentsOperationsExtensions.ContinueSearch``1(Microsoft.Azure.Search.IDocumentsOperations,Microsoft.Azure.Search.Models.SearchContinuationToken,Microsoft.Azure.Search.Models.SearchRequestOptions)" />
       <MemberSignature Language="F#" Value="static member ContinueSearch : Microsoft.Azure.Search.IDocumentsOperations * Microsoft.Azure.Search.Models.SearchContinuationToken * Microsoft.Azure.Search.Models.SearchRequestOptions -&gt; Microsoft.Azure.Search.Models.DocumentSearchResult&lt;'T&gt;" Usage="Microsoft.Azure.Search.DocumentsOperationsExtensions.ContinueSearch (operations, continuationToken, searchRequestOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Search.Models.DocumentSearchResult&lt;T&gt;</ReturnType>
@@ -191,7 +191,7 @@
             Additional parameters for the operation
             </param>
         <summary>
-            Retrieves the next page of search results from the Azure Search index.
+            Retrieves the next page of search results from the search index.
             <see href="https://docs.microsoft.com/rest/api/searchservice/Search-Documents" /></summary>
         <returns>
             Response containing the documents matching the query.
@@ -199,12 +199,12 @@
         <remarks>
           <para>
             The generic overloads of the ContinueSearch, ContinueSearchAsync, and ContinueSearchWithHttpMessagesAsync
-            methods support mapping of Azure Search field types to .NET types via the type parameter T. See 
+            methods support mapping of search field types to .NET types via the type parameter T. See 
             <see cref="M:Microsoft.Azure.Search.IDocumentsOperations.GetWithHttpMessagesAsync``1(System.String,System.Collections.Generic.IEnumerable{System.String},Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
             for more details on the type mapping.
             </para>
           <para>
-            If Azure Search can't include all results in a single response, the response returned will include a
+            If Azure Cognitive Search can't include all results in a single response, the response returned will include a
             continuation token that can be passed to ContinueSearch to retrieve more results.
             See <c cref="P:Microsoft.Azure.Search.Models.DocumentSearchResult`1.ContinuationToken">DocumentSearchResult.ContinuationToken</c>
             for more information.
@@ -220,14 +220,14 @@
       </Docs>
     </Member>
     <Member MemberName="ContinueSearchAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.DocumentSearchResult&lt;Microsoft.Azure.Search.Models.Document&gt;&gt; ContinueSearchAsync (this Microsoft.Azure.Search.IDocumentsOperations operations, Microsoft.Azure.Search.Models.SearchContinuationToken continuationToken, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.DocumentSearchResult&lt;Microsoft.Azure.Search.Models.Document&gt;&gt; ContinueSearchAsync (this Microsoft.Azure.Search.IDocumentsOperations operations, Microsoft.Azure.Search.Models.SearchContinuationToken continuationToken, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Search.Models.DocumentSearchResult`1&lt;class Microsoft.Azure.Search.Models.Document&gt;&gt; ContinueSearchAsync(class Microsoft.Azure.Search.IDocumentsOperations operations, class Microsoft.Azure.Search.Models.SearchContinuationToken continuationToken, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.DocumentsOperationsExtensions.ContinueSearchAsync(Microsoft.Azure.Search.IDocumentsOperations,Microsoft.Azure.Search.Models.SearchContinuationToken,Microsoft.Azure.Search.Models.SearchRequestOptions,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ContinueSearchAsync : Microsoft.Azure.Search.IDocumentsOperations * Microsoft.Azure.Search.Models.SearchContinuationToken * Microsoft.Azure.Search.Models.SearchRequestOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.DocumentSearchResult&lt;Microsoft.Azure.Search.Models.Document&gt;&gt;" Usage="Microsoft.Azure.Search.DocumentsOperationsExtensions.ContinueSearchAsync (operations, continuationToken, searchRequestOptions, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.DocumentSearchResult&lt;Microsoft.Azure.Search.Models.Document&gt;&gt;</ReturnType>
@@ -252,7 +252,7 @@
             The cancellation token.
             </param>
         <summary>
-            Retrieves the next page of search results from the Azure Search index.
+            Retrieves the next page of search results from the search index.
             <see href="https://docs.microsoft.com/rest/api/searchservice/Search-Documents" /></summary>
         <returns>
             Response containing the documents matching the query.
@@ -266,7 +266,7 @@
             for more information.
             </para>
           <para>
-            If Azure Search can't include all results in a single response, the response returned will include a
+            If Azure Cognitive Search can't include all results in a single response, the response returned will include a
             continuation token that can be passed to ContinueSearch to retrieve more results.
             See <c cref="P:Microsoft.Azure.Search.Models.DocumentSearchResult`1.ContinuationToken">DocumentSearchResult.ContinuationToken</c>
             for more information.
@@ -282,14 +282,14 @@
       </Docs>
     </Member>
     <Member MemberName="ContinueSearchAsync&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.DocumentSearchResult&lt;T&gt;&gt; ContinueSearchAsync&lt;T&gt; (this Microsoft.Azure.Search.IDocumentsOperations operations, Microsoft.Azure.Search.Models.SearchContinuationToken continuationToken, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.DocumentSearchResult&lt;T&gt;&gt; ContinueSearchAsync&lt;T&gt; (this Microsoft.Azure.Search.IDocumentsOperations operations, Microsoft.Azure.Search.Models.SearchContinuationToken continuationToken, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Search.Models.DocumentSearchResult`1&lt;!!T&gt;&gt; ContinueSearchAsync&lt;T&gt;(class Microsoft.Azure.Search.IDocumentsOperations operations, class Microsoft.Azure.Search.Models.SearchContinuationToken continuationToken, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.DocumentsOperationsExtensions.ContinueSearchAsync``1(Microsoft.Azure.Search.IDocumentsOperations,Microsoft.Azure.Search.Models.SearchContinuationToken,Microsoft.Azure.Search.Models.SearchRequestOptions,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ContinueSearchAsync : Microsoft.Azure.Search.IDocumentsOperations * Microsoft.Azure.Search.Models.SearchContinuationToken * Microsoft.Azure.Search.Models.SearchRequestOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.DocumentSearchResult&lt;'T&gt;&gt;" Usage="Microsoft.Azure.Search.DocumentsOperationsExtensions.ContinueSearchAsync (operations, continuationToken, searchRequestOptions, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.DocumentSearchResult&lt;T&gt;&gt;</ReturnType>
@@ -321,7 +321,7 @@
             The cancellation token.
             </param>
         <summary>
-            Retrieves the next page of search results from the Azure Search index.
+            Retrieves the next page of search results from the search index.
             <see href="https://docs.microsoft.com/rest/api/searchservice/Search-Documents" /></summary>
         <returns>
             Response containing the documents matching the query.
@@ -329,12 +329,12 @@
         <remarks>
           <para>
             The generic overloads of the ContinueSearch, ContinueSearchAsync, and ContinueSearchWithHttpMessagesAsync
-            methods support mapping of Azure Search field types to .NET types via the type parameter T. See 
+            methods support mapping of search field types to .NET types via the type parameter T. See 
             <see cref="M:Microsoft.Azure.Search.IDocumentsOperations.GetWithHttpMessagesAsync``1(System.String,System.Collections.Generic.IEnumerable{System.String},Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
             for more details on the type mapping.
             </para>
           <para>
-            If Azure Search can't include all results in a single response, the response returned will include a
+            If Azure Cognitive Search can't include all results in a single response, the response returned will include a
             continuation token that can be passed to ContinueSearch to retrieve more results.
             See <c cref="P:Microsoft.Azure.Search.Models.DocumentSearchResult`1.ContinuationToken">DocumentSearchResult.ContinuationToken</c>
             for more information.
@@ -350,14 +350,14 @@
       </Docs>
     </Member>
     <Member MemberName="Count">
-      <MemberSignature Language="C#" Value="public static long Count (this Microsoft.Azure.Search.IDocumentsOperations operations, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null);" />
+      <MemberSignature Language="C#" Value="public static long Count (this Microsoft.Azure.Search.IDocumentsOperations operations, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 Count(class Microsoft.Azure.Search.IDocumentsOperations operations, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.DocumentsOperationsExtensions.Count(Microsoft.Azure.Search.IDocumentsOperations,Microsoft.Azure.Search.Models.SearchRequestOptions)" />
       <MemberSignature Language="F#" Value="static member Count : Microsoft.Azure.Search.IDocumentsOperations * Microsoft.Azure.Search.Models.SearchRequestOptions -&gt; int64" Usage="Microsoft.Azure.Search.DocumentsOperationsExtensions.Count (operations, searchRequestOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -374,21 +374,21 @@
             Additional parameters for the operation
             </param>
         <summary>
-            Queries the number of documents in the Azure Search index.
+            Queries the number of documents in the search index.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CountAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;long&gt; CountAsync (this Microsoft.Azure.Search.IDocumentsOperations operations, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;long&gt; CountAsync (this Microsoft.Azure.Search.IDocumentsOperations operations, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;int64&gt; CountAsync(class Microsoft.Azure.Search.IDocumentsOperations operations, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.DocumentsOperationsExtensions.CountAsync(Microsoft.Azure.Search.IDocumentsOperations,Microsoft.Azure.Search.Models.SearchRequestOptions,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member CountAsync : Microsoft.Azure.Search.IDocumentsOperations * Microsoft.Azure.Search.Models.SearchRequestOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;int64&gt;" Usage="Microsoft.Azure.Search.DocumentsOperationsExtensions.CountAsync (operations, searchRequestOptions, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Int64&gt;</ReturnType>
@@ -409,21 +409,21 @@
             The cancellation token.
             </param>
         <summary>
-            Queries the number of documents in the Azure Search index.
+            Queries the number of documents in the search index.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Get">
-      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Search.Models.Document Get (this Microsoft.Azure.Search.IDocumentsOperations operations, string key, System.Collections.Generic.IEnumerable&lt;string&gt; selectedFields = null, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Search.Models.Document Get (this Microsoft.Azure.Search.IDocumentsOperations operations, string key, System.Collections.Generic.IEnumerable&lt;string&gt; selectedFields = default, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.Search.Models.Document Get(class Microsoft.Azure.Search.IDocumentsOperations operations, string key, class System.Collections.Generic.IEnumerable`1&lt;string&gt; selectedFields, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.DocumentsOperationsExtensions.Get(Microsoft.Azure.Search.IDocumentsOperations,System.String,System.Collections.Generic.IEnumerable{System.String},Microsoft.Azure.Search.Models.SearchRequestOptions)" />
       <MemberSignature Language="F#" Value="static member Get : Microsoft.Azure.Search.IDocumentsOperations * string * seq&lt;string&gt; * Microsoft.Azure.Search.Models.SearchRequestOptions -&gt; Microsoft.Azure.Search.Models.Document" Usage="Microsoft.Azure.Search.DocumentsOperationsExtensions.Get (operations, key, selectedFields, searchRequestOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Search.Models.Document</ReturnType>
@@ -451,7 +451,7 @@
             Additional parameters for the operation
             </param>
         <summary>
-            Retrieves a document from the Azure Search index.
+            Retrieves a document from the search index.
             <see href="https://docs.microsoft.com/rest/api/searchservice/Lookup-Document" /></summary>
         <returns>
             The requested document.
@@ -465,14 +465,14 @@
       </Docs>
     </Member>
     <Member MemberName="Get&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static T Get&lt;T&gt; (this Microsoft.Azure.Search.IDocumentsOperations operations, string key, System.Collections.Generic.IEnumerable&lt;string&gt; selectedFields = null, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null);" />
+      <MemberSignature Language="C#" Value="public static T Get&lt;T&gt; (this Microsoft.Azure.Search.IDocumentsOperations operations, string key, System.Collections.Generic.IEnumerable&lt;string&gt; selectedFields = default, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Get&lt;T&gt;(class Microsoft.Azure.Search.IDocumentsOperations operations, string key, class System.Collections.Generic.IEnumerable`1&lt;string&gt; selectedFields, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.DocumentsOperationsExtensions.Get``1(Microsoft.Azure.Search.IDocumentsOperations,System.String,System.Collections.Generic.IEnumerable{System.String},Microsoft.Azure.Search.Models.SearchRequestOptions)" />
       <MemberSignature Language="F#" Value="static member Get : Microsoft.Azure.Search.IDocumentsOperations * string * seq&lt;string&gt; * Microsoft.Azure.Search.Models.SearchRequestOptions -&gt; 'T" Usage="Microsoft.Azure.Search.DocumentsOperationsExtensions.Get (operations, key, selectedFields, searchRequestOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -508,7 +508,7 @@
             Additional parameters for the operation
             </param>
         <summary>
-            Retrieves a document from the Azure Search index.
+            Retrieves a document from the search index.
             <see href="https://docs.microsoft.com/rest/api/searchservice/Lookup-Document" /></summary>
         <returns>
             The requested document.
@@ -522,14 +522,14 @@
       </Docs>
     </Member>
     <Member MemberName="GetAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.Document&gt; GetAsync (this Microsoft.Azure.Search.IDocumentsOperations operations, string key, System.Collections.Generic.IEnumerable&lt;string&gt; selectedFields = null, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.Document&gt; GetAsync (this Microsoft.Azure.Search.IDocumentsOperations operations, string key, System.Collections.Generic.IEnumerable&lt;string&gt; selectedFields = default, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Search.Models.Document&gt; GetAsync(class Microsoft.Azure.Search.IDocumentsOperations operations, string key, class System.Collections.Generic.IEnumerable`1&lt;string&gt; selectedFields, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.DocumentsOperationsExtensions.GetAsync(Microsoft.Azure.Search.IDocumentsOperations,System.String,System.Collections.Generic.IEnumerable{System.String},Microsoft.Azure.Search.Models.SearchRequestOptions,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member GetAsync : Microsoft.Azure.Search.IDocumentsOperations * string * seq&lt;string&gt; * Microsoft.Azure.Search.Models.SearchRequestOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.Document&gt;" Usage="Microsoft.Azure.Search.DocumentsOperationsExtensions.GetAsync (operations, key, selectedFields, searchRequestOptions, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.Document&gt;</ReturnType>
@@ -561,7 +561,7 @@
             The cancellation token.
             </param>
         <summary>
-            Retrieves a document from the Azure Search index.
+            Retrieves a document from the search index.
             <see href="https://docs.microsoft.com/rest/api/searchservice/Lookup-Document" /></summary>
         <returns>
             The requested document.
@@ -575,14 +575,14 @@
       </Docs>
     </Member>
     <Member MemberName="GetAsync&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;T&gt; GetAsync&lt;T&gt; (this Microsoft.Azure.Search.IDocumentsOperations operations, string key, System.Collections.Generic.IEnumerable&lt;string&gt; selectedFields = null, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;T&gt; GetAsync&lt;T&gt; (this Microsoft.Azure.Search.IDocumentsOperations operations, string key, System.Collections.Generic.IEnumerable&lt;string&gt; selectedFields = default, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;!!T&gt; GetAsync&lt;T&gt;(class Microsoft.Azure.Search.IDocumentsOperations operations, string key, class System.Collections.Generic.IEnumerable`1&lt;string&gt; selectedFields, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.DocumentsOperationsExtensions.GetAsync``1(Microsoft.Azure.Search.IDocumentsOperations,System.String,System.Collections.Generic.IEnumerable{System.String},Microsoft.Azure.Search.Models.SearchRequestOptions,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member GetAsync : Microsoft.Azure.Search.IDocumentsOperations * string * seq&lt;string&gt; * Microsoft.Azure.Search.Models.SearchRequestOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="Microsoft.Azure.Search.DocumentsOperationsExtensions.GetAsync (operations, key, selectedFields, searchRequestOptions, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
@@ -622,7 +622,7 @@
             The cancellation token.
             </param>
         <summary>
-            Retrieves a document from the Azure Search index.
+            Retrieves a document from the search index.
             <see href="https://docs.microsoft.com/rest/api/searchservice/Lookup-Document" /></summary>
         <returns>
             The requested document.
@@ -636,14 +636,14 @@
       </Docs>
     </Member>
     <Member MemberName="Index">
-      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Search.Models.DocumentIndexResult Index (this Microsoft.Azure.Search.IDocumentsOperations operations, Microsoft.Azure.Search.Models.IndexBatch&lt;Microsoft.Azure.Search.Models.Document&gt; batch, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Search.Models.DocumentIndexResult Index (this Microsoft.Azure.Search.IDocumentsOperations operations, Microsoft.Azure.Search.Models.IndexBatch&lt;Microsoft.Azure.Search.Models.Document&gt; batch, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.Search.Models.DocumentIndexResult Index(class Microsoft.Azure.Search.IDocumentsOperations operations, class Microsoft.Azure.Search.Models.IndexBatch`1&lt;class Microsoft.Azure.Search.Models.Document&gt; batch, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.DocumentsOperationsExtensions.Index(Microsoft.Azure.Search.IDocumentsOperations,Microsoft.Azure.Search.Models.IndexBatch{Microsoft.Azure.Search.Models.Document},Microsoft.Azure.Search.Models.SearchRequestOptions)" />
       <MemberSignature Language="F#" Value="static member Index : Microsoft.Azure.Search.IDocumentsOperations * Microsoft.Azure.Search.Models.IndexBatch&lt;Microsoft.Azure.Search.Models.Document&gt; * Microsoft.Azure.Search.Models.SearchRequestOptions -&gt; Microsoft.Azure.Search.Models.DocumentIndexResult" Usage="Microsoft.Azure.Search.DocumentsOperationsExtensions.Index (operations, batch, searchRequestOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Search.Models.DocumentIndexResult</ReturnType>
@@ -664,7 +664,7 @@
             Additional parameters for the operation
             </param>
         <summary>
-            Sends a batch of upload, merge, and/or delete actions to the Azure Search index.
+            Sends a batch of upload, merge, and/or delete actions to the search index.
             <see href="https://docs.microsoft.com/rest/api/searchservice/addupdate-or-delete-documents" /></summary>
         <returns>
             Response containing the status of operations for all actions in the batch.
@@ -686,14 +686,14 @@
       </Docs>
     </Member>
     <Member MemberName="Index&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Search.Models.DocumentIndexResult Index&lt;T&gt; (this Microsoft.Azure.Search.IDocumentsOperations operations, Microsoft.Azure.Search.Models.IndexBatch&lt;T&gt; batch, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Search.Models.DocumentIndexResult Index&lt;T&gt; (this Microsoft.Azure.Search.IDocumentsOperations operations, Microsoft.Azure.Search.Models.IndexBatch&lt;T&gt; batch, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.Search.Models.DocumentIndexResult Index&lt;T&gt;(class Microsoft.Azure.Search.IDocumentsOperations operations, class Microsoft.Azure.Search.Models.IndexBatch`1&lt;!!T&gt; batch, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.DocumentsOperationsExtensions.Index``1(Microsoft.Azure.Search.IDocumentsOperations,Microsoft.Azure.Search.Models.IndexBatch{``0},Microsoft.Azure.Search.Models.SearchRequestOptions)" />
       <MemberSignature Language="F#" Value="static member Index : Microsoft.Azure.Search.IDocumentsOperations * Microsoft.Azure.Search.Models.IndexBatch&lt;'T&gt; * Microsoft.Azure.Search.Models.SearchRequestOptions -&gt; Microsoft.Azure.Search.Models.DocumentIndexResult" Usage="Microsoft.Azure.Search.DocumentsOperationsExtensions.Index (operations, batch, searchRequestOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Search.Models.DocumentIndexResult</ReturnType>
@@ -720,13 +720,13 @@
             Additional parameters for the operation
             </param>
         <summary>
-            Sends a batch of upload, merge, and/or delete actions to the Azure Search index.
+            Sends a batch of upload, merge, and/or delete actions to the search index.
             <see href="https://docs.microsoft.com/rest/api/searchservice/addupdate-or-delete-documents" /></summary>
         <returns>
             Response containing the status of operations for all actions in the batch.
             </returns>
         <remarks>
-            The generic overloads of the Index and IndexAsync methods support mapping of Azure Search field types to
+            The generic overloads of the Index and IndexAsync methods support mapping of search field types to
             .NET types via the type parameter T. See 
             <see cref="M:Microsoft.Azure.Search.IDocumentsOperations.GetWithHttpMessagesAsync``1(System.String,System.Collections.Generic.IEnumerable{System.String},Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
             for more details on the type mapping.
@@ -742,14 +742,14 @@
       </Docs>
     </Member>
     <Member MemberName="IndexAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.DocumentIndexResult&gt; IndexAsync (this Microsoft.Azure.Search.IDocumentsOperations operations, Microsoft.Azure.Search.Models.IndexBatch&lt;Microsoft.Azure.Search.Models.Document&gt; batch, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.DocumentIndexResult&gt; IndexAsync (this Microsoft.Azure.Search.IDocumentsOperations operations, Microsoft.Azure.Search.Models.IndexBatch&lt;Microsoft.Azure.Search.Models.Document&gt; batch, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Search.Models.DocumentIndexResult&gt; IndexAsync(class Microsoft.Azure.Search.IDocumentsOperations operations, class Microsoft.Azure.Search.Models.IndexBatch`1&lt;class Microsoft.Azure.Search.Models.Document&gt; batch, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.DocumentsOperationsExtensions.IndexAsync(Microsoft.Azure.Search.IDocumentsOperations,Microsoft.Azure.Search.Models.IndexBatch{Microsoft.Azure.Search.Models.Document},Microsoft.Azure.Search.Models.SearchRequestOptions,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member IndexAsync : Microsoft.Azure.Search.IDocumentsOperations * Microsoft.Azure.Search.Models.IndexBatch&lt;Microsoft.Azure.Search.Models.Document&gt; * Microsoft.Azure.Search.Models.SearchRequestOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.DocumentIndexResult&gt;" Usage="Microsoft.Azure.Search.DocumentsOperationsExtensions.IndexAsync (operations, batch, searchRequestOptions, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.DocumentIndexResult&gt;</ReturnType>
@@ -774,7 +774,7 @@
             The cancellation token.
             </param>
         <summary>
-            Sends a batch of upload, merge, and/or delete actions to the Azure Search index.
+            Sends a batch of upload, merge, and/or delete actions to the search index.
             <see href="https://docs.microsoft.com/rest/api/searchservice/addupdate-or-delete-documents" /></summary>
         <returns>
             Response containing the status of operations for all actions in the batch.
@@ -796,14 +796,14 @@
       </Docs>
     </Member>
     <Member MemberName="IndexAsync&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.DocumentIndexResult&gt; IndexAsync&lt;T&gt; (this Microsoft.Azure.Search.IDocumentsOperations operations, Microsoft.Azure.Search.Models.IndexBatch&lt;T&gt; batch, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.DocumentIndexResult&gt; IndexAsync&lt;T&gt; (this Microsoft.Azure.Search.IDocumentsOperations operations, Microsoft.Azure.Search.Models.IndexBatch&lt;T&gt; batch, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Search.Models.DocumentIndexResult&gt; IndexAsync&lt;T&gt;(class Microsoft.Azure.Search.IDocumentsOperations operations, class Microsoft.Azure.Search.Models.IndexBatch`1&lt;!!T&gt; batch, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.DocumentsOperationsExtensions.IndexAsync``1(Microsoft.Azure.Search.IDocumentsOperations,Microsoft.Azure.Search.Models.IndexBatch{``0},Microsoft.Azure.Search.Models.SearchRequestOptions,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member IndexAsync : Microsoft.Azure.Search.IDocumentsOperations * Microsoft.Azure.Search.Models.IndexBatch&lt;'T&gt; * Microsoft.Azure.Search.Models.SearchRequestOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.DocumentIndexResult&gt;" Usage="Microsoft.Azure.Search.DocumentsOperationsExtensions.IndexAsync (operations, batch, searchRequestOptions, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.DocumentIndexResult&gt;</ReturnType>
@@ -834,13 +834,13 @@
             The cancellation token.
             </param>
         <summary>
-            Sends a batch of upload, merge, and/or delete actions to the Azure Search index.
+            Sends a batch of upload, merge, and/or delete actions to the search index.
             <see href="https://docs.microsoft.com/rest/api/searchservice/addupdate-or-delete-documents" /></summary>
         <returns>
             Response containing the status of operations for all actions in the batch.
             </returns>
         <remarks>
-            The generic overloads of the Index and IndexAsync methods support mapping of Azure Search field types to
+            The generic overloads of the Index and IndexAsync methods support mapping of search field types to
             .NET types via the type parameter T. See 
             <see cref="M:Microsoft.Azure.Search.IDocumentsOperations.GetWithHttpMessagesAsync``1(System.String,System.Collections.Generic.IEnumerable{System.String},Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
             for more details on the type mapping.
@@ -856,14 +856,14 @@
       </Docs>
     </Member>
     <Member MemberName="Search">
-      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Search.Models.DocumentSearchResult&lt;Microsoft.Azure.Search.Models.Document&gt; Search (this Microsoft.Azure.Search.IDocumentsOperations operations, string searchText, Microsoft.Azure.Search.Models.SearchParameters searchParameters = null, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Search.Models.DocumentSearchResult&lt;Microsoft.Azure.Search.Models.Document&gt; Search (this Microsoft.Azure.Search.IDocumentsOperations operations, string searchText, Microsoft.Azure.Search.Models.SearchParameters searchParameters = default, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.Search.Models.DocumentSearchResult`1&lt;class Microsoft.Azure.Search.Models.Document&gt; Search(class Microsoft.Azure.Search.IDocumentsOperations operations, string searchText, class Microsoft.Azure.Search.Models.SearchParameters searchParameters, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.DocumentsOperationsExtensions.Search(Microsoft.Azure.Search.IDocumentsOperations,System.String,Microsoft.Azure.Search.Models.SearchParameters,Microsoft.Azure.Search.Models.SearchRequestOptions)" />
       <MemberSignature Language="F#" Value="static member Search : Microsoft.Azure.Search.IDocumentsOperations * string * Microsoft.Azure.Search.Models.SearchParameters * Microsoft.Azure.Search.Models.SearchRequestOptions -&gt; Microsoft.Azure.Search.Models.DocumentSearchResult&lt;Microsoft.Azure.Search.Models.Document&gt;" Usage="Microsoft.Azure.Search.DocumentsOperationsExtensions.Search (operations, searchText, searchParameters, searchRequestOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Search.Models.DocumentSearchResult&lt;Microsoft.Azure.Search.Models.Document&gt;</ReturnType>
@@ -890,7 +890,7 @@
             Additional parameters for the operation
             </param>
         <summary>
-            Searches for documents in the Azure Search index.
+            Searches for documents in the search index.
             <see href="https://docs.microsoft.com/rest/api/searchservice/Search-Documents" /></summary>
         <returns>
             Response containing the documents matching the query.
@@ -903,7 +903,7 @@
             for more information.
             </para>
           <para>
-            If Azure Search can't include all results in a single response, the response returned will include a
+            If Azure Cognitive Search can't include all results in a single response, the response returned will include a
             continuation token that can be passed to ContinueSearch to retrieve more results.
             See <c cref="P:Microsoft.Azure.Search.Models.DocumentSearchResult`1.ContinuationToken">DocumentSearchResult.ContinuationToken</c>
             for more information.
@@ -912,14 +912,14 @@
       </Docs>
     </Member>
     <Member MemberName="Search&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Search.Models.DocumentSearchResult&lt;T&gt; Search&lt;T&gt; (this Microsoft.Azure.Search.IDocumentsOperations operations, string searchText, Microsoft.Azure.Search.Models.SearchParameters searchParameters = null, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Search.Models.DocumentSearchResult&lt;T&gt; Search&lt;T&gt; (this Microsoft.Azure.Search.IDocumentsOperations operations, string searchText, Microsoft.Azure.Search.Models.SearchParameters searchParameters = default, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.Search.Models.DocumentSearchResult`1&lt;!!T&gt; Search&lt;T&gt;(class Microsoft.Azure.Search.IDocumentsOperations operations, string searchText, class Microsoft.Azure.Search.Models.SearchParameters searchParameters, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.DocumentsOperationsExtensions.Search``1(Microsoft.Azure.Search.IDocumentsOperations,System.String,Microsoft.Azure.Search.Models.SearchParameters,Microsoft.Azure.Search.Models.SearchRequestOptions)" />
       <MemberSignature Language="F#" Value="static member Search : Microsoft.Azure.Search.IDocumentsOperations * string * Microsoft.Azure.Search.Models.SearchParameters * Microsoft.Azure.Search.Models.SearchRequestOptions -&gt; Microsoft.Azure.Search.Models.DocumentSearchResult&lt;'T&gt;" Usage="Microsoft.Azure.Search.DocumentsOperationsExtensions.Search (operations, searchText, searchParameters, searchRequestOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Search.Models.DocumentSearchResult&lt;T&gt;</ReturnType>
@@ -953,7 +953,7 @@
             Additional parameters for the operation
             </param>
         <summary>
-            Searches for documents in the Azure Search index.
+            Searches for documents in the search index.
             <see href="https://docs.microsoft.com/rest/api/searchservice/Search-Documents" /></summary>
         <returns>
             Response containing the documents matching the query.
@@ -961,12 +961,12 @@
         <remarks>
           <para>
             The generic overloads of the Search, SearchAsync, and SearchWithHttpMessagesAsync methods support mapping
-            of Azure Search field types to .NET types via the type parameter T. See 
+            of search field types to .NET types via the type parameter T. See 
             <see cref="M:Microsoft.Azure.Search.IDocumentsOperations.GetWithHttpMessagesAsync``1(System.String,System.Collections.Generic.IEnumerable{System.String},Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
             for more details on the type mapping.
             </para>
           <para>
-            If Azure Search can't include all results in a single response, the response returned will include a
+            If Azure Cognitive Search can't include all results in a single response, the response returned will include a
             continuation token that can be passed to ContinueSearch to retrieve more results.
             See <c cref="P:Microsoft.Azure.Search.Models.DocumentSearchResult`1.ContinuationToken">DocumentSearchResult.ContinuationToken</c>
             for more information.
@@ -975,14 +975,14 @@
       </Docs>
     </Member>
     <Member MemberName="SearchAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.DocumentSearchResult&lt;Microsoft.Azure.Search.Models.Document&gt;&gt; SearchAsync (this Microsoft.Azure.Search.IDocumentsOperations operations, string searchText, Microsoft.Azure.Search.Models.SearchParameters searchParameters = null, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.DocumentSearchResult&lt;Microsoft.Azure.Search.Models.Document&gt;&gt; SearchAsync (this Microsoft.Azure.Search.IDocumentsOperations operations, string searchText, Microsoft.Azure.Search.Models.SearchParameters searchParameters = default, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Search.Models.DocumentSearchResult`1&lt;class Microsoft.Azure.Search.Models.Document&gt;&gt; SearchAsync(class Microsoft.Azure.Search.IDocumentsOperations operations, string searchText, class Microsoft.Azure.Search.Models.SearchParameters searchParameters, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.DocumentsOperationsExtensions.SearchAsync(Microsoft.Azure.Search.IDocumentsOperations,System.String,Microsoft.Azure.Search.Models.SearchParameters,Microsoft.Azure.Search.Models.SearchRequestOptions,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member SearchAsync : Microsoft.Azure.Search.IDocumentsOperations * string * Microsoft.Azure.Search.Models.SearchParameters * Microsoft.Azure.Search.Models.SearchRequestOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.DocumentSearchResult&lt;Microsoft.Azure.Search.Models.Document&gt;&gt;" Usage="Microsoft.Azure.Search.DocumentsOperationsExtensions.SearchAsync (operations, searchText, searchParameters, searchRequestOptions, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.DocumentSearchResult&lt;Microsoft.Azure.Search.Models.Document&gt;&gt;</ReturnType>
@@ -1013,7 +1013,7 @@
             The cancellation token.
             </param>
         <summary>
-            Searches for documents in the Azure Search index.
+            Searches for documents in the search index.
             <see href="https://docs.microsoft.com/rest/api/searchservice/Search-Documents" /></summary>
         <returns>
             Response containing the documents matching the query.
@@ -1026,7 +1026,7 @@
             for more information.
             </para>
           <para>
-            If Azure Search can't include all results in a single response, the response returned will include a
+            If Azure Cognitive Search can't include all results in a single response, the response returned will include a
             continuation token that can be passed to ContinueSearch to retrieve more results.
             See <c cref="P:Microsoft.Azure.Search.Models.DocumentSearchResult`1.ContinuationToken">DocumentSearchResult.ContinuationToken</c>
             for more information.
@@ -1035,14 +1035,14 @@
       </Docs>
     </Member>
     <Member MemberName="SearchAsync&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.DocumentSearchResult&lt;T&gt;&gt; SearchAsync&lt;T&gt; (this Microsoft.Azure.Search.IDocumentsOperations operations, string searchText, Microsoft.Azure.Search.Models.SearchParameters searchParameters = null, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.DocumentSearchResult&lt;T&gt;&gt; SearchAsync&lt;T&gt; (this Microsoft.Azure.Search.IDocumentsOperations operations, string searchText, Microsoft.Azure.Search.Models.SearchParameters searchParameters = default, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Search.Models.DocumentSearchResult`1&lt;!!T&gt;&gt; SearchAsync&lt;T&gt;(class Microsoft.Azure.Search.IDocumentsOperations operations, string searchText, class Microsoft.Azure.Search.Models.SearchParameters searchParameters, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.DocumentsOperationsExtensions.SearchAsync``1(Microsoft.Azure.Search.IDocumentsOperations,System.String,Microsoft.Azure.Search.Models.SearchParameters,Microsoft.Azure.Search.Models.SearchRequestOptions,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member SearchAsync : Microsoft.Azure.Search.IDocumentsOperations * string * Microsoft.Azure.Search.Models.SearchParameters * Microsoft.Azure.Search.Models.SearchRequestOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.DocumentSearchResult&lt;'T&gt;&gt;" Usage="Microsoft.Azure.Search.DocumentsOperationsExtensions.SearchAsync (operations, searchText, searchParameters, searchRequestOptions, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.DocumentSearchResult&lt;T&gt;&gt;</ReturnType>
@@ -1080,7 +1080,7 @@
             The cancellation token.
             </param>
         <summary>
-            Searches for documents in the Azure Search index.
+            Searches for documents in the search index.
             <see href="https://docs.microsoft.com/rest/api/searchservice/Search-Documents" /></summary>
         <returns>
             Response containing the documents matching the query.
@@ -1088,12 +1088,12 @@
         <remarks>
           <para>
             The generic overloads of the Search, SearchAsync, and SearchWithHttpMessagesAsync methods support mapping
-            of Azure Search field types to .NET types via the type parameter T. See 
+            of search field types to .NET types via the type parameter T. See 
             <see cref="M:Microsoft.Azure.Search.IDocumentsOperations.GetWithHttpMessagesAsync``1(System.String,System.Collections.Generic.IEnumerable{System.String},Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
             for more details on the type mapping.
             </para>
           <para>
-            If Azure Search can't include all results in a single response, the response returned will include a
+            If Azure Cognitive Search can't include all results in a single response, the response returned will include a
             continuation token that can be passed to ContinueSearch to retrieve more results.
             See <c cref="P:Microsoft.Azure.Search.Models.DocumentSearchResult`1.ContinuationToken">DocumentSearchResult.ContinuationToken</c>
             for more information.
@@ -1102,14 +1102,14 @@
       </Docs>
     </Member>
     <Member MemberName="Suggest">
-      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Search.Models.DocumentSuggestResult&lt;Microsoft.Azure.Search.Models.Document&gt; Suggest (this Microsoft.Azure.Search.IDocumentsOperations operations, string searchText, string suggesterName, Microsoft.Azure.Search.Models.SuggestParameters suggestParameters = null, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Search.Models.DocumentSuggestResult&lt;Microsoft.Azure.Search.Models.Document&gt; Suggest (this Microsoft.Azure.Search.IDocumentsOperations operations, string searchText, string suggesterName, Microsoft.Azure.Search.Models.SuggestParameters suggestParameters = default, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.Search.Models.DocumentSuggestResult`1&lt;class Microsoft.Azure.Search.Models.Document&gt; Suggest(class Microsoft.Azure.Search.IDocumentsOperations operations, string searchText, string suggesterName, class Microsoft.Azure.Search.Models.SuggestParameters suggestParameters, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.DocumentsOperationsExtensions.Suggest(Microsoft.Azure.Search.IDocumentsOperations,System.String,System.String,Microsoft.Azure.Search.Models.SuggestParameters,Microsoft.Azure.Search.Models.SearchRequestOptions)" />
       <MemberSignature Language="F#" Value="static member Suggest : Microsoft.Azure.Search.IDocumentsOperations * string * string * Microsoft.Azure.Search.Models.SuggestParameters * Microsoft.Azure.Search.Models.SearchRequestOptions -&gt; Microsoft.Azure.Search.Models.DocumentSuggestResult&lt;Microsoft.Azure.Search.Models.Document&gt;" Usage="Microsoft.Azure.Search.DocumentsOperationsExtensions.Suggest (operations, searchText, suggesterName, suggestParameters, searchRequestOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Search.Models.DocumentSuggestResult&lt;Microsoft.Azure.Search.Models.Document&gt;</ReturnType>
@@ -1138,7 +1138,7 @@
             Additional parameters for the operation
             </param>
         <summary>
-            Suggests query terms based on input text and matching documents in the Azure Search index.
+            Suggests query terms based on input text and matching documents in the search index.
             <see href="https://docs.microsoft.com/rest/api/searchservice/Suggestions" /></summary>
         <returns>
             Response containing the suggested text and documents matching the query.
@@ -1152,14 +1152,14 @@
       </Docs>
     </Member>
     <Member MemberName="Suggest&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Search.Models.DocumentSuggestResult&lt;T&gt; Suggest&lt;T&gt; (this Microsoft.Azure.Search.IDocumentsOperations operations, string searchText, string suggesterName, Microsoft.Azure.Search.Models.SuggestParameters suggestParameters = null, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Search.Models.DocumentSuggestResult&lt;T&gt; Suggest&lt;T&gt; (this Microsoft.Azure.Search.IDocumentsOperations operations, string searchText, string suggesterName, Microsoft.Azure.Search.Models.SuggestParameters suggestParameters = default, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.Search.Models.DocumentSuggestResult`1&lt;!!T&gt; Suggest&lt;T&gt;(class Microsoft.Azure.Search.IDocumentsOperations operations, string searchText, string suggesterName, class Microsoft.Azure.Search.Models.SuggestParameters suggestParameters, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.DocumentsOperationsExtensions.Suggest``1(Microsoft.Azure.Search.IDocumentsOperations,System.String,System.String,Microsoft.Azure.Search.Models.SuggestParameters,Microsoft.Azure.Search.Models.SearchRequestOptions)" />
       <MemberSignature Language="F#" Value="static member Suggest : Microsoft.Azure.Search.IDocumentsOperations * string * string * Microsoft.Azure.Search.Models.SuggestParameters * Microsoft.Azure.Search.Models.SearchRequestOptions -&gt; Microsoft.Azure.Search.Models.DocumentSuggestResult&lt;'T&gt;" Usage="Microsoft.Azure.Search.DocumentsOperationsExtensions.Suggest (operations, searchText, suggesterName, suggestParameters, searchRequestOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Search.Models.DocumentSuggestResult&lt;T&gt;</ReturnType>
@@ -1195,28 +1195,28 @@
             Additional parameters for the operation
             </param>
         <summary>
-            Suggests query terms based on input text and matching documents in the Azure Search index.
+            Suggests query terms based on input text and matching documents in the search index.
             <see href="https://docs.microsoft.com/rest/api/searchservice/Suggestions" /></summary>
         <returns>
             Response containing the suggested text and documents matching the query.
             </returns>
         <remarks>
             The generic overloads of the Suggest, SuggestAsync, and SuggestWithHttpMessagesAsync methods support
-            mapping of Azure Search field types to .NET types via the type parameter T. See 
+            mapping of search field types to .NET types via the type parameter T. See 
             <see cref="M:Microsoft.Azure.Search.IDocumentsOperations.GetWithHttpMessagesAsync``1(System.String,System.Collections.Generic.IEnumerable{System.String},Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
             for more details on the type mapping.
             </remarks>
       </Docs>
     </Member>
     <Member MemberName="SuggestAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.DocumentSuggestResult&lt;Microsoft.Azure.Search.Models.Document&gt;&gt; SuggestAsync (this Microsoft.Azure.Search.IDocumentsOperations operations, string searchText, string suggesterName, Microsoft.Azure.Search.Models.SuggestParameters suggestParameters = null, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.DocumentSuggestResult&lt;Microsoft.Azure.Search.Models.Document&gt;&gt; SuggestAsync (this Microsoft.Azure.Search.IDocumentsOperations operations, string searchText, string suggesterName, Microsoft.Azure.Search.Models.SuggestParameters suggestParameters = default, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Search.Models.DocumentSuggestResult`1&lt;class Microsoft.Azure.Search.Models.Document&gt;&gt; SuggestAsync(class Microsoft.Azure.Search.IDocumentsOperations operations, string searchText, string suggesterName, class Microsoft.Azure.Search.Models.SuggestParameters suggestParameters, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.DocumentsOperationsExtensions.SuggestAsync(Microsoft.Azure.Search.IDocumentsOperations,System.String,System.String,Microsoft.Azure.Search.Models.SuggestParameters,Microsoft.Azure.Search.Models.SearchRequestOptions,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member SuggestAsync : Microsoft.Azure.Search.IDocumentsOperations * string * string * Microsoft.Azure.Search.Models.SuggestParameters * Microsoft.Azure.Search.Models.SearchRequestOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.DocumentSuggestResult&lt;Microsoft.Azure.Search.Models.Document&gt;&gt;" Usage="Microsoft.Azure.Search.DocumentsOperationsExtensions.SuggestAsync (operations, searchText, suggesterName, suggestParameters, searchRequestOptions, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.DocumentSuggestResult&lt;Microsoft.Azure.Search.Models.Document&gt;&gt;</ReturnType>
@@ -1249,7 +1249,7 @@
             The cancellation token.
             </param>
         <summary>
-            Suggests query terms based on input text and matching documents in the Azure Search index.
+            Suggests query terms based on input text and matching documents in the search index.
             <see href="https://docs.microsoft.com/rest/api/searchservice/Suggestions" /></summary>
         <returns>
             Response containing the suggested text and documents matching the query.
@@ -1263,14 +1263,14 @@
       </Docs>
     </Member>
     <Member MemberName="SuggestAsync&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.DocumentSuggestResult&lt;T&gt;&gt; SuggestAsync&lt;T&gt; (this Microsoft.Azure.Search.IDocumentsOperations operations, string searchText, string suggesterName, Microsoft.Azure.Search.Models.SuggestParameters suggestParameters = null, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.DocumentSuggestResult&lt;T&gt;&gt; SuggestAsync&lt;T&gt; (this Microsoft.Azure.Search.IDocumentsOperations operations, string searchText, string suggesterName, Microsoft.Azure.Search.Models.SuggestParameters suggestParameters = default, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Search.Models.DocumentSuggestResult`1&lt;!!T&gt;&gt; SuggestAsync&lt;T&gt;(class Microsoft.Azure.Search.IDocumentsOperations operations, string searchText, string suggesterName, class Microsoft.Azure.Search.Models.SuggestParameters suggestParameters, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.DocumentsOperationsExtensions.SuggestAsync``1(Microsoft.Azure.Search.IDocumentsOperations,System.String,System.String,Microsoft.Azure.Search.Models.SuggestParameters,Microsoft.Azure.Search.Models.SearchRequestOptions,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member SuggestAsync : Microsoft.Azure.Search.IDocumentsOperations * string * string * Microsoft.Azure.Search.Models.SuggestParameters * Microsoft.Azure.Search.Models.SearchRequestOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.DocumentSuggestResult&lt;'T&gt;&gt;" Usage="Microsoft.Azure.Search.DocumentsOperationsExtensions.SuggestAsync (operations, searchText, suggesterName, suggestParameters, searchRequestOptions, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Data</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.DocumentSuggestResult&lt;T&gt;&gt;</ReturnType>
@@ -1310,14 +1310,14 @@
             The cancellation token.
             </param>
         <summary>
-            Suggests query terms based on input text and matching documents in the Azure Search index.
+            Suggests query terms based on input text and matching documents in the search index.
             <see href="https://docs.microsoft.com/rest/api/searchservice/Suggestions" /></summary>
         <returns>
             Response containing the suggested text and documents matching the query.
             </returns>
         <remarks>
             The generic overloads of the Suggest, SuggestAsync, and SuggestWithHttpMessagesAsync methods support
-            mapping of Azure Search field types to .NET types via the type parameter T. See 
+            mapping of search field types to .NET types via the type parameter T. See 
             <see cref="M:Microsoft.Azure.Search.IDocumentsOperations.GetWithHttpMessagesAsync``1(System.String,System.Collections.Generic.IEnumerable{System.String},Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
             for more details on the type mapping.
             </remarks>

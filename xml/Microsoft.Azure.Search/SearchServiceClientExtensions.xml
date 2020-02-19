@@ -1,4 +1,4 @@
-﻿<Type Name="SearchServiceClientExtensions" FullName="Microsoft.Azure.Search.SearchServiceClientExtensions">
+<Type Name="SearchServiceClientExtensions" FullName="Microsoft.Azure.Search.SearchServiceClientExtensions">
   <TypeSignature Language="C#" Value="public static class SearchServiceClientExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SearchServiceClientExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Search.SearchServiceClientExtensions" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type SearchServiceClientExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-    <AssemblyVersion>9.0.0.0</AssemblyVersion>
+    <AssemblyVersion>10.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -20,14 +20,14 @@
   </Docs>
   <Members>
     <Member MemberName="GetServiceStatistics">
-      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Search.Models.ServiceStatistics GetServiceStatistics (this Microsoft.Azure.Search.ISearchServiceClient operations, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Search.Models.ServiceStatistics GetServiceStatistics (this Microsoft.Azure.Search.ISearchServiceClient operations, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.Search.Models.ServiceStatistics GetServiceStatistics(class Microsoft.Azure.Search.ISearchServiceClient operations, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.SearchServiceClientExtensions.GetServiceStatistics(Microsoft.Azure.Search.ISearchServiceClient,Microsoft.Azure.Search.Models.SearchRequestOptions)" />
       <MemberSignature Language="F#" Value="static member GetServiceStatistics : Microsoft.Azure.Search.ISearchServiceClient * Microsoft.Azure.Search.Models.SearchRequestOptions -&gt; Microsoft.Azure.Search.Models.ServiceStatistics" Usage="Microsoft.Azure.Search.SearchServiceClientExtensions.GetServiceStatistics (operations, searchRequestOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Search.Models.ServiceStatistics</ReturnType>
@@ -44,21 +44,21 @@
             Additional parameters for the operation
             </param>
         <summary>
-            Gets service level statistics for an Azure Search service.
+            Gets service level statistics for a search service.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetServiceStatisticsAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.ServiceStatistics&gt; GetServiceStatisticsAsync (this Microsoft.Azure.Search.ISearchServiceClient operations, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.ServiceStatistics&gt; GetServiceStatisticsAsync (this Microsoft.Azure.Search.ISearchServiceClient operations, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Search.Models.ServiceStatistics&gt; GetServiceStatisticsAsync(class Microsoft.Azure.Search.ISearchServiceClient operations, class Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.SearchServiceClientExtensions.GetServiceStatisticsAsync(Microsoft.Azure.Search.ISearchServiceClient,Microsoft.Azure.Search.Models.SearchRequestOptions,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member GetServiceStatisticsAsync : Microsoft.Azure.Search.ISearchServiceClient * Microsoft.Azure.Search.Models.SearchRequestOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.ServiceStatistics&gt;" Usage="Microsoft.Azure.Search.SearchServiceClientExtensions.GetServiceStatisticsAsync (operations, searchRequestOptions, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Search.Models.ServiceStatistics&gt;</ReturnType>
@@ -79,7 +79,7 @@
             The cancellation token.
             </param>
         <summary>
-            Gets service level statistics for an Azure Search service.
+            Gets service level statistics for a search service.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

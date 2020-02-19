@@ -1,4 +1,4 @@
-﻿<Type Name="AuthenticationParameters" FullName="Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters">
+<Type Name="AuthenticationParameters" FullName="Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters">
   <TypeSignature Language="C#" Value="public sealed class AuthenticationParameters" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AuthenticationParameters extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters" />
@@ -7,7 +7,10 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.IdentityModel.Clients.ActiveDirectory</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
-    <AssemblyVersion>5.1.0.0</AssemblyVersion>
+    <AssemblyVersion>5.2.4.0</AssemblyVersion>
+    <AssemblyVersion>5.2.5.0</AssemblyVersion>
+    <AssemblyVersion>5.2.6.0</AssemblyVersion>
+    <AssemblyVersion>5.2.7.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -45,7 +48,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Clients.ActiveDirectory</AssemblyName>
-        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>5.2.4.0</AssemblyVersion>
+        <AssemblyVersion>5.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.2.6.0</AssemblyVersion>
+        <AssemblyVersion>5.2.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-dotnet">
@@ -75,7 +81,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Clients.ActiveDirectory</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>5.2.4.0</AssemblyVersion>
+        <AssemblyVersion>5.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.2.6.0</AssemblyVersion>
+        <AssemblyVersion>5.2.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -89,16 +98,23 @@
       </Docs>
     </Member>
     <Member MemberName="CreateFromResourceUrlAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters&gt; CreateFromResourceUrlAsync (Uri resourceUrl);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters&gt; CreateFromResourceUrlAsync(class System.Uri resourceUrl) cil managed" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters&gt; CreateFromResourceUrlAsync (Uri resourceUrl);" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters&gt; CreateFromResourceUrlAsync(class System.Uri resourceUrl) cil managed" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="DocId" Value="M:Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters.CreateFromResourceUrlAsync(System.Uri)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromResourceUrlAsync (resourceUrl As Uri) As Task(Of AuthenticationParameters)" />
-      <MemberSignature Language="F#" Value="static member CreateFromResourceUrlAsync : Uri -&gt; System.Threading.Tasks.Task&lt;Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters&gt;" Usage="Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters.CreateFromResourceUrlAsync resourceUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateFromResourceUrlAsync (resourceUrl As Uri) As Task(Of AuthenticationParameters)" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="F#" Value="member this.CreateFromResourceUrlAsync : Uri -&gt; System.Threading.Tasks.Task&lt;Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters&gt;" Usage="authenticationParameters.CreateFromResourceUrlAsync resourceUrl" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters&gt; CreateFromResourceUrlAsync (Uri resourceUrl);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters&gt; CreateFromResourceUrlAsync(class System.Uri resourceUrl) cil managed" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromResourceUrlAsync (resourceUrl As Uri) As Task(Of AuthenticationParameters)" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="static member CreateFromResourceUrlAsync : Uri -&gt; System.Threading.Tasks.Task&lt;Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters&gt;" Usage="Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters.CreateFromResourceUrlAsync resourceUrl" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Clients.ActiveDirectory</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>5.2.4.0</AssemblyVersion>
+        <AssemblyVersion>5.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.2.6.0</AssemblyVersion>
+        <AssemblyVersion>5.2.7.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-dotnet">
@@ -114,8 +130,8 @@
       <Docs>
         <param name="resourceUrl">Address of the resource</param>
         <summary>
-            Creates authentication parameters from address of the resource. This method expects the resource server to return unauthorized response
-            with WWW-Authenticate header containing authentication parameters.
+            Sends a GET request to the url provided with no Authenticate header. If a 401 Unauthorized is received, this helper will parse the WWW-Authenticate header to 
+            retrieve the authority and resource.
             </summary>
         <returns>AuthenticationParameters object containing authentication parameters</returns>
         <remarks>Most protected APIs, including those owned by Microsoft, no longer advertise a resource. Authentication should be done using MSAL, which uses scopes. See https://aka.ms/msal-net-migration-adal-msal </remarks>
@@ -131,7 +147,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Clients.ActiveDirectory</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>5.2.4.0</AssemblyVersion>
+        <AssemblyVersion>5.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.2.6.0</AssemblyVersion>
+        <AssemblyVersion>5.2.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters</ReturnType>
@@ -158,7 +177,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Clients.ActiveDirectory</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>5.2.4.0</AssemblyVersion>
+        <AssemblyVersion>5.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.2.6.0</AssemblyVersion>
+        <AssemblyVersion>5.2.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters&gt;</ReturnType>
@@ -169,8 +191,7 @@
       <Docs>
         <param name="responseMessage">Response received from the resource (e.g. via an http call using HttpClient).</param>
         <summary>
-            Creates authentication parameters from the response received from the response received from the resource. This method expects the response to have unauthorized status and
-            WWW-Authenticate header containing authentication parameters.</summary>
+            Looks at the Http response for an WWW-Authenticate header and parses it to retrieve the authority and resource</summary>
         <returns>AuthenticationParameters object containing authentication parameters</returns>
         <remarks>Most protected APIs, including those owned by Microsoft, no longer advertise a resource. Authentication should be done using MSAL, which uses scopes. See https://aka.ms/msal-net-migration-adal-msal </remarks>
       </Docs>
@@ -184,7 +205,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Clients.ActiveDirectory</AssemblyName>
-        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>5.2.4.0</AssemblyVersion>
+        <AssemblyVersion>5.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.2.6.0</AssemblyVersion>
+        <AssemblyVersion>5.2.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters&gt;</ReturnType>
@@ -212,7 +236,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Clients.ActiveDirectory</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>5.2.4.0</AssemblyVersion>
+        <AssemblyVersion>5.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.2.6.0</AssemblyVersion>
+        <AssemblyVersion>5.2.7.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

@@ -1,4 +1,4 @@
-﻿<Type Name="ExpressRouteCircuitPeeringConfig" FullName="Microsoft.Azure.Management.Network.Fluent.Models.ExpressRouteCircuitPeeringConfig">
+<Type Name="ExpressRouteCircuitPeeringConfig" FullName="Microsoft.Azure.Management.Network.Fluent.Models.ExpressRouteCircuitPeeringConfig">
   <TypeSignature Language="C#" Value="public class ExpressRouteCircuitPeeringConfig" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExpressRouteCircuitPeeringConfig extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Network.Fluent.Models.ExpressRouteCircuitPeeringConfig" />
@@ -6,7 +6,10 @@
   <TypeSignature Language="F#" Value="type ExpressRouteCircuitPeeringConfig = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,7 +30,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -39,7 +45,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ExpressRouteCircuitPeeringConfig (System.Collections.Generic.IList&lt;string&gt; advertisedPublicPrefixes = null, System.Collections.Generic.IList&lt;string&gt; advertisedCommunities = null, Microsoft.Azure.Management.Network.Fluent.Models.ExpressRouteCircuitPeeringAdvertisedPublicPrefixState advertisedPublicPrefixesState = null, Nullable&lt;int&gt; legacyMode = null, Nullable&lt;int&gt; customerASN = null, string routingRegistryName = null);" />
+      <MemberSignature Language="C#" Value="public ExpressRouteCircuitPeeringConfig (System.Collections.Generic.IList&lt;string&gt; advertisedPublicPrefixes = default, System.Collections.Generic.IList&lt;string&gt; advertisedCommunities = default, Microsoft.Azure.Management.Network.Fluent.Models.ExpressRouteCircuitPeeringAdvertisedPublicPrefixState advertisedPublicPrefixesState = default, Nullable&lt;int&gt; legacyMode = default, Nullable&lt;int&gt; customerASN = default, string routingRegistryName = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;string&gt; advertisedPublicPrefixes, class System.Collections.Generic.IList`1&lt;string&gt; advertisedCommunities, class Microsoft.Azure.Management.Network.Fluent.Models.ExpressRouteCircuitPeeringAdvertisedPublicPrefixState advertisedPublicPrefixesState, valuetype System.Nullable`1&lt;int32&gt; legacyMode, valuetype System.Nullable`1&lt;int32&gt; customerASN, string routingRegistryName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.Models.ExpressRouteCircuitPeeringConfig.#ctor(System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{System.String},Microsoft.Azure.Management.Network.Fluent.Models.ExpressRouteCircuitPeeringAdvertisedPublicPrefixState,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional advertisedPublicPrefixes As IList(Of String) = null, Optional advertisedCommunities As IList(Of String) = null, Optional advertisedPublicPrefixesState As ExpressRouteCircuitPeeringAdvertisedPublicPrefixState = null, Optional legacyMode As Nullable(Of Integer) = null, Optional customerASN As Nullable(Of Integer) = null, Optional routingRegistryName As String = null)" />
@@ -47,7 +53,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="advertisedPublicPrefixes" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
@@ -61,11 +70,10 @@
         <param name="advertisedPublicPrefixes">The reference of
             AdvertisedPublicPrefixes.</param>
         <param name="advertisedCommunities">The communities of bgp peering.
-            Spepcified for microsoft peering</param>
-        <param name="advertisedPublicPrefixesState">AdvertisedPublicPrefixState of
-            the Peering resource. Possible values are 'NotConfigured',
-            'Configuring', 'Configured', and 'ValidationNeeded'. Possible
-            values include: 'NotConfigured', 'Configuring', 'Configured',
+            Specified for microsoft peering.</param>
+        <param name="advertisedPublicPrefixesState">The advertised public
+            prefix state of the Peering resource. Possible values include:
+            'NotConfigured', 'Configuring', 'Configured',
             'ValidationNeeded'</param>
         <param name="legacyMode">The legacy mode of the peering.</param>
         <param name="customerASN">The CustomerASN of the peering.</param>
@@ -87,7 +95,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -99,8 +110,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the communities of bgp peering. Spepcified for
-            microsoft peering
+            Gets or sets the communities of bgp peering. Specified for
+            microsoft peering.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -115,7 +126,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -134,15 +148,18 @@
       </Docs>
     </Member>
     <Member MemberName="AdvertisedPublicPrefixesState">
-      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Network.Fluent.Models.ExpressRouteCircuitPeeringAdvertisedPublicPrefixState AdvertisedPublicPrefixesState { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Network.Fluent.Models.ExpressRouteCircuitPeeringAdvertisedPublicPrefixState AdvertisedPublicPrefixesState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Network.Fluent.Models.ExpressRouteCircuitPeeringAdvertisedPublicPrefixState AdvertisedPublicPrefixesState" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Fluent.Models.ExpressRouteCircuitPeeringConfig.AdvertisedPublicPrefixesState" />
-      <MemberSignature Language="VB.NET" Value="Public Property AdvertisedPublicPrefixesState As ExpressRouteCircuitPeeringAdvertisedPublicPrefixState" />
-      <MemberSignature Language="F#" Value="member this.AdvertisedPublicPrefixesState : Microsoft.Azure.Management.Network.Fluent.Models.ExpressRouteCircuitPeeringAdvertisedPublicPrefixState with get, set" Usage="Microsoft.Azure.Management.Network.Fluent.Models.ExpressRouteCircuitPeeringConfig.AdvertisedPublicPrefixesState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AdvertisedPublicPrefixesState As ExpressRouteCircuitPeeringAdvertisedPublicPrefixState" />
+      <MemberSignature Language="F#" Value="member this.AdvertisedPublicPrefixesState : Microsoft.Azure.Management.Network.Fluent.Models.ExpressRouteCircuitPeeringAdvertisedPublicPrefixState" Usage="Microsoft.Azure.Management.Network.Fluent.Models.ExpressRouteCircuitPeeringConfig.AdvertisedPublicPrefixesState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -154,10 +171,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets advertisedPublicPrefixState of the Peering resource.
-            Possible values are 'NotConfigured', 'Configuring', 'Configured',
-            and 'ValidationNeeded'. Possible values include: 'NotConfigured',
-            'Configuring', 'Configured', 'ValidationNeeded'
+            Gets the advertised public prefix state of the Peering resource.
+            Possible values include: 'NotConfigured', 'Configuring',
+            'Configured', 'ValidationNeeded'
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -172,7 +188,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -199,7 +218,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -226,7 +248,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

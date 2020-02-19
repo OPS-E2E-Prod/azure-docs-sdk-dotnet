@@ -1,4 +1,4 @@
-﻿<Type Name="W3CUtilities" FullName="Microsoft.ApplicationInsights.Extensibility.W3C.W3CUtilities">
+<Type Name="W3CUtilities" FullName="Microsoft.ApplicationInsights.Extensibility.W3C.W3CUtilities">
   <TypeSignature Language="C#" Value="public static class W3CUtilities" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit W3CUtilities extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.ApplicationInsights.Extensibility.W3C.W3CUtilities" />
@@ -6,7 +6,9 @@
   <TypeSignature Language="F#" Value="type W3CUtilities = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-    <AssemblyVersion>2.10.0.0</AssemblyVersion>
+    <AssemblyVersion>2.11.0.0</AssemblyVersion>
+    <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+    <AssemblyVersion>2.12.1.36699</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -33,11 +35,16 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use ActivityTraceId.CreateRandom().ToHexString() instead.")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -47,9 +54,9 @@
       <Docs>
         <summary>
             Generates random trace Id as per W3C Distributed tracing specification.
-            https://github.com/w3c/distributed-tracing/blob/master/trace_context/HTTP_HEADER_FORMAT.md#trace-id
+            https://github.com/w3c/distributed-tracing/blob/master/trace_context/HTTP_HEADER_FORMAT.md#trace-id .
             </summary>
-        <returns>Random 16 bytes array encoded as hex string</returns>
+        <returns>Random 16 bytes array encoded as hex string.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

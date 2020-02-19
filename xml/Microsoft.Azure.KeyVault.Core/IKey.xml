@@ -1,4 +1,4 @@
-﻿<Type Name="IKey" FullName="Microsoft.Azure.KeyVault.Core.IKey">
+<Type Name="IKey" FullName="Microsoft.Azure.KeyVault.Core.IKey">
   <TypeSignature Language="C#" Value="public interface IKey : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IKey implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.KeyVault.Core.IKey" />
@@ -6,7 +6,8 @@
   <TypeSignature Language="F#" Value="type IKey = interface&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.KeyVault.Core</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.0.4.0</AssemblyVersion>
+    <AssemblyVersion>3.0.5.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -14,9 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>
-            Interface for Keys
-            </summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,7 +28,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.KeyVault.Core</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
+        <AssemblyVersion>3.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Byte[]&gt;</ReturnType>
@@ -43,18 +43,15 @@
         <Parameter Name="token" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="ciphertext">The cipher text to decrypt</param>
-        <param name="iv">The initialization vector</param>
-        <param name="authenticationData">The authentication data</param>
+        <param name="ciphertext">To be added.</param>
+        <param name="iv">To be added.</param>
+        <param name="authenticationData">To be added.</param>
         <param name="authenticationTag">To be added.</param>
-        <param name="algorithm">The algorithm to use</param>
-        <param name="token">Cancellation token</param>
-        <summary>
-            Decrypts the specified cipher text.
-            </summary>
-        <returns>The plain text</returns>
-        <remarks>If algorithm is not specified, an implementation should use its default algorithm.
-            Not all algorithms require, or support, all parameters.</remarks>
+        <param name="algorithm">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultEncryptionAlgorithm">
@@ -66,15 +63,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.KeyVault.Core</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
+        <AssemblyVersion>3.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            The default encryption algorithm for this key
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,15 +84,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.KeyVault.Core</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
+        <AssemblyVersion>3.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            The default key wrap algorithm for this key
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -110,15 +105,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.KeyVault.Core</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
+        <AssemblyVersion>3.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            The default signature algorithm for this key
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -132,7 +126,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.KeyVault.Core</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
+        <AssemblyVersion>3.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Tuple&lt;System.Byte[],System.Byte[],System.String&gt;&gt;</ReturnType>
@@ -145,17 +140,14 @@
         <Parameter Name="token" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="plaintext">The plain text to encrypt</param>
-        <param name="iv">The initialization vector</param>
-        <param name="authenticationData">The authentication data</param>
-        <param name="algorithm">The algorithm to use</param>
-        <param name="token">Cancellation token</param>
-        <summary>
-            Encrypts the specified plain text.
-            </summary>
-        <returns>A Tuple consisting of the cipher text, the authentication tag (if applicable), the algorithm used</returns>
-        <remarks>If the algorithm is not specified, an implementation should use its default algorithm.
-            Not all algorithyms require, or support, all parameters.</remarks>
+        <param name="plaintext">To be added.</param>
+        <param name="iv">To be added.</param>
+        <param name="authenticationData">To be added.</param>
+        <param name="algorithm">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Kid">
@@ -167,15 +159,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.KeyVault.Core</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
+        <AssemblyVersion>3.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            The key identifier
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -189,7 +180,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.KeyVault.Core</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
+        <AssemblyVersion>3.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Tuple&lt;System.Byte[],System.String&gt;&gt;</ReturnType>
@@ -200,14 +192,12 @@
         <Parameter Name="token" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="digest">The digest to sign</param>
-        <param name="algorithm">The algorithm to use</param>
-        <param name="token">Cancellation token</param>
-        <summary>
-            Signs the specified digest.
-            </summary>
-        <returns>A Tuple consisting of the signature and the algorithm used</returns>
-        <remarks>If the algorithm is not specified, an implementation should use its default algorithm</remarks>
+        <param name="digest">To be added.</param>
+        <param name="algorithm">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UnwrapKeyAsync">
@@ -219,7 +209,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.KeyVault.Core</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
+        <AssemblyVersion>3.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Byte[]&gt;</ReturnType>
@@ -230,14 +221,12 @@
         <Parameter Name="token" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="encryptedKey">The encrypted key material</param>
-        <param name="algorithm">The algorithm to use</param>
-        <param name="token">Cancellation token</param>
-        <summary>
-            Decrypts the specified key material.
-            </summary>
-        <returns>The decrypted key material</returns>
-        <remarks>If the algorithm is not specified, an implementation should use its default algorithm</remarks>
+        <param name="encryptedKey">To be added.</param>
+        <param name="algorithm">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="VerifyAsync">
@@ -249,7 +238,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.KeyVault.Core</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
+        <AssemblyVersion>3.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -261,14 +251,12 @@
         <Parameter Name="token" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="digest">The digest</param>
-        <param name="signature">The signature value</param>
-        <param name="algorithm">The algorithm to use</param>
-        <param name="token">Cancellation token</param>
-        <summary>
-            Verifies the specified signature value
-            </summary>
-        <returns>A bool indicating whether the signature was successfully verified</returns>
+        <param name="digest">To be added.</param>
+        <param name="signature">To be added.</param>
+        <param name="algorithm">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -281,7 +269,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.KeyVault.Core</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
+        <AssemblyVersion>3.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Tuple&lt;System.Byte[],System.String&gt;&gt;</ReturnType>
@@ -292,14 +281,12 @@
         <Parameter Name="token" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="key">The key material to encrypt</param>
-        <param name="algorithm">The algorithm to use</param>
-        <param name="token">Cancellation token</param>
-        <summary>
-            Encrypts the specified key material.
-            </summary>
-        <returns>A Tuple consisting of the encrypted key and the algorithm used</returns>
-        <remarks>If the algorithm is not specified, an implementation should use its default algorithm</remarks>
+        <param name="key">To be added.</param>
+        <param name="algorithm">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

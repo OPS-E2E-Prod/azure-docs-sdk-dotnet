@@ -1,4 +1,4 @@
-﻿<Type Name="MetricDefinition" FullName="Microsoft.Azure.Management.Monitor.Models.MetricDefinition">
+<Type Name="MetricDefinition" FullName="Microsoft.Azure.Management.Monitor.Models.MetricDefinition">
   <TypeSignature Language="C#" Value="public class MetricDefinition" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MetricDefinition extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Monitor.Models.MetricDefinition" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type MetricDefinition = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-    <AssemblyVersion>0.22.0.0</AssemblyVersion>
+    <AssemblyVersion>0.24.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.22.0.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,7 +38,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MetricDefinition (Nullable&lt;bool&gt; isDimensionRequired = null, string resourceId = null, string namespaceProperty = null, Microsoft.Azure.Management.Monitor.Models.LocalizableString name = null, Nullable&lt;Microsoft.Azure.Management.Monitor.Models.Unit&gt; unit = null, Nullable&lt;Microsoft.Azure.Management.Monitor.Models.AggregationType&gt; primaryAggregationType = null, System.Collections.Generic.IList&lt;Nullable&lt;Microsoft.Azure.Management.Monitor.Models.AggregationType&gt;&gt; supportedAggregationTypes = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Monitor.Models.MetricAvailability&gt; metricAvailabilities = null, string id = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Monitor.Models.LocalizableString&gt; dimensions = null);" />
+      <MemberSignature Language="C#" Value="public MetricDefinition (Nullable&lt;bool&gt; isDimensionRequired = default, string resourceId = default, string namespaceProperty = default, Microsoft.Azure.Management.Monitor.Models.LocalizableString name = default, Nullable&lt;Microsoft.Azure.Management.Monitor.Models.Unit&gt; unit = default, Nullable&lt;Microsoft.Azure.Management.Monitor.Models.AggregationType&gt; primaryAggregationType = default, System.Collections.Generic.IList&lt;Nullable&lt;Microsoft.Azure.Management.Monitor.Models.AggregationType&gt;&gt; supportedAggregationTypes = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Monitor.Models.MetricAvailability&gt; metricAvailabilities = default, string id = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Monitor.Models.LocalizableString&gt; dimensions = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;bool&gt; isDimensionRequired, string resourceId, string namespaceProperty, class Microsoft.Azure.Management.Monitor.Models.LocalizableString name, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Monitor.Models.Unit&gt; unit, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Monitor.Models.AggregationType&gt; primaryAggregationType, class System.Collections.Generic.IList`1&lt;valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Monitor.Models.AggregationType&gt;&gt; supportedAggregationTypes, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Monitor.Models.MetricAvailability&gt; metricAvailabilities, string id, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Monitor.Models.LocalizableString&gt; dimensions) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Monitor.Models.MetricDefinition.#ctor(System.Nullable{System.Boolean},System.String,System.String,Microsoft.Azure.Management.Monitor.Models.LocalizableString,System.Nullable{Microsoft.Azure.Management.Monitor.Models.Unit},System.Nullable{Microsoft.Azure.Management.Monitor.Models.AggregationType},System.Collections.Generic.IList{System.Nullable{Microsoft.Azure.Management.Monitor.Models.AggregationType}},System.Collections.Generic.IList{Microsoft.Azure.Management.Monitor.Models.MetricAvailability},System.String,System.Collections.Generic.IList{Microsoft.Azure.Management.Monitor.Models.LocalizableString})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional isDimensionRequired As Nullable(Of Boolean) = null, Optional resourceId As String = null, Optional namespaceProperty As String = null, Optional name As LocalizableString = null, Optional unit As Nullable(Of Unit) = null, Optional primaryAggregationType As Nullable(Of AggregationType) = null, Optional supportedAggregationTypes As IList(Of Nullable(Of AggregationType)) = null, Optional metricAvailabilities As IList(Of MetricAvailability) = null, Optional id As String = null, Optional dimensions As IList(Of LocalizableString) = null)" />
@@ -46,7 +46,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.22.0.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="isDimensionRequired" Type="System.Nullable&lt;System.Boolean&gt;" />
@@ -71,7 +71,8 @@
             i.e. it is a localizable string.</param>
         <param name="unit">the unit of the metric. Possible values include:
             'Count', 'Bytes', 'Seconds', 'CountPerSecond', 'BytesPerSecond',
-            'Percent', 'MilliSeconds', 'ByteSeconds', 'Unspecified'</param>
+            'Percent', 'MilliSeconds', 'ByteSeconds', 'Unspecified', 'Cores',
+            'MilliCores', 'NanoCores', 'BitsPerSecond'</param>
         <param name="primaryAggregationType">the primary aggregation type
             value defining how to use the values for display. Possible values
             include: 'None', 'Average', 'Count', 'Minimum', 'Maximum',
@@ -99,7 +100,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.22.0.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -127,7 +128,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.22.0.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -154,7 +155,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.22.0.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -181,7 +182,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.22.0.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -209,7 +210,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.22.0.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -237,7 +238,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.22.0.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -264,7 +265,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.22.0.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -293,7 +294,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.22.0.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -321,7 +322,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.22.0.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -349,7 +350,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.22.0.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -363,7 +364,8 @@
         <summary>
             Gets or sets the unit of the metric. Possible values include:
             'Count', 'Bytes', 'Seconds', 'CountPerSecond', 'BytesPerSecond',
-            'Percent', 'MilliSeconds', 'ByteSeconds', 'Unspecified'
+            'Percent', 'MilliSeconds', 'ByteSeconds', 'Unspecified', 'Cores',
+            'MilliCores', 'NanoCores', 'BitsPerSecond'
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -378,7 +380,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.22.0.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

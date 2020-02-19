@@ -1,4 +1,4 @@
-﻿<Type Name="NotificationOperationsExtensions" FullName="Microsoft.Azure.Management.ApiManagement.NotificationOperationsExtensions">
+<Type Name="NotificationOperationsExtensions" FullName="Microsoft.Azure.Management.ApiManagement.NotificationOperationsExtensions">
   <TypeSignature Language="C#" Value="public static class NotificationOperationsExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit NotificationOperationsExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.ApiManagement.NotificationOperationsExtensions" />
@@ -20,7 +20,7 @@
   </Docs>
   <Members>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Management.ApiManagement.Models.NotificationContract CreateOrUpdate (this Microsoft.Azure.Management.ApiManagement.INotificationOperations operations, string resourceGroupName, string serviceName, string notificationName, string ifMatch = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Management.ApiManagement.Models.NotificationContract CreateOrUpdate (this Microsoft.Azure.Management.ApiManagement.INotificationOperations operations, string resourceGroupName, string serviceName, string notificationName, string ifMatch = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.Management.ApiManagement.Models.NotificationContract CreateOrUpdate(class Microsoft.Azure.Management.ApiManagement.INotificationOperations operations, string resourceGroupName, string serviceName, string notificationName, string ifMatch) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.NotificationOperationsExtensions.CreateOrUpdate(Microsoft.Azure.Management.ApiManagement.INotificationOperations,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CreateOrUpdate (operations As INotificationOperations, resourceGroupName As String, serviceName As String, notificationName As String, Optional ifMatch As String = null) As NotificationContract" />
@@ -63,14 +63,14 @@
             updating an entity.
             </param>
         <summary>
-            Updates an Notification.
+            Create or Update API Management publisher notification.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ApiManagement.Models.NotificationContract&gt; CreateOrUpdateAsync (this Microsoft.Azure.Management.ApiManagement.INotificationOperations operations, string resourceGroupName, string serviceName, string notificationName, string ifMatch = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ApiManagement.Models.NotificationContract&gt; CreateOrUpdateAsync (this Microsoft.Azure.Management.ApiManagement.INotificationOperations operations, string resourceGroupName, string serviceName, string notificationName, string ifMatch = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.ApiManagement.Models.NotificationContract&gt; CreateOrUpdateAsync(class Microsoft.Azure.Management.ApiManagement.INotificationOperations operations, string resourceGroupName, string serviceName, string notificationName, string ifMatch, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.NotificationOperationsExtensions.CreateOrUpdateAsync(Microsoft.Azure.Management.ApiManagement.INotificationOperations,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member CreateOrUpdateAsync : Microsoft.Azure.Management.ApiManagement.INotificationOperations * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ApiManagement.Models.NotificationContract&gt;" Usage="Microsoft.Azure.Management.ApiManagement.NotificationOperationsExtensions.CreateOrUpdateAsync (operations, resourceGroupName, serviceName, notificationName, ifMatch, cancellationToken)" />
@@ -79,6 +79,11 @@
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ApiManagement.Models.NotificationContract&gt;</ReturnType>
       </ReturnValue>
@@ -116,7 +121,7 @@
             The cancellation token.
             </param>
         <summary>
-            Updates an Notification.
+            Create or Update API Management publisher notification.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -168,7 +173,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ApiManagement.Models.NotificationContract&gt; GetAsync (this Microsoft.Azure.Management.ApiManagement.INotificationOperations operations, string resourceGroupName, string serviceName, string notificationName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ApiManagement.Models.NotificationContract&gt; GetAsync (this Microsoft.Azure.Management.ApiManagement.INotificationOperations operations, string resourceGroupName, string serviceName, string notificationName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.ApiManagement.Models.NotificationContract&gt; GetAsync(class Microsoft.Azure.Management.ApiManagement.INotificationOperations operations, string resourceGroupName, string serviceName, string notificationName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.NotificationOperationsExtensions.GetAsync(Microsoft.Azure.Management.ApiManagement.INotificationOperations,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member GetAsync : Microsoft.Azure.Management.ApiManagement.INotificationOperations * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ApiManagement.Models.NotificationContract&gt;" Usage="Microsoft.Azure.Management.ApiManagement.NotificationOperationsExtensions.GetAsync (operations, resourceGroupName, serviceName, notificationName, cancellationToken)" />
@@ -177,6 +182,11 @@
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ApiManagement.Models.NotificationContract&gt;</ReturnType>
       </ReturnValue>
@@ -216,7 +226,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListByService">
-      <MemberSignature Language="C#" Value="public static Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ApiManagement.Models.NotificationContract&gt; ListByService (this Microsoft.Azure.Management.ApiManagement.INotificationOperations operations, string resourceGroupName, string serviceName, Nullable&lt;int&gt; top = null, Nullable&lt;int&gt; skip = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ApiManagement.Models.NotificationContract&gt; ListByService (this Microsoft.Azure.Management.ApiManagement.INotificationOperations operations, string resourceGroupName, string serviceName, Nullable&lt;int&gt; top = default, Nullable&lt;int&gt; skip = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.ApiManagement.Models.NotificationContract&gt; ListByService(class Microsoft.Azure.Management.ApiManagement.INotificationOperations operations, string resourceGroupName, string serviceName, valuetype System.Nullable`1&lt;int32&gt; top, valuetype System.Nullable`1&lt;int32&gt; skip) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.NotificationOperationsExtensions.ListByService(Microsoft.Azure.Management.ApiManagement.INotificationOperations,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListByService (operations As INotificationOperations, resourceGroupName As String, serviceName As String, Optional top As Nullable(Of Integer) = null, Optional skip As Nullable(Of Integer) = null) As IPage(Of NotificationContract)" />
@@ -260,7 +270,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListByServiceAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ApiManagement.Models.NotificationContract&gt;&gt; ListByServiceAsync (this Microsoft.Azure.Management.ApiManagement.INotificationOperations operations, string resourceGroupName, string serviceName, Nullable&lt;int&gt; top = null, Nullable&lt;int&gt; skip = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ApiManagement.Models.NotificationContract&gt;&gt; ListByServiceAsync (this Microsoft.Azure.Management.ApiManagement.INotificationOperations operations, string resourceGroupName, string serviceName, Nullable&lt;int&gt; top = default, Nullable&lt;int&gt; skip = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.ApiManagement.Models.NotificationContract&gt;&gt; ListByServiceAsync(class Microsoft.Azure.Management.ApiManagement.INotificationOperations operations, string resourceGroupName, string serviceName, valuetype System.Nullable`1&lt;int32&gt; top, valuetype System.Nullable`1&lt;int32&gt; skip, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.NotificationOperationsExtensions.ListByServiceAsync(Microsoft.Azure.Management.ApiManagement.INotificationOperations,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListByServiceAsync : Microsoft.Azure.Management.ApiManagement.INotificationOperations * string * string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ApiManagement.Models.NotificationContract&gt;&gt;" Usage="Microsoft.Azure.Management.ApiManagement.NotificationOperationsExtensions.ListByServiceAsync (operations, resourceGroupName, serviceName, top, skip, cancellationToken)" />
@@ -269,6 +279,11 @@
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ApiManagement.Models.NotificationContract&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -339,7 +354,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListByServiceNextAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ApiManagement.Models.NotificationContract&gt;&gt; ListByServiceNextAsync (this Microsoft.Azure.Management.ApiManagement.INotificationOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ApiManagement.Models.NotificationContract&gt;&gt; ListByServiceNextAsync (this Microsoft.Azure.Management.ApiManagement.INotificationOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.ApiManagement.Models.NotificationContract&gt;&gt; ListByServiceNextAsync(class Microsoft.Azure.Management.ApiManagement.INotificationOperations operations, string nextPageLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.NotificationOperationsExtensions.ListByServiceNextAsync(Microsoft.Azure.Management.ApiManagement.INotificationOperations,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListByServiceNextAsync : Microsoft.Azure.Management.ApiManagement.INotificationOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ApiManagement.Models.NotificationContract&gt;&gt;" Usage="Microsoft.Azure.Management.ApiManagement.NotificationOperationsExtensions.ListByServiceNextAsync (operations, nextPageLink, cancellationToken)" />
@@ -348,6 +363,11 @@
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ApiManagement.Models.NotificationContract&gt;&gt;</ReturnType>
       </ReturnValue>

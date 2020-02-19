@@ -1,4 +1,4 @@
-﻿<Type Name="CloseFileHandleResultSegment" FullName="Microsoft.Azure.Storage.File.CloseFileHandleResultSegment">
+<Type Name="CloseFileHandleResultSegment" FullName="Microsoft.Azure.Storage.File.CloseFileHandleResultSegment">
   <TypeSignature Language="C#" Value="public class CloseFileHandleResultSegment" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CloseFileHandleResultSegment extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Storage.File.CloseFileHandleResultSegment" />
@@ -6,14 +6,17 @@
   <TypeSignature Language="F#" Value="type CloseFileHandleResultSegment = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Storage.File</AssemblyName>
-    <AssemblyVersion>10.0.3.0</AssemblyVersion>
+    <AssemblyVersion>11.1.0.0</AssemblyVersion>
+    <AssemblyVersion>11.1.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary> 
+            Represents a close file handles result, with continuation information for pagination scenarios. 
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -25,7 +28,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.File</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
+        <AssemblyVersion>11.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -42,14 +46,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.File</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
+        <AssemblyVersion>11.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.File.FileContinuationToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary> 
+            Gets the continuation token used to continue the close operation, should it not have completed within one request. 
+            </summary>
+        <value>A <see cref="T:Microsoft.Azure.Storage.File.FileContinuationToken" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,13 +69,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.File</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
+        <AssemblyVersion>11.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary> 
+            The number of handles closed on this request. 
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

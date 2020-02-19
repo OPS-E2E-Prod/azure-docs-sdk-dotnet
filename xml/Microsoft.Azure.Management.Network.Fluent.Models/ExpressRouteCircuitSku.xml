@@ -1,4 +1,4 @@
-﻿<Type Name="ExpressRouteCircuitSku" FullName="Microsoft.Azure.Management.Network.Fluent.Models.ExpressRouteCircuitSku">
+<Type Name="ExpressRouteCircuitSku" FullName="Microsoft.Azure.Management.Network.Fluent.Models.ExpressRouteCircuitSku">
   <TypeSignature Language="C#" Value="public class ExpressRouteCircuitSku" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExpressRouteCircuitSku extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Network.Fluent.Models.ExpressRouteCircuitSku" />
@@ -6,7 +6,10 @@
   <TypeSignature Language="F#" Value="type ExpressRouteCircuitSku = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,7 +30,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,7 +44,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ExpressRouteCircuitSku (string name = null, Microsoft.Azure.Management.Network.Fluent.Models.ExpressRouteCircuitSkuTier tier = null, Microsoft.Azure.Management.Network.Fluent.Models.ExpressRouteCircuitSkuFamily family = null);" />
+      <MemberSignature Language="C#" Value="public ExpressRouteCircuitSku (string name = default, Microsoft.Azure.Management.Network.Fluent.Models.ExpressRouteCircuitSkuTier tier = default, Microsoft.Azure.Management.Network.Fluent.Models.ExpressRouteCircuitSkuFamily family = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class Microsoft.Azure.Management.Network.Fluent.Models.ExpressRouteCircuitSkuTier tier, class Microsoft.Azure.Management.Network.Fluent.Models.ExpressRouteCircuitSkuFamily family) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.Models.ExpressRouteCircuitSku.#ctor(System.String,Microsoft.Azure.Management.Network.Fluent.Models.ExpressRouteCircuitSkuTier,Microsoft.Azure.Management.Network.Fluent.Models.ExpressRouteCircuitSkuFamily)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional name As String = null, Optional tier As ExpressRouteCircuitSkuTier = null, Optional family As ExpressRouteCircuitSkuFamily = null)" />
@@ -46,7 +52,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -55,12 +64,10 @@
       </Parameters>
       <Docs>
         <param name="name">The name of the SKU.</param>
-        <param name="tier">The tier of the SKU. Possible values are
-            'Standard' and 'Premium'. Possible values include: 'Standard',
-            'Premium'</param>
-        <param name="family">The family of the SKU. Possible values are:
-            'UnlimitedData' and 'MeteredData'. Possible values include:
-            'UnlimitedData', 'MeteredData'</param>
+        <param name="tier">The tier of the SKU. Possible values include:
+            'Standard', 'Premium', 'Basic', 'Local'</param>
+        <param name="family">The family of the SKU. Possible values
+            include: 'UnlimitedData', 'MeteredData'</param>
         <summary>
             Initializes a new instance of the ExpressRouteCircuitSku class.
             </summary>
@@ -76,7 +83,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -88,8 +98,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the family of the SKU. Possible values are:
-            'UnlimitedData' and 'MeteredData'. Possible values include:
+            Gets or sets the family of the SKU. Possible values include:
             'UnlimitedData', 'MeteredData'
             </summary>
         <value>To be added.</value>
@@ -105,7 +114,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -132,7 +144,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -144,8 +159,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the tier of the SKU. Possible values are 'Standard'
-            and 'Premium'. Possible values include: 'Standard', 'Premium'
+            Gets or sets the tier of the SKU. Possible values include:
+            'Standard', 'Premium', 'Basic', 'Local'
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

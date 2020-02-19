@@ -1,4 +1,4 @@
-﻿<Type Name="LoadBalancerFrontendIPConfigurationsOperationsExtensions" FullName="Microsoft.Azure.Management.Network.Fluent.LoadBalancerFrontendIPConfigurationsOperationsExtensions">
+<Type Name="LoadBalancerFrontendIPConfigurationsOperationsExtensions" FullName="Microsoft.Azure.Management.Network.Fluent.LoadBalancerFrontendIPConfigurationsOperationsExtensions">
   <TypeSignature Language="C#" Value="public static class LoadBalancerFrontendIPConfigurationsOperationsExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit LoadBalancerFrontendIPConfigurationsOperationsExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Network.Fluent.LoadBalancerFrontendIPConfigurationsOperationsExtensions" />
@@ -6,7 +6,10 @@
   <TypeSignature Language="F#" Value="type LoadBalancerFrontendIPConfigurationsOperationsExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -20,14 +23,17 @@
   </Docs>
   <Members>
     <Member MemberName="GetAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Network.Fluent.Models.FrontendIPConfigurationInner&gt; GetAsync (this Microsoft.Azure.Management.Network.Fluent.ILoadBalancerFrontendIPConfigurationsOperations operations, string resourceGroupName, string loadBalancerName, string frontendIPConfigurationName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Network.Fluent.Models.FrontendIPConfigurationInner&gt; GetAsync (this Microsoft.Azure.Management.Network.Fluent.ILoadBalancerFrontendIPConfigurationsOperations operations, string resourceGroupName, string loadBalancerName, string frontendIPConfigurationName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Network.Fluent.Models.FrontendIPConfigurationInner&gt; GetAsync(class Microsoft.Azure.Management.Network.Fluent.ILoadBalancerFrontendIPConfigurationsOperations operations, string resourceGroupName, string loadBalancerName, string frontendIPConfigurationName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.LoadBalancerFrontendIPConfigurationsOperationsExtensions.GetAsync(Microsoft.Azure.Management.Network.Fluent.ILoadBalancerFrontendIPConfigurationsOperations,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member GetAsync : Microsoft.Azure.Management.Network.Fluent.ILoadBalancerFrontendIPConfigurationsOperations * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Network.Fluent.Models.FrontendIPConfigurationInner&gt;" Usage="Microsoft.Azure.Management.Network.Fluent.LoadBalancerFrontendIPConfigurationsOperationsExtensions.GetAsync (operations, resourceGroupName, loadBalancerName, frontendIPConfigurationName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -68,14 +74,17 @@
       </Docs>
     </Member>
     <Member MemberName="ListAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Network.Fluent.Models.FrontendIPConfigurationInner&gt;&gt; ListAsync (this Microsoft.Azure.Management.Network.Fluent.ILoadBalancerFrontendIPConfigurationsOperations operations, string resourceGroupName, string loadBalancerName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Network.Fluent.Models.FrontendIPConfigurationInner&gt;&gt; ListAsync (this Microsoft.Azure.Management.Network.Fluent.ILoadBalancerFrontendIPConfigurationsOperations operations, string resourceGroupName, string loadBalancerName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Network.Fluent.Models.FrontendIPConfigurationInner&gt;&gt; ListAsync(class Microsoft.Azure.Management.Network.Fluent.ILoadBalancerFrontendIPConfigurationsOperations operations, string resourceGroupName, string loadBalancerName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.LoadBalancerFrontendIPConfigurationsOperationsExtensions.ListAsync(Microsoft.Azure.Management.Network.Fluent.ILoadBalancerFrontendIPConfigurationsOperations,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListAsync : Microsoft.Azure.Management.Network.Fluent.ILoadBalancerFrontendIPConfigurationsOperations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Network.Fluent.Models.FrontendIPConfigurationInner&gt;&gt;" Usage="Microsoft.Azure.Management.Network.Fluent.LoadBalancerFrontendIPConfigurationsOperationsExtensions.ListAsync (operations, resourceGroupName, loadBalancerName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -112,14 +121,17 @@
       </Docs>
     </Member>
     <Member MemberName="ListNextAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Network.Fluent.Models.FrontendIPConfigurationInner&gt;&gt; ListNextAsync (this Microsoft.Azure.Management.Network.Fluent.ILoadBalancerFrontendIPConfigurationsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Network.Fluent.Models.FrontendIPConfigurationInner&gt;&gt; ListNextAsync (this Microsoft.Azure.Management.Network.Fluent.ILoadBalancerFrontendIPConfigurationsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Network.Fluent.Models.FrontendIPConfigurationInner&gt;&gt; ListNextAsync(class Microsoft.Azure.Management.Network.Fluent.ILoadBalancerFrontendIPConfigurationsOperations operations, string nextPageLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.LoadBalancerFrontendIPConfigurationsOperationsExtensions.ListNextAsync(Microsoft.Azure.Management.Network.Fluent.ILoadBalancerFrontendIPConfigurationsOperations,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListNextAsync : Microsoft.Azure.Management.Network.Fluent.ILoadBalancerFrontendIPConfigurationsOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Network.Fluent.Models.FrontendIPConfigurationInner&gt;&gt;" Usage="Microsoft.Azure.Management.Network.Fluent.LoadBalancerFrontendIPConfigurationsOperationsExtensions.ListNextAsync (operations, nextPageLink, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

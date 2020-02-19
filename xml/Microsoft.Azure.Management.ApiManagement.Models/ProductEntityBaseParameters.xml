@@ -1,4 +1,4 @@
-﻿<Type Name="ProductEntityBaseParameters" FullName="Microsoft.Azure.Management.ApiManagement.Models.ProductEntityBaseParameters">
+<Type Name="ProductEntityBaseParameters" FullName="Microsoft.Azure.Management.ApiManagement.Models.ProductEntityBaseParameters">
   <TypeSignature Language="C#" Value="public class ProductEntityBaseParameters" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProductEntityBaseParameters extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.ApiManagement.Models.ProductEntityBaseParameters" />
@@ -39,7 +39,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ProductEntityBaseParameters (string description = null, string terms = null, Nullable&lt;bool&gt; subscriptionRequired = null, Nullable&lt;bool&gt; approvalRequired = null, Nullable&lt;int&gt; subscriptionsLimit = null, Nullable&lt;Microsoft.Azure.Management.ApiManagement.Models.ProductState&gt; state = null);" />
+      <MemberSignature Language="C#" Value="public ProductEntityBaseParameters (string description = default, string terms = default, Nullable&lt;bool&gt; subscriptionRequired = default, Nullable&lt;bool&gt; approvalRequired = default, Nullable&lt;int&gt; subscriptionsLimit = default, Nullable&lt;Microsoft.Azure.Management.ApiManagement.Models.ProductState&gt; state = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string description, string terms, valuetype System.Nullable`1&lt;bool&gt; subscriptionRequired, valuetype System.Nullable`1&lt;bool&gt; approvalRequired, valuetype System.Nullable`1&lt;int32&gt; subscriptionsLimit, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.ApiManagement.Models.ProductState&gt; state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.Models.ProductEntityBaseParameters.#ctor(System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Nullable{Microsoft.Azure.Management.ApiManagement.Models.ProductState})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional description As String = null, Optional terms As String = null, Optional subscriptionRequired As Nullable(Of Boolean) = null, Optional approvalRequired As Nullable(Of Boolean) = null, Optional subscriptionsLimit As Nullable(Of Integer) = null, Optional state As Nullable(Of ProductState) = null)" />
@@ -73,15 +73,15 @@
             subscription key. If property is omitted when creating a new
             product it's value is assumed to be true.</param>
         <param name="approvalRequired">whether subscription approval is
-            required. If false, new subscriptions will be approved
+            required. If false, new subscriptions will be approved
             automatically enabling developers to call the product’s APIs
-            immediately after subscribing. If true, administrators must
+            immediately after subscribing. If true, administrators must
             manually approve the subscription before the developer can any of
             the product’s APIs. Can be present only if subscriptionRequired
             property is present and has a value of false.</param>
         <param name="subscriptionsLimit">Whether the number of
             subscriptions a user can have to this product at the same time. Set
-            to null or omit to allow unlimited per user subscriptions. Can be
+            to null or omit to allow unlimited per user subscriptions. Can be
             present only if subscriptionRequired property is present and has a
             value of false.</param>
         <param name="state">whether product is published or not. Published
@@ -117,10 +117,10 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets whether subscription approval is required. If false,
+            Gets or sets whether subscription approval is required. If false,
             new subscriptions will be approved automatically enabling
             developers to call the product’s APIs immediately after
-            subscribing. If true, administrators must manually approve the
+            subscribing. If true, administrators must manually approve the
             subscription before the developer can any of the product’s APIs.
             Can be present only if subscriptionRequired property is present and
             has a value of false.
@@ -243,7 +243,7 @@
       <Docs>
         <summary>
             Gets or sets whether the number of subscriptions a user can have to
-            this product at the same time. Set to null or omit to allow
+            this product at the same time. Set to null or omit to allow
             unlimited per user subscriptions. Can be present only if
             subscriptionRequired property is present and has a value of false.
             </summary>

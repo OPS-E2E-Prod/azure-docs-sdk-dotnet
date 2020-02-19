@@ -1,4 +1,4 @@
-﻿<Type Name="MabErrorInfo" FullName="Microsoft.Azure.Management.RecoveryServices.Backup.Models.MabErrorInfo">
+<Type Name="MabErrorInfo" FullName="Microsoft.Azure.Management.RecoveryServices.Backup.Models.MabErrorInfo">
   <TypeSignature Language="C#" Value="public class MabErrorInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MabErrorInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.RecoveryServices.Backup.Models.MabErrorInfo" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type MabErrorInfo = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,7 +38,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MabErrorInfo (string errorString = null, System.Collections.Generic.IList&lt;string&gt; recommendations = null);" />
+      <MemberSignature Language="C#" Value="public MabErrorInfo (string errorString = default, System.Collections.Generic.IList&lt;string&gt; recommendations = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string errorString, class System.Collections.Generic.IList`1&lt;string&gt; recommendations) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.RecoveryServices.Backup.Models.MabErrorInfo.#ctor(System.String,System.Collections.Generic.IList{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional errorString As String = null, Optional recommendations As IList(Of String) = null)" />
@@ -46,7 +46,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="errorString" Type="System.String" />
@@ -63,15 +63,15 @@
       </Docs>
     </Member>
     <Member MemberName="ErrorString">
-      <MemberSignature Language="C#" Value="public string ErrorString { get; set; }" />
+      <MemberSignature Language="C#" Value="public string ErrorString { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ErrorString" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.Backup.Models.MabErrorInfo.ErrorString" />
-      <MemberSignature Language="VB.NET" Value="Public Property ErrorString As String" />
-      <MemberSignature Language="F#" Value="member this.ErrorString : string with get, set" Usage="Microsoft.Azure.Management.RecoveryServices.Backup.Models.MabErrorInfo.ErrorString" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorString As String" />
+      <MemberSignature Language="F#" Value="member this.ErrorString : string" Usage="Microsoft.Azure.Management.RecoveryServices.Backup.Models.MabErrorInfo.ErrorString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -83,22 +83,22 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets localized error string.
+            Gets localized error string.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Recommendations">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; Recommendations { get; set; }" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; Recommendations { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; Recommendations" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.Backup.Models.MabErrorInfo.Recommendations" />
-      <MemberSignature Language="VB.NET" Value="Public Property Recommendations As IList(Of String)" />
-      <MemberSignature Language="F#" Value="member this.Recommendations : System.Collections.Generic.IList&lt;string&gt; with get, set" Usage="Microsoft.Azure.Management.RecoveryServices.Backup.Models.MabErrorInfo.Recommendations" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Recommendations As IList(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Recommendations : System.Collections.Generic.IList&lt;string&gt;" Usage="Microsoft.Azure.Management.RecoveryServices.Backup.Models.MabErrorInfo.Recommendations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -110,7 +110,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets list of localized recommendations.
+            Gets list of localized recommendations.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

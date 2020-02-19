@@ -1,4 +1,4 @@
-﻿<Type Name="DialogServiceConnector" FullName="Microsoft.CognitiveServices.Speech.Dialog.DialogServiceConnector">
+<Type Name="DialogServiceConnector" FullName="Microsoft.CognitiveServices.Speech.Dialog.DialogServiceConnector">
   <TypeSignature Language="C#" Value="public sealed class DialogServiceConnector : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DialogServiceConnector extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.CognitiveServices.Speech.Dialog.DialogServiceConnector" />
@@ -6,7 +6,8 @@
   <TypeSignature Language="F#" Value="type DialogServiceConnector = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-    <AssemblyVersion>1.6.0.28</AssemblyVersion>
+    <AssemblyVersion>1.8.0.28</AssemblyVersion>
+    <AssemblyVersion>1.9.0.28</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -33,7 +34,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>1.6.0.28</AssemblyVersion>
+        <AssemblyVersion>1.8.0.28</AssemblyVersion>
+        <AssemblyVersion>1.9.0.28</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="config" Type="Microsoft.CognitiveServices.Speech.Dialog.DialogServiceConfig" />
@@ -43,7 +45,6 @@
         <summary>
             Creates a dialog service connector using the default microphone input for a specified dialog service configuration.
             </summary>
-        <returns>A dialog service connector instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,7 +56,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>1.6.0.28</AssemblyVersion>
+        <AssemblyVersion>1.8.0.28</AssemblyVersion>
+        <AssemblyVersion>1.9.0.28</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="config" Type="Microsoft.CognitiveServices.Speech.Dialog.DialogServiceConfig" />
@@ -67,7 +69,6 @@
         <summary>
             Creates a dialog service connector using the specified dialog and audio configuration.
             </summary>
-        <returns>A diallog connector instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,12 +76,13 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.CognitiveServices.Speech.Dialog.ActivityReceivedEventArgs&gt; ActivityReceived;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.CognitiveServices.Speech.Dialog.ActivityReceivedEventArgs&gt; ActivityReceived" />
       <MemberSignature Language="DocId" Value="E:Microsoft.CognitiveServices.Speech.Dialog.DialogServiceConnector.ActivityReceived" />
-      <MemberSignature Language="VB.NET" Value="Public Event ActivityReceived As EventHandler(Of ActivityReceivedEventArgs) " />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ActivityReceived As EventHandler(Of ActivityReceivedEventArgs) " />
       <MemberSignature Language="F#" Value="member this.ActivityReceived : EventHandler&lt;Microsoft.CognitiveServices.Speech.Dialog.ActivityReceivedEventArgs&gt; " Usage="member this.ActivityReceived : System.EventHandler&lt;Microsoft.CognitiveServices.Speech.Dialog.ActivityReceivedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>1.6.0.28</AssemblyVersion>
+        <AssemblyVersion>1.8.0.28</AssemblyVersion>
+        <AssemblyVersion>1.9.0.28</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.CognitiveServices.Speech.Dialog.ActivityReceivedEventArgs&gt;</ReturnType>
@@ -92,16 +94,43 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="AuthorizationToken">
+      <MemberSignature Language="C#" Value="public string AuthorizationToken { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AuthorizationToken" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.CognitiveServices.Speech.Dialog.DialogServiceConnector.AuthorizationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Property AuthorizationToken As String" />
+      <MemberSignature Language="F#" Value="member this.AuthorizationToken : string with get, set" Usage="Microsoft.CognitiveServices.Speech.Dialog.DialogServiceConnector.AuthorizationToken" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
+        <AssemblyVersion>1.8.0.28</AssemblyVersion>
+        <AssemblyVersion>1.9.0.28</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets/sets authorization token used to communicate with the service.
+            Note: The caller needs to ensure that the authorization token is valid. Before the authorization token
+            expires, the caller needs to refresh it by calling this setter with a new valid token.
+            Otherwise, the recognizer will encounter errors during recognition.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Canceled">
       <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.CognitiveServices.Speech.SpeechRecognitionCanceledEventArgs&gt; Canceled;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.CognitiveServices.Speech.SpeechRecognitionCanceledEventArgs&gt; Canceled" />
       <MemberSignature Language="DocId" Value="E:Microsoft.CognitiveServices.Speech.Dialog.DialogServiceConnector.Canceled" />
-      <MemberSignature Language="VB.NET" Value="Public Event Canceled As EventHandler(Of SpeechRecognitionCanceledEventArgs) " />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Canceled As EventHandler(Of SpeechRecognitionCanceledEventArgs) " />
       <MemberSignature Language="F#" Value="member this.Canceled : EventHandler&lt;Microsoft.CognitiveServices.Speech.SpeechRecognitionCanceledEventArgs&gt; " Usage="member this.Canceled : System.EventHandler&lt;Microsoft.CognitiveServices.Speech.SpeechRecognitionCanceledEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>1.6.0.28</AssemblyVersion>
+        <AssemblyVersion>1.8.0.28</AssemblyVersion>
+        <AssemblyVersion>1.9.0.28</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.CognitiveServices.Speech.SpeechRecognitionCanceledEventArgs&gt;</ReturnType>
@@ -122,7 +151,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>1.6.0.28</AssemblyVersion>
+        <AssemblyVersion>1.8.0.28</AssemblyVersion>
+        <AssemblyVersion>1.9.0.28</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -145,7 +175,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>1.6.0.28</AssemblyVersion>
+        <AssemblyVersion>1.8.0.28</AssemblyVersion>
+        <AssemblyVersion>1.9.0.28</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -171,7 +202,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>1.6.0.28</AssemblyVersion>
+        <AssemblyVersion>1.8.0.28</AssemblyVersion>
+        <AssemblyVersion>1.9.0.28</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -193,7 +225,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>1.6.0.28</AssemblyVersion>
+        <AssemblyVersion>1.8.0.28</AssemblyVersion>
+        <AssemblyVersion>1.9.0.28</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -205,25 +238,50 @@
       </Docs>
     </Member>
     <Member MemberName="ListenOnceAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ListenOnceAsync ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ListenOnceAsync() cil managed" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.CognitiveServices.Speech.SpeechRecognitionResult&gt; ListenOnceAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.CognitiveServices.Speech.SpeechRecognitionResult&gt; ListenOnceAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.CognitiveServices.Speech.Dialog.DialogServiceConnector.ListenOnceAsync" />
-      <MemberSignature Language="VB.NET" Value="Public Function ListenOnceAsync () As Task" />
-      <MemberSignature Language="F#" Value="member this.ListenOnceAsync : unit -&gt; System.Threading.Tasks.Task" Usage="dialogServiceConnector.ListenOnceAsync " />
+      <MemberSignature Language="VB.NET" Value="Public Function ListenOnceAsync () As Task(Of SpeechRecognitionResult)" />
+      <MemberSignature Language="F#" Value="member this.ListenOnceAsync : unit -&gt; System.Threading.Tasks.Task&lt;Microsoft.CognitiveServices.Speech.SpeechRecognitionResult&gt;" Usage="dialogServiceConnector.ListenOnceAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>1.6.0.28</AssemblyVersion>
+        <AssemblyVersion>1.8.0.28</AssemblyVersion>
+        <AssemblyVersion>1.9.0.28</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.CognitiveServices.Speech.SpeechRecognitionResult&gt;</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
         <summary>
             Starts a listening session that will terminate after the first utterance.
             </summary>
-        <returns>An asynchronous operation that starts the operation.</returns>
+        <returns>An asynchronous operation that starts the operation.  The task returns a value of <see cref="T:Microsoft.CognitiveServices.Speech.SpeechRecognitionResult" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public Microsoft.CognitiveServices.Speech.PropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.CognitiveServices.Speech.PropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.CognitiveServices.Speech.Dialog.DialogServiceConnector.Properties" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As PropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : Microsoft.CognitiveServices.Speech.PropertyCollection" Usage="Microsoft.CognitiveServices.Speech.Dialog.DialogServiceConnector.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
+        <AssemblyVersion>1.8.0.28</AssemblyVersion>
+        <AssemblyVersion>1.9.0.28</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.CognitiveServices.Speech.PropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The collection of properties and their values defined for this <see cref="T:Microsoft.CognitiveServices.Speech.Dialog.DialogServiceConnector" />.
+            Note: The property collection is only valid until the recognizer owning this Properties is disposed or finalized.
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -231,12 +289,13 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.CognitiveServices.Speech.SpeechRecognitionEventArgs&gt; Recognized;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.CognitiveServices.Speech.SpeechRecognitionEventArgs&gt; Recognized" />
       <MemberSignature Language="DocId" Value="E:Microsoft.CognitiveServices.Speech.Dialog.DialogServiceConnector.Recognized" />
-      <MemberSignature Language="VB.NET" Value="Public Event Recognized As EventHandler(Of SpeechRecognitionEventArgs) " />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Recognized As EventHandler(Of SpeechRecognitionEventArgs) " />
       <MemberSignature Language="F#" Value="member this.Recognized : EventHandler&lt;Microsoft.CognitiveServices.Speech.SpeechRecognitionEventArgs&gt; " Usage="member this.Recognized : System.EventHandler&lt;Microsoft.CognitiveServices.Speech.SpeechRecognitionEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>1.6.0.28</AssemblyVersion>
+        <AssemblyVersion>1.8.0.28</AssemblyVersion>
+        <AssemblyVersion>1.9.0.28</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.CognitiveServices.Speech.SpeechRecognitionEventArgs&gt;</ReturnType>
@@ -252,12 +311,13 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.CognitiveServices.Speech.SpeechRecognitionEventArgs&gt; Recognizing;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.CognitiveServices.Speech.SpeechRecognitionEventArgs&gt; Recognizing" />
       <MemberSignature Language="DocId" Value="E:Microsoft.CognitiveServices.Speech.Dialog.DialogServiceConnector.Recognizing" />
-      <MemberSignature Language="VB.NET" Value="Public Event Recognizing As EventHandler(Of SpeechRecognitionEventArgs) " />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Recognizing As EventHandler(Of SpeechRecognitionEventArgs) " />
       <MemberSignature Language="F#" Value="member this.Recognizing : EventHandler&lt;Microsoft.CognitiveServices.Speech.SpeechRecognitionEventArgs&gt; " Usage="member this.Recognizing : System.EventHandler&lt;Microsoft.CognitiveServices.Speech.SpeechRecognitionEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>1.6.0.28</AssemblyVersion>
+        <AssemblyVersion>1.8.0.28</AssemblyVersion>
+        <AssemblyVersion>1.9.0.28</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.CognitiveServices.Speech.SpeechRecognitionEventArgs&gt;</ReturnType>
@@ -278,7 +338,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>1.6.0.28</AssemblyVersion>
+        <AssemblyVersion>1.8.0.28</AssemblyVersion>
+        <AssemblyVersion>1.9.0.28</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -299,12 +360,13 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.CognitiveServices.Speech.SessionEventArgs&gt; SessionStarted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.CognitiveServices.Speech.SessionEventArgs&gt; SessionStarted" />
       <MemberSignature Language="DocId" Value="E:Microsoft.CognitiveServices.Speech.Dialog.DialogServiceConnector.SessionStarted" />
-      <MemberSignature Language="VB.NET" Value="Public Event SessionStarted As EventHandler(Of SessionEventArgs) " />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event SessionStarted As EventHandler(Of SessionEventArgs) " />
       <MemberSignature Language="F#" Value="member this.SessionStarted : EventHandler&lt;Microsoft.CognitiveServices.Speech.SessionEventArgs&gt; " Usage="member this.SessionStarted : System.EventHandler&lt;Microsoft.CognitiveServices.Speech.SessionEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>1.6.0.28</AssemblyVersion>
+        <AssemblyVersion>1.8.0.28</AssemblyVersion>
+        <AssemblyVersion>1.9.0.28</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.CognitiveServices.Speech.SessionEventArgs&gt;</ReturnType>
@@ -320,12 +382,13 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.CognitiveServices.Speech.SessionEventArgs&gt; SessionStopped;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.CognitiveServices.Speech.SessionEventArgs&gt; SessionStopped" />
       <MemberSignature Language="DocId" Value="E:Microsoft.CognitiveServices.Speech.Dialog.DialogServiceConnector.SessionStopped" />
-      <MemberSignature Language="VB.NET" Value="Public Event SessionStopped As EventHandler(Of SessionEventArgs) " />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event SessionStopped As EventHandler(Of SessionEventArgs) " />
       <MemberSignature Language="F#" Value="member this.SessionStopped : EventHandler&lt;Microsoft.CognitiveServices.Speech.SessionEventArgs&gt; " Usage="member this.SessionStopped : System.EventHandler&lt;Microsoft.CognitiveServices.Speech.SessionEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>1.6.0.28</AssemblyVersion>
+        <AssemblyVersion>1.8.0.28</AssemblyVersion>
+        <AssemblyVersion>1.9.0.28</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.CognitiveServices.Speech.SessionEventArgs&gt;</ReturnType>
@@ -346,7 +409,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>1.6.0.28</AssemblyVersion>
+        <AssemblyVersion>1.8.0.28</AssemblyVersion>
+        <AssemblyVersion>1.9.0.28</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -372,7 +436,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>1.6.0.28</AssemblyVersion>
+        <AssemblyVersion>1.8.0.28</AssemblyVersion>
+        <AssemblyVersion>1.9.0.28</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>

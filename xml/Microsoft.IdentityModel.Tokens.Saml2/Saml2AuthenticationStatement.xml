@@ -1,4 +1,4 @@
-﻿<Type Name="Saml2AuthenticationStatement" FullName="Microsoft.IdentityModel.Tokens.Saml2.Saml2AuthenticationStatement">
+<Type Name="Saml2AuthenticationStatement" FullName="Microsoft.IdentityModel.Tokens.Saml2.Saml2AuthenticationStatement">
   <TypeSignature Language="C#" Value="public class Saml2AuthenticationStatement : Microsoft.IdentityModel.Tokens.Saml2.Saml2Statement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Saml2AuthenticationStatement extends Microsoft.IdentityModel.Tokens.Saml2.Saml2Statement" />
   <TypeSignature Language="DocId" Value="T:Microsoft.IdentityModel.Tokens.Saml2.Saml2AuthenticationStatement" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type Saml2AuthenticationStatement = class&#xA;    inherit Saml2Statement" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.IdentityModel.Tokens.Saml</AssemblyName>
-    <AssemblyVersion>5.5.0.0</AssemblyVersion>
+    <AssemblyVersion>5.6.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.IdentityModel.Tokens.Saml2.Saml2Statement</BaseTypeName>
@@ -29,7 +29,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Tokens.Saml</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="authenticationContext" Type="Microsoft.IdentityModel.Tokens.Saml2.Saml2AuthenticationContext" />
@@ -51,7 +51,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Tokens.Saml</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="authenticationContext" Type="Microsoft.IdentityModel.Tokens.Saml2.Saml2AuthenticationContext" />
@@ -76,7 +76,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Tokens.Saml</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.IdentityModel.Tokens.Saml2.Saml2AuthenticationContext</ReturnType>
@@ -99,14 +99,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Tokens.Saml</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the time at which the authentication took place. [Saml2Core, 2.7.2]
+            Gets or sets the time at which the authentication took place. If the provided DateTime is not in UTC, it will
+            be converted to UTC. [Saml2Core, 2.7.2]
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -122,7 +123,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Tokens.Saml</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -145,7 +146,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Tokens.Saml</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
@@ -154,7 +155,8 @@
         <summary>
             Gets or sets the time instant at which the session between the principal 
             identified by the subject and the SAML authority issuing this statement
-            must be considered ended. [Saml2Core, 2.7.2]
+            must be considered ended. If the provided DateTime is not in UTC, it will
+            be converted to UTC. [Saml2Core, 2.7.2]
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -169,7 +171,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Tokens.Saml</AssemblyName>
-        <AssemblyVersion>5.5.0.0</AssemblyVersion>
+        <AssemblyVersion>5.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.IdentityModel.Tokens.Saml2.Saml2SubjectLocality</ReturnType>

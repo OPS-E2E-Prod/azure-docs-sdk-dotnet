@@ -1,4 +1,4 @@
-﻿<Type Name="PoolResizeParameter" FullName="Microsoft.Azure.Batch.Protocol.Models.PoolResizeParameter">
+<Type Name="PoolResizeParameter" FullName="Microsoft.Azure.Batch.Protocol.Models.PoolResizeParameter">
   <TypeSignature Language="C#" Value="public class PoolResizeParameter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PoolResizeParameter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.Protocol.Models.PoolResizeParameter" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type PoolResizeParameter = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -14,7 +14,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            Options for changing the size of a pool.
+            Options for changing the size of a Pool.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -27,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,7 +38,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PoolResizeParameter (Nullable&lt;int&gt; targetDedicatedNodes = null, Nullable&lt;int&gt; targetLowPriorityNodes = null, Nullable&lt;TimeSpan&gt; resizeTimeout = null, Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.ComputeNodeDeallocationOption&gt; nodeDeallocationOption = null);" />
+      <MemberSignature Language="C#" Value="public PoolResizeParameter (Nullable&lt;int&gt; targetDedicatedNodes = default, Nullable&lt;int&gt; targetLowPriorityNodes = default, Nullable&lt;TimeSpan&gt; resizeTimeout = default, Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.ComputeNodeDeallocationOption&gt; nodeDeallocationOption = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;int32&gt; targetDedicatedNodes, valuetype System.Nullable`1&lt;int32&gt; targetLowPriorityNodes, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; resizeTimeout, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Batch.Protocol.Models.ComputeNodeDeallocationOption&gt; nodeDeallocationOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.PoolResizeParameter.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.TimeSpan},System.Nullable{Microsoft.Azure.Batch.Protocol.Models.ComputeNodeDeallocationOption})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional targetDedicatedNodes As Nullable(Of Integer) = null, Optional targetLowPriorityNodes As Nullable(Of Integer) = null, Optional resizeTimeout As Nullable(Of TimeSpan) = null, Optional nodeDeallocationOption As Nullable(Of ComputeNodeDeallocationOption) = null)" />
@@ -46,7 +46,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="targetDedicatedNodes" Type="System.Nullable&lt;System.Int32&gt;" />
@@ -56,14 +56,13 @@
       </Parameters>
       <Docs>
         <param name="targetDedicatedNodes">The desired number of dedicated
-            compute nodes in the pool.</param>
+            Compute Nodes in the Pool.</param>
         <param name="targetLowPriorityNodes">The desired number of
-            low-priority compute nodes in the pool.</param>
-        <param name="resizeTimeout">The timeout for allocation of compute
-            nodes to the pool or removal of compute nodes from the
-            pool.</param>
+            low-priority Compute Nodes in the Pool.</param>
+        <param name="resizeTimeout">The timeout for allocation of Nodes to
+            the Pool or removal of Compute Nodes from the Pool.</param>
         <param name="nodeDeallocationOption">Determines what to do with a
-            node and its running task(s) if the pool size is
+            Compute Node and its running task(s) if the Pool size is
             decreasing.</param>
         <summary>
             Initializes a new instance of the PoolResizeParameter class.
@@ -80,7 +79,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -92,8 +91,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets determines what to do with a node and its running
-            task(s) if the pool size is decreasing.
+            Gets or sets determines what to do with a Compute Node and its
+            running task(s) if the Pool size is decreasing.
             </summary>
         <value>To be added.</value>
         <remarks>
@@ -111,7 +110,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -123,8 +122,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the timeout for allocation of compute nodes to the
-            pool or removal of compute nodes from the pool.
+            Gets or sets the timeout for allocation of Nodes to the Pool or
+            removal of Compute Nodes from the Pool.
             </summary>
         <value>To be added.</value>
         <remarks>
@@ -144,7 +143,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -156,8 +155,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the desired number of dedicated compute nodes in the
-            pool.
+            Gets or sets the desired number of dedicated Compute Nodes in the
+            Pool.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -172,7 +171,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -184,8 +183,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the desired number of low-priority compute nodes in
-            the pool.
+            Gets or sets the desired number of low-priority Compute Nodes in
+            the Pool.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

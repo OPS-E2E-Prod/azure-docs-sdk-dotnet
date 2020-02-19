@@ -1,4 +1,4 @@
-﻿<Type Name="JobSchedulingError" FullName="Microsoft.Azure.Batch.Protocol.Models.JobSchedulingError">
+<Type Name="JobSchedulingError" FullName="Microsoft.Azure.Batch.Protocol.Models.JobSchedulingError">
   <TypeSignature Language="C#" Value="public class JobSchedulingError" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit JobSchedulingError extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.Protocol.Models.JobSchedulingError" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type JobSchedulingError = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -14,7 +14,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            An error encountered by the Batch service when scheduling a job.
+            An error encountered by the Batch service when scheduling a Job.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -27,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,7 +38,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public JobSchedulingError (Microsoft.Azure.Batch.Protocol.Models.ErrorCategory category, string code = null, string message = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.NameValuePair&gt; details = null);" />
+      <MemberSignature Language="C#" Value="public JobSchedulingError (Microsoft.Azure.Batch.Protocol.Models.ErrorCategory category, string code = default, string message = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.NameValuePair&gt; details = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Azure.Batch.Protocol.Models.ErrorCategory category, string code, string message, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Batch.Protocol.Models.NameValuePair&gt; details) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.JobSchedulingError.#ctor(Microsoft.Azure.Batch.Protocol.Models.ErrorCategory,System.String,System.String,System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.NameValuePair})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (category As ErrorCategory, Optional code As String = null, Optional message As String = null, Optional details As IList(Of NameValuePair) = null)" />
@@ -46,7 +46,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="category" Type="Microsoft.Azure.Batch.Protocol.Models.ErrorCategory" />
@@ -55,12 +55,12 @@
         <Parameter Name="details" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.NameValuePair&gt;" />
       </Parameters>
       <Docs>
-        <param name="category">The category of the job scheduling
+        <param name="category">The category of the Job scheduling
             error.</param>
-        <param name="code">An identifier for the job scheduling error.
+        <param name="code">An identifier for the Job scheduling error.
             Codes are invariant and are intended to be consumed
             programmatically.</param>
-        <param name="message">A message describing the job scheduling
+        <param name="message">A message describing the Job scheduling
             error, intended to be suitable for display in a user
             interface.</param>
         <param name="details">A list of additional error details related to
@@ -80,7 +80,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -92,7 +92,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the category of the job scheduling error.
+            Gets or sets the category of the Job scheduling error.
             </summary>
         <value>To be added.</value>
         <remarks>
@@ -109,7 +109,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -121,7 +121,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets an identifier for the job scheduling error. Codes are
+            Gets or sets an identifier for the Job scheduling error. Codes are
             invariant and are intended to be consumed programmatically.
             </summary>
         <value>To be added.</value>
@@ -137,7 +137,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -165,7 +165,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -177,7 +177,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets a message describing the job scheduling error,
+            Gets or sets a message describing the Job scheduling error,
             intended to be suitable for display in a user interface.
             </summary>
         <value>To be added.</value>

@@ -1,4 +1,4 @@
-﻿<Type Name="TokenProvider" FullName="Microsoft.Azure.ServiceBus.Primitives.TokenProvider">
+<Type Name="TokenProvider" FullName="Microsoft.Azure.ServiceBus.Primitives.TokenProvider">
   <TypeSignature Language="C#" Value="public abstract class TokenProvider : Microsoft.Azure.ServiceBus.Primitives.ITokenProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TokenProvider extends System.Object implements class Microsoft.Azure.ServiceBus.Primitives.ITokenProvider" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.ServiceBus.Primitives.TokenProvider" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type TokenProvider = class&#xA;    interface ITokenProvider" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-    <AssemblyVersion>3.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -17,9 +17,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>
-            This abstract base class can be extended to implement additional token providers.
-            </summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +29,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -39,105 +37,52 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="CreateAadTokenProvider">
-      <MemberSignature Language="C#" Value="public static Microsoft.Azure.ServiceBus.Primitives.TokenProvider CreateAadTokenProvider (Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext authContext, Microsoft.IdentityModel.Clients.ActiveDirectory.ClientAssertionCertificate clientAssertionCertificate);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.ServiceBus.Primitives.TokenProvider CreateAadTokenProvider(class Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext authContext, class Microsoft.IdentityModel.Clients.ActiveDirectory.ClientAssertionCertificate clientAssertionCertificate) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ServiceBus.Primitives.TokenProvider.CreateAadTokenProvider(Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext,Microsoft.IdentityModel.Clients.ActiveDirectory.ClientAssertionCertificate)" />
-      <MemberSignature Language="F#" Value="static member CreateAadTokenProvider : Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext * Microsoft.IdentityModel.Clients.ActiveDirectory.ClientAssertionCertificate -&gt; Microsoft.Azure.ServiceBus.Primitives.TokenProvider" Usage="Microsoft.Azure.ServiceBus.Primitives.TokenProvider.CreateAadTokenProvider (authContext, clientAssertionCertificate)" />
+    <Member MemberName="CreateAzureActiveDirectoryTokenProvider">
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.ServiceBus.Primitives.TokenProvider CreateAzureActiveDirectoryTokenProvider (Microsoft.Azure.ServiceBus.Primitives.AzureActiveDirectoryTokenProvider.AuthenticationCallback authCallback, string authority, object state = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.ServiceBus.Primitives.TokenProvider CreateAzureActiveDirectoryTokenProvider(class Microsoft.Azure.ServiceBus.Primitives.AzureActiveDirectoryTokenProvider/AuthenticationCallback authCallback, string authority, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ServiceBus.Primitives.TokenProvider.CreateAzureActiveDirectoryTokenProvider(Microsoft.Azure.ServiceBus.Primitives.AzureActiveDirectoryTokenProvider.AuthenticationCallback,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateAzureActiveDirectoryTokenProvider (authCallback As AzureActiveDirectoryTokenProvider.AuthenticationCallback, authority As String, Optional state As Object = null) As TokenProvider" />
+      <MemberSignature Language="F#" Value="static member CreateAzureActiveDirectoryTokenProvider : Microsoft.Azure.ServiceBus.Primitives.AzureActiveDirectoryTokenProvider.AuthenticationCallback * string * obj -&gt; Microsoft.Azure.ServiceBus.Primitives.TokenProvider" Usage="Microsoft.Azure.ServiceBus.Primitives.TokenProvider.CreateAzureActiveDirectoryTokenProvider (authCallback, authority, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.ServiceBus.Primitives.TokenProvider</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="authContext" Type="Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext" />
-        <Parameter Name="clientAssertionCertificate" Type="Microsoft.IdentityModel.Clients.ActiveDirectory.ClientAssertionCertificate" />
+        <Parameter Name="authCallback" Type="Microsoft.Azure.ServiceBus.Primitives.AzureActiveDirectoryTokenProvider+AuthenticationCallback" />
+        <Parameter Name="authority" Type="System.String" />
+        <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="authContext">AuthenticationContext for AAD.</param>
-        <param name="clientAssertionCertificate">The client assertion certificate credential.</param>
-        <summary>Creates an Azure Active Directory token provider.</summary>
-        <returns>The <see cref="T:Microsoft.Azure.ServiceBus.Primitives.TokenProvider" /> for returning Json web token.</returns>
+        <param name="authCallback">To be added.</param>
+        <param name="authority">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="CreateAadTokenProvider">
-      <MemberSignature Language="C#" Value="public static Microsoft.Azure.ServiceBus.Primitives.TokenProvider CreateAadTokenProvider (Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext authContext, Microsoft.IdentityModel.Clients.ActiveDirectory.ClientCredential clientCredential);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.ServiceBus.Primitives.TokenProvider CreateAadTokenProvider(class Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext authContext, class Microsoft.IdentityModel.Clients.ActiveDirectory.ClientCredential clientCredential) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ServiceBus.Primitives.TokenProvider.CreateAadTokenProvider(Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext,Microsoft.IdentityModel.Clients.ActiveDirectory.ClientCredential)" />
-      <MemberSignature Language="F#" Value="static member CreateAadTokenProvider : Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext * Microsoft.IdentityModel.Clients.ActiveDirectory.ClientCredential -&gt; Microsoft.Azure.ServiceBus.Primitives.TokenProvider" Usage="Microsoft.Azure.ServiceBus.Primitives.TokenProvider.CreateAadTokenProvider (authContext, clientCredential)" />
+    <Member MemberName="CreateManagedIdentityTokenProvider">
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.ServiceBus.Primitives.TokenProvider CreateManagedIdentityTokenProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.ServiceBus.Primitives.TokenProvider CreateManagedIdentityTokenProvider() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ServiceBus.Primitives.TokenProvider.CreateManagedIdentityTokenProvider" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateManagedIdentityTokenProvider () As TokenProvider" />
+      <MemberSignature Language="F#" Value="static member CreateManagedIdentityTokenProvider : unit -&gt; Microsoft.Azure.ServiceBus.Primitives.TokenProvider" Usage="Microsoft.Azure.ServiceBus.Primitives.TokenProvider.CreateManagedIdentityTokenProvider " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.Azure.ServiceBus.Primitives.TokenProvider</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="authContext" Type="Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext" />
-        <Parameter Name="clientCredential" Type="Microsoft.IdentityModel.Clients.ActiveDirectory.ClientCredential" />
-      </Parameters>
-      <Docs>
-        <param name="authContext">AuthenticationContext for AAD.</param>
-        <param name="clientCredential">The app credential.</param>
-        <summary>Creates an Azure Active Directory token provider.</summary>
-        <returns>The <see cref="T:Microsoft.Azure.ServiceBus.Primitives.TokenProvider" /> for returning Json web token.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="CreateAadTokenProvider">
-      <MemberSignature Language="C#" Value="public static Microsoft.Azure.ServiceBus.Primitives.TokenProvider CreateAadTokenProvider (Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext authContext, string clientId, Uri redirectUri, Microsoft.IdentityModel.Clients.ActiveDirectory.IPlatformParameters platformParameters, Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifier userIdentifier = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.ServiceBus.Primitives.TokenProvider CreateAadTokenProvider(class Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext authContext, string clientId, class System.Uri redirectUri, class Microsoft.IdentityModel.Clients.ActiveDirectory.IPlatformParameters platformParameters, class Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifier userIdentifier) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ServiceBus.Primitives.TokenProvider.CreateAadTokenProvider(Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext,System.String,System.Uri,Microsoft.IdentityModel.Clients.ActiveDirectory.IPlatformParameters,Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifier)" />
-      <MemberSignature Language="F#" Value="static member CreateAadTokenProvider : Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext * string * Uri * Microsoft.IdentityModel.Clients.ActiveDirectory.IPlatformParameters * Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifier -&gt; Microsoft.Azure.ServiceBus.Primitives.TokenProvider" Usage="Microsoft.Azure.ServiceBus.Primitives.TokenProvider.CreateAadTokenProvider (authContext, clientId, redirectUri, platformParameters, userIdentifier)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.Azure.ServiceBus.Primitives.TokenProvider</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="authContext" Type="Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext" />
-        <Parameter Name="clientId" Type="System.String" />
-        <Parameter Name="redirectUri" Type="System.Uri" />
-        <Parameter Name="platformParameters" Type="Microsoft.IdentityModel.Clients.ActiveDirectory.IPlatformParameters" />
-        <Parameter Name="userIdentifier" Type="Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifier" />
-      </Parameters>
-      <Docs>
-        <param name="authContext">AuthenticationContext for AAD.</param>
-        <param name="clientId">ClientId for AAD.</param>
-        <param name="redirectUri">The redirectUri on Client App.</param>
-        <param name="platformParameters">Platform parameters</param>
-        <param name="userIdentifier">User Identifier</param>
-        <summary>Creates an Azure Active Directory token provider.</summary>
-        <returns>The <see cref="T:Microsoft.Azure.ServiceBus.Primitives.TokenProvider" /> for returning Json web token.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="CreateManagedServiceIdentityTokenProvider">
-      <MemberSignature Language="C#" Value="public static Microsoft.Azure.ServiceBus.Primitives.TokenProvider CreateManagedServiceIdentityTokenProvider ();" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.ServiceBus.Primitives.TokenProvider CreateManagedServiceIdentityTokenProvider() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ServiceBus.Primitives.TokenProvider.CreateManagedServiceIdentityTokenProvider" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateManagedServiceIdentityTokenProvider () As TokenProvider" />
-      <MemberSignature Language="F#" Value="static member CreateManagedServiceIdentityTokenProvider : unit -&gt; Microsoft.Azure.ServiceBus.Primitives.TokenProvider" Usage="Microsoft.Azure.ServiceBus.Primitives.TokenProvider.CreateManagedServiceIdentityTokenProvider " />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.ServiceBus.Primitives.TokenProvider</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates Azure Managed Service Identity token provider.</summary>
-        <returns>The <see cref="T:Microsoft.Azure.ServiceBus.Primitives.TokenProvider" /> for returning Json web token.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,7 +95,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.ServiceBus.Primitives.TokenProvider</ReturnType>
@@ -159,14 +104,10 @@
         <Parameter Name="sharedAccessSignature" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="sharedAccessSignature">The shared access signature</param>
-        <summary>
-            Construct a TokenProvider based on a sharedAccessSignature.
-            </summary>
-        <returns>A TokenProvider initialized with the shared access signature</returns>
-        <remarks>
-          <see cref="M:Microsoft.Azure.ServiceBus.Primitives.TokenProvider.GetTokenAsync(System.String,System.TimeSpan)" /> parameters will not be used 
-            to manipulate target URL and token TTL.</remarks>
+        <param name="sharedAccessSignature">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateSharedAccessSignatureTokenProvider">
@@ -178,7 +119,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.ServiceBus.Primitives.TokenProvider</ReturnType>
@@ -188,13 +129,11 @@
         <Parameter Name="sharedAccessKey" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="keyName">The key name of the corresponding SharedAccessKeyAuthorizationRule.</param>
-        <param name="sharedAccessKey">The key associated with the SharedAccessKeyAuthorizationRule</param>
-        <summary>
-            Construct a TokenProvider based on the provided Key Name and Shared Access Key.
-            </summary>
-        <returns>A TokenProvider initialized with the provided RuleId and Password</returns>
-        <remarks>Default token TTL is 1 hour and token scope is at entity level.</remarks>
+        <param name="keyName">To be added.</param>
+        <param name="sharedAccessKey">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateSharedAccessSignatureTokenProvider">
@@ -205,7 +144,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.ServiceBus.Primitives.TokenProvider</ReturnType>
@@ -216,14 +155,12 @@
         <Parameter Name="tokenScope" Type="Microsoft.Azure.ServiceBus.Primitives.TokenScope" />
       </Parameters>
       <Docs>
-        <param name="keyName">The key name of the corresponding SharedAccessKeyAuthorizationRule.</param>
-        <param name="sharedAccessKey">The key associated with the SharedAccessKeyAuthorizationRule</param>
-        <param name="tokenScope">The tokenScope of tokens to request.</param>
-        <summary>
-            Construct a TokenProvider based on the provided Key Name and Shared Access Key.
-            </summary>
-        <returns>A TokenProvider initialized with the provided keyName and key</returns>
-        <remarks>Default token TTL is 1 hour.</remarks>
+        <param name="keyName">To be added.</param>
+        <param name="sharedAccessKey">To be added.</param>
+        <param name="tokenScope">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateSharedAccessSignatureTokenProvider">
@@ -235,7 +172,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.ServiceBus.Primitives.TokenProvider</ReturnType>
@@ -246,13 +183,11 @@
         <Parameter Name="tokenTimeToLive" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="keyName">The key name of the corresponding SharedAccessKeyAuthorizationRule.</param>
-        <param name="sharedAccessKey">The key associated with the SharedAccessKeyAuthorizationRule</param>
-        <param name="tokenTimeToLive">The token time to live</param>
-        <summary>
-            Construct a TokenProvider based on the provided Key Name and Shared Access Key.
-            </summary>
-        <returns>A TokenProvider initialized with the provided keyName and key.</returns>
+        <param name="keyName">To be added.</param>
+        <param name="sharedAccessKey">To be added.</param>
+        <param name="tokenTimeToLive">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -264,7 +199,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.ServiceBus.Primitives.TokenProvider</ReturnType>
@@ -276,14 +211,12 @@
         <Parameter Name="tokenScope" Type="Microsoft.Azure.ServiceBus.Primitives.TokenScope" />
       </Parameters>
       <Docs>
-        <param name="keyName">The key name of the corresponding SharedAccessKeyAuthorizationRule.</param>
-        <param name="sharedAccessKey">The key associated with the SharedAccessKeyAuthorizationRule</param>
-        <param name="tokenTimeToLive">The token time to live</param>
-        <param name="tokenScope">The tokenScope of tokens to request.</param>
-        <summary>
-            Construct a TokenProvider based on the provided Key Name and Shared Access Key.
-            </summary>
-        <returns>A TokenProvider initialized with the provided RuleId and Password</returns>
+        <param name="keyName">To be added.</param>
+        <param name="sharedAccessKey">To be added.</param>
+        <param name="tokenTimeToLive">To be added.</param>
+        <param name="tokenScope">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -299,7 +232,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.ServiceBus.Primitives.SecurityToken&gt;</ReturnType>
@@ -309,13 +242,11 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="appliesTo">The URI which the access token applies to</param>
-        <param name="timeout">The timeout value for how long it takes to get the security token (not the token time to live).</param>
-        <summary>
-            Gets a <see cref="T:Microsoft.Azure.ServiceBus.Primitives.SecurityToken" /> for the given audience and duration.
-            </summary>
+        <param name="appliesTo">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
-        <remarks>This parameter <paramref name="timeout" /> is here for compatibility, but is not currently used.</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

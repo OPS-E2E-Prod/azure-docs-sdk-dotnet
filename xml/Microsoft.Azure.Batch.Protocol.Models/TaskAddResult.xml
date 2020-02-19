@@ -1,4 +1,4 @@
-﻿<Type Name="TaskAddResult" FullName="Microsoft.Azure.Batch.Protocol.Models.TaskAddResult">
+<Type Name="TaskAddResult" FullName="Microsoft.Azure.Batch.Protocol.Models.TaskAddResult">
   <TypeSignature Language="C#" Value="public class TaskAddResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TaskAddResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.Protocol.Models.TaskAddResult" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type TaskAddResult = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -14,7 +14,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            Result for a single task added as part of an add task collection
+            Result for a single Task added as part of an add Task collection
             operation.
             </summary>
     <remarks>To be added.</remarks>
@@ -28,7 +28,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -39,7 +39,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public TaskAddResult (Microsoft.Azure.Batch.Protocol.Models.TaskAddStatus status, string taskId, string eTag = null, Nullable&lt;DateTime&gt; lastModified = null, string location = null, Microsoft.Azure.Batch.Protocol.Models.BatchError error = null);" />
+      <MemberSignature Language="C#" Value="public TaskAddResult (Microsoft.Azure.Batch.Protocol.Models.TaskAddStatus status, string taskId, string eTag = default, Nullable&lt;DateTime&gt; lastModified = default, string location = default, Microsoft.Azure.Batch.Protocol.Models.BatchError error = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Azure.Batch.Protocol.Models.TaskAddStatus status, string taskId, string eTag, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; lastModified, string location, class Microsoft.Azure.Batch.Protocol.Models.BatchError error) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.TaskAddResult.#ctor(Microsoft.Azure.Batch.Protocol.Models.TaskAddStatus,System.String,System.String,System.Nullable{System.DateTime},System.String,Microsoft.Azure.Batch.Protocol.Models.BatchError)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (status As TaskAddStatus, taskId As String, Optional eTag As String = null, Optional lastModified As Nullable(Of DateTime) = null, Optional location As String = null, Optional error As BatchError = null)" />
@@ -47,7 +47,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="status" Type="Microsoft.Azure.Batch.Protocol.Models.TaskAddStatus" />
@@ -58,17 +58,17 @@
         <Parameter Name="error" Type="Microsoft.Azure.Batch.Protocol.Models.BatchError" />
       </Parameters>
       <Docs>
-        <param name="status">The status of the add task request.</param>
-        <param name="taskId">The ID of the task for which this is the
+        <param name="status">The status of the add Task request.</param>
+        <param name="taskId">The ID of the Task for which this is the
             result.</param>
-        <param name="eTag">The ETag of the task, if the task was
+        <param name="eTag">The ETag of the Task, if the Task was
             successfully added.</param>
         <param name="lastModified">The last modified time of the
-            task.</param>
-        <param name="location">The URL of the task, if the task was
+            Task.</param>
+        <param name="location">The URL of the Task, if the Task was
             successfully added.</param>
         <param name="error">The error encountered while attempting to add
-            the task.</param>
+            the Task.</param>
         <summary>
             Initializes a new instance of the TaskAddResult class.
             </summary>
@@ -84,7 +84,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -97,7 +97,7 @@
       <Docs>
         <summary>
             Gets or sets the error encountered while attempting to add the
-            task.
+            Task.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -112,7 +112,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -124,15 +124,15 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the ETag of the task, if the task was successfully
+            Gets or sets the ETag of the Task, if the Task was successfully
             added.
             </summary>
         <value>To be added.</value>
         <remarks>
-            You can use this to detect whether the task has changed between
+            You can use this to detect whether the Task has changed between
             requests. In particular, you can be pass the ETag with an Update
             Task request to specify that your changes should take effect only
-            if nobody else has modified the job in the meantime.
+            if nobody else has modified the Job in the meantime.
             </remarks>
       </Docs>
     </Member>
@@ -145,7 +145,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -157,7 +157,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the last modified time of the task.
+            Gets or sets the last modified time of the Task.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -172,7 +172,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -184,7 +184,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the URL of the task, if the task was successfully
+            Gets or sets the URL of the Task, if the Task was successfully
             added.
             </summary>
         <value>To be added.</value>
@@ -200,7 +200,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -212,7 +212,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the status of the add task request.
+            Gets or sets the status of the add Task request.
             </summary>
         <value>To be added.</value>
         <remarks>
@@ -229,7 +229,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -241,7 +241,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the ID of the task for which this is the result.
+            Gets or sets the ID of the Task for which this is the result.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

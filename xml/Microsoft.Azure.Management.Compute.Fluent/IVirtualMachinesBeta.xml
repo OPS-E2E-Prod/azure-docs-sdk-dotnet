@@ -1,4 +1,4 @@
-﻿<Type Name="IVirtualMachinesBeta" FullName="Microsoft.Azure.Management.Compute.Fluent.IVirtualMachinesBeta">
+<Type Name="IVirtualMachinesBeta" FullName="Microsoft.Azure.Management.Compute.Fluent.IVirtualMachinesBeta">
   <TypeSignature Language="C#" Value="public interface IVirtualMachinesBeta : Microsoft.Azure.Management.ResourceManager.Fluent.Core.IBeta" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IVirtualMachinesBeta implements class Microsoft.Azure.Management.ResourceManager.Fluent.Core.IBeta" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Compute.Fluent.IVirtualMachinesBeta" />
@@ -6,7 +6,10 @@
   <TypeSignature Language="F#" Value="type IVirtualMachinesBeta = interface&#xA;    interface IBeta" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -29,7 +32,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandResultInner</ReturnType>
@@ -52,14 +58,17 @@
       </Docs>
     </Member>
     <Member MemberName="RunCommandAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandResultInner&gt; RunCommandAsync (string groupName, string name, Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandInput inputCommand, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandResultInner&gt; RunCommandAsync (string groupName, string name, Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandInput inputCommand, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandResultInner&gt; RunCommandAsync(string groupName, string name, class Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandInput inputCommand, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.IVirtualMachinesBeta.RunCommandAsync(System.String,System.String,Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandInput,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member RunCommandAsync : string * string * Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandInput * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandResultInner&gt;" Usage="iVirtualMachinesBeta.RunCommandAsync (groupName, name, inputCommand, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandResultInner&gt;</ReturnType>
@@ -92,7 +101,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandResultInner</ReturnType>
@@ -117,14 +129,17 @@
       </Docs>
     </Member>
     <Member MemberName="RunPowerShellScriptAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandResultInner&gt; RunPowerShellScriptAsync (string groupName, string name, System.Collections.Generic.IList&lt;string&gt; scriptLines, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandInputParameter&gt; scriptParameters, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandResultInner&gt; RunPowerShellScriptAsync (string groupName, string name, System.Collections.Generic.IList&lt;string&gt; scriptLines, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandInputParameter&gt; scriptParameters, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandResultInner&gt; RunPowerShellScriptAsync(string groupName, string name, class System.Collections.Generic.IList`1&lt;string&gt; scriptLines, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandInputParameter&gt; scriptParameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.IVirtualMachinesBeta.RunPowerShellScriptAsync(System.String,System.String,System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandInputParameter},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member RunPowerShellScriptAsync : string * string * System.Collections.Generic.IList&lt;string&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandInputParameter&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandResultInner&gt;" Usage="iVirtualMachinesBeta.RunPowerShellScriptAsync (groupName, name, scriptLines, scriptParameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandResultInner&gt;</ReturnType>
@@ -159,7 +174,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandResultInner</ReturnType>
@@ -184,14 +202,17 @@
       </Docs>
     </Member>
     <Member MemberName="RunShellScriptAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandResultInner&gt; RunShellScriptAsync (string groupName, string name, System.Collections.Generic.IList&lt;string&gt; scriptLines, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandInputParameter&gt; scriptParameters, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandResultInner&gt; RunShellScriptAsync (string groupName, string name, System.Collections.Generic.IList&lt;string&gt; scriptLines, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandInputParameter&gt; scriptParameters, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandResultInner&gt; RunShellScriptAsync(string groupName, string name, class System.Collections.Generic.IList`1&lt;string&gt; scriptLines, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandInputParameter&gt; scriptParameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.IVirtualMachinesBeta.RunShellScriptAsync(System.String,System.String,System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandInputParameter},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member RunShellScriptAsync : string * string * System.Collections.Generic.IList&lt;string&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandInputParameter&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandResultInner&gt;" Usage="iVirtualMachinesBeta.RunShellScriptAsync (groupName, name, scriptLines, scriptParameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandResultInner&gt;</ReturnType>

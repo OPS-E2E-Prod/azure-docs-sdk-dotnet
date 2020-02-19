@@ -1,4 +1,4 @@
-﻿<Type Name="Operation&lt;T&gt;" FullName="Azure.Operation&lt;T&gt;">
+<Type Name="Operation&lt;T&gt;" FullName="Azure.Operation&lt;T&gt;">
   <TypeSignature Language="C#" Value="public abstract class Operation&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Operation`1&lt;T&gt; extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Azure.Operation`1" />
@@ -7,6 +7,8 @@
   <AssemblyInfo>
     <AssemblyName>Azure.Core</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -16,8 +18,10 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T">The final result of the long-running operation.</typeparam>
+    <summary>
+            Represents a long-running operation.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,6 +34,8 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -47,6 +53,8 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -64,6 +72,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -76,6 +85,8 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -90,27 +101,40 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="GetRawResponse">
-      <MemberSignature Language="C#" Value="public Azure.Response GetRawResponse ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Azure.Response GetRawResponse() cil managed" />
+      <MemberSignature Language="C#" Value="public Azure.Response GetRawResponse ();" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Azure.Response GetRawResponse() cil managed" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="DocId" Value="M:Azure.Operation`1.GetRawResponse" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetRawResponse () As Response" />
-      <MemberSignature Language="F#" Value="member this.GetRawResponse : unit -&gt; Azure.Response" Usage="operation.GetRawResponse " />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRawResponse () As Response" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="F#" Value="member this.GetRawResponse : unit -&gt; Azure.Response" Usage="operation.GetRawResponse " FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public abstract Azure.Response GetRawResponse ();" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response GetRawResponse() cil managed" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetRawResponse () As Response" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="abstract member GetRawResponse : unit -&gt; Azure.Response" Usage="operation.GetRawResponse " FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The last HTTP response received from the server.
+            </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            The last response returned from the server during the lifecycle of this instance.
+            An instance of Operation<typeparamref name="T" /> sends requests to a server in UpdateStatusAsync, UpdateStatus, and other methods.
+            Responses from these requests can be accessed using GetRawResponse.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasCompleted">
@@ -123,12 +147,16 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Returns true if the long-running operation completed.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -143,12 +171,40 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Returns true if the long-running operation completed successfully and has produced final result (accessible by Value property).
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public abstract string Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:Azure.Operation`1.Id" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string" Usage="Azure.Operation&lt;'T&gt;.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Core</AssemblyName>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets an ID representing the operation that can be used to poll for
+            the status of the long-running operation.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -187,7 +243,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="response" Type="Azure.Response" />
+        <Parameter Name="response" Type="Azure.Response" Index="0" FrameworkAlternate="azure-dotnet" />
       </Parameters>
       <Docs>
         <param name="response">To be added.</param>
@@ -205,6 +261,8 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -219,10 +277,11 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="UpdateStatus">
-      <MemberSignature Language="C#" Value="public abstract Azure.Response UpdateStatus (System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public abstract Azure.Response UpdateStatus (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response UpdateStatus(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Operation`1.UpdateStatus(System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member UpdateStatus : System.Threading.CancellationToken -&gt; Azure.Response" Usage="operation.UpdateStatus cancellationToken" />
@@ -230,6 +289,8 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response</ReturnType>
@@ -238,14 +299,19 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="cancellationToken">
+        </param>
+        <summary>
+            Calls the server to get updated status of the long-running operation.
+            </summary>
+        <returns />
+        <remarks>
+            This operation will update the value returned from GetRawResponse and might update HasCompleted, HasValue, and Value.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateStatusAsync">
-      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.ValueTask&lt;Azure.Response&gt; UpdateStatusAsync (System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.ValueTask&lt;Azure.Response&gt; UpdateStatusAsync (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;class Azure.Response&gt; UpdateStatusAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Operation`1.UpdateStatusAsync(System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member UpdateStatusAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;Azure.Response&gt;" Usage="operation.UpdateStatusAsync cancellationToken" />
@@ -253,6 +319,8 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ValueTask&lt;Azure.Response&gt;</ReturnType>
@@ -261,34 +329,48 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="cancellationToken">
+        </param>
+        <summary>
+            Calls the server to get updated status of the long-running operation.
+            </summary>
+        <returns />
+        <remarks>
+            This operation will update the value returned from GetRawResponse and might update HasCompleted, HasValue, and Value.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
-      <MemberSignature Language="C#" Value="public T Value { get; protected set; }" />
+      <MemberSignature Language="C#" Value="public T Value { get; protected set; }" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".property instance !T Value" />
       <MemberSignature Language="DocId" Value="P:Azure.Operation`1.Value" />
-      <MemberSignature Language="VB.NET" Value="Public Property Value As T" />
-      <MemberSignature Language="F#" Value="member this.Value : 'T with get, set" Usage="Azure.Operation&lt;'T&gt;.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As T" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="F#" Value="member this.Value : 'T with get, set" Usage="Azure.Operation&lt;'T&gt;.Value" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public abstract T Value { get; }" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Value As T" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="member this.Value : 'T" Usage="Azure.Operation&lt;'T&gt;.Value" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Final result of the long-running operation.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            This property can be accessed only after the operation completes successfully (HasValue is true).
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="WaitCompletionAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.ValueTask&lt;Azure.Response&lt;T&gt;&gt; WaitCompletionAsync (System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.ValueTask&lt;Azure.Response&lt;T&gt;&gt; WaitCompletionAsync (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;valuetype Azure.Response`1&lt;!T&gt;&gt; WaitCompletionAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Operation`1.WaitCompletionAsync(System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member WaitCompletionAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;Azure.Response&lt;'T&gt;&gt;&#xA;override this.WaitCompletionAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;Azure.Response&lt;'T&gt;&gt;" Usage="operation.WaitCompletionAsync cancellationToken" />
@@ -298,7 +380,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="azure-dotnet">
           <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
         </Attribute>
       </Attributes>
@@ -306,13 +388,77 @@
         <ReturnType>System.Threading.Tasks.ValueTask&lt;Azure.Response&lt;T&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="0" FrameworkAlternate="azure-dotnet" />
       </Parameters>
       <Docs>
         <param name="cancellationToken">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WaitForCompletionAsync">
+      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.ValueTask&lt;Azure.Response&lt;T&gt;&gt; WaitForCompletionAsync (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;class Azure.Response`1&lt;!T&gt;&gt; WaitForCompletionAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Operation`1.WaitForCompletionAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member WaitForCompletionAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;Azure.Response&lt;'T&gt;&gt;" Usage="operation.WaitForCompletionAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Core</AssemblyName>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.ValueTask&lt;Azure.Response&lt;T&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">
+        </param>
+        <summary>
+            Periodically calls the server till the long-running operation completes.
+            </summary>
+        <returns />
+        <remarks>
+            This method will periodically call UpdateStatusAsync till HasCompleted is true, then return the final result of the operation.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WaitForCompletionAsync">
+      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.ValueTask&lt;Azure.Response&lt;T&gt;&gt; WaitForCompletionAsync (TimeSpan pollingInterval, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;class Azure.Response`1&lt;!T&gt;&gt; WaitForCompletionAsync(valuetype System.TimeSpan pollingInterval, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Operation`1.WaitForCompletionAsync(System.TimeSpan,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member WaitForCompletionAsync : TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;Azure.Response&lt;'T&gt;&gt;" Usage="operation.WaitForCompletionAsync (pollingInterval, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Core</AssemblyName>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.ValueTask&lt;Azure.Response&lt;T&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pollingInterval" Type="System.TimeSpan" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="pollingInterval">
+            The interval between status requests to the server.
+            The interval can change based on information returned from the server.
+            For example, the server might communicate to the client that there is not reason to poll for status change sooner than some time.
+            </param>
+        <param name="cancellationToken">
+        </param>
+        <summary>
+            Periodically calls the server till the long-running operation completes.
+            </summary>
+        <returns />
+        <remarks>
+            This method will periodically call UpdateStatusAsync till HasCompleted is true, then return the final result of the operation.
+            </remarks>
       </Docs>
     </Member>
   </Members>

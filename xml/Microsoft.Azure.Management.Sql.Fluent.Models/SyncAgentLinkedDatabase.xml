@@ -1,4 +1,4 @@
-﻿<Type Name="SyncAgentLinkedDatabase" FullName="Microsoft.Azure.Management.Sql.Fluent.Models.SyncAgentLinkedDatabase">
+<Type Name="SyncAgentLinkedDatabase" FullName="Microsoft.Azure.Management.Sql.Fluent.Models.SyncAgentLinkedDatabase">
   <TypeSignature Language="C#" Value="public class SyncAgentLinkedDatabase : Microsoft.Azure.Management.Sql.Fluent.Models.ProxyResourceInner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SyncAgentLinkedDatabase extends Microsoft.Azure.Management.Sql.Fluent.Models.ProxyResourceInner" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Sql.Fluent.Models.SyncAgentLinkedDatabase" />
@@ -6,7 +6,10 @@
   <TypeSignature Language="F#" Value="type SyncAgentLinkedDatabase = class&#xA;    inherit ProxyResourceInner" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.Sql.Fluent.Models.ProxyResourceInner</BaseTypeName>
@@ -32,7 +35,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,21 +49,24 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SyncAgentLinkedDatabase (string id = null, string name = null, string type = null, string databaseType = null, string databaseId = null, string description = null, string serverName = null, string databaseName = null, string userName = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string type, string databaseType, string databaseId, string description, string serverName, string databaseName, string userName) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Fluent.Models.SyncAgentLinkedDatabase.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional databaseType As String = null, Optional databaseId As String = null, Optional description As String = null, Optional serverName As String = null, Optional databaseName As String = null, Optional userName As String = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Sql.Fluent.Models.SyncAgentLinkedDatabase : string * string * string * string * string * string * string * string * string -&gt; Microsoft.Azure.Management.Sql.Fluent.Models.SyncAgentLinkedDatabase" Usage="new Microsoft.Azure.Management.Sql.Fluent.Models.SyncAgentLinkedDatabase (id, name, type, databaseType, databaseId, description, serverName, databaseName, userName)" />
+      <MemberSignature Language="C#" Value="public SyncAgentLinkedDatabase (string id = default, string name = default, string type = default, Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberDbType databaseType = default, string databaseId = default, string description = default, string serverName = default, string databaseName = default, string userName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string type, class Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberDbType databaseType, string databaseId, string description, string serverName, string databaseName, string userName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Fluent.Models.SyncAgentLinkedDatabase.#ctor(System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberDbType,System.String,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional databaseType As SyncMemberDbType = null, Optional databaseId As String = null, Optional description As String = null, Optional serverName As String = null, Optional databaseName As String = null, Optional userName As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Sql.Fluent.Models.SyncAgentLinkedDatabase : string * string * string * Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberDbType * string * string * string * string * string -&gt; Microsoft.Azure.Management.Sql.Fluent.Models.SyncAgentLinkedDatabase" Usage="new Microsoft.Azure.Management.Sql.Fluent.Models.SyncAgentLinkedDatabase (id, name, type, databaseType, databaseId, description, serverName, databaseName, userName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="type" Type="System.String" />
-        <Parameter Name="databaseType" Type="System.String" />
+        <Parameter Name="databaseType" Type="Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberDbType" />
         <Parameter Name="databaseId" Type="System.String" />
         <Parameter Name="description" Type="System.String" />
         <Parameter Name="serverName" Type="System.String" />
@@ -65,9 +74,9 @@
         <Parameter Name="userName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="id">Resource ID.</param>
-        <param name="name">Resource name.</param>
-        <param name="type">Resource type.</param>
+        <param name="id">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="type">To be added.</param>
         <param name="databaseType">Type of the sync agent linked database.
             Possible values include: 'AzureSqlDatabase',
             'SqlServerDatabase'</param>
@@ -96,7 +105,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -123,7 +135,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -142,15 +157,18 @@
       </Docs>
     </Member>
     <Member MemberName="DatabaseType">
-      <MemberSignature Language="C#" Value="public string DatabaseType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string DatabaseType" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberDbType DatabaseType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberDbType DatabaseType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Fluent.Models.SyncAgentLinkedDatabase.DatabaseType" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DatabaseType As String" />
-      <MemberSignature Language="F#" Value="member this.DatabaseType : string" Usage="Microsoft.Azure.Management.Sql.Fluent.Models.SyncAgentLinkedDatabase.DatabaseType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DatabaseType As SyncMemberDbType" />
+      <MemberSignature Language="F#" Value="member this.DatabaseType : Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberDbType" Usage="Microsoft.Azure.Management.Sql.Fluent.Models.SyncAgentLinkedDatabase.DatabaseType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -158,7 +176,7 @@
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberDbType</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -178,7 +196,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -205,7 +226,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -232,7 +256,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

@@ -1,4 +1,4 @@
-﻿<Type Name="MessageSession" FullName="Microsoft.ServiceBus.Messaging.MessageSession">
+<Type Name="MessageSession" FullName="Microsoft.ServiceBus.Messaging.MessageSession">
   <TypeSignature Language="C#" Value="public abstract class MessageSession : Microsoft.ServiceBus.Messaging.MessageReceiver" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MessageSession extends Microsoft.ServiceBus.Messaging.MessageReceiver" />
   <TypeSignature Language="DocId" Value="T:Microsoft.ServiceBus.Messaging.MessageSession" />
@@ -161,7 +161,8 @@
       <Docs>
         <param name="trackingContext">TrackingContext to use.</param>
         <param name="lockTokens"> The lock tokens. </param>
-        <param name="propertiesToModify"></param>
+        <param name="propertiesToModify">
+        </param>
         <param name="timeout"> The timeout. </param>
         <summary> Abandons a peek locked message. </summary>
         <remarks>To be added.</remarks>
@@ -210,10 +211,12 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="trackingContext"></param>
+        <param name="trackingContext">
+        </param>
         <param name="lockTokens"> The lock tokens. </param>
         <param name="propertiesToModify"> The properties to add for the abandon action.</param>
-        <param name="fromSync"></param>
+        <param name="fromSync">
+        </param>
         <param name="timeout">    The timeout. </param>
         <param name="callback">   The callback. </param>
         <param name="state">      The state. </param>
@@ -385,7 +388,8 @@
         <param name="trackingContext">TrackingContext to use.</param>
         <param name="lockTokens"> The lock tokens. </param>
         <param name="propertiesToModify"> message properties to modify. </param>
-        <param name="fromSync"></param>
+        <param name="fromSync">
+        </param>
         <param name="timeout">    The timeout. </param>
         <param name="callback">   The callback. </param>
         <param name="state">      The state. </param>
@@ -1028,7 +1032,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool OnEndTryReceive(class System.IAsyncResult result, [out] class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.ServiceBus.Messaging.BrokeredMessage&gt;&amp; messages) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceBus.Messaging.MessageSession.OnEndTryReceive(System.IAsyncResult,System.Collections.Generic.IEnumerable{Microsoft.ServiceBus.Messaging.BrokeredMessage}@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnEndTryReceive (result As IAsyncResult, ByRef messages As IEnumerable(Of BrokeredMessage)) As Boolean" />
-      <MemberSignature Language="F#" Value="override this.OnEndTryReceive : IAsyncResult *  -&gt; bool" Usage="messageSession.OnEndTryReceive (result, messages)" />
+      <MemberSignature Language="F#" Value="override this.OnEndTryReceive : IAsyncResult * seq -&gt; bool" Usage="messageSession.OnEndTryReceive (result, messages)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
@@ -1054,7 +1058,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool OnEndTryReceive2(class System.IAsyncResult result, [out] class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.ServiceBus.Messaging.BrokeredMessage&gt;&amp; messages) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceBus.Messaging.MessageSession.OnEndTryReceive2(System.IAsyncResult,System.Collections.Generic.IEnumerable{Microsoft.ServiceBus.Messaging.BrokeredMessage}@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnEndTryReceive2 (result As IAsyncResult, ByRef messages As IEnumerable(Of BrokeredMessage)) As Boolean" />
-      <MemberSignature Language="F#" Value="override this.OnEndTryReceive2 : IAsyncResult *  -&gt; bool" Usage="messageSession.OnEndTryReceive2 (result, messages)" />
+      <MemberSignature Language="F#" Value="override this.OnEndTryReceive2 : IAsyncResult * seq -&gt; bool" Usage="messageSession.OnEndTryReceive2 (result, messages)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
@@ -1155,7 +1159,7 @@
       <MemberSignature Language="C#" Value="protected override bool OnTryReceive (Microsoft.ServiceBus.Tracing.TrackingContext trackingContext, System.Collections.Generic.IEnumerable&lt;long&gt; receipts, TimeSpan timeout, out System.Collections.Generic.IEnumerable&lt;Microsoft.ServiceBus.Messaging.BrokeredMessage&gt; messages);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool OnTryReceive(class Microsoft.ServiceBus.Tracing.TrackingContext trackingContext, class System.Collections.Generic.IEnumerable`1&lt;int64&gt; receipts, valuetype System.TimeSpan timeout, [out] class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.ServiceBus.Messaging.BrokeredMessage&gt;&amp; messages) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceBus.Messaging.MessageSession.OnTryReceive(Microsoft.ServiceBus.Tracing.TrackingContext,System.Collections.Generic.IEnumerable{System.Int64},System.TimeSpan,System.Collections.Generic.IEnumerable{Microsoft.ServiceBus.Messaging.BrokeredMessage}@)" />
-      <MemberSignature Language="F#" Value="override this.OnTryReceive : Microsoft.ServiceBus.Tracing.TrackingContext * seq&lt;int64&gt; * TimeSpan *  -&gt; bool" Usage="messageSession.OnTryReceive (trackingContext, receipts, timeout, messages)" />
+      <MemberSignature Language="F#" Value="override this.OnTryReceive : Microsoft.ServiceBus.Tracing.TrackingContext * seq&lt;int64&gt; * TimeSpan * seq -&gt; bool" Usage="messageSession.OnTryReceive (trackingContext, receipts, timeout, messages)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
@@ -1184,7 +1188,7 @@
       <MemberSignature Language="C#" Value="protected override bool OnTryReceive (Microsoft.ServiceBus.Tracing.TrackingContext trackingContext, int messageCount, TimeSpan serverWaitTime, out System.Collections.Generic.IEnumerable&lt;Microsoft.ServiceBus.Messaging.BrokeredMessage&gt; messages);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool OnTryReceive(class Microsoft.ServiceBus.Tracing.TrackingContext trackingContext, int32 messageCount, valuetype System.TimeSpan serverWaitTime, [out] class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.ServiceBus.Messaging.BrokeredMessage&gt;&amp; messages) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceBus.Messaging.MessageSession.OnTryReceive(Microsoft.ServiceBus.Tracing.TrackingContext,System.Int32,System.TimeSpan,System.Collections.Generic.IEnumerable{Microsoft.ServiceBus.Messaging.BrokeredMessage}@)" />
-      <MemberSignature Language="F#" Value="override this.OnTryReceive : Microsoft.ServiceBus.Tracing.TrackingContext * int * TimeSpan *  -&gt; bool" Usage="messageSession.OnTryReceive (trackingContext, messageCount, serverWaitTime, messages)" />
+      <MemberSignature Language="F#" Value="override this.OnTryReceive : Microsoft.ServiceBus.Tracing.TrackingContext * int * TimeSpan * seq -&gt; bool" Usage="messageSession.OnTryReceive (trackingContext, messageCount, serverWaitTime, messages)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
@@ -1246,7 +1250,8 @@
         <Parameter Name="exception" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="exception"></param>
+        <param name="exception">
+        </param>
         <summary />
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

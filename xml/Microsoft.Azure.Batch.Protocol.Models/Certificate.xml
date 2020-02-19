@@ -1,4 +1,4 @@
-﻿<Type Name="Certificate" FullName="Microsoft.Azure.Batch.Protocol.Models.Certificate">
+<Type Name="Certificate" FullName="Microsoft.Azure.Batch.Protocol.Models.Certificate">
   <TypeSignature Language="C#" Value="public class Certificate" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Certificate extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.Protocol.Models.Certificate" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type Certificate = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -14,7 +14,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            A certificate that can be installed on compute nodes and can be used to
+            A Certificate that can be installed on Compute Nodes and can be used to
             authenticate operations on the machine.
             </summary>
     <remarks>To be added.</remarks>
@@ -28,7 +28,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -39,14 +39,14 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Certificate (string thumbprint = null, string thumbprintAlgorithm = null, string url = null, Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.CertificateState&gt; state = null, Nullable&lt;DateTime&gt; stateTransitionTime = null, Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.CertificateState&gt; previousState = null, Nullable&lt;DateTime&gt; previousStateTransitionTime = null, string publicData = null, Microsoft.Azure.Batch.Protocol.Models.DeleteCertificateError deleteCertificateError = null);" />
+      <MemberSignature Language="C#" Value="public Certificate (string thumbprint = default, string thumbprintAlgorithm = default, string url = default, Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.CertificateState&gt; state = default, Nullable&lt;DateTime&gt; stateTransitionTime = default, Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.CertificateState&gt; previousState = default, Nullable&lt;DateTime&gt; previousStateTransitionTime = default, string publicData = default, Microsoft.Azure.Batch.Protocol.Models.DeleteCertificateError deleteCertificateError = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string thumbprint, string thumbprintAlgorithm, string url, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Batch.Protocol.Models.CertificateState&gt; state, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; stateTransitionTime, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Batch.Protocol.Models.CertificateState&gt; previousState, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; previousStateTransitionTime, string publicData, class Microsoft.Azure.Batch.Protocol.Models.DeleteCertificateError deleteCertificateError) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.Certificate.#ctor(System.String,System.String,System.String,System.Nullable{Microsoft.Azure.Batch.Protocol.Models.CertificateState},System.Nullable{System.DateTime},System.Nullable{Microsoft.Azure.Batch.Protocol.Models.CertificateState},System.Nullable{System.DateTime},System.String,Microsoft.Azure.Batch.Protocol.Models.DeleteCertificateError)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Batch.Protocol.Models.Certificate : string * string * string * Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.CertificateState&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.CertificateState&gt; * Nullable&lt;DateTime&gt; * string * Microsoft.Azure.Batch.Protocol.Models.DeleteCertificateError -&gt; Microsoft.Azure.Batch.Protocol.Models.Certificate" Usage="new Microsoft.Azure.Batch.Protocol.Models.Certificate (thumbprint, thumbprintAlgorithm, url, state, stateTransitionTime, previousState, previousStateTransitionTime, publicData, deleteCertificateError)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="thumbprint" Type="System.String" />
@@ -60,22 +60,22 @@
         <Parameter Name="deleteCertificateError" Type="Microsoft.Azure.Batch.Protocol.Models.DeleteCertificateError" />
       </Parameters>
       <Docs>
-        <param name="thumbprint">The X.509 thumbprint of the certificate.
+        <param name="thumbprint">The X.509 thumbprint of the Certificate.
             This is a sequence of up to 40 hex digits.</param>
         <param name="thumbprintAlgorithm">The algorithm used to derive the
             thumbprint.</param>
-        <param name="url">The URL of the certificate.</param>
-        <param name="state">The current state of the certificate.</param>
-        <param name="stateTransitionTime">The time at which the certificate
+        <param name="url">The URL of the Certificate.</param>
+        <param name="state">The current state of the Certificate.</param>
+        <param name="stateTransitionTime">The time at which the Certificate
             entered its current state.</param>
         <param name="previousState">The previous state of the
-            certificate.</param>
+            Certificate.</param>
         <param name="previousStateTransitionTime">The time at which the
-            certificate entered its previous state.</param>
-        <param name="publicData">The public part of the certificate as a
+            Certificate entered its previous state.</param>
+        <param name="publicData">The public part of the Certificate as a
             base-64 encoded .cer file.</param>
         <param name="deleteCertificateError">The error that occurred on the
-            last attempt to delete this certificate.</param>
+            last attempt to delete this Certificate.</param>
         <summary>
             Initializes a new instance of the Certificate class.
             </summary>
@@ -91,7 +91,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -104,11 +104,11 @@
       <Docs>
         <summary>
             Gets or sets the error that occurred on the last attempt to delete
-            this certificate.
+            this Certificate.
             </summary>
         <value>To be added.</value>
         <remarks>
-            This property is set only if the certificate is in the DeleteFailed
+            This property is set only if the Certificate is in the DeleteFailed
             state.
             </remarks>
       </Docs>
@@ -122,7 +122,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -134,11 +134,11 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the previous state of the certificate.
+            Gets or sets the previous state of the Certificate.
             </summary>
         <value>To be added.</value>
         <remarks>
-            This property is not set if the certificate is in its initial
+            This property is not set if the Certificate is in its initial
             active state. Possible values include: 'active', 'deleting',
             'deleteFailed'
             </remarks>
@@ -153,7 +153,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -165,12 +165,12 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the time at which the certificate entered its previous
+            Gets or sets the time at which the Certificate entered its previous
             state.
             </summary>
         <value>To be added.</value>
         <remarks>
-            This property is not set if the certificate is in its initial
+            This property is not set if the Certificate is in its initial
             Active state.
             </remarks>
       </Docs>
@@ -184,7 +184,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -196,7 +196,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the public part of the certificate as a base-64
+            Gets or sets the public part of the Certificate as a base-64
             encoded .cer file.
             </summary>
         <value>To be added.</value>
@@ -212,7 +212,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -224,7 +224,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the current state of the certificate.
+            Gets or sets the current state of the Certificate.
             </summary>
         <value>To be added.</value>
         <remarks>
@@ -241,7 +241,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -253,7 +253,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the time at which the certificate entered its current
+            Gets or sets the time at which the Certificate entered its current
             state.
             </summary>
         <value>To be added.</value>
@@ -269,7 +269,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -281,7 +281,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the X.509 thumbprint of the certificate. This is a
+            Gets or sets the X.509 thumbprint of the Certificate. This is a
             sequence of up to 40 hex digits.
             </summary>
         <value>To be added.</value>
@@ -297,7 +297,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -324,7 +324,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -336,7 +336,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the URL of the certificate.
+            Gets or sets the URL of the Certificate.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

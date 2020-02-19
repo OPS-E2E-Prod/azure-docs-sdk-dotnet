@@ -1,4 +1,4 @@
-﻿<Type Name="SubtaskInformation" FullName="Microsoft.Azure.Batch.Protocol.Models.SubtaskInformation">
+<Type Name="SubtaskInformation" FullName="Microsoft.Azure.Batch.Protocol.Models.SubtaskInformation">
   <TypeSignature Language="C#" Value="public class SubtaskInformation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SubtaskInformation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.Protocol.Models.SubtaskInformation" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type SubtaskInformation = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,7 +38,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SubtaskInformation (Nullable&lt;int&gt; id = null, Microsoft.Azure.Batch.Protocol.Models.ComputeNodeInformation nodeInfo = null, Nullable&lt;DateTime&gt; startTime = null, Nullable&lt;DateTime&gt; endTime = null, Nullable&lt;int&gt; exitCode = null, Microsoft.Azure.Batch.Protocol.Models.TaskContainerExecutionInformation containerInfo = null, Microsoft.Azure.Batch.Protocol.Models.TaskFailureInformation failureInfo = null, Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.SubtaskState&gt; state = null, Nullable&lt;DateTime&gt; stateTransitionTime = null, Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.SubtaskState&gt; previousState = null, Nullable&lt;DateTime&gt; previousStateTransitionTime = null, Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.TaskExecutionResult&gt; result = null);" />
+      <MemberSignature Language="C#" Value="public SubtaskInformation (Nullable&lt;int&gt; id = default, Microsoft.Azure.Batch.Protocol.Models.ComputeNodeInformation nodeInfo = default, Nullable&lt;DateTime&gt; startTime = default, Nullable&lt;DateTime&gt; endTime = default, Nullable&lt;int&gt; exitCode = default, Microsoft.Azure.Batch.Protocol.Models.TaskContainerExecutionInformation containerInfo = default, Microsoft.Azure.Batch.Protocol.Models.TaskFailureInformation failureInfo = default, Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.SubtaskState&gt; state = default, Nullable&lt;DateTime&gt; stateTransitionTime = default, Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.SubtaskState&gt; previousState = default, Nullable&lt;DateTime&gt; previousStateTransitionTime = default, Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.TaskExecutionResult&gt; result = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;int32&gt; id, class Microsoft.Azure.Batch.Protocol.Models.ComputeNodeInformation nodeInfo, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startTime, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; endTime, valuetype System.Nullable`1&lt;int32&gt; exitCode, class Microsoft.Azure.Batch.Protocol.Models.TaskContainerExecutionInformation containerInfo, class Microsoft.Azure.Batch.Protocol.Models.TaskFailureInformation failureInfo, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Batch.Protocol.Models.SubtaskState&gt; state, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; stateTransitionTime, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Batch.Protocol.Models.SubtaskState&gt; previousState, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; previousStateTransitionTime, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Batch.Protocol.Models.TaskExecutionResult&gt; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.SubtaskInformation.#ctor(System.Nullable{System.Int32},Microsoft.Azure.Batch.Protocol.Models.ComputeNodeInformation,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Int32},Microsoft.Azure.Batch.Protocol.Models.TaskContainerExecutionInformation,Microsoft.Azure.Batch.Protocol.Models.TaskFailureInformation,System.Nullable{Microsoft.Azure.Batch.Protocol.Models.SubtaskState},System.Nullable{System.DateTime},System.Nullable{Microsoft.Azure.Batch.Protocol.Models.SubtaskState},System.Nullable{System.DateTime},System.Nullable{Microsoft.Azure.Batch.Protocol.Models.TaskExecutionResult})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As Nullable(Of Integer) = null, Optional nodeInfo As ComputeNodeInformation = null, Optional startTime As Nullable(Of DateTime) = null, Optional endTime As Nullable(Of DateTime) = null, Optional exitCode As Nullable(Of Integer) = null, Optional containerInfo As TaskContainerExecutionInformation = null, Optional failureInfo As TaskFailureInformation = null, Optional state As Nullable(Of SubtaskState) = null, Optional stateTransitionTime As Nullable(Of DateTime) = null, Optional previousState As Nullable(Of SubtaskState) = null, Optional previousStateTransitionTime As Nullable(Of DateTime) = null, Optional result As Nullable(Of TaskExecutionResult) = null)" />
@@ -46,7 +46,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.Nullable&lt;System.Int32&gt;" />
@@ -64,7 +64,7 @@
       </Parameters>
       <Docs>
         <param name="id">The ID of the subtask.</param>
-        <param name="nodeInfo">Information about the compute node on which
+        <param name="nodeInfo">Information about the Compute Node on which
             the subtask ran.</param>
         <param name="startTime">The time at which the subtask started
             running. If the subtask has been restarted or retried, this is the
@@ -74,8 +74,8 @@
         <param name="exitCode">The exit code of the program specified on
             the subtask command line.</param>
         <param name="containerInfo">Information about the container under
-            which the task is executing.</param>
-        <param name="failureInfo">Information describing the task failure,
+            which the Task is executing.</param>
+        <param name="failureInfo">Information describing the Task failure,
             if any.</param>
         <param name="state">The current state of the subtask.</param>
         <param name="stateTransitionTime">The time at which the subtask
@@ -84,7 +84,7 @@
             subtask.</param>
         <param name="previousStateTransitionTime">The time at which the
             subtask entered its previous state.</param>
-        <param name="result">The result of the task execution.</param>
+        <param name="result">The result of the Task execution.</param>
         <summary>
             Initializes a new instance of the SubtaskInformation class.
             </summary>
@@ -100,7 +100,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -112,12 +112,12 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets information about the container under which the task
+            Gets or sets information about the container under which the Task
             is executing.
             </summary>
         <value>To be added.</value>
         <remarks>
-            This property is set only if the task runs in a container context.
+            This property is set only if the Task runs in a container context.
             </remarks>
       </Docs>
     </Member>
@@ -130,7 +130,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -159,7 +159,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -196,7 +196,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -208,11 +208,11 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets information describing the task failure, if any.
+            Gets or sets information describing the Task failure, if any.
             </summary>
         <value>To be added.</value>
         <remarks>
-            This property is set only if the task is in the completed state and
+            This property is set only if the Task is in the completed state and
             encountered a failure.
             </remarks>
       </Docs>
@@ -226,7 +226,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -253,7 +253,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -265,7 +265,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets information about the compute node on which the
+            Gets or sets information about the Compute Node on which the
             subtask ran.
             </summary>
         <value>To be added.</value>
@@ -281,7 +281,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -311,7 +311,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -342,7 +342,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -354,7 +354,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the result of the task execution.
+            Gets or sets the result of the Task execution.
             </summary>
         <value>To be added.</value>
         <remarks>
@@ -373,7 +373,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -402,7 +402,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -431,7 +431,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

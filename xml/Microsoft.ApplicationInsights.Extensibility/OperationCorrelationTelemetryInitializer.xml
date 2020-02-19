@@ -1,4 +1,4 @@
-﻿<Type Name="OperationCorrelationTelemetryInitializer" FullName="Microsoft.ApplicationInsights.Extensibility.OperationCorrelationTelemetryInitializer">
+<Type Name="OperationCorrelationTelemetryInitializer" FullName="Microsoft.ApplicationInsights.Extensibility.OperationCorrelationTelemetryInitializer">
   <TypeSignature Language="C#" Value="public class OperationCorrelationTelemetryInitializer : Microsoft.ApplicationInsights.Extensibility.ITelemetryInitializer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OperationCorrelationTelemetryInitializer extends System.Object implements class Microsoft.ApplicationInsights.Extensibility.ITelemetryInitializer" />
   <TypeSignature Language="DocId" Value="T:Microsoft.ApplicationInsights.Extensibility.OperationCorrelationTelemetryInitializer" />
@@ -6,7 +6,9 @@
   <TypeSignature Language="F#" Value="type OperationCorrelationTelemetryInitializer = class&#xA;    interface ITelemetryInitializer" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-    <AssemblyVersion>2.10.0.0</AssemblyVersion>
+    <AssemblyVersion>2.11.0.0</AssemblyVersion>
+    <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+    <AssemblyVersion>2.12.1.36699</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -18,7 +20,8 @@
   </Interfaces>
   <Docs>
     <summary>
-            Telemetry initializer that populates OperationContext for the telemetry item based on context stored in an AsyncLocal variable.
+            Telemetry initializer that populates OperationContext for the telemetry item from Activity.
+            This initializer is responsible for correlation of telemetry items within the same process.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -31,7 +34,9 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -51,7 +56,9 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -60,9 +67,9 @@
         <Parameter Name="telemetryItem" Type="Microsoft.ApplicationInsights.Channel.ITelemetry" />
       </Parameters>
       <Docs>
-        <param name="telemetryItem">Target telemetry item to add operation id.</param>
+        <param name="telemetryItem">Target telemetry item to add operation context.</param>
         <summary>
-            Initializes/Adds operation id to the existing telemetry item.
+            Initializes/Adds operation context to the existing telemetry item.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>

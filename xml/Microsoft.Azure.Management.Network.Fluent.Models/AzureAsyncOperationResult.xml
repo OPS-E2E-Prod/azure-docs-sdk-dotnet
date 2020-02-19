@@ -1,4 +1,4 @@
-﻿<Type Name="AzureAsyncOperationResult" FullName="Microsoft.Azure.Management.Network.Fluent.Models.AzureAsyncOperationResult">
+<Type Name="AzureAsyncOperationResult" FullName="Microsoft.Azure.Management.Network.Fluent.Models.AzureAsyncOperationResult">
   <TypeSignature Language="C#" Value="public class AzureAsyncOperationResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AzureAsyncOperationResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Network.Fluent.Models.AzureAsyncOperationResult" />
@@ -6,7 +6,10 @@
   <TypeSignature Language="F#" Value="type AzureAsyncOperationResult = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -34,7 +37,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -45,14 +51,17 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AzureAsyncOperationResult (Microsoft.Azure.Management.Network.Fluent.Models.NetworkOperationStatus status = null, Microsoft.Azure.Management.Network.Fluent.Models.Error error = null);" />
+      <MemberSignature Language="C#" Value="public AzureAsyncOperationResult (Microsoft.Azure.Management.Network.Fluent.Models.NetworkOperationStatus status = default, Microsoft.Azure.Management.Network.Fluent.Models.Error error = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.Management.Network.Fluent.Models.NetworkOperationStatus status, class Microsoft.Azure.Management.Network.Fluent.Models.Error error) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.Models.AzureAsyncOperationResult.#ctor(Microsoft.Azure.Management.Network.Fluent.Models.NetworkOperationStatus,Microsoft.Azure.Management.Network.Fluent.Models.Error)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Network.Fluent.Models.AzureAsyncOperationResult : Microsoft.Azure.Management.Network.Fluent.Models.NetworkOperationStatus * Microsoft.Azure.Management.Network.Fluent.Models.Error -&gt; Microsoft.Azure.Management.Network.Fluent.Models.AzureAsyncOperationResult" Usage="new Microsoft.Azure.Management.Network.Fluent.Models.AzureAsyncOperationResult (status, error)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="status" Type="Microsoft.Azure.Management.Network.Fluent.Models.NetworkOperationStatus" />
@@ -60,9 +69,9 @@
       </Parameters>
       <Docs>
         <param name="status">Status of the Azure async operation. Possible
-            values are: 'InProgress', 'Succeeded', and 'Failed'. Possible
             values include: 'InProgress', 'Succeeded', 'Failed'</param>
-        <param name="error">To be added.</param>
+        <param name="error">Details of the error occurred during specified
+            asynchronous operation.</param>
         <summary>
             Initializes a new instance of the AzureAsyncOperationResult class.
             </summary>
@@ -78,7 +87,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -89,7 +101,10 @@
         <ReturnType>Microsoft.Azure.Management.Network.Fluent.Models.Error</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary />
+        <summary>
+            Gets or sets details of the error occurred during specified
+            asynchronous operation.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -103,7 +118,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -116,7 +134,6 @@
       <Docs>
         <summary>
             Gets or sets status of the Azure async operation. Possible values
-            are: 'InProgress', 'Succeeded', and 'Failed'. Possible values
             include: 'InProgress', 'Succeeded', 'Failed'
             </summary>
         <value>To be added.</value>

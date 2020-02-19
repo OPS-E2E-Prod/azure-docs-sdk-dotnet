@@ -1,4 +1,4 @@
-﻿<Type Name="ManagementGroupPublishedArtifactsExtensions" FullName="Microsoft.Azure.Management.Blueprint.ManagementGroupPublishedArtifactsExtensions">
+<Type Name="ManagementGroupPublishedArtifactsExtensions" FullName="Microsoft.Azure.Management.Blueprint.ManagementGroupPublishedArtifactsExtensions">
   <TypeSignature Language="C#" Value="public static class ManagementGroupPublishedArtifactsExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ManagementGroupPublishedArtifactsExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Blueprint.ManagementGroupPublishedArtifactsExtensions" />
@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
     <AssemblyVersion>0.10.0.0</AssemblyVersion>
     <AssemblyVersion>0.14.0.0</AssemblyVersion>
+    <AssemblyVersion>0.20.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -31,6 +32,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Blueprint.Models.Artifact</ReturnType>
@@ -66,7 +68,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetInManagementGroupAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Blueprint.Models.Artifact&gt; GetInManagementGroupAsync (this Microsoft.Azure.Management.Blueprint.IPublishedArtifactsOperations operations, string managementGroupName, string blueprintName, string versionId, string artifactName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Blueprint.Models.Artifact&gt; GetInManagementGroupAsync (this Microsoft.Azure.Management.Blueprint.IPublishedArtifactsOperations operations, string managementGroupName, string blueprintName, string versionId, string artifactName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Blueprint.Models.Artifact&gt; GetInManagementGroupAsync(class Microsoft.Azure.Management.Blueprint.IPublishedArtifactsOperations operations, string managementGroupName, string blueprintName, string versionId, string artifactName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Blueprint.ManagementGroupPublishedArtifactsExtensions.GetInManagementGroupAsync(Microsoft.Azure.Management.Blueprint.IPublishedArtifactsOperations,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member GetInManagementGroupAsync : Microsoft.Azure.Management.Blueprint.IPublishedArtifactsOperations * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Blueprint.Models.Artifact&gt;" Usage="Microsoft.Azure.Management.Blueprint.ManagementGroupPublishedArtifactsExtensions.GetInManagementGroupAsync (operations, managementGroupName, blueprintName, versionId, artifactName, cancellationToken)" />
@@ -75,6 +77,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-dotnet">
@@ -129,6 +132,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Blueprint.Models.Artifact&gt;</ReturnType>
@@ -160,7 +164,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListInManagementGroupAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Blueprint.Models.Artifact&gt;&gt; ListInManagementGroupAsync (this Microsoft.Azure.Management.Blueprint.IPublishedArtifactsOperations operations, string managementGroupName, string blueprintName, string versionId, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Blueprint.Models.Artifact&gt;&gt; ListInManagementGroupAsync (this Microsoft.Azure.Management.Blueprint.IPublishedArtifactsOperations operations, string managementGroupName, string blueprintName, string versionId, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Blueprint.Models.Artifact&gt;&gt; ListInManagementGroupAsync(class Microsoft.Azure.Management.Blueprint.IPublishedArtifactsOperations operations, string managementGroupName, string blueprintName, string versionId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Blueprint.ManagementGroupPublishedArtifactsExtensions.ListInManagementGroupAsync(Microsoft.Azure.Management.Blueprint.IPublishedArtifactsOperations,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListInManagementGroupAsync : Microsoft.Azure.Management.Blueprint.IPublishedArtifactsOperations * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Blueprint.Models.Artifact&gt;&gt;" Usage="Microsoft.Azure.Management.Blueprint.ManagementGroupPublishedArtifactsExtensions.ListInManagementGroupAsync (operations, managementGroupName, blueprintName, versionId, cancellationToken)" />
@@ -169,6 +173,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-dotnet">

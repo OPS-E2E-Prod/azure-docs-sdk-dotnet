@@ -1,4 +1,4 @@
-﻿<Type Name="IApiIssueAttachmentOperations" FullName="Microsoft.Azure.Management.ApiManagement.IApiIssueAttachmentOperations">
+<Type Name="IApiIssueAttachmentOperations" FullName="Microsoft.Azure.Management.ApiManagement.IApiIssueAttachmentOperations">
   <TypeSignature Language="C#" Value="public interface IApiIssueAttachmentOperations" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IApiIssueAttachmentOperations" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.ApiManagement.IApiIssueAttachmentOperations" />
@@ -17,7 +17,7 @@
   </Docs>
   <Members>
     <Member MemberName="CreateOrUpdateWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.ApiManagement.Models.IssueAttachmentContract,Microsoft.Azure.Management.ApiManagement.Models.ApiIssueAttachmentCreateOrUpdateHeaders&gt;&gt; CreateOrUpdateWithHttpMessagesAsync (string resourceGroupName, string serviceName, string apiId, string issueId, string attachmentId, Microsoft.Azure.Management.ApiManagement.Models.IssueAttachmentContract parameters, string ifMatch = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.ApiManagement.Models.IssueAttachmentContract,Microsoft.Azure.Management.ApiManagement.Models.ApiIssueAttachmentCreateOrUpdateHeaders&gt;&gt; CreateOrUpdateWithHttpMessagesAsync (string resourceGroupName, string serviceName, string apiId, string issueId, string attachmentId, Microsoft.Azure.Management.ApiManagement.Models.IssueAttachmentContract parameters, string ifMatch = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`2&lt;class Microsoft.Azure.Management.ApiManagement.Models.IssueAttachmentContract, class Microsoft.Azure.Management.ApiManagement.Models.ApiIssueAttachmentCreateOrUpdateHeaders&gt;&gt; CreateOrUpdateWithHttpMessagesAsync(string resourceGroupName, string serviceName, string apiId, string issueId, string attachmentId, class Microsoft.Azure.Management.ApiManagement.Models.IssueAttachmentContract parameters, string ifMatch, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.IApiIssueAttachmentOperations.CreateOrUpdateWithHttpMessagesAsync(System.String,System.String,System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.Models.IssueAttachmentContract,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member CreateOrUpdateWithHttpMessagesAsync : string * string * string * string * string * Microsoft.Azure.Management.ApiManagement.Models.IssueAttachmentContract * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.ApiManagement.Models.IssueAttachmentContract, Microsoft.Azure.Management.ApiManagement.Models.ApiIssueAttachmentCreateOrUpdateHeaders&gt;&gt;" Usage="iApiIssueAttachmentOperations.CreateOrUpdateWithHttpMessagesAsync (resourceGroupName, serviceName, apiId, issueId, attachmentId, parameters, ifMatch, customHeaders, cancellationToken)" />
@@ -30,15 +30,15 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.ApiManagement.Models.IssueAttachmentContract,Microsoft.Azure.Management.ApiManagement.Models.ApiIssueAttachmentCreateOrUpdateHeaders&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="resourceGroupName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="serviceName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="apiId" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="issueId" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="attachmentId" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="parameters" Type="Microsoft.Azure.Management.ApiManagement.Models.IssueAttachmentContract" Index="5" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="ifMatch" Type="System.String" Index="6" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" Index="7" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="8" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="serviceName" Type="System.String" />
+        <Parameter Name="apiId" Type="System.String" />
+        <Parameter Name="issueId" Type="System.String" />
+        <Parameter Name="attachmentId" Type="System.String" />
+        <Parameter Name="parameters" Type="Microsoft.Azure.Management.ApiManagement.Models.IssueAttachmentContract" />
+        <Parameter Name="ifMatch" Type="System.String" />
+        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="resourceGroupName">
@@ -90,7 +90,7 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&gt; DeleteWithHttpMessagesAsync (string resourceGroupName, string serviceName, string apiId, string issueId, string attachmentId, string ifMatch, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&gt; DeleteWithHttpMessagesAsync (string resourceGroupName, string serviceName, string apiId, string issueId, string attachmentId, string ifMatch, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse&gt; DeleteWithHttpMessagesAsync(string resourceGroupName, string serviceName, string apiId, string issueId, string attachmentId, string ifMatch, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.IApiIssueAttachmentOperations.DeleteWithHttpMessagesAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member DeleteWithHttpMessagesAsync : string * string * string * string * string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&gt;" Usage="iApiIssueAttachmentOperations.DeleteWithHttpMessagesAsync (resourceGroupName, serviceName, apiId, issueId, attachmentId, ifMatch, customHeaders, cancellationToken)" />
@@ -132,9 +132,9 @@
             current Issue.
             </param>
         <param name="ifMatch">
-            ETag of the Issue Entity. ETag should match the current entity
-            state from the header response of the GET request or it should be *
-            for unconditional update.
+            ETag of the Entity. ETag should match the current entity state from
+            the header response of the GET request or it should be * for
+            unconditional update.
             </param>
         <param name="customHeaders">
             The headers that will be added to request.
@@ -156,7 +156,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetEntityTagWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationHeaderResponse&lt;Microsoft.Azure.Management.ApiManagement.Models.ApiIssueAttachmentGetEntityTagHeaders&gt;&gt; GetEntityTagWithHttpMessagesAsync (string resourceGroupName, string serviceName, string apiId, string issueId, string attachmentId, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationHeaderResponse&lt;Microsoft.Azure.Management.ApiManagement.Models.ApiIssueAttachmentGetEntityTagHeaders&gt;&gt; GetEntityTagWithHttpMessagesAsync (string resourceGroupName, string serviceName, string apiId, string issueId, string attachmentId, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationHeaderResponse`1&lt;class Microsoft.Azure.Management.ApiManagement.Models.ApiIssueAttachmentGetEntityTagHeaders&gt;&gt; GetEntityTagWithHttpMessagesAsync(string resourceGroupName, string serviceName, string apiId, string issueId, string attachmentId, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.IApiIssueAttachmentOperations.GetEntityTagWithHttpMessagesAsync(System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member GetEntityTagWithHttpMessagesAsync : string * string * string * string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationHeaderResponse&lt;Microsoft.Azure.Management.ApiManagement.Models.ApiIssueAttachmentGetEntityTagHeaders&gt;&gt;" Usage="iApiIssueAttachmentOperations.GetEntityTagWithHttpMessagesAsync (resourceGroupName, serviceName, apiId, issueId, attachmentId, customHeaders, cancellationToken)" />
@@ -217,7 +217,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.ApiManagement.Models.IssueAttachmentContract,Microsoft.Azure.Management.ApiManagement.Models.ApiIssueAttachmentGetHeaders&gt;&gt; GetWithHttpMessagesAsync (string resourceGroupName, string serviceName, string apiId, string issueId, string attachmentId, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.ApiManagement.Models.IssueAttachmentContract,Microsoft.Azure.Management.ApiManagement.Models.ApiIssueAttachmentGetHeaders&gt;&gt; GetWithHttpMessagesAsync (string resourceGroupName, string serviceName, string apiId, string issueId, string attachmentId, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`2&lt;class Microsoft.Azure.Management.ApiManagement.Models.IssueAttachmentContract, class Microsoft.Azure.Management.ApiManagement.Models.ApiIssueAttachmentGetHeaders&gt;&gt; GetWithHttpMessagesAsync(string resourceGroupName, string serviceName, string apiId, string issueId, string attachmentId, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.IApiIssueAttachmentOperations.GetWithHttpMessagesAsync(System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member GetWithHttpMessagesAsync : string * string * string * string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.ApiManagement.Models.IssueAttachmentContract, Microsoft.Azure.Management.ApiManagement.Models.ApiIssueAttachmentGetHeaders&gt;&gt;" Usage="iApiIssueAttachmentOperations.GetWithHttpMessagesAsync (resourceGroupName, serviceName, apiId, issueId, attachmentId, customHeaders, cancellationToken)" />
@@ -281,7 +281,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListByServiceNextWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ApiManagement.Models.IssueAttachmentContract&gt;&gt;&gt; ListByServiceNextWithHttpMessagesAsync (string nextPageLink, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ApiManagement.Models.IssueAttachmentContract&gt;&gt;&gt; ListByServiceNextWithHttpMessagesAsync (string nextPageLink, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.ApiManagement.Models.IssueAttachmentContract&gt;&gt;&gt; ListByServiceNextWithHttpMessagesAsync(string nextPageLink, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.IApiIssueAttachmentOperations.ListByServiceNextWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member ListByServiceNextWithHttpMessagesAsync : string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ApiManagement.Models.IssueAttachmentContract&gt;&gt;&gt;" Usage="iApiIssueAttachmentOperations.ListByServiceNextWithHttpMessagesAsync (nextPageLink, customHeaders, cancellationToken)" />
@@ -309,7 +309,8 @@
             The cancellation token.
             </param>
         <summary>
-            Lists all comments for the Issue assosiated with the specified API.
+            Lists all attachments for the Issue associated with the specified
+            API.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -325,7 +326,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListByServiceWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ApiManagement.Models.IssueAttachmentContract&gt;&gt;&gt; ListByServiceWithHttpMessagesAsync (string resourceGroupName, string serviceName, string apiId, string issueId, Microsoft.Rest.Azure.OData.ODataQuery&lt;Microsoft.Azure.Management.ApiManagement.Models.IssueAttachmentContract&gt; odataQuery = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ApiManagement.Models.IssueAttachmentContract&gt;&gt;&gt; ListByServiceWithHttpMessagesAsync (string resourceGroupName, string serviceName, string apiId, string issueId, Microsoft.Rest.Azure.OData.ODataQuery&lt;Microsoft.Azure.Management.ApiManagement.Models.IssueAttachmentContract&gt; odataQuery = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.ApiManagement.Models.IssueAttachmentContract&gt;&gt;&gt; ListByServiceWithHttpMessagesAsync(string resourceGroupName, string serviceName, string apiId, string issueId, class Microsoft.Rest.Azure.OData.ODataQuery`1&lt;class Microsoft.Azure.Management.ApiManagement.Models.IssueAttachmentContract&gt; odataQuery, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.IApiIssueAttachmentOperations.ListByServiceWithHttpMessagesAsync(System.String,System.String,System.String,System.String,Microsoft.Rest.Azure.OData.ODataQuery{Microsoft.Azure.Management.ApiManagement.Models.IssueAttachmentContract},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member ListByServiceWithHttpMessagesAsync : string * string * string * string * Microsoft.Rest.Azure.OData.ODataQuery&lt;Microsoft.Azure.Management.ApiManagement.Models.IssueAttachmentContract&gt; * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ApiManagement.Models.IssueAttachmentContract&gt;&gt;&gt;" Usage="iApiIssueAttachmentOperations.ListByServiceWithHttpMessagesAsync (resourceGroupName, serviceName, apiId, issueId, odataQuery, customHeaders, cancellationToken)" />
@@ -371,7 +372,8 @@
             The cancellation token.
             </param>
         <summary>
-            Lists all comments for the Issue assosiated with the specified API.
+            Lists all attachments for the Issue associated with the specified
+            API.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

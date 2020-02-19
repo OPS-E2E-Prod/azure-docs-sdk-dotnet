@@ -1,4 +1,4 @@
-﻿<Type Name="BackendServiceFabricClusterProperties" FullName="Microsoft.Azure.Management.ApiManagement.Models.BackendServiceFabricClusterProperties">
+<Type Name="BackendServiceFabricClusterProperties" FullName="Microsoft.Azure.Management.ApiManagement.Models.BackendServiceFabricClusterProperties">
   <TypeSignature Language="C#" Value="public class BackendServiceFabricClusterProperties" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BackendServiceFabricClusterProperties extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.ApiManagement.Models.BackendServiceFabricClusterProperties" />
@@ -39,7 +39,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public BackendServiceFabricClusterProperties (string clientCertificatethumbprint, System.Collections.Generic.IList&lt;string&gt; managementEndpoints, Nullable&lt;int&gt; maxPartitionResolutionRetries = null, System.Collections.Generic.IList&lt;string&gt; serverCertificateThumbprints = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.ApiManagement.Models.X509CertificateName&gt; serverX509Names = null);" />
+      <MemberSignature Language="C#" Value="public BackendServiceFabricClusterProperties (string clientCertificatethumbprint, System.Collections.Generic.IList&lt;string&gt; managementEndpoints, Nullable&lt;int&gt; maxPartitionResolutionRetries = default, System.Collections.Generic.IList&lt;string&gt; serverCertificateThumbprints = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.ApiManagement.Models.X509CertificateName&gt; serverX509Names = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string clientCertificatethumbprint, class System.Collections.Generic.IList`1&lt;string&gt; managementEndpoints, valuetype System.Nullable`1&lt;int32&gt; maxPartitionResolutionRetries, class System.Collections.Generic.IList`1&lt;string&gt; serverCertificateThumbprints, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.ApiManagement.Models.X509CertificateName&gt; serverX509Names) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.Models.BackendServiceFabricClusterProperties.#ctor(System.String,System.Collections.Generic.IList{System.String},System.Nullable{System.Int32},System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{Microsoft.Azure.Management.ApiManagement.Models.X509CertificateName})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (clientCertificatethumbprint As String, managementEndpoints As IList(Of String), Optional maxPartitionResolutionRetries As Nullable(Of Integer) = null, Optional serverCertificateThumbprints As IList(Of String) = null, Optional serverX509Names As IList(Of X509CertificateName) = null)" />
@@ -62,7 +62,7 @@
         <param name="managementEndpoints">The cluster management
             endpoint.</param>
         <param name="maxPartitionResolutionRetries">Maximum number of
-            retries while attempting resolve the parition.</param>
+            retries while attempting resolve the partition.</param>
         <param name="serverCertificateThumbprints">Thumbprints of
             certificates cluster management service uses for tls
             communication</param>
@@ -152,7 +152,7 @@
       <Docs>
         <summary>
             Gets or sets maximum number of retries while attempting resolve the
-            parition.
+            partition.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

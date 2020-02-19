@@ -1,4 +1,4 @@
-﻿<Type Name="ApiExportOperationsExtensions" FullName="Microsoft.Azure.Management.ApiManagement.ApiExportOperationsExtensions">
+<Type Name="ApiExportOperationsExtensions" FullName="Microsoft.Azure.Management.ApiManagement.ApiExportOperationsExtensions">
   <TypeSignature Language="C#" Value="public static class ApiExportOperationsExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ApiExportOperationsExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.ApiManagement.ApiExportOperationsExtensions" />
@@ -57,7 +57,8 @@
             </param>
         <param name="format">
             Format in which to export the Api Details to the Storage Blob with Sas Key
-            valid for 5 minutes. Possible values include: 'Swagger', 'Wsdl', 'Wadl'
+            valid for 5 minutes. Possible values include: 'Swagger', 'Wsdl', 'Wadl',
+            'Openapi', 'OpenapiJson'
             </param>
         <summary>
             Gets the details of the API specified by its identifier in the format
@@ -68,7 +69,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ApiManagement.Models.ApiExportResult&gt; GetAsync (this Microsoft.Azure.Management.ApiManagement.IApiExportOperations operations, string resourceGroupName, string serviceName, string apiId, string format, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ApiManagement.Models.ApiExportResult&gt; GetAsync (this Microsoft.Azure.Management.ApiManagement.IApiExportOperations operations, string resourceGroupName, string serviceName, string apiId, string format, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.ApiManagement.Models.ApiExportResult&gt; GetAsync(class Microsoft.Azure.Management.ApiManagement.IApiExportOperations operations, string resourceGroupName, string serviceName, string apiId, string format, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.ApiExportOperationsExtensions.GetAsync(Microsoft.Azure.Management.ApiManagement.IApiExportOperations,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member GetAsync : Microsoft.Azure.Management.ApiManagement.IApiExportOperations * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ApiManagement.Models.ApiExportResult&gt;" Usage="Microsoft.Azure.Management.ApiManagement.ApiExportOperationsExtensions.GetAsync (operations, resourceGroupName, serviceName, apiId, format, cancellationToken)" />
@@ -77,6 +78,11 @@
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ApiManagement.Models.ApiExportResult&gt;</ReturnType>
       </ReturnValue>
@@ -105,7 +111,8 @@
             </param>
         <param name="format">
             Format in which to export the Api Details to the Storage Blob with Sas Key
-            valid for 5 minutes. Possible values include: 'Swagger', 'Wsdl', 'Wadl'
+            valid for 5 minutes. Possible values include: 'Swagger', 'Wsdl', 'Wadl',
+            'Openapi', 'OpenapiJson'
             </param>
         <param name="cancellationToken">
             The cancellation token.

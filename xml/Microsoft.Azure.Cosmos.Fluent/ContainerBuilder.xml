@@ -1,4 +1,4 @@
-﻿<Type Name="ContainerBuilder" FullName="Microsoft.Azure.Cosmos.Fluent.ContainerBuilder">
+<Type Name="ContainerBuilder" FullName="Microsoft.Azure.Cosmos.Fluent.ContainerBuilder">
   <TypeSignature Language="C#" Value="public class ContainerBuilder : Microsoft.Azure.Cosmos.Fluent.ContainerDefinition&lt;Microsoft.Azure.Cosmos.Fluent.ContainerBuilder&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContainerBuilder extends Microsoft.Azure.Cosmos.Fluent.ContainerDefinition`1&lt;class Microsoft.Azure.Cosmos.Fluent.ContainerBuilder&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Cosmos.Fluent.ContainerBuilder" />
@@ -6,7 +6,10 @@
   <TypeSignature Language="F#" Value="type ContainerBuilder = class&#xA;    inherit ContainerDefinition&lt;ContainerBuilder&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.4.1.0</AssemblyVersion>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+    <AssemblyVersion>3.5.1.0</AssemblyVersion>
+    <AssemblyVersion>3.6.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Cosmos.Fluent.ContainerDefinition&lt;Microsoft.Azure.Cosmos.Fluent.ContainerBuilder&gt;</BaseTypeName>
@@ -23,14 +26,17 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ContainerBuilder ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="C#" Value="protected ContainerBuilder ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Fluent.ContainerBuilder.#ctor" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -49,7 +55,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.ContainerProperties</ReturnType>
@@ -64,7 +73,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.ContainerResponse&gt; CreateAsync (Nullable&lt;int&gt; throughput = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.ContainerResponse&gt; CreateAsync (Nullable&lt;int&gt; throughput = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Cosmos.ContainerResponse&gt; CreateAsync(valuetype System.Nullable`1&lt;int32&gt; throughput) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Fluent.ContainerBuilder.CreateAsync(System.Nullable{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateAsync (Optional throughput As Nullable(Of Integer) = null) As Task(Of ContainerResponse)" />
@@ -72,7 +81,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.ContainerResponse&gt;</ReturnType>
@@ -91,6 +103,37 @@
             </remarks>
       </Docs>
     </Member>
+    <Member MemberName="CreateIfNotExistsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.ContainerResponse&gt; CreateIfNotExistsAsync (Nullable&lt;int&gt; throughput = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Cosmos.ContainerResponse&gt; CreateIfNotExistsAsync(valuetype System.Nullable`1&lt;int32&gt; throughput) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Fluent.ContainerBuilder.CreateIfNotExistsAsync(System.Nullable{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateIfNotExistsAsync (Optional throughput As Nullable(Of Integer) = null) As Task(Of ContainerResponse)" />
+      <MemberSignature Language="F#" Value="member this.CreateIfNotExistsAsync : Nullable&lt;int&gt; -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.ContainerResponse&gt;" Usage="containerBuilder.CreateIfNotExistsAsync throughput" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
+        <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.ContainerResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="throughput" Type="System.Nullable&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="throughput">Desired throughput for the container expressed in Request Units per second.</param>
+        <summary>
+            Creates a container if it does not exist with the current fluent definition.
+            </summary>
+        <returns>An asynchronous Task representing the creation of a <see cref="T:Microsoft.Azure.Cosmos.Container" /> based on the Fluent definition.</returns>
+        <remarks>
+          <seealso href="https://docs.microsoft.com/azure/cosmos-db/request-units" /> for details on provision throughput.
+            </remarks>
+      </Docs>
+    </Member>
     <Member MemberName="WithConflictResolution">
       <MemberSignature Language="C#" Value="public Microsoft.Azure.Cosmos.Fluent.ConflictResolutionDefinition WithConflictResolution ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Azure.Cosmos.Fluent.ConflictResolutionDefinition WithConflictResolution() cil managed" />
@@ -100,7 +143,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.Fluent.ConflictResolutionDefinition</ReturnType>
@@ -123,7 +169,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.Fluent.UniqueKeyDefinition</ReturnType>

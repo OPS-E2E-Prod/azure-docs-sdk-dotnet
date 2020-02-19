@@ -1,4 +1,4 @@
-﻿<Type Name="Skill" FullName="Microsoft.Azure.Search.Models.Skill">
+<Type Name="Skill" FullName="Microsoft.Azure.Search.Models.Skill">
   <TypeSignature Language="C#" Value="public class Skill" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Skill extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Search.Models.Skill" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type Skill = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-    <AssemblyVersion>9.0.0.0</AssemblyVersion>
+    <AssemblyVersion>10.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,28 +38,33 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Skill (System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.InputFieldMappingEntry&gt; inputs, System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.OutputFieldMappingEntry&gt; outputs, string description = null, string context = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Search.Models.InputFieldMappingEntry&gt; inputs, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Search.Models.OutputFieldMappingEntry&gt; outputs, string description, string context) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.Models.Skill.#ctor(System.Collections.Generic.IList{Microsoft.Azure.Search.Models.InputFieldMappingEntry},System.Collections.Generic.IList{Microsoft.Azure.Search.Models.OutputFieldMappingEntry},System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (inputs As IList(Of InputFieldMappingEntry), outputs As IList(Of OutputFieldMappingEntry), Optional description As String = null, Optional context As String = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Search.Models.Skill : System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.InputFieldMappingEntry&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.OutputFieldMappingEntry&gt; * string * string -&gt; Microsoft.Azure.Search.Models.Skill" Usage="new Microsoft.Azure.Search.Models.Skill (inputs, outputs, description, context)" />
+      <MemberSignature Language="C#" Value="public Skill (System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.InputFieldMappingEntry&gt; inputs, System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.OutputFieldMappingEntry&gt; outputs, string name = default, string description = default, string context = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Search.Models.InputFieldMappingEntry&gt; inputs, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Search.Models.OutputFieldMappingEntry&gt; outputs, string name, string description, string context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.Models.Skill.#ctor(System.Collections.Generic.IList{Microsoft.Azure.Search.Models.InputFieldMappingEntry},System.Collections.Generic.IList{Microsoft.Azure.Search.Models.OutputFieldMappingEntry},System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (inputs As IList(Of InputFieldMappingEntry), outputs As IList(Of OutputFieldMappingEntry), Optional name As String = null, Optional description As String = null, Optional context As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Search.Models.Skill : System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.InputFieldMappingEntry&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.OutputFieldMappingEntry&gt; * string * string * string -&gt; Microsoft.Azure.Search.Models.Skill" Usage="new Microsoft.Azure.Search.Models.Skill (inputs, outputs, name, description, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="inputs" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.InputFieldMappingEntry&gt;" />
         <Parameter Name="outputs" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.OutputFieldMappingEntry&gt;" />
+        <Parameter Name="name" Type="System.String" />
         <Parameter Name="description" Type="System.String" />
         <Parameter Name="context" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="inputs">Inputs of the skills could be a column in the
             source data set, or the output of an upstream skill.</param>
-        <param name="outputs">The output of a skill is either a field in an
-            Azure Search index, or a value that can be consumed as an input by
+        <param name="outputs">The output of a skill is either a field in a
+            search index, or a value that can be consumed as an input by
             another skill.</param>
+        <param name="name">The name of the skill which uniquely identifies
+            it within the skillset. A skill with no name defined will be given
+            a default name of its 1-based index in the skills array, prefixed
+            with the character '#'.</param>
         <param name="description">The description of the skill which
             describes the inputs, outputs, and usage of the skill.</param>
         <param name="context">Represents the level at which operations take
@@ -80,7 +85,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -109,7 +114,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -137,7 +142,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -156,6 +161,36 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Search.Models.Skill.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Azure.Search.Models.Skill.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the name of the skill which uniquely identifies it
+            within the skillset. A skill with no name defined will be given a
+            default name of its 1-based index in the skills array, prefixed
+            with the character '#'.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Outputs">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.OutputFieldMappingEntry&gt; Outputs { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Search.Models.OutputFieldMappingEntry&gt; Outputs" />
@@ -165,7 +200,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -177,9 +212,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the output of a skill is either a field in an Azure
-            Search index, or a value that can be consumed as an input by
-            another skill.
+            Gets or sets the output of a skill is either a field in a search
+            index, or a value that can be consumed as an input by another
+            skill.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -194,7 +229,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

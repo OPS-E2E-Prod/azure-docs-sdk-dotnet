@@ -1,12 +1,12 @@
-﻿<Type Name="MongoBulkExecutor" FullName="Microsoft.Azure.CosmosDB.BulkExecutor.MongoBulkExecutor">
-  <TypeSignature Language="C#" Value="public sealed class MongoBulkExecutor : Microsoft.Azure.CosmosDB.BulkExecutor.IBulkExecutor" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MongoBulkExecutor extends System.Object implements class Microsoft.Azure.CosmosDB.BulkExecutor.IBulkExecutor" />
+<Type Name="MongoBulkExecutor" FullName="Microsoft.Azure.CosmosDB.BulkExecutor.MongoBulkExecutor">
+  <TypeSignature Language="C#" Value="public sealed class MongoBulkExecutor : IDisposable, Microsoft.Azure.CosmosDB.BulkExecutor.IBulkExecutor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MongoBulkExecutor extends System.Object implements class Microsoft.Azure.CosmosDB.BulkExecutor.IBulkExecutor, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.CosmosDB.BulkExecutor.MongoBulkExecutor" />
-  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MongoBulkExecutor&#xA;Implements IBulkExecutor" />
-  <TypeSignature Language="F#" Value="type MongoBulkExecutor = class&#xA;    interface IBulkExecutor" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MongoBulkExecutor&#xA;Implements IBulkExecutor, IDisposable" />
+  <TypeSignature Language="F#" Value="type MongoBulkExecutor = class&#xA;    interface IBulkExecutor&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.CosmosDB.BulkImport</AssemblyName>
-    <AssemblyVersion>2.4.0.0</AssemblyVersion>
+    <AssemblyVersion>2.5.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -14,6 +14,9 @@
   <Interfaces>
     <Interface>
       <InterfaceName>Microsoft.Azure.CosmosDB.BulkExecutor.IBulkExecutor</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>
@@ -29,7 +32,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.CosmosDB.BulkImport</AssemblyName>
-        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+        <AssemblyVersion>2.5.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -48,14 +51,14 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MongoBulkExecutor (Uri serviceEndpoint, string masterKey, string databaseName, string collectionName, Microsoft.Azure.Documents.Client.ConnectionPolicy connectionPolicy = null, Nullable&lt;Microsoft.Azure.Documents.ConsistencyLevel&gt; desiredConsistencyLevel = null, Newtonsoft.Json.JsonSerializerSettings serializerSettings = null);" />
+      <MemberSignature Language="C#" Value="public MongoBulkExecutor (Uri serviceEndpoint, string masterKey, string databaseName, string collectionName, Microsoft.Azure.Documents.Client.ConnectionPolicy connectionPolicy = default, Nullable&lt;Microsoft.Azure.Documents.ConsistencyLevel&gt; desiredConsistencyLevel = default, Newtonsoft.Json.JsonSerializerSettings serializerSettings = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri serviceEndpoint, string masterKey, string databaseName, string collectionName, class Microsoft.Azure.Documents.Client.ConnectionPolicy connectionPolicy, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Documents.ConsistencyLevel&gt; desiredConsistencyLevel, class Newtonsoft.Json.JsonSerializerSettings serializerSettings) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.CosmosDB.BulkExecutor.MongoBulkExecutor.#ctor(System.Uri,System.String,System.String,System.String,Microsoft.Azure.Documents.Client.ConnectionPolicy,System.Nullable{Microsoft.Azure.Documents.ConsistencyLevel},Newtonsoft.Json.JsonSerializerSettings)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.CosmosDB.BulkExecutor.MongoBulkExecutor : Uri * string * string * string * Microsoft.Azure.Documents.Client.ConnectionPolicy * Nullable&lt;Microsoft.Azure.Documents.ConsistencyLevel&gt; * Newtonsoft.Json.JsonSerializerSettings -&gt; Microsoft.Azure.CosmosDB.BulkExecutor.MongoBulkExecutor" Usage="new Microsoft.Azure.CosmosDB.BulkExecutor.MongoBulkExecutor (serviceEndpoint, masterKey, databaseName, collectionName, connectionPolicy, desiredConsistencyLevel, serializerSettings)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.CosmosDB.BulkImport</AssemblyName>
-        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+        <AssemblyVersion>2.5.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="serviceEndpoint" Type="System.Uri" />
@@ -79,14 +82,14 @@
       </Docs>
     </Member>
     <Member MemberName="BulkDeleteAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.CosmosDB.BulkExecutor.BulkDelete.BulkDeleteResponse&gt; BulkDeleteAsync (string query, Nullable&lt;int&gt; deleteBatchSize = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.CosmosDB.BulkExecutor.BulkDelete.BulkDeleteResponse&gt; BulkDeleteAsync (string query, Nullable&lt;int&gt; deleteBatchSize = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.CosmosDB.BulkExecutor.BulkDelete.BulkDeleteResponse&gt; BulkDeleteAsync(string query, valuetype System.Nullable`1&lt;int32&gt; deleteBatchSize, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.CosmosDB.BulkExecutor.MongoBulkExecutor.BulkDeleteAsync(System.String,System.Nullable{System.Int32},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="member this.BulkDeleteAsync : string * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.CosmosDB.BulkExecutor.BulkDelete.BulkDeleteResponse&gt;" Usage="mongoBulkExecutor.BulkDeleteAsync (query, deleteBatchSize, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.CosmosDB.BulkImport</AssemblyName>
-        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+        <AssemblyVersion>2.5.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.CosmosDB.BulkExecutor.BulkDelete.BulkDeleteResponse&gt;</ReturnType>
@@ -106,14 +109,14 @@
       </Docs>
     </Member>
     <Member MemberName="BulkImportAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.CosmosDB.BulkExecutor.BulkImport.BulkImportResponse&gt; BulkImportAsync (System.Collections.Generic.IEnumerable&lt;MongoDB.Bson.BsonDocument&gt; documents, bool enableUpsert = false, bool disableAutomaticIdGeneration = false, Nullable&lt;int&gt; maxConcurrencyPerPartitionKeyRange = null, Nullable&lt;int&gt; maxInMemorySortingBatchSize = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.CosmosDB.BulkExecutor.BulkImport.BulkImportResponse&gt; BulkImportAsync (System.Collections.Generic.IEnumerable&lt;MongoDB.Bson.BsonDocument&gt; documents, bool enableUpsert = false, bool disableAutomaticIdGeneration = false, Nullable&lt;int&gt; maxConcurrencyPerPartitionKeyRange = default, Nullable&lt;int&gt; maxInMemorySortingBatchSize = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.CosmosDB.BulkExecutor.BulkImport.BulkImportResponse&gt; BulkImportAsync(class System.Collections.Generic.IEnumerable`1&lt;class MongoDB.Bson.BsonDocument&gt; documents, bool enableUpsert, bool disableAutomaticIdGeneration, valuetype System.Nullable`1&lt;int32&gt; maxConcurrencyPerPartitionKeyRange, valuetype System.Nullable`1&lt;int32&gt; maxInMemorySortingBatchSize, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.CosmosDB.BulkExecutor.MongoBulkExecutor.BulkImportAsync(System.Collections.Generic.IEnumerable{MongoDB.Bson.BsonDocument},System.Boolean,System.Boolean,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="member this.BulkImportAsync : seq&lt;MongoDB.Bson.BsonDocument&gt; * bool * bool * Nullable&lt;int&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.CosmosDB.BulkExecutor.BulkImport.BulkImportResponse&gt;" Usage="mongoBulkExecutor.BulkImportAsync (documents, enableUpsert, disableAutomaticIdGeneration, maxConcurrencyPerPartitionKeyRange, maxInMemorySortingBatchSize, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.CosmosDB.BulkImport</AssemblyName>
-        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+        <AssemblyVersion>2.5.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.CosmosDB.BulkExecutor.BulkImport.BulkImportResponse&gt;</ReturnType>
@@ -139,7 +142,7 @@
       </Docs>
     </Member>
     <Member MemberName="BulkImportAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.CosmosDB.BulkExecutor.BulkImport.BulkImportResponse&gt; BulkImportAsync (System.Collections.Generic.IEnumerable&lt;object&gt; documents, bool enableUpsert = false, bool disableAutomaticIdGeneration = true, Nullable&lt;int&gt; maxConcurrencyPerPartitionKeyRange = null, Nullable&lt;int&gt; maxInMemorySortingBatchSize = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.CosmosDB.BulkExecutor.BulkImport.BulkImportResponse&gt; BulkImportAsync (System.Collections.Generic.IEnumerable&lt;object&gt; documents, bool enableUpsert = false, bool disableAutomaticIdGeneration = false, Nullable&lt;int&gt; maxConcurrencyPerPartitionKeyRange = default, Nullable&lt;int&gt; maxInMemorySortingBatchSize = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.CosmosDB.BulkExecutor.BulkImport.BulkImportResponse&gt; BulkImportAsync(class System.Collections.Generic.IEnumerable`1&lt;object&gt; documents, bool enableUpsert, bool disableAutomaticIdGeneration, valuetype System.Nullable`1&lt;int32&gt; maxConcurrencyPerPartitionKeyRange, valuetype System.Nullable`1&lt;int32&gt; maxInMemorySortingBatchSize, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.CosmosDB.BulkExecutor.MongoBulkExecutor.BulkImportAsync(System.Collections.Generic.IEnumerable{System.Object},System.Boolean,System.Boolean,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member BulkImportAsync : seq&lt;obj&gt; * bool * bool * Nullable&lt;int&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.CosmosDB.BulkExecutor.BulkImport.BulkImportResponse&gt;&#xA;override this.BulkImportAsync : seq&lt;obj&gt; * bool * bool * Nullable&lt;int&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.CosmosDB.BulkExecutor.BulkImport.BulkImportResponse&gt;" Usage="mongoBulkExecutor.BulkImportAsync (documents, enableUpsert, disableAutomaticIdGeneration, maxConcurrencyPerPartitionKeyRange, maxInMemorySortingBatchSize, cancellationToken)" />
@@ -149,7 +152,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.CosmosDB.BulkImport</AssemblyName>
-        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+        <AssemblyVersion>2.5.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.CosmosDB.BulkExecutor.BulkImport.BulkImportResponse&gt;</ReturnType>
@@ -175,7 +178,7 @@
       </Docs>
     </Member>
     <Member MemberName="BulkImportAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.CosmosDB.BulkExecutor.BulkImport.BulkImportResponse&gt; BulkImportAsync (System.Collections.Generic.IEnumerable&lt;string&gt; documents, bool enableUpsert = false, bool disableAutomaticIdGeneration = false, Nullable&lt;int&gt; maxConcurrencyPerPartitionKeyRange = null, Nullable&lt;int&gt; maxInMemorySortingBatchSize = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.CosmosDB.BulkExecutor.BulkImport.BulkImportResponse&gt; BulkImportAsync (System.Collections.Generic.IEnumerable&lt;string&gt; documents, bool enableUpsert = false, bool disableAutomaticIdGeneration = false, Nullable&lt;int&gt; maxConcurrencyPerPartitionKeyRange = default, Nullable&lt;int&gt; maxInMemorySortingBatchSize = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.CosmosDB.BulkExecutor.BulkImport.BulkImportResponse&gt; BulkImportAsync(class System.Collections.Generic.IEnumerable`1&lt;string&gt; documents, bool enableUpsert, bool disableAutomaticIdGeneration, valuetype System.Nullable`1&lt;int32&gt; maxConcurrencyPerPartitionKeyRange, valuetype System.Nullable`1&lt;int32&gt; maxInMemorySortingBatchSize, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.CosmosDB.BulkExecutor.MongoBulkExecutor.BulkImportAsync(System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member BulkImportAsync : seq&lt;string&gt; * bool * bool * Nullable&lt;int&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.CosmosDB.BulkExecutor.BulkImport.BulkImportResponse&gt;&#xA;override this.BulkImportAsync : seq&lt;string&gt; * bool * bool * Nullable&lt;int&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.CosmosDB.BulkExecutor.BulkImport.BulkImportResponse&gt;" Usage="mongoBulkExecutor.BulkImportAsync (documents, enableUpsert, disableAutomaticIdGeneration, maxConcurrencyPerPartitionKeyRange, maxInMemorySortingBatchSize, cancellationToken)" />
@@ -185,7 +188,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.CosmosDB.BulkImport</AssemblyName>
-        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+        <AssemblyVersion>2.5.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.CosmosDB.BulkExecutor.BulkImport.BulkImportResponse&gt;</ReturnType>
@@ -211,7 +214,7 @@
       </Docs>
     </Member>
     <Member MemberName="BulkUpdateAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.CosmosDB.BulkExecutor.BulkUpdate.BulkUpdateResponse&gt; BulkUpdateAsync (System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.CosmosDB.BulkExecutor.BulkUpdate.UpdateItem&gt; updateItems, Nullable&lt;int&gt; maxConcurrencyPerPartitionKeyRange = null, Nullable&lt;int&gt; maxInMemorySortingBatchSize = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.CosmosDB.BulkExecutor.BulkUpdate.BulkUpdateResponse&gt; BulkUpdateAsync (System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.CosmosDB.BulkExecutor.BulkUpdate.UpdateItem&gt; updateItems, Nullable&lt;int&gt; maxConcurrencyPerPartitionKeyRange = default, Nullable&lt;int&gt; maxInMemorySortingBatchSize = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.CosmosDB.BulkExecutor.BulkUpdate.BulkUpdateResponse&gt; BulkUpdateAsync(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.CosmosDB.BulkExecutor.BulkUpdate.UpdateItem&gt; updateItems, valuetype System.Nullable`1&lt;int32&gt; maxConcurrencyPerPartitionKeyRange, valuetype System.Nullable`1&lt;int32&gt; maxInMemorySortingBatchSize, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.CosmosDB.BulkExecutor.MongoBulkExecutor.BulkUpdateAsync(System.Collections.Generic.IEnumerable{Microsoft.Azure.CosmosDB.BulkExecutor.BulkUpdate.UpdateItem},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member BulkUpdateAsync : seq&lt;Microsoft.Azure.CosmosDB.BulkExecutor.BulkUpdate.UpdateItem&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.CosmosDB.BulkExecutor.BulkUpdate.BulkUpdateResponse&gt;&#xA;override this.BulkUpdateAsync : seq&lt;Microsoft.Azure.CosmosDB.BulkExecutor.BulkUpdate.UpdateItem&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.CosmosDB.BulkExecutor.BulkUpdate.BulkUpdateResponse&gt;" Usage="mongoBulkExecutor.BulkUpdateAsync (updateItems, maxConcurrencyPerPartitionKeyRange, maxInMemorySortingBatchSize, cancellationToken)" />
@@ -221,7 +224,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.CosmosDB.BulkImport</AssemblyName>
-        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+        <AssemblyVersion>2.5.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.CosmosDB.BulkExecutor.BulkUpdate.BulkUpdateResponse&gt;</ReturnType>
@@ -242,6 +245,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.CosmosDB.BulkExecutor.MongoBulkExecutor.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="mongoBulkExecutor.Dispose " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.CosmosDB.BulkImport</AssemblyName>
+        <AssemblyVersion>2.5.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="InitializeAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task InitializeAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task InitializeAsync() cil managed" />
@@ -254,7 +280,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.CosmosDB.BulkImport</AssemblyName>
-        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+        <AssemblyVersion>2.5.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>

@@ -1,4 +1,4 @@
-﻿<Type Name="OperationOperationsExtensions" FullName="Microsoft.Azure.Management.RecoveryServices.Backup.OperationOperationsExtensions">
+<Type Name="OperationOperationsExtensions" FullName="Microsoft.Azure.Management.RecoveryServices.Backup.OperationOperationsExtensions">
   <TypeSignature Language="C#" Value="public static class OperationOperationsExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit OperationOperationsExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.RecoveryServices.Backup.OperationOperationsExtensions" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type OperationOperationsExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,7 +28,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.RecoveryServices.Backup.Models.ValidateOperationsResponse</ReturnType>
@@ -62,15 +62,20 @@
       </Docs>
     </Member>
     <Member MemberName="ValidateAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.RecoveryServices.Backup.Models.ValidateOperationsResponse&gt; ValidateAsync (this Microsoft.Azure.Management.RecoveryServices.Backup.IOperationOperations operations, string vaultName, string resourceGroupName, Microsoft.Azure.Management.RecoveryServices.Backup.Models.ValidateOperationRequest parameters, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.RecoveryServices.Backup.Models.ValidateOperationsResponse&gt; ValidateAsync (this Microsoft.Azure.Management.RecoveryServices.Backup.IOperationOperations operations, string vaultName, string resourceGroupName, Microsoft.Azure.Management.RecoveryServices.Backup.Models.ValidateOperationRequest parameters, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.RecoveryServices.Backup.Models.ValidateOperationsResponse&gt; ValidateAsync(class Microsoft.Azure.Management.RecoveryServices.Backup.IOperationOperations operations, string vaultName, string resourceGroupName, class Microsoft.Azure.Management.RecoveryServices.Backup.Models.ValidateOperationRequest parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.RecoveryServices.Backup.OperationOperationsExtensions.ValidateAsync(Microsoft.Azure.Management.RecoveryServices.Backup.IOperationOperations,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.ValidateOperationRequest,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ValidateAsync : Microsoft.Azure.Management.RecoveryServices.Backup.IOperationOperations * string * string * Microsoft.Azure.Management.RecoveryServices.Backup.Models.ValidateOperationRequest * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.RecoveryServices.Backup.Models.ValidateOperationsResponse&gt;" Usage="Microsoft.Azure.Management.RecoveryServices.Backup.OperationOperationsExtensions.ValidateAsync (operations, vaultName, resourceGroupName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.RecoveryServices.Backup.Models.ValidateOperationsResponse&gt;</ReturnType>
       </ReturnValue>

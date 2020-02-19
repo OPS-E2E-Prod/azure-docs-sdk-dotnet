@@ -1,4 +1,4 @@
-﻿<Type Name="PlatformProperties" FullName="Microsoft.Azure.Management.ContainerRegistry.Models.PlatformProperties">
+<Type Name="PlatformProperties" FullName="Microsoft.Azure.Management.ContainerRegistry.Models.PlatformProperties">
   <TypeSignature Language="C#" Value="public class PlatformProperties" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PlatformProperties extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.ContainerRegistry.Models.PlatformProperties" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type PlatformProperties = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,7 +38,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PlatformProperties (string os, string architecture = null, string variant = null);" />
+      <MemberSignature Language="C#" Value="public PlatformProperties (string os, string architecture = default, string variant = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string os, string architecture, string variant) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ContainerRegistry.Models.PlatformProperties.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (os As String, Optional architecture As String = null, Optional variant As String = null)" />
@@ -46,7 +46,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="os" Type="System.String" />
@@ -57,7 +57,7 @@
         <param name="os">The operating system type required for the run.
             Possible values include: 'Windows', 'Linux'</param>
         <param name="architecture">The OS architecture. Possible values
-            include: 'amd64', 'x86', 'arm'</param>
+            include: 'amd64', 'x86', '386', 'arm', 'arm64'</param>
         <param name="variant">Variant of the CPU. Possible values include:
             'v6', 'v7', 'v8'</param>
         <summary>
@@ -75,7 +75,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -88,7 +88,7 @@
       <Docs>
         <summary>
             Gets or sets the OS architecture. Possible values include: 'amd64',
-            'x86', 'arm'
+            'x86', '386', 'arm', 'arm64'
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -103,7 +103,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -131,7 +131,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -156,7 +156,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

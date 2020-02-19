@@ -1,4 +1,4 @@
-﻿<Type Name="Response" FullName="Microsoft.Azure.Management.Monitor.Models.Response">
+<Type Name="Response" FullName="Microsoft.Azure.Management.Monitor.Models.Response">
   <TypeSignature Language="C#" Value="public class Response" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Response extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Monitor.Models.Response" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type Response = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-    <AssemblyVersion>0.22.0.0</AssemblyVersion>
+    <AssemblyVersion>0.24.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.22.0.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,7 +38,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Response (string timespan, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Monitor.Models.Metric&gt; value, Nullable&lt;double&gt; cost = null, Nullable&lt;TimeSpan&gt; interval = null, string namespaceProperty = null, string resourceregion = null);" />
+      <MemberSignature Language="C#" Value="public Response (string timespan, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Monitor.Models.Metric&gt; value, Nullable&lt;double&gt; cost = default, Nullable&lt;TimeSpan&gt; interval = default, string namespaceProperty = default, string resourceregion = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string timespan, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Monitor.Models.Metric&gt; value, valuetype System.Nullable`1&lt;float64&gt; cost, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; interval, string namespaceProperty, string resourceregion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Monitor.Models.Response.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Azure.Management.Monitor.Models.Metric},System.Nullable{System.Double},System.Nullable{System.TimeSpan},System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (timespan As String, value As IList(Of Metric), Optional cost As Nullable(Of Double) = null, Optional interval As Nullable(Of TimeSpan) = null, Optional namespaceProperty As String = null, Optional resourceregion As String = null)" />
@@ -46,7 +46,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.22.0.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="timespan" Type="System.String" />
@@ -58,7 +58,7 @@
       </Parameters>
       <Docs>
         <param name="timespan">The timespan for which the data was
-            retrieved. Its value consists of two datatimes concatenated,
+            retrieved. Its value consists of two datetimes concatenated,
             separated by '/'.  This may be adjusted in the future and returned
             back from what was originally requested.</param>
         <param name="value">the value of the collection.</param>
@@ -87,7 +87,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.22.0.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -115,7 +115,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.22.0.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -145,7 +145,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.22.0.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -172,7 +172,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.22.0.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -199,7 +199,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.22.0.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -212,7 +212,7 @@
       <Docs>
         <summary>
             Gets or sets the timespan for which the data was retrieved. Its
-            value consists of two datatimes concatenated, separated by '/'.
+            value consists of two datetimes concatenated, separated by '/'.
             This may be adjusted in the future and returned back from what was
             originally requested.
             </summary>
@@ -229,7 +229,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.22.0.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -254,7 +254,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.22.0.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

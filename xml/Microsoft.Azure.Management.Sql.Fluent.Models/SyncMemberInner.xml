@@ -1,4 +1,4 @@
-﻿<Type Name="SyncMemberInner" FullName="Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberInner">
+<Type Name="SyncMemberInner" FullName="Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberInner">
   <TypeSignature Language="C#" Value="public class SyncMemberInner : Microsoft.Azure.Management.Sql.Fluent.Models.ProxyResourceInner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SyncMemberInner extends Microsoft.Azure.Management.Sql.Fluent.Models.ProxyResourceInner" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberInner" />
@@ -6,7 +6,10 @@
   <TypeSignature Language="F#" Value="type SyncMemberInner = class&#xA;    inherit ProxyResourceInner" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.Sql.Fluent.Models.ProxyResourceInner</BaseTypeName>
@@ -32,7 +35,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,34 +49,36 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SyncMemberInner (string id = null, string name = null, string type = null, string databaseType = null, string syncAgentId = null, Nullable&lt;Guid&gt; sqlServerDatabaseId = null, string serverName = null, string databaseName = null, string userName = null, string password = null, string syncDirection = null, string syncState = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string type, string databaseType, string syncAgentId, valuetype System.Nullable`1&lt;valuetype System.Guid&gt; sqlServerDatabaseId, string serverName, string databaseName, string userName, string password, string syncDirection, string syncState) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberInner.#ctor(System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Guid},System.String,System.String,System.String,System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional databaseType As String = null, Optional syncAgentId As String = null, Optional sqlServerDatabaseId As Nullable(Of Guid) = null, Optional serverName As String = null, Optional databaseName As String = null, Optional userName As String = null, Optional password As String = null, Optional syncDirection As String = null, Optional syncState As String = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberInner : string * string * string * string * string * Nullable&lt;Guid&gt; * string * string * string * string * string * string -&gt; Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberInner" Usage="new Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberInner (id, name, type, databaseType, syncAgentId, sqlServerDatabaseId, serverName, databaseName, userName, password, syncDirection, syncState)" />
+      <MemberSignature Language="C#" Value="public SyncMemberInner (string id = default, string name = default, string type = default, Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberDbType databaseType = default, string syncAgentId = default, Nullable&lt;Guid&gt; sqlServerDatabaseId = default, string serverName = default, string databaseName = default, string userName = default, string password = default, Microsoft.Azure.Management.Sql.Fluent.Models.SyncDirection syncDirection = default, Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberState syncState = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string type, class Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberDbType databaseType, string syncAgentId, valuetype System.Nullable`1&lt;valuetype System.Guid&gt; sqlServerDatabaseId, string serverName, string databaseName, string userName, string password, class Microsoft.Azure.Management.Sql.Fluent.Models.SyncDirection syncDirection, class Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberState syncState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberInner.#ctor(System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberDbType,System.String,System.Nullable{System.Guid},System.String,System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Fluent.Models.SyncDirection,Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberState)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberInner : string * string * string * Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberDbType * string * Nullable&lt;Guid&gt; * string * string * string * string * Microsoft.Azure.Management.Sql.Fluent.Models.SyncDirection * Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberState -&gt; Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberInner" Usage="new Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberInner (id, name, type, databaseType, syncAgentId, sqlServerDatabaseId, serverName, databaseName, userName, password, syncDirection, syncState)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="type" Type="System.String" />
-        <Parameter Name="databaseType" Type="System.String" />
+        <Parameter Name="databaseType" Type="Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberDbType" />
         <Parameter Name="syncAgentId" Type="System.String" />
         <Parameter Name="sqlServerDatabaseId" Type="System.Nullable&lt;System.Guid&gt;" />
         <Parameter Name="serverName" Type="System.String" />
         <Parameter Name="databaseName" Type="System.String" />
         <Parameter Name="userName" Type="System.String" />
         <Parameter Name="password" Type="System.String" />
-        <Parameter Name="syncDirection" Type="System.String" />
-        <Parameter Name="syncState" Type="System.String" />
+        <Parameter Name="syncDirection" Type="Microsoft.Azure.Management.Sql.Fluent.Models.SyncDirection" />
+        <Parameter Name="syncState" Type="Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberState" />
       </Parameters>
       <Docs>
-        <param name="id">Resource ID.</param>
-        <param name="name">Resource name.</param>
-        <param name="type">Resource type.</param>
+        <param name="id">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="type">To be added.</param>
         <param name="databaseType">Database type of the sync member.
             Possible values include: 'AzureSqlDatabase',
             'SqlServerDatabase'</param>
@@ -111,7 +119,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -131,15 +142,18 @@
       </Docs>
     </Member>
     <Member MemberName="DatabaseType">
-      <MemberSignature Language="C#" Value="public string DatabaseType { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string DatabaseType" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberDbType DatabaseType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberDbType DatabaseType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberInner.DatabaseType" />
-      <MemberSignature Language="VB.NET" Value="Public Property DatabaseType As String" />
-      <MemberSignature Language="F#" Value="member this.DatabaseType : string with get, set" Usage="Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberInner.DatabaseType" />
+      <MemberSignature Language="VB.NET" Value="Public Property DatabaseType As SyncMemberDbType" />
+      <MemberSignature Language="F#" Value="member this.DatabaseType : Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberDbType with get, set" Usage="Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberInner.DatabaseType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -147,7 +161,7 @@
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberDbType</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -167,7 +181,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -194,7 +211,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -221,7 +241,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -248,7 +271,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -267,15 +293,18 @@
       </Docs>
     </Member>
     <Member MemberName="SyncDirection">
-      <MemberSignature Language="C#" Value="public string SyncDirection { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string SyncDirection" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Sql.Fluent.Models.SyncDirection SyncDirection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Sql.Fluent.Models.SyncDirection SyncDirection" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberInner.SyncDirection" />
-      <MemberSignature Language="VB.NET" Value="Public Property SyncDirection As String" />
-      <MemberSignature Language="F#" Value="member this.SyncDirection : string with get, set" Usage="Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberInner.SyncDirection" />
+      <MemberSignature Language="VB.NET" Value="Public Property SyncDirection As SyncDirection" />
+      <MemberSignature Language="F#" Value="member this.SyncDirection : Microsoft.Azure.Management.Sql.Fluent.Models.SyncDirection with get, set" Usage="Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberInner.SyncDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -283,7 +312,7 @@
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Microsoft.Azure.Management.Sql.Fluent.Models.SyncDirection</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -295,15 +324,18 @@
       </Docs>
     </Member>
     <Member MemberName="SyncState">
-      <MemberSignature Language="C#" Value="public string SyncState { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string SyncState" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberState SyncState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberState SyncState" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberInner.SyncState" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncState As String" />
-      <MemberSignature Language="F#" Value="member this.SyncState : string" Usage="Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberInner.SyncState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncState As SyncMemberState" />
+      <MemberSignature Language="F#" Value="member this.SyncState : Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberState" Usage="Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberInner.SyncState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -311,7 +343,7 @@
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Microsoft.Azure.Management.Sql.Fluent.Models.SyncMemberState</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -336,7 +368,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

@@ -1,4 +1,4 @@
-﻿<Type Name="CertificateReference" FullName="Microsoft.Azure.Batch.Protocol.Models.CertificateReference">
+<Type Name="CertificateReference" FullName="Microsoft.Azure.Batch.Protocol.Models.CertificateReference">
   <TypeSignature Language="C#" Value="public class CertificateReference" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CertificateReference extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.Protocol.Models.CertificateReference" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type CertificateReference = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -14,8 +14,8 @@
   <Interfaces />
   <Docs>
     <summary>
-            A reference to a certificate to be installed on compute nodes in a
-            pool.
+            A reference to a Certificate to be installed on Compute Nodes in a
+            Pool.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -28,7 +28,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -39,7 +39,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CertificateReference (string thumbprint, string thumbprintAlgorithm, Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.CertificateStoreLocation&gt; storeLocation = null, string storeName = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.CertificateVisibility&gt; visibility = null);" />
+      <MemberSignature Language="C#" Value="public CertificateReference (string thumbprint, string thumbprintAlgorithm, Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.CertificateStoreLocation&gt; storeLocation = default, string storeName = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.CertificateVisibility&gt; visibility = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string thumbprint, string thumbprintAlgorithm, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Batch.Protocol.Models.CertificateStoreLocation&gt; storeLocation, string storeName, class System.Collections.Generic.IList`1&lt;valuetype Microsoft.Azure.Batch.Protocol.Models.CertificateVisibility&gt; visibility) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.CertificateReference.#ctor(System.String,System.String,System.Nullable{Microsoft.Azure.Batch.Protocol.Models.CertificateStoreLocation},System.String,System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.CertificateVisibility})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (thumbprint As String, thumbprintAlgorithm As String, Optional storeLocation As Nullable(Of CertificateStoreLocation) = null, Optional storeName As String = null, Optional visibility As IList(Of CertificateVisibility) = null)" />
@@ -47,7 +47,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="thumbprint" Type="System.String" />
@@ -57,15 +57,15 @@
         <Parameter Name="visibility" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.CertificateVisibility&gt;" />
       </Parameters>
       <Docs>
-        <param name="thumbprint">The thumbprint of the certificate.</param>
+        <param name="thumbprint">The thumbprint of the Certificate.</param>
         <param name="thumbprintAlgorithm">The algorithm with which the
             thumbprint is associated. This must be sha1.</param>
-        <param name="storeLocation">The location of the certificate store
-            on the compute node into which to install the certificate.</param>
-        <param name="storeName">The name of the certificate store on the
-            compute node into which to install the certificate.</param>
-        <param name="visibility">Which user accounts on the compute node
-            should have access to the private data of the certificate.</param>
+        <param name="storeLocation">The location of the Certificate store
+            on the Compute Node into which to install the Certificate.</param>
+        <param name="storeName">The name of the Certificate store on the
+            Compute Node into which to install the Certificate.</param>
+        <param name="visibility">Which user Accounts on the Compute Node
+            should have access to the private data of the Certificate.</param>
         <summary>
             Initializes a new instance of the CertificateReference class.
             </summary>
@@ -81,7 +81,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -93,21 +93,21 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the location of the certificate store on the compute
-            node into which to install the certificate.
+            Gets or sets the location of the Certificate store on the Compute
+            Node into which to install the Certificate.
             </summary>
         <value>To be added.</value>
         <remarks>
             The default value is currentuser. This property is applicable only
-            for pools configured with Windows nodes (that is, created with
-            cloudServiceConfiguration, or with virtualMachineConfiguration
-            using a Windows image reference). For Linux compute nodes, the
-            certificates are stored in a directory inside the task working
+            for Pools configured with Windows Compute Nodes (that is, created
+            with cloudServiceConfiguration, or with virtualMachineConfiguration
+            using a Windows Image reference). For Linux Compute Nodes, the
+            Certificates are stored in a directory inside the Task working
             directory and an environment variable AZ_BATCH_CERTIFICATES_DIR is
-            supplied to the task to query for this location. For certificates
+            supplied to the Task to query for this location. For Certificates
             with visibility of 'remoteUser', a 'certs' directory is created in
             the user's home directory (e.g., /home/{user-name}/certs) and
-            certificates are placed in that directory. Possible values include:
+            Certificates are placed in that directory. Possible values include:
             'currentUser', 'localMachine'
             </remarks>
       </Docs>
@@ -121,7 +121,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -133,14 +133,14 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the name of the certificate store on the compute node
-            into which to install the certificate.
+            Gets or sets the name of the Certificate store on the Compute Node
+            into which to install the Certificate.
             </summary>
         <value>To be added.</value>
         <remarks>
-            This property is applicable only for pools configured with Windows
-            nodes (that is, created with cloudServiceConfiguration, or with
-            virtualMachineConfiguration using a Windows image reference).
+            This property is applicable only for Pools configured with Windows
+            Compute Nodes (that is, created with cloudServiceConfiguration, or
+            with virtualMachineConfiguration using a Windows Image reference).
             Common store names include: My, Root, CA, Trust, Disallowed,
             TrustedPeople, TrustedPublisher, AuthRoot, AddressBook, but any
             custom store name can also be used. The default value is My.
@@ -156,7 +156,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -168,7 +168,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the thumbprint of the certificate.
+            Gets or sets the thumbprint of the Certificate.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -183,7 +183,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -211,7 +211,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -223,13 +223,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets which user accounts on the compute node should have
-            access to the private data of the certificate.
+            Gets or sets which user Accounts on the Compute Node should have
+            access to the private data of the Certificate.
             </summary>
         <value>To be added.</value>
         <remarks>
             You can specify more than one visibility in this collection. The
-            default is all accounts.
+            default is all Accounts.
             </remarks>
       </Docs>
     </Member>

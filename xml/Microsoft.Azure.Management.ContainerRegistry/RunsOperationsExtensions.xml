@@ -1,4 +1,4 @@
-﻿<Type Name="RunsOperationsExtensions" FullName="Microsoft.Azure.Management.ContainerRegistry.RunsOperationsExtensions">
+<Type Name="RunsOperationsExtensions" FullName="Microsoft.Azure.Management.ContainerRegistry.RunsOperationsExtensions">
   <TypeSignature Language="C#" Value="public static class RunsOperationsExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit RunsOperationsExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.ContainerRegistry.RunsOperationsExtensions" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type RunsOperationsExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,7 +28,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -59,15 +59,20 @@
       </Docs>
     </Member>
     <Member MemberName="BeginCancelAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginCancelAsync (this Microsoft.Azure.Management.ContainerRegistry.IRunsOperations operations, string resourceGroupName, string registryName, string runId, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginCancelAsync (this Microsoft.Azure.Management.ContainerRegistry.IRunsOperations operations, string resourceGroupName, string registryName, string runId, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task BeginCancelAsync(class Microsoft.Azure.Management.ContainerRegistry.IRunsOperations operations, string resourceGroupName, string registryName, string runId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ContainerRegistry.RunsOperationsExtensions.BeginCancelAsync(Microsoft.Azure.Management.ContainerRegistry.IRunsOperations,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member BeginCancelAsync : Microsoft.Azure.Management.ContainerRegistry.IRunsOperations * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.ContainerRegistry.RunsOperationsExtensions.BeginCancelAsync (operations, resourceGroupName, registryName, runId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -102,7 +107,7 @@
       </Docs>
     </Member>
     <Member MemberName="BeginUpdate">
-      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Management.ContainerRegistry.Models.Run BeginUpdate (this Microsoft.Azure.Management.ContainerRegistry.IRunsOperations operations, string resourceGroupName, string registryName, string runId, Nullable&lt;bool&gt; isArchiveEnabled = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Management.ContainerRegistry.Models.Run BeginUpdate (this Microsoft.Azure.Management.ContainerRegistry.IRunsOperations operations, string resourceGroupName, string registryName, string runId, Nullable&lt;bool&gt; isArchiveEnabled = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.Management.ContainerRegistry.Models.Run BeginUpdate(class Microsoft.Azure.Management.ContainerRegistry.IRunsOperations operations, string resourceGroupName, string registryName, string runId, valuetype System.Nullable`1&lt;bool&gt; isArchiveEnabled) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ContainerRegistry.RunsOperationsExtensions.BeginUpdate(Microsoft.Azure.Management.ContainerRegistry.IRunsOperations,System.String,System.String,System.String,System.Nullable{System.Boolean})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function BeginUpdate (operations As IRunsOperations, resourceGroupName As String, registryName As String, runId As String, Optional isArchiveEnabled As Nullable(Of Boolean) = null) As Run" />
@@ -110,7 +115,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.ContainerRegistry.Models.Run</ReturnType>
@@ -146,15 +151,20 @@
       </Docs>
     </Member>
     <Member MemberName="BeginUpdateAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ContainerRegistry.Models.Run&gt; BeginUpdateAsync (this Microsoft.Azure.Management.ContainerRegistry.IRunsOperations operations, string resourceGroupName, string registryName, string runId, Nullable&lt;bool&gt; isArchiveEnabled = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ContainerRegistry.Models.Run&gt; BeginUpdateAsync (this Microsoft.Azure.Management.ContainerRegistry.IRunsOperations operations, string resourceGroupName, string registryName, string runId, Nullable&lt;bool&gt; isArchiveEnabled = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.ContainerRegistry.Models.Run&gt; BeginUpdateAsync(class Microsoft.Azure.Management.ContainerRegistry.IRunsOperations operations, string resourceGroupName, string registryName, string runId, valuetype System.Nullable`1&lt;bool&gt; isArchiveEnabled, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ContainerRegistry.RunsOperationsExtensions.BeginUpdateAsync(Microsoft.Azure.Management.ContainerRegistry.IRunsOperations,System.String,System.String,System.String,System.Nullable{System.Boolean},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member BeginUpdateAsync : Microsoft.Azure.Management.ContainerRegistry.IRunsOperations * string * string * string * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ContainerRegistry.Models.Run&gt;" Usage="Microsoft.Azure.Management.ContainerRegistry.RunsOperationsExtensions.BeginUpdateAsync (operations, resourceGroupName, registryName, runId, isArchiveEnabled, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ContainerRegistry.Models.Run&gt;</ReturnType>
       </ReturnValue>
@@ -201,7 +211,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -232,15 +242,20 @@
       </Docs>
     </Member>
     <Member MemberName="CancelAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task CancelAsync (this Microsoft.Azure.Management.ContainerRegistry.IRunsOperations operations, string resourceGroupName, string registryName, string runId, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task CancelAsync (this Microsoft.Azure.Management.ContainerRegistry.IRunsOperations operations, string resourceGroupName, string registryName, string runId, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task CancelAsync(class Microsoft.Azure.Management.ContainerRegistry.IRunsOperations operations, string resourceGroupName, string registryName, string runId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ContainerRegistry.RunsOperationsExtensions.CancelAsync(Microsoft.Azure.Management.ContainerRegistry.IRunsOperations,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member CancelAsync : Microsoft.Azure.Management.ContainerRegistry.IRunsOperations * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.ContainerRegistry.RunsOperationsExtensions.CancelAsync (operations, resourceGroupName, registryName, runId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -283,7 +298,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.ContainerRegistry.Models.Run</ReturnType>
@@ -315,15 +330,20 @@
       </Docs>
     </Member>
     <Member MemberName="GetAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ContainerRegistry.Models.Run&gt; GetAsync (this Microsoft.Azure.Management.ContainerRegistry.IRunsOperations operations, string resourceGroupName, string registryName, string runId, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ContainerRegistry.Models.Run&gt; GetAsync (this Microsoft.Azure.Management.ContainerRegistry.IRunsOperations operations, string resourceGroupName, string registryName, string runId, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.ContainerRegistry.Models.Run&gt; GetAsync(class Microsoft.Azure.Management.ContainerRegistry.IRunsOperations operations, string resourceGroupName, string registryName, string runId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ContainerRegistry.RunsOperationsExtensions.GetAsync(Microsoft.Azure.Management.ContainerRegistry.IRunsOperations,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member GetAsync : Microsoft.Azure.Management.ContainerRegistry.IRunsOperations * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ContainerRegistry.Models.Run&gt;" Usage="Microsoft.Azure.Management.ContainerRegistry.RunsOperationsExtensions.GetAsync (operations, resourceGroupName, registryName, runId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ContainerRegistry.Models.Run&gt;</ReturnType>
       </ReturnValue>
@@ -366,7 +386,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.ContainerRegistry.Models.RunGetLogResult</ReturnType>
@@ -398,15 +418,20 @@
       </Docs>
     </Member>
     <Member MemberName="GetLogSasUrlAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ContainerRegistry.Models.RunGetLogResult&gt; GetLogSasUrlAsync (this Microsoft.Azure.Management.ContainerRegistry.IRunsOperations operations, string resourceGroupName, string registryName, string runId, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ContainerRegistry.Models.RunGetLogResult&gt; GetLogSasUrlAsync (this Microsoft.Azure.Management.ContainerRegistry.IRunsOperations operations, string resourceGroupName, string registryName, string runId, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.ContainerRegistry.Models.RunGetLogResult&gt; GetLogSasUrlAsync(class Microsoft.Azure.Management.ContainerRegistry.IRunsOperations operations, string resourceGroupName, string registryName, string runId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ContainerRegistry.RunsOperationsExtensions.GetLogSasUrlAsync(Microsoft.Azure.Management.ContainerRegistry.IRunsOperations,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member GetLogSasUrlAsync : Microsoft.Azure.Management.ContainerRegistry.IRunsOperations * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ContainerRegistry.Models.RunGetLogResult&gt;" Usage="Microsoft.Azure.Management.ContainerRegistry.RunsOperationsExtensions.GetLogSasUrlAsync (operations, resourceGroupName, registryName, runId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ContainerRegistry.Models.RunGetLogResult&gt;</ReturnType>
       </ReturnValue>
@@ -441,7 +466,7 @@
       </Docs>
     </Member>
     <Member MemberName="List">
-      <MemberSignature Language="C#" Value="public static Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ContainerRegistry.Models.Run&gt; List (this Microsoft.Azure.Management.ContainerRegistry.IRunsOperations operations, string resourceGroupName, string registryName, Microsoft.Rest.Azure.OData.ODataQuery&lt;Microsoft.Azure.Management.ContainerRegistry.Models.RunFilter&gt; odataQuery = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ContainerRegistry.Models.Run&gt; List (this Microsoft.Azure.Management.ContainerRegistry.IRunsOperations operations, string resourceGroupName, string registryName, Microsoft.Rest.Azure.OData.ODataQuery&lt;Microsoft.Azure.Management.ContainerRegistry.Models.RunFilter&gt; odataQuery = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.ContainerRegistry.Models.Run&gt; List(class Microsoft.Azure.Management.ContainerRegistry.IRunsOperations operations, string resourceGroupName, string registryName, class Microsoft.Rest.Azure.OData.ODataQuery`1&lt;class Microsoft.Azure.Management.ContainerRegistry.Models.RunFilter&gt; odataQuery) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ContainerRegistry.RunsOperationsExtensions.List(Microsoft.Azure.Management.ContainerRegistry.IRunsOperations,System.String,System.String,Microsoft.Rest.Azure.OData.ODataQuery{Microsoft.Azure.Management.ContainerRegistry.Models.RunFilter})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function List (operations As IRunsOperations, resourceGroupName As String, registryName As String, Optional odataQuery As ODataQuery(Of RunFilter) = null) As IPage(Of Run)" />
@@ -449,7 +474,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ContainerRegistry.Models.Run&gt;</ReturnType>
@@ -481,15 +506,20 @@
       </Docs>
     </Member>
     <Member MemberName="ListAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ContainerRegistry.Models.Run&gt;&gt; ListAsync (this Microsoft.Azure.Management.ContainerRegistry.IRunsOperations operations, string resourceGroupName, string registryName, Microsoft.Rest.Azure.OData.ODataQuery&lt;Microsoft.Azure.Management.ContainerRegistry.Models.RunFilter&gt; odataQuery = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ContainerRegistry.Models.Run&gt;&gt; ListAsync (this Microsoft.Azure.Management.ContainerRegistry.IRunsOperations operations, string resourceGroupName, string registryName, Microsoft.Rest.Azure.OData.ODataQuery&lt;Microsoft.Azure.Management.ContainerRegistry.Models.RunFilter&gt; odataQuery = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.ContainerRegistry.Models.Run&gt;&gt; ListAsync(class Microsoft.Azure.Management.ContainerRegistry.IRunsOperations operations, string resourceGroupName, string registryName, class Microsoft.Rest.Azure.OData.ODataQuery`1&lt;class Microsoft.Azure.Management.ContainerRegistry.Models.RunFilter&gt; odataQuery, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ContainerRegistry.RunsOperationsExtensions.ListAsync(Microsoft.Azure.Management.ContainerRegistry.IRunsOperations,System.String,System.String,Microsoft.Rest.Azure.OData.ODataQuery{Microsoft.Azure.Management.ContainerRegistry.Models.RunFilter},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListAsync : Microsoft.Azure.Management.ContainerRegistry.IRunsOperations * string * string * Microsoft.Rest.Azure.OData.ODataQuery&lt;Microsoft.Azure.Management.ContainerRegistry.Models.RunFilter&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ContainerRegistry.Models.Run&gt;&gt;" Usage="Microsoft.Azure.Management.ContainerRegistry.RunsOperationsExtensions.ListAsync (operations, resourceGroupName, registryName, odataQuery, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ContainerRegistry.Models.Run&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -532,7 +562,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ContainerRegistry.Models.Run&gt;</ReturnType>
@@ -556,15 +586,20 @@
       </Docs>
     </Member>
     <Member MemberName="ListNextAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ContainerRegistry.Models.Run&gt;&gt; ListNextAsync (this Microsoft.Azure.Management.ContainerRegistry.IRunsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ContainerRegistry.Models.Run&gt;&gt; ListNextAsync (this Microsoft.Azure.Management.ContainerRegistry.IRunsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.ContainerRegistry.Models.Run&gt;&gt; ListNextAsync(class Microsoft.Azure.Management.ContainerRegistry.IRunsOperations operations, string nextPageLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ContainerRegistry.RunsOperationsExtensions.ListNextAsync(Microsoft.Azure.Management.ContainerRegistry.IRunsOperations,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListNextAsync : Microsoft.Azure.Management.ContainerRegistry.IRunsOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ContainerRegistry.Models.Run&gt;&gt;" Usage="Microsoft.Azure.Management.ContainerRegistry.RunsOperationsExtensions.ListNextAsync (operations, nextPageLink, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ContainerRegistry.Models.Run&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -591,7 +626,7 @@
       </Docs>
     </Member>
     <Member MemberName="Update">
-      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Management.ContainerRegistry.Models.Run Update (this Microsoft.Azure.Management.ContainerRegistry.IRunsOperations operations, string resourceGroupName, string registryName, string runId, Nullable&lt;bool&gt; isArchiveEnabled = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Management.ContainerRegistry.Models.Run Update (this Microsoft.Azure.Management.ContainerRegistry.IRunsOperations operations, string resourceGroupName, string registryName, string runId, Nullable&lt;bool&gt; isArchiveEnabled = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.Management.ContainerRegistry.Models.Run Update(class Microsoft.Azure.Management.ContainerRegistry.IRunsOperations operations, string resourceGroupName, string registryName, string runId, valuetype System.Nullable`1&lt;bool&gt; isArchiveEnabled) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ContainerRegistry.RunsOperationsExtensions.Update(Microsoft.Azure.Management.ContainerRegistry.IRunsOperations,System.String,System.String,System.String,System.Nullable{System.Boolean})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Update (operations As IRunsOperations, resourceGroupName As String, registryName As String, runId As String, Optional isArchiveEnabled As Nullable(Of Boolean) = null) As Run" />
@@ -599,7 +634,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.ContainerRegistry.Models.Run</ReturnType>
@@ -635,15 +670,20 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ContainerRegistry.Models.Run&gt; UpdateAsync (this Microsoft.Azure.Management.ContainerRegistry.IRunsOperations operations, string resourceGroupName, string registryName, string runId, Nullable&lt;bool&gt; isArchiveEnabled = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ContainerRegistry.Models.Run&gt; UpdateAsync (this Microsoft.Azure.Management.ContainerRegistry.IRunsOperations operations, string resourceGroupName, string registryName, string runId, Nullable&lt;bool&gt; isArchiveEnabled = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.ContainerRegistry.Models.Run&gt; UpdateAsync(class Microsoft.Azure.Management.ContainerRegistry.IRunsOperations operations, string resourceGroupName, string registryName, string runId, valuetype System.Nullable`1&lt;bool&gt; isArchiveEnabled, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ContainerRegistry.RunsOperationsExtensions.UpdateAsync(Microsoft.Azure.Management.ContainerRegistry.IRunsOperations,System.String,System.String,System.String,System.Nullable{System.Boolean},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member UpdateAsync : Microsoft.Azure.Management.ContainerRegistry.IRunsOperations * string * string * string * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ContainerRegistry.Models.Run&gt;" Usage="Microsoft.Azure.Management.ContainerRegistry.RunsOperationsExtensions.UpdateAsync (operations, resourceGroupName, registryName, runId, isArchiveEnabled, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ContainerRegistry.Models.Run&gt;</ReturnType>
       </ReturnValue>

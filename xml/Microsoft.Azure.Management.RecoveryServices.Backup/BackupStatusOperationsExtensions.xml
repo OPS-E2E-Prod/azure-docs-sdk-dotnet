@@ -1,4 +1,4 @@
-﻿<Type Name="BackupStatusOperationsExtensions" FullName="Microsoft.Azure.Management.RecoveryServices.Backup.BackupStatusOperationsExtensions">
+<Type Name="BackupStatusOperationsExtensions" FullName="Microsoft.Azure.Management.RecoveryServices.Backup.BackupStatusOperationsExtensions">
   <TypeSignature Language="C#" Value="public static class BackupStatusOperationsExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit BackupStatusOperationsExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.RecoveryServices.Backup.BackupStatusOperationsExtensions" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type BackupStatusOperationsExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,7 +28,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupStatusResponse</ReturnType>
@@ -56,15 +56,20 @@
       </Docs>
     </Member>
     <Member MemberName="GetAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupStatusResponse&gt; GetAsync (this Microsoft.Azure.Management.RecoveryServices.Backup.IBackupStatusOperations operations, string azureRegion, Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupStatusRequest parameters, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupStatusResponse&gt; GetAsync (this Microsoft.Azure.Management.RecoveryServices.Backup.IBackupStatusOperations operations, string azureRegion, Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupStatusRequest parameters, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupStatusResponse&gt; GetAsync(class Microsoft.Azure.Management.RecoveryServices.Backup.IBackupStatusOperations operations, string azureRegion, class Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupStatusRequest parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.RecoveryServices.Backup.BackupStatusOperationsExtensions.GetAsync(Microsoft.Azure.Management.RecoveryServices.Backup.IBackupStatusOperations,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupStatusRequest,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member GetAsync : Microsoft.Azure.Management.RecoveryServices.Backup.IBackupStatusOperations * string * Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupStatusRequest * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupStatusResponse&gt;" Usage="Microsoft.Azure.Management.RecoveryServices.Backup.BackupStatusOperationsExtensions.GetAsync (operations, azureRegion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupStatusResponse&gt;</ReturnType>
       </ReturnValue>

@@ -1,4 +1,4 @@
-﻿<Type Name="ProviderInner" FullName="Microsoft.Azure.Management.ResourceManager.Fluent.Models.ProviderInner">
+<Type Name="ProviderInner" FullName="Microsoft.Azure.Management.ResourceManager.Fluent.Models.ProviderInner">
   <TypeSignature Language="C#" Value="public class ProviderInner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProviderInner extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.ResourceManager.Fluent.Models.ProviderInner" />
@@ -6,7 +6,10 @@
   <TypeSignature Language="F#" Value="type ProviderInner = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,7 +30,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,20 +44,24 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ProviderInner (string id = null, string namespaceProperty = null, string registrationState = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.ResourceManager.Fluent.Models.ProviderResourceType&gt; resourceTypes = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string namespaceProperty, string registrationState, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.ResourceManager.Fluent.Models.ProviderResourceType&gt; resourceTypes) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ResourceManager.Fluent.Models.ProviderInner.#ctor(System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.Azure.Management.ResourceManager.Fluent.Models.ProviderResourceType})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional namespaceProperty As String = null, Optional registrationState As String = null, Optional resourceTypes As IList(Of ProviderResourceType) = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.ResourceManager.Fluent.Models.ProviderInner : string * string * string * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.ResourceManager.Fluent.Models.ProviderResourceType&gt; -&gt; Microsoft.Azure.Management.ResourceManager.Fluent.Models.ProviderInner" Usage="new Microsoft.Azure.Management.ResourceManager.Fluent.Models.ProviderInner (id, namespaceProperty, registrationState, resourceTypes)" />
+      <MemberSignature Language="C#" Value="public ProviderInner (string id = default, string namespaceProperty = default, string registrationState = default, string registrationPolicy = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.ResourceManager.Fluent.Models.ProviderResourceType&gt; resourceTypes = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string namespaceProperty, string registrationState, string registrationPolicy, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.ResourceManager.Fluent.Models.ProviderResourceType&gt; resourceTypes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ResourceManager.Fluent.Models.ProviderInner.#ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.Azure.Management.ResourceManager.Fluent.Models.ProviderResourceType})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional namespaceProperty As String = null, Optional registrationState As String = null, Optional registrationPolicy As String = null, Optional resourceTypes As IList(Of ProviderResourceType) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.ResourceManager.Fluent.Models.ProviderInner : string * string * string * string * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.ResourceManager.Fluent.Models.ProviderResourceType&gt; -&gt; Microsoft.Azure.Management.ResourceManager.Fluent.Models.ProviderInner" Usage="new Microsoft.Azure.Management.ResourceManager.Fluent.Models.ProviderInner (id, namespaceProperty, registrationState, registrationPolicy, resourceTypes)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
         <Parameter Name="namespaceProperty" Type="System.String" />
         <Parameter Name="registrationState" Type="System.String" />
+        <Parameter Name="registrationPolicy" Type="System.String" />
         <Parameter Name="resourceTypes" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.ResourceManager.Fluent.Models.ProviderResourceType&gt;" />
       </Parameters>
       <Docs>
@@ -59,7 +69,9 @@
         <param name="namespaceProperty">The namespace of the resource
             provider.</param>
         <param name="registrationState">The registration state of the
-            provider.</param>
+            resource provider.</param>
+        <param name="registrationPolicy">The registration policy of the
+            resource provider.</param>
         <param name="resourceTypes">The collection of provider resource
             types.</param>
         <summary>
@@ -77,7 +89,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -104,7 +119,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -122,6 +140,36 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="RegistrationPolicy">
+      <MemberSignature Language="C#" Value="public string RegistrationPolicy { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RegistrationPolicy" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ResourceManager.Fluent.Models.ProviderInner.RegistrationPolicy" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RegistrationPolicy As String" />
+      <MemberSignature Language="F#" Value="member this.RegistrationPolicy : string" Usage="Microsoft.Azure.Management.ResourceManager.Fluent.Models.ProviderInner.RegistrationPolicy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="registrationPolicy")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the registration policy of the resource provider.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="RegistrationState">
       <MemberSignature Language="C#" Value="public string RegistrationState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RegistrationState" />
@@ -131,7 +179,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -143,7 +194,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets the registration state of the provider.
+            Gets the registration state of the resource provider.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -158,7 +209,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

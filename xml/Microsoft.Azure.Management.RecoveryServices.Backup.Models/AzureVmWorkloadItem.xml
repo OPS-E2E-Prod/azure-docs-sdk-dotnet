@@ -1,4 +1,4 @@
-﻿<Type Name="AzureVmWorkloadItem" FullName="Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureVmWorkloadItem">
+<Type Name="AzureVmWorkloadItem" FullName="Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureVmWorkloadItem">
   <TypeSignature Language="C#" Value="public class AzureVmWorkloadItem : Microsoft.Azure.Management.RecoveryServices.Backup.Models.WorkloadItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AzureVmWorkloadItem extends Microsoft.Azure.Management.RecoveryServices.Backup.Models.WorkloadItem" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureVmWorkloadItem" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type AzureVmWorkloadItem = class&#xA;    inherit WorkloadItem" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.RecoveryServices.Backup.Models.WorkloadItem</BaseTypeName>
@@ -27,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,7 +38,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AzureVmWorkloadItem (string backupManagementType = null, string workloadType = null, string friendlyName = null, string protectionState = null, string parentName = null, string serverName = null, Nullable&lt;bool&gt; isAutoProtectable = null, Nullable&lt;int&gt; subinquireditemcount = null, Nullable&lt;int&gt; subWorkloadItemCount = null);" />
+      <MemberSignature Language="C#" Value="public AzureVmWorkloadItem (string backupManagementType = default, string workloadType = default, string friendlyName = default, string protectionState = default, string parentName = default, string serverName = default, Nullable&lt;bool&gt; isAutoProtectable = default, Nullable&lt;int&gt; subinquireditemcount = default, Nullable&lt;int&gt; subWorkloadItemCount = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string backupManagementType, string workloadType, string friendlyName, string protectionState, string parentName, string serverName, valuetype System.Nullable`1&lt;bool&gt; isAutoProtectable, valuetype System.Nullable`1&lt;int32&gt; subinquireditemcount, valuetype System.Nullable`1&lt;int32&gt; subWorkloadItemCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureVmWorkloadItem.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Nullable{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional backupManagementType As String = null, Optional workloadType As String = null, Optional friendlyName As String = null, Optional protectionState As String = null, Optional parentName As String = null, Optional serverName As String = null, Optional isAutoProtectable As Nullable(Of Boolean) = null, Optional subinquireditemcount As Nullable(Of Integer) = null, Optional subWorkloadItemCount As Nullable(Of Integer) = null)" />
@@ -46,7 +46,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="backupManagementType" Type="System.String" />
@@ -75,9 +75,9 @@
         <param name="isAutoProtectable">Indicates if workload item is
             auto-protectable</param>
         <param name="subinquireditemcount">For instance or AG, indicates
-            number of DBs present</param>
+            number of DB's present</param>
         <param name="subWorkloadItemCount">For instance or AG, indicates
-            number of DBs to be protected</param>
+            number of DB's to be protected</param>
         <summary>
             Initializes a new instance of the AzureVmWorkloadItem class.
             </summary>
@@ -93,7 +93,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -120,7 +120,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -147,7 +147,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -174,7 +174,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -186,7 +186,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets for instance or AG, indicates number of DBs present
+            Gets or sets for instance or AG, indicates number of DB's present
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -201,7 +201,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -213,7 +213,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets for instance or AG, indicates number of DBs to be
+            Gets or sets for instance or AG, indicates number of DB's to be
             protected
             </summary>
         <value>To be added.</value>

@@ -1,4 +1,4 @@
-﻿<Type Name="RoleAssignmentArtifact" FullName="Microsoft.Azure.Management.Blueprint.Models.RoleAssignmentArtifact">
+<Type Name="RoleAssignmentArtifact" FullName="Microsoft.Azure.Management.Blueprint.Models.RoleAssignmentArtifact">
   <TypeSignature Language="C#" Value="public class RoleAssignmentArtifact : Microsoft.Azure.Management.Blueprint.Models.Artifact" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RoleAssignmentArtifact extends Microsoft.Azure.Management.Blueprint.Models.Artifact" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Blueprint.Models.RoleAssignmentArtifact" />
@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
     <AssemblyVersion>0.10.0.0</AssemblyVersion>
     <AssemblyVersion>0.14.0.0</AssemblyVersion>
+    <AssemblyVersion>0.20.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.Blueprint.Models.Artifact</BaseTypeName>
@@ -23,7 +24,7 @@
   </Attributes>
   <Docs>
     <summary>
-            Blueprint artifact applies Azure role assignment.
+            Blueprint artifact that applies a Role assignment.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -38,6 +39,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,7 +50,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public RoleAssignmentArtifact (string roleDefinitionId, object principalIds, string id = null, string type = null, string name = null, string displayName = null, string description = null, System.Collections.Generic.IList&lt;string&gt; dependsOn = null, string resourceGroup = null);" />
+      <MemberSignature Language="C#" Value="public RoleAssignmentArtifact (string roleDefinitionId, object principalIds, string id = default, string type = default, string name = default, string displayName = default, string description = default, System.Collections.Generic.IList&lt;string&gt; dependsOn = default, string resourceGroup = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string roleDefinitionId, object principalIds, string id, string type, string name, string displayName, string description, class System.Collections.Generic.IList`1&lt;string&gt; dependsOn, string resourceGroup) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Blueprint.Models.RoleAssignmentArtifact.#ctor(System.String,System.Object,System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IList{System.String},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (roleDefinitionId As String, principalIds As Object, Optional id As String = null, Optional type As String = null, Optional name As String = null, Optional displayName As String = null, Optional description As String = null, Optional dependsOn As IList(Of String) = null, Optional resourceGroup As String = null)" />
@@ -58,6 +60,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="roleDefinitionId" Type="System.String" />
@@ -74,7 +77,7 @@
         <param name="roleDefinitionId">Azure resource ID of the
             RoleDefinition.</param>
         <param name="principalIds">Array of user or group identities in
-            Azure Active Directory. The roleDefinition will apply to these
+            Azure Active Directory. The roleDefinition will apply to each
             identity.</param>
         <param name="id">String Id used to locate any resource on
             Azure.</param>
@@ -86,8 +89,7 @@
         <param name="dependsOn">Artifacts which need to be deployed before
             the specified artifact.</param>
         <param name="resourceGroup">RoleAssignment will be scope to this
-            resourceGroup, if left empty, it would scope to the
-            subscription.</param>
+            resourceGroup. If empty, it scopes to the subscription.</param>
         <summary>
             Initializes a new instance of the RoleAssignmentArtifact class.
             </summary>
@@ -105,6 +107,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -134,6 +137,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -162,6 +166,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -190,6 +195,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -202,7 +208,7 @@
       <Docs>
         <summary>
             Gets or sets array of user or group identities in Azure Active
-            Directory. The roleDefinition will apply to these identity.
+            Directory. The roleDefinition will apply to each identity.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -219,6 +225,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -230,8 +237,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets roleAssignment will be scope to this resourceGroup, if
-            left empty, it would scope to the subscription.
+            Gets or sets roleAssignment will be scope to this resourceGroup. If
+            empty, it scopes to the subscription.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -248,6 +255,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -276,6 +284,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

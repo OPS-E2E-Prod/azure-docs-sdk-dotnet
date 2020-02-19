@@ -1,4 +1,4 @@
-﻿<Type Name="DataBoxDiskCopyProgress" FullName="Microsoft.Azure.Management.DataBox.Models.DataBoxDiskCopyProgress">
+<Type Name="DataBoxDiskCopyProgress" FullName="Microsoft.Azure.Management.DataBox.Models.DataBoxDiskCopyProgress">
   <TypeSignature Language="C#" Value="public class DataBoxDiskCopyProgress" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataBoxDiskCopyProgress extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.DataBox.Models.DataBoxDiskCopyProgress" />
@@ -38,7 +38,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public DataBoxDiskCopyProgress (string serialNumber = null, Nullable&lt;long&gt; bytesCopied = null, Nullable&lt;int&gt; percentComplete = null, Nullable&lt;Microsoft.Azure.Management.DataBox.Models.CopyStatus&gt; status = null);" />
+      <MemberSignature Language="C#" Value="public DataBoxDiskCopyProgress (string serialNumber = default, Nullable&lt;long&gt; bytesCopied = default, Nullable&lt;int&gt; percentComplete = default, Nullable&lt;Microsoft.Azure.Management.DataBox.Models.CopyStatus&gt; status = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string serialNumber, valuetype System.Nullable`1&lt;int64&gt; bytesCopied, valuetype System.Nullable`1&lt;int32&gt; percentComplete, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.DataBox.Models.CopyStatus&gt; status) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataBox.Models.DataBoxDiskCopyProgress.#ctor(System.String,System.Nullable{System.Int64},System.Nullable{System.Int32},System.Nullable{Microsoft.Azure.Management.DataBox.Models.CopyStatus})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional serialNumber As String = null, Optional bytesCopied As Nullable(Of Long) = null, Optional percentComplete As Nullable(Of Integer) = null, Optional status As Nullable(Of CopyStatus) = null)" />
@@ -62,7 +62,9 @@
             for the copy of the disk.</param>
         <param name="status">The Status of the copy. Possible values
             include: 'NotStarted', 'InProgress', 'Completed',
-            'CompletedWithErrors', 'Failed', 'NotReturned'</param>
+            'CompletedWithErrors', 'Failed', 'NotReturned', 'HardwareError',
+            'DeviceFormatted', 'DeviceMetadataModified',
+            'StorageAccountNotAccessible', 'UnsupportedData'</param>
         <summary>
             Initializes a new instance of the DataBoxDiskCopyProgress class.
             </summary>
@@ -173,7 +175,9 @@
         <summary>
             Gets the Status of the copy. Possible values include: 'NotStarted',
             'InProgress', 'Completed', 'CompletedWithErrors', 'Failed',
-            'NotReturned'
+            'NotReturned', 'HardwareError', 'DeviceFormatted',
+            'DeviceMetadataModified', 'StorageAccountNotAccessible',
+            'UnsupportedData'
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

@@ -1,4 +1,4 @@
-﻿<Type Name="VnetInfoInner" FullName="Microsoft.Azure.Management.AppService.Fluent.Models.VnetInfoInner">
+<Type Name="VnetInfoInner" FullName="Microsoft.Azure.Management.AppService.Fluent.Models.VnetInfoInner">
   <TypeSignature Language="C#" Value="public class VnetInfoInner : Microsoft.Azure.Management.AppService.Fluent.Models.ProxyOnlyResourceInner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VnetInfoInner extends Microsoft.Azure.Management.AppService.Fluent.Models.ProxyOnlyResourceInner" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.AppService.Fluent.Models.VnetInfoInner" />
@@ -6,7 +6,10 @@
   <TypeSignature Language="F#" Value="type VnetInfoInner = class&#xA;    inherit ProxyOnlyResourceInner" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.AppService.Fluent.Models.ProxyOnlyResourceInner</BaseTypeName>
@@ -32,7 +35,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,15 +49,16 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public VnetInfoInner (string id = null, string name = null, string type = null, string kind = null, string vnetResourceId = null, string certThumbprint = null, byte[] certBlob = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.VnetRouteInner&gt; routes = null, Nullable&lt;bool&gt; resyncRequired = null, string dnsServers = null, Nullable&lt;bool&gt; isSwift = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string type, string kind, string vnetResourceId, string certThumbprint, unsigned int8[] certBlob, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.VnetRouteInner&gt; routes, valuetype System.Nullable`1&lt;bool&gt; resyncRequired, string dnsServers, valuetype System.Nullable`1&lt;bool&gt; isSwift) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.Models.VnetInfoInner.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.Byte[],System.Collections.Generic.IList{Microsoft.Azure.Management.AppService.Fluent.Models.VnetRouteInner},System.Nullable{System.Boolean},System.String,System.Nullable{System.Boolean})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional kind As String = null, Optional vnetResourceId As String = null, Optional certThumbprint As String = null, Optional certBlob As Byte() = null, Optional routes As IList(Of VnetRouteInner) = null, Optional resyncRequired As Nullable(Of Boolean) = null, Optional dnsServers As String = null, Optional isSwift As Nullable(Of Boolean) = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.AppService.Fluent.Models.VnetInfoInner : string * string * string * string * string * string * byte[] * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.VnetRouteInner&gt; * Nullable&lt;bool&gt; * string * Nullable&lt;bool&gt; -&gt; Microsoft.Azure.Management.AppService.Fluent.Models.VnetInfoInner" Usage="new Microsoft.Azure.Management.AppService.Fluent.Models.VnetInfoInner (id, name, type, kind, vnetResourceId, certThumbprint, certBlob, routes, resyncRequired, dnsServers, isSwift)" />
+      <MemberSignature Language="C#" Value="public VnetInfoInner (string id = default, string name = default, string type = default, string kind = default, string vnetResourceId = default, string certThumbprint = default, string certBlob = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.VnetRouteInner&gt; routes = default, Nullable&lt;bool&gt; resyncRequired = default, string dnsServers = default, Nullable&lt;bool&gt; isSwift = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string type, string kind, string vnetResourceId, string certThumbprint, string certBlob, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.VnetRouteInner&gt; routes, valuetype System.Nullable`1&lt;bool&gt; resyncRequired, string dnsServers, valuetype System.Nullable`1&lt;bool&gt; isSwift) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.Models.VnetInfoInner.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.Azure.Management.AppService.Fluent.Models.VnetRouteInner},System.Nullable{System.Boolean},System.String,System.Nullable{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional kind As String = null, Optional vnetResourceId As String = null, Optional certThumbprint As String = null, Optional certBlob As String = null, Optional routes As IList(Of VnetRouteInner) = null, Optional resyncRequired As Nullable(Of Boolean) = null, Optional dnsServers As String = null, Optional isSwift As Nullable(Of Boolean) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.AppService.Fluent.Models.VnetInfoInner : string * string * string * string * string * string * string * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.VnetRouteInner&gt; * Nullable&lt;bool&gt; * string * Nullable&lt;bool&gt; -&gt; Microsoft.Azure.Management.AppService.Fluent.Models.VnetInfoInner" Usage="new Microsoft.Azure.Management.AppService.Fluent.Models.VnetInfoInner (id, name, type, kind, vnetResourceId, certThumbprint, certBlob, routes, resyncRequired, dnsServers, isSwift)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
@@ -60,7 +67,7 @@
         <Parameter Name="kind" Type="System.String" />
         <Parameter Name="vnetResourceId" Type="System.String" />
         <Parameter Name="certThumbprint" Type="System.String" />
-        <Parameter Name="certBlob" Type="System.Byte[]" />
+        <Parameter Name="certBlob" Type="System.String" />
         <Parameter Name="routes" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.VnetRouteInner&gt;" />
         <Parameter Name="resyncRequired" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="dnsServers" Type="System.String" />
@@ -95,15 +102,18 @@
       </Docs>
     </Member>
     <Member MemberName="CertBlob">
-      <MemberSignature Language="C#" Value="public byte[] CertBlob { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] CertBlob" />
+      <MemberSignature Language="C#" Value="public string CertBlob { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CertBlob" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.AppService.Fluent.Models.VnetInfoInner.CertBlob" />
-      <MemberSignature Language="VB.NET" Value="Public Property CertBlob As Byte()" />
-      <MemberSignature Language="F#" Value="member this.CertBlob : byte[] with get, set" Usage="Microsoft.Azure.Management.AppService.Fluent.Models.VnetInfoInner.CertBlob" />
+      <MemberSignature Language="VB.NET" Value="Public Property CertBlob As String" />
+      <MemberSignature Language="F#" Value="member this.CertBlob : string with get, set" Usage="Microsoft.Azure.Management.AppService.Fluent.Models.VnetInfoInner.CertBlob" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -111,7 +121,7 @@
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Byte[]</ReturnType>
+        <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -132,7 +142,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -159,7 +172,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -187,7 +203,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -214,7 +233,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -243,7 +265,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -270,7 +295,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

@@ -1,4 +1,4 @@
-﻿<Type Name="ExponentialRetry" FullName="Microsoft.Azure.Batch.Common.ExponentialRetry">
+<Type Name="ExponentialRetry" FullName="Microsoft.Azure.Batch.Common.ExponentialRetry">
   <TypeSignature Language="C#" Value="public class ExponentialRetry : Microsoft.Azure.Batch.Common.IRetryPolicy" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExponentialRetry extends System.Object implements class Microsoft.Azure.Batch.Common.IRetryPolicy" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.Common.ExponentialRetry" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type ExponentialRetry = class&#xA;    interface IRetryPolicy" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -24,7 +24,7 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ExponentialRetry (TimeSpan deltaBackoff, int maxRetries, Nullable&lt;TimeSpan&gt; maxBackoff = null);" />
+      <MemberSignature Language="C#" Value="public ExponentialRetry (TimeSpan deltaBackoff, int maxRetries, Nullable&lt;TimeSpan&gt; maxBackoff = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.TimeSpan deltaBackoff, int32 maxRetries, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; maxBackoff) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Common.ExponentialRetry.#ctor(System.TimeSpan,System.Int32,System.Nullable{System.TimeSpan})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (deltaBackoff As TimeSpan, maxRetries As Integer, Optional maxBackoff As Nullable(Of TimeSpan) = null)" />
@@ -32,7 +32,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="deltaBackoff" Type="System.TimeSpan" />
@@ -58,7 +58,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
@@ -80,7 +80,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.TimeSpan&gt;</ReturnType>
@@ -102,7 +102,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -126,7 +126,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Common.RetryDecision&gt;</ReturnType>

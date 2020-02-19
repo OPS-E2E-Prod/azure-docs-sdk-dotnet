@@ -1,4 +1,4 @@
-﻿<Type Name="TaskFailureInformation" FullName="Microsoft.Azure.Batch.Protocol.Models.TaskFailureInformation">
+<Type Name="TaskFailureInformation" FullName="Microsoft.Azure.Batch.Protocol.Models.TaskFailureInformation">
   <TypeSignature Language="C#" Value="public class TaskFailureInformation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TaskFailureInformation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.Protocol.Models.TaskFailureInformation" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type TaskFailureInformation = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -14,7 +14,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            Information about a task failure.
+            Information about a Task failure.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -27,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,7 +38,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public TaskFailureInformation (Microsoft.Azure.Batch.Protocol.Models.ErrorCategory category, string code = null, string message = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.NameValuePair&gt; details = null);" />
+      <MemberSignature Language="C#" Value="public TaskFailureInformation (Microsoft.Azure.Batch.Protocol.Models.ErrorCategory category, string code = default, string message = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.NameValuePair&gt; details = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Azure.Batch.Protocol.Models.ErrorCategory category, string code, string message, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Batch.Protocol.Models.NameValuePair&gt; details) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.TaskFailureInformation.#ctor(Microsoft.Azure.Batch.Protocol.Models.ErrorCategory,System.String,System.String,System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.NameValuePair})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (category As ErrorCategory, Optional code As String = null, Optional message As String = null, Optional details As IList(Of NameValuePair) = null)" />
@@ -46,7 +46,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="category" Type="Microsoft.Azure.Batch.Protocol.Models.ErrorCategory" />
@@ -55,10 +55,10 @@
         <Parameter Name="details" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.NameValuePair&gt;" />
       </Parameters>
       <Docs>
-        <param name="category">The category of the task error.</param>
-        <param name="code">An identifier for the task error. Codes are
+        <param name="category">The category of the Task error.</param>
+        <param name="code">An identifier for the Task error. Codes are
             invariant and are intended to be consumed programmatically.</param>
-        <param name="message">A message describing the task error, intended
+        <param name="message">A message describing the Task error, intended
             to be suitable for display in a user interface.</param>
         <param name="details">A list of additional details related to the
             error.</param>
@@ -77,7 +77,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -89,7 +89,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the category of the task error.
+            Gets or sets the category of the Task error.
             </summary>
         <value>To be added.</value>
         <remarks>
@@ -106,7 +106,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -118,7 +118,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets an identifier for the task error. Codes are invariant
+            Gets or sets an identifier for the Task error. Codes are invariant
             and are intended to be consumed programmatically.
             </summary>
         <value>To be added.</value>
@@ -134,7 +134,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -161,7 +161,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -173,7 +173,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets a message describing the task error, intended to be
+            Gets or sets a message describing the Task error, intended to be
             suitable for display in a user interface.
             </summary>
         <value>To be added.</value>

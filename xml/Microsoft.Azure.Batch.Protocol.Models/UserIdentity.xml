@@ -1,4 +1,4 @@
-﻿<Type Name="UserIdentity" FullName="Microsoft.Azure.Batch.Protocol.Models.UserIdentity">
+<Type Name="UserIdentity" FullName="Microsoft.Azure.Batch.Protocol.Models.UserIdentity">
   <TypeSignature Language="C#" Value="public class UserIdentity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UserIdentity extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.Protocol.Models.UserIdentity" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type UserIdentity = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -14,7 +14,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            The definition of the user identity under which the task is run.
+            The definition of the user identity under which the Task is run.
             </summary>
     <remarks>
             Specify either the userName or autoUser property, but not both.
@@ -29,7 +29,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -40,7 +40,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public UserIdentity (string userName = null, Microsoft.Azure.Batch.Protocol.Models.AutoUserSpecification autoUser = null);" />
+      <MemberSignature Language="C#" Value="public UserIdentity (string userName = default, Microsoft.Azure.Batch.Protocol.Models.AutoUserSpecification autoUser = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string userName, class Microsoft.Azure.Batch.Protocol.Models.AutoUserSpecification autoUser) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.UserIdentity.#ctor(System.String,Microsoft.Azure.Batch.Protocol.Models.AutoUserSpecification)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional userName As String = null, Optional autoUser As AutoUserSpecification = null)" />
@@ -48,7 +48,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="userName" Type="System.String" />
@@ -56,8 +56,8 @@
       </Parameters>
       <Docs>
         <param name="userName">The name of the user identity under which
-            the task is run.</param>
-        <param name="autoUser">The auto user under which the task is
+            the Task is run.</param>
+        <param name="autoUser">The auto user under which the Task is
             run.</param>
         <summary>
             Initializes a new instance of the UserIdentity class.
@@ -74,7 +74,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -86,7 +86,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the auto user under which the task is run.
+            Gets or sets the auto user under which the Task is run.
             </summary>
         <value>To be added.</value>
         <remarks>
@@ -104,7 +104,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -116,7 +116,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the name of the user identity under which the task is
+            Gets or sets the name of the user identity under which the Task is
             run.
             </summary>
         <value>To be added.</value>

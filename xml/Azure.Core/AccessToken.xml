@@ -1,4 +1,4 @@
-﻿<Type Name="AccessToken" FullName="Azure.Core.AccessToken">
+<Type Name="AccessToken" FullName="Azure.Core.AccessToken">
   <TypeSignature Language="C#" Value="public struct AccessToken" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit AccessToken extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:Azure.Core.AccessToken" />
@@ -7,13 +7,17 @@
   <AssemblyInfo>
     <AssemblyName>Azure.Core</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents an Azure service bearer access token with expiry information.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,15 +31,19 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="accessToken" Type="System.String" />
         <Parameter Name="expiresOn" Type="System.DateTimeOffset" />
       </Parameters>
       <Docs>
-        <param name="accessToken">To be added.</param>
-        <param name="expiresOn">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="accessToken">The bearer access token value.</param>
+        <param name="expiresOn">The bearer access token expiry date.</param>
+        <summary>
+            Creates a new instance of <see cref="T:Azure.Core.AccessToken" /> using the provided <paramref name="accessToken" /> and <paramref name="expiresOn" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,6 +57,8 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -61,6 +71,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="ExpiresOn">
@@ -73,12 +84,16 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the time when the provided token expires.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,6 +108,8 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -102,6 +119,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Token">
@@ -114,12 +132,16 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Get the access token value.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

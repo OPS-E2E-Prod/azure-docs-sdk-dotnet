@@ -1,4 +1,4 @@
-﻿<Type Name="ApplicationGatewaySku" FullName="Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySku">
+<Type Name="ApplicationGatewaySku" FullName="Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySku">
   <TypeSignature Language="C#" Value="public class ApplicationGatewaySku" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ApplicationGatewaySku extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySku" />
@@ -6,7 +6,10 @@
   <TypeSignature Language="F#" Value="type ApplicationGatewaySku = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -14,7 +17,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            SKU of an application gateway
+            SKU of an application gateway.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -27,7 +30,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,7 +44,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ApplicationGatewaySku (Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySkuName name = null, Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayTier tier = null, Nullable&lt;int&gt; capacity = null);" />
+      <MemberSignature Language="C#" Value="public ApplicationGatewaySku (Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySkuName name = default, Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayTier tier = default, Nullable&lt;int&gt; capacity = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySkuName name, class Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayTier tier, valuetype System.Nullable`1&lt;int32&gt; capacity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySku.#ctor(Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySkuName,Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewayTier,System.Nullable{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional name As ApplicationGatewaySkuName = null, Optional tier As ApplicationGatewayTier = null, Optional capacity As Nullable(Of Integer) = null)" />
@@ -46,7 +52,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="Microsoft.Azure.Management.Network.Fluent.Models.ApplicationGatewaySkuName" />
@@ -56,9 +65,10 @@
       <Docs>
         <param name="name">Name of an application gateway SKU. Possible
             values include: 'Standard_Small', 'Standard_Medium',
-            'Standard_Large', 'WAF_Medium', 'WAF_Large'</param>
+            'Standard_Large', 'WAF_Medium', 'WAF_Large', 'Standard_v2',
+            'WAF_v2'</param>
         <param name="tier">Tier of an application gateway. Possible values
-            include: 'Standard', 'WAF'</param>
+            include: 'Standard', 'WAF', 'Standard_v2', 'WAF_v2'</param>
         <param name="capacity">Capacity (instance count) of an application
             gateway.</param>
         <summary>
@@ -76,7 +86,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -103,7 +116,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -117,7 +133,7 @@
         <summary>
             Gets or sets name of an application gateway SKU. Possible values
             include: 'Standard_Small', 'Standard_Medium', 'Standard_Large',
-            'WAF_Medium', 'WAF_Large'
+            'WAF_Medium', 'WAF_Large', 'Standard_v2', 'WAF_v2'
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -132,7 +148,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -145,7 +164,7 @@
       <Docs>
         <summary>
             Gets or sets tier of an application gateway. Possible values
-            include: 'Standard', 'WAF'
+            include: 'Standard', 'WAF', 'Standard_v2', 'WAF_v2'
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

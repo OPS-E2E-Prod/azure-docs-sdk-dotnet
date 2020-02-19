@@ -1,4 +1,4 @@
-﻿<Type Name="GroupUpdateParameters" FullName="Microsoft.Azure.Management.ApiManagement.Models.GroupUpdateParameters">
+<Type Name="GroupUpdateParameters" FullName="Microsoft.Azure.Management.ApiManagement.Models.GroupUpdateParameters">
   <TypeSignature Language="C#" Value="public class GroupUpdateParameters" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GroupUpdateParameters extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.ApiManagement.Models.GroupUpdateParameters" />
@@ -43,7 +43,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public GroupUpdateParameters (string displayName = null, string description = null, Nullable&lt;Microsoft.Azure.Management.ApiManagement.Models.GroupType&gt; type = null, string externalId = null);" />
+      <MemberSignature Language="C#" Value="public GroupUpdateParameters (string displayName = default, string description = default, Nullable&lt;Microsoft.Azure.Management.ApiManagement.Models.GroupType&gt; type = default, string externalId = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string displayName, string description, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.ApiManagement.Models.GroupType&gt; type, string externalId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.Models.GroupUpdateParameters.#ctor(System.String,System.String,System.Nullable{Microsoft.Azure.Management.ApiManagement.Models.GroupType},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional displayName As String = null, Optional description As String = null, Optional type As Nullable(Of GroupType) = null, Optional externalId As String = null)" />
@@ -67,8 +67,8 @@
         <param name="externalId">Identifier of the external groups, this
             property contains the id of the group from the external identity
             provider, e.g. for Azure Active Directory
-            aad://&lt;tenant&gt;.onmicrosoft.com/groups/&lt;group object
-            id&gt;; otherwise the value is null.</param>
+            `aad://&lt;tenant&gt;.onmicrosoft.com/groups/&lt;group object
+            id&gt;`; otherwise the value is null.</param>
         <summary>
             Initializes a new instance of the GroupUpdateParameters class.
             </summary>
@@ -153,8 +153,8 @@
             Gets or sets identifier of the external groups, this property
             contains the id of the group from the external identity provider,
             e.g. for Azure Active Directory
-            aad://&amp;lt;tenant&amp;gt;.onmicrosoft.com/groups/&amp;lt;group
-            object id&amp;gt;; otherwise the value is null.
+            `aad://&amp;lt;tenant&amp;gt;.onmicrosoft.com/groups/&amp;lt;group
+            object id&amp;gt;`; otherwise the value is null.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

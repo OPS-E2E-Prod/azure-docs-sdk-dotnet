@@ -1,4 +1,4 @@
-﻿<Type Name="ModelInfoResponse" FullName="Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.ModelInfoResponse">
+<Type Name="ModelInfoResponse" FullName="Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.ModelInfoResponse">
   <TypeSignature Language="C#" Value="public class ModelInfoResponse" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ModelInfoResponse extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.ModelInfoResponse" />
@@ -6,16 +6,14 @@
   <TypeSignature Language="F#" Value="type ModelInfoResponse = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>
-            An application model info.
-            </summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,18 +25,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>
-            Initializes a new instance of the ModelInfoResponse class.
-            </summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ModelInfoResponse (Guid id, string readableType, string name = null, Nullable&lt;int&gt; typeId = null, System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.EntityRole&gt; roles = null, System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.ChildEntity&gt; children = null, System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.SubClosedListResponse&gt; subLists = null, string customPrebuiltDomainName = null, string customPrebuiltModelName = null, string regexPattern = null, System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.ExplicitListItem&gt; explicitList = null);" />
+      <MemberSignature Language="C#" Value="public ModelInfoResponse (Guid id, string readableType, string name = default, Nullable&lt;int&gt; typeId = default, System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.EntityRole&gt; roles = default, System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.ChildEntity&gt; children = default, System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.SubClosedListResponse&gt; subLists = default, string customPrebuiltDomainName = default, string customPrebuiltModelName = default, string regexPattern = default, System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.ExplicitListItem&gt; explicitList = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid id, string readableType, string name, valuetype System.Nullable`1&lt;int32&gt; typeId, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.EntityRole&gt; roles, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.ChildEntity&gt; children, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.SubClosedListResponse&gt; subLists, string customPrebuiltDomainName, string customPrebuiltModelName, string regexPattern, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.ExplicitListItem&gt; explicitList) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.ModelInfoResponse.#ctor(System.Guid,System.String,System.String,System.Nullable{System.Int32},System.Collections.Generic.IList{Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.EntityRole},System.Collections.Generic.IList{Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.ChildEntity},System.Collections.Generic.IList{Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.SubClosedListResponse},System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.ExplicitListItem})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (id As Guid, readableType As String, Optional name As String = null, Optional typeId As Nullable(Of Integer) = null, Optional roles As IList(Of EntityRole) = null, Optional children As IList(Of ChildEntity) = null, Optional subLists As IList(Of SubClosedListResponse) = null, Optional customPrebuiltDomainName As String = null, Optional customPrebuiltModelName As String = null, Optional regexPattern As String = null, Optional explicitList As IList(Of ExplicitListItem) = null)" />
@@ -46,7 +42,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.Guid" />
@@ -62,26 +58,18 @@
         <Parameter Name="explicitList" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.ExplicitListItem&gt;" />
       </Parameters>
       <Docs>
-        <param name="id">The ID of the Entity Model.</param>
-        <param name="readableType">Possible values include: 'Entity
-            Extractor', 'Hierarchical Entity Extractor', 'Hierarchical Child
-            Entity Extractor', 'Composite Entity Extractor', 'Closed List
-            Entity Extractor', 'Prebuilt Entity Extractor', 'Intent
-            Classifier', 'Pattern.Any Entity Extractor', 'Regex Entity
-            Extractor'</param>
-        <param name="name">Name of the Entity Model.</param>
-        <param name="typeId">The type ID of the Entity Model.</param>
+        <param name="id">To be added.</param>
+        <param name="readableType">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="typeId">To be added.</param>
         <param name="roles">To be added.</param>
-        <param name="children">List of child entities.</param>
-        <param name="subLists">List of sub-lists.</param>
-        <param name="customPrebuiltDomainName">The domain name.</param>
-        <param name="customPrebuiltModelName">The intent name or entity
-            name.</param>
-        <param name="regexPattern">The Regex entity pattern.</param>
+        <param name="children">To be added.</param>
+        <param name="subLists">To be added.</param>
+        <param name="customPrebuiltDomainName">To be added.</param>
+        <param name="customPrebuiltModelName">To be added.</param>
+        <param name="regexPattern">To be added.</param>
         <param name="explicitList">To be added.</param>
-        <summary>
-            Initializes a new instance of the ModelInfoResponse class.
-            </summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,7 +82,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -105,9 +93,7 @@
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.ChildEntity&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Gets or sets list of child entities.
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -121,7 +107,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -132,9 +118,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Gets or sets the domain name.
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -148,7 +132,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -159,9 +143,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Gets or sets the intent name or entity name.
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -175,7 +157,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -186,7 +168,7 @@
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.ExplicitListItem&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary />
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -200,7 +182,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -211,9 +193,7 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Gets or sets the ID of the Entity Model.
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -227,7 +207,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -238,9 +218,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Gets or sets name of the Entity Model.
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -254,7 +232,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -265,13 +243,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Gets or sets possible values include: 'Entity Extractor',
-            'Hierarchical Entity Extractor', 'Hierarchical Child Entity
-            Extractor', 'Composite Entity Extractor', 'Closed List Entity
-            Extractor', 'Prebuilt Entity Extractor', 'Intent Classifier',
-            'Pattern.Any Entity Extractor', 'Regex Entity Extractor'
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -285,7 +257,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -296,9 +268,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Gets or sets the Regex entity pattern.
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -312,7 +282,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -323,7 +293,7 @@
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.EntityRole&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary />
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -337,7 +307,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -348,9 +318,7 @@
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models.SubClosedListResponse&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Gets or sets list of sub-lists.
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -364,7 +332,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -375,9 +343,7 @@
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Gets or sets the type ID of the Entity Model.
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -391,20 +357,15 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-            Validate the object.
-            </summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:Microsoft.Rest.ValidationException">
-            Thrown if validation fails
-            </exception>
       </Docs>
     </Member>
   </Members>

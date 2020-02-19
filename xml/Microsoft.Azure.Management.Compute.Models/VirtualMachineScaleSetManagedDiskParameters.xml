@@ -1,4 +1,4 @@
-﻿<Type Name="VirtualMachineScaleSetManagedDiskParameters" FullName="Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetManagedDiskParameters">
+<Type Name="VirtualMachineScaleSetManagedDiskParameters" FullName="Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetManagedDiskParameters">
   <TypeSignature Language="C#" Value="public class VirtualMachineScaleSetManagedDiskParameters" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VirtualMachineScaleSetManagedDiskParameters extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetManagedDiskParameters" />
@@ -6,7 +6,8 @@
   <TypeSignature Language="F#" Value="type VirtualMachineScaleSetManagedDiskParameters = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-    <AssemblyVersion>27.0.0.0</AssemblyVersion>
+    <AssemblyVersion>30.0.0.0</AssemblyVersion>
+    <AssemblyVersion>31.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,7 +28,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -39,18 +41,20 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public VirtualMachineScaleSetManagedDiskParameters (string storageAccountType = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string storageAccountType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetManagedDiskParameters.#ctor(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional storageAccountType As String = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetManagedDiskParameters : string -&gt; Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetManagedDiskParameters" Usage="new Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetManagedDiskParameters storageAccountType" />
+      <MemberSignature Language="C#" Value="public VirtualMachineScaleSetManagedDiskParameters (string storageAccountType = default, Microsoft.Azure.Management.Compute.Models.DiskEncryptionSetParameters diskEncryptionSet = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string storageAccountType, class Microsoft.Azure.Management.Compute.Models.DiskEncryptionSetParameters diskEncryptionSet) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetManagedDiskParameters.#ctor(System.String,Microsoft.Azure.Management.Compute.Models.DiskEncryptionSetParameters)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional storageAccountType As String = null, Optional diskEncryptionSet As DiskEncryptionSetParameters = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetManagedDiskParameters : string * Microsoft.Azure.Management.Compute.Models.DiskEncryptionSetParameters -&gt; Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetManagedDiskParameters" Usage="new Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetManagedDiskParameters (storageAccountType, diskEncryptionSet)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="storageAccountType" Type="System.String" />
+        <Parameter Name="diskEncryptionSet" Type="Microsoft.Azure.Management.Compute.Models.DiskEncryptionSetParameters" />
       </Parameters>
       <Docs>
         <param name="storageAccountType">Specifies the storage account type
@@ -58,10 +62,41 @@
             disks, it cannot be used with OS Disk. Possible values include:
             'Standard_LRS', 'Premium_LRS', 'StandardSSD_LRS',
             'UltraSSD_LRS'</param>
+        <param name="diskEncryptionSet">Specifies the customer managed disk
+            encryption set resource id for the managed disk.</param>
         <summary>
             Initializes a new instance of the
             VirtualMachineScaleSetManagedDiskParameters class.
             </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiskEncryptionSet">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Compute.Models.DiskEncryptionSetParameters DiskEncryptionSet { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Compute.Models.DiskEncryptionSetParameters DiskEncryptionSet" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetManagedDiskParameters.DiskEncryptionSet" />
+      <MemberSignature Language="VB.NET" Value="Public Property DiskEncryptionSet As DiskEncryptionSetParameters" />
+      <MemberSignature Language="F#" Value="member this.DiskEncryptionSet : Microsoft.Azure.Management.Compute.Models.DiskEncryptionSetParameters with get, set" Usage="Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetManagedDiskParameters.DiskEncryptionSet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="diskEncryptionSet")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Compute.Models.DiskEncryptionSetParameters</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets specifies the customer managed disk encryption set
+            resource id for the managed disk.
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,7 +109,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>27.0.0.0</AssemblyVersion>
+        <AssemblyVersion>30.0.0.0</AssemblyVersion>
+        <AssemblyVersion>31.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

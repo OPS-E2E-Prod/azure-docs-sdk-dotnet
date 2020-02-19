@@ -1,4 +1,4 @@
-﻿<Type Name="HttpClientTransport" FullName="Azure.Core.Pipeline.HttpClientTransport">
+<Type Name="HttpClientTransport" FullName="Azure.Core.Pipeline.HttpClientTransport">
   <TypeSignature Language="C#" Value="public class HttpClientTransport : Azure.Core.Pipeline.HttpPipelineTransport" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HttpClientTransport extends Azure.Core.Pipeline.HttpPipelineTransport" />
   <TypeSignature Language="DocId" Value="T:Azure.Core.Pipeline.HttpClientTransport" />
@@ -7,13 +7,17 @@
   <AssemblyInfo>
     <AssemblyName>Azure.Core</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.Core.Pipeline.HttpPipelineTransport</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            An <see cref="T:Azure.Core.Pipeline.HttpPipelineTransport" /> implementation that uses <see cref="T:System.Net.Http.HttpClient" /> as the transport.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,10 +30,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Creates a new <see cref="T:Azure.Core.Pipeline.HttpClientTransport" /> instance using default configuration.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,35 +51,66 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="client" Type="System.Net.Http.HttpClient" />
       </Parameters>
       <Docs>
-        <param name="client">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="client">The instance of <see cref="T:System.Net.Http.HttpClient" /> to use.</param>
+        <summary>
+            Creates a new instance of <see cref="T:Azure.Core.Pipeline.HttpClientTransport" /> using the provided client instance.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateRequest">
-      <MemberSignature Language="C#" Value="public override sealed Azure.Request CreateRequest ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Azure.Request CreateRequest() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Core.Pipeline.HttpClientTransport.CreateRequest" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function CreateRequest () As Request" />
-      <MemberSignature Language="F#" Value="override this.CreateRequest : unit -&gt; Azure.Request" Usage="httpClientTransport.CreateRequest " />
+      <MemberSignature Language="C#" Value="public override sealed Azure.Core.Request CreateRequest ();" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Azure.Core.Request CreateRequest() cil managed" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="DocId" Value="M:Azure.Core.Pipeline.HttpClientTransport.CreateRequest" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function CreateRequest () As Request" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="override this.CreateRequest : unit -&gt; Azure.Core.Request" Usage="httpClientTransport.CreateRequest " FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Request</ReturnType>
+        <ReturnType>Azure.Core.Request</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="Process">
+      <MemberSignature Language="C#" Value="public override void Process (Azure.Core.HttpMessage message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Process(class Azure.Core.HttpMessage message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Core.Pipeline.HttpClientTransport.Process(Azure.Core.HttpMessage)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Process (message As HttpMessage)" />
+      <MemberSignature Language="F#" Value="override this.Process : Azure.Core.HttpMessage -&gt; unit" Usage="httpClientTransport.Process message" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Core</AssemblyName>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="Azure.Core.HttpMessage" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Process">
@@ -89,12 +128,38 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="message" Type="Azure.Core.Pipeline.HttpPipelineMessage" />
+        <Parameter Name="message" Type="Azure.Core.Pipeline.HttpPipelineMessage" Index="0" FrameworkAlternate="azure-dotnet" />
       </Parameters>
       <Docs>
         <param name="message">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessAsync">
+      <MemberSignature Language="C#" Value="public override sealed System.Threading.Tasks.ValueTask ProcessAsync (Azure.Core.HttpMessage message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Threading.Tasks.ValueTask ProcessAsync(class Azure.Core.HttpMessage message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Core.Pipeline.HttpClientTransport.ProcessAsync(Azure.Core.HttpMessage)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function ProcessAsync (message As HttpMessage) As ValueTask" />
+      <MemberSignature Language="F#" Value="override this.ProcessAsync : Azure.Core.HttpMessage -&gt; System.Threading.Tasks.ValueTask" Usage="httpClientTransport.ProcessAsync message" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Core</AssemblyName>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.ValueTask</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="Azure.Core.HttpMessage" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="ProcessAsync">
@@ -109,7 +174,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="azure-dotnet">
           <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
         </Attribute>
       </Attributes>
@@ -117,7 +182,7 @@
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="message" Type="Azure.Core.Pipeline.HttpPipelineMessage" />
+        <Parameter Name="message" Type="Azure.Core.Pipeline.HttpPipelineMessage" Index="0" FrameworkAlternate="azure-dotnet" />
       </Parameters>
       <Docs>
         <param name="message">To be added.</param>
@@ -136,12 +201,16 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.Pipeline.HttpClientTransport</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            A shared instance of <see cref="T:Azure.Core.Pipeline.HttpClientTransport" /> with default parameters.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

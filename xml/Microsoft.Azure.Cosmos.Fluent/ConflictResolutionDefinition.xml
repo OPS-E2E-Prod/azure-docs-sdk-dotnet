@@ -1,4 +1,4 @@
-﻿<Type Name="ConflictResolutionDefinition" FullName="Microsoft.Azure.Cosmos.Fluent.ConflictResolutionDefinition">
+<Type Name="ConflictResolutionDefinition" FullName="Microsoft.Azure.Cosmos.Fluent.ConflictResolutionDefinition">
   <TypeSignature Language="C#" Value="public class ConflictResolutionDefinition" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConflictResolutionDefinition extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Cosmos.Fluent.ConflictResolutionDefinition" />
@@ -6,7 +6,10 @@
   <TypeSignature Language="F#" Value="type ConflictResolutionDefinition = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.4.1.0</AssemblyVersion>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+    <AssemblyVersion>3.5.1.0</AssemblyVersion>
+    <AssemblyVersion>3.6.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,7 +31,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.Fluent.ContainerBuilder</ReturnType>
@@ -51,7 +57,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.Fluent.ConflictResolutionDefinition</ReturnType>
@@ -60,12 +69,22 @@
         <Parameter Name="conflictResolutionProcedure" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="conflictResolutionProcedure"> sets the stored procedure to be used for conflict-resolution. <see cref="P:Microsoft.Azure.Cosmos.ConflictResolutionPolicy.ResolutionProcedure" />.</param>
+        <param name="conflictResolutionProcedure"> Sets the stored procedure's name to be used for conflict-resolution.</param>
         <summary>
             Defines the stored procedure to be used as custom conflict resolution mode <see cref="T:Microsoft.Azure.Cosmos.ConflictResolutionPolicy" />.
             </summary>
         <returns>An instance of the current <see cref="T:Microsoft.Azure.Cosmos.Fluent.UniqueKeyDefinition" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>The stored procedure can be created later on, but needs to honor the name specified here.</remarks>
+        <example>
+            This example below creates a <see cref="T:Microsoft.Azure.Cosmos.Container" /> with a Conflict Resolution policy that uses a stored procedure to resolve conflicts:
+            <code language="c#"><![CDATA[
+            await databaseForConflicts.DefineContainer("myContainer", "/id")
+                .WithConflictResolution()
+                    .WithCustomStoredProcedureResolution("myStoredProcedure")
+                    .Attach()
+                .CreateAsync();
+            </example>
+            ]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="WithLastWriterWinsResolution">
@@ -77,7 +96,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Cosmos.Fluent.ConflictResolutionDefinition</ReturnType>

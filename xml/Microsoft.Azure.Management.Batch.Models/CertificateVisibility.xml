@@ -1,4 +1,4 @@
-﻿<Type Name="CertificateVisibility" FullName="Microsoft.Azure.Management.Batch.Models.CertificateVisibility">
+<Type Name="CertificateVisibility" FullName="Microsoft.Azure.Management.Batch.Models.CertificateVisibility">
   <TypeSignature Language="C#" Value="public enum CertificateVisibility" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CertificateVisibility extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Batch.Models.CertificateVisibility" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type CertificateVisibility = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -32,7 +32,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -59,7 +59,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -73,7 +73,9 @@
       <Docs>
         <summary>
             The certificate should be visible to the user account under which
-            the start task is run.
+            the start task is run. Note that if AutoUser Scope is Pool for both
+            the StartTask and a Task, this certificate will be visible to the
+            Task as well.
             </summary>
       </Docs>
     </Member>
@@ -86,7 +88,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

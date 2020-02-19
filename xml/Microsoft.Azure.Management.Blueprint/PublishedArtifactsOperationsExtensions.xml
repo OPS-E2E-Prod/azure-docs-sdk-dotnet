@@ -1,4 +1,4 @@
-﻿<Type Name="PublishedArtifactsOperationsExtensions" FullName="Microsoft.Azure.Management.Blueprint.PublishedArtifactsOperationsExtensions">
+<Type Name="PublishedArtifactsOperationsExtensions" FullName="Microsoft.Azure.Management.Blueprint.PublishedArtifactsOperationsExtensions">
   <TypeSignature Language="C#" Value="public static class PublishedArtifactsOperationsExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit PublishedArtifactsOperationsExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Blueprint.PublishedArtifactsOperationsExtensions" />
@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
     <AssemblyVersion>0.10.0.0</AssemblyVersion>
     <AssemblyVersion>0.14.0.0</AssemblyVersion>
+    <AssemblyVersion>0.20.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -31,6 +32,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Blueprint.Models.Artifact</ReturnType>
@@ -49,26 +51,27 @@
         <param name="scope">
             The scope of the resource. Valid scopes are: management group (format:
             '/providers/Microsoft.Management/managementGroups/{managementGroup}'),
-            subscription (format: '/subscriptions/{subscriptionId}').
+            subscription (format: '/subscriptions/{subscriptionId}'). For blueprint
+            assignments management group scope is reserved for future use.
             </param>
         <param name="blueprintName">
-            name of the blueprint.
+            Name of the blueprint definition.
             </param>
         <param name="versionId">
-            version of the published blueprint.
+            Version of the published blueprint definition.
             </param>
         <param name="artifactName">
-            name of the artifact.
+            Name of the blueprint artifact.
             </param>
         <summary>
-            Get an artifact for a published Blueprint.
+            Get an artifact for a published blueprint definition.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Blueprint.Models.Artifact&gt; GetAsync (this Microsoft.Azure.Management.Blueprint.IPublishedArtifactsOperations operations, string scope, string blueprintName, string versionId, string artifactName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Blueprint.Models.Artifact&gt; GetAsync (this Microsoft.Azure.Management.Blueprint.IPublishedArtifactsOperations operations, string scope, string blueprintName, string versionId, string artifactName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Blueprint.Models.Artifact&gt; GetAsync(class Microsoft.Azure.Management.Blueprint.IPublishedArtifactsOperations operations, string scope, string blueprintName, string versionId, string artifactName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Blueprint.PublishedArtifactsOperationsExtensions.GetAsync(Microsoft.Azure.Management.Blueprint.IPublishedArtifactsOperations,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member GetAsync : Microsoft.Azure.Management.Blueprint.IPublishedArtifactsOperations * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Blueprint.Models.Artifact&gt;" Usage="Microsoft.Azure.Management.Blueprint.PublishedArtifactsOperationsExtensions.GetAsync (operations, scope, blueprintName, versionId, artifactName, cancellationToken)" />
@@ -77,6 +80,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-dotnet">
@@ -101,22 +105,23 @@
         <param name="scope">
             The scope of the resource. Valid scopes are: management group (format:
             '/providers/Microsoft.Management/managementGroups/{managementGroup}'),
-            subscription (format: '/subscriptions/{subscriptionId}').
+            subscription (format: '/subscriptions/{subscriptionId}'). For blueprint
+            assignments management group scope is reserved for future use.
             </param>
         <param name="blueprintName">
-            name of the blueprint.
+            Name of the blueprint definition.
             </param>
         <param name="versionId">
-            version of the published blueprint.
+            Version of the published blueprint definition.
             </param>
         <param name="artifactName">
-            name of the artifact.
+            Name of the blueprint artifact.
             </param>
         <param name="cancellationToken">
             The cancellation token.
             </param>
         <summary>
-            Get an artifact for a published Blueprint.
+            Get an artifact for a published blueprint definition.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -133,6 +138,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Blueprint.Models.Artifact&gt;</ReturnType>
@@ -150,23 +156,24 @@
         <param name="scope">
             The scope of the resource. Valid scopes are: management group (format:
             '/providers/Microsoft.Management/managementGroups/{managementGroup}'),
-            subscription (format: '/subscriptions/{subscriptionId}').
+            subscription (format: '/subscriptions/{subscriptionId}'). For blueprint
+            assignments management group scope is reserved for future use.
             </param>
         <param name="blueprintName">
-            name of the blueprint.
+            Name of the blueprint definition.
             </param>
         <param name="versionId">
-            version of the published blueprint.
+            Version of the published blueprint definition.
             </param>
         <summary>
-            List artifacts for a published Blueprint.
+            List artifacts for a version of a published blueprint definition.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ListAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Blueprint.Models.Artifact&gt;&gt; ListAsync (this Microsoft.Azure.Management.Blueprint.IPublishedArtifactsOperations operations, string scope, string blueprintName, string versionId, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Blueprint.Models.Artifact&gt;&gt; ListAsync (this Microsoft.Azure.Management.Blueprint.IPublishedArtifactsOperations operations, string scope, string blueprintName, string versionId, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Blueprint.Models.Artifact&gt;&gt; ListAsync(class Microsoft.Azure.Management.Blueprint.IPublishedArtifactsOperations operations, string scope, string blueprintName, string versionId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Blueprint.PublishedArtifactsOperationsExtensions.ListAsync(Microsoft.Azure.Management.Blueprint.IPublishedArtifactsOperations,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListAsync : Microsoft.Azure.Management.Blueprint.IPublishedArtifactsOperations * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Blueprint.Models.Artifact&gt;&gt;" Usage="Microsoft.Azure.Management.Blueprint.PublishedArtifactsOperationsExtensions.ListAsync (operations, scope, blueprintName, versionId, cancellationToken)" />
@@ -175,6 +182,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-dotnet">
@@ -198,19 +206,20 @@
         <param name="scope">
             The scope of the resource. Valid scopes are: management group (format:
             '/providers/Microsoft.Management/managementGroups/{managementGroup}'),
-            subscription (format: '/subscriptions/{subscriptionId}').
+            subscription (format: '/subscriptions/{subscriptionId}'). For blueprint
+            assignments management group scope is reserved for future use.
             </param>
         <param name="blueprintName">
-            name of the blueprint.
+            Name of the blueprint definition.
             </param>
         <param name="versionId">
-            version of the published blueprint.
+            Version of the published blueprint definition.
             </param>
         <param name="cancellationToken">
             The cancellation token.
             </param>
         <summary>
-            List artifacts for a published Blueprint.
+            List artifacts for a version of a published blueprint definition.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -227,6 +236,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Blueprint.Models.Artifact&gt;</ReturnType>
@@ -243,14 +253,14 @@
             The NextLink from the previous successful call to List operation.
             </param>
         <summary>
-            List artifacts for a published Blueprint.
+            List artifacts for a version of a published blueprint definition.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ListNextAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Blueprint.Models.Artifact&gt;&gt; ListNextAsync (this Microsoft.Azure.Management.Blueprint.IPublishedArtifactsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Blueprint.Models.Artifact&gt;&gt; ListNextAsync (this Microsoft.Azure.Management.Blueprint.IPublishedArtifactsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Blueprint.Models.Artifact&gt;&gt; ListNextAsync(class Microsoft.Azure.Management.Blueprint.IPublishedArtifactsOperations operations, string nextPageLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Blueprint.PublishedArtifactsOperationsExtensions.ListNextAsync(Microsoft.Azure.Management.Blueprint.IPublishedArtifactsOperations,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListNextAsync : Microsoft.Azure.Management.Blueprint.IPublishedArtifactsOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Blueprint.Models.Artifact&gt;&gt;" Usage="Microsoft.Azure.Management.Blueprint.PublishedArtifactsOperationsExtensions.ListNextAsync (operations, nextPageLink, cancellationToken)" />
@@ -259,6 +269,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-dotnet">
@@ -284,7 +295,7 @@
             The cancellation token.
             </param>
         <summary>
-            List artifacts for a published Blueprint.
+            List artifacts for a version of a published blueprint definition.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

@@ -1,4 +1,4 @@
-﻿<Type Name="BlueprintsOperationsExtensions" FullName="Microsoft.Azure.Management.Blueprint.BlueprintsOperationsExtensions">
+<Type Name="BlueprintsOperationsExtensions" FullName="Microsoft.Azure.Management.Blueprint.BlueprintsOperationsExtensions">
   <TypeSignature Language="C#" Value="public static class BlueprintsOperationsExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit BlueprintsOperationsExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Blueprint.BlueprintsOperationsExtensions" />
@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
     <AssemblyVersion>0.10.0.0</AssemblyVersion>
     <AssemblyVersion>0.14.0.0</AssemblyVersion>
+    <AssemblyVersion>0.20.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -31,6 +32,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Blueprint.Models.BlueprintModel</ReturnType>
@@ -48,23 +50,24 @@
         <param name="scope">
             The scope of the resource. Valid scopes are: management group (format:
             '/providers/Microsoft.Management/managementGroups/{managementGroup}'),
-            subscription (format: '/subscriptions/{subscriptionId}').
+            subscription (format: '/subscriptions/{subscriptionId}'). For blueprint
+            assignments management group scope is reserved for future use.
             </param>
         <param name="blueprintName">
-            name of the blueprint.
+            Name of the blueprint definition.
             </param>
         <param name="blueprint">
             Blueprint definition.
             </param>
         <summary>
-            Create or update Blueprint definition.
+            Create or update a blueprint definition.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Blueprint.Models.BlueprintModel&gt; CreateOrUpdateAsync (this Microsoft.Azure.Management.Blueprint.IBlueprintsOperations operations, string scope, string blueprintName, Microsoft.Azure.Management.Blueprint.Models.BlueprintModel blueprint, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Blueprint.Models.BlueprintModel&gt; CreateOrUpdateAsync (this Microsoft.Azure.Management.Blueprint.IBlueprintsOperations operations, string scope, string blueprintName, Microsoft.Azure.Management.Blueprint.Models.BlueprintModel blueprint, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Blueprint.Models.BlueprintModel&gt; CreateOrUpdateAsync(class Microsoft.Azure.Management.Blueprint.IBlueprintsOperations operations, string scope, string blueprintName, class Microsoft.Azure.Management.Blueprint.Models.BlueprintModel blueprint, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Blueprint.BlueprintsOperationsExtensions.CreateOrUpdateAsync(Microsoft.Azure.Management.Blueprint.IBlueprintsOperations,System.String,System.String,Microsoft.Azure.Management.Blueprint.Models.BlueprintModel,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member CreateOrUpdateAsync : Microsoft.Azure.Management.Blueprint.IBlueprintsOperations * string * string * Microsoft.Azure.Management.Blueprint.Models.BlueprintModel * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Blueprint.Models.BlueprintModel&gt;" Usage="Microsoft.Azure.Management.Blueprint.BlueprintsOperationsExtensions.CreateOrUpdateAsync (operations, scope, blueprintName, blueprint, cancellationToken)" />
@@ -73,6 +76,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-dotnet">
@@ -96,10 +100,11 @@
         <param name="scope">
             The scope of the resource. Valid scopes are: management group (format:
             '/providers/Microsoft.Management/managementGroups/{managementGroup}'),
-            subscription (format: '/subscriptions/{subscriptionId}').
+            subscription (format: '/subscriptions/{subscriptionId}'). For blueprint
+            assignments management group scope is reserved for future use.
             </param>
         <param name="blueprintName">
-            name of the blueprint.
+            Name of the blueprint definition.
             </param>
         <param name="blueprint">
             Blueprint definition.
@@ -108,7 +113,7 @@
             The cancellation token.
             </param>
         <summary>
-            Create or update Blueprint definition.
+            Create or update a blueprint definition.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -125,6 +130,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Blueprint.Models.BlueprintModel</ReturnType>
@@ -141,10 +147,11 @@
         <param name="scope">
             The scope of the resource. Valid scopes are: management group (format:
             '/providers/Microsoft.Management/managementGroups/{managementGroup}'),
-            subscription (format: '/subscriptions/{subscriptionId}').
+            subscription (format: '/subscriptions/{subscriptionId}'). For blueprint
+            assignments management group scope is reserved for future use.
             </param>
         <param name="blueprintName">
-            name of the blueprint.
+            Name of the blueprint definition.
             </param>
         <summary>
             Delete a blueprint definition.
@@ -154,7 +161,7 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Blueprint.Models.BlueprintModel&gt; DeleteAsync (this Microsoft.Azure.Management.Blueprint.IBlueprintsOperations operations, string scope, string blueprintName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Blueprint.Models.BlueprintModel&gt; DeleteAsync (this Microsoft.Azure.Management.Blueprint.IBlueprintsOperations operations, string scope, string blueprintName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Blueprint.Models.BlueprintModel&gt; DeleteAsync(class Microsoft.Azure.Management.Blueprint.IBlueprintsOperations operations, string scope, string blueprintName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Blueprint.BlueprintsOperationsExtensions.DeleteAsync(Microsoft.Azure.Management.Blueprint.IBlueprintsOperations,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member DeleteAsync : Microsoft.Azure.Management.Blueprint.IBlueprintsOperations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Blueprint.Models.BlueprintModel&gt;" Usage="Microsoft.Azure.Management.Blueprint.BlueprintsOperationsExtensions.DeleteAsync (operations, scope, blueprintName, cancellationToken)" />
@@ -163,6 +170,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-dotnet">
@@ -185,10 +193,11 @@
         <param name="scope">
             The scope of the resource. Valid scopes are: management group (format:
             '/providers/Microsoft.Management/managementGroups/{managementGroup}'),
-            subscription (format: '/subscriptions/{subscriptionId}').
+            subscription (format: '/subscriptions/{subscriptionId}'). For blueprint
+            assignments management group scope is reserved for future use.
             </param>
         <param name="blueprintName">
-            name of the blueprint.
+            Name of the blueprint definition.
             </param>
         <param name="cancellationToken">
             The cancellation token.
@@ -211,6 +220,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Blueprint.Models.BlueprintModel</ReturnType>
@@ -227,10 +237,11 @@
         <param name="scope">
             The scope of the resource. Valid scopes are: management group (format:
             '/providers/Microsoft.Management/managementGroups/{managementGroup}'),
-            subscription (format: '/subscriptions/{subscriptionId}').
+            subscription (format: '/subscriptions/{subscriptionId}'). For blueprint
+            assignments management group scope is reserved for future use.
             </param>
         <param name="blueprintName">
-            name of the blueprint.
+            Name of the blueprint definition.
             </param>
         <summary>
             Get a blueprint definition.
@@ -240,7 +251,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Blueprint.Models.BlueprintModel&gt; GetAsync (this Microsoft.Azure.Management.Blueprint.IBlueprintsOperations operations, string scope, string blueprintName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Blueprint.Models.BlueprintModel&gt; GetAsync (this Microsoft.Azure.Management.Blueprint.IBlueprintsOperations operations, string scope, string blueprintName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Blueprint.Models.BlueprintModel&gt; GetAsync(class Microsoft.Azure.Management.Blueprint.IBlueprintsOperations operations, string scope, string blueprintName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Blueprint.BlueprintsOperationsExtensions.GetAsync(Microsoft.Azure.Management.Blueprint.IBlueprintsOperations,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member GetAsync : Microsoft.Azure.Management.Blueprint.IBlueprintsOperations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Blueprint.Models.BlueprintModel&gt;" Usage="Microsoft.Azure.Management.Blueprint.BlueprintsOperationsExtensions.GetAsync (operations, scope, blueprintName, cancellationToken)" />
@@ -249,6 +260,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-dotnet">
@@ -271,10 +283,11 @@
         <param name="scope">
             The scope of the resource. Valid scopes are: management group (format:
             '/providers/Microsoft.Management/managementGroups/{managementGroup}'),
-            subscription (format: '/subscriptions/{subscriptionId}').
+            subscription (format: '/subscriptions/{subscriptionId}'). For blueprint
+            assignments management group scope is reserved for future use.
             </param>
         <param name="blueprintName">
-            name of the blueprint.
+            Name of the blueprint definition.
             </param>
         <param name="cancellationToken">
             The cancellation token.
@@ -297,6 +310,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Blueprint.Models.BlueprintModel&gt;</ReturnType>
@@ -312,17 +326,18 @@
         <param name="scope">
             The scope of the resource. Valid scopes are: management group (format:
             '/providers/Microsoft.Management/managementGroups/{managementGroup}'),
-            subscription (format: '/subscriptions/{subscriptionId}').
+            subscription (format: '/subscriptions/{subscriptionId}'). For blueprint
+            assignments management group scope is reserved for future use.
             </param>
         <summary>
-            Create or update blueprint definition.
+            List blueprint definitions.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ListAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Blueprint.Models.BlueprintModel&gt;&gt; ListAsync (this Microsoft.Azure.Management.Blueprint.IBlueprintsOperations operations, string scope, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Blueprint.Models.BlueprintModel&gt;&gt; ListAsync (this Microsoft.Azure.Management.Blueprint.IBlueprintsOperations operations, string scope, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Blueprint.Models.BlueprintModel&gt;&gt; ListAsync(class Microsoft.Azure.Management.Blueprint.IBlueprintsOperations operations, string scope, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Blueprint.BlueprintsOperationsExtensions.ListAsync(Microsoft.Azure.Management.Blueprint.IBlueprintsOperations,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListAsync : Microsoft.Azure.Management.Blueprint.IBlueprintsOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Blueprint.Models.BlueprintModel&gt;&gt;" Usage="Microsoft.Azure.Management.Blueprint.BlueprintsOperationsExtensions.ListAsync (operations, scope, cancellationToken)" />
@@ -331,6 +346,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-dotnet">
@@ -352,13 +368,14 @@
         <param name="scope">
             The scope of the resource. Valid scopes are: management group (format:
             '/providers/Microsoft.Management/managementGroups/{managementGroup}'),
-            subscription (format: '/subscriptions/{subscriptionId}').
+            subscription (format: '/subscriptions/{subscriptionId}'). For blueprint
+            assignments management group scope is reserved for future use.
             </param>
         <param name="cancellationToken">
             The cancellation token.
             </param>
         <summary>
-            Create or update blueprint definition.
+            List blueprint definitions.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -375,6 +392,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Blueprint.Models.BlueprintModel&gt;</ReturnType>
@@ -391,14 +409,14 @@
             The NextLink from the previous successful call to List operation.
             </param>
         <summary>
-            Create or update blueprint definition.
+            List blueprint definitions.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ListNextAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Blueprint.Models.BlueprintModel&gt;&gt; ListNextAsync (this Microsoft.Azure.Management.Blueprint.IBlueprintsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Blueprint.Models.BlueprintModel&gt;&gt; ListNextAsync (this Microsoft.Azure.Management.Blueprint.IBlueprintsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Blueprint.Models.BlueprintModel&gt;&gt; ListNextAsync(class Microsoft.Azure.Management.Blueprint.IBlueprintsOperations operations, string nextPageLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Blueprint.BlueprintsOperationsExtensions.ListNextAsync(Microsoft.Azure.Management.Blueprint.IBlueprintsOperations,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListNextAsync : Microsoft.Azure.Management.Blueprint.IBlueprintsOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Blueprint.Models.BlueprintModel&gt;&gt;" Usage="Microsoft.Azure.Management.Blueprint.BlueprintsOperationsExtensions.ListNextAsync (operations, nextPageLink, cancellationToken)" />
@@ -407,6 +425,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-dotnet">
@@ -432,7 +451,7 @@
             The cancellation token.
             </param>
         <summary>
-            Create or update blueprint definition.
+            List blueprint definitions.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

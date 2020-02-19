@@ -1,4 +1,4 @@
-﻿<Type Name="RouteFilterRuleInner" FullName="Microsoft.Azure.Management.Network.Fluent.Models.RouteFilterRuleInner">
+<Type Name="RouteFilterRuleInner" FullName="Microsoft.Azure.Management.Network.Fluent.Models.RouteFilterRuleInner">
   <TypeSignature Language="C#" Value="public class RouteFilterRuleInner : Microsoft.Azure.Management.ResourceManager.Fluent.SubResource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi RouteFilterRuleInner extends Microsoft.Azure.Management.ResourceManager.Fluent.SubResource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Network.Fluent.Models.RouteFilterRuleInner" />
@@ -6,7 +6,10 @@
   <TypeSignature Language="F#" Value="type RouteFilterRuleInner = class&#xA;    inherit SubResource" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.ResourceManager.Fluent.SubResource</BaseTypeName>
@@ -19,7 +22,7 @@
   </Attributes>
   <Docs>
     <summary>
-            Route Filter Rule Resource
+            Route Filter Rule Resource.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -32,7 +35,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,33 +49,34 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public RouteFilterRuleInner (Microsoft.Azure.Management.Network.Fluent.Models.Access access, System.Collections.Generic.IList&lt;string&gt; communities, string id = null, string provisioningState = null, string name = null, string location = null, string etag = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.Management.Network.Fluent.Models.Access access, class System.Collections.Generic.IList`1&lt;string&gt; communities, string id, string provisioningState, string name, string location, string etag) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.Models.RouteFilterRuleInner.#ctor(Microsoft.Azure.Management.Network.Fluent.Models.Access,System.Collections.Generic.IList{System.String},System.String,System.String,System.String,System.String,System.String)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Network.Fluent.Models.RouteFilterRuleInner : Microsoft.Azure.Management.Network.Fluent.Models.Access * System.Collections.Generic.IList&lt;string&gt; * string * string * string * string * string -&gt; Microsoft.Azure.Management.Network.Fluent.Models.RouteFilterRuleInner" Usage="new Microsoft.Azure.Management.Network.Fluent.Models.RouteFilterRuleInner (access, communities, id, provisioningState, name, location, etag)" />
+      <MemberSignature Language="C#" Value="public RouteFilterRuleInner (Microsoft.Azure.Management.Network.Fluent.Models.Access access, System.Collections.Generic.IList&lt;string&gt; communities, string id = default, Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState provisioningState = default, string name = default, string location = default, string etag = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.Management.Network.Fluent.Models.Access access, class System.Collections.Generic.IList`1&lt;string&gt; communities, string id, class Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState provisioningState, string name, string location, string etag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.Models.RouteFilterRuleInner.#ctor(Microsoft.Azure.Management.Network.Fluent.Models.Access,System.Collections.Generic.IList{System.String},System.String,Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState,System.String,System.String,System.String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Network.Fluent.Models.RouteFilterRuleInner : Microsoft.Azure.Management.Network.Fluent.Models.Access * System.Collections.Generic.IList&lt;string&gt; * string * Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState * string * string * string -&gt; Microsoft.Azure.Management.Network.Fluent.Models.RouteFilterRuleInner" Usage="new Microsoft.Azure.Management.Network.Fluent.Models.RouteFilterRuleInner (access, communities, id, provisioningState, name, location, etag)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="access" Type="Microsoft.Azure.Management.Network.Fluent.Models.Access" />
         <Parameter Name="communities" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
         <Parameter Name="id" Type="System.String" />
-        <Parameter Name="provisioningState" Type="System.String" />
+        <Parameter Name="provisioningState" Type="Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState" />
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="location" Type="System.String" />
         <Parameter Name="etag" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="access">The access type of the rule. Valid values are:
-            'Allow', 'Deny'. Possible values include: 'Allow', 'Deny'</param>
+        <param name="access">The access type of the rule. Possible values
+            include: 'Allow', 'Deny'</param>
         <param name="communities">The collection for bgp community values
-            to filter on. e.g. ['12076:5010','12076:5020']</param>
+            to filter on. e.g. ['12076:5010','12076:5020'].</param>
         <param name="id">To be added.</param>
-        <param name="provisioningState">The provisioning state of the
-            resource. Possible values are: 'Updating', 'Deleting', 'Succeeded'
-            and 'Failed'.</param>
+        <param name="provisioningState">The provisioning state of the route
+            filter rule resource. Possible values include: 'Succeeded',
+            'Updating', 'Deleting', 'Failed'</param>
         <param name="name">The name of the resource that is unique within a
             resource group. This name can be used to access the
             resource.</param>
@@ -91,7 +98,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -103,8 +113,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the access type of the rule. Valid values are:
-            'Allow', 'Deny'. Possible values include: 'Allow', 'Deny'
+            Gets or sets the access type of the rule. Possible values include:
+            'Allow', 'Deny'
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -119,7 +129,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -132,7 +145,7 @@
       <Docs>
         <summary>
             Gets or sets the collection for bgp community values to filter on.
-            e.g. ['12076:5010','12076:5020']
+            e.g. ['12076:5010','12076:5020'].
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -147,7 +160,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -175,7 +191,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -202,7 +221,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -222,15 +244,18 @@
       </Docs>
     </Member>
     <Member MemberName="ProvisioningState">
-      <MemberSignature Language="C#" Value="public string ProvisioningState { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string ProvisioningState" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState ProvisioningState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState ProvisioningState" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Fluent.Models.RouteFilterRuleInner.ProvisioningState" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProvisioningState As String" />
-      <MemberSignature Language="F#" Value="member this.ProvisioningState : string" Usage="Microsoft.Azure.Management.Network.Fluent.Models.RouteFilterRuleInner.ProvisioningState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProvisioningState As ProvisioningState" />
+      <MemberSignature Language="F#" Value="member this.ProvisioningState : Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState" Usage="Microsoft.Azure.Management.Network.Fluent.Models.RouteFilterRuleInner.ProvisioningState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -238,12 +263,13 @@
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets the provisioning state of the resource. Possible values are:
-            'Updating', 'Deleting', 'Succeeded' and 'Failed'.
+            Gets the provisioning state of the route filter rule resource.
+            Possible values include: 'Succeeded', 'Updating', 'Deleting',
+            'Failed'
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -258,7 +284,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -270,7 +299,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            The rule type of the rule. Valid value is: 'Community'
+            The rule type of the rule.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -285,7 +314,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

@@ -1,4 +1,4 @@
-﻿<Type Name="MetricAggregate" FullName="Microsoft.ApplicationInsights.Metrics.MetricAggregate">
+<Type Name="MetricAggregate" FullName="Microsoft.ApplicationInsights.Metrics.MetricAggregate">
   <TypeSignature Language="C#" Value="public class MetricAggregate" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MetricAggregate extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.ApplicationInsights.Metrics.MetricAggregate" />
@@ -6,14 +6,18 @@
   <TypeSignature Language="F#" Value="type MetricAggregate = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-    <AssemblyVersion>2.10.0.0</AssemblyVersion>
+    <AssemblyVersion>2.11.0.0</AssemblyVersion>
+    <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+    <AssemblyVersion>2.12.1.36699</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>@ToDo: Complete documentation before stable release. {406}</summary>
+    <summary>Holds the metric aggregation results of a particular metric data series over an aggregation time period.
+            The specific data fields on instanced of this class are not strongly typed (property bag) which allows using this
+            aggregate type for aggregates of any aggregation kind.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +30,9 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="metricNamespace" Type="System.String" />
@@ -34,10 +40,10 @@
         <Parameter Name="aggregationKindMoniker" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="metricNamespace">@ToDo: Complete documentation before stable release. {704}</param>
-        <param name="metricId">@ToDo: Complete documentation before stable release. {274}</param>
-        <param name="aggregationKindMoniker">@ToDo: Complete documentation before stable release. {781}</param>
-        <summary>@ToDo: Complete documentation before stable release. {394}</summary>
+        <param name="metricNamespace">The namespace of the metric that produces this aggregate.</param>
+        <param name="metricId">The id (name) of the metric that produced this aggregate.</param>
+        <param name="aggregationKindMoniker">A moniker defining the kind of the aggregation used for the respective metric.</param>
+        <summary>Ceates a new metric aggregate.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,13 +56,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets @ToDo: Complete documentation before stable release. {959}</summary>
+        <summary>Gets the moniker defining the kind of the aggregation used for the respective metric.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -70,13 +78,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets @ToDo: Complete documentation before stable release. {309}</summary>
+        <summary>Gets or sets the length of the aggregation period summarized by this aggregate.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,13 +100,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets @ToDo: Complete documentation before stable release. {050}</summary>
+        <summary>Gets or sets the start of the aggregation period summarized by this aggregate.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -110,13 +122,18 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets @ToDo: Complete documentation before stable release. {034}</summary>
+        <summary>Gets the property bag that contains the actual aggregate data.
+            For example, if the aggregate was produced for a metric of the aggregation kind Measurement,
+            the look-up key for this property bag are accessible via
+            <see cref="T:Microsoft.ApplicationInsights.Metrics.MetricSeriesConfigurationForMeasurement.Constants.AggregateKindDataKeys" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -130,13 +147,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets @ToDo: Complete documentation before stable release. {840}</summary>
+        <summary>Gets get table of dimension name-values that specify the data series that produced this agregate within the overall metric.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -150,7 +169,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -170,7 +191,7 @@
             This is a convenience method to retrieve the object at <c>Data[dataKey]</c>.
             It attempts to convert that object to the specified type <c>T</c>. If the conversion fails, the specified <c>defaultValue</c> is returned.
             </summary>
-        <returns>@ToDo: Complete documentation before stable release. {843}</returns>
+        <returns>This aggregate's component object available at <c>Data[dataKey]</c>.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,13 +204,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets @ToDo: Complete documentation before stable release. {848}</summary>
+        <summary>Gets the id (name) of the metric that produced this aggregate.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -203,13 +226,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.10.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets @ToDo: Complete documentation before stable release. {747}</summary>
+        <summary>Gets the namespace of the metric that produces this aggregate.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

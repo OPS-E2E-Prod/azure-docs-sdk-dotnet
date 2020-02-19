@@ -1,4 +1,4 @@
-﻿<Type Name="ISubscriptionClient" FullName="Microsoft.Azure.ServiceBus.ISubscriptionClient">
+<Type Name="ISubscriptionClient" FullName="Microsoft.Azure.ServiceBus.ISubscriptionClient">
   <TypeSignature Language="C#" Value="public interface ISubscriptionClient : Microsoft.Azure.ServiceBus.Core.IReceiverClient" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISubscriptionClient implements class Microsoft.Azure.ServiceBus.Core.IReceiverClient, class Microsoft.Azure.ServiceBus.IClientEntity" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.ServiceBus.ISubscriptionClient" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type ISubscriptionClient = interface&#xA;    interface IReceiverClient&#xA;    interface IClientEntity" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-    <AssemblyVersion>3.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -17,40 +17,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>
-             SubscriptionClient can be used for all basic interactions with a Service Bus Subscription.
-             </summary>
-    <remarks>Use <see cref="T:Microsoft.Azure.ServiceBus.Core.MessageReceiver" /> for advanced set of functionality.</remarks>
-    <example>
-             Create a new SubscriptionClient
-             <code>
-             ISubscriptionClient subscriptionClient = new SubscriptionClient(
-                 namespaceConnectionString,
-                 topicName,
-                 subscriptionName,
-                 ReceiveMode.PeekLock,
-                 RetryExponential);
-             </code>
-            
-             Register a message handler which will be invoked every time a message is received.
-             <code>
-             subscriptionClient.RegisterMessageHandler(
-                    async (message, token) =&gt;
-                    {
-                        // Process the message
-                        Console.WriteLine($"Received message: SequenceNumber:{message.SystemProperties.SequenceNumber} Body:{Encoding.UTF8.GetString(message.Body)}");
-            
-                        // Complete the message so that it is not received again.
-                        // This can be done only if the subscriptionClient is opened in ReceiveMode.PeekLock mode.
-                        await subscriptionClient.CompleteAsync(message.SystemProperties.LockToken);
-                    },
-                    async (exceptionEvent) =&gt;
-                    {
-                        // Process the exception
-                        Console.WriteLine("Exception = " + exceptionEvent.Exception);
-                        return Task.CompletedTask;
-                    });
-             </code></example>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AddRuleAsync">
@@ -62,7 +30,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -71,17 +39,10 @@
         <Parameter Name="description" Type="Microsoft.Azure.ServiceBus.RuleDescription" />
       </Parameters>
       <Docs>
-        <param name="description">The rule description that provides the rule to add.</param>
-        <summary>
-            Adds a rule to the current subscription to filter the messages reaching from topic to the subscription.
-            </summary>
-        <returns>A task instance that represents the asynchronous add rule operation.</returns>
-        <remarks>
-            You can add rules to the subscription that will decide filter which messages from the topic should reach the subscription.
-            A default <see cref="T:Microsoft.Azure.ServiceBus.TrueFilter" /> rule named <see cref="F:Microsoft.Azure.ServiceBus.RuleDescription.DefaultRuleName" /> is always added while creation of the Subscription.
-            You can add multiple rules with distinct names to the same subscription.
-            Multiple filters combine with each other using logical OR condition. i.e., If any filter succeeds, the message is passed on to the subscription.
-            </remarks>
+        <param name="description">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddRuleAsync">
@@ -92,7 +53,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -103,17 +64,10 @@
       </Parameters>
       <Docs>
         <param name="ruleName">To be added.</param>
-        <param name="filter">The filter expression against which messages will be matched.</param>
-        <summary>
-            Adds a rule to the current subscription to filter the messages reaching from topic to the subscription.
-            </summary>
-        <returns>A task instance that represents the asynchronous add rule operation.</returns>
-        <remarks>
-            You can add rules to the subscription that will decide filter which messages from the topic should reach the subscription.
-            A default <see cref="T:Microsoft.Azure.ServiceBus.TrueFilter" /> rule named <see cref="F:Microsoft.Azure.ServiceBus.RuleDescription.DefaultRuleName" /> is always added while creation of the Subscription.
-            You can add multiple rules with distinct names to the same subscription.
-            Multiple filters combine with each other using logical OR condition. i.e., If any filter succeeds, the message is passed on to the subscription.
-            </remarks>
+        <param name="filter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRulesAsync">
@@ -125,16 +79,14 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.ServiceBus.RuleDescription&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-            Get all rules associated with the subscription.
-            </summary>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -147,7 +99,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -157,14 +109,10 @@
         <Parameter Name="sessionHandlerOptions" Type="Microsoft.Azure.ServiceBus.SessionHandlerOptions" />
       </Parameters>
       <Docs>
-        <param name="handler">A <see cref="T:System.Func`4" /> that processes messages.
-            <see cref="T:Microsoft.Azure.ServiceBus.IMessageSession" /> contains the session information, and must be used to perform Complete/Abandon/Deadletter or other such operations on the <see cref="T:Microsoft.Azure.ServiceBus.Message" /></param>
-        <param name="sessionHandlerOptions">Options used to configure the settings of the session pump.</param>
-        <summary>
-            Receive session messages continuously from the subscription. Registers a message handler and begins a new thread to receive session-messages.
-            This handler(<see cref="T:System.Func`4" />) is awaited on every time a new message is received by the subscription client.
-            </summary>
-        <remarks>Enable prefetch to speed up the receive rate. </remarks>
+        <param name="handler">To be added.</param>
+        <param name="sessionHandlerOptions">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RegisterSessionHandler">
@@ -176,7 +124,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -186,16 +134,10 @@
         <Parameter Name="exceptionReceivedHandler" Type="System.Func&lt;Microsoft.Azure.ServiceBus.ExceptionReceivedEventArgs,System.Threading.Tasks.Task&gt;" />
       </Parameters>
       <Docs>
-        <param name="handler">A <see cref="T:System.Func`4" /> that processes messages.
-            <see cref="T:Microsoft.Azure.ServiceBus.IMessageSession" /> contains the session information, and must be used to perform Complete/Abandon/Deadletter or other such operations on the <see cref="T:Microsoft.Azure.ServiceBus.Message" /></param>
-        <param name="exceptionReceivedHandler">A <see cref="T:System.Func`2" /> that is invoked during exceptions.
-            <see cref="T:Microsoft.Azure.ServiceBus.ExceptionReceivedEventArgs" /> contains contextual information regarding the exception.</param>
-        <summary>
-            Receive session messages continuously from the subscription. Registers a message handler and begins a new thread to receive session-messages.
-            This handler(<see cref="T:System.Func`4" />) is awaited on every time a new message is received by the subscription client.
-            </summary>
-        <remarks>Enable prefetch to speed up the receive rate.
-            Use <see cref="M:Microsoft.Azure.ServiceBus.ISubscriptionClient.RegisterSessionHandler(System.Func{Microsoft.Azure.ServiceBus.IMessageSession,Microsoft.Azure.ServiceBus.Message,System.Threading.CancellationToken,System.Threading.Tasks.Task},Microsoft.Azure.ServiceBus.SessionHandlerOptions)" /> to configure the settings of the pump.</remarks>
+        <param name="handler">To be added.</param>
+        <param name="exceptionReceivedHandler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveRuleAsync">
@@ -207,7 +149,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -217,10 +159,8 @@
       </Parameters>
       <Docs>
         <param name="ruleName">To be added.</param>
-        <summary>
-            Removes the rule on the subscription identified by <paramref name="ruleName" />.
-            </summary>
-        <returns>A task instance that represents the asynchronous remove rule operation.</returns>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -233,15 +173,13 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Gets the name of subscription.
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -255,15 +193,13 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Gets the path of the topic, for this subscription.
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

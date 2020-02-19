@@ -1,4 +1,4 @@
-﻿<Type Name="CloudBlobDirectory" FullName="Microsoft.Azure.Storage.Blob.CloudBlobDirectory">
+<Type Name="CloudBlobDirectory" FullName="Microsoft.Azure.Storage.Blob.CloudBlobDirectory">
   <TypeSignature Language="C#" Value="public class CloudBlobDirectory : Microsoft.Azure.Storage.Blob.IListBlobItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CloudBlobDirectory extends System.Object implements class Microsoft.Azure.Storage.Blob.IListBlobItem" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Storage.Blob.CloudBlobDirectory" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type CloudBlobDirectory = class&#xA;    interface IListBlobItem" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-    <AssemblyVersion>10.0.3.0</AssemblyVersion>
+    <AssemblyVersion>11.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -17,8 +17,10 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>
+            Represents a virtual directory of blobs, designated by a delimiter character.
+            </summary>
+    <remarks>Containers, which are encapsulated as <see cref="T:Microsoft.Azure.Storage.Blob.CloudBlobContainer" /> objects, hold directories, and directories hold block blobs and page blobs. Directories can also contain sub-directories.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -29,11 +31,13 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Public constructor for mock unit testing.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,7 +50,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -62,11 +66,14 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="currentToken">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="currentToken">A continuation token returned by a previous listing operation.</param>
+        <param name="callback">An <see cref="T:System.AsyncCallback" /> delegate that will receive notification when the asynchronous operation completes.</param>
+        <param name="state">A user-defined object that will be passed to the callback delegate.</param>
+        <summary>
+            Begins an asynchronous operation to return a result segment containing a collection of blob items 
+            in the virtual directory.
+            </summary>
+        <returns>An <see cref="T:Microsoft.Azure.Storage.ICancellableAsyncResult" /> that references the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,7 +85,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -99,16 +106,20 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="useFlatBlobListing">To be added.</param>
-        <param name="blobListingDetails">To be added.</param>
-        <param name="maxResults">To be added.</param>
-        <param name="currentToken">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="operationContext">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="useFlatBlobListing">A boolean value that specifies whether to list blobs in a flat listing, or whether to list blobs hierarchically, by virtual directory.</param>
+        <param name="blobListingDetails">A <see cref="T:Microsoft.Azure.Storage.Blob.BlobListingDetails" /> enumeration describing which items to include in the listing.</param>
+        <param name="maxResults">A non-negative integer value that indicates the maximum number of results to be returned at a time, up to the 
+            per-operation limit of 5000. If this value is <c>null</c>, the maximum possible number of results will be returned, up to 5000.</param>
+        <param name="currentToken">A continuation token returned by a previous listing operation.</param>
+        <param name="options">A <see cref="T:Microsoft.Azure.Storage.Blob.BlobRequestOptions" /> object that specifies additional options for the request.</param>
+        <param name="operationContext">An <see cref="T:Microsoft.Azure.Storage.OperationContext" /> object that represents the context for the current operation.</param>
+        <param name="callback">An <see cref="T:System.AsyncCallback" /> delegate that will receive notification when the asynchronous operation completes.</param>
+        <param name="state">A user-defined object that will be passed to the callback delegate.</param>
+        <summary>
+            Begins an asynchronous operation to return a result segment containing a collection of blob items 
+            in the virtual directory.
+            </summary>
+        <returns>An <see cref="T:Microsoft.Azure.Storage.ICancellableAsyncResult" /> that references the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,14 +132,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Blob.CloudBlobContainer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the container for the virtual directory.
+            </summary>
+        <value>A <see cref="T:Microsoft.Azure.Storage.Blob.CloudBlobContainer" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,7 +154,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Blob.BlobResultSegment</ReturnType>
@@ -150,9 +163,12 @@
         <Parameter Name="asyncResult" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="asyncResult">An <see cref="T:System.IAsyncResult" /> that references the pending asynchronous operation.</param>
+        <summary>
+            Ends an asynchronous operation to return a result segment containing a collection of blob items 
+            in the virtual directory.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Azure.Storage.Blob.BlobResultSegment" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,7 +181,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Blob.CloudAppendBlob</ReturnType>
@@ -174,9 +190,11 @@
         <Parameter Name="blobName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="blobName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="blobName">A string containing the name of the blob.</param>
+        <summary>
+            Gets a reference to an append blob in this virtual directory.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Azure.Storage.Blob.CloudAppendBlob" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -189,7 +207,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Blob.CloudAppendBlob</ReturnType>
@@ -199,10 +217,12 @@
         <Parameter Name="snapshotTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
       </Parameters>
       <Docs>
-        <param name="blobName">To be added.</param>
-        <param name="snapshotTime">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="blobName">A string containing the name of the blob.</param>
+        <param name="snapshotTime">A <see cref="T:System.DateTimeOffset" /> specifying the snapshot timestamp, if the blob is a snapshot.</param>
+        <summary>
+            Gets a reference to an append blob in this virtual directory.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Azure.Storage.Blob.CloudAppendBlob" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,7 +235,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Blob.CloudBlob</ReturnType>
@@ -224,9 +244,11 @@
         <Parameter Name="blobName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="blobName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="blobName">A string containing the name of the blob.</param>
+        <summary>
+            Gets a reference to a blob in this virtual directory.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Azure.Storage.Blob.CloudBlob" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -239,7 +261,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Blob.CloudBlob</ReturnType>
@@ -249,10 +271,12 @@
         <Parameter Name="snapshotTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
       </Parameters>
       <Docs>
-        <param name="blobName">To be added.</param>
-        <param name="snapshotTime">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="blobName">A string containing the name of the blob.</param>
+        <param name="snapshotTime">A <see cref="T:System.DateTimeOffset" /> specifying the snapshot timestamp, if the blob is a snapshot.</param>
+        <summary>
+            Gets a reference to a blob in this virtual directory.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Azure.Storage.Blob.CloudBlob" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -265,7 +289,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Blob.CloudBlockBlob</ReturnType>
@@ -274,9 +298,11 @@
         <Parameter Name="blobName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="blobName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="blobName">A string containing the name of the blob.</param>
+        <summary>
+            Gets a reference to a block blob in this virtual directory.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Azure.Storage.Blob.CloudBlockBlob" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -289,7 +315,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Blob.CloudBlockBlob</ReturnType>
@@ -299,10 +325,12 @@
         <Parameter Name="snapshotTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
       </Parameters>
       <Docs>
-        <param name="blobName">To be added.</param>
-        <param name="snapshotTime">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="blobName">A string containing the name of the blob.</param>
+        <param name="snapshotTime">A <see cref="T:System.DateTimeOffset" /> specifying the snapshot timestamp, if the blob is a snapshot.</param>
+        <summary>
+            Gets a reference to a block blob in this virtual directory.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Azure.Storage.Blob.CloudBlockBlob" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -315,7 +343,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Blob.CloudBlobDirectory</ReturnType>
@@ -324,9 +352,11 @@
         <Parameter Name="itemName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="itemName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="itemName">The name of the virtual subdirectory.</param>
+        <summary>
+            Returns a virtual subdirectory within this virtual directory.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Azure.Storage.Blob.CloudBlobDirectory" /> object representing the virtual subdirectory.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -339,7 +369,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Blob.CloudPageBlob</ReturnType>
@@ -348,9 +378,11 @@
         <Parameter Name="blobName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="blobName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="blobName">A string containing the name of the blob.</param>
+        <summary>
+            Gets a reference to a page blob in this virtual directory.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Azure.Storage.Blob.CloudPageBlob" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -363,7 +395,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Blob.CloudPageBlob</ReturnType>
@@ -373,22 +405,24 @@
         <Parameter Name="snapshotTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
       </Parameters>
       <Docs>
-        <param name="blobName">To be added.</param>
-        <param name="snapshotTime">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="blobName">The name of the page blob.</param>
+        <param name="snapshotTime">A <see cref="T:System.DateTimeOffset" /> specifying the snapshot timestamp, if the blob is a snapshot.</param>
+        <summary>
+            Returns a reference to a page blob in this virtual directory.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Azure.Storage.Blob.CloudPageBlob" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ListBlobs">
-      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Storage.Blob.IListBlobItem&gt; ListBlobs (bool useFlatBlobListing = false, Microsoft.Azure.Storage.Blob.BlobListingDetails blobListingDetails = Microsoft.Azure.Storage.Blob.BlobListingDetails.None, Microsoft.Azure.Storage.Blob.BlobRequestOptions options = null, Microsoft.Azure.Storage.OperationContext operationContext = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Storage.Blob.IListBlobItem&gt; ListBlobs (bool useFlatBlobListing = false, Microsoft.Azure.Storage.Blob.BlobListingDetails blobListingDetails = Microsoft.Azure.Storage.Blob.BlobListingDetails.None, Microsoft.Azure.Storage.Blob.BlobRequestOptions options = default, Microsoft.Azure.Storage.OperationContext operationContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Storage.Blob.IListBlobItem&gt; ListBlobs(bool useFlatBlobListing, valuetype Microsoft.Azure.Storage.Blob.BlobListingDetails blobListingDetails, class Microsoft.Azure.Storage.Blob.BlobRequestOptions options, class Microsoft.Azure.Storage.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Storage.Blob.CloudBlobDirectory.ListBlobs(System.Boolean,Microsoft.Azure.Storage.Blob.BlobListingDetails,Microsoft.Azure.Storage.Blob.BlobRequestOptions,Microsoft.Azure.Storage.OperationContext)" />
       <MemberSignature Language="F#" Value="abstract member ListBlobs : bool * Microsoft.Azure.Storage.Blob.BlobListingDetails * Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; seq&lt;Microsoft.Azure.Storage.Blob.IListBlobItem&gt;&#xA;override this.ListBlobs : bool * Microsoft.Azure.Storage.Blob.BlobListingDetails * Microsoft.Azure.Storage.Blob.BlobRequestOptions * Microsoft.Azure.Storage.OperationContext -&gt; seq&lt;Microsoft.Azure.Storage.Blob.IListBlobItem&gt;" Usage="cloudBlobDirectory.ListBlobs (useFlatBlobListing, blobListingDetails, options, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -405,12 +439,14 @@
         <Parameter Name="operationContext" Type="Microsoft.Azure.Storage.OperationContext" />
       </Parameters>
       <Docs>
-        <param name="useFlatBlobListing">To be added.</param>
-        <param name="blobListingDetails">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="operationContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="useFlatBlobListing">A boolean value that specifies whether to list blobs in a flat listing, or whether to list blobs hierarchically, by virtual directory.</param>
+        <param name="blobListingDetails">A <see cref="T:Microsoft.Azure.Storage.Blob.BlobListingDetails" /> enumeration describing which items to include in the listing.</param>
+        <param name="options">A <see cref="T:Microsoft.Azure.Storage.Blob.BlobRequestOptions" /> object that specifies additional options for the request. If <c>null</c>, default options are applied to the request.</param>
+        <param name="operationContext">An <see cref="T:Microsoft.Azure.Storage.OperationContext" /> object that represents the context for the current operation.</param>
+        <summary>
+            Returns an enumerable collection of the blobs in the virtual directory that are retrieved lazily.
+            </summary>
+        <returns>An enumerable collection of objects that implement <see cref="T:Microsoft.Azure.Storage.Blob.IListBlobItem" /> and are retrieved lazily.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -423,7 +459,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -437,9 +473,12 @@
         <Parameter Name="currentToken" Type="Microsoft.Azure.Storage.Blob.BlobContinuationToken" />
       </Parameters>
       <Docs>
-        <param name="currentToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="currentToken">A <see cref="T:Microsoft.Azure.Storage.Blob.BlobContinuationToken" /> object returned by a previous listing operation.</param>
+        <summary>
+            Returns a result segment containing a collection of blob items 
+            in the virtual directory.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Azure.Storage.Blob.BlobResultSegment" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -451,7 +490,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -470,14 +509,18 @@
         <Parameter Name="operationContext" Type="Microsoft.Azure.Storage.OperationContext" />
       </Parameters>
       <Docs>
-        <param name="useFlatBlobListing">To be added.</param>
-        <param name="blobListingDetails">To be added.</param>
-        <param name="maxResults">To be added.</param>
-        <param name="currentToken">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="operationContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="useFlatBlobListing">A boolean value that specifies whether to list blobs in a flat listing, or whether to list blobs hierarchically, by virtual directory.</param>
+        <param name="blobListingDetails">A <see cref="T:Microsoft.Azure.Storage.Blob.BlobListingDetails" /> enumeration describing which items to include in the listing.</param>
+        <param name="maxResults">A non-negative integer value that indicates the maximum number of results to be returned at a time, up to the 
+            per-operation limit of 5000. If this value is <c>null</c>, the maximum possible number of results will be returned, up to 5000.</param>
+        <param name="currentToken">A continuation token returned by a previous listing operation.</param>
+        <param name="options">A <see cref="T:Microsoft.Azure.Storage.Blob.BlobRequestOptions" /> object that specifies additional options for the request.</param>
+        <param name="operationContext">An <see cref="T:Microsoft.Azure.Storage.OperationContext" /> object that represents the context for the current operation.</param>
+        <summary>
+            Returns a result segment containing a collection of blob items 
+            in the virtual directory.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Azure.Storage.Blob.BlobResultSegment" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -490,7 +533,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -504,9 +547,12 @@
         <Parameter Name="currentToken" Type="Microsoft.Azure.Storage.Blob.BlobContinuationToken" />
       </Parameters>
       <Docs>
-        <param name="currentToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="currentToken">A continuation token returned by a previous listing operation.</param>
+        <summary>
+            Initiates an asynchronous operation to return a result segment containing a collection of blob items 
+            in the virtual directory.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> object of type <see cref="T:Microsoft.Azure.Storage.Blob.BlobResultSegment" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -518,7 +564,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -533,10 +579,13 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="currentToken">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="currentToken">A continuation token returned by a previous listing operation.</param>
+        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> to observe while waiting for a task to complete.</param>
+        <summary>
+            Initiates an asynchronous operation to return a result segment containing a collection of blob items 
+            in the virtual directory.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> object of type <see cref="T:Microsoft.Azure.Storage.Blob.BlobResultSegment" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -548,7 +597,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -567,14 +616,18 @@
         <Parameter Name="operationContext" Type="Microsoft.Azure.Storage.OperationContext" />
       </Parameters>
       <Docs>
-        <param name="useFlatBlobListing">To be added.</param>
-        <param name="blobListingDetails">To be added.</param>
-        <param name="maxResults">To be added.</param>
-        <param name="currentToken">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="operationContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="useFlatBlobListing">A boolean value that specifies whether to list blobs in a flat listing, or whether to list blobs hierarchically, by virtual directory.</param>
+        <param name="blobListingDetails">A <see cref="T:Microsoft.Azure.Storage.Blob.BlobListingDetails" /> enumeration describing which items to include in the listing.</param>
+        <param name="maxResults">A non-negative integer value that indicates the maximum number of results to be returned at a time, up to the 
+            per-operation limit of 5000. If this value is <c>null</c>, the maximum possible number of results will be returned, up to 5000.</param>
+        <param name="currentToken">A continuation token returned by a previous listing operation.</param>
+        <param name="options">A <see cref="T:Microsoft.Azure.Storage.Blob.BlobRequestOptions" /> object that specifies additional options for the request.</param>
+        <param name="operationContext">An <see cref="T:Microsoft.Azure.Storage.OperationContext" /> object that represents the context for the current operation.</param>
+        <summary>
+            Initiates an asynchronous operation to return a result segment containing a collection of blob items 
+            in the virtual directory.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> object of type <see cref="T:Microsoft.Azure.Storage.Blob.BlobResultSegment" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -586,7 +639,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -606,15 +659,19 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="useFlatBlobListing">To be added.</param>
-        <param name="blobListingDetails">To be added.</param>
-        <param name="maxResults">To be added.</param>
-        <param name="currentToken">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="operationContext">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="useFlatBlobListing">A boolean value that specifies whether to list blobs in a flat listing, or whether to list blobs hierarchically, by virtual directory.</param>
+        <param name="blobListingDetails">A <see cref="T:Microsoft.Azure.Storage.Blob.BlobListingDetails" /> enumeration describing which items to include in the listing.</param>
+        <param name="maxResults">A non-negative integer value that indicates the maximum number of results to be returned at a time, up to the 
+            per-operation limit of 5000. If this value is <c>null</c>, the maximum possible number of results will be returned, up to 5000.</param>
+        <param name="currentToken">A continuation token returned by a previous listing operation.</param>
+        <param name="options">A <see cref="T:Microsoft.Azure.Storage.Blob.BlobRequestOptions" /> object that specifies additional options for the request.</param>
+        <param name="operationContext">An <see cref="T:Microsoft.Azure.Storage.OperationContext" /> object that represents the context for the current operation.</param>
+        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> to observe while waiting for a task to complete.</param>
+        <summary>
+            Initiates an asynchronous operation to return a result segment containing a collection of blob items 
+            in the virtual directory.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> object of type <see cref="T:Microsoft.Azure.Storage.Blob.BlobResultSegment" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -630,14 +687,16 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Blob.CloudBlobDirectory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the parent directory for the virtual directory.
+            </summary>
+        <value>A <see cref="T:Microsoft.Azure.Storage.Blob.CloudBlobDirectory" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -650,14 +709,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the prefix.
+            </summary>
+        <value>A string containing the prefix.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -670,14 +731,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.Blob.CloudBlobClient</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the Blob service client for the virtual directory.
+            </summary>
+        <value>A <see cref="T:Microsoft.Azure.Storage.Blob.CloudBlobClient" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -690,14 +753,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Storage.StorageUri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the blob directory's URIs for both the primary and secondary locations.
+            </summary>
+        <value>An object of type <see cref="P:Microsoft.Azure.Storage.Blob.CloudBlobDirectory.StorageUri" /> containing the blob directory's URIs for both the primary and secondary locations.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -713,14 +778,16 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Blob</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the URI that identifies the virtual directory for the primary location.
+            </summary>
+        <value>A <see cref="T:System.Uri" /> containing the URI to the virtual directory, at the primary location.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

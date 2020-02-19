@@ -1,4 +1,4 @@
-﻿<Type Name="IAccountOperations" FullName="Microsoft.Azure.Batch.Protocol.IAccountOperations">
+<Type Name="IAccountOperations" FullName="Microsoft.Azure.Batch.Protocol.IAccountOperations">
   <TypeSignature Language="C#" Value="public interface IAccountOperations" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAccountOperations" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.Protocol.IAccountOperations" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type IAccountOperations = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -17,14 +17,14 @@
   </Docs>
   <Members>
     <Member MemberName="ListPoolNodeCountsNextWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Batch.Protocol.Models.PoolNodeCounts&gt;,Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsHeaders&gt;&gt; ListPoolNodeCountsNextWithHttpMessagesAsync (string nextPageLink, Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsNextOptions accountListPoolNodeCountsNextOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Batch.Protocol.Models.PoolNodeCounts&gt;,Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsHeaders&gt;&gt; ListPoolNodeCountsNextWithHttpMessagesAsync (string nextPageLink, Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsNextOptions accountListPoolNodeCountsNextOptions = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`2&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Batch.Protocol.Models.PoolNodeCounts&gt;, class Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsHeaders&gt;&gt; ListPoolNodeCountsNextWithHttpMessagesAsync(string nextPageLink, class Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsNextOptions accountListPoolNodeCountsNextOptions, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.IAccountOperations.ListPoolNodeCountsNextWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsNextOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member ListPoolNodeCountsNextWithHttpMessagesAsync : string * Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsNextOptions * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Batch.Protocol.Models.PoolNodeCounts&gt;, Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsHeaders&gt;&gt;" Usage="iAccountOperations.ListPoolNodeCountsNextWithHttpMessagesAsync (nextPageLink, accountListPoolNodeCountsNextOptions, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Batch.Protocol.Models.PoolNodeCounts&gt;,Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsHeaders&gt;&gt;</ReturnType>
@@ -49,7 +49,7 @@
             The cancellation token.
             </param>
         <summary>
-            Gets the number of nodes in each state, grouped by pool.
+            Gets the number of Compute Nodes in each state, grouped by Pool.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -65,14 +65,14 @@
       </Docs>
     </Member>
     <Member MemberName="ListPoolNodeCountsWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Batch.Protocol.Models.PoolNodeCounts&gt;,Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsHeaders&gt;&gt; ListPoolNodeCountsWithHttpMessagesAsync (Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsOptions accountListPoolNodeCountsOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Batch.Protocol.Models.PoolNodeCounts&gt;,Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsHeaders&gt;&gt; ListPoolNodeCountsWithHttpMessagesAsync (Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsOptions accountListPoolNodeCountsOptions = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`2&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Batch.Protocol.Models.PoolNodeCounts&gt;, class Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsHeaders&gt;&gt; ListPoolNodeCountsWithHttpMessagesAsync(class Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsOptions accountListPoolNodeCountsOptions, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.IAccountOperations.ListPoolNodeCountsWithHttpMessagesAsync(Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member ListPoolNodeCountsWithHttpMessagesAsync : Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsOptions * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Batch.Protocol.Models.PoolNodeCounts&gt;, Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsHeaders&gt;&gt;" Usage="iAccountOperations.ListPoolNodeCountsWithHttpMessagesAsync (accountListPoolNodeCountsOptions, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Batch.Protocol.Models.PoolNodeCounts&gt;,Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsHeaders&gt;&gt;</ReturnType>
@@ -93,7 +93,7 @@
             The cancellation token.
             </param>
         <summary>
-            Gets the number of nodes in each state, grouped by pool.
+            Gets the number of Compute Nodes in each state, grouped by Pool.
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -109,14 +109,14 @@
       </Docs>
     </Member>
     <Member MemberName="ListSupportedImagesNextWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Batch.Protocol.Models.ImageInformation&gt;,Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesHeaders&gt;&gt; ListSupportedImagesNextWithHttpMessagesAsync (string nextPageLink, Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesNextOptions accountListSupportedImagesNextOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Batch.Protocol.Models.ImageInformation&gt;,Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesHeaders&gt;&gt; ListSupportedImagesNextWithHttpMessagesAsync (string nextPageLink, Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesNextOptions accountListSupportedImagesNextOptions = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`2&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Batch.Protocol.Models.ImageInformation&gt;, class Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesHeaders&gt;&gt; ListSupportedImagesNextWithHttpMessagesAsync(string nextPageLink, class Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesNextOptions accountListSupportedImagesNextOptions, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.IAccountOperations.ListSupportedImagesNextWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesNextOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member ListSupportedImagesNextWithHttpMessagesAsync : string * Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesNextOptions * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Batch.Protocol.Models.ImageInformation&gt;, Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesHeaders&gt;&gt;" Usage="iAccountOperations.ListSupportedImagesNextWithHttpMessagesAsync (nextPageLink, accountListSupportedImagesNextOptions, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Batch.Protocol.Models.ImageInformation&gt;,Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesHeaders&gt;&gt;</ReturnType>
@@ -158,14 +158,14 @@
       </Docs>
     </Member>
     <Member MemberName="ListSupportedImagesWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Batch.Protocol.Models.ImageInformation&gt;,Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesHeaders&gt;&gt; ListSupportedImagesWithHttpMessagesAsync (Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesOptions accountListSupportedImagesOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Batch.Protocol.Models.ImageInformation&gt;,Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesHeaders&gt;&gt; ListSupportedImagesWithHttpMessagesAsync (Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesOptions accountListSupportedImagesOptions = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`2&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Batch.Protocol.Models.ImageInformation&gt;, class Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesHeaders&gt;&gt; ListSupportedImagesWithHttpMessagesAsync(class Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesOptions accountListSupportedImagesOptions, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.IAccountOperations.ListSupportedImagesWithHttpMessagesAsync(Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member ListSupportedImagesWithHttpMessagesAsync : Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesOptions * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Batch.Protocol.Models.ImageInformation&gt;, Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesHeaders&gt;&gt;" Usage="iAccountOperations.ListSupportedImagesWithHttpMessagesAsync (accountListSupportedImagesOptions, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Batch.Protocol.Models.ImageInformation&gt;,Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesHeaders&gt;&gt;</ReturnType>

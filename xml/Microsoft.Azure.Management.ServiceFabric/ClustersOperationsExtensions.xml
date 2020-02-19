@@ -1,4 +1,4 @@
-﻿<Type Name="ClustersOperationsExtensions" FullName="Microsoft.Azure.Management.ServiceFabric.ClustersOperationsExtensions">
+<Type Name="ClustersOperationsExtensions" FullName="Microsoft.Azure.Management.ServiceFabric.ClustersOperationsExtensions">
   <TypeSignature Language="C#" Value="public static class ClustersOperationsExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ClustersOperationsExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.ServiceFabric.ClustersOperationsExtensions" />
@@ -19,12 +19,12 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
-    <Member MemberName="BeginCreate">
-      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Management.ServiceFabric.Models.Cluster BeginCreate (this Microsoft.Azure.Management.ServiceFabric.IClustersOperations operations, string resourceGroupName, string clusterName, Microsoft.Azure.Management.ServiceFabric.Models.Cluster parameters);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.Management.ServiceFabric.Models.Cluster BeginCreate(class Microsoft.Azure.Management.ServiceFabric.IClustersOperations operations, string resourceGroupName, string clusterName, class Microsoft.Azure.Management.ServiceFabric.Models.Cluster parameters) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ServiceFabric.ClustersOperationsExtensions.BeginCreate(Microsoft.Azure.Management.ServiceFabric.IClustersOperations,System.String,System.String,Microsoft.Azure.Management.ServiceFabric.Models.Cluster)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function BeginCreate (operations As IClustersOperations, resourceGroupName As String, clusterName As String, parameters As Cluster) As Cluster" />
-      <MemberSignature Language="F#" Value="static member BeginCreate : Microsoft.Azure.Management.ServiceFabric.IClustersOperations * string * string * Microsoft.Azure.Management.ServiceFabric.Models.Cluster -&gt; Microsoft.Azure.Management.ServiceFabric.Models.Cluster" Usage="Microsoft.Azure.Management.ServiceFabric.ClustersOperationsExtensions.BeginCreate (operations, resourceGroupName, clusterName, parameters)" />
+    <Member MemberName="BeginCreateOrUpdate">
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Management.ServiceFabric.Models.Cluster BeginCreateOrUpdate (this Microsoft.Azure.Management.ServiceFabric.IClustersOperations operations, string resourceGroupName, string clusterName, Microsoft.Azure.Management.ServiceFabric.Models.Cluster parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.Management.ServiceFabric.Models.Cluster BeginCreateOrUpdate(class Microsoft.Azure.Management.ServiceFabric.IClustersOperations operations, string resourceGroupName, string clusterName, class Microsoft.Azure.Management.ServiceFabric.Models.Cluster parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ServiceFabric.ClustersOperationsExtensions.BeginCreateOrUpdate(Microsoft.Azure.Management.ServiceFabric.IClustersOperations,System.String,System.String,Microsoft.Azure.Management.ServiceFabric.Models.Cluster)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function BeginCreateOrUpdate (operations As IClustersOperations, resourceGroupName As String, clusterName As String, parameters As Cluster) As Cluster" />
+      <MemberSignature Language="F#" Value="static member BeginCreateOrUpdate : Microsoft.Azure.Management.ServiceFabric.IClustersOperations * string * string * Microsoft.Azure.Management.ServiceFabric.Models.Cluster -&gt; Microsoft.Azure.Management.ServiceFabric.Models.Cluster" Usage="Microsoft.Azure.Management.ServiceFabric.ClustersOperationsExtensions.BeginCreateOrUpdate (operations, resourceGroupName, clusterName, parameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
@@ -61,16 +61,21 @@
             </remarks>
       </Docs>
     </Member>
-    <Member MemberName="BeginCreateAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ServiceFabric.Models.Cluster&gt; BeginCreateAsync (this Microsoft.Azure.Management.ServiceFabric.IClustersOperations operations, string resourceGroupName, string clusterName, Microsoft.Azure.Management.ServiceFabric.Models.Cluster parameters, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.ServiceFabric.Models.Cluster&gt; BeginCreateAsync(class Microsoft.Azure.Management.ServiceFabric.IClustersOperations operations, string resourceGroupName, string clusterName, class Microsoft.Azure.Management.ServiceFabric.Models.Cluster parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ServiceFabric.ClustersOperationsExtensions.BeginCreateAsync(Microsoft.Azure.Management.ServiceFabric.IClustersOperations,System.String,System.String,Microsoft.Azure.Management.ServiceFabric.Models.Cluster,System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="static member BeginCreateAsync : Microsoft.Azure.Management.ServiceFabric.IClustersOperations * string * string * Microsoft.Azure.Management.ServiceFabric.Models.Cluster * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ServiceFabric.Models.Cluster&gt;" Usage="Microsoft.Azure.Management.ServiceFabric.ClustersOperationsExtensions.BeginCreateAsync (operations, resourceGroupName, clusterName, parameters, cancellationToken)" />
+    <Member MemberName="BeginCreateOrUpdateAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ServiceFabric.Models.Cluster&gt; BeginCreateOrUpdateAsync (this Microsoft.Azure.Management.ServiceFabric.IClustersOperations operations, string resourceGroupName, string clusterName, Microsoft.Azure.Management.ServiceFabric.Models.Cluster parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.ServiceFabric.Models.Cluster&gt; BeginCreateOrUpdateAsync(class Microsoft.Azure.Management.ServiceFabric.IClustersOperations operations, string resourceGroupName, string clusterName, class Microsoft.Azure.Management.ServiceFabric.Models.Cluster parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ServiceFabric.ClustersOperationsExtensions.BeginCreateOrUpdateAsync(Microsoft.Azure.Management.ServiceFabric.IClustersOperations,System.String,System.String,Microsoft.Azure.Management.ServiceFabric.Models.Cluster,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member BeginCreateOrUpdateAsync : Microsoft.Azure.Management.ServiceFabric.IClustersOperations * string * string * Microsoft.Azure.Management.ServiceFabric.Models.Cluster * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ServiceFabric.Models.Cluster&gt;" Usage="Microsoft.Azure.Management.ServiceFabric.ClustersOperationsExtensions.BeginCreateOrUpdateAsync (operations, resourceGroupName, clusterName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ServiceFabric.Models.Cluster&gt;</ReturnType>
       </ReturnValue>
@@ -151,7 +156,7 @@
       </Docs>
     </Member>
     <Member MemberName="BeginUpdateAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ServiceFabric.Models.Cluster&gt; BeginUpdateAsync (this Microsoft.Azure.Management.ServiceFabric.IClustersOperations operations, string resourceGroupName, string clusterName, Microsoft.Azure.Management.ServiceFabric.Models.ClusterUpdateParameters parameters, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ServiceFabric.Models.Cluster&gt; BeginUpdateAsync (this Microsoft.Azure.Management.ServiceFabric.IClustersOperations operations, string resourceGroupName, string clusterName, Microsoft.Azure.Management.ServiceFabric.Models.ClusterUpdateParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.ServiceFabric.Models.Cluster&gt; BeginUpdateAsync(class Microsoft.Azure.Management.ServiceFabric.IClustersOperations operations, string resourceGroupName, string clusterName, class Microsoft.Azure.Management.ServiceFabric.Models.ClusterUpdateParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ServiceFabric.ClustersOperationsExtensions.BeginUpdateAsync(Microsoft.Azure.Management.ServiceFabric.IClustersOperations,System.String,System.String,Microsoft.Azure.Management.ServiceFabric.Models.ClusterUpdateParameters,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member BeginUpdateAsync : Microsoft.Azure.Management.ServiceFabric.IClustersOperations * string * string * Microsoft.Azure.Management.ServiceFabric.Models.ClusterUpdateParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ServiceFabric.Models.Cluster&gt;" Usage="Microsoft.Azure.Management.ServiceFabric.ClustersOperationsExtensions.BeginUpdateAsync (operations, resourceGroupName, clusterName, parameters, cancellationToken)" />
@@ -160,6 +165,11 @@
         <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ServiceFabric.Models.Cluster&gt;</ReturnType>
       </ReturnValue>
@@ -197,12 +207,12 @@
             </remarks>
       </Docs>
     </Member>
-    <Member MemberName="Create">
-      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Management.ServiceFabric.Models.Cluster Create (this Microsoft.Azure.Management.ServiceFabric.IClustersOperations operations, string resourceGroupName, string clusterName, Microsoft.Azure.Management.ServiceFabric.Models.Cluster parameters);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.Management.ServiceFabric.Models.Cluster Create(class Microsoft.Azure.Management.ServiceFabric.IClustersOperations operations, string resourceGroupName, string clusterName, class Microsoft.Azure.Management.ServiceFabric.Models.Cluster parameters) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ServiceFabric.ClustersOperationsExtensions.Create(Microsoft.Azure.Management.ServiceFabric.IClustersOperations,System.String,System.String,Microsoft.Azure.Management.ServiceFabric.Models.Cluster)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Create (operations As IClustersOperations, resourceGroupName As String, clusterName As String, parameters As Cluster) As Cluster" />
-      <MemberSignature Language="F#" Value="static member Create : Microsoft.Azure.Management.ServiceFabric.IClustersOperations * string * string * Microsoft.Azure.Management.ServiceFabric.Models.Cluster -&gt; Microsoft.Azure.Management.ServiceFabric.Models.Cluster" Usage="Microsoft.Azure.Management.ServiceFabric.ClustersOperationsExtensions.Create (operations, resourceGroupName, clusterName, parameters)" />
+    <Member MemberName="CreateOrUpdate">
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Management.ServiceFabric.Models.Cluster CreateOrUpdate (this Microsoft.Azure.Management.ServiceFabric.IClustersOperations operations, string resourceGroupName, string clusterName, Microsoft.Azure.Management.ServiceFabric.Models.Cluster parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.Management.ServiceFabric.Models.Cluster CreateOrUpdate(class Microsoft.Azure.Management.ServiceFabric.IClustersOperations operations, string resourceGroupName, string clusterName, class Microsoft.Azure.Management.ServiceFabric.Models.Cluster parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ServiceFabric.ClustersOperationsExtensions.CreateOrUpdate(Microsoft.Azure.Management.ServiceFabric.IClustersOperations,System.String,System.String,Microsoft.Azure.Management.ServiceFabric.Models.Cluster)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CreateOrUpdate (operations As IClustersOperations, resourceGroupName As String, clusterName As String, parameters As Cluster) As Cluster" />
+      <MemberSignature Language="F#" Value="static member CreateOrUpdate : Microsoft.Azure.Management.ServiceFabric.IClustersOperations * string * string * Microsoft.Azure.Management.ServiceFabric.Models.Cluster -&gt; Microsoft.Azure.Management.ServiceFabric.Models.Cluster" Usage="Microsoft.Azure.Management.ServiceFabric.ClustersOperationsExtensions.CreateOrUpdate (operations, resourceGroupName, clusterName, parameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
@@ -239,16 +249,21 @@
             </remarks>
       </Docs>
     </Member>
-    <Member MemberName="CreateAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ServiceFabric.Models.Cluster&gt; CreateAsync (this Microsoft.Azure.Management.ServiceFabric.IClustersOperations operations, string resourceGroupName, string clusterName, Microsoft.Azure.Management.ServiceFabric.Models.Cluster parameters, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.ServiceFabric.Models.Cluster&gt; CreateAsync(class Microsoft.Azure.Management.ServiceFabric.IClustersOperations operations, string resourceGroupName, string clusterName, class Microsoft.Azure.Management.ServiceFabric.Models.Cluster parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ServiceFabric.ClustersOperationsExtensions.CreateAsync(Microsoft.Azure.Management.ServiceFabric.IClustersOperations,System.String,System.String,Microsoft.Azure.Management.ServiceFabric.Models.Cluster,System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="static member CreateAsync : Microsoft.Azure.Management.ServiceFabric.IClustersOperations * string * string * Microsoft.Azure.Management.ServiceFabric.Models.Cluster * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ServiceFabric.Models.Cluster&gt;" Usage="Microsoft.Azure.Management.ServiceFabric.ClustersOperationsExtensions.CreateAsync (operations, resourceGroupName, clusterName, parameters, cancellationToken)" />
+    <Member MemberName="CreateOrUpdateAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ServiceFabric.Models.Cluster&gt; CreateOrUpdateAsync (this Microsoft.Azure.Management.ServiceFabric.IClustersOperations operations, string resourceGroupName, string clusterName, Microsoft.Azure.Management.ServiceFabric.Models.Cluster parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.ServiceFabric.Models.Cluster&gt; CreateOrUpdateAsync(class Microsoft.Azure.Management.ServiceFabric.IClustersOperations operations, string resourceGroupName, string clusterName, class Microsoft.Azure.Management.ServiceFabric.Models.Cluster parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ServiceFabric.ClustersOperationsExtensions.CreateOrUpdateAsync(Microsoft.Azure.Management.ServiceFabric.IClustersOperations,System.String,System.String,Microsoft.Azure.Management.ServiceFabric.Models.Cluster,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member CreateOrUpdateAsync : Microsoft.Azure.Management.ServiceFabric.IClustersOperations * string * string * Microsoft.Azure.Management.ServiceFabric.Models.Cluster * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ServiceFabric.Models.Cluster&gt;" Usage="Microsoft.Azure.Management.ServiceFabric.ClustersOperationsExtensions.CreateOrUpdateAsync (operations, resourceGroupName, clusterName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ServiceFabric.Models.Cluster&gt;</ReturnType>
       </ReturnValue>
@@ -322,7 +337,7 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task DeleteAsync (this Microsoft.Azure.Management.ServiceFabric.IClustersOperations operations, string resourceGroupName, string clusterName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task DeleteAsync (this Microsoft.Azure.Management.ServiceFabric.IClustersOperations operations, string resourceGroupName, string clusterName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task DeleteAsync(class Microsoft.Azure.Management.ServiceFabric.IClustersOperations operations, string resourceGroupName, string clusterName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ServiceFabric.ClustersOperationsExtensions.DeleteAsync(Microsoft.Azure.Management.ServiceFabric.IClustersOperations,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member DeleteAsync : Microsoft.Azure.Management.ServiceFabric.IClustersOperations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.ServiceFabric.ClustersOperationsExtensions.DeleteAsync (operations, resourceGroupName, clusterName, cancellationToken)" />
@@ -331,6 +346,11 @@
         <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -402,7 +422,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ServiceFabric.Models.Cluster&gt; GetAsync (this Microsoft.Azure.Management.ServiceFabric.IClustersOperations operations, string resourceGroupName, string clusterName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ServiceFabric.Models.Cluster&gt; GetAsync (this Microsoft.Azure.Management.ServiceFabric.IClustersOperations operations, string resourceGroupName, string clusterName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.ServiceFabric.Models.Cluster&gt; GetAsync(class Microsoft.Azure.Management.ServiceFabric.IClustersOperations operations, string resourceGroupName, string clusterName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ServiceFabric.ClustersOperationsExtensions.GetAsync(Microsoft.Azure.Management.ServiceFabric.IClustersOperations,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member GetAsync : Microsoft.Azure.Management.ServiceFabric.IClustersOperations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ServiceFabric.Models.Cluster&gt;" Usage="Microsoft.Azure.Management.ServiceFabric.ClustersOperationsExtensions.GetAsync (operations, resourceGroupName, clusterName, cancellationToken)" />
@@ -411,6 +431,11 @@
         <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ServiceFabric.Models.Cluster&gt;</ReturnType>
       </ReturnValue>
@@ -476,7 +501,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ServiceFabric.Models.ClusterListResult&gt; ListAsync (this Microsoft.Azure.Management.ServiceFabric.IClustersOperations operations, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ServiceFabric.Models.ClusterListResult&gt; ListAsync (this Microsoft.Azure.Management.ServiceFabric.IClustersOperations operations, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.ServiceFabric.Models.ClusterListResult&gt; ListAsync(class Microsoft.Azure.Management.ServiceFabric.IClustersOperations operations, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ServiceFabric.ClustersOperationsExtensions.ListAsync(Microsoft.Azure.Management.ServiceFabric.IClustersOperations,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListAsync : Microsoft.Azure.Management.ServiceFabric.IClustersOperations * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ServiceFabric.Models.ClusterListResult&gt;" Usage="Microsoft.Azure.Management.ServiceFabric.ClustersOperationsExtensions.ListAsync (operations, cancellationToken)" />
@@ -485,6 +510,11 @@
         <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ServiceFabric.Models.ClusterListResult&gt;</ReturnType>
       </ReturnValue>
@@ -547,7 +577,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListByResourceGroupAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ServiceFabric.Models.ClusterListResult&gt; ListByResourceGroupAsync (this Microsoft.Azure.Management.ServiceFabric.IClustersOperations operations, string resourceGroupName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ServiceFabric.Models.ClusterListResult&gt; ListByResourceGroupAsync (this Microsoft.Azure.Management.ServiceFabric.IClustersOperations operations, string resourceGroupName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.ServiceFabric.Models.ClusterListResult&gt; ListByResourceGroupAsync(class Microsoft.Azure.Management.ServiceFabric.IClustersOperations operations, string resourceGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ServiceFabric.ClustersOperationsExtensions.ListByResourceGroupAsync(Microsoft.Azure.Management.ServiceFabric.IClustersOperations,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListByResourceGroupAsync : Microsoft.Azure.Management.ServiceFabric.IClustersOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ServiceFabric.Models.ClusterListResult&gt;" Usage="Microsoft.Azure.Management.ServiceFabric.ClustersOperationsExtensions.ListByResourceGroupAsync (operations, resourceGroupName, cancellationToken)" />
@@ -556,6 +586,11 @@
         <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ServiceFabric.Models.ClusterListResult&gt;</ReturnType>
       </ReturnValue>
@@ -630,7 +665,7 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ServiceFabric.Models.Cluster&gt; UpdateAsync (this Microsoft.Azure.Management.ServiceFabric.IClustersOperations operations, string resourceGroupName, string clusterName, Microsoft.Azure.Management.ServiceFabric.Models.ClusterUpdateParameters parameters, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ServiceFabric.Models.Cluster&gt; UpdateAsync (this Microsoft.Azure.Management.ServiceFabric.IClustersOperations operations, string resourceGroupName, string clusterName, Microsoft.Azure.Management.ServiceFabric.Models.ClusterUpdateParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.ServiceFabric.Models.Cluster&gt; UpdateAsync(class Microsoft.Azure.Management.ServiceFabric.IClustersOperations operations, string resourceGroupName, string clusterName, class Microsoft.Azure.Management.ServiceFabric.Models.ClusterUpdateParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ServiceFabric.ClustersOperationsExtensions.UpdateAsync(Microsoft.Azure.Management.ServiceFabric.IClustersOperations,System.String,System.String,Microsoft.Azure.Management.ServiceFabric.Models.ClusterUpdateParameters,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member UpdateAsync : Microsoft.Azure.Management.ServiceFabric.IClustersOperations * string * string * Microsoft.Azure.Management.ServiceFabric.Models.ClusterUpdateParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ServiceFabric.Models.Cluster&gt;" Usage="Microsoft.Azure.Management.ServiceFabric.ClustersOperationsExtensions.UpdateAsync (operations, resourceGroupName, clusterName, parameters, cancellationToken)" />
@@ -639,6 +674,11 @@
         <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ServiceFabric.Models.Cluster&gt;</ReturnType>
       </ReturnValue>

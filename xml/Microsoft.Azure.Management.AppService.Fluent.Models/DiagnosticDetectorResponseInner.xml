@@ -1,4 +1,4 @@
-﻿<Type Name="DiagnosticDetectorResponseInner" FullName="Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticDetectorResponseInner">
+<Type Name="DiagnosticDetectorResponseInner" FullName="Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticDetectorResponseInner">
   <TypeSignature Language="C#" Value="public class DiagnosticDetectorResponseInner : Microsoft.Azure.Management.AppService.Fluent.Models.ProxyOnlyResourceInner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DiagnosticDetectorResponseInner extends Microsoft.Azure.Management.AppService.Fluent.Models.ProxyOnlyResourceInner" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticDetectorResponseInner" />
@@ -6,7 +6,10 @@
   <TypeSignature Language="F#" Value="type DiagnosticDetectorResponseInner = class&#xA;    inherit ProxyOnlyResourceInner" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.AppService.Fluent.Models.ProxyOnlyResourceInner</BaseTypeName>
@@ -32,7 +35,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -44,14 +50,15 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public DiagnosticDetectorResponseInner (string id = null, string name = null, string type = null, string kind = null, Nullable&lt;DateTime&gt; startTime = null, Nullable&lt;DateTime&gt; endTime = null, Nullable&lt;bool&gt; issueDetected = null, Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinition detectorDefinition = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticMetricSet&gt; metrics = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorAbnormalTimePeriod&gt; abnormalTimePeriods = null, System.Collections.Generic.IList&lt;System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.NameValuePair&gt;&gt; data = null, Microsoft.Azure.Management.AppService.Fluent.Models.ResponseMetaData responseMetaData = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string type, string kind, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startTime, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; endTime, valuetype System.Nullable`1&lt;bool&gt; issueDetected, class Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinition detectorDefinition, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticMetricSet&gt; metrics, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DetectorAbnormalTimePeriod&gt; abnormalTimePeriods, class System.Collections.Generic.IList`1&lt;class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.NameValuePair&gt;&gt; data, class Microsoft.Azure.Management.AppService.Fluent.Models.ResponseMetaData responseMetaData) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticDetectorResponseInner.#ctor(System.String,System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Boolean},Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinition,System.Collections.Generic.IList{Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticMetricSet},System.Collections.Generic.IList{Microsoft.Azure.Management.AppService.Fluent.Models.DetectorAbnormalTimePeriod},System.Collections.Generic.IList{System.Collections.Generic.IList{Microsoft.Azure.Management.AppService.Fluent.Models.NameValuePair}},Microsoft.Azure.Management.AppService.Fluent.Models.ResponseMetaData)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticDetectorResponseInner : string * string * string * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;bool&gt; * Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinition * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticMetricSet&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorAbnormalTimePeriod&gt; * System.Collections.Generic.IList&lt;System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.NameValuePair&gt;&gt; * Microsoft.Azure.Management.AppService.Fluent.Models.ResponseMetaData -&gt; Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticDetectorResponseInner" Usage="new Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticDetectorResponseInner (id, name, type, kind, startTime, endTime, issueDetected, detectorDefinition, metrics, abnormalTimePeriods, data, responseMetaData)" />
+      <MemberSignature Language="C#" Value="public DiagnosticDetectorResponseInner (string id = default, string name = default, string type = default, string kind = default, Nullable&lt;DateTime&gt; startTime = default, Nullable&lt;DateTime&gt; endTime = default, Nullable&lt;bool&gt; issueDetected = default, Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinitionInner detectorDefinition = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticMetricSet&gt; metrics = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorAbnormalTimePeriod&gt; abnormalTimePeriods = default, System.Collections.Generic.IList&lt;System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.NameValuePair&gt;&gt; data = default, Microsoft.Azure.Management.AppService.Fluent.Models.ResponseMetaData responseMetaData = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string type, string kind, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startTime, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; endTime, valuetype System.Nullable`1&lt;bool&gt; issueDetected, class Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinitionInner detectorDefinition, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticMetricSet&gt; metrics, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DetectorAbnormalTimePeriod&gt; abnormalTimePeriods, class System.Collections.Generic.IList`1&lt;class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.NameValuePair&gt;&gt; data, class Microsoft.Azure.Management.AppService.Fluent.Models.ResponseMetaData responseMetaData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticDetectorResponseInner.#ctor(System.String,System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Boolean},Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinitionInner,System.Collections.Generic.IList{Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticMetricSet},System.Collections.Generic.IList{Microsoft.Azure.Management.AppService.Fluent.Models.DetectorAbnormalTimePeriod},System.Collections.Generic.IList{System.Collections.Generic.IList{Microsoft.Azure.Management.AppService.Fluent.Models.NameValuePair}},Microsoft.Azure.Management.AppService.Fluent.Models.ResponseMetaData)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticDetectorResponseInner : string * string * string * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;bool&gt; * Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinitionInner * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticMetricSet&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorAbnormalTimePeriod&gt; * System.Collections.Generic.IList&lt;System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.NameValuePair&gt;&gt; * Microsoft.Azure.Management.AppService.Fluent.Models.ResponseMetaData -&gt; Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticDetectorResponseInner" Usage="new Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticDetectorResponseInner (id, name, type, kind, startTime, endTime, issueDetected, detectorDefinition, metrics, abnormalTimePeriods, data, responseMetaData)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
@@ -61,7 +68,7 @@
         <Parameter Name="startTime" Type="System.Nullable&lt;System.DateTime&gt;" />
         <Parameter Name="endTime" Type="System.Nullable&lt;System.DateTime&gt;" />
         <Parameter Name="issueDetected" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="detectorDefinition" Type="Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinition" />
+        <Parameter Name="detectorDefinition" Type="Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinitionInner" />
         <Parameter Name="metrics" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticMetricSet&gt;" />
         <Parameter Name="abnormalTimePeriods" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DetectorAbnormalTimePeriod&gt;" />
         <Parameter Name="data" Type="System.Collections.Generic.IList&lt;System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.NameValuePair&gt;&gt;" />
@@ -99,7 +106,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -126,7 +136,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -145,15 +158,18 @@
       </Docs>
     </Member>
     <Member MemberName="DetectorDefinition">
-      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinition DetectorDefinition { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinition DetectorDefinition" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinitionInner DetectorDefinition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinitionInner DetectorDefinition" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticDetectorResponseInner.DetectorDefinition" />
-      <MemberSignature Language="VB.NET" Value="Public Property DetectorDefinition As DetectorDefinition" />
-      <MemberSignature Language="F#" Value="member this.DetectorDefinition : Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinition with get, set" Usage="Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticDetectorResponseInner.DetectorDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public Property DetectorDefinition As DetectorDefinitionInner" />
+      <MemberSignature Language="F#" Value="member this.DetectorDefinition : Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinitionInner with get, set" Usage="Microsoft.Azure.Management.AppService.Fluent.Models.DiagnosticDetectorResponseInner.DetectorDefinition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -161,7 +177,7 @@
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinition</ReturnType>
+        <ReturnType>Microsoft.Azure.Management.AppService.Fluent.Models.DetectorDefinitionInner</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -180,7 +196,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -207,7 +226,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -234,7 +256,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -261,7 +286,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -288,7 +316,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

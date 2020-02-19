@@ -1,4 +1,4 @@
-﻿<Type Name="NewTokenAndFrequency" FullName="Microsoft.Azure.Storage.Auth.NewTokenAndFrequency">
+<Type Name="NewTokenAndFrequency" FullName="Microsoft.Azure.Storage.Auth.NewTokenAndFrequency">
   <TypeSignature Language="C#" Value="public struct NewTokenAndFrequency" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit NewTokenAndFrequency extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Storage.Auth.NewTokenAndFrequency" />
@@ -6,19 +6,22 @@
   <TypeSignature Language="F#" Value="type NewTokenAndFrequency = struct" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Storage.Common</AssemblyName>
-    <AssemblyVersion>10.0.3.0</AssemblyVersion>
+    <AssemblyVersion>11.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            This is the return type of <see cref="T:Microsoft.Azure.Storage.Auth.RenewTokenFuncAsync" />.
+            A new token and a new frequency is expected.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public NewTokenAndFrequency (string newToken, Nullable&lt;TimeSpan&gt; newFrequency = null);" />
+      <MemberSignature Language="C#" Value="public NewTokenAndFrequency (string newToken, Nullable&lt;TimeSpan&gt; newFrequency = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string newToken, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; newFrequency) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Storage.Auth.NewTokenAndFrequency.#ctor(System.String,System.Nullable{System.TimeSpan})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (newToken As String, Optional newFrequency As Nullable(Of TimeSpan) = null)" />
@@ -26,16 +29,18 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Common</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="newToken" Type="System.String" />
         <Parameter Name="newFrequency" Type="System.Nullable&lt;System.TimeSpan&gt;" />
       </Parameters>
       <Docs>
-        <param name="newToken">To be added.</param>
-        <param name="newFrequency">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="newToken">The new token credential.</param>
+        <param name="newFrequency">The new frequency to wait before calling <see cref="T:Microsoft.Azure.Storage.Auth.RenewTokenFuncAsync" /> again.</param>
+        <summary>
+            Create a new instance of <see cref="T:Microsoft.Azure.Storage.Auth.NewTokenAndFrequency" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,13 +53,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Common</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.TimeSpan&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The new frequency to wait before calling <see cref="T:Microsoft.Azure.Storage.Auth.RenewTokenFuncAsync" /> again.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -68,13 +75,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Storage.Common</AssemblyName>
-        <AssemblyVersion>10.0.3.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The new token credential. 
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

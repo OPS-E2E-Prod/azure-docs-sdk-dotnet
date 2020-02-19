@@ -1,4 +1,4 @@
-﻿<Type Name="ModuleErrorInfo" FullName="Microsoft.Azure.Management.Automation.Models.ModuleErrorInfo">
+<Type Name="ModuleErrorInfo" FullName="Microsoft.Azure.Management.Automation.Models.ModuleErrorInfo">
   <TypeSignature Language="C#" Value="public class ModuleErrorInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ModuleErrorInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Automation.Models.ModuleErrorInfo" />
@@ -6,6 +6,7 @@
   <TypeSignature Language="F#" Value="type ModuleErrorInfo = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>3.0.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -27,6 +28,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -38,7 +40,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ModuleErrorInfo (string code = null, string message = null);" />
+      <MemberSignature Language="C#" Value="public ModuleErrorInfo (string code = default, string message = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string code, string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.Models.ModuleErrorInfo.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional code As String = null, Optional message As String = null)" />
@@ -49,8 +51,8 @@
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="code" Type="System.String" />
-        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="code" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="message" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="code">Gets or sets the error code.</param>
@@ -70,10 +72,11 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="code")</AttributeName>
         </Attribute>
       </Attributes>
@@ -97,10 +100,11 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
           <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="message")</AttributeName>
         </Attribute>
       </Attributes>

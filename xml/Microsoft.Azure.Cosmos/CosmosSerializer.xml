@@ -1,4 +1,4 @@
-﻿<Type Name="CosmosSerializer" FullName="Microsoft.Azure.Cosmos.CosmosSerializer">
+<Type Name="CosmosSerializer" FullName="Microsoft.Azure.Cosmos.CosmosSerializer">
   <TypeSignature Language="C#" Value="public abstract class CosmosSerializer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CosmosSerializer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Cosmos.CosmosSerializer" />
@@ -6,7 +6,10 @@
   <TypeSignature Language="F#" Value="type CosmosSerializer = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.4.1.0</AssemblyVersion>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+    <AssemblyVersion>3.5.1.0</AssemblyVersion>
+    <AssemblyVersion>3.6.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,7 +30,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,7 +49,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -55,12 +64,12 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <typeparam name="T">Any typed passed to <see cref="T:Microsoft.Azure.Cosmos.Container" /></typeparam>
-        <param name="stream">The Stream response containing JSON from Cosmos</param>
+        <typeparam name="T">Any type passed to <see cref="T:Microsoft.Azure.Cosmos.Container" />.</typeparam>
+        <param name="stream">The Stream response containing JSON from Cosmos DB.</param>
         <summary>
             Convert a Stream of JSON to an object. 
-            The caller will ensure the stream is disposed. 
-            This will prevent memory leaks if an exception is hit.
+            The implementation is responsible for Disposing of the stream,
+            including when an exception is thrown, to avoid memory leaks.
             </summary>
         <returns>The object deserialized from the stream.</returns>
         <remarks>To be added.</remarks>
@@ -75,7 +84,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Cosmos.Client</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.4.1.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.1.0</AssemblyVersion>
+        <AssemblyVersion>3.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Stream</ReturnType>
@@ -88,13 +100,13 @@
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
-        <param name="input">Any typed passed to <see cref="T:Microsoft.Azure.Cosmos.Container" /></param>
+        <param name="input">Any type passed to <see cref="T:Microsoft.Azure.Cosmos.Container" />.</param>
         <summary>
             Convert the object to a Stream. 
             The caller will take ownership of the stream and ensure it is correctly disposed of.
-            Stream.CanRead must be true https://docs.microsoft.com/dotnet/api/system.io.stream.canread?view=netcore-2.0
+            <see href="https://docs.microsoft.com/dotnet/api/system.io.stream.canread">Stream.CanRead</see> must be true.
             </summary>
-        <returns>A readable Stream containing JSON of the serialized object</returns>
+        <returns>A readable Stream containing JSON of the serialized object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

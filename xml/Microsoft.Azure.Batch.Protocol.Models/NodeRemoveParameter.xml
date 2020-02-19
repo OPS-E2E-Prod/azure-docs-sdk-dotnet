@@ -1,4 +1,4 @@
-﻿<Type Name="NodeRemoveParameter" FullName="Microsoft.Azure.Batch.Protocol.Models.NodeRemoveParameter">
+<Type Name="NodeRemoveParameter" FullName="Microsoft.Azure.Batch.Protocol.Models.NodeRemoveParameter">
   <TypeSignature Language="C#" Value="public class NodeRemoveParameter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NodeRemoveParameter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.Protocol.Models.NodeRemoveParameter" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type NodeRemoveParameter = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -14,7 +14,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            Options for removing compute nodes from a pool.
+            Options for removing Compute Nodes from a Pool.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -27,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,7 +38,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public NodeRemoveParameter (System.Collections.Generic.IList&lt;string&gt; nodeList, Nullable&lt;TimeSpan&gt; resizeTimeout = null, Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.ComputeNodeDeallocationOption&gt; nodeDeallocationOption = null);" />
+      <MemberSignature Language="C#" Value="public NodeRemoveParameter (System.Collections.Generic.IList&lt;string&gt; nodeList, Nullable&lt;TimeSpan&gt; resizeTimeout = default, Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.ComputeNodeDeallocationOption&gt; nodeDeallocationOption = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;string&gt; nodeList, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; resizeTimeout, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Batch.Protocol.Models.ComputeNodeDeallocationOption&gt; nodeDeallocationOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.NodeRemoveParameter.#ctor(System.Collections.Generic.IList{System.String},System.Nullable{System.TimeSpan},System.Nullable{Microsoft.Azure.Batch.Protocol.Models.ComputeNodeDeallocationOption})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (nodeList As IList(Of String), Optional resizeTimeout As Nullable(Of TimeSpan) = null, Optional nodeDeallocationOption As Nullable(Of ComputeNodeDeallocationOption) = null)" />
@@ -46,7 +46,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="nodeList" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
@@ -54,12 +54,12 @@
         <Parameter Name="nodeDeallocationOption" Type="System.Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.ComputeNodeDeallocationOption&gt;" />
       </Parameters>
       <Docs>
-        <param name="nodeList">A list containing the IDs of the compute
-            nodes to be removed from the specified pool.</param>
-        <param name="resizeTimeout">The timeout for removal of compute
-            nodes to the pool.</param>
+        <param name="nodeList">A list containing the IDs of the Compute
+            Nodes to be removed from the specified Pool.</param>
+        <param name="resizeTimeout">The timeout for removal of Compute
+            Nodes to the Pool.</param>
         <param name="nodeDeallocationOption">Determines what to do with a
-            node and its running task(s) after it has been selected for
+            Compute Node and its running task(s) after it has been selected for
             deallocation.</param>
         <summary>
             Initializes a new instance of the NodeRemoveParameter class.
@@ -76,7 +76,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -88,8 +88,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets determines what to do with a node and its running
-            task(s) after it has been selected for deallocation.
+            Gets or sets determines what to do with a Compute Node and its
+            running task(s) after it has been selected for deallocation.
             </summary>
         <value>To be added.</value>
         <remarks>
@@ -107,7 +107,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -119,8 +119,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets a list containing the IDs of the compute nodes to be
-            removed from the specified pool.
+            Gets or sets a list containing the IDs of the Compute Nodes to be
+            removed from the specified Pool.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -135,7 +135,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -147,7 +147,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the timeout for removal of compute nodes to the pool.
+            Gets or sets the timeout for removal of Compute Nodes to the Pool.
             </summary>
         <value>To be added.</value>
         <remarks>

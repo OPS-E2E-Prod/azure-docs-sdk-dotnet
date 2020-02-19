@@ -1,4 +1,4 @@
-﻿<Type Name="Indexer" FullName="Microsoft.Azure.Search.Models.Indexer">
+<Type Name="Indexer" FullName="Microsoft.Azure.Search.Models.Indexer">
   <TypeSignature Language="C#" Value="public class Indexer : Microsoft.Azure.Search.Models.IResourceWithETag" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Indexer extends System.Object implements class Microsoft.Azure.Search.Models.IResourceWithETag" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Search.Models.Indexer" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type Indexer = class&#xA;    interface IResourceWithETag" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-    <AssemblyVersion>9.0.0.0</AssemblyVersion>
+    <AssemblyVersion>10.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -18,7 +18,7 @@
   </Interfaces>
   <Docs>
     <summary>
-            Represents an Azure Search indexer.
+            Represents an indexer.
             <see href="https://docs.microsoft.com/rest/api/searchservice/Indexer-operations" /></summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -31,7 +31,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -42,7 +42,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Indexer (string name, string dataSourceName, string targetIndexName, string description = null, string skillsetName = null, Microsoft.Azure.Search.Models.IndexingSchedule schedule = null, Microsoft.Azure.Search.Models.IndexingParameters parameters = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.FieldMapping&gt; fieldMappings = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.FieldMapping&gt; outputFieldMappings = null, Nullable&lt;bool&gt; isDisabled = null, string eTag = null);" />
+      <MemberSignature Language="C#" Value="public Indexer (string name, string dataSourceName, string targetIndexName, string description = default, string skillsetName = default, Microsoft.Azure.Search.Models.IndexingSchedule schedule = default, Microsoft.Azure.Search.Models.IndexingParameters parameters = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.FieldMapping&gt; fieldMappings = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.FieldMapping&gt; outputFieldMappings = default, Nullable&lt;bool&gt; isDisabled = default, string eTag = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string dataSourceName, string targetIndexName, string description, string skillsetName, class Microsoft.Azure.Search.Models.IndexingSchedule schedule, class Microsoft.Azure.Search.Models.IndexingParameters parameters, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Search.Models.FieldMapping&gt; fieldMappings, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Search.Models.FieldMapping&gt; outputFieldMappings, valuetype System.Nullable`1&lt;bool&gt; isDisabled, string eTag) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.Models.Indexer.#ctor(System.String,System.String,System.String,System.String,System.String,Microsoft.Azure.Search.Models.IndexingSchedule,Microsoft.Azure.Search.Models.IndexingParameters,System.Collections.Generic.IList{Microsoft.Azure.Search.Models.FieldMapping},System.Collections.Generic.IList{Microsoft.Azure.Search.Models.FieldMapping},System.Nullable{System.Boolean},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, dataSourceName As String, targetIndexName As String, Optional description As String = null, Optional skillsetName As String = null, Optional schedule As IndexingSchedule = null, Optional parameters As IndexingParameters = null, Optional fieldMappings As IList(Of FieldMapping) = null, Optional outputFieldMappings As IList(Of FieldMapping) = null, Optional isDisabled As Nullable(Of Boolean) = null, Optional eTag As String = null)" />
@@ -50,7 +50,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -72,8 +72,8 @@
         <param name="targetIndexName">The name of the index to which this
             indexer writes data.</param>
         <param name="description">The description of the indexer.</param>
-        <param name="skillsetName">The name of the cognitive skillset
-            executing with this indexer.</param>
+        <param name="skillsetName">The name of the skillset executing with
+            this indexer.</param>
         <param name="schedule">The schedule for this indexer.</param>
         <param name="parameters">Parameters for indexer execution.</param>
         <param name="fieldMappings">Defines mappings between fields in the
@@ -98,7 +98,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -126,7 +126,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -153,7 +153,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -180,7 +180,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -208,7 +208,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -236,7 +236,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -263,7 +263,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -291,7 +291,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -318,7 +318,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -345,7 +345,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -357,8 +357,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the name of the cognitive skillset executing with this
-            indexer.
+            Gets or sets the name of the skillset executing with this indexer.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -373,7 +372,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -401,7 +400,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

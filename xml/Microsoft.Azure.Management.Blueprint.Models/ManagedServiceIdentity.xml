@@ -1,4 +1,4 @@
-﻿<Type Name="ManagedServiceIdentity" FullName="Microsoft.Azure.Management.Blueprint.Models.ManagedServiceIdentity">
+<Type Name="ManagedServiceIdentity" FullName="Microsoft.Azure.Management.Blueprint.Models.ManagedServiceIdentity">
   <TypeSignature Language="C#" Value="public class ManagedServiceIdentity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ManagedServiceIdentity extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Blueprint.Models.ManagedServiceIdentity" />
@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
     <AssemblyVersion>0.10.0.0</AssemblyVersion>
     <AssemblyVersion>0.14.0.0</AssemblyVersion>
+    <AssemblyVersion>0.20.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -15,7 +16,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            Managed Service Identity
+            Managed identity generic object.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -30,6 +31,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -40,7 +42,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ManagedServiceIdentity (string type, string principalId = null, string tenantId = null, System.Collections.Generic.IDictionary&lt;string,Microsoft.Azure.Management.Blueprint.Models.UserAssignedIdentity&gt; userAssignedIdentities = null);" />
+      <MemberSignature Language="C#" Value="public ManagedServiceIdentity (string type, string principalId = default, string tenantId = default, System.Collections.Generic.IDictionary&lt;string,Microsoft.Azure.Management.Blueprint.Models.UserAssignedIdentity&gt; userAssignedIdentities = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, string principalId, string tenantId, class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.Azure.Management.Blueprint.Models.UserAssignedIdentity&gt; userAssignedIdentities) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Blueprint.Models.ManagedServiceIdentity.#ctor(System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,Microsoft.Azure.Management.Blueprint.Models.UserAssignedIdentity})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (type As String, Optional principalId As String = null, Optional tenantId As String = null, Optional userAssignedIdentities As IDictionary(Of String, UserAssignedIdentity) = null)" />
@@ -50,6 +52,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="type" Type="System.String" />
@@ -58,14 +61,14 @@
         <Parameter Name="userAssignedIdentities" Type="System.Collections.Generic.IDictionary&lt;System.String,Microsoft.Azure.Management.Blueprint.Models.UserAssignedIdentity&gt;" />
       </Parameters>
       <Docs>
-        <param name="type">Type of the Managed Service Identity. Possible
-            values include: 'None', 'SystemAssigned', 'UserAssigned'</param>
+        <param name="type">Type of the managed identity. Possible values
+            include: 'None', 'SystemAssigned', 'UserAssigned'</param>
         <param name="principalId">Azure Active Directory principal ID
             associated with this Identity.</param>
         <param name="tenantId">ID of the Azure Active Directory.</param>
-        <param name="userAssignedIdentities">The list of user identities
-            associated with the resource, key will be Azure resource Id of the
-            ManagedIdentity.</param>
+        <param name="userAssignedIdentities">The list of user-assigned
+            managed identities associated with the resource. Key is the Azure
+            resource Id of the managed identity.</param>
         <summary>
             Initializes a new instance of the ManagedServiceIdentity class.
             </summary>
@@ -83,6 +86,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -112,6 +116,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -140,6 +145,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -151,8 +157,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets type of the Managed Service Identity. Possible values
-            include: 'None', 'SystemAssigned', 'UserAssigned'
+            Gets or sets type of the managed identity. Possible values include:
+            'None', 'SystemAssigned', 'UserAssigned'
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -169,6 +175,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -180,8 +187,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the list of user identities associated with the
-            resource, key will be Azure resource Id of the ManagedIdentity.
+            Gets or sets the list of user-assigned managed identities
+            associated with the resource. Key is the Azure resource Id of the
+            managed identity.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -198,6 +206,7 @@
         <AssemblyName>Microsoft.Azure.Management.Blueprint</AssemblyName>
         <AssemblyVersion>0.10.0.0</AssemblyVersion>
         <AssemblyVersion>0.14.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

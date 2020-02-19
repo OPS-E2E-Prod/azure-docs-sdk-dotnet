@@ -1,4 +1,4 @@
-﻿<Type Name="DatabaseSecurityAlertPolicyInner" FullName="Microsoft.Azure.Management.Sql.Fluent.Models.DatabaseSecurityAlertPolicyInner">
+<Type Name="DatabaseSecurityAlertPolicyInner" FullName="Microsoft.Azure.Management.Sql.Fluent.Models.DatabaseSecurityAlertPolicyInner">
   <TypeSignature Language="C#" Value="public class DatabaseSecurityAlertPolicyInner : Microsoft.Azure.Management.Sql.Fluent.Models.ProxyResourceInner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DatabaseSecurityAlertPolicyInner extends Microsoft.Azure.Management.Sql.Fluent.Models.ProxyResourceInner" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Sql.Fluent.Models.DatabaseSecurityAlertPolicyInner" />
@@ -6,7 +6,10 @@
   <TypeSignature Language="F#" Value="type DatabaseSecurityAlertPolicyInner = class&#xA;    inherit ProxyResourceInner" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.Sql.Fluent.Models.ProxyResourceInner</BaseTypeName>
@@ -32,7 +35,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -44,7 +50,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public DatabaseSecurityAlertPolicyInner (Microsoft.Azure.Management.Sql.Fluent.Models.SecurityAlertPolicyState state, string id = null, string name = null, string type = null, string location = null, string kind = null, string disabledAlerts = null, string emailAddresses = null, Nullable&lt;Microsoft.Azure.Management.Sql.Fluent.Models.SecurityAlertPolicyEmailAccountAdmins&gt; emailAccountAdmins = null, string storageEndpoint = null, string storageAccountAccessKey = null, Nullable&lt;int&gt; retentionDays = null, Nullable&lt;Microsoft.Azure.Management.Sql.Fluent.Models.SecurityAlertPolicyUseServerDefault&gt; useServerDefault = null);" />
+      <MemberSignature Language="C#" Value="public DatabaseSecurityAlertPolicyInner (Microsoft.Azure.Management.Sql.Fluent.Models.SecurityAlertPolicyState state, string id = default, string name = default, string type = default, string location = default, string kind = default, string disabledAlerts = default, string emailAddresses = default, Nullable&lt;Microsoft.Azure.Management.Sql.Fluent.Models.SecurityAlertPolicyEmailAccountAdmins&gt; emailAccountAdmins = default, string storageEndpoint = default, string storageAccountAccessKey = default, Nullable&lt;int&gt; retentionDays = default, Nullable&lt;Microsoft.Azure.Management.Sql.Fluent.Models.SecurityAlertPolicyUseServerDefault&gt; useServerDefault = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Azure.Management.Sql.Fluent.Models.SecurityAlertPolicyState state, string id, string name, string type, string location, string kind, string disabledAlerts, string emailAddresses, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Sql.Fluent.Models.SecurityAlertPolicyEmailAccountAdmins&gt; emailAccountAdmins, string storageEndpoint, string storageAccountAccessKey, valuetype System.Nullable`1&lt;int32&gt; retentionDays, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Sql.Fluent.Models.SecurityAlertPolicyUseServerDefault&gt; useServerDefault) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Fluent.Models.DatabaseSecurityAlertPolicyInner.#ctor(Microsoft.Azure.Management.Sql.Fluent.Models.SecurityAlertPolicyState,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{Microsoft.Azure.Management.Sql.Fluent.Models.SecurityAlertPolicyEmailAccountAdmins},System.String,System.String,System.Nullable{System.Int32},System.Nullable{Microsoft.Azure.Management.Sql.Fluent.Models.SecurityAlertPolicyUseServerDefault})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (state As SecurityAlertPolicyState, Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional location As String = null, Optional kind As String = null, Optional disabledAlerts As String = null, Optional emailAddresses As String = null, Optional emailAccountAdmins As Nullable(Of SecurityAlertPolicyEmailAccountAdmins) = null, Optional storageEndpoint As String = null, Optional storageAccountAccessKey As String = null, Optional retentionDays As Nullable(Of Integer) = null, Optional useServerDefault As Nullable(Of SecurityAlertPolicyUseServerDefault) = null)" />
@@ -52,7 +58,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="state" Type="Microsoft.Azure.Management.Sql.Fluent.Models.SecurityAlertPolicyState" />
@@ -73,16 +82,16 @@
         <param name="state">Specifies the state of the policy. If state is
             Enabled, storageEndpoint and storageAccountAccessKey are required.
             Possible values include: 'New', 'Enabled', 'Disabled'</param>
-        <param name="id">Resource ID.</param>
-        <param name="name">Resource name.</param>
-        <param name="type">Resource type.</param>
+        <param name="id">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="type">To be added.</param>
         <param name="location">The geo-location where the resource
             lives</param>
         <param name="kind">Resource kind.</param>
         <param name="disabledAlerts">Specifies the semicolon-separated list
             of alerts that are disabled, or empty string to disable no alerts.
             Possible values: Sql_Injection; Sql_Injection_Vulnerability;
-            Access_Anomaly; Usage_Anomaly.</param>
+            Access_Anomaly; Data_Exfiltration; Unsafe_Action.</param>
         <param name="emailAddresses">Specifies the semicolon-separated list
             of e-mail addresses to which the alert is sent.</param>
         <param name="emailAccountAdmins">Specifies that the alert is sent
@@ -116,7 +125,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -131,7 +143,7 @@
             Gets or sets specifies the semicolon-separated list of alerts that
             are disabled, or empty string to disable no alerts. Possible
             values: Sql_Injection; Sql_Injection_Vulnerability; Access_Anomaly;
-            Usage_Anomaly.
+            Data_Exfiltration; Unsafe_Action.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -146,7 +158,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -174,7 +189,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -202,7 +220,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -229,7 +250,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -256,7 +280,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -284,7 +311,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -313,7 +343,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -342,7 +375,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -372,7 +408,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -396,11 +435,14 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Fluent.Models.DatabaseSecurityAlertPolicyInner.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
-      <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="databaseSecurityAlertPolicyInner.Validate " />
+      <MemberSignature Language="F#" Value="override this.Validate : unit -&gt; unit" Usage="databaseSecurityAlertPolicyInner.Validate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

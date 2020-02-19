@@ -1,4 +1,4 @@
-﻿<Type Name="ComputeNodeError" FullName="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeError">
+<Type Name="ComputeNodeError" FullName="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeError">
   <TypeSignature Language="C#" Value="public class ComputeNodeError" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ComputeNodeError extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.Protocol.Models.ComputeNodeError" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type ComputeNodeError = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -14,7 +14,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            An error encountered by a compute node.
+            An error encountered by a Compute Node.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -27,7 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,7 +38,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ComputeNodeError (string code = null, string message = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.NameValuePair&gt; errorDetails = null);" />
+      <MemberSignature Language="C#" Value="public ComputeNodeError (string code = default, string message = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.NameValuePair&gt; errorDetails = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string code, string message, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Batch.Protocol.Models.NameValuePair&gt; errorDetails) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.ComputeNodeError.#ctor(System.String,System.String,System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.NameValuePair})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional code As String = null, Optional message As String = null, Optional errorDetails As IList(Of NameValuePair) = null)" />
@@ -46,7 +46,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="code" Type="System.String" />
@@ -54,13 +54,13 @@
         <Parameter Name="errorDetails" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.NameValuePair&gt;" />
       </Parameters>
       <Docs>
-        <param name="code">An identifier for the compute node error. Codes
+        <param name="code">An identifier for the Compute Node error. Codes
             are invariant and are intended to be consumed
             programmatically.</param>
-        <param name="message">A message describing the compute node error,
+        <param name="message">A message describing the Compute Node error,
             intended to be suitable for display in a user interface.</param>
         <param name="errorDetails">The list of additional error details
-            related to the compute node error.</param>
+            related to the Compute Node error.</param>
         <summary>
             Initializes a new instance of the ComputeNodeError class.
             </summary>
@@ -76,7 +76,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -88,7 +88,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets an identifier for the compute node error. Codes are
+            Gets or sets an identifier for the Compute Node error. Codes are
             invariant and are intended to be consumed programmatically.
             </summary>
         <value>To be added.</value>
@@ -104,7 +104,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -117,7 +117,7 @@
       <Docs>
         <summary>
             Gets or sets the list of additional error details related to the
-            compute node error.
+            Compute Node error.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -132,7 +132,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -144,7 +144,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets a message describing the compute node error, intended
+            Gets or sets a message describing the Compute Node error, intended
             to be suitable for display in a user interface.
             </summary>
         <value>To be added.</value>

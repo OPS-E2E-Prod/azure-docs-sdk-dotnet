@@ -1,4 +1,4 @@
-﻿<Type Name="KeyPhraseExtractionSkill" FullName="Microsoft.Azure.Search.Models.KeyPhraseExtractionSkill">
+<Type Name="KeyPhraseExtractionSkill" FullName="Microsoft.Azure.Search.Models.KeyPhraseExtractionSkill">
   <TypeSignature Language="C#" Value="public class KeyPhraseExtractionSkill : Microsoft.Azure.Search.Models.Skill" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit KeyPhraseExtractionSkill extends Microsoft.Azure.Search.Models.Skill" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Search.Models.KeyPhraseExtractionSkill" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type KeyPhraseExtractionSkill = class&#xA;    inherit Skill" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-    <AssemblyVersion>9.0.0.0</AssemblyVersion>
+    <AssemblyVersion>10.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Search.Models.Skill</BaseTypeName>
@@ -32,7 +32,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,19 +43,20 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public KeyPhraseExtractionSkill (System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.InputFieldMappingEntry&gt; inputs, System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.OutputFieldMappingEntry&gt; outputs, string description = null, string context = null, Nullable&lt;Microsoft.Azure.Search.Models.KeyPhraseExtractionSkillLanguage&gt; defaultLanguageCode = null, Nullable&lt;int&gt; maxKeyPhraseCount = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Search.Models.InputFieldMappingEntry&gt; inputs, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Search.Models.OutputFieldMappingEntry&gt; outputs, string description, string context, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Search.Models.KeyPhraseExtractionSkillLanguage&gt; defaultLanguageCode, valuetype System.Nullable`1&lt;int32&gt; maxKeyPhraseCount) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.Models.KeyPhraseExtractionSkill.#ctor(System.Collections.Generic.IList{Microsoft.Azure.Search.Models.InputFieldMappingEntry},System.Collections.Generic.IList{Microsoft.Azure.Search.Models.OutputFieldMappingEntry},System.String,System.String,System.Nullable{Microsoft.Azure.Search.Models.KeyPhraseExtractionSkillLanguage},System.Nullable{System.Int32})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (inputs As IList(Of InputFieldMappingEntry), outputs As IList(Of OutputFieldMappingEntry), Optional description As String = null, Optional context As String = null, Optional defaultLanguageCode As Nullable(Of KeyPhraseExtractionSkillLanguage) = null, Optional maxKeyPhraseCount As Nullable(Of Integer) = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Search.Models.KeyPhraseExtractionSkill : System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.InputFieldMappingEntry&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.OutputFieldMappingEntry&gt; * string * string * Nullable&lt;Microsoft.Azure.Search.Models.KeyPhraseExtractionSkillLanguage&gt; * Nullable&lt;int&gt; -&gt; Microsoft.Azure.Search.Models.KeyPhraseExtractionSkill" Usage="new Microsoft.Azure.Search.Models.KeyPhraseExtractionSkill (inputs, outputs, description, context, defaultLanguageCode, maxKeyPhraseCount)" />
+      <MemberSignature Language="C#" Value="public KeyPhraseExtractionSkill (System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.InputFieldMappingEntry&gt; inputs, System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.OutputFieldMappingEntry&gt; outputs, string name = default, string description = default, string context = default, Nullable&lt;Microsoft.Azure.Search.Models.KeyPhraseExtractionSkillLanguage&gt; defaultLanguageCode = default, Nullable&lt;int&gt; maxKeyPhraseCount = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Search.Models.InputFieldMappingEntry&gt; inputs, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Search.Models.OutputFieldMappingEntry&gt; outputs, string name, string description, string context, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Search.Models.KeyPhraseExtractionSkillLanguage&gt; defaultLanguageCode, valuetype System.Nullable`1&lt;int32&gt; maxKeyPhraseCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.Models.KeyPhraseExtractionSkill.#ctor(System.Collections.Generic.IList{Microsoft.Azure.Search.Models.InputFieldMappingEntry},System.Collections.Generic.IList{Microsoft.Azure.Search.Models.OutputFieldMappingEntry},System.String,System.String,System.String,System.Nullable{Microsoft.Azure.Search.Models.KeyPhraseExtractionSkillLanguage},System.Nullable{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (inputs As IList(Of InputFieldMappingEntry), outputs As IList(Of OutputFieldMappingEntry), Optional name As String = null, Optional description As String = null, Optional context As String = null, Optional defaultLanguageCode As Nullable(Of KeyPhraseExtractionSkillLanguage) = null, Optional maxKeyPhraseCount As Nullable(Of Integer) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Search.Models.KeyPhraseExtractionSkill : System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.InputFieldMappingEntry&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.OutputFieldMappingEntry&gt; * string * string * string * Nullable&lt;Microsoft.Azure.Search.Models.KeyPhraseExtractionSkillLanguage&gt; * Nullable&lt;int&gt; -&gt; Microsoft.Azure.Search.Models.KeyPhraseExtractionSkill" Usage="new Microsoft.Azure.Search.Models.KeyPhraseExtractionSkill (inputs, outputs, name, description, context, defaultLanguageCode, maxKeyPhraseCount)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="inputs" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.InputFieldMappingEntry&gt;" />
         <Parameter Name="outputs" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.OutputFieldMappingEntry&gt;" />
+        <Parameter Name="name" Type="System.String" />
         <Parameter Name="description" Type="System.String" />
         <Parameter Name="context" Type="System.String" />
         <Parameter Name="defaultLanguageCode" Type="System.Nullable&lt;Microsoft.Azure.Search.Models.KeyPhraseExtractionSkillLanguage&gt;" />
@@ -64,9 +65,13 @@
       <Docs>
         <param name="inputs">Inputs of the skills could be a column in the
             source data set, or the output of an upstream skill.</param>
-        <param name="outputs">The output of a skill is either a field in an
-            Azure Search index, or a value that can be consumed as an input by
+        <param name="outputs">The output of a skill is either a field in a
+            search index, or a value that can be consumed as an input by
             another skill.</param>
+        <param name="name">The name of the skill which uniquely identifies
+            it within the skillset. A skill with no name defined will be given
+            a default name of its 1-based index in the skills array, prefixed
+            with the character '#'.</param>
         <param name="description">The description of the skill which
             describes the inputs, outputs, and usage of the skill.</param>
         <param name="context">Represents the level at which operations take
@@ -94,7 +99,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -123,7 +128,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -151,7 +156,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

@@ -1,4 +1,4 @@
-﻿<Type Name="QueueClient" FullName="Microsoft.ServiceBus.Messaging.QueueClient">
+<Type Name="QueueClient" FullName="Microsoft.ServiceBus.Messaging.QueueClient">
   <TypeSignature Language="C#" Value="public abstract class QueueClient : Microsoft.ServiceBus.Messaging.MessagingEntityClient" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit QueueClient extends Microsoft.ServiceBus.Messaging.MessagingEntityClient" />
   <TypeSignature Language="DocId" Value="T:Microsoft.ServiceBus.Messaging.QueueClient" />
@@ -24,9 +24,6 @@
       <MemberSignature Language="VB.NET" Value="Public Sub Abandon (lockToken As Guid)" />
       <MemberSignature Language="F#" Value="abstract member Abandon : Guid -&gt; unit&#xA;override this.Abandon : Guid -&gt; unit" Usage="queueClient.Abandon lockToken" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageReceiver.Abandon(System.Guid)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -41,8 +38,8 @@
         <param name="lockToken">The lock token bound to the locked message instance to abandon.</param>
         <summary>Discards the message and relinquishes the message lock ownership.</summary>
         <remarks>When the client fails to get the message from the queue/topic, this method should be called. 
-                     The Service Bus will increment the delivery count of the message. 
-                     The client now can either attempt to receive the message again or move it to the dead-letter queue.</remarks>
+            The Service Bus will increment the delivery count of the message. 
+            The client now can either attempt to receive the message again or move it to the dead-letter queue.</remarks>
         <exception cref="T:System.TimeoutException">Thrown if the operation exceeded the timeout value set by 
             <see cref="P:Microsoft.ServiceBus.Messaging.MessagingFactorySettings.OperationTimeout" />.</exception>
         <exception cref="T:System.OperationCanceledException">Thrown if the client entity has been closed or aborted.</exception>
@@ -55,9 +52,6 @@
       <MemberSignature Language="VB.NET" Value="Public Sub Abandon (lockToken As Guid, propertiesToModify As IDictionary(Of String, Object))" />
       <MemberSignature Language="F#" Value="abstract member Abandon : Guid * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; unit&#xA;override this.Abandon : Guid * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; unit" Usage="queueClient.Abandon (lockToken, propertiesToModify)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageReceiver.Abandon(System.Guid,System.Collections.Generic.IDictionary{System.String,System.Object})</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -74,8 +68,8 @@
         <param name="propertiesToModify">The properties of the message to modify.</param>
         <summary>Discards the message and relinquishes the message lock ownership.</summary>
         <remarks>When the client fails to get the message from the queue/topic, this method should be called. 
-                     The Service Bus will increment the delivery count of the message. 
-                     The client now can either attempt to receive the message again or move it to the dead-letter queue.</remarks>
+            The Service Bus will increment the delivery count of the message. 
+            The client now can either attempt to receive the message again or move it to the dead-letter queue.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AbandonAsync">
@@ -85,9 +79,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function AbandonAsync (lockToken As Guid) As Task" />
       <MemberSignature Language="F#" Value="abstract member AbandonAsync : Guid -&gt; System.Threading.Tasks.Task&#xA;override this.AbandonAsync : Guid -&gt; System.Threading.Tasks.Task" Usage="queueClient.AbandonAsync lockToken" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageReceiver.AbandonAsync(System.Guid)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -112,9 +103,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function AbandonAsync (lockToken As Guid, propertiesToModify As IDictionary(Of String, Object)) As Task" />
       <MemberSignature Language="F#" Value="abstract member AbandonAsync : Guid * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; System.Threading.Tasks.Task&#xA;override this.AbandonAsync : Guid * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; System.Threading.Tasks.Task" Usage="queueClient.AbandonAsync (lockToken, propertiesToModify)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageReceiver.AbandonAsync(System.Guid,System.Collections.Generic.IDictionary{System.String,System.Object})</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -141,9 +129,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function AcceptMessageSession () As MessageSession" />
       <MemberSignature Language="F#" Value="abstract member AcceptMessageSession : unit -&gt; Microsoft.ServiceBus.Messaging.MessageSession&#xA;override this.AcceptMessageSession : unit -&gt; Microsoft.ServiceBus.Messaging.MessageSession" Usage="queueClient.AcceptMessageSession " />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageSessionEntity.AcceptMessageSession</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -169,9 +154,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function AcceptMessageSession (isExclusiveMode As Boolean) As MessageSession" />
       <MemberSignature Language="F#" Value="abstract member AcceptMessageSession : bool -&gt; Microsoft.ServiceBus.Messaging.MessageSession&#xA;override this.AcceptMessageSession : bool -&gt; Microsoft.ServiceBus.Messaging.MessageSession" Usage="queueClient.AcceptMessageSession isExclusiveMode" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageSessionEntity.AcceptMessageSession(System.Boolean)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -199,9 +181,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function AcceptMessageSession (sessionId As String) As MessageSession" />
       <MemberSignature Language="F#" Value="abstract member AcceptMessageSession : string -&gt; Microsoft.ServiceBus.Messaging.MessageSession&#xA;override this.AcceptMessageSession : string -&gt; Microsoft.ServiceBus.Messaging.MessageSession" Usage="queueClient.AcceptMessageSession sessionId" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageSessionEntity.AcceptMessageSession(System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -232,9 +211,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function AcceptMessageSession (serverWaitTime As TimeSpan) As MessageSession" />
       <MemberSignature Language="F#" Value="abstract member AcceptMessageSession : TimeSpan -&gt; Microsoft.ServiceBus.Messaging.MessageSession&#xA;override this.AcceptMessageSession : TimeSpan -&gt; Microsoft.ServiceBus.Messaging.MessageSession" Usage="queueClient.AcceptMessageSession serverWaitTime" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageSessionEntity.AcceptMessageSession(System.TimeSpan)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -265,9 +241,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function AcceptMessageSession (isExclusiveMode As Boolean, serverWaitTime As TimeSpan) As MessageSession" />
       <MemberSignature Language="F#" Value="abstract member AcceptMessageSession : bool * TimeSpan -&gt; Microsoft.ServiceBus.Messaging.MessageSession&#xA;override this.AcceptMessageSession : bool * TimeSpan -&gt; Microsoft.ServiceBus.Messaging.MessageSession" Usage="queueClient.AcceptMessageSession (isExclusiveMode, serverWaitTime)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageSessionEntity.AcceptMessageSession(System.Boolean,System.TimeSpan)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -297,9 +270,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function AcceptMessageSession (sessionId As String, isExclusiveMode As Boolean) As MessageSession" />
       <MemberSignature Language="F#" Value="abstract member AcceptMessageSession : string * bool -&gt; Microsoft.ServiceBus.Messaging.MessageSession&#xA;override this.AcceptMessageSession : string * bool -&gt; Microsoft.ServiceBus.Messaging.MessageSession" Usage="queueClient.AcceptMessageSession (sessionId, isExclusiveMode)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageSessionEntity.AcceptMessageSession(System.String,System.Boolean)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -330,9 +300,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function AcceptMessageSession (sessionId As String, lockToken As Guid) As MessageSession" />
       <MemberSignature Language="F#" Value="abstract member AcceptMessageSession : string * Guid -&gt; Microsoft.ServiceBus.Messaging.MessageSession&#xA;override this.AcceptMessageSession : string * Guid -&gt; Microsoft.ServiceBus.Messaging.MessageSession" Usage="queueClient.AcceptMessageSession (sessionId, lockToken)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageSessionEntity.AcceptMessageSession(System.String,System.Guid)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -363,9 +330,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function AcceptMessageSession (sessionId As String, serverWaitTime As TimeSpan) As MessageSession" />
       <MemberSignature Language="F#" Value="abstract member AcceptMessageSession : string * TimeSpan -&gt; Microsoft.ServiceBus.Messaging.MessageSession&#xA;override this.AcceptMessageSession : string * TimeSpan -&gt; Microsoft.ServiceBus.Messaging.MessageSession" Usage="queueClient.AcceptMessageSession (sessionId, serverWaitTime)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageSessionEntity.AcceptMessageSession(System.String,System.TimeSpan)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -399,9 +363,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function AcceptMessageSession (sessionId As String, isExclusiveMode As Boolean, serverWaitTime As TimeSpan) As MessageSession" />
       <MemberSignature Language="F#" Value="abstract member AcceptMessageSession : string * bool * TimeSpan -&gt; Microsoft.ServiceBus.Messaging.MessageSession&#xA;override this.AcceptMessageSession : string * bool * TimeSpan -&gt; Microsoft.ServiceBus.Messaging.MessageSession" Usage="queueClient.AcceptMessageSession (sessionId, isExclusiveMode, serverWaitTime)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageSessionEntity.AcceptMessageSession(System.String,System.Boolean,System.TimeSpan)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -434,9 +395,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function AcceptMessageSession (sessionId As String, lockToken As Guid, serverWaitTime As TimeSpan) As MessageSession" />
       <MemberSignature Language="F#" Value="abstract member AcceptMessageSession : string * Guid * TimeSpan -&gt; Microsoft.ServiceBus.Messaging.MessageSession&#xA;override this.AcceptMessageSession : string * Guid * TimeSpan -&gt; Microsoft.ServiceBus.Messaging.MessageSession" Usage="queueClient.AcceptMessageSession (sessionId, lockToken, serverWaitTime)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageSessionEntity.AcceptMessageSession(System.String,System.Guid,System.TimeSpan)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -468,9 +426,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function AcceptMessageSessionAsync () As Task(Of MessageSession)" />
       <MemberSignature Language="F#" Value="abstract member AcceptMessageSessionAsync : unit -&gt; System.Threading.Tasks.Task&lt;Microsoft.ServiceBus.Messaging.MessageSession&gt;&#xA;override this.AcceptMessageSessionAsync : unit -&gt; System.Threading.Tasks.Task&lt;Microsoft.ServiceBus.Messaging.MessageSession&gt;" Usage="queueClient.AcceptMessageSessionAsync " />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageSessionEntity.AcceptMessageSessionAsync</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -492,9 +447,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function AcceptMessageSessionAsync (isExclusiveMode As Boolean) As Task(Of MessageSession)" />
       <MemberSignature Language="F#" Value="abstract member AcceptMessageSessionAsync : bool -&gt; System.Threading.Tasks.Task&lt;Microsoft.ServiceBus.Messaging.MessageSession&gt;&#xA;override this.AcceptMessageSessionAsync : bool -&gt; System.Threading.Tasks.Task&lt;Microsoft.ServiceBus.Messaging.MessageSession&gt;" Usage="queueClient.AcceptMessageSessionAsync isExclusiveMode" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageSessionEntity.AcceptMessageSessionAsync(System.Boolean)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -520,9 +472,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function AcceptMessageSessionAsync (sessionId As String) As Task(Of MessageSession)" />
       <MemberSignature Language="F#" Value="abstract member AcceptMessageSessionAsync : string -&gt; System.Threading.Tasks.Task&lt;Microsoft.ServiceBus.Messaging.MessageSession&gt;&#xA;override this.AcceptMessageSessionAsync : string -&gt; System.Threading.Tasks.Task&lt;Microsoft.ServiceBus.Messaging.MessageSession&gt;" Usage="queueClient.AcceptMessageSessionAsync sessionId" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageSessionEntity.AcceptMessageSessionAsync(System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -548,9 +497,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function AcceptMessageSessionAsync (serverWaitTime As TimeSpan) As Task(Of MessageSession)" />
       <MemberSignature Language="F#" Value="abstract member AcceptMessageSessionAsync : TimeSpan -&gt; System.Threading.Tasks.Task&lt;Microsoft.ServiceBus.Messaging.MessageSession&gt;&#xA;override this.AcceptMessageSessionAsync : TimeSpan -&gt; System.Threading.Tasks.Task&lt;Microsoft.ServiceBus.Messaging.MessageSession&gt;" Usage="queueClient.AcceptMessageSessionAsync serverWaitTime" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageSessionEntity.AcceptMessageSessionAsync(System.TimeSpan)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -576,9 +522,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function AcceptMessageSessionAsync (isExclusiveMode As Boolean, serverWaitTime As TimeSpan) As Task(Of MessageSession)" />
       <MemberSignature Language="F#" Value="abstract member AcceptMessageSessionAsync : bool * TimeSpan -&gt; System.Threading.Tasks.Task&lt;Microsoft.ServiceBus.Messaging.MessageSession&gt;&#xA;override this.AcceptMessageSessionAsync : bool * TimeSpan -&gt; System.Threading.Tasks.Task&lt;Microsoft.ServiceBus.Messaging.MessageSession&gt;" Usage="queueClient.AcceptMessageSessionAsync (isExclusiveMode, serverWaitTime)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageSessionEntity.AcceptMessageSessionAsync(System.Boolean,System.TimeSpan)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -606,9 +549,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function AcceptMessageSessionAsync (sessionId As String, isExclusiveMode As Boolean) As Task(Of MessageSession)" />
       <MemberSignature Language="F#" Value="abstract member AcceptMessageSessionAsync : string * bool -&gt; System.Threading.Tasks.Task&lt;Microsoft.ServiceBus.Messaging.MessageSession&gt;&#xA;override this.AcceptMessageSessionAsync : string * bool -&gt; System.Threading.Tasks.Task&lt;Microsoft.ServiceBus.Messaging.MessageSession&gt;" Usage="queueClient.AcceptMessageSessionAsync (sessionId, isExclusiveMode)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageSessionEntity.AcceptMessageSessionAsync(System.String,System.Boolean)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -638,9 +578,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function AcceptMessageSessionAsync (sessionId As String, lockToken As Guid) As Task(Of MessageSession)" />
       <MemberSignature Language="F#" Value="abstract member AcceptMessageSessionAsync : string * Guid -&gt; System.Threading.Tasks.Task&lt;Microsoft.ServiceBus.Messaging.MessageSession&gt;&#xA;override this.AcceptMessageSessionAsync : string * Guid -&gt; System.Threading.Tasks.Task&lt;Microsoft.ServiceBus.Messaging.MessageSession&gt;" Usage="queueClient.AcceptMessageSessionAsync (sessionId, lockToken)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageSessionEntity.AcceptMessageSessionAsync(System.String,System.Guid)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -670,9 +607,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function AcceptMessageSessionAsync (sessionId As String, serverWaitTime As TimeSpan) As Task(Of MessageSession)" />
       <MemberSignature Language="F#" Value="abstract member AcceptMessageSessionAsync : string * TimeSpan -&gt; System.Threading.Tasks.Task&lt;Microsoft.ServiceBus.Messaging.MessageSession&gt;&#xA;override this.AcceptMessageSessionAsync : string * TimeSpan -&gt; System.Threading.Tasks.Task&lt;Microsoft.ServiceBus.Messaging.MessageSession&gt;" Usage="queueClient.AcceptMessageSessionAsync (sessionId, serverWaitTime)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageSessionEntity.AcceptMessageSessionAsync(System.String,System.TimeSpan)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -700,9 +634,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function AcceptMessageSessionAsync (sessionId As String, isExclusiveMode As Boolean, serverWaitTime As TimeSpan) As Task(Of MessageSession)" />
       <MemberSignature Language="F#" Value="abstract member AcceptMessageSessionAsync : string * bool * TimeSpan -&gt; System.Threading.Tasks.Task&lt;Microsoft.ServiceBus.Messaging.MessageSession&gt;&#xA;override this.AcceptMessageSessionAsync : string * bool * TimeSpan -&gt; System.Threading.Tasks.Task&lt;Microsoft.ServiceBus.Messaging.MessageSession&gt;" Usage="queueClient.AcceptMessageSessionAsync (sessionId, isExclusiveMode, serverWaitTime)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageSessionEntity.AcceptMessageSessionAsync(System.String,System.Boolean,System.TimeSpan)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -734,9 +665,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function AcceptMessageSessionAsync (sessionId As String, lockToken As Guid, serverWaitTime As TimeSpan) As Task(Of MessageSession)" />
       <MemberSignature Language="F#" Value="abstract member AcceptMessageSessionAsync : string * Guid * TimeSpan -&gt; System.Threading.Tasks.Task&lt;Microsoft.ServiceBus.Messaging.MessageSession&gt;&#xA;override this.AcceptMessageSessionAsync : string * Guid * TimeSpan -&gt; System.Threading.Tasks.Task&lt;Microsoft.ServiceBus.Messaging.MessageSession&gt;" Usage="queueClient.AcceptMessageSessionAsync (sessionId, lockToken, serverWaitTime)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageSessionEntity.AcceptMessageSessionAsync(System.String,System.Guid,System.TimeSpan)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -794,9 +722,6 @@
       <MemberSignature Language="VB.NET" Value="Public Sub Complete (lockToken As Guid)" />
       <MemberSignature Language="F#" Value="abstract member Complete : Guid -&gt; unit&#xA;override this.Complete : Guid -&gt; unit" Usage="queueClient.Complete lockToken" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageReceiver.Complete(System.Guid)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -810,8 +735,10 @@
       <Docs>
         <param name="lockToken">The lock token bound to the locked message instance.</param>
         <summary>Completes processing of a message.</summary>
-        <remarks> This method is used as a handshake between the client and Service Bus for a guaranteed delivery of the message. If the
-                       client failed before calling this method, the message will be kept in the queue.</remarks>
+        <remarks>
+            This method is used as a handshake between the client and Service Bus for a guaranteed delivery of the message. If the
+            client failed before calling this method, the message will be kept in the queue.
+            </remarks>
         <exception cref="T:System.TimeoutException">Thrown if the operation exceeded the timeout value set by 
             <see cref="P:Microsoft.ServiceBus.Messaging.MessagingFactorySettings.OperationTimeout" /></exception>
         <exception cref="T:System.OperationCanceledException">Thrown if the client entity has been closed or aborted.</exception>
@@ -826,9 +753,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function CompleteAsync (lockToken As Guid) As Task" />
       <MemberSignature Language="F#" Value="abstract member CompleteAsync : Guid -&gt; System.Threading.Tasks.Task&#xA;override this.CompleteAsync : Guid -&gt; System.Threading.Tasks.Task" Usage="queueClient.CompleteAsync lockToken" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageReceiver.CompleteAsync(System.Guid)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -853,9 +777,6 @@
       <MemberSignature Language="VB.NET" Value="Public Sub CompleteBatch (lockTokens As IEnumerable(Of Guid))" />
       <MemberSignature Language="F#" Value="abstract member CompleteBatch : seq&lt;Guid&gt; -&gt; unit&#xA;override this.CompleteBatch : seq&lt;Guid&gt; -&gt; unit" Usage="queueClient.CompleteBatch lockTokens" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageReceiver.CompleteBatch(System.Collections.Generic.IEnumerable{System.Guid})</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -869,8 +790,10 @@
       <Docs>
         <param name="lockTokens">The lock tokens associated with locked messages in the batch.</param>
         <summary>Completes processing of a message batch.</summary>
-        <remarks> This method is used as a handshake between the client and Service Bus for a guaranteed delivery of the message. If the
-                       client failed before calling this method, the message will be kept in the queue.</remarks>
+        <remarks>
+            This method is used as a handshake between the client and Service Bus for a guaranteed delivery of the message. If the
+            client failed before calling this method, the message will be kept in the queue.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="CompleteBatchAsync">
@@ -880,9 +803,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function CompleteBatchAsync (lockTokens As IEnumerable(Of Guid)) As Task" />
       <MemberSignature Language="F#" Value="abstract member CompleteBatchAsync : seq&lt;Guid&gt; -&gt; System.Threading.Tasks.Task&#xA;override this.CompleteBatchAsync : seq&lt;Guid&gt; -&gt; System.Threading.Tasks.Task" Usage="queueClient.CompleteBatchAsync lockTokens" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageReceiver.CompleteBatchAsync(System.Collections.Generic.IEnumerable{System.Guid})</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -958,162 +878,6 @@
             is as follows:
             
             <code><appSettings><!-- Service Bus specific app setings for messaging connections --><add key="Microsoft.ServiceBus.ConnectionString" value="Endpoint=sb://[your namespace].servicebus.windows.net;SharedSecretIssuer=owner;SharedSecretValue=[your secret]" /></appSettings></code></remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Create">
-      <MemberSignature Language="C#" Value="public static Microsoft.ServiceBus.Messaging.QueueClient Create (Uri endpointAddress, string path, Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext authContext, Microsoft.IdentityModel.Clients.ActiveDirectory.ClientAssertionCertificate clientAssertionCertificate, Microsoft.ServiceBus.Messaging.ReceiveMode mode = Microsoft.ServiceBus.Messaging.ReceiveMode.PeekLock, Nullable&lt;TimeSpan&gt; operationTimeout = null, Microsoft.ServiceBus.Messaging.TransportType transportType = Microsoft.ServiceBus.Messaging.TransportType.NetMessaging);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.ServiceBus.Messaging.QueueClient Create(class System.Uri endpointAddress, string path, class Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext authContext, class Microsoft.IdentityModel.Clients.ActiveDirectory.ClientAssertionCertificate clientAssertionCertificate, valuetype Microsoft.ServiceBus.Messaging.ReceiveMode mode, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; operationTimeout, valuetype Microsoft.ServiceBus.Messaging.TransportType transportType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.ServiceBus.Messaging.QueueClient.Create(System.Uri,System.String,Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext,Microsoft.IdentityModel.Clients.ActiveDirectory.ClientAssertionCertificate,Microsoft.ServiceBus.Messaging.ReceiveMode,System.Nullable{System.TimeSpan},Microsoft.ServiceBus.Messaging.TransportType)" />
-      <MemberSignature Language="F#" Value="static member Create : Uri * string * Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext * Microsoft.IdentityModel.Clients.ActiveDirectory.ClientAssertionCertificate * Microsoft.ServiceBus.Messaging.ReceiveMode * Nullable&lt;TimeSpan&gt; * Microsoft.ServiceBus.Messaging.TransportType -&gt; Microsoft.ServiceBus.Messaging.QueueClient" Usage="Microsoft.ServiceBus.Messaging.QueueClient.Create (endpointAddress, path, authContext, clientAssertionCertificate, mode, operationTimeout, transportType)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.ServiceBus.Messaging.QueueClient</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="endpointAddress" Type="System.Uri" />
-        <Parameter Name="path" Type="System.String" />
-        <Parameter Name="authContext" Type="Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext" />
-        <Parameter Name="clientAssertionCertificate" Type="Microsoft.IdentityModel.Clients.ActiveDirectory.ClientAssertionCertificate" />
-        <Parameter Name="mode" Type="Microsoft.ServiceBus.Messaging.ReceiveMode" />
-        <Parameter Name="operationTimeout" Type="System.Nullable&lt;System.TimeSpan&gt;" />
-        <Parameter Name="transportType" Type="Microsoft.ServiceBus.Messaging.TransportType" />
-      </Parameters>
-      <Docs>
-        <param name="endpointAddress">Fully qualified domain name for Sercvice Bus. Most likely, {yournamespace}.servicebus.windows.net</param>
-        <param name="path">The path to the queue.</param>
-        <param name="authContext">AuthenticationContext for AAD.</param>
-        <param name="clientAssertionCertificate">The client assertion certificate credential.</param>
-        <param name="mode">The receive mode.</param>
-        <param name="operationTimeout">
-          <see cref="T:System.TimeSpan" /> that specifies how long the messaging operation has to complete before timing out</param>
-        <param name="transportType">Messaging transport type.</param>
-        <summary>Creates a new instance of the 
-            <see cref="T:Microsoft.ServiceBus.Messaging.QueueClient" /> by using Azure Active Directory authentication context.</summary>
-        <returns>The created <see cref="T:Microsoft.ServiceBus.Messaging.QueueClient" />.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Create">
-      <MemberSignature Language="C#" Value="public static Microsoft.ServiceBus.Messaging.QueueClient Create (Uri endpointAddress, string path, Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext authContext, Microsoft.IdentityModel.Clients.ActiveDirectory.ClientCredential clientCredential, Microsoft.ServiceBus.Messaging.ReceiveMode mode = Microsoft.ServiceBus.Messaging.ReceiveMode.PeekLock, Nullable&lt;TimeSpan&gt; operationTimeout = null, Microsoft.ServiceBus.Messaging.TransportType transportType = Microsoft.ServiceBus.Messaging.TransportType.NetMessaging);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.ServiceBus.Messaging.QueueClient Create(class System.Uri endpointAddress, string path, class Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext authContext, class Microsoft.IdentityModel.Clients.ActiveDirectory.ClientCredential clientCredential, valuetype Microsoft.ServiceBus.Messaging.ReceiveMode mode, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; operationTimeout, valuetype Microsoft.ServiceBus.Messaging.TransportType transportType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.ServiceBus.Messaging.QueueClient.Create(System.Uri,System.String,Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext,Microsoft.IdentityModel.Clients.ActiveDirectory.ClientCredential,Microsoft.ServiceBus.Messaging.ReceiveMode,System.Nullable{System.TimeSpan},Microsoft.ServiceBus.Messaging.TransportType)" />
-      <MemberSignature Language="F#" Value="static member Create : Uri * string * Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext * Microsoft.IdentityModel.Clients.ActiveDirectory.ClientCredential * Microsoft.ServiceBus.Messaging.ReceiveMode * Nullable&lt;TimeSpan&gt; * Microsoft.ServiceBus.Messaging.TransportType -&gt; Microsoft.ServiceBus.Messaging.QueueClient" Usage="Microsoft.ServiceBus.Messaging.QueueClient.Create (endpointAddress, path, authContext, clientCredential, mode, operationTimeout, transportType)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.ServiceBus.Messaging.QueueClient</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="endpointAddress" Type="System.Uri" />
-        <Parameter Name="path" Type="System.String" />
-        <Parameter Name="authContext" Type="Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext" />
-        <Parameter Name="clientCredential" Type="Microsoft.IdentityModel.Clients.ActiveDirectory.ClientCredential" />
-        <Parameter Name="mode" Type="Microsoft.ServiceBus.Messaging.ReceiveMode" />
-        <Parameter Name="operationTimeout" Type="System.Nullable&lt;System.TimeSpan&gt;" />
-        <Parameter Name="transportType" Type="Microsoft.ServiceBus.Messaging.TransportType" />
-      </Parameters>
-      <Docs>
-        <param name="endpointAddress">Fully qualified domain name for Service Bus. Most likely, {yournamespace}.servicebus.windows.net</param>
-        <param name="path">The path to the queue.</param>
-        <param name="authContext">AuthenticationContext for AAD.</param>
-        <param name="clientCredential">The app credential.</param>
-        <param name="mode">The receive mode.</param>
-        <param name="operationTimeout">
-          <see cref="T:System.TimeSpan" /> that specifies how long the messaging operation has to complete before timing out</param>
-        <param name="transportType">Messaging transport type.</param>
-        <summary>Creates a new instance of the 
-            <see cref="T:Microsoft.ServiceBus.Messaging.QueueClient" /> by using Azure Active Directory authentication context.</summary>
-        <returns>The created <see cref="T:Microsoft.ServiceBus.Messaging.QueueClient" />.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Create">
-      <MemberSignature Language="C#" Value="public static Microsoft.ServiceBus.Messaging.QueueClient Create (Uri endpointAddress, string path, Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext authContext, string clientId, Microsoft.IdentityModel.Clients.ActiveDirectory.UserPasswordCredential userPasswordCredential, Microsoft.ServiceBus.Messaging.ReceiveMode mode = Microsoft.ServiceBus.Messaging.ReceiveMode.PeekLock, Nullable&lt;TimeSpan&gt; operationTimeout = null, Microsoft.ServiceBus.Messaging.TransportType transportType = Microsoft.ServiceBus.Messaging.TransportType.NetMessaging);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.ServiceBus.Messaging.QueueClient Create(class System.Uri endpointAddress, string path, class Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext authContext, string clientId, class Microsoft.IdentityModel.Clients.ActiveDirectory.UserPasswordCredential userPasswordCredential, valuetype Microsoft.ServiceBus.Messaging.ReceiveMode mode, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; operationTimeout, valuetype Microsoft.ServiceBus.Messaging.TransportType transportType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.ServiceBus.Messaging.QueueClient.Create(System.Uri,System.String,Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext,System.String,Microsoft.IdentityModel.Clients.ActiveDirectory.UserPasswordCredential,Microsoft.ServiceBus.Messaging.ReceiveMode,System.Nullable{System.TimeSpan},Microsoft.ServiceBus.Messaging.TransportType)" />
-      <MemberSignature Language="F#" Value="static member Create : Uri * string * Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext * string * Microsoft.IdentityModel.Clients.ActiveDirectory.UserPasswordCredential * Microsoft.ServiceBus.Messaging.ReceiveMode * Nullable&lt;TimeSpan&gt; * Microsoft.ServiceBus.Messaging.TransportType -&gt; Microsoft.ServiceBus.Messaging.QueueClient" Usage="Microsoft.ServiceBus.Messaging.QueueClient.Create (endpointAddress, path, authContext, clientId, userPasswordCredential, mode, operationTimeout, transportType)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.ServiceBus.Messaging.QueueClient</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="endpointAddress" Type="System.Uri" />
-        <Parameter Name="path" Type="System.String" />
-        <Parameter Name="authContext" Type="Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext" />
-        <Parameter Name="clientId" Type="System.String" />
-        <Parameter Name="userPasswordCredential" Type="Microsoft.IdentityModel.Clients.ActiveDirectory.UserPasswordCredential" />
-        <Parameter Name="mode" Type="Microsoft.ServiceBus.Messaging.ReceiveMode" />
-        <Parameter Name="operationTimeout" Type="System.Nullable&lt;System.TimeSpan&gt;" />
-        <Parameter Name="transportType" Type="Microsoft.ServiceBus.Messaging.TransportType" />
-      </Parameters>
-      <Docs>
-        <param name="endpointAddress">Fully qualified domain name for Service Bus. Most likely, {yournamespace}.servicebus.windows.net</param>
-        <param name="path">The path to the queue.</param>
-        <param name="authContext">AuthenticationContext for AAD.</param>
-        <param name="clientId">ClientId for AAD.</param>
-        <param name="userPasswordCredential">The user password credential.</param>
-        <param name="mode">The receive mode.</param>
-        <param name="operationTimeout">
-          <see cref="T:System.TimeSpan" /> that specifies how long the messaging operation has to complete before timing out</param>
-        <param name="transportType">Messaging transport type.</param>
-        <summary>Creates a new instance of the 
-            <see cref="T:Microsoft.ServiceBus.Messaging.QueueClient" /> by using Azure Active Directory authentication context.</summary>
-        <returns>The created <see cref="T:Microsoft.ServiceBus.Messaging.QueueClient" />.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Create">
-      <MemberSignature Language="C#" Value="public static Microsoft.ServiceBus.Messaging.QueueClient Create (Uri endpointAddress, string path, Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext authContext, string clientId, Uri redirectUri, Microsoft.IdentityModel.Clients.ActiveDirectory.IPlatformParameters platformParameters, Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifier userIdentifier = null, Microsoft.ServiceBus.Messaging.ReceiveMode mode = Microsoft.ServiceBus.Messaging.ReceiveMode.PeekLock, Nullable&lt;TimeSpan&gt; operationTimeout = null, Microsoft.ServiceBus.Messaging.TransportType transportType = Microsoft.ServiceBus.Messaging.TransportType.NetMessaging);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.ServiceBus.Messaging.QueueClient Create(class System.Uri endpointAddress, string path, class Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext authContext, string clientId, class System.Uri redirectUri, class Microsoft.IdentityModel.Clients.ActiveDirectory.IPlatformParameters platformParameters, class Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifier userIdentifier, valuetype Microsoft.ServiceBus.Messaging.ReceiveMode mode, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; operationTimeout, valuetype Microsoft.ServiceBus.Messaging.TransportType transportType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.ServiceBus.Messaging.QueueClient.Create(System.Uri,System.String,Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext,System.String,System.Uri,Microsoft.IdentityModel.Clients.ActiveDirectory.IPlatformParameters,Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifier,Microsoft.ServiceBus.Messaging.ReceiveMode,System.Nullable{System.TimeSpan},Microsoft.ServiceBus.Messaging.TransportType)" />
-      <MemberSignature Language="F#" Value="static member Create : Uri * string * Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext * string * Uri * Microsoft.IdentityModel.Clients.ActiveDirectory.IPlatformParameters * Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifier * Microsoft.ServiceBus.Messaging.ReceiveMode * Nullable&lt;TimeSpan&gt; * Microsoft.ServiceBus.Messaging.TransportType -&gt; Microsoft.ServiceBus.Messaging.QueueClient" Usage="Microsoft.ServiceBus.Messaging.QueueClient.Create (endpointAddress, path, authContext, clientId, redirectUri, platformParameters, userIdentifier, mode, operationTimeout, transportType)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.ServiceBus.Messaging.QueueClient</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="endpointAddress" Type="System.Uri" />
-        <Parameter Name="path" Type="System.String" />
-        <Parameter Name="authContext" Type="Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext" />
-        <Parameter Name="clientId" Type="System.String" />
-        <Parameter Name="redirectUri" Type="System.Uri" />
-        <Parameter Name="platformParameters" Type="Microsoft.IdentityModel.Clients.ActiveDirectory.IPlatformParameters" />
-        <Parameter Name="userIdentifier" Type="Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifier" />
-        <Parameter Name="mode" Type="Microsoft.ServiceBus.Messaging.ReceiveMode" />
-        <Parameter Name="operationTimeout" Type="System.Nullable&lt;System.TimeSpan&gt;" />
-        <Parameter Name="transportType" Type="Microsoft.ServiceBus.Messaging.TransportType" />
-      </Parameters>
-      <Docs>
-        <param name="endpointAddress">Fully qualified domain name for Service Bus. Most likely, {yournamespace}.servicebus.windows.net</param>
-        <param name="path">The path to the queue.</param>
-        <param name="authContext">AuthenticationContext for AAD.</param>
-        <param name="clientId">ClientId for AAD.</param>
-        <param name="redirectUri">The redrectUri on Client App.</param>
-        <param name="platformParameters">Platform parameters</param>
-        <param name="userIdentifier">User Identifier</param>
-        <param name="mode">The receive mode.</param>
-        <param name="operationTimeout">
-          <see cref="T:System.TimeSpan" /> that specifies how long the messaging operation has to complete before timing out</param>
-        <param name="transportType">Messaging transport type.</param>
-        <summary>Creates a new instance of the 
-            <see cref="T:Microsoft.ServiceBus.Messaging.QueueClient" /> by using Azure Active Directory authentication context.</summary>
-        <returns>The created <see cref="T:Microsoft.ServiceBus.Messaging.QueueClient" />.</returns>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateFromConnectionString">
@@ -1233,11 +997,48 @@
         <exception cref="T:System.ArgumentException">Thrown when the format of the <paramref name="connectionString" /> parameter is incorrect.</exception>
       </Docs>
     </Member>
-    <Member MemberName="CreateWithManagedServiceIdentity">
-      <MemberSignature Language="C#" Value="public static Microsoft.ServiceBus.Messaging.QueueClient CreateWithManagedServiceIdentity (Uri endpointAddress, string path, Microsoft.ServiceBus.Messaging.ReceiveMode mode = Microsoft.ServiceBus.Messaging.ReceiveMode.PeekLock, Nullable&lt;TimeSpan&gt; operationTimeout = null, Microsoft.ServiceBus.Messaging.TransportType transportType = Microsoft.ServiceBus.Messaging.TransportType.NetMessaging);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.ServiceBus.Messaging.QueueClient CreateWithManagedServiceIdentity(class System.Uri endpointAddress, string path, valuetype Microsoft.ServiceBus.Messaging.ReceiveMode mode, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; operationTimeout, valuetype Microsoft.ServiceBus.Messaging.TransportType transportType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.ServiceBus.Messaging.QueueClient.CreateWithManagedServiceIdentity(System.Uri,System.String,Microsoft.ServiceBus.Messaging.ReceiveMode,System.Nullable{System.TimeSpan},Microsoft.ServiceBus.Messaging.TransportType)" />
-      <MemberSignature Language="F#" Value="static member CreateWithManagedServiceIdentity : Uri * string * Microsoft.ServiceBus.Messaging.ReceiveMode * Nullable&lt;TimeSpan&gt; * Microsoft.ServiceBus.Messaging.TransportType -&gt; Microsoft.ServiceBus.Messaging.QueueClient" Usage="Microsoft.ServiceBus.Messaging.QueueClient.CreateWithManagedServiceIdentity (endpointAddress, path, mode, operationTimeout, transportType)" />
+    <Member MemberName="CreateWithAzureActiveDirectory">
+      <MemberSignature Language="C#" Value="public static Microsoft.ServiceBus.Messaging.QueueClient CreateWithAzureActiveDirectory (Uri endpointAddress, string path, Microsoft.ServiceBus.AzureActiveDirectoryTokenProvider.AuthenticationCallback authCallback, string authority, Microsoft.ServiceBus.Messaging.ReceiveMode mode = Microsoft.ServiceBus.Messaging.ReceiveMode.PeekLock, Nullable&lt;TimeSpan&gt; operationTimeout = default, Microsoft.ServiceBus.Messaging.TransportType transportType = Microsoft.ServiceBus.Messaging.TransportType.NetMessaging);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.ServiceBus.Messaging.QueueClient CreateWithAzureActiveDirectory(class System.Uri endpointAddress, string path, class Microsoft.ServiceBus.AzureActiveDirectoryTokenProvider/AuthenticationCallback authCallback, string authority, valuetype Microsoft.ServiceBus.Messaging.ReceiveMode mode, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; operationTimeout, valuetype Microsoft.ServiceBus.Messaging.TransportType transportType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.ServiceBus.Messaging.QueueClient.CreateWithAzureActiveDirectory(System.Uri,System.String,Microsoft.ServiceBus.AzureActiveDirectoryTokenProvider.AuthenticationCallback,System.String,Microsoft.ServiceBus.Messaging.ReceiveMode,System.Nullable{System.TimeSpan},Microsoft.ServiceBus.Messaging.TransportType)" />
+      <MemberSignature Language="F#" Value="static member CreateWithAzureActiveDirectory : Uri * string * Microsoft.ServiceBus.AzureActiveDirectoryTokenProvider.AuthenticationCallback * string * Microsoft.ServiceBus.Messaging.ReceiveMode * Nullable&lt;TimeSpan&gt; * Microsoft.ServiceBus.Messaging.TransportType -&gt; Microsoft.ServiceBus.Messaging.QueueClient" Usage="Microsoft.ServiceBus.Messaging.QueueClient.CreateWithAzureActiveDirectory (endpointAddress, path, authCallback, authority, mode, operationTimeout, transportType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.ServiceBus</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.ServiceBus.Messaging.QueueClient</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="endpointAddress" Type="System.Uri" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="authCallback" Type="Microsoft.ServiceBus.AzureActiveDirectoryTokenProvider+AuthenticationCallback" />
+        <Parameter Name="authority" Type="System.String" />
+        <Parameter Name="mode" Type="Microsoft.ServiceBus.Messaging.ReceiveMode" />
+        <Parameter Name="operationTimeout" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="transportType" Type="Microsoft.ServiceBus.Messaging.TransportType" />
+      </Parameters>
+      <Docs>
+        <param name="endpointAddress">Fully qualified domain name for Service Bus. Most likely, {yournamespace}.servicebus.windows.net</param>
+        <param name="path">The path to the queue.</param>
+        <param name="authCallback">The authentication delegate to provide access token.</param>
+        <param name="authority">Address of the authority to issue token.</param>
+        <param name="mode">The receive mode.</param>
+        <param name="operationTimeout">
+          <see cref="T:System.TimeSpan" /> that specifies how long the messaging operation has to complete before timing out</param>
+        <param name="transportType">Messaging transport type.</param>
+        <summary>Creates a new instance of the 
+            <see cref="T:Microsoft.ServiceBus.Messaging.QueueClient" /> by using Azure Active Directory authentication context.</summary>
+        <returns>The created <see cref="T:Microsoft.ServiceBus.Messaging.QueueClient" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateWithManagedIdentity">
+      <MemberSignature Language="C#" Value="public static Microsoft.ServiceBus.Messaging.QueueClient CreateWithManagedIdentity (Uri endpointAddress, string path, Microsoft.ServiceBus.Messaging.ReceiveMode mode = Microsoft.ServiceBus.Messaging.ReceiveMode.PeekLock, Nullable&lt;TimeSpan&gt; operationTimeout = default, Microsoft.ServiceBus.Messaging.TransportType transportType = Microsoft.ServiceBus.Messaging.TransportType.NetMessaging);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.ServiceBus.Messaging.QueueClient CreateWithManagedIdentity(class System.Uri endpointAddress, string path, valuetype Microsoft.ServiceBus.Messaging.ReceiveMode mode, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; operationTimeout, valuetype Microsoft.ServiceBus.Messaging.TransportType transportType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.ServiceBus.Messaging.QueueClient.CreateWithManagedIdentity(System.Uri,System.String,Microsoft.ServiceBus.Messaging.ReceiveMode,System.Nullable{System.TimeSpan},Microsoft.ServiceBus.Messaging.TransportType)" />
+      <MemberSignature Language="F#" Value="static member CreateWithManagedIdentity : Uri * string * Microsoft.ServiceBus.Messaging.ReceiveMode * Nullable&lt;TimeSpan&gt; * Microsoft.ServiceBus.Messaging.TransportType -&gt; Microsoft.ServiceBus.Messaging.QueueClient" Usage="Microsoft.ServiceBus.Messaging.QueueClient.CreateWithManagedIdentity (endpointAddress, path, mode, operationTimeout, transportType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
@@ -1261,7 +1062,7 @@
           <see cref="T:System.TimeSpan" /> that specifies how long the messaging operation has to complete before timing out</param>
         <param name="transportType">Messaging transport type.</param>
         <summary>Creates a new instance of the 
-            <see cref="T:Microsoft.ServiceBus.Messaging.QueueClient" /> by using Azure Managed Service Identity authentication.</summary>
+            <see cref="T:Microsoft.ServiceBus.Messaging.QueueClient" /> by using Azure Managed Identity authentication.</summary>
         <returns>The created <see cref="T:Microsoft.ServiceBus.Messaging.QueueClient" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1273,9 +1074,6 @@
       <MemberSignature Language="VB.NET" Value="Public Sub DeadLetter (lockToken As Guid)" />
       <MemberSignature Language="F#" Value="abstract member DeadLetter : Guid -&gt; unit&#xA;override this.DeadLetter : Guid -&gt; unit" Usage="queueClient.DeadLetter lockToken" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageReceiver.DeadLetter(System.Guid)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1304,9 +1102,6 @@
       <MemberSignature Language="VB.NET" Value="Public Sub DeadLetter (lockToken As Guid, propertiesToModify As IDictionary(Of String, Object))" />
       <MemberSignature Language="F#" Value="abstract member DeadLetter : Guid * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; unit&#xA;override this.DeadLetter : Guid * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; unit" Usage="queueClient.DeadLetter (lockToken, propertiesToModify)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageReceiver.DeadLetter(System.Guid,System.Collections.Generic.IDictionary{System.String,System.Object})</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1332,9 +1127,6 @@
       <MemberSignature Language="VB.NET" Value="Public Sub DeadLetter (lockToken As Guid, deadLetterReason As String, deadLetterErrorDescription As String)" />
       <MemberSignature Language="F#" Value="abstract member DeadLetter : Guid * string * string -&gt; unit&#xA;override this.DeadLetter : Guid * string * string -&gt; unit" Usage="queueClient.DeadLetter (lockToken, deadLetterReason, deadLetterErrorDescription)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageReceiver.DeadLetter(System.Guid,System.String,System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1367,9 +1159,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function DeadLetterAsync (lockToken As Guid) As Task" />
       <MemberSignature Language="F#" Value="abstract member DeadLetterAsync : Guid -&gt; System.Threading.Tasks.Task&#xA;override this.DeadLetterAsync : Guid -&gt; System.Threading.Tasks.Task" Usage="queueClient.DeadLetterAsync lockToken" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageReceiver.DeadLetterAsync(System.Guid)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1394,9 +1183,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function DeadLetterAsync (lockToken As Guid, propertiesToModify As IDictionary(Of String, Object)) As Task" />
       <MemberSignature Language="F#" Value="abstract member DeadLetterAsync : Guid * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; System.Threading.Tasks.Task&#xA;override this.DeadLetterAsync : Guid * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; System.Threading.Tasks.Task" Usage="queueClient.DeadLetterAsync (lockToken, propertiesToModify)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageReceiver.DeadLetterAsync(System.Guid,System.Collections.Generic.IDictionary{System.String,System.Object})</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1423,9 +1209,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function DeadLetterAsync (lockToken As Guid, deadLetterReason As String, deadLetterErrorDescription As String) As Task" />
       <MemberSignature Language="F#" Value="abstract member DeadLetterAsync : Guid * string * string -&gt; System.Threading.Tasks.Task&#xA;override this.DeadLetterAsync : Guid * string * string -&gt; System.Threading.Tasks.Task" Usage="queueClient.DeadLetterAsync (lockToken, deadLetterReason, deadLetterErrorDescription)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageReceiver.DeadLetterAsync(System.Guid,System.String,System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1454,9 +1237,6 @@
       <MemberSignature Language="VB.NET" Value="Public Sub Defer (lockToken As Guid)" />
       <MemberSignature Language="F#" Value="abstract member Defer : Guid -&gt; unit&#xA;override this.Defer : Guid -&gt; unit" Usage="queueClient.Defer lockToken" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageReceiver.Defer(System.Guid)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1485,9 +1265,6 @@
       <MemberSignature Language="VB.NET" Value="Public Sub Defer (lockToken As Guid, propertiesToModify As IDictionary(Of String, Object))" />
       <MemberSignature Language="F#" Value="abstract member Defer : Guid * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; unit&#xA;override this.Defer : Guid * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; unit" Usage="queueClient.Defer (lockToken, propertiesToModify)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageReceiver.Defer(System.Guid,System.Collections.Generic.IDictionary{System.String,System.Object})</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1513,9 +1290,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function DeferAsync (lockToken As Guid) As Task" />
       <MemberSignature Language="F#" Value="abstract member DeferAsync : Guid -&gt; System.Threading.Tasks.Task&#xA;override this.DeferAsync : Guid -&gt; System.Threading.Tasks.Task" Usage="queueClient.DeferAsync lockToken" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageReceiver.DeferAsync(System.Guid)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1540,9 +1314,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function DeferAsync (lockToken As Guid, propertiesToModify As IDictionary(Of String, Object)) As Task" />
       <MemberSignature Language="F#" Value="abstract member DeferAsync : Guid * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; System.Threading.Tasks.Task&#xA;override this.DeferAsync : Guid * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; System.Threading.Tasks.Task" Usage="queueClient.DeferAsync (lockToken, propertiesToModify)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageReceiver.DeferAsync(System.Guid,System.Collections.Generic.IDictionary{System.String,System.Object})</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1604,7 +1375,8 @@
         <Parameter Name="queuePath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="queuePath"></param>
+        <param name="queuePath">
+        </param>
         <summary />
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1617,9 +1389,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function GetMessageSessions () As IEnumerable(Of MessageSession)" />
       <MemberSignature Language="F#" Value="abstract member GetMessageSessions : unit -&gt; seq&lt;Microsoft.ServiceBus.Messaging.MessageSession&gt;&#xA;override this.GetMessageSessions : unit -&gt; seq&lt;Microsoft.ServiceBus.Messaging.MessageSession&gt;" Usage="queueClient.GetMessageSessions " />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageSessionEntity.GetMessageSessions</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1641,9 +1410,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function GetMessageSessions (lastUpdatedTime As DateTime) As IEnumerable(Of MessageSession)" />
       <MemberSignature Language="F#" Value="abstract member GetMessageSessions : DateTime -&gt; seq&lt;Microsoft.ServiceBus.Messaging.MessageSession&gt;&#xA;override this.GetMessageSessions : DateTime -&gt; seq&lt;Microsoft.ServiceBus.Messaging.MessageSession&gt;" Usage="queueClient.GetMessageSessions lastUpdatedTime" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageSessionEntity.GetMessageSessions(System.DateTime)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1668,9 +1434,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function GetMessageSessionsAsync () As Task(Of IEnumerable(Of MessageSession))" />
       <MemberSignature Language="F#" Value="abstract member GetMessageSessionsAsync : unit -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.ServiceBus.Messaging.MessageSession&gt;&gt;&#xA;override this.GetMessageSessionsAsync : unit -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.ServiceBus.Messaging.MessageSession&gt;&gt;" Usage="queueClient.GetMessageSessionsAsync " />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageSessionEntity.GetMessageSessionsAsync</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1692,9 +1455,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function GetMessageSessionsAsync (lastUpdatedTime As DateTime) As Task(Of IEnumerable(Of MessageSession))" />
       <MemberSignature Language="F#" Value="abstract member GetMessageSessionsAsync : DateTime -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.ServiceBus.Messaging.MessageSession&gt;&gt;&#xA;override this.GetMessageSessionsAsync : DateTime -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.ServiceBus.Messaging.MessageSession&gt;&gt;" Usage="queueClient.GetMessageSessionsAsync lastUpdatedTime" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageSessionEntity.GetMessageSessionsAsync(System.DateTime)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1797,15 +1557,24 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="sessionId"></param>
-        <param name="receiveMode"></param>
-        <param name="prefetchCount"></param>
-        <param name="isExclusiveMode"></param>
-        <param name="lockToken"></param>
-        <param name="serverWaitTime"></param>
-        <param name="timeout"></param>
-        <param name="callback"></param>
-        <param name="state"></param>
+        <param name="sessionId">
+        </param>
+        <param name="receiveMode">
+        </param>
+        <param name="prefetchCount">
+        </param>
+        <param name="isExclusiveMode">
+        </param>
+        <param name="lockToken">
+        </param>
+        <param name="serverWaitTime">
+        </param>
+        <param name="timeout">
+        </param>
+        <param name="callback">
+        </param>
+        <param name="state">
+        </param>
         <summary />
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -2218,9 +1987,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function Peek () As BrokeredMessage" />
       <MemberSignature Language="F#" Value="abstract member Peek : unit -&gt; Microsoft.ServiceBus.Messaging.BrokeredMessage&#xA;override this.Peek : unit -&gt; Microsoft.ServiceBus.Messaging.BrokeredMessage" Usage="queueClient.Peek " />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageBrowser.Peek</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -2243,9 +2009,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function Peek (fromSequenceNumber As Long) As BrokeredMessage" />
       <MemberSignature Language="F#" Value="abstract member Peek : int64 -&gt; Microsoft.ServiceBus.Messaging.BrokeredMessage&#xA;override this.Peek : int64 -&gt; Microsoft.ServiceBus.Messaging.BrokeredMessage" Usage="queueClient.Peek fromSequenceNumber" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageBrowser.Peek(System.Int64)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -2271,9 +2034,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function PeekAsync () As Task(Of BrokeredMessage)" />
       <MemberSignature Language="F#" Value="abstract member PeekAsync : unit -&gt; System.Threading.Tasks.Task&lt;Microsoft.ServiceBus.Messaging.BrokeredMessage&gt;&#xA;override this.PeekAsync : unit -&gt; System.Threading.Tasks.Task&lt;Microsoft.ServiceBus.Messaging.BrokeredMessage&gt;" Usage="queueClient.PeekAsync " />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageBrowser.PeekAsync</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -2295,9 +2055,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function PeekAsync (fromSequenceNumber As Long) As Task(Of BrokeredMessage)" />
       <MemberSignature Language="F#" Value="abstract member PeekAsync : int64 -&gt; System.Threading.Tasks.Task&lt;Microsoft.ServiceBus.Messaging.BrokeredMessage&gt;&#xA;override this.PeekAsync : int64 -&gt; System.Threading.Tasks.Task&lt;Microsoft.ServiceBus.Messaging.BrokeredMessage&gt;" Usage="queueClient.PeekAsync fromSequenceNumber" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageBrowser.PeekAsync(System.Int64)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -2322,9 +2079,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function PeekBatch (messageCount As Integer) As IEnumerable(Of BrokeredMessage)" />
       <MemberSignature Language="F#" Value="abstract member PeekBatch : int -&gt; seq&lt;Microsoft.ServiceBus.Messaging.BrokeredMessage&gt;&#xA;override this.PeekBatch : int -&gt; seq&lt;Microsoft.ServiceBus.Messaging.BrokeredMessage&gt;" Usage="queueClient.PeekBatch messageCount" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageBrowser.PeekBatch(System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -2350,9 +2104,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function PeekBatch (fromSequenceNumber As Long, messageCount As Integer) As IEnumerable(Of BrokeredMessage)" />
       <MemberSignature Language="F#" Value="abstract member PeekBatch : int64 * int -&gt; seq&lt;Microsoft.ServiceBus.Messaging.BrokeredMessage&gt;&#xA;override this.PeekBatch : int64 * int -&gt; seq&lt;Microsoft.ServiceBus.Messaging.BrokeredMessage&gt;" Usage="queueClient.PeekBatch (fromSequenceNumber, messageCount)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageBrowser.PeekBatch(System.Int64,System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -2379,9 +2130,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function PeekBatchAsync (messageCount As Integer) As Task(Of IEnumerable(Of BrokeredMessage))" />
       <MemberSignature Language="F#" Value="abstract member PeekBatchAsync : int -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.ServiceBus.Messaging.BrokeredMessage&gt;&gt;&#xA;override this.PeekBatchAsync : int -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.ServiceBus.Messaging.BrokeredMessage&gt;&gt;" Usage="queueClient.PeekBatchAsync messageCount" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageBrowser.PeekBatchAsync(System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -2406,9 +2154,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function PeekBatchAsync (fromSequenceNumber As Long, messageCount As Integer) As Task(Of IEnumerable(Of BrokeredMessage))" />
       <MemberSignature Language="F#" Value="abstract member PeekBatchAsync : int64 * int -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.ServiceBus.Messaging.BrokeredMessage&gt;&gt;&#xA;override this.PeekBatchAsync : int64 * int -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.ServiceBus.Messaging.BrokeredMessage&gt;&gt;" Usage="queueClient.PeekBatchAsync (fromSequenceNumber, messageCount)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageBrowser.PeekBatchAsync(System.Int64,System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -2435,9 +2180,6 @@
       <MemberSignature Language="VB.NET" Value="Public Property PrefetchCount As Integer" />
       <MemberSignature Language="F#" Value="member this.PrefetchCount : int with get, set" Usage="Microsoft.ServiceBus.Messaging.QueueClient.PrefetchCount" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Microsoft.ServiceBus.Messaging.IMessageSessionEntity.PrefetchCount</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -2458,9 +2200,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function Receive () As BrokeredMessage" />
       <MemberSignature Language="F#" Value="abstract member Receive : unit -&gt; Microsoft.ServiceBus.Messaging.BrokeredMessage&#xA;override this.Receive : unit -&gt; Microsoft.ServiceBus.Messaging.BrokeredMessage" Usage="queueClient.Receive " />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageReceiver.Receive</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -2491,9 +2230,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function Receive (sequenceNumber As Long) As BrokeredMessage" />
       <MemberSignature Language="F#" Value="abstract member Receive : int64 -&gt; Microsoft.ServiceBus.Messaging.BrokeredMessage&#xA;override this.Receive : int64 -&gt; Microsoft.ServiceBus.Messaging.BrokeredMessage" Usage="queueClient.Receive sequenceNumber" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageReceiver.Receive(System.Int64)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -2521,9 +2257,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function Receive (serverWaitTime As TimeSpan) As BrokeredMessage" />
       <MemberSignature Language="F#" Value="abstract member Receive : TimeSpan -&gt; Microsoft.ServiceBus.Messaging.BrokeredMessage&#xA;override this.Receive : TimeSpan -&gt; Microsoft.ServiceBus.Messaging.BrokeredMessage" Usage="queueClient.Receive serverWaitTime" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageReceiver.Receive(System.TimeSpan)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -2558,9 +2291,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function ReceiveAsync () As Task(Of BrokeredMessage)" />
       <MemberSignature Language="F#" Value="abstract member ReceiveAsync : unit -&gt; System.Threading.Tasks.Task&lt;Microsoft.ServiceBus.Messaging.BrokeredMessage&gt;&#xA;override this.ReceiveAsync : unit -&gt; System.Threading.Tasks.Task&lt;Microsoft.ServiceBus.Messaging.BrokeredMessage&gt;" Usage="queueClient.ReceiveAsync " />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageReceiver.ReceiveAsync</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -2582,9 +2312,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function ReceiveAsync (sequenceNumber As Long) As Task(Of BrokeredMessage)" />
       <MemberSignature Language="F#" Value="abstract member ReceiveAsync : int64 -&gt; System.Threading.Tasks.Task&lt;Microsoft.ServiceBus.Messaging.BrokeredMessage&gt;&#xA;override this.ReceiveAsync : int64 -&gt; System.Threading.Tasks.Task&lt;Microsoft.ServiceBus.Messaging.BrokeredMessage&gt;" Usage="queueClient.ReceiveAsync sequenceNumber" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageReceiver.ReceiveAsync(System.Int64)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -2609,9 +2336,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function ReceiveAsync (serverWaitTime As TimeSpan) As Task(Of BrokeredMessage)" />
       <MemberSignature Language="F#" Value="abstract member ReceiveAsync : TimeSpan -&gt; System.Threading.Tasks.Task&lt;Microsoft.ServiceBus.Messaging.BrokeredMessage&gt;&#xA;override this.ReceiveAsync : TimeSpan -&gt; System.Threading.Tasks.Task&lt;Microsoft.ServiceBus.Messaging.BrokeredMessage&gt;" Usage="queueClient.ReceiveAsync serverWaitTime" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageReceiver.ReceiveAsync(System.TimeSpan)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -2636,9 +2360,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function ReceiveBatch (sequenceNumbers As IEnumerable(Of Long)) As IEnumerable(Of BrokeredMessage)" />
       <MemberSignature Language="F#" Value="abstract member ReceiveBatch : seq&lt;int64&gt; -&gt; seq&lt;Microsoft.ServiceBus.Messaging.BrokeredMessage&gt;&#xA;override this.ReceiveBatch : seq&lt;int64&gt; -&gt; seq&lt;Microsoft.ServiceBus.Messaging.BrokeredMessage&gt;" Usage="queueClient.ReceiveBatch sequenceNumbers" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageReceiver.ReceiveBatch(System.Collections.Generic.IEnumerable{System.Int64})</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -2664,9 +2385,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function ReceiveBatch (messageCount As Integer) As IEnumerable(Of BrokeredMessage)" />
       <MemberSignature Language="F#" Value="abstract member ReceiveBatch : int -&gt; seq&lt;Microsoft.ServiceBus.Messaging.BrokeredMessage&gt;&#xA;override this.ReceiveBatch : int -&gt; seq&lt;Microsoft.ServiceBus.Messaging.BrokeredMessage&gt;" Usage="queueClient.ReceiveBatch messageCount" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageReceiver.ReceiveBatch(System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -2693,9 +2411,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function ReceiveBatch (messageCount As Integer, serverWaitTime As TimeSpan) As IEnumerable(Of BrokeredMessage)" />
       <MemberSignature Language="F#" Value="abstract member ReceiveBatch : int * TimeSpan -&gt; seq&lt;Microsoft.ServiceBus.Messaging.BrokeredMessage&gt;&#xA;override this.ReceiveBatch : int * TimeSpan -&gt; seq&lt;Microsoft.ServiceBus.Messaging.BrokeredMessage&gt;" Usage="queueClient.ReceiveBatch (messageCount, serverWaitTime)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageReceiver.ReceiveBatch(System.Int32,System.TimeSpan)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -2724,9 +2439,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function ReceiveBatchAsync (sequenceNumbers As IEnumerable(Of Long)) As Task(Of IEnumerable(Of BrokeredMessage))" />
       <MemberSignature Language="F#" Value="abstract member ReceiveBatchAsync : seq&lt;int64&gt; -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.ServiceBus.Messaging.BrokeredMessage&gt;&gt;&#xA;override this.ReceiveBatchAsync : seq&lt;int64&gt; -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.ServiceBus.Messaging.BrokeredMessage&gt;&gt;" Usage="queueClient.ReceiveBatchAsync sequenceNumbers" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageReceiver.ReceiveBatchAsync(System.Collections.Generic.IEnumerable{System.Int64})</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -2751,9 +2463,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function ReceiveBatchAsync (messageCount As Integer) As Task(Of IEnumerable(Of BrokeredMessage))" />
       <MemberSignature Language="F#" Value="abstract member ReceiveBatchAsync : int -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.ServiceBus.Messaging.BrokeredMessage&gt;&gt;&#xA;override this.ReceiveBatchAsync : int -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.ServiceBus.Messaging.BrokeredMessage&gt;&gt;" Usage="queueClient.ReceiveBatchAsync messageCount" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageReceiver.ReceiveBatchAsync(System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -2779,9 +2488,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function ReceiveBatchAsync (messageCount As Integer, serverWaitTime As TimeSpan) As Task(Of IEnumerable(Of BrokeredMessage))" />
       <MemberSignature Language="F#" Value="abstract member ReceiveBatchAsync : int * TimeSpan -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.ServiceBus.Messaging.BrokeredMessage&gt;&gt;&#xA;override this.ReceiveBatchAsync : int * TimeSpan -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.ServiceBus.Messaging.BrokeredMessage&gt;&gt;" Usage="queueClient.ReceiveBatchAsync (messageCount, serverWaitTime)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageReceiver.ReceiveBatchAsync(System.Int32,System.TimeSpan)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -3020,7 +2726,8 @@
         <Parameter Name="lockToken" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="lockToken"></param>
+        <param name="lockToken">
+        </param>
         <summary />
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -3044,7 +2751,8 @@
         <Parameter Name="lockToken" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="lockToken"></param>
+        <param name="lockToken">
+        </param>
         <summary />
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -3085,9 +2793,6 @@
       <MemberSignature Language="VB.NET" Value="Public Sub Send (message As BrokeredMessage)" />
       <MemberSignature Language="F#" Value="abstract member Send : Microsoft.ServiceBus.Messaging.BrokeredMessage -&gt; unit&#xA;override this.Send : Microsoft.ServiceBus.Messaging.BrokeredMessage -&gt; unit" Usage="queueClient.Send message" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageSender.Send(Microsoft.ServiceBus.Messaging.BrokeredMessage)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -3123,9 +2828,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function SendAsync (message As BrokeredMessage) As Task" />
       <MemberSignature Language="F#" Value="abstract member SendAsync : Microsoft.ServiceBus.Messaging.BrokeredMessage -&gt; System.Threading.Tasks.Task&#xA;override this.SendAsync : Microsoft.ServiceBus.Messaging.BrokeredMessage -&gt; System.Threading.Tasks.Task" Usage="queueClient.SendAsync message" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageSender.SendAsync(Microsoft.ServiceBus.Messaging.BrokeredMessage)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -3150,9 +2852,6 @@
       <MemberSignature Language="VB.NET" Value="Public Sub SendBatch (messages As IEnumerable(Of BrokeredMessage))" />
       <MemberSignature Language="F#" Value="abstract member SendBatch : seq&lt;Microsoft.ServiceBus.Messaging.BrokeredMessage&gt; -&gt; unit&#xA;override this.SendBatch : seq&lt;Microsoft.ServiceBus.Messaging.BrokeredMessage&gt; -&gt; unit" Usage="queueClient.SendBatch messages" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageSender.SendBatch(System.Collections.Generic.IEnumerable{Microsoft.ServiceBus.Messaging.BrokeredMessage})</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -3176,9 +2875,6 @@
       <MemberSignature Language="VB.NET" Value="Public Function SendBatchAsync (messages As IEnumerable(Of BrokeredMessage)) As Task" />
       <MemberSignature Language="F#" Value="abstract member SendBatchAsync : seq&lt;Microsoft.ServiceBus.Messaging.BrokeredMessage&gt; -&gt; System.Threading.Tasks.Task&#xA;override this.SendBatchAsync : seq&lt;Microsoft.ServiceBus.Messaging.BrokeredMessage&gt; -&gt; System.Threading.Tasks.Task" Usage="queueClient.SendBatchAsync messages" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.ServiceBus.Messaging.IMessageSender.SendBatchAsync(System.Collections.Generic.IEnumerable{Microsoft.ServiceBus.Messaging.BrokeredMessage})</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>

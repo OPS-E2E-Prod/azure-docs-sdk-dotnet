@@ -1,4 +1,4 @@
-﻿<Type Name="JobPreparationAndReleaseTaskExecutionInformation" FullName="Microsoft.Azure.Batch.Protocol.Models.JobPreparationAndReleaseTaskExecutionInformation">
+<Type Name="JobPreparationAndReleaseTaskExecutionInformation" FullName="Microsoft.Azure.Batch.Protocol.Models.JobPreparationAndReleaseTaskExecutionInformation">
   <TypeSignature Language="C#" Value="public class JobPreparationAndReleaseTaskExecutionInformation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit JobPreparationAndReleaseTaskExecutionInformation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.Protocol.Models.JobPreparationAndReleaseTaskExecutionInformation" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type JobPreparationAndReleaseTaskExecutionInformation = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -14,8 +14,8 @@
   <Interfaces />
   <Docs>
     <summary>
-            The status of the Job Preparation and Job Release tasks on a compute
-            node.
+            The status of the Job Preparation and Job Release Tasks on a Compute
+            Node.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -28,7 +28,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -40,7 +40,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public JobPreparationAndReleaseTaskExecutionInformation (string poolId = null, string nodeId = null, string nodeUrl = null, Microsoft.Azure.Batch.Protocol.Models.JobPreparationTaskExecutionInformation jobPreparationTaskExecutionInfo = null, Microsoft.Azure.Batch.Protocol.Models.JobReleaseTaskExecutionInformation jobReleaseTaskExecutionInfo = null);" />
+      <MemberSignature Language="C#" Value="public JobPreparationAndReleaseTaskExecutionInformation (string poolId = default, string nodeId = default, string nodeUrl = default, Microsoft.Azure.Batch.Protocol.Models.JobPreparationTaskExecutionInformation jobPreparationTaskExecutionInfo = default, Microsoft.Azure.Batch.Protocol.Models.JobReleaseTaskExecutionInformation jobReleaseTaskExecutionInfo = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string poolId, string nodeId, string nodeUrl, class Microsoft.Azure.Batch.Protocol.Models.JobPreparationTaskExecutionInformation jobPreparationTaskExecutionInfo, class Microsoft.Azure.Batch.Protocol.Models.JobReleaseTaskExecutionInformation jobReleaseTaskExecutionInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.JobPreparationAndReleaseTaskExecutionInformation.#ctor(System.String,System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.JobPreparationTaskExecutionInformation,Microsoft.Azure.Batch.Protocol.Models.JobReleaseTaskExecutionInformation)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional poolId As String = null, Optional nodeId As String = null, Optional nodeUrl As String = null, Optional jobPreparationTaskExecutionInfo As JobPreparationTaskExecutionInformation = null, Optional jobReleaseTaskExecutionInfo As JobReleaseTaskExecutionInformation = null)" />
@@ -48,7 +48,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="poolId" Type="System.String" />
@@ -58,18 +58,18 @@
         <Parameter Name="jobReleaseTaskExecutionInfo" Type="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTaskExecutionInformation" />
       </Parameters>
       <Docs>
-        <param name="poolId">The ID of the pool containing the compute node
+        <param name="poolId">The ID of the Pool containing the Compute Node
             to which this entry refers.</param>
-        <param name="nodeId">The ID of the compute node to which this entry
+        <param name="nodeId">The ID of the Compute Node to which this entry
             refers.</param>
-        <param name="nodeUrl">The URL of the compute node to which this
+        <param name="nodeUrl">The URL of the Compute Node to which this
             entry refers.</param>
         <param name="jobPreparationTaskExecutionInfo">Information about the
-            execution status of the Job Preparation task on this compute
-            node.</param>
+            execution status of the Job Preparation Task on this Compute
+            Node.</param>
         <param name="jobReleaseTaskExecutionInfo">Information about the
-            execution status of the Job Release task on this compute
-            node.</param>
+            execution status of the Job Release Task on this Compute
+            Node.</param>
         <summary>
             Initializes a new instance of the
             JobPreparationAndReleaseTaskExecutionInformation class.
@@ -86,7 +86,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -99,7 +99,7 @@
       <Docs>
         <summary>
             Gets or sets information about the execution status of the Job
-            Preparation task on this compute node.
+            Preparation Task on this Compute Node.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -114,7 +114,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -127,12 +127,12 @@
       <Docs>
         <summary>
             Gets or sets information about the execution status of the Job
-            Release task on this compute node.
+            Release Task on this Compute Node.
             </summary>
         <value>To be added.</value>
         <remarks>
-            This property is set only if the Job Release task has run on the
-            node.
+            This property is set only if the Job Release Task has run on the
+            Compute Node.
             </remarks>
       </Docs>
     </Member>
@@ -145,7 +145,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -157,7 +157,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the ID of the compute node to which this entry refers.
+            Gets or sets the ID of the Compute Node to which this entry refers.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -172,7 +172,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -184,7 +184,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the URL of the compute node to which this entry
+            Gets or sets the URL of the Compute Node to which this entry
             refers.
             </summary>
         <value>To be added.</value>
@@ -200,7 +200,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -212,7 +212,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the ID of the pool containing the compute node to
+            Gets or sets the ID of the Pool containing the Compute Node to
             which this entry refers.
             </summary>
         <value>To be added.</value>

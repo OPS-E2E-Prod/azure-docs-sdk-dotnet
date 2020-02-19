@@ -1,4 +1,4 @@
-﻿<Type Name="ImagePrediction" FullName="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training.Models.ImagePrediction">
+<Type Name="ImagePrediction" FullName="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training.Models.ImagePrediction">
   <TypeSignature Language="C#" Value="public class ImagePrediction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ImagePrediction extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training.Models.ImagePrediction" />
@@ -40,7 +40,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ImagePrediction (Guid id = null, Guid project = null, Guid iteration = null, DateTime created = null, System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training.Models.Prediction&gt; predictions = null);" />
+      <MemberSignature Language="C#" Value="public ImagePrediction (Guid id = default, Guid project = default, Guid iteration = default, DateTime created = default, System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training.Models.Prediction&gt; predictions = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid id, valuetype System.Guid project, valuetype System.Guid iteration, valuetype System.DateTime created, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training.Models.Prediction&gt; predictions) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training.Models.ImagePrediction.#ctor(System.Guid,System.Guid,System.Guid,System.DateTime,System.Collections.Generic.IList{Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training.Models.Prediction})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As Guid = null, Optional project As Guid = null, Optional iteration As Guid = null, Optional created As DateTime = null, Optional predictions As IList(Of Prediction) = null)" />
@@ -91,7 +91,9 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary />
+        <summary>
+            Gets date this prediction was created.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -117,7 +119,9 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary />
+        <summary>
+            Gets prediction Id.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -143,7 +147,9 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary />
+        <summary>
+            Gets iteration Id.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -169,7 +175,9 @@
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training.Models.Prediction&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary />
+        <summary>
+            Gets list of predictions.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -195,7 +203,9 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary />
+        <summary>
+            Gets project Id.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

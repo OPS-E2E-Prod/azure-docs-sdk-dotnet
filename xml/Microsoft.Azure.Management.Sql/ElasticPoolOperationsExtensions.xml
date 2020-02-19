@@ -1,4 +1,4 @@
-﻿<Type Name="ElasticPoolOperationsExtensions" FullName="Microsoft.Azure.Management.Sql.ElasticPoolOperationsExtensions">
+<Type Name="ElasticPoolOperationsExtensions" FullName="Microsoft.Azure.Management.Sql.ElasticPoolOperationsExtensions">
   <TypeSignature Language="C#" Value="public static class ElasticPoolOperationsExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ElasticPoolOperationsExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Sql.ElasticPoolOperationsExtensions" />
@@ -51,7 +51,8 @@
         <param name="serverName">
             The name of the server.
             </param>
-        <param name="elasticPoolName"></param>
+        <param name="elasticPoolName">
+        </param>
         <param name="operationId">
             The operation identifier.
             </param>
@@ -62,7 +63,7 @@
       </Docs>
     </Member>
     <Member MemberName="CancelAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task CancelAsync (this Microsoft.Azure.Management.Sql.IElasticPoolOperations operations, string resourceGroupName, string serverName, string elasticPoolName, Guid operationId, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task CancelAsync (this Microsoft.Azure.Management.Sql.IElasticPoolOperations operations, string resourceGroupName, string serverName, string elasticPoolName, Guid operationId, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task CancelAsync(class Microsoft.Azure.Management.Sql.IElasticPoolOperations operations, string resourceGroupName, string serverName, string elasticPoolName, valuetype System.Guid operationId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.ElasticPoolOperationsExtensions.CancelAsync(Microsoft.Azure.Management.Sql.IElasticPoolOperations,System.String,System.String,System.String,System.Guid,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member CancelAsync : Microsoft.Azure.Management.Sql.IElasticPoolOperations * string * string * string * Guid * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Sql.ElasticPoolOperationsExtensions.CancelAsync (operations, resourceGroupName, serverName, elasticPoolName, operationId, cancellationToken)" />
@@ -71,6 +72,11 @@
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -93,7 +99,8 @@
         <param name="serverName">
             The name of the server.
             </param>
-        <param name="elasticPoolName"></param>
+        <param name="elasticPoolName">
+        </param>
         <param name="operationId">
             The operation identifier.
             </param>
@@ -138,7 +145,8 @@
         <param name="serverName">
             The name of the server.
             </param>
-        <param name="elasticPoolName"></param>
+        <param name="elasticPoolName">
+        </param>
         <summary>
             Gets a list of operations performed on the elastic pool.
             </summary>
@@ -147,7 +155,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListByElasticPoolAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.ElasticPoolOperation&gt;&gt; ListByElasticPoolAsync (this Microsoft.Azure.Management.Sql.IElasticPoolOperations operations, string resourceGroupName, string serverName, string elasticPoolName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.ElasticPoolOperation&gt;&gt; ListByElasticPoolAsync (this Microsoft.Azure.Management.Sql.IElasticPoolOperations operations, string resourceGroupName, string serverName, string elasticPoolName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Sql.Models.ElasticPoolOperation&gt;&gt; ListByElasticPoolAsync(class Microsoft.Azure.Management.Sql.IElasticPoolOperations operations, string resourceGroupName, string serverName, string elasticPoolName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.ElasticPoolOperationsExtensions.ListByElasticPoolAsync(Microsoft.Azure.Management.Sql.IElasticPoolOperations,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListByElasticPoolAsync : Microsoft.Azure.Management.Sql.IElasticPoolOperations * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.ElasticPoolOperation&gt;&gt;" Usage="Microsoft.Azure.Management.Sql.ElasticPoolOperationsExtensions.ListByElasticPoolAsync (operations, resourceGroupName, serverName, elasticPoolName, cancellationToken)" />
@@ -156,6 +164,11 @@
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.ElasticPoolOperation&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -177,7 +190,8 @@
         <param name="serverName">
             The name of the server.
             </param>
-        <param name="elasticPoolName"></param>
+        <param name="elasticPoolName">
+        </param>
         <param name="cancellationToken">
             The cancellation token.
             </param>
@@ -221,7 +235,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListByElasticPoolNextAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.ElasticPoolOperation&gt;&gt; ListByElasticPoolNextAsync (this Microsoft.Azure.Management.Sql.IElasticPoolOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.ElasticPoolOperation&gt;&gt; ListByElasticPoolNextAsync (this Microsoft.Azure.Management.Sql.IElasticPoolOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Sql.Models.ElasticPoolOperation&gt;&gt; ListByElasticPoolNextAsync(class Microsoft.Azure.Management.Sql.IElasticPoolOperations operations, string nextPageLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.ElasticPoolOperationsExtensions.ListByElasticPoolNextAsync(Microsoft.Azure.Management.Sql.IElasticPoolOperations,System.String,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="static member ListByElasticPoolNextAsync : Microsoft.Azure.Management.Sql.IElasticPoolOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.ElasticPoolOperation&gt;&gt;" Usage="Microsoft.Azure.Management.Sql.ElasticPoolOperationsExtensions.ListByElasticPoolNextAsync (operations, nextPageLink, cancellationToken)" />
@@ -230,6 +244,11 @@
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.ElasticPoolOperation&gt;&gt;</ReturnType>
       </ReturnValue>

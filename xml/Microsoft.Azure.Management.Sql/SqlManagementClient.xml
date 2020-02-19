@@ -1,4 +1,4 @@
-﻿<Type Name="SqlManagementClient" FullName="Microsoft.Azure.Management.Sql.SqlManagementClient">
+<Type Name="SqlManagementClient" FullName="Microsoft.Azure.Management.Sql.SqlManagementClient">
   <TypeSignature Language="C#" Value="public class SqlManagementClient : Microsoft.Rest.ServiceClient&lt;Microsoft.Azure.Management.Sql.SqlManagementClient&gt;, IDisposable, Microsoft.Azure.Management.Sql.ISqlManagementClient, Microsoft.Rest.Azure.IAzureClient" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SqlManagementClient extends Microsoft.Rest.ServiceClient`1&lt;class Microsoft.Azure.Management.Sql.SqlManagementClient&gt; implements class Microsoft.Azure.Management.Sql.ISqlManagementClient, class Microsoft.Rest.Azure.IAzureClient, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Sql.SqlManagementClient" />
@@ -49,7 +49,7 @@
       <Parameters>
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="azure-dotnet">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -80,7 +80,7 @@
         <Parameter Name="credentials" Type="Microsoft.Rest.ServiceClientCredentials" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="azure-dotnet">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -143,7 +143,7 @@
         <Parameter Name="rootHandler" Type="System.Net.Http.HttpClientHandler" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="azure-dotnet">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -177,7 +177,7 @@
         <Parameter Name="baseUri" Type="System.Uri" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="azure-dotnet">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -248,7 +248,7 @@
         <Parameter Name="rootHandler" Type="System.Net.Http.HttpClientHandler" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="azure-dotnet">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -289,7 +289,7 @@
         <Parameter Name="credentials" Type="Microsoft.Rest.ServiceClientCredentials" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="azure-dotnet">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -330,7 +330,7 @@
         <Parameter Name="rootHandler" Type="System.Net.Http.HttpClientHandler" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="azure-dotnet">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -372,7 +372,7 @@
         <Parameter Name="rootHandler" Type="System.Net.Http.HttpClientHandler" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="azure-dotnet">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -1072,6 +1072,28 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="InstancePools">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Sql.IInstancePoolsOperations InstancePools { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Sql.IInstancePoolsOperations InstancePools" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.SqlManagementClient.InstancePools" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstancePools As IInstancePoolsOperations" />
+      <MemberSignature Language="F#" Value="member this.InstancePools : Microsoft.Azure.Management.Sql.IInstancePoolsOperations" Usage="Microsoft.Azure.Management.Sql.SqlManagementClient.InstancePools" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Sql.IInstancePoolsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the IInstancePoolsOperations.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="JobAgents">
       <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Sql.IJobAgentsOperations JobAgents { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Sql.IJobAgentsOperations JobAgents" />
@@ -1341,6 +1363,28 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ManagedDatabaseRestoreDetails">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Sql.IManagedDatabaseRestoreDetailsOperations ManagedDatabaseRestoreDetails { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Sql.IManagedDatabaseRestoreDetailsOperations ManagedDatabaseRestoreDetails" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.SqlManagementClient.ManagedDatabaseRestoreDetails" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ManagedDatabaseRestoreDetails As IManagedDatabaseRestoreDetailsOperations" />
+      <MemberSignature Language="F#" Value="member this.ManagedDatabaseRestoreDetails : Microsoft.Azure.Management.Sql.IManagedDatabaseRestoreDetailsOperations" Usage="Microsoft.Azure.Management.Sql.SqlManagementClient.ManagedDatabaseRestoreDetails" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Sql.IManagedDatabaseRestoreDetailsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the IManagedDatabaseRestoreDetailsOperations.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ManagedDatabases">
       <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Sql.IManagedDatabasesOperations ManagedDatabases { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Sql.IManagedDatabasesOperations ManagedDatabases" />
@@ -1468,6 +1512,28 @@
       <Docs>
         <summary>
             Gets the IManagedDatabaseVulnerabilityAssessmentScansOperations.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedInstanceAdministrators">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Sql.IManagedInstanceAdministratorsOperations ManagedInstanceAdministrators { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Sql.IManagedInstanceAdministratorsOperations ManagedInstanceAdministrators" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.SqlManagementClient.ManagedInstanceAdministrators" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ManagedInstanceAdministrators As IManagedInstanceAdministratorsOperations" />
+      <MemberSignature Language="F#" Value="member this.ManagedInstanceAdministrators : Microsoft.Azure.Management.Sql.IManagedInstanceAdministratorsOperations" Usage="Microsoft.Azure.Management.Sql.SqlManagementClient.ManagedInstanceAdministrators" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Sql.IManagedInstanceAdministratorsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the IManagedInstanceAdministratorsOperations.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1644,6 +1710,50 @@
       <Docs>
         <summary>
             Gets the IOperations.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrivateEndpointConnections">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Sql.IPrivateEndpointConnectionsOperations PrivateEndpointConnections { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Sql.IPrivateEndpointConnectionsOperations PrivateEndpointConnections" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.SqlManagementClient.PrivateEndpointConnections" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrivateEndpointConnections As IPrivateEndpointConnectionsOperations" />
+      <MemberSignature Language="F#" Value="member this.PrivateEndpointConnections : Microsoft.Azure.Management.Sql.IPrivateEndpointConnectionsOperations" Usage="Microsoft.Azure.Management.Sql.SqlManagementClient.PrivateEndpointConnections" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Sql.IPrivateEndpointConnectionsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the IPrivateEndpointConnectionsOperations.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrivateLinkResources">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Sql.IPrivateLinkResourcesOperations PrivateLinkResources { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Sql.IPrivateLinkResourcesOperations PrivateLinkResources" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.SqlManagementClient.PrivateLinkResources" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrivateLinkResources As IPrivateLinkResourcesOperations" />
+      <MemberSignature Language="F#" Value="member this.PrivateLinkResources : Microsoft.Azure.Management.Sql.IPrivateLinkResourcesOperations" Usage="Microsoft.Azure.Management.Sql.SqlManagementClient.PrivateLinkResources" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Sql.IPrivateLinkResourcesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the IPrivateLinkResourcesOperations.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -2307,6 +2417,28 @@
       <Docs>
         <summary>
             Gets the ITransparentDataEncryptionsOperations.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Usages">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Sql.IUsagesOperations Usages { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Sql.IUsagesOperations Usages" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.SqlManagementClient.Usages" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Usages As IUsagesOperations" />
+      <MemberSignature Language="F#" Value="member this.Usages : Microsoft.Azure.Management.Sql.IUsagesOperations" Usage="Microsoft.Azure.Management.Sql.SqlManagementClient.Usages" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Sql.IUsagesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the IUsagesOperations.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
