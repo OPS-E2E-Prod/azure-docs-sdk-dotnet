@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
     <AssemblyVersion>30.0.0.0</AssemblyVersion>
     <AssemblyVersion>31.0.0.0</AssemblyVersion>
+    <AssemblyVersion>32.0.0.0</AssemblyVersion>
+    <AssemblyVersion>33.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -35,6 +37,8 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>30.0.0.0</AssemblyVersion>
         <AssemblyVersion>31.0.0.0</AssemblyVersion>
+        <AssemblyVersion>32.0.0.0</AssemblyVersion>
+        <AssemblyVersion>33.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -45,26 +49,31 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public DiskUpdate (Nullable&lt;Microsoft.Azure.Management.Compute.Models.OperatingSystemTypes&gt; osType = default, Nullable&lt;int&gt; diskSizeGB = default, Microsoft.Azure.Management.Compute.Models.EncryptionSettingsCollection encryptionSettingsCollection = default, Nullable&lt;long&gt; diskIOPSReadWrite = default, Nullable&lt;int&gt; diskMBpsReadWrite = default, Microsoft.Azure.Management.Compute.Models.Encryption encryption = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Microsoft.Azure.Management.Compute.Models.DiskSku sku = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Compute.Models.OperatingSystemTypes&gt; osType, valuetype System.Nullable`1&lt;int32&gt; diskSizeGB, class Microsoft.Azure.Management.Compute.Models.EncryptionSettingsCollection encryptionSettingsCollection, valuetype System.Nullable`1&lt;int64&gt; diskIOPSReadWrite, valuetype System.Nullable`1&lt;int32&gt; diskMBpsReadWrite, class Microsoft.Azure.Management.Compute.Models.Encryption encryption, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, class Microsoft.Azure.Management.Compute.Models.DiskSku sku) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Models.DiskUpdate.#ctor(System.Nullable{Microsoft.Azure.Management.Compute.Models.OperatingSystemTypes},System.Nullable{System.Int32},Microsoft.Azure.Management.Compute.Models.EncryptionSettingsCollection,System.Nullable{System.Int64},System.Nullable{System.Int32},Microsoft.Azure.Management.Compute.Models.Encryption,System.Collections.Generic.IDictionary{System.String,System.String},Microsoft.Azure.Management.Compute.Models.DiskSku)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Compute.Models.DiskUpdate : Nullable&lt;Microsoft.Azure.Management.Compute.Models.OperatingSystemTypes&gt; * Nullable&lt;int&gt; * Microsoft.Azure.Management.Compute.Models.EncryptionSettingsCollection * Nullable&lt;int64&gt; * Nullable&lt;int&gt; * Microsoft.Azure.Management.Compute.Models.Encryption * System.Collections.Generic.IDictionary&lt;string, string&gt; * Microsoft.Azure.Management.Compute.Models.DiskSku -&gt; Microsoft.Azure.Management.Compute.Models.DiskUpdate" Usage="new Microsoft.Azure.Management.Compute.Models.DiskUpdate (osType, diskSizeGB, encryptionSettingsCollection, diskIOPSReadWrite, diskMBpsReadWrite, encryption, tags, sku)" />
+      <MemberSignature Language="C#" Value="public DiskUpdate (Microsoft.Azure.Management.Compute.Models.OperatingSystemTypes? osType = default, int? diskSizeGB = default, Microsoft.Azure.Management.Compute.Models.EncryptionSettingsCollection encryptionSettingsCollection = default, long? diskIOPSReadWrite = default, long? diskMBpsReadWrite = default, long? diskIOPSReadOnly = default, long? diskMBpsReadOnly = default, int? maxShares = default, Microsoft.Azure.Management.Compute.Models.Encryption encryption = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Microsoft.Azure.Management.Compute.Models.DiskSku sku = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Compute.Models.OperatingSystemTypes&gt; osType, valuetype System.Nullable`1&lt;int32&gt; diskSizeGB, class Microsoft.Azure.Management.Compute.Models.EncryptionSettingsCollection encryptionSettingsCollection, valuetype System.Nullable`1&lt;int64&gt; diskIOPSReadWrite, valuetype System.Nullable`1&lt;int64&gt; diskMBpsReadWrite, valuetype System.Nullable`1&lt;int64&gt; diskIOPSReadOnly, valuetype System.Nullable`1&lt;int64&gt; diskMBpsReadOnly, valuetype System.Nullable`1&lt;int32&gt; maxShares, class Microsoft.Azure.Management.Compute.Models.Encryption encryption, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, class Microsoft.Azure.Management.Compute.Models.DiskSku sku) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Models.DiskUpdate.#ctor(System.Nullable{Microsoft.Azure.Management.Compute.Models.OperatingSystemTypes},System.Nullable{System.Int32},Microsoft.Azure.Management.Compute.Models.EncryptionSettingsCollection,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int32},Microsoft.Azure.Management.Compute.Models.Encryption,System.Collections.Generic.IDictionary{System.String,System.String},Microsoft.Azure.Management.Compute.Models.DiskSku)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional osType As Nullable(Of OperatingSystemTypes) = null, Optional diskSizeGB As Nullable(Of Integer) = null, Optional encryptionSettingsCollection As EncryptionSettingsCollection = null, Optional diskIOPSReadWrite As Nullable(Of Long) = null, Optional diskMBpsReadWrite As Nullable(Of Long) = null, Optional diskIOPSReadOnly As Nullable(Of Long) = null, Optional diskMBpsReadOnly As Nullable(Of Long) = null, Optional maxShares As Nullable(Of Integer) = null, Optional encryption As Encryption = null, Optional tags As IDictionary(Of String, String) = null, Optional sku As DiskSku = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Compute.Models.DiskUpdate : Nullable&lt;Microsoft.Azure.Management.Compute.Models.OperatingSystemTypes&gt; * Nullable&lt;int&gt; * Microsoft.Azure.Management.Compute.Models.EncryptionSettingsCollection * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; * Nullable&lt;int&gt; * Microsoft.Azure.Management.Compute.Models.Encryption * System.Collections.Generic.IDictionary&lt;string, string&gt; * Microsoft.Azure.Management.Compute.Models.DiskSku -&gt; Microsoft.Azure.Management.Compute.Models.DiskUpdate" Usage="new Microsoft.Azure.Management.Compute.Models.DiskUpdate (osType, diskSizeGB, encryptionSettingsCollection, diskIOPSReadWrite, diskMBpsReadWrite, diskIOPSReadOnly, diskMBpsReadOnly, maxShares, encryption, tags, sku)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
-        <AssemblyVersion>31.0.0.0</AssemblyVersion>
+        <AssemblyVersion>33.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="osType" Type="System.Nullable&lt;Microsoft.Azure.Management.Compute.Models.OperatingSystemTypes&gt;" />
         <Parameter Name="diskSizeGB" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="encryptionSettingsCollection" Type="Microsoft.Azure.Management.Compute.Models.EncryptionSettingsCollection" />
         <Parameter Name="diskIOPSReadWrite" Type="System.Nullable&lt;System.Int64&gt;" />
-        <Parameter Name="diskMBpsReadWrite" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="diskMBpsReadWrite" Type="System.Nullable&lt;System.Int64&gt;" />
+        <Parameter Name="diskIOPSReadOnly" Type="System.Nullable&lt;System.Int64&gt;" />
+        <Parameter Name="diskMBpsReadOnly" Type="System.Nullable&lt;System.Int64&gt;" />
+        <Parameter Name="maxShares" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="encryption" Type="Microsoft.Azure.Management.Compute.Models.Encryption" />
         <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
         <Parameter Name="sku" Type="Microsoft.Azure.Management.Compute.Models.DiskSku" />
       </Parameters>
       <Docs>
+        <param name="sku">To be added.</param>
         <param name="osType">the Operating System type. Possible values
             include: 'Windows', 'Linux'</param>
         <param name="diskSizeGB">If creationData.createOption is Empty,
@@ -83,19 +92,57 @@
             disk; only settable for UltraSSD disks. MBps means millions of
             bytes per second - MB here uses the ISO notation, of powers of
             10.</param>
+        <param name="diskIOPSReadOnly">The total number of IOPS that will
+            be allowed across all VMs mounting the shared disk as ReadOnly. One
+            operation can transfer between 4k and 256k bytes.</param>
+        <param name="diskMBpsReadOnly">The total throughput (MBps) that
+            will be allowed across all VMs mounting the shared disk as
+            ReadOnly. MBps means millions of bytes per second - MB here uses
+            the ISO notation, of powers of 10.</param>
+        <param name="maxShares">The maximum number of VMs that can attach
+            to the disk at the same time. Value greater than one indicates a
+            disk that can be mounted on multiple VMs at the same time.</param>
         <param name="encryption">Encryption property can be used to encrypt
             data at rest with customer managed keys or platform managed
             keys.</param>
         <param name="tags">Resource tags</param>
-        <param name="sku">To be added.</param>
         <summary>
             Initializes a new instance of the DiskUpdate class.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="DiskIOPSReadOnly">
+      <MemberSignature Language="C#" Value="public long? DiskIOPSReadOnly { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; DiskIOPSReadOnly" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Compute.Models.DiskUpdate.DiskIOPSReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Property DiskIOPSReadOnly As Nullable(Of Long)" />
+      <MemberSignature Language="F#" Value="member this.DiskIOPSReadOnly : Nullable&lt;int64&gt; with get, set" Usage="Microsoft.Azure.Management.Compute.Models.DiskUpdate.DiskIOPSReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
+        <AssemblyVersion>33.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.diskIOPSReadOnly")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the total number of IOPS that will be allowed across
+            all VMs mounting the shared disk as ReadOnly. One operation can
+            transfer between 4k and 256k bytes.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="DiskIOPSReadWrite">
-      <MemberSignature Language="C#" Value="public Nullable&lt;long&gt; DiskIOPSReadWrite { get; set; }" />
+      <MemberSignature Language="C#" Value="public long? DiskIOPSReadWrite { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; DiskIOPSReadWrite" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Compute.Models.DiskUpdate.DiskIOPSReadWrite" />
       <MemberSignature Language="VB.NET" Value="Public Property DiskIOPSReadWrite As Nullable(Of Long)" />
@@ -105,6 +152,8 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>30.0.0.0</AssemblyVersion>
         <AssemblyVersion>31.0.0.0</AssemblyVersion>
+        <AssemblyVersion>32.0.0.0</AssemblyVersion>
+        <AssemblyVersion>33.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -124,17 +173,49 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="DiskMBpsReadOnly">
+      <MemberSignature Language="C#" Value="public long? DiskMBpsReadOnly { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; DiskMBpsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Compute.Models.DiskUpdate.DiskMBpsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Property DiskMBpsReadOnly As Nullable(Of Long)" />
+      <MemberSignature Language="F#" Value="member this.DiskMBpsReadOnly : Nullable&lt;int64&gt; with get, set" Usage="Microsoft.Azure.Management.Compute.Models.DiskUpdate.DiskMBpsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
+        <AssemblyVersion>33.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.diskMBpsReadOnly")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the total throughput (MBps) that will be allowed
+            across all VMs mounting the shared disk as ReadOnly. MBps means
+            millions of bytes per second - MB here uses the ISO notation, of
+            powers of 10.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="DiskMBpsReadWrite">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; DiskMBpsReadWrite { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; DiskMBpsReadWrite" />
+      <MemberSignature Language="C#" Value="public long? DiskMBpsReadWrite { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; DiskMBpsReadWrite" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Compute.Models.DiskUpdate.DiskMBpsReadWrite" />
-      <MemberSignature Language="VB.NET" Value="Public Property DiskMBpsReadWrite As Nullable(Of Integer)" />
-      <MemberSignature Language="F#" Value="member this.DiskMBpsReadWrite : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.Compute.Models.DiskUpdate.DiskMBpsReadWrite" />
+      <MemberSignature Language="VB.NET" Value="Public Property DiskMBpsReadWrite As Nullable(Of Long)" />
+      <MemberSignature Language="F#" Value="member this.DiskMBpsReadWrite : Nullable&lt;int64&gt; with get, set" Usage="Microsoft.Azure.Management.Compute.Models.DiskUpdate.DiskMBpsReadWrite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>30.0.0.0</AssemblyVersion>
         <AssemblyVersion>31.0.0.0</AssemblyVersion>
+        <AssemblyVersion>32.0.0.0</AssemblyVersion>
+        <AssemblyVersion>33.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -142,7 +223,7 @@
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+        <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -155,7 +236,7 @@
       </Docs>
     </Member>
     <Member MemberName="DiskSizeGB">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; DiskSizeGB { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? DiskSizeGB { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; DiskSizeGB" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Compute.Models.DiskUpdate.DiskSizeGB" />
       <MemberSignature Language="VB.NET" Value="Public Property DiskSizeGB As Nullable(Of Integer)" />
@@ -165,6 +246,8 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>30.0.0.0</AssemblyVersion>
         <AssemblyVersion>31.0.0.0</AssemblyVersion>
+        <AssemblyVersion>32.0.0.0</AssemblyVersion>
+        <AssemblyVersion>33.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -196,6 +279,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>31.0.0.0</AssemblyVersion>
+        <AssemblyVersion>32.0.0.0</AssemblyVersion>
+        <AssemblyVersion>33.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -225,6 +310,8 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>30.0.0.0</AssemblyVersion>
         <AssemblyVersion>31.0.0.0</AssemblyVersion>
+        <AssemblyVersion>32.0.0.0</AssemblyVersion>
+        <AssemblyVersion>33.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -244,8 +331,37 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="MaxShares">
+      <MemberSignature Language="C#" Value="public int? MaxShares { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; MaxShares" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Compute.Models.DiskUpdate.MaxShares" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxShares As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.MaxShares : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.Compute.Models.DiskUpdate.MaxShares" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
+        <AssemblyVersion>33.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.maxShares")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the maximum number of VMs that can attach to the disk
+            at the same time. Value greater than one indicates a disk that can
+            be mounted on multiple VMs at the same time.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="OsType">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Management.Compute.Models.OperatingSystemTypes&gt; OsType { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Compute.Models.OperatingSystemTypes? OsType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Compute.Models.OperatingSystemTypes&gt; OsType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Compute.Models.DiskUpdate.OsType" />
       <MemberSignature Language="VB.NET" Value="Public Property OsType As Nullable(Of OperatingSystemTypes)" />
@@ -255,6 +371,8 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>30.0.0.0</AssemblyVersion>
         <AssemblyVersion>31.0.0.0</AssemblyVersion>
+        <AssemblyVersion>32.0.0.0</AssemblyVersion>
+        <AssemblyVersion>33.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -284,6 +402,8 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>30.0.0.0</AssemblyVersion>
         <AssemblyVersion>31.0.0.0</AssemblyVersion>
+        <AssemblyVersion>32.0.0.0</AssemblyVersion>
+        <AssemblyVersion>33.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -310,6 +430,8 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>30.0.0.0</AssemblyVersion>
         <AssemblyVersion>31.0.0.0</AssemblyVersion>
+        <AssemblyVersion>32.0.0.0</AssemblyVersion>
+        <AssemblyVersion>33.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -338,6 +460,8 @@
         <AssemblyName>Microsoft.Azure.Management.Compute</AssemblyName>
         <AssemblyVersion>30.0.0.0</AssemblyVersion>
         <AssemblyVersion>31.0.0.0</AssemblyVersion>
+        <AssemblyVersion>32.0.0.0</AssemblyVersion>
+        <AssemblyVersion>33.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
