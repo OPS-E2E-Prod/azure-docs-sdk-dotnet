@@ -10,6 +10,8 @@
     <AssemblyVersion>1.0.0.62</AssemblyVersion>
     <AssemblyVersion>1.0.0.63</AssemblyVersion>
     <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.Sql.Fluent.Models.ProxyResourceInner</BaseTypeName>
@@ -39,6 +41,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -49,7 +53,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public DatabaseOperationInner (string id = default, string name = default, string type = default, string databaseName = default, string operation = default, string operationFriendlyName = default, Nullable&lt;int&gt; percentComplete = default, string serverName = default, Nullable&lt;DateTime&gt; startTime = default, Microsoft.Azure.Management.Sql.Fluent.Models.ManagementOperationState state = default, Nullable&lt;int&gt; errorCode = default, string errorDescription = default, Nullable&lt;int&gt; errorSeverity = default, Nullable&lt;bool&gt; isUserError = default, Nullable&lt;DateTime&gt; estimatedCompletionTime = default, string description = default, Nullable&lt;bool&gt; isCancellable = default);" />
+      <MemberSignature Language="C#" Value="public DatabaseOperationInner (string id = default, string name = default, string type = default, string databaseName = default, string operation = default, string operationFriendlyName = default, int? percentComplete = default, string serverName = default, DateTime? startTime = default, Microsoft.Azure.Management.Sql.Fluent.Models.ManagementOperationState state = default, int? errorCode = default, string errorDescription = default, int? errorSeverity = default, bool? isUserError = default, DateTime? estimatedCompletionTime = default, string description = default, bool? isCancellable = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string type, string databaseName, string operation, string operationFriendlyName, valuetype System.Nullable`1&lt;int32&gt; percentComplete, string serverName, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startTime, class Microsoft.Azure.Management.Sql.Fluent.Models.ManagementOperationState state, valuetype System.Nullable`1&lt;int32&gt; errorCode, string errorDescription, valuetype System.Nullable`1&lt;int32&gt; errorSeverity, valuetype System.Nullable`1&lt;bool&gt; isUserError, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; estimatedCompletionTime, string description, valuetype System.Nullable`1&lt;bool&gt; isCancellable) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Fluent.Models.DatabaseOperationInner.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},Microsoft.Azure.Management.Sql.Fluent.Models.ManagementOperationState,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.DateTime},System.String,System.Nullable{System.Boolean})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional databaseName As String = null, Optional operation As String = null, Optional operationFriendlyName As String = null, Optional percentComplete As Nullable(Of Integer) = null, Optional serverName As String = null, Optional startTime As Nullable(Of DateTime) = null, Optional state As ManagementOperationState = null, Optional errorCode As Nullable(Of Integer) = null, Optional errorDescription As String = null, Optional errorSeverity As Nullable(Of Integer) = null, Optional isUserError As Nullable(Of Boolean) = null, Optional estimatedCompletionTime As Nullable(Of DateTime) = null, Optional description As String = null, Optional isCancellable As Nullable(Of Boolean) = null)" />
@@ -61,6 +65,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
@@ -127,6 +133,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -157,6 +165,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -175,7 +185,7 @@
       </Docs>
     </Member>
     <Member MemberName="ErrorCode">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; ErrorCode { get; }" />
+      <MemberSignature Language="C#" Value="public int? ErrorCode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; ErrorCode" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Fluent.Models.DatabaseOperationInner.ErrorCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorCode As Nullable(Of Integer)" />
@@ -187,6 +197,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -217,6 +229,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -235,7 +249,7 @@
       </Docs>
     </Member>
     <Member MemberName="ErrorSeverity">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; ErrorSeverity { get; }" />
+      <MemberSignature Language="C#" Value="public int? ErrorSeverity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; ErrorSeverity" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Fluent.Models.DatabaseOperationInner.ErrorSeverity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorSeverity As Nullable(Of Integer)" />
@@ -247,6 +261,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -265,7 +281,7 @@
       </Docs>
     </Member>
     <Member MemberName="EstimatedCompletionTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; EstimatedCompletionTime { get; }" />
+      <MemberSignature Language="C#" Value="public DateTime? EstimatedCompletionTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; EstimatedCompletionTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Fluent.Models.DatabaseOperationInner.EstimatedCompletionTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EstimatedCompletionTime As Nullable(Of DateTime)" />
@@ -277,6 +293,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -295,7 +313,7 @@
       </Docs>
     </Member>
     <Member MemberName="IsCancellable">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsCancellable { get; }" />
+      <MemberSignature Language="C#" Value="public bool? IsCancellable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsCancellable" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Fluent.Models.DatabaseOperationInner.IsCancellable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCancellable As Nullable(Of Boolean)" />
@@ -307,6 +325,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -325,7 +345,7 @@
       </Docs>
     </Member>
     <Member MemberName="IsUserError">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsUserError { get; }" />
+      <MemberSignature Language="C#" Value="public bool? IsUserError { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsUserError" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Fluent.Models.DatabaseOperationInner.IsUserError" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsUserError As Nullable(Of Boolean)" />
@@ -337,6 +357,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -367,6 +389,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -397,6 +421,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -415,7 +441,7 @@
       </Docs>
     </Member>
     <Member MemberName="PercentComplete">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; PercentComplete { get; }" />
+      <MemberSignature Language="C#" Value="public int? PercentComplete { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; PercentComplete" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Fluent.Models.DatabaseOperationInner.PercentComplete" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PercentComplete As Nullable(Of Integer)" />
@@ -427,6 +453,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -457,6 +485,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -475,7 +505,7 @@
       </Docs>
     </Member>
     <Member MemberName="StartTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; StartTime { get; }" />
+      <MemberSignature Language="C#" Value="public DateTime? StartTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; StartTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Fluent.Models.DatabaseOperationInner.StartTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartTime As Nullable(Of DateTime)" />
@@ -487,6 +517,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -517,6 +549,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

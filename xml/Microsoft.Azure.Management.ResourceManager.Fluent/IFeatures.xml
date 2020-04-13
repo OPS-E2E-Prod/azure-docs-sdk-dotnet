@@ -10,6 +10,8 @@
     <AssemblyVersion>1.0.0.62</AssemblyVersion>
     <AssemblyVersion>1.0.0.63</AssemblyVersion>
     <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -36,6 +38,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.ResourceManager.Fluent.IFeature</ReturnType>
@@ -58,6 +62,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ResourceManager.Fluent.IFeature&gt; RegisterAsync (string resourceProviderNamespace, string featureName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.ResourceManager.Fluent.IFeature&gt; RegisterAsync(string resourceProviderNamespace, string featureName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ResourceManager.Fluent.IFeatures.RegisterAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RegisterAsync (resourceProviderNamespace As String, featureName As String, Optional cancellationToken As CancellationToken = null) As Task(Of IFeature)" />
       <MemberSignature Language="F#" Value="abstract member RegisterAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ResourceManager.Fluent.IFeature&gt;" Usage="iFeatures.RegisterAsync (resourceProviderNamespace, featureName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -66,6 +71,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ResourceManager.Fluent.IFeature&gt;</ReturnType>
@@ -76,9 +83,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="cancellationToken">To be added.</param>
         <param name="resourceProviderNamespace">the namespace of resource provider</param>
         <param name="featureName">featureName the name of the feature</param>
-        <param name="cancellationToken">To be added.</param>
         <summary>
             Registers a feature in a resource provider.
             </summary>

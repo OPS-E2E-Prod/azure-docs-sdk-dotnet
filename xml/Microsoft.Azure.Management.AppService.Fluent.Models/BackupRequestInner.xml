@@ -10,6 +10,8 @@
     <AssemblyVersion>1.0.0.62</AssemblyVersion>
     <AssemblyVersion>1.0.0.63</AssemblyVersion>
     <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.AppService.Fluent.Models.ProxyOnlyResourceInner</BaseTypeName>
@@ -39,6 +41,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -49,9 +53,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public BackupRequestInner (string storageAccountUrl, string id = default, string name = default, string type = default, string kind = default, string backupName = default, Nullable&lt;bool&gt; enabled = default, Microsoft.Azure.Management.AppService.Fluent.Models.BackupSchedule backupSchedule = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DatabaseBackupSetting&gt; databases = default);" />
+      <MemberSignature Language="C#" Value="public BackupRequestInner (string storageAccountUrl, string id = default, string name = default, string type = default, string kind = default, string backupName = default, bool? enabled = default, Microsoft.Azure.Management.AppService.Fluent.Models.BackupSchedule backupSchedule = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DatabaseBackupSetting&gt; databases = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string storageAccountUrl, string id, string name, string type, string kind, string backupName, valuetype System.Nullable`1&lt;bool&gt; enabled, class Microsoft.Azure.Management.AppService.Fluent.Models.BackupSchedule backupSchedule, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DatabaseBackupSetting&gt; databases) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.Models.BackupRequestInner.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Boolean},Microsoft.Azure.Management.AppService.Fluent.Models.BackupSchedule,System.Collections.Generic.IList{Microsoft.Azure.Management.AppService.Fluent.Models.DatabaseBackupSetting})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (storageAccountUrl As String, Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional kind As String = null, Optional backupName As String = null, Optional enabled As Nullable(Of Boolean) = null, Optional backupSchedule As BackupSchedule = null, Optional databases As IList(Of DatabaseBackupSetting) = null)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.AppService.Fluent.Models.BackupRequestInner : string * string * string * string * string * string * Nullable&lt;bool&gt; * Microsoft.Azure.Management.AppService.Fluent.Models.BackupSchedule * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DatabaseBackupSetting&gt; -&gt; Microsoft.Azure.Management.AppService.Fluent.Models.BackupRequestInner" Usage="new Microsoft.Azure.Management.AppService.Fluent.Models.BackupRequestInner (storageAccountUrl, id, name, type, kind, backupName, enabled, backupSchedule, databases)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -60,6 +65,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="storageAccountUrl" Type="System.String" />
@@ -73,10 +80,10 @@
         <Parameter Name="databases" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DatabaseBackupSetting&gt;" />
       </Parameters>
       <Docs>
-        <param name="storageAccountUrl">SAS URL to the container.</param>
         <param name="id">To be added.</param>
         <param name="name">To be added.</param>
         <param name="type">To be added.</param>
+        <param name="storageAccountUrl">SAS URL to the container.</param>
         <param name="kind">Kind of resource.</param>
         <param name="backupName">Name of the backup.</param>
         <param name="enabled">True if the backup schedule is enabled (must
@@ -104,6 +111,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -134,6 +143,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -165,6 +176,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -183,7 +196,7 @@
       </Docs>
     </Member>
     <Member MemberName="Enabled">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Enabled { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? Enabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Enabled" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.AppService.Fluent.Models.BackupRequestInner.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Nullable(Of Boolean)" />
@@ -195,6 +208,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -227,6 +242,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -257,6 +274,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

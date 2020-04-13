@@ -10,6 +10,8 @@
     <AssemblyVersion>1.0.0.62</AssemblyVersion>
     <AssemblyVersion>1.0.0.63</AssemblyVersion>
     <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -40,6 +42,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -51,9 +55,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public StorageAccountUpdateParameters (Microsoft.Azure.Management.Storage.Fluent.Models.SkuInner sku = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Microsoft.Azure.Management.Storage.Fluent.Models.Identity identity = default, Microsoft.Azure.Management.Storage.Fluent.Models.CustomDomain customDomain = default, Microsoft.Azure.Management.Storage.Fluent.Models.Encryption encryption = default, Nullable&lt;Microsoft.Azure.Management.Storage.Fluent.Models.AccessTier&gt; accessTier = default, Nullable&lt;bool&gt; enableAzureFilesAadIntegration = default, Nullable&lt;bool&gt; enableHttpsTrafficOnly = default, Microsoft.Azure.Management.Storage.Fluent.Models.NetworkRuleSet networkRuleSet = default, Nullable&lt;Microsoft.Azure.Management.Storage.Fluent.Models.Kind&gt; kind = default);" />
+      <MemberSignature Language="C#" Value="public StorageAccountUpdateParameters (Microsoft.Azure.Management.Storage.Fluent.Models.SkuInner sku = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Microsoft.Azure.Management.Storage.Fluent.Models.Identity identity = default, Microsoft.Azure.Management.Storage.Fluent.Models.CustomDomain customDomain = default, Microsoft.Azure.Management.Storage.Fluent.Models.Encryption encryption = default, Microsoft.Azure.Management.Storage.Fluent.Models.AccessTier? accessTier = default, bool? enableAzureFilesAadIntegration = default, bool? enableHttpsTrafficOnly = default, Microsoft.Azure.Management.Storage.Fluent.Models.NetworkRuleSet networkRuleSet = default, Microsoft.Azure.Management.Storage.Fluent.Models.Kind? kind = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.Management.Storage.Fluent.Models.SkuInner sku, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, class Microsoft.Azure.Management.Storage.Fluent.Models.Identity identity, class Microsoft.Azure.Management.Storage.Fluent.Models.CustomDomain customDomain, class Microsoft.Azure.Management.Storage.Fluent.Models.Encryption encryption, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Storage.Fluent.Models.AccessTier&gt; accessTier, valuetype System.Nullable`1&lt;bool&gt; enableAzureFilesAadIntegration, valuetype System.Nullable`1&lt;bool&gt; enableHttpsTrafficOnly, class Microsoft.Azure.Management.Storage.Fluent.Models.NetworkRuleSet networkRuleSet, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Storage.Fluent.Models.Kind&gt; kind) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.Fluent.Models.StorageAccountUpdateParameters.#ctor(Microsoft.Azure.Management.Storage.Fluent.Models.SkuInner,System.Collections.Generic.IDictionary{System.String,System.String},Microsoft.Azure.Management.Storage.Fluent.Models.Identity,Microsoft.Azure.Management.Storage.Fluent.Models.CustomDomain,Microsoft.Azure.Management.Storage.Fluent.Models.Encryption,System.Nullable{Microsoft.Azure.Management.Storage.Fluent.Models.AccessTier},System.Nullable{System.Boolean},System.Nullable{System.Boolean},Microsoft.Azure.Management.Storage.Fluent.Models.NetworkRuleSet,System.Nullable{Microsoft.Azure.Management.Storage.Fluent.Models.Kind})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional sku As SkuInner = null, Optional tags As IDictionary(Of String, String) = null, Optional identity As Identity = null, Optional customDomain As CustomDomain = null, Optional encryption As Encryption = null, Optional accessTier As Nullable(Of AccessTier) = null, Optional enableAzureFilesAadIntegration As Nullable(Of Boolean) = null, Optional enableHttpsTrafficOnly As Nullable(Of Boolean) = null, Optional networkRuleSet As NetworkRuleSet = null, Optional kind As Nullable(Of Kind) = null)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Storage.Fluent.Models.StorageAccountUpdateParameters : Microsoft.Azure.Management.Storage.Fluent.Models.SkuInner * System.Collections.Generic.IDictionary&lt;string, string&gt; * Microsoft.Azure.Management.Storage.Fluent.Models.Identity * Microsoft.Azure.Management.Storage.Fluent.Models.CustomDomain * Microsoft.Azure.Management.Storage.Fluent.Models.Encryption * Nullable&lt;Microsoft.Azure.Management.Storage.Fluent.Models.AccessTier&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Microsoft.Azure.Management.Storage.Fluent.Models.NetworkRuleSet * Nullable&lt;Microsoft.Azure.Management.Storage.Fluent.Models.Kind&gt; -&gt; Microsoft.Azure.Management.Storage.Fluent.Models.StorageAccountUpdateParameters" Usage="new Microsoft.Azure.Management.Storage.Fluent.Models.StorageAccountUpdateParameters (sku, tags, identity, customDomain, encryption, accessTier, enableAzureFilesAadIntegration, enableHttpsTrafficOnly, networkRuleSet, kind)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -62,6 +67,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="sku" Type="Microsoft.Azure.Management.Storage.Fluent.Models.SkuInner" />
@@ -114,7 +121,7 @@
       </Docs>
     </Member>
     <Member MemberName="AccessTier">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Management.Storage.Fluent.Models.AccessTier&gt; AccessTier { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Storage.Fluent.Models.AccessTier? AccessTier { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Storage.Fluent.Models.AccessTier&gt; AccessTier" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Storage.Fluent.Models.StorageAccountUpdateParameters.AccessTier" />
       <MemberSignature Language="VB.NET" Value="Public Property AccessTier As Nullable(Of AccessTier)" />
@@ -126,6 +133,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -158,6 +167,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -179,7 +190,7 @@
       </Docs>
     </Member>
     <Member MemberName="EnableAzureFilesAadIntegration">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; EnableAzureFilesAadIntegration { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? EnableAzureFilesAadIntegration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; EnableAzureFilesAadIntegration" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Storage.Fluent.Models.StorageAccountUpdateParameters.EnableAzureFilesAadIntegration" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableAzureFilesAadIntegration As Nullable(Of Boolean)" />
@@ -191,6 +202,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -210,7 +223,7 @@
       </Docs>
     </Member>
     <Member MemberName="EnableHttpsTrafficOnly">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; EnableHttpsTrafficOnly { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? EnableHttpsTrafficOnly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; EnableHttpsTrafficOnly" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Storage.Fluent.Models.StorageAccountUpdateParameters.EnableHttpsTrafficOnly" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableHttpsTrafficOnly As Nullable(Of Boolean)" />
@@ -222,6 +235,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -253,6 +268,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -284,6 +301,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -302,7 +321,7 @@
       </Docs>
     </Member>
     <Member MemberName="Kind">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Management.Storage.Fluent.Models.Kind&gt; Kind { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Storage.Fluent.Models.Kind? Kind { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Storage.Fluent.Models.Kind&gt; Kind" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Storage.Fluent.Models.StorageAccountUpdateParameters.Kind" />
       <MemberSignature Language="VB.NET" Value="Public Property Kind As Nullable(Of Kind)" />
@@ -314,6 +333,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -347,6 +368,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -377,6 +400,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -409,6 +434,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -443,6 +470,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

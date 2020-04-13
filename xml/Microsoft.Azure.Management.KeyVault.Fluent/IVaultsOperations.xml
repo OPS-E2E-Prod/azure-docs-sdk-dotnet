@@ -10,6 +10,8 @@
     <AssemblyVersion>1.0.0.62</AssemblyVersion>
     <AssemblyVersion>1.0.0.63</AssemblyVersion>
     <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -23,6 +25,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultInner&gt;&gt; BeginCreateOrUpdateWithHttpMessagesAsync (string resourceGroupName, string vaultName, Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultCreateOrUpdateParameters parameters, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultInner&gt;&gt; BeginCreateOrUpdateWithHttpMessagesAsync(string resourceGroupName, string vaultName, class Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultCreateOrUpdateParameters parameters, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Fluent.IVaultsOperations.BeginCreateOrUpdateWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultCreateOrUpdateParameters,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginCreateOrUpdateWithHttpMessagesAsync (resourceGroupName As String, vaultName As String, parameters As VaultCreateOrUpdateParameters, Optional customHeaders As Dictionary(Of String, List(Of String)) = null, Optional cancellationToken As CancellationToken = null) As Task(Of AzureOperationResponse(Of VaultInner))" />
       <MemberSignature Language="F#" Value="abstract member BeginCreateOrUpdateWithHttpMessagesAsync : string * string * Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultCreateOrUpdateParameters * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultInner&gt;&gt;" Usage="iVaultsOperations.BeginCreateOrUpdateWithHttpMessagesAsync (resourceGroupName, vaultName, parameters, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -31,6 +34,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultInner&gt;&gt;</ReturnType>
@@ -78,6 +83,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&gt; BeginPurgeDeletedWithHttpMessagesAsync (string vaultName, string location, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse&gt; BeginPurgeDeletedWithHttpMessagesAsync(string vaultName, string location, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Fluent.IVaultsOperations.BeginPurgeDeletedWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginPurgeDeletedWithHttpMessagesAsync (vaultName As String, location As String, Optional customHeaders As Dictionary(Of String, List(Of String)) = null, Optional cancellationToken As CancellationToken = null) As Task(Of AzureOperationResponse)" />
       <MemberSignature Language="F#" Value="abstract member BeginPurgeDeletedWithHttpMessagesAsync : string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&gt;" Usage="iVaultsOperations.BeginPurgeDeletedWithHttpMessagesAsync (vaultName, location, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -86,6 +92,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&gt;</ReturnType>
@@ -127,6 +135,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.CheckNameAvailabilityResultInner&gt;&gt; CheckNameAvailabilityWithHttpMessagesAsync (string name, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Azure.Management.KeyVault.Fluent.Models.CheckNameAvailabilityResultInner&gt;&gt; CheckNameAvailabilityWithHttpMessagesAsync(string name, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Fluent.IVaultsOperations.CheckNameAvailabilityWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CheckNameAvailabilityWithHttpMessagesAsync (name As String, Optional customHeaders As Dictionary(Of String, List(Of String)) = null, Optional cancellationToken As CancellationToken = null) As Task(Of AzureOperationResponse(Of CheckNameAvailabilityResultInner))" />
       <MemberSignature Language="F#" Value="abstract member CheckNameAvailabilityWithHttpMessagesAsync : string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.CheckNameAvailabilityResultInner&gt;&gt;" Usage="iVaultsOperations.CheckNameAvailabilityWithHttpMessagesAsync (name, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -135,6 +144,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.CheckNameAvailabilityResultInner&gt;&gt;</ReturnType>
@@ -174,6 +185,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultInner&gt;&gt; CreateOrUpdateWithHttpMessagesAsync (string resourceGroupName, string vaultName, Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultCreateOrUpdateParameters parameters, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultInner&gt;&gt; CreateOrUpdateWithHttpMessagesAsync(string resourceGroupName, string vaultName, class Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultCreateOrUpdateParameters parameters, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Fluent.IVaultsOperations.CreateOrUpdateWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultCreateOrUpdateParameters,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateOrUpdateWithHttpMessagesAsync (resourceGroupName As String, vaultName As String, parameters As VaultCreateOrUpdateParameters, Optional customHeaders As Dictionary(Of String, List(Of String)) = null, Optional cancellationToken As CancellationToken = null) As Task(Of AzureOperationResponse(Of VaultInner))" />
       <MemberSignature Language="F#" Value="abstract member CreateOrUpdateWithHttpMessagesAsync : string * string * Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultCreateOrUpdateParameters * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultInner&gt;&gt;" Usage="iVaultsOperations.CreateOrUpdateWithHttpMessagesAsync (resourceGroupName, vaultName, parameters, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -182,6 +194,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultInner&gt;&gt;</ReturnType>
@@ -229,6 +243,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&gt; DeleteWithHttpMessagesAsync (string resourceGroupName, string vaultName, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse&gt; DeleteWithHttpMessagesAsync(string resourceGroupName, string vaultName, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Fluent.IVaultsOperations.DeleteWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DeleteWithHttpMessagesAsync (resourceGroupName As String, vaultName As String, Optional customHeaders As Dictionary(Of String, List(Of String)) = null, Optional cancellationToken As CancellationToken = null) As Task(Of AzureOperationResponse)" />
       <MemberSignature Language="F#" Value="abstract member DeleteWithHttpMessagesAsync : string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&gt;" Usage="iVaultsOperations.DeleteWithHttpMessagesAsync (resourceGroupName, vaultName, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -237,6 +252,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&gt;</ReturnType>
@@ -277,6 +294,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.DeletedVaultInner&gt;&gt; GetDeletedWithHttpMessagesAsync (string vaultName, string location, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Azure.Management.KeyVault.Fluent.Models.DeletedVaultInner&gt;&gt; GetDeletedWithHttpMessagesAsync(string vaultName, string location, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Fluent.IVaultsOperations.GetDeletedWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDeletedWithHttpMessagesAsync (vaultName As String, location As String, Optional customHeaders As Dictionary(Of String, List(Of String)) = null, Optional cancellationToken As CancellationToken = null) As Task(Of AzureOperationResponse(Of DeletedVaultInner))" />
       <MemberSignature Language="F#" Value="abstract member GetDeletedWithHttpMessagesAsync : string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.DeletedVaultInner&gt;&gt;" Usage="iVaultsOperations.GetDeletedWithHttpMessagesAsync (vaultName, location, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -285,6 +303,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.DeletedVaultInner&gt;&gt;</ReturnType>
@@ -328,6 +348,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultInner&gt;&gt; GetWithHttpMessagesAsync (string resourceGroupName, string vaultName, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultInner&gt;&gt; GetWithHttpMessagesAsync(string resourceGroupName, string vaultName, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Fluent.IVaultsOperations.GetWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetWithHttpMessagesAsync (resourceGroupName As String, vaultName As String, Optional customHeaders As Dictionary(Of String, List(Of String)) = null, Optional cancellationToken As CancellationToken = null) As Task(Of AzureOperationResponse(Of VaultInner))" />
       <MemberSignature Language="F#" Value="abstract member GetWithHttpMessagesAsync : string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultInner&gt;&gt;" Usage="iVaultsOperations.GetWithHttpMessagesAsync (resourceGroupName, vaultName, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -336,6 +357,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultInner&gt;&gt;</ReturnType>
@@ -379,6 +402,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultInner&gt;&gt;&gt; ListByResourceGroupNextWithHttpMessagesAsync (string nextPageLink, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultInner&gt;&gt;&gt; ListByResourceGroupNextWithHttpMessagesAsync(string nextPageLink, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Fluent.IVaultsOperations.ListByResourceGroupNextWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ListByResourceGroupNextWithHttpMessagesAsync (nextPageLink As String, Optional customHeaders As Dictionary(Of String, List(Of String)) = null, Optional cancellationToken As CancellationToken = null) As Task(Of AzureOperationResponse(Of IPage(Of VaultInner)))" />
       <MemberSignature Language="F#" Value="abstract member ListByResourceGroupNextWithHttpMessagesAsync : string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultInner&gt;&gt;&gt;" Usage="iVaultsOperations.ListByResourceGroupNextWithHttpMessagesAsync (nextPageLink, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -387,6 +411,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultInner&gt;&gt;&gt;</ReturnType>
@@ -424,9 +450,10 @@
       </Docs>
     </Member>
     <Member MemberName="ListByResourceGroupWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultInner&gt;&gt;&gt; ListByResourceGroupWithHttpMessagesAsync (string resourceGroupName, Nullable&lt;int&gt; top = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultInner&gt;&gt;&gt; ListByResourceGroupWithHttpMessagesAsync (string resourceGroupName, int? top = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultInner&gt;&gt;&gt; ListByResourceGroupWithHttpMessagesAsync(string resourceGroupName, valuetype System.Nullable`1&lt;int32&gt; top, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Fluent.IVaultsOperations.ListByResourceGroupWithHttpMessagesAsync(System.String,System.Nullable{System.Int32},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ListByResourceGroupWithHttpMessagesAsync (resourceGroupName As String, Optional top As Nullable(Of Integer) = null, Optional customHeaders As Dictionary(Of String, List(Of String)) = null, Optional cancellationToken As CancellationToken = null) As Task(Of AzureOperationResponse(Of IPage(Of VaultInner)))" />
       <MemberSignature Language="F#" Value="abstract member ListByResourceGroupWithHttpMessagesAsync : string * Nullable&lt;int&gt; * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultInner&gt;&gt;&gt;" Usage="iVaultsOperations.ListByResourceGroupWithHttpMessagesAsync (resourceGroupName, top, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -435,6 +462,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultInner&gt;&gt;&gt;</ReturnType>
@@ -479,6 +508,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultInner&gt;&gt;&gt; ListBySubscriptionNextWithHttpMessagesAsync (string nextPageLink, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultInner&gt;&gt;&gt; ListBySubscriptionNextWithHttpMessagesAsync(string nextPageLink, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Fluent.IVaultsOperations.ListBySubscriptionNextWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ListBySubscriptionNextWithHttpMessagesAsync (nextPageLink As String, Optional customHeaders As Dictionary(Of String, List(Of String)) = null, Optional cancellationToken As CancellationToken = null) As Task(Of AzureOperationResponse(Of IPage(Of VaultInner)))" />
       <MemberSignature Language="F#" Value="abstract member ListBySubscriptionNextWithHttpMessagesAsync : string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultInner&gt;&gt;&gt;" Usage="iVaultsOperations.ListBySubscriptionNextWithHttpMessagesAsync (nextPageLink, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -487,6 +517,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultInner&gt;&gt;&gt;</ReturnType>
@@ -524,9 +556,10 @@
       </Docs>
     </Member>
     <Member MemberName="ListBySubscriptionWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultInner&gt;&gt;&gt; ListBySubscriptionWithHttpMessagesAsync (Nullable&lt;int&gt; top = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultInner&gt;&gt;&gt; ListBySubscriptionWithHttpMessagesAsync (int? top = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultInner&gt;&gt;&gt; ListBySubscriptionWithHttpMessagesAsync(valuetype System.Nullable`1&lt;int32&gt; top, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Fluent.IVaultsOperations.ListBySubscriptionWithHttpMessagesAsync(System.Nullable{System.Int32},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ListBySubscriptionWithHttpMessagesAsync (Optional top As Nullable(Of Integer) = null, Optional customHeaders As Dictionary(Of String, List(Of String)) = null, Optional cancellationToken As CancellationToken = null) As Task(Of AzureOperationResponse(Of IPage(Of VaultInner)))" />
       <MemberSignature Language="F#" Value="abstract member ListBySubscriptionWithHttpMessagesAsync : Nullable&lt;int&gt; * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultInner&gt;&gt;&gt;" Usage="iVaultsOperations.ListBySubscriptionWithHttpMessagesAsync (top, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -535,6 +568,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultInner&gt;&gt;&gt;</ReturnType>
@@ -575,6 +610,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.DeletedVaultInner&gt;&gt;&gt; ListDeletedNextWithHttpMessagesAsync (string nextPageLink, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.KeyVault.Fluent.Models.DeletedVaultInner&gt;&gt;&gt; ListDeletedNextWithHttpMessagesAsync(string nextPageLink, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Fluent.IVaultsOperations.ListDeletedNextWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ListDeletedNextWithHttpMessagesAsync (nextPageLink As String, Optional customHeaders As Dictionary(Of String, List(Of String)) = null, Optional cancellationToken As CancellationToken = null) As Task(Of AzureOperationResponse(Of IPage(Of DeletedVaultInner)))" />
       <MemberSignature Language="F#" Value="abstract member ListDeletedNextWithHttpMessagesAsync : string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.DeletedVaultInner&gt;&gt;&gt;" Usage="iVaultsOperations.ListDeletedNextWithHttpMessagesAsync (nextPageLink, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -583,6 +619,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.DeletedVaultInner&gt;&gt;&gt;</ReturnType>
@@ -622,6 +660,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.DeletedVaultInner&gt;&gt;&gt; ListDeletedWithHttpMessagesAsync (System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.KeyVault.Fluent.Models.DeletedVaultInner&gt;&gt;&gt; ListDeletedWithHttpMessagesAsync(class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Fluent.IVaultsOperations.ListDeletedWithHttpMessagesAsync(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ListDeletedWithHttpMessagesAsync (Optional customHeaders As Dictionary(Of String, List(Of String)) = null, Optional cancellationToken As CancellationToken = null) As Task(Of AzureOperationResponse(Of IPage(Of DeletedVaultInner)))" />
       <MemberSignature Language="F#" Value="abstract member ListDeletedWithHttpMessagesAsync : System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.DeletedVaultInner&gt;&gt;&gt;" Usage="iVaultsOperations.ListDeletedWithHttpMessagesAsync (customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -630,6 +669,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.DeletedVaultInner&gt;&gt;&gt;</ReturnType>
@@ -665,6 +706,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ResourceManager.Fluent.SubResource&gt;&gt;&gt; ListNextWithHttpMessagesAsync (string nextPageLink, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.ResourceManager.Fluent.SubResource&gt;&gt;&gt; ListNextWithHttpMessagesAsync(string nextPageLink, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Fluent.IVaultsOperations.ListNextWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ListNextWithHttpMessagesAsync (nextPageLink As String, Optional customHeaders As Dictionary(Of String, List(Of String)) = null, Optional cancellationToken As CancellationToken = null) As Task(Of AzureOperationResponse(Of IPage(Of SubResource)))" />
       <MemberSignature Language="F#" Value="abstract member ListNextWithHttpMessagesAsync : string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ResourceManager.Fluent.SubResource&gt;&gt;&gt;" Usage="iVaultsOperations.ListNextWithHttpMessagesAsync (nextPageLink, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -673,6 +715,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ResourceManager.Fluent.SubResource&gt;&gt;&gt;</ReturnType>
@@ -710,9 +754,10 @@
       </Docs>
     </Member>
     <Member MemberName="ListWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ResourceManager.Fluent.SubResource&gt;&gt;&gt; ListWithHttpMessagesAsync (Nullable&lt;int&gt; top = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ResourceManager.Fluent.SubResource&gt;&gt;&gt; ListWithHttpMessagesAsync (int? top = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.ResourceManager.Fluent.SubResource&gt;&gt;&gt; ListWithHttpMessagesAsync(valuetype System.Nullable`1&lt;int32&gt; top, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Fluent.IVaultsOperations.ListWithHttpMessagesAsync(System.Nullable{System.Int32},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ListWithHttpMessagesAsync (Optional top As Nullable(Of Integer) = null, Optional customHeaders As Dictionary(Of String, List(Of String)) = null, Optional cancellationToken As CancellationToken = null) As Task(Of AzureOperationResponse(Of IPage(Of SubResource)))" />
       <MemberSignature Language="F#" Value="abstract member ListWithHttpMessagesAsync : Nullable&lt;int&gt; * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ResourceManager.Fluent.SubResource&gt;&gt;&gt;" Usage="iVaultsOperations.ListWithHttpMessagesAsync (top, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -721,6 +766,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.ResourceManager.Fluent.SubResource&gt;&gt;&gt;</ReturnType>
@@ -761,6 +808,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&gt; PurgeDeletedWithHttpMessagesAsync (string vaultName, string location, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse&gt; PurgeDeletedWithHttpMessagesAsync(string vaultName, string location, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Fluent.IVaultsOperations.PurgeDeletedWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PurgeDeletedWithHttpMessagesAsync (vaultName As String, location As String, Optional customHeaders As Dictionary(Of String, List(Of String)) = null, Optional cancellationToken As CancellationToken = null) As Task(Of AzureOperationResponse)" />
       <MemberSignature Language="F#" Value="abstract member PurgeDeletedWithHttpMessagesAsync : string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&gt;" Usage="iVaultsOperations.PurgeDeletedWithHttpMessagesAsync (vaultName, location, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -769,6 +817,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&gt;</ReturnType>
@@ -810,6 +860,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultAccessPolicyParametersInner&gt;&gt; UpdateAccessPolicyWithHttpMessagesAsync (string resourceGroupName, string vaultName, Microsoft.Azure.Management.KeyVault.Fluent.Models.AccessPolicyUpdateKind operationKind, Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultAccessPolicyProperties properties, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultAccessPolicyParametersInner&gt;&gt; UpdateAccessPolicyWithHttpMessagesAsync(string resourceGroupName, string vaultName, valuetype Microsoft.Azure.Management.KeyVault.Fluent.Models.AccessPolicyUpdateKind operationKind, class Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultAccessPolicyProperties properties, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Fluent.IVaultsOperations.UpdateAccessPolicyWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.Management.KeyVault.Fluent.Models.AccessPolicyUpdateKind,Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultAccessPolicyProperties,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UpdateAccessPolicyWithHttpMessagesAsync (resourceGroupName As String, vaultName As String, operationKind As AccessPolicyUpdateKind, properties As VaultAccessPolicyProperties, Optional customHeaders As Dictionary(Of String, List(Of String)) = null, Optional cancellationToken As CancellationToken = null) As Task(Of AzureOperationResponse(Of VaultAccessPolicyParametersInner))" />
       <MemberSignature Language="F#" Value="abstract member UpdateAccessPolicyWithHttpMessagesAsync : string * string * Microsoft.Azure.Management.KeyVault.Fluent.Models.AccessPolicyUpdateKind * Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultAccessPolicyProperties * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultAccessPolicyParametersInner&gt;&gt;" Usage="iVaultsOperations.UpdateAccessPolicyWithHttpMessagesAsync (resourceGroupName, vaultName, operationKind, properties, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -818,6 +869,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultAccessPolicyParametersInner&gt;&gt;</ReturnType>
@@ -871,6 +924,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultInner&gt;&gt; UpdateWithHttpMessagesAsync (string resourceGroupName, string vaultName, Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultPatchParameters parameters, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultInner&gt;&gt; UpdateWithHttpMessagesAsync(string resourceGroupName, string vaultName, class Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultPatchParameters parameters, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Fluent.IVaultsOperations.UpdateWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultPatchParameters,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UpdateWithHttpMessagesAsync (resourceGroupName As String, vaultName As String, parameters As VaultPatchParameters, Optional customHeaders As Dictionary(Of String, List(Of String)) = null, Optional cancellationToken As CancellationToken = null) As Task(Of AzureOperationResponse(Of VaultInner))" />
       <MemberSignature Language="F#" Value="abstract member UpdateWithHttpMessagesAsync : string * string * Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultPatchParameters * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultInner&gt;&gt;" Usage="iVaultsOperations.UpdateWithHttpMessagesAsync (resourceGroupName, vaultName, parameters, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -879,6 +933,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.VaultInner&gt;&gt;</ReturnType>

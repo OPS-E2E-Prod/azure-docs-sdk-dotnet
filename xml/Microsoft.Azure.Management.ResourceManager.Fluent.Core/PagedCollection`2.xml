@@ -10,6 +10,8 @@
     <AssemblyVersion>1.0.0.62</AssemblyVersion>
     <AssemblyVersion>1.0.0.63</AssemblyVersion>
     <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="IFluentResourceT" />
@@ -51,6 +53,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -71,6 +75,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.ResourceManager.Fluent.Core.IPagedCollection&lt;IFluentResourceT&gt;</ReturnType>
@@ -101,6 +107,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerator&lt;IFluentResourceT&gt;</ReturnType>
@@ -116,6 +124,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ResourceManager.Fluent.Core.IPagedCollection&lt;IFluentResourceT&gt;&gt; GetNextPageAsync (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.ResourceManager.Fluent.Core.IPagedCollection`1&lt;!IFluentResourceT&gt;&gt; GetNextPageAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ResourceManager.Fluent.Core.PagedCollection`2.GetNextPageAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetNextPageAsync (Optional cancellationToken As CancellationToken = null) As Task(Of IPagedCollection(Of IFluentResourceT))" />
       <MemberSignature Language="F#" Value="abstract member GetNextPageAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ResourceManager.Fluent.Core.IPagedCollection&lt;'IFluentResourceT&gt;&gt;&#xA;override this.GetNextPageAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ResourceManager.Fluent.Core.IPagedCollection&lt;'IFluentResourceT&gt;&gt;" Usage="pagedCollection.GetNextPageAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -127,6 +136,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -150,6 +161,7 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ResourceManager.Fluent.Core.IPagedCollection&lt;IFluentResourceT&gt;&gt; LoadPage (Func&lt;System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;InnerResourceT&gt;&gt;&gt; listInnerAsync, Func&lt;InnerResourceT,IFluentResourceT&gt; wrapModel, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.ResourceManager.Fluent.Core.IPagedCollection`1&lt;!IFluentResourceT&gt;&gt; LoadPage(class System.Func`2&lt;valuetype System.Threading.CancellationToken, class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;!InnerResourceT&gt;&gt;&gt; listInnerAsync, class System.Func`2&lt;!InnerResourceT, !IFluentResourceT&gt; wrapModel, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ResourceManager.Fluent.Core.PagedCollection`2.LoadPage(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{`1}}},System.Func{`1,`0},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LoadPage (listInnerAsync As Func(Of CancellationToken, Task(Of IEnumerable(Of InnerResourceT))), wrapModel As Func(Of InnerResourceT, IFluentResourceT), cancellationToken As CancellationToken) As Task(Of IPagedCollection(Of IFluentResourceT))" />
       <MemberSignature Language="F#" Value="static member LoadPage : Func&lt;System.Threading.CancellationToken, System.Threading.Tasks.Task&lt;seq&lt;'InnerResourceT&gt;&gt;&gt; * Func&lt;'InnerResourceT, 'IFluentResourceT&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ResourceManager.Fluent.Core.IPagedCollection&lt;'IFluentResourceT&gt;&gt;" Usage="Microsoft.Azure.Management.ResourceManager.Fluent.Core.PagedCollection&lt;'IFluentResourceT, 'InnerResourceT&gt;.LoadPage (listInnerAsync, wrapModel, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -158,6 +170,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -185,6 +199,7 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ResourceManager.Fluent.Core.IPagedCollection&lt;IFluentResourceT&gt;&gt; LoadPage (Func&lt;System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;InnerResourceT&gt;&gt;&gt; listInnerAsync, Func&lt;string,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;InnerResourceT&gt;&gt;&gt; listInnerNext, Func&lt;InnerResourceT,IFluentResourceT&gt; wrapModel, bool loadAllPages, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.ResourceManager.Fluent.Core.IPagedCollection`1&lt;!IFluentResourceT&gt;&gt; LoadPage(class System.Func`2&lt;valuetype System.Threading.CancellationToken, class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;!InnerResourceT&gt;&gt;&gt; listInnerAsync, class System.Func`3&lt;string, valuetype System.Threading.CancellationToken, class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;!InnerResourceT&gt;&gt;&gt; listInnerNext, class System.Func`2&lt;!InnerResourceT, !IFluentResourceT&gt; wrapModel, bool loadAllPages, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ResourceManager.Fluent.Core.PagedCollection`2.LoadPage(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task{Microsoft.Rest.Azure.IPage{`1}}},System.Func{System.String,System.Threading.CancellationToken,System.Threading.Tasks.Task{Microsoft.Rest.Azure.IPage{`1}}},System.Func{`1,`0},System.Boolean,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LoadPage (listInnerAsync As Func(Of CancellationToken, Task(Of IPage(Of InnerResourceT))), listInnerNext As Func(Of String, CancellationToken, Task(Of IPage(Of InnerResourceT))), wrapModel As Func(Of InnerResourceT, IFluentResourceT), loadAllPages As Boolean, cancellationToken As CancellationToken) As Task(Of IPagedCollection(Of IFluentResourceT))" />
       <MemberSignature Language="F#" Value="static member LoadPage : Func&lt;System.Threading.CancellationToken, System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;'InnerResourceT&gt;&gt;&gt; * Func&lt;string, System.Threading.CancellationToken, System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;'InnerResourceT&gt;&gt;&gt; * Func&lt;'InnerResourceT, 'IFluentResourceT&gt; * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ResourceManager.Fluent.Core.IPagedCollection&lt;'IFluentResourceT&gt;&gt;" Usage="Microsoft.Azure.Management.ResourceManager.Fluent.Core.PagedCollection&lt;'IFluentResourceT, 'InnerResourceT&gt;.LoadPage (listInnerAsync, listInnerNext, wrapModel, loadAllPages, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -193,6 +208,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -224,6 +241,7 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ResourceManager.Fluent.Core.IPagedCollection&lt;IFluentResourceT&gt;&gt; LoadPageWithWrapModelAsync (Func&lt;System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;InnerResourceT&gt;&gt;&gt; listInnerAsync, Func&lt;string,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;InnerResourceT&gt;&gt;&gt; listInnerNext, Func&lt;InnerResourceT,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;IFluentResourceT&gt;&gt; wrapModelAsync, bool loadAllPages, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.ResourceManager.Fluent.Core.IPagedCollection`1&lt;!IFluentResourceT&gt;&gt; LoadPageWithWrapModelAsync(class System.Func`2&lt;valuetype System.Threading.CancellationToken, class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;!InnerResourceT&gt;&gt;&gt; listInnerAsync, class System.Func`3&lt;string, valuetype System.Threading.CancellationToken, class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;!InnerResourceT&gt;&gt;&gt; listInnerNext, class System.Func`3&lt;!InnerResourceT, valuetype System.Threading.CancellationToken, class System.Threading.Tasks.Task`1&lt;!IFluentResourceT&gt;&gt; wrapModelAsync, bool loadAllPages, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ResourceManager.Fluent.Core.PagedCollection`2.LoadPageWithWrapModelAsync(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task{Microsoft.Rest.Azure.IPage{`1}}},System.Func{System.String,System.Threading.CancellationToken,System.Threading.Tasks.Task{Microsoft.Rest.Azure.IPage{`1}}},System.Func{`1,System.Threading.CancellationToken,System.Threading.Tasks.Task{`0}},System.Boolean,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LoadPageWithWrapModelAsync (listInnerAsync As Func(Of CancellationToken, Task(Of IPage(Of InnerResourceT))), listInnerNext As Func(Of String, CancellationToken, Task(Of IPage(Of InnerResourceT))), wrapModelAsync As Func(Of InnerResourceT, CancellationToken, Task(Of IFluentResourceT)), loadAllPages As Boolean, cancellationToken As CancellationToken) As Task(Of IPagedCollection(Of IFluentResourceT))" />
       <MemberSignature Language="F#" Value="static member LoadPageWithWrapModelAsync : Func&lt;System.Threading.CancellationToken, System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;'InnerResourceT&gt;&gt;&gt; * Func&lt;string, System.Threading.CancellationToken, System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;'InnerResourceT&gt;&gt;&gt; * Func&lt;'InnerResourceT, System.Threading.CancellationToken, System.Threading.Tasks.Task&lt;'IFluentResourceT&gt;&gt; * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.ResourceManager.Fluent.Core.IPagedCollection&lt;'IFluentResourceT&gt;&gt;" Usage="Microsoft.Azure.Management.ResourceManager.Fluent.Core.PagedCollection&lt;'IFluentResourceT, 'InnerResourceT&gt;.LoadPageWithWrapModelAsync (listInnerAsync, listInnerNext, wrapModelAsync, loadAllPages, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -232,6 +250,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -264,6 +284,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ResourceManager.Fluent.Core.PagedCollection`2.System#Collections#IEnumerable#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.IEnumerable.GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.System.Collections.IEnumerable.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="pagedCollection.System.Collections.IEnumerable.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -274,6 +295,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>

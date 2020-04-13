@@ -1,9 +1,9 @@
 <Type Name="Message" FullName="Microsoft.Azure.Devices.Client.Message">
-  <TypeSignature Language="C#" Value="public sealed class Message : Microsoft.Azure.Devices.Client.IReadOnlyIndicator" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Message extends System.Object implements class Microsoft.Azure.Devices.Client.IReadOnlyIndicator" />
+  <TypeSignature Language="C#" Value="public sealed class Message : IDisposable, Microsoft.Azure.Devices.Client.IReadOnlyIndicator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Message extends System.Object implements class Microsoft.Azure.Devices.Client.IReadOnlyIndicator, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Devices.Client.Message" />
-  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Message&#xA;Implements IReadOnlyIndicator" />
-  <TypeSignature Language="F#" Value="type Message = class&#xA;    interface IReadOnlyIndicator" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Message&#xA;Implements IDisposable, IReadOnlyIndicator" />
+  <TypeSignature Language="F#" Value="type Message = class&#xA;    interface IReadOnlyIndicator&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Devices.Client</AssemblyName>
     <AssemblyVersion>1.21.2.0</AssemblyVersion>
@@ -12,6 +12,9 @@
     <AssemblyVersion>1.22.0.0</AssemblyVersion>
     <AssemblyVersion>1.23.0.0</AssemblyVersion>
     <AssemblyVersion>1.23.1.0</AssemblyVersion>
+    <AssemblyVersion>1.23.2.0</AssemblyVersion>
+    <AssemblyVersion>1.24.0.0</AssemblyVersion>
+    <AssemblyVersion>1.25.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Devices.Client.PCL</AssemblyName>
@@ -46,6 +49,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Client.PCL</AssemblyName>
@@ -74,6 +80,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Client.PCL</AssemblyName>
@@ -96,6 +105,7 @@
       <MemberSignature Language="C#" Value="public Message (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Client.Message.#ctor(System.IO.Stream)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (stream As Stream)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Devices.Client.Message : System.IO.Stream -&gt; Microsoft.Azure.Devices.Client.Message" Usage="new Microsoft.Azure.Devices.Client.Message stream" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -106,6 +116,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Client.PCL</AssemblyName>
@@ -137,6 +150,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Stream</ReturnType>
@@ -145,6 +161,41 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneWithBody">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Devices.Client.Message CloneWithBody (ref byte[] byteArray);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Azure.Devices.Client.Message CloneWithBody([in]unsigned int8[]&amp; byteArray) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Client.Message.CloneWithBody(System.Byte[]@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneWithBody (ByRef byteArray As Byte()) As Message" />
+      <MemberSignature Language="F#" Value="member this.CloneWithBody : Byte[] -&gt; Microsoft.Azure.Devices.Client.Message" Usage="message.CloneWithBody byteArray" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Devices.Client</AssemblyName>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Devices.Client.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="byteArray" Type="System.Byte[]" RefType="ref">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="byteArray">Message content to be set after clone.</param>
+        <summary>
+            Clones an existing <see cref="T:Microsoft.Azure.Devices.Client.Message" /> instance and sets content body defined by <paramref name="byteArray" /> on it.
+            </summary>
+        <returns>A new instance of <see cref="T:Microsoft.Azure.Devices.Client.Message" /> with body content defined by <paramref name="byteArray" />,
+            and user/system properties of the cloned <see cref="T:Microsoft.Azure.Devices.Client.Message" /> instance.
+            </returns>
+        <remarks>user should treat the input byte array as immutable when
+            sending the message.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConnectionDeviceId">
@@ -162,6 +213,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -189,6 +243,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -216,6 +273,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -243,6 +303,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -270,6 +333,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Client.PCL</AssemblyName>
@@ -301,6 +367,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -328,6 +397,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Client.PCL</AssemblyName>
@@ -362,6 +434,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -389,6 +464,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Client.PCL</AssemblyName>
@@ -420,6 +498,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Client.PCL</AssemblyName>
@@ -451,6 +532,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Stream</ReturnType>
@@ -481,6 +565,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Client.PCL</AssemblyName>
@@ -514,6 +601,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -541,6 +631,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -568,6 +661,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Client.PCL</AssemblyName>
@@ -599,6 +695,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Client.PCL</AssemblyName>
@@ -633,6 +732,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -650,7 +752,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool Microsoft.Azure.Devices.Client.IReadOnlyIndicator.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Devices.Client.Message.Microsoft#Azure#Devices#Client#IReadOnlyIndicator#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IReadOnlyIndicator.IsReadOnly" />
-      <MemberSignature Language="F#" Usage="Microsoft.Azure.Devices.Client.IReadOnlyIndicator.IsReadOnly" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Azure.Devices.Client.IReadOnlyIndicator.IsReadOnly : bool" Usage="Microsoft.Azure.Devices.Client.IReadOnlyIndicator.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Devices.Client.IReadOnlyIndicator.IsReadOnly</InterfaceMember>
@@ -663,6 +765,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Client.PCL</AssemblyName>
@@ -692,6 +797,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Client.PCL</AssemblyName>
@@ -723,6 +831,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Client.PCL</AssemblyName>
@@ -754,6 +865,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -781,6 +895,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Client.PCL</AssemblyName>
@@ -812,6 +929,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Client.PCL</AssemblyName>

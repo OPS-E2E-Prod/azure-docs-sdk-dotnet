@@ -10,6 +10,8 @@
     <AssemblyVersion>1.5.1.0</AssemblyVersion>
     <AssemblyVersion>1.5.2.0</AssemblyVersion>
     <AssemblyVersion>1.6.0.0</AssemblyVersion>
+    <AssemblyVersion>1.6.1.0</AssemblyVersion>
+    <AssemblyVersion>1.6.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -37,7 +39,7 @@
             
              The content of this class will be serialized in a JSON format and sent as a body of the rest API to the
                 provisioning service.
-                
+            
              The content of this class can be filled by a JSON, received from the provisioning service, as result of a
                 EnrollmentGroup operation like create, update, or query EnrollmentGroup.
              </remarks>
@@ -94,6 +96,7 @@
       <MemberSignature Language="C#" Value="public EnrollmentGroup (string enrollmentGroupId, Microsoft.Azure.Devices.Provisioning.Service.Attestation attestation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string enrollmentGroupId, class Microsoft.Azure.Devices.Provisioning.Service.Attestation attestation) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Provisioning.Service.EnrollmentGroup.#ctor(System.String,Microsoft.Azure.Devices.Provisioning.Service.Attestation)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (enrollmentGroupId As String, attestation As Attestation)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Devices.Provisioning.Service.EnrollmentGroup : string * Microsoft.Azure.Devices.Provisioning.Service.Attestation -&gt; Microsoft.Azure.Devices.Provisioning.Service.EnrollmentGroup" Usage="new Microsoft.Azure.Devices.Provisioning.Service.EnrollmentGroup (enrollmentGroupId, attestation)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -102,27 +105,28 @@
         <AssemblyVersion>1.5.1.0</AssemblyVersion>
         <AssemblyVersion>1.5.2.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="enrollmentGroupId" Type="System.String" />
         <Parameter Name="attestation" Type="Microsoft.Azure.Devices.Provisioning.Service.Attestation" />
       </Parameters>
       <Docs>
-        <param name="enrollmentGroupId">the <code>string</code> that uniquely identify this enrollmentGroup in the provisioning 
+        <param name="enrollmentGroupId">the <code>string</code> that uniquely identify this enrollmentGroup in the provisioning
                  service. It cannot be <code>null</code> or empty.</param>
         <param name="attestation">the <see cref="P:Microsoft.Azure.Devices.Provisioning.Service.EnrollmentGroup.Attestation" /> object with the attestation mechanism. It cannot be <code>null</code>.</param>
         <summary>
              Creates a new instance of <code>EnrollmentGroup</code>.
              </summary>
         <remarks>
-             This constructor creates an instance of the EnrollmentGroup object with the minimum set of 
-             information required by the provisioning service. A valid EnrollmentGroup must contain the 
-             enrollmentGroupId, which uniquely identify this enrollmentGroup, and the attestation mechanism, 
+             This constructor creates an instance of the EnrollmentGroup object with the minimum set of
+             information required by the provisioning service. A valid EnrollmentGroup must contain the
+             enrollmentGroupId, which uniquely identify this enrollmentGroup, and the attestation mechanism,
              which must X509.
             
              Other parameters can be added by calling the setters on this object.
              </remarks>
-        <exception cref="T:System.ArgumentNullException">if one of the provided parameters is not correct</exception>
         <example>
              When serialized, an EnrollmentGroup will look like the following example:
              <code>
@@ -138,10 +142,11 @@
                  }
              }
              </code></example>
+        <exception cref="T:System.ArgumentNullException">if one of the provided parameters is not correct</exception>
       </Docs>
     </Member>
     <Member MemberName="AllocationPolicy">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Devices.Provisioning.Service.AllocationPolicy&gt; AllocationPolicy { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Devices.Provisioning.Service.AllocationPolicy? AllocationPolicy { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Devices.Provisioning.Service.AllocationPolicy&gt; AllocationPolicy" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Devices.Provisioning.Service.EnrollmentGroup.AllocationPolicy" />
       <MemberSignature Language="VB.NET" Value="Public Property AllocationPolicy As Nullable(Of AllocationPolicy)" />
@@ -153,6 +158,8 @@
         <AssemblyVersion>1.5.1.0</AssemblyVersion>
         <AssemblyVersion>1.5.2.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -163,7 +170,7 @@
         <ReturnType>System.Nullable&lt;Microsoft.Azure.Devices.Provisioning.Service.AllocationPolicy&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> 
+        <summary>
             The allocation policy of this resource. Overrides the tenant level allocation policy.
             </summary>
         <value>To be added.</value>
@@ -183,6 +190,8 @@
         <AssemblyVersion>1.5.1.0</AssemblyVersion>
         <AssemblyVersion>1.5.2.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -213,6 +222,8 @@
         <AssemblyVersion>1.5.1.0</AssemblyVersion>
         <AssemblyVersion>1.5.2.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -231,7 +242,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreatedDateTimeUtc">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; CreatedDateTimeUtc { get; }" />
+      <MemberSignature Language="C#" Value="public DateTime? CreatedDateTimeUtc { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; CreatedDateTimeUtc" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Devices.Provisioning.Service.EnrollmentGroup.CreatedDateTimeUtc" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreatedDateTimeUtc As Nullable(Of DateTime)" />
@@ -243,6 +254,8 @@
         <AssemblyVersion>1.5.1.0</AssemblyVersion>
         <AssemblyVersion>1.5.2.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -273,6 +286,8 @@
         <AssemblyVersion>1.5.1.0</AssemblyVersion>
         <AssemblyVersion>1.5.2.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -283,8 +298,8 @@
         <ReturnType>Microsoft.Azure.Devices.Provisioning.Service.CustomAllocationDefinition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> 
-            Custom allocation definition.  
+        <summary>
+            Custom allocation definition.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -303,6 +318,8 @@
         <AssemblyVersion>1.5.1.0</AssemblyVersion>
         <AssemblyVersion>1.5.2.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -339,6 +356,8 @@
         <AssemblyVersion>1.5.1.0</AssemblyVersion>
         <AssemblyVersion>1.5.2.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -369,6 +388,8 @@
         <AssemblyVersion>1.5.1.0</AssemblyVersion>
         <AssemblyVersion>1.5.2.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -399,6 +420,8 @@
         <AssemblyVersion>1.5.1.0</AssemblyVersion>
         <AssemblyVersion>1.5.2.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -429,6 +452,8 @@
         <AssemblyVersion>1.5.1.0</AssemblyVersion>
         <AssemblyVersion>1.5.2.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -439,7 +464,7 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> 
+        <summary>
             The list of names of IoT hubs the device(s) in this resource can be allocated to. Must be a subset of tenant level list of IoT hubs
             </summary>
         <value>To be added.</value>
@@ -447,7 +472,7 @@
       </Docs>
     </Member>
     <Member MemberName="LastUpdatedDateTimeUtc">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; LastUpdatedDateTimeUtc { get; }" />
+      <MemberSignature Language="C#" Value="public DateTime? LastUpdatedDateTimeUtc { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; LastUpdatedDateTimeUtc" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Devices.Provisioning.Service.EnrollmentGroup.LastUpdatedDateTimeUtc" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastUpdatedDateTimeUtc As Nullable(Of DateTime)" />
@@ -459,6 +484,8 @@
         <AssemblyVersion>1.5.1.0</AssemblyVersion>
         <AssemblyVersion>1.5.2.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -477,7 +504,7 @@
       </Docs>
     </Member>
     <Member MemberName="ProvisioningStatus">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Devices.Provisioning.Service.ProvisioningStatus&gt; ProvisioningStatus { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Devices.Provisioning.Service.ProvisioningStatus? ProvisioningStatus { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Devices.Provisioning.Service.ProvisioningStatus&gt; ProvisioningStatus" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Devices.Provisioning.Service.EnrollmentGroup.ProvisioningStatus" />
       <MemberSignature Language="VB.NET" Value="Public Property ProvisioningStatus As Nullable(Of ProvisioningStatus)" />
@@ -489,6 +516,8 @@
         <AssemblyVersion>1.5.1.0</AssemblyVersion>
         <AssemblyVersion>1.5.2.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -522,6 +551,8 @@
         <AssemblyVersion>1.5.1.0</AssemblyVersion>
         <AssemblyVersion>1.5.2.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -552,6 +583,8 @@
         <AssemblyVersion>1.5.1.0</AssemblyVersion>
         <AssemblyVersion>1.5.2.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -562,7 +595,7 @@
         <ReturnType>Microsoft.Azure.Devices.Provisioning.Service.ReprovisionPolicy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> 
+        <summary>
             The behavior when a device is re-provisioned to an IoT hub.
             </summary>
         <value>To be added.</value>
@@ -582,6 +615,8 @@
         <AssemblyVersion>1.5.1.0</AssemblyVersion>
         <AssemblyVersion>1.5.2.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

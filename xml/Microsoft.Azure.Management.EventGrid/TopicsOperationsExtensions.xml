@@ -65,12 +65,18 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt; BeginCreateOrUpdateAsync (this Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string topicName, Microsoft.Azure.Management.EventGrid.Models.Topic topicInfo, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.EventGrid.Models.Topic&gt; BeginCreateOrUpdateAsync(class Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string topicName, class Microsoft.Azure.Management.EventGrid.Models.Topic topicInfo, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.BeginCreateOrUpdateAsync(Microsoft.Azure.Management.EventGrid.ITopicsOperations,System.String,System.String,Microsoft.Azure.Management.EventGrid.Models.Topic,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function BeginCreateOrUpdateAsync (operations As ITopicsOperations, resourceGroupName As String, topicName As String, topicInfo As Topic, Optional cancellationToken As CancellationToken = null) As Task(Of Topic)" />
       <MemberSignature Language="F#" Value="static member BeginCreateOrUpdateAsync : Microsoft.Azure.Management.EventGrid.ITopicsOperations * string * string * Microsoft.Azure.Management.EventGrid.Models.Topic * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt;" Usage="Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.BeginCreateOrUpdateAsync (operations, resourceGroupName, topicName, topicInfo, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.EventGrid</AssemblyName>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt;</ReturnType>
       </ReturnValue>
@@ -147,12 +153,18 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginDeleteAsync (this Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string topicName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task BeginDeleteAsync(class Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string topicName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.BeginDeleteAsync(Microsoft.Azure.Management.EventGrid.ITopicsOperations,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function BeginDeleteAsync (operations As ITopicsOperations, resourceGroupName As String, topicName As String, Optional cancellationToken As CancellationToken = null) As Task" />
       <MemberSignature Language="F#" Value="static member BeginDeleteAsync : Microsoft.Azure.Management.EventGrid.ITopicsOperations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.BeginDeleteAsync (operations, resourceGroupName, topicName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.EventGrid</AssemblyName>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -185,6 +197,48 @@
       </Docs>
     </Member>
     <Member MemberName="BeginUpdate">
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Management.EventGrid.Models.Topic BeginUpdate (this Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string topicName, Microsoft.Azure.Management.EventGrid.Models.TopicUpdateParameters topicUpdateParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.Management.EventGrid.Models.Topic BeginUpdate(class Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string topicName, class Microsoft.Azure.Management.EventGrid.Models.TopicUpdateParameters topicUpdateParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.BeginUpdate(Microsoft.Azure.Management.EventGrid.ITopicsOperations,System.String,System.String,Microsoft.Azure.Management.EventGrid.Models.TopicUpdateParameters)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function BeginUpdate (operations As ITopicsOperations, resourceGroupName As String, topicName As String, topicUpdateParameters As TopicUpdateParameters) As Topic" />
+      <MemberSignature Language="F#" Value="static member BeginUpdate : Microsoft.Azure.Management.EventGrid.ITopicsOperations * string * string * Microsoft.Azure.Management.EventGrid.Models.TopicUpdateParameters -&gt; Microsoft.Azure.Management.EventGrid.Models.Topic" Usage="Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.BeginUpdate (operations, resourceGroupName, topicName, topicUpdateParameters)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.EventGrid</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.EventGrid.Models.Topic</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Azure.Management.EventGrid.ITopicsOperations" RefType="this" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="resourceGroupName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="topicName" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="topicUpdateParameters" Type="Microsoft.Azure.Management.EventGrid.Models.TopicUpdateParameters" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="resourceGroupName">
+            The name of the resource group within the user's subscription.
+            </param>
+        <param name="topicName">
+            Name of the topic.
+            </param>
+        <param name="topicUpdateParameters">
+            Topic update information.
+            </param>
+        <summary>
+            Update a topic.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>
+            Asynchronously updates a topic with the specified parameters.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginUpdate">
       <MemberSignature Language="C#" Value="public static Microsoft.Azure.Management.EventGrid.Models.Topic BeginUpdate (this Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string topicName, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.Management.EventGrid.Models.Topic BeginUpdate(class Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string topicName, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.BeginUpdate(Microsoft.Azure.Management.EventGrid.ITopicsOperations,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})" />
@@ -199,10 +253,10 @@
         <ReturnType>Microsoft.Azure.Management.EventGrid.Models.Topic</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Azure.Management.EventGrid.ITopicsOperations" RefType="this" />
-        <Parameter Name="resourceGroupName" Type="System.String" />
-        <Parameter Name="topicName" Type="System.String" />
-        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="operations" Type="Microsoft.Azure.Management.EventGrid.ITopicsOperations" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
+        <Parameter Name="resourceGroupName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="topicName" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="3" FrameworkAlternate="azure-dotnet" />
       </Parameters>
       <Docs>
         <param name="operations">
@@ -227,9 +281,61 @@
       </Docs>
     </Member>
     <Member MemberName="BeginUpdateAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt; BeginUpdateAsync (this Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string topicName, Microsoft.Azure.Management.EventGrid.Models.TopicUpdateParameters topicUpdateParameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.EventGrid.Models.Topic&gt; BeginUpdateAsync(class Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string topicName, class Microsoft.Azure.Management.EventGrid.Models.TopicUpdateParameters topicUpdateParameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.BeginUpdateAsync(Microsoft.Azure.Management.EventGrid.ITopicsOperations,System.String,System.String,Microsoft.Azure.Management.EventGrid.Models.TopicUpdateParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function BeginUpdateAsync (operations As ITopicsOperations, resourceGroupName As String, topicName As String, topicUpdateParameters As TopicUpdateParameters, Optional cancellationToken As CancellationToken = null) As Task(Of Topic)" />
+      <MemberSignature Language="F#" Value="static member BeginUpdateAsync : Microsoft.Azure.Management.EventGrid.ITopicsOperations * string * string * Microsoft.Azure.Management.EventGrid.Models.TopicUpdateParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt;" Usage="Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.BeginUpdateAsync (operations, resourceGroupName, topicName, topicUpdateParameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.EventGrid</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Azure.Management.EventGrid.ITopicsOperations" RefType="this" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="resourceGroupName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="topicName" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="topicUpdateParameters" Type="Microsoft.Azure.Management.EventGrid.Models.TopicUpdateParameters" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="resourceGroupName">
+            The name of the resource group within the user's subscription.
+            </param>
+        <param name="topicName">
+            Name of the topic.
+            </param>
+        <param name="topicUpdateParameters">
+            Topic update information.
+            </param>
+        <param name="cancellationToken">
+            The cancellation token.
+            </param>
+        <summary>
+            Update a topic.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>
+            Asynchronously updates a topic with the specified parameters.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginUpdateAsync">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt; BeginUpdateAsync (this Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string topicName, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.EventGrid.Models.Topic&gt; BeginUpdateAsync(class Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string topicName, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.BeginUpdateAsync(Microsoft.Azure.Management.EventGrid.ITopicsOperations,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function BeginUpdateAsync (operations As ITopicsOperations, resourceGroupName As String, topicName As String, Optional tags As IDictionary(Of String, String) = null, Optional cancellationToken As CancellationToken = null) As Task(Of Topic)" />
       <MemberSignature Language="F#" Value="static member BeginUpdateAsync : Microsoft.Azure.Management.EventGrid.ITopicsOperations * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt;" Usage="Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.BeginUpdateAsync (operations, resourceGroupName, topicName, tags, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -240,11 +346,11 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Azure.Management.EventGrid.ITopicsOperations" RefType="this" />
-        <Parameter Name="resourceGroupName" Type="System.String" />
-        <Parameter Name="topicName" Type="System.String" />
-        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="operations" Type="Microsoft.Azure.Management.EventGrid.ITopicsOperations" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
+        <Parameter Name="resourceGroupName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="topicName" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="4" FrameworkAlternate="azure-dotnet" />
       </Parameters>
       <Docs>
         <param name="operations">
@@ -317,12 +423,18 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt; CreateOrUpdateAsync (this Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string topicName, Microsoft.Azure.Management.EventGrid.Models.Topic topicInfo, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.EventGrid.Models.Topic&gt; CreateOrUpdateAsync(class Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string topicName, class Microsoft.Azure.Management.EventGrid.Models.Topic topicInfo, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.CreateOrUpdateAsync(Microsoft.Azure.Management.EventGrid.ITopicsOperations,System.String,System.String,Microsoft.Azure.Management.EventGrid.Models.Topic,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CreateOrUpdateAsync (operations As ITopicsOperations, resourceGroupName As String, topicName As String, topicInfo As Topic, Optional cancellationToken As CancellationToken = null) As Task(Of Topic)" />
       <MemberSignature Language="F#" Value="static member CreateOrUpdateAsync : Microsoft.Azure.Management.EventGrid.ITopicsOperations * string * string * Microsoft.Azure.Management.EventGrid.Models.Topic * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt;" Usage="Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.CreateOrUpdateAsync (operations, resourceGroupName, topicName, topicInfo, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.EventGrid</AssemblyName>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt;</ReturnType>
       </ReturnValue>
@@ -399,12 +511,18 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task DeleteAsync (this Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string topicName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task DeleteAsync(class Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string topicName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.DeleteAsync(Microsoft.Azure.Management.EventGrid.ITopicsOperations,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DeleteAsync (operations As ITopicsOperations, resourceGroupName As String, topicName As String, Optional cancellationToken As CancellationToken = null) As Task" />
       <MemberSignature Language="F#" Value="static member DeleteAsync : Microsoft.Azure.Management.EventGrid.ITopicsOperations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.DeleteAsync (operations, resourceGroupName, topicName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.EventGrid</AssemblyName>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -478,12 +596,18 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt; GetAsync (this Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string topicName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.EventGrid.Models.Topic&gt; GetAsync(class Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string topicName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.GetAsync(Microsoft.Azure.Management.EventGrid.ITopicsOperations,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAsync (operations As ITopicsOperations, resourceGroupName As String, topicName As String, Optional cancellationToken As CancellationToken = null) As Task(Of Topic)" />
       <MemberSignature Language="F#" Value="static member GetAsync : Microsoft.Azure.Management.EventGrid.ITopicsOperations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt;" Usage="Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.GetAsync (operations, resourceGroupName, topicName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.EventGrid</AssemblyName>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt;</ReturnType>
       </ReturnValue>
@@ -516,7 +640,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListByResourceGroup">
-      <MemberSignature Language="C#" Value="public static Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt; ListByResourceGroup (this Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string filter = default, Nullable&lt;int&gt; top = default);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt; ListByResourceGroup (this Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string filter = default, int? top = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.EventGrid.Models.Topic&gt; ListByResourceGroup(class Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string filter, valuetype System.Nullable`1&lt;int32&gt; top) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.ListByResourceGroup(Microsoft.Azure.Management.EventGrid.ITopicsOperations,System.String,System.String,System.Nullable{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListByResourceGroup (operations As ITopicsOperations, resourceGroupName As String, Optional filter As String = null, Optional top As Nullable(Of Integer) = null) As IPage(Of Topic)" />
@@ -566,15 +690,21 @@
       </Docs>
     </Member>
     <Member MemberName="ListByResourceGroupAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt;&gt; ListByResourceGroupAsync (this Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string filter = default, Nullable&lt;int&gt; top = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt;&gt; ListByResourceGroupAsync (this Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string filter = default, int? top = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.EventGrid.Models.Topic&gt;&gt; ListByResourceGroupAsync(class Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string filter, valuetype System.Nullable`1&lt;int32&gt; top, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.ListByResourceGroupAsync(Microsoft.Azure.Management.EventGrid.ITopicsOperations,System.String,System.String,System.Nullable{System.Int32},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListByResourceGroupAsync (operations As ITopicsOperations, resourceGroupName As String, Optional filter As String = null, Optional top As Nullable(Of Integer) = null, Optional cancellationToken As CancellationToken = null) As Task(Of IPage(Of Topic))" />
       <MemberSignature Language="F#" Value="static member ListByResourceGroupAsync : Microsoft.Azure.Management.EventGrid.ITopicsOperations * string * string * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt;&gt;" Usage="Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.ListByResourceGroupAsync (operations, resourceGroupName, filter, top, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.EventGrid</AssemblyName>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -656,12 +786,18 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt;&gt; ListByResourceGroupNextAsync (this Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.EventGrid.Models.Topic&gt;&gt; ListByResourceGroupNextAsync(class Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string nextPageLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.ListByResourceGroupNextAsync(Microsoft.Azure.Management.EventGrid.ITopicsOperations,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListByResourceGroupNextAsync (operations As ITopicsOperations, nextPageLink As String, Optional cancellationToken As CancellationToken = null) As Task(Of IPage(Of Topic))" />
       <MemberSignature Language="F#" Value="static member ListByResourceGroupNextAsync : Microsoft.Azure.Management.EventGrid.ITopicsOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt;&gt;" Usage="Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.ListByResourceGroupNextAsync (operations, nextPageLink, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.EventGrid</AssemblyName>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -690,7 +826,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListBySubscription">
-      <MemberSignature Language="C#" Value="public static Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt; ListBySubscription (this Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string filter = default, Nullable&lt;int&gt; top = default);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt; ListBySubscription (this Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string filter = default, int? top = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.EventGrid.Models.Topic&gt; ListBySubscription(class Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string filter, valuetype System.Nullable`1&lt;int32&gt; top) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.ListBySubscription(Microsoft.Azure.Management.EventGrid.ITopicsOperations,System.String,System.Nullable{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListBySubscription (operations As ITopicsOperations, Optional filter As String = null, Optional top As Nullable(Of Integer) = null) As IPage(Of Topic)" />
@@ -736,15 +872,21 @@
       </Docs>
     </Member>
     <Member MemberName="ListBySubscriptionAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt;&gt; ListBySubscriptionAsync (this Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string filter = default, Nullable&lt;int&gt; top = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt;&gt; ListBySubscriptionAsync (this Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string filter = default, int? top = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.EventGrid.Models.Topic&gt;&gt; ListBySubscriptionAsync(class Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string filter, valuetype System.Nullable`1&lt;int32&gt; top, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.ListBySubscriptionAsync(Microsoft.Azure.Management.EventGrid.ITopicsOperations,System.String,System.Nullable{System.Int32},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListBySubscriptionAsync (operations As ITopicsOperations, Optional filter As String = null, Optional top As Nullable(Of Integer) = null, Optional cancellationToken As CancellationToken = null) As Task(Of IPage(Of Topic))" />
       <MemberSignature Language="F#" Value="static member ListBySubscriptionAsync : Microsoft.Azure.Management.EventGrid.ITopicsOperations * string * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt;&gt;" Usage="Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.ListBySubscriptionAsync (operations, filter, top, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.EventGrid</AssemblyName>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -822,12 +964,18 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt;&gt; ListBySubscriptionNextAsync (this Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.EventGrid.Models.Topic&gt;&gt; ListBySubscriptionNextAsync(class Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string nextPageLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.ListBySubscriptionNextAsync(Microsoft.Azure.Management.EventGrid.ITopicsOperations,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListBySubscriptionNextAsync (operations As ITopicsOperations, nextPageLink As String, Optional cancellationToken As CancellationToken = null) As Task(Of IPage(Of Topic))" />
       <MemberSignature Language="F#" Value="static member ListBySubscriptionNextAsync : Microsoft.Azure.Management.EventGrid.ITopicsOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt;&gt;" Usage="Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.ListBySubscriptionNextAsync (operations, nextPageLink, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.EventGrid</AssemblyName>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -905,12 +1053,18 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Management.EventGrid.Models.EventType&gt;&gt; ListEventTypesAsync (this Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string providerNamespace, string resourceTypeName, string resourceName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Management.EventGrid.Models.EventType&gt;&gt; ListEventTypesAsync(class Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string providerNamespace, string resourceTypeName, string resourceName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.ListEventTypesAsync(Microsoft.Azure.Management.EventGrid.ITopicsOperations,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListEventTypesAsync (operations As ITopicsOperations, resourceGroupName As String, providerNamespace As String, resourceTypeName As String, resourceName As String, Optional cancellationToken As CancellationToken = null) As Task(Of IEnumerable(Of EventType))" />
       <MemberSignature Language="F#" Value="static member ListEventTypesAsync : Microsoft.Azure.Management.EventGrid.ITopicsOperations * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.Azure.Management.EventGrid.Models.EventType&gt;&gt;" Usage="Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.ListEventTypesAsync (operations, resourceGroupName, providerNamespace, resourceTypeName, resourceName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.EventGrid</AssemblyName>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Management.EventGrid.Models.EventType&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -992,12 +1146,18 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.EventGrid.Models.TopicSharedAccessKeys&gt; ListSharedAccessKeysAsync (this Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string topicName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.EventGrid.Models.TopicSharedAccessKeys&gt; ListSharedAccessKeysAsync(class Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string topicName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.ListSharedAccessKeysAsync(Microsoft.Azure.Management.EventGrid.ITopicsOperations,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListSharedAccessKeysAsync (operations As ITopicsOperations, resourceGroupName As String, topicName As String, Optional cancellationToken As CancellationToken = null) As Task(Of TopicSharedAccessKeys)" />
       <MemberSignature Language="F#" Value="static member ListSharedAccessKeysAsync : Microsoft.Azure.Management.EventGrid.ITopicsOperations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.EventGrid.Models.TopicSharedAccessKeys&gt;" Usage="Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.ListSharedAccessKeysAsync (operations, resourceGroupName, topicName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.EventGrid</AssemblyName>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.EventGrid.Models.TopicSharedAccessKeys&gt;</ReturnType>
       </ReturnValue>
@@ -1075,12 +1235,18 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.EventGrid.Models.TopicSharedAccessKeys&gt; RegenerateKeyAsync (this Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string topicName, string keyName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.EventGrid.Models.TopicSharedAccessKeys&gt; RegenerateKeyAsync(class Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string topicName, string keyName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.RegenerateKeyAsync(Microsoft.Azure.Management.EventGrid.ITopicsOperations,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function RegenerateKeyAsync (operations As ITopicsOperations, resourceGroupName As String, topicName As String, keyName As String, Optional cancellationToken As CancellationToken = null) As Task(Of TopicSharedAccessKeys)" />
       <MemberSignature Language="F#" Value="static member RegenerateKeyAsync : Microsoft.Azure.Management.EventGrid.ITopicsOperations * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.EventGrid.Models.TopicSharedAccessKeys&gt;" Usage="Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.RegenerateKeyAsync (operations, resourceGroupName, topicName, keyName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.EventGrid</AssemblyName>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.EventGrid.Models.TopicSharedAccessKeys&gt;</ReturnType>
       </ReturnValue>
@@ -1117,6 +1283,48 @@
       </Docs>
     </Member>
     <Member MemberName="Update">
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Management.EventGrid.Models.Topic Update (this Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string topicName, Microsoft.Azure.Management.EventGrid.Models.TopicUpdateParameters topicUpdateParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.Management.EventGrid.Models.Topic Update(class Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string topicName, class Microsoft.Azure.Management.EventGrid.Models.TopicUpdateParameters topicUpdateParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.Update(Microsoft.Azure.Management.EventGrid.ITopicsOperations,System.String,System.String,Microsoft.Azure.Management.EventGrid.Models.TopicUpdateParameters)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Update (operations As ITopicsOperations, resourceGroupName As String, topicName As String, topicUpdateParameters As TopicUpdateParameters) As Topic" />
+      <MemberSignature Language="F#" Value="static member Update : Microsoft.Azure.Management.EventGrid.ITopicsOperations * string * string * Microsoft.Azure.Management.EventGrid.Models.TopicUpdateParameters -&gt; Microsoft.Azure.Management.EventGrid.Models.Topic" Usage="Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.Update (operations, resourceGroupName, topicName, topicUpdateParameters)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.EventGrid</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.EventGrid.Models.Topic</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Azure.Management.EventGrid.ITopicsOperations" RefType="this" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="resourceGroupName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="topicName" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="topicUpdateParameters" Type="Microsoft.Azure.Management.EventGrid.Models.TopicUpdateParameters" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="resourceGroupName">
+            The name of the resource group within the user's subscription.
+            </param>
+        <param name="topicName">
+            Name of the topic.
+            </param>
+        <param name="topicUpdateParameters">
+            Topic update information.
+            </param>
+        <summary>
+            Update a topic.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>
+            Asynchronously updates a topic with the specified parameters.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Update">
       <MemberSignature Language="C#" Value="public static Microsoft.Azure.Management.EventGrid.Models.Topic Update (this Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string topicName, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.Management.EventGrid.Models.Topic Update(class Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string topicName, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.Update(Microsoft.Azure.Management.EventGrid.ITopicsOperations,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})" />
@@ -1131,10 +1339,10 @@
         <ReturnType>Microsoft.Azure.Management.EventGrid.Models.Topic</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Azure.Management.EventGrid.ITopicsOperations" RefType="this" />
-        <Parameter Name="resourceGroupName" Type="System.String" />
-        <Parameter Name="topicName" Type="System.String" />
-        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="operations" Type="Microsoft.Azure.Management.EventGrid.ITopicsOperations" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
+        <Parameter Name="resourceGroupName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="topicName" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="3" FrameworkAlternate="azure-dotnet" />
       </Parameters>
       <Docs>
         <param name="operations">
@@ -1159,9 +1367,61 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt; UpdateAsync (this Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string topicName, Microsoft.Azure.Management.EventGrid.Models.TopicUpdateParameters topicUpdateParameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.EventGrid.Models.Topic&gt; UpdateAsync(class Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string topicName, class Microsoft.Azure.Management.EventGrid.Models.TopicUpdateParameters topicUpdateParameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.UpdateAsync(Microsoft.Azure.Management.EventGrid.ITopicsOperations,System.String,System.String,Microsoft.Azure.Management.EventGrid.Models.TopicUpdateParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function UpdateAsync (operations As ITopicsOperations, resourceGroupName As String, topicName As String, topicUpdateParameters As TopicUpdateParameters, Optional cancellationToken As CancellationToken = null) As Task(Of Topic)" />
+      <MemberSignature Language="F#" Value="static member UpdateAsync : Microsoft.Azure.Management.EventGrid.ITopicsOperations * string * string * Microsoft.Azure.Management.EventGrid.Models.TopicUpdateParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt;" Usage="Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.UpdateAsync (operations, resourceGroupName, topicName, topicUpdateParameters, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.EventGrid</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operations" Type="Microsoft.Azure.Management.EventGrid.ITopicsOperations" RefType="this" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="resourceGroupName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="topicName" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="topicUpdateParameters" Type="Microsoft.Azure.Management.EventGrid.Models.TopicUpdateParameters" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="resourceGroupName">
+            The name of the resource group within the user's subscription.
+            </param>
+        <param name="topicName">
+            Name of the topic.
+            </param>
+        <param name="topicUpdateParameters">
+            Topic update information.
+            </param>
+        <param name="cancellationToken">
+            The cancellation token.
+            </param>
+        <summary>
+            Update a topic.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>
+            Asynchronously updates a topic with the specified parameters.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateAsync">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt; UpdateAsync (this Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string topicName, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.EventGrid.Models.Topic&gt; UpdateAsync(class Microsoft.Azure.Management.EventGrid.ITopicsOperations operations, string resourceGroupName, string topicName, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.UpdateAsync(Microsoft.Azure.Management.EventGrid.ITopicsOperations,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function UpdateAsync (operations As ITopicsOperations, resourceGroupName As String, topicName As String, Optional tags As IDictionary(Of String, String) = null, Optional cancellationToken As CancellationToken = null) As Task(Of Topic)" />
       <MemberSignature Language="F#" Value="static member UpdateAsync : Microsoft.Azure.Management.EventGrid.ITopicsOperations * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt;" Usage="Microsoft.Azure.Management.EventGrid.TopicsOperationsExtensions.UpdateAsync (operations, resourceGroupName, topicName, tags, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1172,11 +1432,11 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.EventGrid.Models.Topic&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Azure.Management.EventGrid.ITopicsOperations" RefType="this" />
-        <Parameter Name="resourceGroupName" Type="System.String" />
-        <Parameter Name="topicName" Type="System.String" />
-        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="operations" Type="Microsoft.Azure.Management.EventGrid.ITopicsOperations" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
+        <Parameter Name="resourceGroupName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="topicName" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="4" FrameworkAlternate="azure-dotnet" />
       </Parameters>
       <Docs>
         <param name="operations">

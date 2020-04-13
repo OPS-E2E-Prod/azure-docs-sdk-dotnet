@@ -12,6 +12,9 @@
     <AssemblyVersion>1.22.0.0</AssemblyVersion>
     <AssemblyVersion>1.23.0.0</AssemblyVersion>
     <AssemblyVersion>1.23.1.0</AssemblyVersion>
+    <AssemblyVersion>1.23.2.0</AssemblyVersion>
+    <AssemblyVersion>1.24.0.0</AssemblyVersion>
+    <AssemblyVersion>1.25.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -22,7 +25,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            An MQTT "will" message, used when a client disconnects
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,6 +35,7 @@
       <MemberSignature Language="C#" Value="public WillMessage (DotNetty.Codecs.Mqtt.Packets.QualityOfService qos, Microsoft.Azure.Devices.Client.Message message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype DotNetty.Codecs.Mqtt.Packets.QualityOfService qos, class Microsoft.Azure.Devices.Client.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Client.Transport.Mqtt.WillMessage.#ctor(DotNetty.Codecs.Mqtt.Packets.QualityOfService,Microsoft.Azure.Devices.Client.Message)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (qos As QualityOfService, message As Message)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Devices.Client.Transport.Mqtt.WillMessage : DotNetty.Codecs.Mqtt.Packets.QualityOfService * Microsoft.Azure.Devices.Client.Message -&gt; Microsoft.Azure.Devices.Client.Transport.Mqtt.WillMessage" Usage="new Microsoft.Azure.Devices.Client.Transport.Mqtt.WillMessage (qos, message)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -40,15 +46,20 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="qos" Type="DotNetty.Codecs.Mqtt.Packets.QualityOfService" />
         <Parameter Name="message" Type="Microsoft.Azure.Devices.Client.Message" />
       </Parameters>
       <Docs>
-        <param name="qos">To be added.</param>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="qos">The quality of service</param>
+        <param name="message">The message to be sent</param>
+        <summary>
+            Creates an instance of WillMessage
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,6 +78,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Devices.Client.Message</ReturnType>
@@ -75,6 +89,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="QoS">
@@ -95,6 +110,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>DotNetty.Codecs.Mqtt.Packets.QualityOfService</ReturnType>
@@ -103,6 +121,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
   </Members>

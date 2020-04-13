@@ -10,6 +10,8 @@
     <AssemblyVersion>1.0.0.62</AssemblyVersion>
     <AssemblyVersion>1.0.0.63</AssemblyVersion>
     <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.ResourceManager.Fluent.Resource</BaseTypeName>
@@ -39,6 +41,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -49,15 +53,18 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public RouteTableInner (string location = default, string id = default, string name = default, string type = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Fluent.Models.RouteInner&gt; routes = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Fluent.Models.SubnetInner&gt; subnets = default, Nullable&lt;bool&gt; disableBgpRoutePropagation = default, Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState provisioningState = default, string etag = default);" />
+      <MemberSignature Language="C#" Value="public RouteTableInner (string location = default, string id = default, string name = default, string type = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Fluent.Models.RouteInner&gt; routes = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Fluent.Models.SubnetInner&gt; subnets = default, bool? disableBgpRoutePropagation = default, Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState provisioningState = default, string etag = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string location, string id, string name, string type, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Network.Fluent.Models.RouteInner&gt; routes, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Network.Fluent.Models.SubnetInner&gt; subnets, valuetype System.Nullable`1&lt;bool&gt; disableBgpRoutePropagation, class Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState provisioningState, string etag) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.Models.RouteTableInner.#ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IList{Microsoft.Azure.Management.Network.Fluent.Models.RouteInner},System.Collections.Generic.IList{Microsoft.Azure.Management.Network.Fluent.Models.SubnetInner},System.Nullable{System.Boolean},Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional location As String = null, Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional tags As IDictionary(Of String, String) = null, Optional routes As IList(Of RouteInner) = null, Optional subnets As IList(Of SubnetInner) = null, Optional disableBgpRoutePropagation As Nullable(Of Boolean) = null, Optional provisioningState As ProvisioningState = null, Optional etag As String = null)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Network.Fluent.Models.RouteTableInner : string * string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Fluent.Models.RouteInner&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Fluent.Models.SubnetInner&gt; * Nullable&lt;bool&gt; * Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState * string -&gt; Microsoft.Azure.Management.Network.Fluent.Models.RouteTableInner" Usage="new Microsoft.Azure.Management.Network.Fluent.Models.RouteTableInner (location, id, name, type, tags, routes, subnets, disableBgpRoutePropagation, provisioningState, etag)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="location" Type="System.String" />
@@ -96,7 +103,7 @@
       </Docs>
     </Member>
     <Member MemberName="DisableBgpRoutePropagation">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; DisableBgpRoutePropagation { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? DisableBgpRoutePropagation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; DisableBgpRoutePropagation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Fluent.Models.RouteTableInner.DisableBgpRoutePropagation" />
       <MemberSignature Language="VB.NET" Value="Public Property DisableBgpRoutePropagation As Nullable(Of Boolean)" />
@@ -108,6 +115,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -139,6 +148,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -170,6 +181,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -201,6 +214,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -231,6 +246,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -261,6 +278,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

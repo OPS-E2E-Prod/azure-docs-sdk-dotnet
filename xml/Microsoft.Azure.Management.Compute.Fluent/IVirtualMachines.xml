@@ -10,6 +10,8 @@
     <AssemblyVersion>1.0.0.62</AssemblyVersion>
     <AssemblyVersion>1.0.0.63</AssemblyVersion>
     <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -72,6 +74,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -102,6 +106,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; CaptureAsync (string groupName, string name, string containerName, string vhdPrefix, bool overwriteVhd, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;string&gt; CaptureAsync(string groupName, string name, string containerName, string vhdPrefix, bool overwriteVhd, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.IVirtualMachines.CaptureAsync(System.String,System.String,System.String,System.String,System.Boolean,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CaptureAsync (groupName As String, name As String, containerName As String, vhdPrefix As String, overwriteVhd As Boolean, Optional cancellationToken As CancellationToken = null) As Task(Of String)" />
       <MemberSignature Language="F#" Value="abstract member CaptureAsync : string * string * string * string * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="iVirtualMachines.CaptureAsync (groupName, name, containerName, vhdPrefix, overwriteVhd, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -110,6 +115,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -123,12 +130,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="cancellationToken">To be added.</param>
         <param name="groupName">The resource group name.</param>
         <param name="name">The virtual machine name.</param>
         <param name="containerName">Destination container name to store the captured VHD.</param>
         <param name="vhdPrefix">The prefix for the VHD holding captured image.</param>
         <param name="overwriteVhd">Whether to overwrites destination VHD if it exists.</param>
-        <param name="cancellationToken">To be added.</param>
         <summary>
             Captures the virtual machine by copying virtual hard disks of the VM asynchronously.
             </summary>
@@ -150,6 +157,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -171,6 +180,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeallocateAsync (string groupName, string name, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeallocateAsync(string groupName, string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.IVirtualMachines.DeallocateAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DeallocateAsync (groupName As String, name As String, Optional cancellationToken As CancellationToken = null) As Task" />
       <MemberSignature Language="F#" Value="abstract member DeallocateAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="iVirtualMachines.DeallocateAsync (groupName, name, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -179,6 +189,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -189,9 +201,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="cancellationToken">To be added.</param>
         <param name="groupName">The name of the resource group the virtual machine is in.</param>
         <param name="name">The virtual machine name.</param>
-        <param name="cancellationToken">To be added.</param>
         <summary>
             Shuts down the virtual machine and releases the compute resources asynchronously.
             </summary>
@@ -213,6 +225,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -234,6 +248,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task GeneralizeAsync (string groupName, string name, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task GeneralizeAsync(string groupName, string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.IVirtualMachines.GeneralizeAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GeneralizeAsync (groupName As String, name As String, Optional cancellationToken As CancellationToken = null) As Task" />
       <MemberSignature Language="F#" Value="abstract member GeneralizeAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="iVirtualMachines.GeneralizeAsync (groupName, name, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -242,6 +257,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -252,9 +269,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="cancellationToken">To be added.</param>
         <param name="groupName">The name of the resource group the virtual machine is in.</param>
         <param name="name">The virtual machine name.</param>
-        <param name="cancellationToken">To be added.</param>
         <summary>
             Generalizes the virtual machine asynchronously.
             </summary>
@@ -276,6 +293,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -297,6 +316,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task MigrateToManagedAsync (string groupName, string name, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task MigrateToManagedAsync(string groupName, string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.IVirtualMachines.MigrateToManagedAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function MigrateToManagedAsync (groupName As String, name As String, Optional cancellationToken As CancellationToken = null) As Task" />
       <MemberSignature Language="F#" Value="abstract member MigrateToManagedAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="iVirtualMachines.MigrateToManagedAsync (groupName, name, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -305,6 +325,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -315,9 +337,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="cancellationToken">To be added.</param>
         <param name="groupName">The resource group name.</param>
         <param name="name">The virtual machine name.</param>
-        <param name="cancellationToken">To be added.</param>
         <summary>
             Converts (migrates) the virtual machine with un-managed disks to use managed disk asynchronously.
             </summary>
@@ -339,6 +361,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -360,6 +384,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task PowerOffAsync (string groupName, string name, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task PowerOffAsync(string groupName, string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.IVirtualMachines.PowerOffAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PowerOffAsync (groupName As String, name As String, Optional cancellationToken As CancellationToken = null) As Task" />
       <MemberSignature Language="F#" Value="abstract member PowerOffAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="iVirtualMachines.PowerOffAsync (groupName, name, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -368,6 +393,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -378,9 +405,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="cancellationToken">To be added.</param>
         <param name="groupName">The name of the resource group the virtual machine is in.</param>
         <param name="name">The virtual machine name.</param>
-        <param name="cancellationToken">To be added.</param>
         <summary>
             Powers off (stops) the virtual machine asynchronously.
             </summary>
@@ -402,6 +429,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -423,6 +452,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task RedeployAsync (string groupName, string name, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task RedeployAsync(string groupName, string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.IVirtualMachines.RedeployAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RedeployAsync (groupName As String, name As String, Optional cancellationToken As CancellationToken = null) As Task" />
       <MemberSignature Language="F#" Value="abstract member RedeployAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="iVirtualMachines.RedeployAsync (groupName, name, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -431,6 +461,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -441,9 +473,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="cancellationToken">To be added.</param>
         <param name="groupName">The name of the resource group the virtual machine is in.</param>
         <param name="name">The virtual machine name.</param>
-        <param name="cancellationToken">To be added.</param>
         <summary>
             Redeploys the virtual machine asynchronously.
             </summary>
@@ -453,7 +485,7 @@
       </Docs>
     </Member>
     <Member MemberName="Reimage">
-      <MemberSignature Language="C#" Value="public void Reimage (string groupName, string name, Nullable&lt;bool&gt; tempDisk = default);" />
+      <MemberSignature Language="C#" Value="public void Reimage (string groupName, string name, bool? tempDisk = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reimage(string groupName, string name, valuetype System.Nullable`1&lt;bool&gt; tempDisk) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.IVirtualMachines.Reimage(System.String,System.String,System.Nullable{System.Boolean})" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reimage (groupName As String, name As String, Optional tempDisk As Nullable(Of Boolean) = null)" />
@@ -465,6 +497,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -475,9 +509,9 @@
         <Parameter Name="tempDisk" Type="System.Nullable&lt;System.Boolean&gt;" />
       </Parameters>
       <Docs>
+        <param name="tempDisk">To be added.</param>
         <param name="groupName">The name of the resource group the virtual machine is in.</param>
         <param name="name">The virtual machine name.</param>
-        <param name="tempDisk">To be added.</param>
         <summary>
             Reimages a virtual machine.
             </summary>
@@ -485,9 +519,10 @@
       </Docs>
     </Member>
     <Member MemberName="ReimageAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ReimageAsync (string groupName, string name, Nullable&lt;bool&gt; tempDisk = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ReimageAsync (string groupName, string name, bool? tempDisk = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task ReimageAsync(string groupName, string name, valuetype System.Nullable`1&lt;bool&gt; tempDisk, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.IVirtualMachines.ReimageAsync(System.String,System.String,System.Nullable{System.Boolean},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReimageAsync (groupName As String, name As String, Optional tempDisk As Nullable(Of Boolean) = null, Optional cancellationToken As CancellationToken = null) As Task" />
       <MemberSignature Language="F#" Value="abstract member ReimageAsync : string * string * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="iVirtualMachines.ReimageAsync (groupName, name, tempDisk, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -496,6 +531,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -507,10 +544,10 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="groupName">The name of the resource group the virtual machine is in.</param>
-        <param name="name">The virtual machine name.</param>
         <param name="tempDisk">To be added.</param>
         <param name="cancellationToken">To be added.</param>
+        <param name="groupName">The name of the resource group the virtual machine is in.</param>
+        <param name="name">The virtual machine name.</param>
         <summary>
             Reimages the virtual machine asynchronously.
             </summary>
@@ -532,6 +569,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -553,6 +592,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task RestartAsync (string groupName, string name, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task RestartAsync(string groupName, string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.IVirtualMachines.RestartAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RestartAsync (groupName As String, name As String, Optional cancellationToken As CancellationToken = null) As Task" />
       <MemberSignature Language="F#" Value="abstract member RestartAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="iVirtualMachines.RestartAsync (groupName, name, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -561,6 +601,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -571,9 +613,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="cancellationToken">To be added.</param>
         <param name="groupName">The name of the resource group the virtual machine is in.</param>
         <param name="name">The virtual machine name.</param>
-        <param name="cancellationToken">To be added.</param>
         <summary>
             Restarts the virtual machine asynchronously.
             </summary>
@@ -595,6 +637,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineSizes</ReturnType>
@@ -620,6 +664,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -641,6 +687,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task StartAsync (string groupName, string name, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task StartAsync(string groupName, string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.IVirtualMachines.StartAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function StartAsync (groupName As String, name As String, Optional cancellationToken As CancellationToken = null) As Task" />
       <MemberSignature Language="F#" Value="abstract member StartAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="iVirtualMachines.StartAsync (groupName, name, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -649,6 +696,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -659,9 +708,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="cancellationToken">To be added.</param>
         <param name="groupName">The name of the resource group the virtual machine is in.</param>
         <param name="name">The virtual machine name.</param>
-        <param name="cancellationToken">To be added.</param>
         <summary>
             Starts the virtual machine asynchronously.
             </summary>

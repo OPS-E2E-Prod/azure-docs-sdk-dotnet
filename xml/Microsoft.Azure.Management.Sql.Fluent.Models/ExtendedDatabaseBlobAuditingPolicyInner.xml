@@ -10,6 +10,8 @@
     <AssemblyVersion>1.0.0.62</AssemblyVersion>
     <AssemblyVersion>1.0.0.63</AssemblyVersion>
     <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.Sql.Fluent.Models.ProxyResourceInner</BaseTypeName>
@@ -39,6 +41,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -50,7 +54,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ExtendedDatabaseBlobAuditingPolicyInner (Microsoft.Azure.Management.Sql.Fluent.Models.BlobAuditingPolicyState state, string id = default, string name = default, string type = default, string predicateExpression = default, string storageEndpoint = default, string storageAccountAccessKey = default, Nullable&lt;int&gt; retentionDays = default, System.Collections.Generic.IList&lt;string&gt; auditActionsAndGroups = default, Nullable&lt;Guid&gt; storageAccountSubscriptionId = default, Nullable&lt;bool&gt; isStorageSecondaryKeyInUse = default, Nullable&lt;bool&gt; isAzureMonitorTargetEnabled = default);" />
+      <MemberSignature Language="C#" Value="public ExtendedDatabaseBlobAuditingPolicyInner (Microsoft.Azure.Management.Sql.Fluent.Models.BlobAuditingPolicyState state, string id = default, string name = default, string type = default, string predicateExpression = default, string storageEndpoint = default, string storageAccountAccessKey = default, int? retentionDays = default, System.Collections.Generic.IList&lt;string&gt; auditActionsAndGroups = default, Guid? storageAccountSubscriptionId = default, bool? isStorageSecondaryKeyInUse = default, bool? isAzureMonitorTargetEnabled = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Azure.Management.Sql.Fluent.Models.BlobAuditingPolicyState state, string id, string name, string type, string predicateExpression, string storageEndpoint, string storageAccountAccessKey, valuetype System.Nullable`1&lt;int32&gt; retentionDays, class System.Collections.Generic.IList`1&lt;string&gt; auditActionsAndGroups, valuetype System.Nullable`1&lt;valuetype System.Guid&gt; storageAccountSubscriptionId, valuetype System.Nullable`1&lt;bool&gt; isStorageSecondaryKeyInUse, valuetype System.Nullable`1&lt;bool&gt; isAzureMonitorTargetEnabled) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Fluent.Models.ExtendedDatabaseBlobAuditingPolicyInner.#ctor(Microsoft.Azure.Management.Sql.Fluent.Models.BlobAuditingPolicyState,System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Collections.Generic.IList{System.String},System.Nullable{System.Guid},System.Nullable{System.Boolean},System.Nullable{System.Boolean})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (state As BlobAuditingPolicyState, Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional predicateExpression As String = null, Optional storageEndpoint As String = null, Optional storageAccountAccessKey As String = null, Optional retentionDays As Nullable(Of Integer) = null, Optional auditActionsAndGroups As IList(Of String) = null, Optional storageAccountSubscriptionId As Nullable(Of Guid) = null, Optional isStorageSecondaryKeyInUse As Nullable(Of Boolean) = null, Optional isAzureMonitorTargetEnabled As Nullable(Of Boolean) = null)" />
@@ -62,6 +66,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="state" Type="Microsoft.Azure.Management.Sql.Fluent.Models.BlobAuditingPolicyState" />
@@ -78,12 +84,12 @@
         <Parameter Name="isAzureMonitorTargetEnabled" Type="System.Nullable&lt;System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <param name="state">Specifies the state of the policy. If state is
-             Enabled, storageEndpoint or isAzureMonitorTargetEnabled are
-             required. Possible values include: 'Enabled', 'Disabled'</param>
         <param name="id">To be added.</param>
         <param name="name">To be added.</param>
         <param name="type">To be added.</param>
+        <param name="state">Specifies the state of the policy. If state is
+             Enabled, storageEndpoint or isAzureMonitorTargetEnabled are
+             required. Possible values include: 'Enabled', 'Disabled'</param>
         <param name="predicateExpression">Specifies condition of where
              clause when creating an audit.</param>
         <param name="storageEndpoint">Specifies the blob storage endpoint
@@ -214,6 +220,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -305,7 +313,7 @@
       </Docs>
     </Member>
     <Member MemberName="IsAzureMonitorTargetEnabled">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsAzureMonitorTargetEnabled { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? IsAzureMonitorTargetEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsAzureMonitorTargetEnabled" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Fluent.Models.ExtendedDatabaseBlobAuditingPolicyInner.IsAzureMonitorTargetEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property IsAzureMonitorTargetEnabled As Nullable(Of Boolean)" />
@@ -317,6 +325,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -354,7 +364,7 @@
       </Docs>
     </Member>
     <Member MemberName="IsStorageSecondaryKeyInUse">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsStorageSecondaryKeyInUse { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? IsStorageSecondaryKeyInUse { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsStorageSecondaryKeyInUse" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Fluent.Models.ExtendedDatabaseBlobAuditingPolicyInner.IsStorageSecondaryKeyInUse" />
       <MemberSignature Language="VB.NET" Value="Public Property IsStorageSecondaryKeyInUse As Nullable(Of Boolean)" />
@@ -366,6 +376,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -397,6 +409,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -416,7 +430,7 @@
       </Docs>
     </Member>
     <Member MemberName="RetentionDays">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; RetentionDays { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? RetentionDays { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; RetentionDays" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Fluent.Models.ExtendedDatabaseBlobAuditingPolicyInner.RetentionDays" />
       <MemberSignature Language="VB.NET" Value="Public Property RetentionDays As Nullable(Of Integer)" />
@@ -428,6 +442,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -459,6 +475,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -491,6 +509,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -511,7 +531,7 @@
       </Docs>
     </Member>
     <Member MemberName="StorageAccountSubscriptionId">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Guid&gt; StorageAccountSubscriptionId { get; set; }" />
+      <MemberSignature Language="C#" Value="public Guid? StorageAccountSubscriptionId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Guid&gt; StorageAccountSubscriptionId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Fluent.Models.ExtendedDatabaseBlobAuditingPolicyInner.StorageAccountSubscriptionId" />
       <MemberSignature Language="VB.NET" Value="Public Property StorageAccountSubscriptionId As Nullable(Of Guid)" />
@@ -523,6 +543,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -553,6 +575,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -585,6 +609,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

@@ -10,6 +10,8 @@
     <AssemblyVersion>1.0.0.62</AssemblyVersion>
     <AssemblyVersion>1.0.0.63</AssemblyVersion>
     <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.Sql.Fluent.Models.ProxyResourceInner</BaseTypeName>
@@ -39,6 +41,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -49,9 +53,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public JobExecutionInner (string id = default, string name = default, string type = default, Nullable&lt;int&gt; jobVersion = default, string stepName = default, Nullable&lt;int&gt; stepId = default, Nullable&lt;Guid&gt; jobExecutionId = default, Microsoft.Azure.Management.Sql.Fluent.Models.JobExecutionLifecycle lifecycle = default, Microsoft.Azure.Management.Sql.Fluent.Models.ProvisioningState provisioningState = default, Nullable&lt;DateTime&gt; createTime = default, Nullable&lt;DateTime&gt; startTime = default, Nullable&lt;DateTime&gt; endTime = default, Nullable&lt;int&gt; currentAttempts = default, Nullable&lt;DateTime&gt; currentAttemptStartTime = default, string lastMessage = default, Microsoft.Azure.Management.Sql.Fluent.Models.JobExecutionTarget target = default);" />
+      <MemberSignature Language="C#" Value="public JobExecutionInner (string id = default, string name = default, string type = default, int? jobVersion = default, string stepName = default, int? stepId = default, Guid? jobExecutionId = default, Microsoft.Azure.Management.Sql.Fluent.Models.JobExecutionLifecycle lifecycle = default, Microsoft.Azure.Management.Sql.Fluent.Models.ProvisioningState provisioningState = default, DateTime? createTime = default, DateTime? startTime = default, DateTime? endTime = default, int? currentAttempts = default, DateTime? currentAttemptStartTime = default, string lastMessage = default, Microsoft.Azure.Management.Sql.Fluent.Models.JobExecutionTarget target = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string type, valuetype System.Nullable`1&lt;int32&gt; jobVersion, string stepName, valuetype System.Nullable`1&lt;int32&gt; stepId, valuetype System.Nullable`1&lt;valuetype System.Guid&gt; jobExecutionId, class Microsoft.Azure.Management.Sql.Fluent.Models.JobExecutionLifecycle lifecycle, class Microsoft.Azure.Management.Sql.Fluent.Models.ProvisioningState provisioningState, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; createTime, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startTime, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; endTime, valuetype System.Nullable`1&lt;int32&gt; currentAttempts, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; currentAttemptStartTime, string lastMessage, class Microsoft.Azure.Management.Sql.Fluent.Models.JobExecutionTarget target) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Fluent.Models.JobExecutionInner.#ctor(System.String,System.String,System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.Nullable{System.Guid},Microsoft.Azure.Management.Sql.Fluent.Models.JobExecutionLifecycle,Microsoft.Azure.Management.Sql.Fluent.Models.ProvisioningState,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Int32},System.Nullable{System.DateTime},System.String,Microsoft.Azure.Management.Sql.Fluent.Models.JobExecutionTarget)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional jobVersion As Nullable(Of Integer) = null, Optional stepName As String = null, Optional stepId As Nullable(Of Integer) = null, Optional jobExecutionId As Nullable(Of Guid) = null, Optional lifecycle As JobExecutionLifecycle = null, Optional provisioningState As ProvisioningState = null, Optional createTime As Nullable(Of DateTime) = null, Optional startTime As Nullable(Of DateTime) = null, Optional endTime As Nullable(Of DateTime) = null, Optional currentAttempts As Nullable(Of Integer) = null, Optional currentAttemptStartTime As Nullable(Of DateTime) = null, Optional lastMessage As String = null, Optional target As JobExecutionTarget = null)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Sql.Fluent.Models.JobExecutionInner : string * string * string * Nullable&lt;int&gt; * string * Nullable&lt;int&gt; * Nullable&lt;Guid&gt; * Microsoft.Azure.Management.Sql.Fluent.Models.JobExecutionLifecycle * Microsoft.Azure.Management.Sql.Fluent.Models.ProvisioningState * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;int&gt; * Nullable&lt;DateTime&gt; * string * Microsoft.Azure.Management.Sql.Fluent.Models.JobExecutionTarget -&gt; Microsoft.Azure.Management.Sql.Fluent.Models.JobExecutionInner" Usage="new Microsoft.Azure.Management.Sql.Fluent.Models.JobExecutionInner (id, name, type, jobVersion, stepName, stepId, jobExecutionId, lifecycle, provisioningState, createTime, startTime, endTime, currentAttempts, currentAttemptStartTime, lastMessage, target)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -60,6 +65,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
@@ -116,7 +123,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; CreateTime { get; }" />
+      <MemberSignature Language="C#" Value="public DateTime? CreateTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; CreateTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Fluent.Models.JobExecutionInner.CreateTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreateTime As Nullable(Of DateTime)" />
@@ -128,6 +135,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -146,7 +155,7 @@
       </Docs>
     </Member>
     <Member MemberName="CurrentAttempts">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; CurrentAttempts { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? CurrentAttempts { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; CurrentAttempts" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Fluent.Models.JobExecutionInner.CurrentAttempts" />
       <MemberSignature Language="VB.NET" Value="Public Property CurrentAttempts As Nullable(Of Integer)" />
@@ -158,6 +167,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -176,7 +187,7 @@
       </Docs>
     </Member>
     <Member MemberName="CurrentAttemptStartTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; CurrentAttemptStartTime { get; }" />
+      <MemberSignature Language="C#" Value="public DateTime? CurrentAttemptStartTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; CurrentAttemptStartTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Fluent.Models.JobExecutionInner.CurrentAttemptStartTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentAttemptStartTime As Nullable(Of DateTime)" />
@@ -188,6 +199,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -206,7 +219,7 @@
       </Docs>
     </Member>
     <Member MemberName="EndTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; EndTime { get; }" />
+      <MemberSignature Language="C#" Value="public DateTime? EndTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; EndTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Fluent.Models.JobExecutionInner.EndTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndTime As Nullable(Of DateTime)" />
@@ -218,6 +231,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -236,7 +251,7 @@
       </Docs>
     </Member>
     <Member MemberName="JobExecutionId">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Guid&gt; JobExecutionId { get; }" />
+      <MemberSignature Language="C#" Value="public Guid? JobExecutionId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Guid&gt; JobExecutionId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Fluent.Models.JobExecutionInner.JobExecutionId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property JobExecutionId As Nullable(Of Guid)" />
@@ -248,6 +263,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -266,7 +283,7 @@
       </Docs>
     </Member>
     <Member MemberName="JobVersion">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; JobVersion { get; }" />
+      <MemberSignature Language="C#" Value="public int? JobVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; JobVersion" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Fluent.Models.JobExecutionInner.JobVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property JobVersion As Nullable(Of Integer)" />
@@ -278,6 +295,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -308,6 +327,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -338,6 +359,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -371,6 +394,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -391,7 +416,7 @@
       </Docs>
     </Member>
     <Member MemberName="StartTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; StartTime { get; }" />
+      <MemberSignature Language="C#" Value="public DateTime? StartTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; StartTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Fluent.Models.JobExecutionInner.StartTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartTime As Nullable(Of DateTime)" />
@@ -403,6 +428,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -421,7 +448,7 @@
       </Docs>
     </Member>
     <Member MemberName="StepId">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; StepId { get; }" />
+      <MemberSignature Language="C#" Value="public int? StepId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; StepId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Fluent.Models.JobExecutionInner.StepId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StepId As Nullable(Of Integer)" />
@@ -433,6 +460,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -463,6 +492,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -493,6 +524,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

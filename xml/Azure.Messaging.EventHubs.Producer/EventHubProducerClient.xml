@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.Messaging.EventHubs</AssemblyName>
     <AssemblyVersion>5.0.1.0</AssemblyVersion>
+    <AssemblyVersion>5.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -39,6 +40,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.EventHubs</AssemblyName>
         <AssemblyVersion>5.0.1.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -58,6 +60,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.EventHubs</AssemblyName>
         <AssemblyVersion>5.0.1.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="connectionString" Type="System.String" />
@@ -87,6 +90,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.EventHubs</AssemblyName>
         <AssemblyVersion>5.0.1.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="connection" Type="Azure.Messaging.EventHubs.EventHubConnection" />
@@ -111,6 +115,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.EventHubs</AssemblyName>
         <AssemblyVersion>5.0.1.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="connectionString" Type="System.String" />
@@ -142,6 +147,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.EventHubs</AssemblyName>
         <AssemblyVersion>5.0.1.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="connectionString" Type="System.String" />
@@ -170,6 +176,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.EventHubs</AssemblyName>
         <AssemblyVersion>5.0.1.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="connectionString" Type="System.String" />
@@ -200,6 +207,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.EventHubs</AssemblyName>
         <AssemblyVersion>5.0.1.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="fullyQualifiedNamespace" Type="System.String" />
@@ -209,7 +217,7 @@
       </Parameters>
       <Docs>
         <param name="fullyQualifiedNamespace">The fully qualified Event Hubs namespace to connect to.  This is likely to be similar to <c>{yournamespace}.servicebus.windows.net</c>.</param>
-        <param name="eventHubName">The name of the specific Event Hub to associated the producer with.</param>
+        <param name="eventHubName">The name of the specific Event Hub to associate the producer with.</param>
         <param name="credential">The Azure managed identity credential to use for authorization.  Access controls may be specified by the Event Hubs namespace or the requested Event Hub, depending on Azure configuration.</param>
         <param name="clientOptions">A set of options to apply when configuring the producer.</param>
         <summary>
@@ -222,11 +230,13 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task CloseAsync (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task CloseAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Messaging.EventHubs.Producer.EventHubProducerClient.CloseAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CloseAsync (Optional cancellationToken As CancellationToken = null) As Task" />
       <MemberSignature Language="F#" Value="abstract member CloseAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.CloseAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="eventHubProducerClient.CloseAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.EventHubs</AssemblyName>
         <AssemblyVersion>5.0.1.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -247,11 +257,13 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.ValueTask&lt;Azure.Messaging.EventHubs.Producer.EventDataBatch&gt; CreateBatchAsync (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;class Azure.Messaging.EventHubs.Producer.EventDataBatch&gt; CreateBatchAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Messaging.EventHubs.Producer.EventHubProducerClient.CreateBatchAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateBatchAsync (Optional cancellationToken As CancellationToken = null) As ValueTask(Of EventDataBatch)" />
       <MemberSignature Language="F#" Value="abstract member CreateBatchAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;Azure.Messaging.EventHubs.Producer.EventDataBatch&gt;&#xA;override this.CreateBatchAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;Azure.Messaging.EventHubs.Producer.EventDataBatch&gt;" Usage="eventHubProducerClient.CreateBatchAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.EventHubs</AssemblyName>
         <AssemblyVersion>5.0.1.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ValueTask&lt;Azure.Messaging.EventHubs.Producer.EventDataBatch&gt;</ReturnType>
@@ -278,11 +290,13 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.ValueTask&lt;Azure.Messaging.EventHubs.Producer.EventDataBatch&gt; CreateBatchAsync (Azure.Messaging.EventHubs.Producer.CreateBatchOptions options, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;class Azure.Messaging.EventHubs.Producer.EventDataBatch&gt; CreateBatchAsync(class Azure.Messaging.EventHubs.Producer.CreateBatchOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Messaging.EventHubs.Producer.EventHubProducerClient.CreateBatchAsync(Azure.Messaging.EventHubs.Producer.CreateBatchOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateBatchAsync (options As CreateBatchOptions, Optional cancellationToken As CancellationToken = null) As ValueTask(Of EventDataBatch)" />
       <MemberSignature Language="F#" Value="abstract member CreateBatchAsync : Azure.Messaging.EventHubs.Producer.CreateBatchOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;Azure.Messaging.EventHubs.Producer.EventDataBatch&gt;&#xA;override this.CreateBatchAsync : Azure.Messaging.EventHubs.Producer.CreateBatchOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;Azure.Messaging.EventHubs.Producer.EventDataBatch&gt;" Usage="eventHubProducerClient.CreateBatchAsync (options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.EventHubs</AssemblyName>
         <AssemblyVersion>5.0.1.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ValueTask&lt;Azure.Messaging.EventHubs.Producer.EventDataBatch&gt;</ReturnType>
@@ -320,6 +334,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.EventHubs</AssemblyName>
         <AssemblyVersion>5.0.1.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ValueTask</ReturnType>
@@ -344,6 +359,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.EventHubs</AssemblyName>
         <AssemblyVersion>5.0.1.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -376,6 +392,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.EventHubs</AssemblyName>
         <AssemblyVersion>5.0.1.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -399,6 +416,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.EventHubs</AssemblyName>
         <AssemblyVersion>5.0.1.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -416,11 +434,13 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Messaging.EventHubs.EventHubProperties&gt; GetEventHubPropertiesAsync (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Messaging.EventHubs.EventHubProperties&gt; GetEventHubPropertiesAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Messaging.EventHubs.Producer.EventHubProducerClient.GetEventHubPropertiesAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEventHubPropertiesAsync (Optional cancellationToken As CancellationToken = null) As Task(Of EventHubProperties)" />
       <MemberSignature Language="F#" Value="abstract member GetEventHubPropertiesAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Messaging.EventHubs.EventHubProperties&gt;&#xA;override this.GetEventHubPropertiesAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Messaging.EventHubs.EventHubProperties&gt;" Usage="eventHubProducerClient.GetEventHubPropertiesAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.EventHubs</AssemblyName>
         <AssemblyVersion>5.0.1.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Messaging.EventHubs.EventHubProperties&gt;</ReturnType>
@@ -448,6 +468,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.EventHubs</AssemblyName>
         <AssemblyVersion>5.0.1.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -470,11 +491,13 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;string[]&gt; GetPartitionIdsAsync (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;string[]&gt; GetPartitionIdsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Messaging.EventHubs.Producer.EventHubProducerClient.GetPartitionIdsAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPartitionIdsAsync (Optional cancellationToken As CancellationToken = null) As Task(Of String())" />
       <MemberSignature Language="F#" Value="abstract member GetPartitionIdsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string[]&gt;&#xA;override this.GetPartitionIdsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string[]&gt;" Usage="eventHubProducerClient.GetPartitionIdsAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.EventHubs</AssemblyName>
         <AssemblyVersion>5.0.1.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String[]&gt;</ReturnType>
@@ -499,11 +522,13 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Messaging.EventHubs.PartitionProperties&gt; GetPartitionPropertiesAsync (string partitionId, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Messaging.EventHubs.PartitionProperties&gt; GetPartitionPropertiesAsync(string partitionId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Messaging.EventHubs.Producer.EventHubProducerClient.GetPartitionPropertiesAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPartitionPropertiesAsync (partitionId As String, Optional cancellationToken As CancellationToken = null) As Task(Of PartitionProperties)" />
       <MemberSignature Language="F#" Value="abstract member GetPartitionPropertiesAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Messaging.EventHubs.PartitionProperties&gt;&#xA;override this.GetPartitionPropertiesAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Messaging.EventHubs.PartitionProperties&gt;" Usage="eventHubProducerClient.GetPartitionPropertiesAsync (partitionId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.EventHubs</AssemblyName>
         <AssemblyVersion>5.0.1.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Messaging.EventHubs.PartitionProperties&gt;</ReturnType>
@@ -533,6 +558,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.EventHubs</AssemblyName>
         <AssemblyVersion>5.0.1.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -551,11 +577,13 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task SendAsync (Azure.Messaging.EventHubs.Producer.EventDataBatch eventBatch, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task SendAsync(class Azure.Messaging.EventHubs.Producer.EventDataBatch eventBatch, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Messaging.EventHubs.Producer.EventHubProducerClient.SendAsync(Azure.Messaging.EventHubs.Producer.EventDataBatch,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SendAsync (eventBatch As EventDataBatch, Optional cancellationToken As CancellationToken = null) As Task" />
       <MemberSignature Language="F#" Value="abstract member SendAsync : Azure.Messaging.EventHubs.Producer.EventDataBatch * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.SendAsync : Azure.Messaging.EventHubs.Producer.EventDataBatch * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="eventHubProducerClient.SendAsync (eventBatch, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.EventHubs</AssemblyName>
         <AssemblyVersion>5.0.1.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -589,6 +617,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.EventHubs</AssemblyName>
         <AssemblyVersion>5.0.1.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

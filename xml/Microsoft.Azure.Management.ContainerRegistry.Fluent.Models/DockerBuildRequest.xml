@@ -10,6 +10,8 @@
     <AssemblyVersion>1.0.0.62</AssemblyVersion>
     <AssemblyVersion>1.0.0.63</AssemblyVersion>
     <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.ContainerRegistry.Fluent.Models.RunRequestInner</BaseTypeName>
@@ -34,6 +36,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -44,7 +48,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public DockerBuildRequest (string dockerFilePath, Microsoft.Azure.Management.ContainerRegistry.Fluent.Models.PlatformProperties platform, Nullable&lt;bool&gt; isArchiveEnabled = default, System.Collections.Generic.IList&lt;string&gt; imageNames = default, Nullable&lt;bool&gt; isPushEnabled = default, Nullable&lt;bool&gt; noCache = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.ContainerRegistry.Fluent.Models.Argument&gt; arguments = default, Nullable&lt;int&gt; timeout = default, Microsoft.Azure.Management.ContainerRegistry.Fluent.Models.AgentProperties agentConfiguration = default, string sourceLocation = default);" />
+      <MemberSignature Language="C#" Value="public DockerBuildRequest (string dockerFilePath, Microsoft.Azure.Management.ContainerRegistry.Fluent.Models.PlatformProperties platform, bool? isArchiveEnabled = default, System.Collections.Generic.IList&lt;string&gt; imageNames = default, bool? isPushEnabled = default, bool? noCache = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.ContainerRegistry.Fluent.Models.Argument&gt; arguments = default, int? timeout = default, Microsoft.Azure.Management.ContainerRegistry.Fluent.Models.AgentProperties agentConfiguration = default, string sourceLocation = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string dockerFilePath, class Microsoft.Azure.Management.ContainerRegistry.Fluent.Models.PlatformProperties platform, valuetype System.Nullable`1&lt;bool&gt; isArchiveEnabled, class System.Collections.Generic.IList`1&lt;string&gt; imageNames, valuetype System.Nullable`1&lt;bool&gt; isPushEnabled, valuetype System.Nullable`1&lt;bool&gt; noCache, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.ContainerRegistry.Fluent.Models.Argument&gt; arguments, valuetype System.Nullable`1&lt;int32&gt; timeout, class Microsoft.Azure.Management.ContainerRegistry.Fluent.Models.AgentProperties agentConfiguration, string sourceLocation) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ContainerRegistry.Fluent.Models.DockerBuildRequest.#ctor(System.String,Microsoft.Azure.Management.ContainerRegistry.Fluent.Models.PlatformProperties,System.Nullable{System.Boolean},System.Collections.Generic.IList{System.String},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Collections.Generic.IList{Microsoft.Azure.Management.ContainerRegistry.Fluent.Models.Argument},System.Nullable{System.Int32},Microsoft.Azure.Management.ContainerRegistry.Fluent.Models.AgentProperties,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dockerFilePath As String, platform As PlatformProperties, Optional isArchiveEnabled As Nullable(Of Boolean) = null, Optional imageNames As IList(Of String) = null, Optional isPushEnabled As Nullable(Of Boolean) = null, Optional noCache As Nullable(Of Boolean) = null, Optional arguments As IList(Of Argument) = null, Optional timeout As Nullable(Of Integer) = null, Optional agentConfiguration As AgentProperties = null, Optional sourceLocation As String = null)" />
@@ -56,6 +60,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="dockerFilePath" Type="System.String" />
@@ -111,6 +117,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -141,6 +149,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -172,6 +182,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -202,6 +214,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -221,7 +235,7 @@
       </Docs>
     </Member>
     <Member MemberName="IsPushEnabled">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsPushEnabled { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? IsPushEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsPushEnabled" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ContainerRegistry.Fluent.Models.DockerBuildRequest.IsPushEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property IsPushEnabled As Nullable(Of Boolean)" />
@@ -233,6 +247,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -252,7 +268,7 @@
       </Docs>
     </Member>
     <Member MemberName="NoCache">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; NoCache { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? NoCache { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; NoCache" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ContainerRegistry.Fluent.Models.DockerBuildRequest.NoCache" />
       <MemberSignature Language="VB.NET" Value="Public Property NoCache As Nullable(Of Boolean)" />
@@ -264,6 +280,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -295,6 +313,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -326,6 +346,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -347,7 +369,7 @@
       </Docs>
     </Member>
     <Member MemberName="Timeout">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; Timeout { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? Timeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Timeout" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ContainerRegistry.Fluent.Models.DockerBuildRequest.Timeout" />
       <MemberSignature Language="VB.NET" Value="Public Property Timeout As Nullable(Of Integer)" />
@@ -359,6 +381,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -389,6 +413,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

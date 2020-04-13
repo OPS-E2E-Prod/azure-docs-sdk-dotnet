@@ -12,6 +12,9 @@
     <AssemblyVersion>1.22.0.0</AssemblyVersion>
     <AssemblyVersion>1.23.0.0</AssemblyVersion>
     <AssemblyVersion>1.23.1.0</AssemblyVersion>
+    <AssemblyVersion>1.23.2.0</AssemblyVersion>
+    <AssemblyVersion>1.24.0.0</AssemblyVersion>
+    <AssemblyVersion>1.25.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -22,7 +25,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Settings for MQTT transport
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,6 +35,7 @@
       <MemberSignature Language="C#" Value="public MqttTransportSettings (Microsoft.Azure.Devices.Client.TransportType transportType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Azure.Devices.Client.TransportType transportType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Client.Transport.Mqtt.MqttTransportSettings.#ctor(Microsoft.Azure.Devices.Client.TransportType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (transportType As TransportType)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Devices.Client.Transport.Mqtt.MqttTransportSettings : Microsoft.Azure.Devices.Client.TransportType -&gt; Microsoft.Azure.Devices.Client.Transport.Mqtt.MqttTransportSettings" Usage="new Microsoft.Azure.Devices.Client.Transport.Mqtt.MqttTransportSettings transportType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -40,27 +46,31 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="transportType" Type="Microsoft.Azure.Devices.Client.TransportType" />
       </Parameters>
       <Docs>
-        <param name="transportType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="transportType">The transport type, of MQTT websocket only, or MQTT TCP only</param>
+        <summary>
+            Creates an instance based on the specified type options
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CertificateRevocationCheck">
-      <MemberSignature Language="C#" Value="public bool CertificateRevocationCheck;" />
-      <MemberSignature Language="ILAsm" Value=".field public bool CertificateRevocationCheck" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Devices.Client.Transport.Mqtt.MqttTransportSettings.CertificateRevocationCheck" />
-      <MemberSignature Language="VB.NET" Value="Public CertificateRevocationCheck As Boolean " />
-      <MemberSignature Language="F#" Value="val mutable CertificateRevocationCheck : bool" Usage="Microsoft.Azure.Devices.Client.Transport.Mqtt.MqttTransportSettings.CertificateRevocationCheck" />
-      <MemberType>Field</MemberType>
+      <MemberSignature Language="C#" Value="public bool CertificateRevocationCheck { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CertificateRevocationCheck" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Devices.Client.Transport.Mqtt.MqttTransportSettings.CertificateRevocationCheck" />
+      <MemberSignature Language="VB.NET" Value="Public Property CertificateRevocationCheck As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CertificateRevocationCheck : bool with get, set" Usage="Microsoft.Azure.Devices.Client.Transport.Mqtt.MqttTransportSettings.CertificateRevocationCheck" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Client</AssemblyName>
-        <AssemblyVersion>1.23.0.0</AssemblyVersion>
-        <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -69,6 +79,7 @@
         <summary>
             To enable certificate revocation check. Default to be false.
             </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,6 +98,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -112,12 +126,17 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509Certificate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The client certificate
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -137,6 +156,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
@@ -162,6 +184,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
@@ -187,6 +212,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -212,6 +240,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
@@ -237,6 +268,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -265,14 +299,19 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Devices.Client.TransportType</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            The conftransport type
+            </summary>
+        <returns />
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -291,12 +330,17 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Whether the transport has a will message
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -316,6 +360,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -341,6 +388,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -366,6 +416,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -391,12 +444,17 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.IWebProxy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            A proxy to use - optional
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -416,6 +474,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>DotNetty.Codecs.Mqtt.Packets.QualityOfService</ReturnType>
@@ -441,6 +502,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -466,6 +530,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>DotNetty.Codecs.Mqtt.Packets.QualityOfService</ReturnType>
@@ -491,12 +558,17 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Security.RemoteCertificateValidationCallback</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            A callback for remote certificate validation
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -516,6 +588,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -541,12 +616,17 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Devices.Client.Transport.Mqtt.IWillMessage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The configured will message
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

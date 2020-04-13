@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.EventHubs.RetryPolicy</BaseTypeName>
@@ -31,6 +32,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="minimumBackoff" Type="System.TimeSpan" />
@@ -57,6 +59,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.EventHubs.RetryPolicy</ReturnType>
@@ -69,7 +72,7 @@
       </Docs>
     </Member>
     <Member MemberName="OnGetNextRetryInterval">
-      <MemberSignature Language="C#" Value="protected override Nullable&lt;TimeSpan&gt; OnGetNextRetryInterval (Exception lastException, TimeSpan remainingTime, int baseWaitTimeSecs, int retryCount);" />
+      <MemberSignature Language="C#" Value="protected override TimeSpan? OnGetNextRetryInterval (Exception lastException, TimeSpan remainingTime, int baseWaitTimeSecs, int retryCount);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; OnGetNextRetryInterval(class System.Exception lastException, valuetype System.TimeSpan remainingTime, int32 baseWaitTimeSecs, int32 retryCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.RetryExponential.OnGetNextRetryInterval(System.Exception,System.TimeSpan,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnGetNextRetryInterval (lastException As Exception, remainingTime As TimeSpan, baseWaitTimeSecs As Integer, retryCount As Integer) As Nullable(Of TimeSpan)" />
@@ -78,6 +81,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.TimeSpan&gt;</ReturnType>
@@ -89,14 +93,10 @@
         <Parameter Name="retryCount" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="lastException">
-        </param>
-        <param name="remainingTime">
-        </param>
-        <param name="baseWaitTimeSecs">
-        </param>
-        <param name="retryCount">
-        </param>
+        <param name="lastException" />
+        <param name="remainingTime" />
+        <param name="baseWaitTimeSecs" />
+        <param name="retryCount" />
         <summary />
         <returns />
         <remarks>To be added.</remarks>

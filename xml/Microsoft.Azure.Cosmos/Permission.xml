@@ -10,6 +10,8 @@
     <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>3.5.1.0</AssemblyVersion>
     <AssemblyVersion>3.6.0.0</AssemblyVersion>
+    <AssemblyVersion>3.7.0.0</AssemblyVersion>
+    <AssemblyVersion>3.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -34,6 +36,8 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>3.5.1.0</AssemblyVersion>
         <AssemblyVersion>3.6.0.0</AssemblyVersion>
+        <AssemblyVersion>3.7.0.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -45,6 +49,7 @@
       <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.PermissionResponse&gt; DeleteAsync (Microsoft.Azure.Cosmos.RequestOptions requestOptions = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Cosmos.PermissionResponse&gt; DeleteAsync(class Microsoft.Azure.Cosmos.RequestOptions requestOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Permission.DeleteAsync(Microsoft.Azure.Cosmos.RequestOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function DeleteAsync (Optional requestOptions As RequestOptions = null, Optional cancellationToken As CancellationToken = null) As Task(Of PermissionResponse)" />
       <MemberSignature Language="F#" Value="abstract member DeleteAsync : Microsoft.Azure.Cosmos.RequestOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.PermissionResponse&gt;" Usage="permission.DeleteAsync (requestOptions, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -53,6 +58,8 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>3.5.1.0</AssemblyVersion>
         <AssemblyVersion>3.6.0.0</AssemblyVersion>
+        <AssemblyVersion>3.7.0.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.PermissionResponse&gt;</ReturnType>
@@ -93,6 +100,8 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>3.5.1.0</AssemblyVersion>
         <AssemblyVersion>3.6.0.0</AssemblyVersion>
+        <AssemblyVersion>3.7.0.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -106,9 +115,10 @@
       </Docs>
     </Member>
     <Member MemberName="ReadAsync">
-      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.PermissionResponse&gt; ReadAsync (Nullable&lt;int&gt; tokenExpiryInSeconds = default, Microsoft.Azure.Cosmos.RequestOptions requestOptions = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.PermissionResponse&gt; ReadAsync (int? tokenExpiryInSeconds = default, Microsoft.Azure.Cosmos.RequestOptions requestOptions = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Cosmos.PermissionResponse&gt; ReadAsync(valuetype System.Nullable`1&lt;int32&gt; tokenExpiryInSeconds, class Microsoft.Azure.Cosmos.RequestOptions requestOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Permission.ReadAsync(System.Nullable{System.Int32},Microsoft.Azure.Cosmos.RequestOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function ReadAsync (Optional tokenExpiryInSeconds As Nullable(Of Integer) = null, Optional requestOptions As RequestOptions = null, Optional cancellationToken As CancellationToken = null) As Task(Of PermissionResponse)" />
       <MemberSignature Language="F#" Value="abstract member ReadAsync : Nullable&lt;int&gt; * Microsoft.Azure.Cosmos.RequestOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.PermissionResponse&gt;" Usage="permission.ReadAsync (tokenExpiryInSeconds, requestOptions, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -117,6 +127,8 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>3.5.1.0</AssemblyVersion>
         <AssemblyVersion>3.6.0.0</AssemblyVersion>
+        <AssemblyVersion>3.7.0.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.PermissionResponse&gt;</ReturnType>
@@ -149,9 +161,10 @@
       </Docs>
     </Member>
     <Member MemberName="ReplaceAsync">
-      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.PermissionResponse&gt; ReplaceAsync (Microsoft.Azure.Cosmos.PermissionProperties permissionProperties, Nullable&lt;int&gt; tokenExpiryInSeconds = default, Microsoft.Azure.Cosmos.RequestOptions requestOptions = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.PermissionResponse&gt; ReplaceAsync (Microsoft.Azure.Cosmos.PermissionProperties permissionProperties, int? tokenExpiryInSeconds = default, Microsoft.Azure.Cosmos.RequestOptions requestOptions = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Cosmos.PermissionResponse&gt; ReplaceAsync(class Microsoft.Azure.Cosmos.PermissionProperties permissionProperties, valuetype System.Nullable`1&lt;int32&gt; tokenExpiryInSeconds, class Microsoft.Azure.Cosmos.RequestOptions requestOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Cosmos.Permission.ReplaceAsync(Microsoft.Azure.Cosmos.PermissionProperties,System.Nullable{System.Int32},Microsoft.Azure.Cosmos.RequestOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function ReplaceAsync (permissionProperties As PermissionProperties, Optional tokenExpiryInSeconds As Nullable(Of Integer) = null, Optional requestOptions As RequestOptions = null, Optional cancellationToken As CancellationToken = null) As Task(Of PermissionResponse)" />
       <MemberSignature Language="F#" Value="abstract member ReplaceAsync : Microsoft.Azure.Cosmos.PermissionProperties * Nullable&lt;int&gt; * Microsoft.Azure.Cosmos.RequestOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.PermissionResponse&gt;" Usage="permission.ReplaceAsync (permissionProperties, tokenExpiryInSeconds, requestOptions, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -160,6 +173,8 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>3.5.1.0</AssemblyVersion>
         <AssemblyVersion>3.6.0.0</AssemblyVersion>
+        <AssemblyVersion>3.7.0.0</AssemblyVersion>
+        <AssemblyVersion>3.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Cosmos.PermissionResponse&gt;</ReturnType>

@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
     <AssemblyVersion>14.0.0.0</AssemblyVersion>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -29,6 +30,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
         <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Storage.Models.StorageAccount</ReturnType>
@@ -70,11 +72,13 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Storage.Models.StorageAccount&gt; BeginCreateAsync (this Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, string accountName, Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Storage.Models.StorageAccount&gt; BeginCreateAsync(class Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, string accountName, class Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.BeginCreateAsync(Microsoft.Azure.Management.Storage.IStorageAccountsOperations,System.String,System.String,Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function BeginCreateAsync (operations As IStorageAccountsOperations, resourceGroupName As String, accountName As String, parameters As StorageAccountCreateParameters, Optional cancellationToken As CancellationToken = null) As Task(Of StorageAccount)" />
       <MemberSignature Language="F#" Value="static member BeginCreateAsync : Microsoft.Azure.Management.Storage.IStorageAccountsOperations * string * string * Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Storage.Models.StorageAccount&gt;" Usage="Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.BeginCreateAsync (operations, resourceGroupName, accountName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
         <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -131,6 +135,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
         <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -166,11 +171,13 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginFailoverAsync (this Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, string accountName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task BeginFailoverAsync(class Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, string accountName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.BeginFailoverAsync(Microsoft.Azure.Management.Storage.IStorageAccountsOperations,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function BeginFailoverAsync (operations As IStorageAccountsOperations, resourceGroupName As String, accountName As String, Optional cancellationToken As CancellationToken = null) As Task" />
       <MemberSignature Language="F#" Value="static member BeginFailoverAsync : Microsoft.Azure.Management.Storage.IStorageAccountsOperations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.BeginFailoverAsync (operations, resourceGroupName, accountName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
         <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -222,6 +229,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
         <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Storage.Models.BlobRestoreStatus</ReturnType>
@@ -263,11 +271,13 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Storage.Models.BlobRestoreStatus&gt; BeginRestoreBlobRangesAsync (this Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, string accountName, DateTime timeToRestore, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Storage.Models.BlobRestoreRange&gt; blobRanges, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Storage.Models.BlobRestoreStatus&gt; BeginRestoreBlobRangesAsync(class Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, string accountName, valuetype System.DateTime timeToRestore, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Storage.Models.BlobRestoreRange&gt; blobRanges, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.BeginRestoreBlobRangesAsync(Microsoft.Azure.Management.Storage.IStorageAccountsOperations,System.String,System.String,System.DateTime,System.Collections.Generic.IList{Microsoft.Azure.Management.Storage.Models.BlobRestoreRange},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function BeginRestoreBlobRangesAsync (operations As IStorageAccountsOperations, resourceGroupName As String, accountName As String, timeToRestore As DateTime, blobRanges As IList(Of BlobRestoreRange), Optional cancellationToken As CancellationToken = null) As Task(Of BlobRestoreStatus)" />
       <MemberSignature Language="F#" Value="static member BeginRestoreBlobRangesAsync : Microsoft.Azure.Management.Storage.IStorageAccountsOperations * string * string * DateTime * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Storage.Models.BlobRestoreRange&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Storage.Models.BlobRestoreStatus&gt;" Usage="Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.BeginRestoreBlobRangesAsync (operations, resourceGroupName, accountName, timeToRestore, blobRanges, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
         <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -324,6 +334,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
         <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Storage.Models.CheckNameAvailabilityResult</ReturnType>
@@ -350,11 +361,13 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Storage.Models.CheckNameAvailabilityResult&gt; CheckNameAvailabilityAsync (this Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string name, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Storage.Models.CheckNameAvailabilityResult&gt; CheckNameAvailabilityAsync(class Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.CheckNameAvailabilityAsync(Microsoft.Azure.Management.Storage.IStorageAccountsOperations,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CheckNameAvailabilityAsync (operations As IStorageAccountsOperations, name As String, Optional cancellationToken As CancellationToken = null) As Task(Of CheckNameAvailabilityResult)" />
       <MemberSignature Language="F#" Value="static member CheckNameAvailabilityAsync : Microsoft.Azure.Management.Storage.IStorageAccountsOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Storage.Models.CheckNameAvailabilityResult&gt;" Usage="Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.CheckNameAvailabilityAsync (operations, name, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
         <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -396,6 +409,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
         <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Storage.Models.StorageAccount</ReturnType>
@@ -437,11 +451,13 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Storage.Models.StorageAccount&gt; CreateAsync (this Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, string accountName, Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Storage.Models.StorageAccount&gt; CreateAsync(class Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, string accountName, class Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.CreateAsync(Microsoft.Azure.Management.Storage.IStorageAccountsOperations,System.String,System.String,Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CreateAsync (operations As IStorageAccountsOperations, resourceGroupName As String, accountName As String, parameters As StorageAccountCreateParameters, Optional cancellationToken As CancellationToken = null) As Task(Of StorageAccount)" />
       <MemberSignature Language="F#" Value="static member CreateAsync : Microsoft.Azure.Management.Storage.IStorageAccountsOperations * string * string * Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Storage.Models.StorageAccount&gt;" Usage="Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.CreateAsync (operations, resourceGroupName, accountName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
         <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -498,6 +514,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
         <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -530,11 +547,13 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task DeleteAsync (this Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, string accountName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task DeleteAsync(class Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, string accountName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.DeleteAsync(Microsoft.Azure.Management.Storage.IStorageAccountsOperations,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DeleteAsync (operations As IStorageAccountsOperations, resourceGroupName As String, accountName As String, Optional cancellationToken As CancellationToken = null) As Task" />
       <MemberSignature Language="F#" Value="static member DeleteAsync : Microsoft.Azure.Management.Storage.IStorageAccountsOperations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.DeleteAsync (operations, resourceGroupName, accountName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
         <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -583,6 +602,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
         <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -618,11 +638,13 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task FailoverAsync (this Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, string accountName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task FailoverAsync(class Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, string accountName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.FailoverAsync(Microsoft.Azure.Management.Storage.IStorageAccountsOperations,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FailoverAsync (operations As IStorageAccountsOperations, resourceGroupName As String, accountName As String, Optional cancellationToken As CancellationToken = null) As Task" />
       <MemberSignature Language="F#" Value="static member FailoverAsync : Microsoft.Azure.Management.Storage.IStorageAccountsOperations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.FailoverAsync (operations, resourceGroupName, accountName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
         <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -665,7 +687,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
-      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Management.Storage.Models.StorageAccount GetProperties (this Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, string accountName, Nullable&lt;Microsoft.Azure.Management.Storage.Models.StorageAccountExpand&gt; expand = default);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Management.Storage.Models.StorageAccount GetProperties (this Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, string accountName, Microsoft.Azure.Management.Storage.Models.StorageAccountExpand? expand = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.Management.Storage.Models.StorageAccount GetProperties(class Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, string accountName, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Storage.Models.StorageAccountExpand&gt; expand) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.GetProperties(Microsoft.Azure.Management.Storage.IStorageAccountsOperations,System.String,System.String,System.Nullable{Microsoft.Azure.Management.Storage.Models.StorageAccountExpand})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetProperties (operations As IStorageAccountsOperations, resourceGroupName As String, accountName As String, Optional expand As Nullable(Of StorageAccountExpand) = null) As StorageAccount" />
@@ -674,6 +696,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
         <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Storage.Models.StorageAccount</ReturnType>
@@ -713,14 +736,16 @@
       </Docs>
     </Member>
     <Member MemberName="GetPropertiesAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Storage.Models.StorageAccount&gt; GetPropertiesAsync (this Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, string accountName, Nullable&lt;Microsoft.Azure.Management.Storage.Models.StorageAccountExpand&gt; expand = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Storage.Models.StorageAccount&gt; GetPropertiesAsync (this Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, string accountName, Microsoft.Azure.Management.Storage.Models.StorageAccountExpand? expand = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Storage.Models.StorageAccount&gt; GetPropertiesAsync(class Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, string accountName, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Storage.Models.StorageAccountExpand&gt; expand, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.GetPropertiesAsync(Microsoft.Azure.Management.Storage.IStorageAccountsOperations,System.String,System.String,System.Nullable{Microsoft.Azure.Management.Storage.Models.StorageAccountExpand},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetPropertiesAsync (operations As IStorageAccountsOperations, resourceGroupName As String, accountName As String, Optional expand As Nullable(Of StorageAccountExpand) = null, Optional cancellationToken As CancellationToken = null) As Task(Of StorageAccount)" />
       <MemberSignature Language="F#" Value="static member GetPropertiesAsync : Microsoft.Azure.Management.Storage.IStorageAccountsOperations * string * string * Nullable&lt;Microsoft.Azure.Management.Storage.Models.StorageAccountExpand&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Storage.Models.StorageAccount&gt;" Usage="Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.GetPropertiesAsync (operations, resourceGroupName, accountName, expand, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
         <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -778,6 +803,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
         <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Storage.Models.StorageAccount&gt;</ReturnType>
@@ -807,6 +833,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
         <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Storage.Models.ListAccountSasResponse</ReturnType>
@@ -844,11 +871,13 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Storage.Models.ListAccountSasResponse&gt; ListAccountSASAsync (this Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, string accountName, Microsoft.Azure.Management.Storage.Models.AccountSasParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Storage.Models.ListAccountSasResponse&gt; ListAccountSASAsync(class Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, string accountName, class Microsoft.Azure.Management.Storage.Models.AccountSasParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.ListAccountSASAsync(Microsoft.Azure.Management.Storage.IStorageAccountsOperations,System.String,System.String,Microsoft.Azure.Management.Storage.Models.AccountSasParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListAccountSASAsync (operations As IStorageAccountsOperations, resourceGroupName As String, accountName As String, parameters As AccountSasParameters, Optional cancellationToken As CancellationToken = null) As Task(Of ListAccountSasResponse)" />
       <MemberSignature Language="F#" Value="static member ListAccountSASAsync : Microsoft.Azure.Management.Storage.IStorageAccountsOperations * string * string * Microsoft.Azure.Management.Storage.Models.AccountSasParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Storage.Models.ListAccountSasResponse&gt;" Usage="Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.ListAccountSASAsync (operations, resourceGroupName, accountName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
         <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -895,11 +924,13 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Storage.Models.StorageAccount&gt;&gt; ListAsync (this Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Storage.Models.StorageAccount&gt;&gt; ListAsync(class Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.ListAsync(Microsoft.Azure.Management.Storage.IStorageAccountsOperations,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListAsync (operations As IStorageAccountsOperations, Optional cancellationToken As CancellationToken = null) As Task(Of IPage(Of StorageAccount))" />
       <MemberSignature Language="F#" Value="static member ListAsync : Microsoft.Azure.Management.Storage.IStorageAccountsOperations * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Storage.Models.StorageAccount&gt;&gt;" Usage="Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.ListAsync (operations, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
         <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -938,6 +969,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
         <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Management.Storage.Models.StorageAccount&gt;</ReturnType>
@@ -967,11 +999,13 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.Management.Storage.Models.StorageAccount&gt;&gt; ListByResourceGroupAsync (this Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Azure.Management.Storage.Models.StorageAccount&gt;&gt; ListByResourceGroupAsync(class Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.ListByResourceGroupAsync(Microsoft.Azure.Management.Storage.IStorageAccountsOperations,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListByResourceGroupAsync (operations As IStorageAccountsOperations, resourceGroupName As String, Optional cancellationToken As CancellationToken = null) As Task(Of IEnumerable(Of StorageAccount))" />
       <MemberSignature Language="F#" Value="static member ListByResourceGroupAsync : Microsoft.Azure.Management.Storage.IStorageAccountsOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.Azure.Management.Storage.Models.StorageAccount&gt;&gt;" Usage="Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.ListByResourceGroupAsync (operations, resourceGroupName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
         <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1007,7 +1041,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListKeys">
-      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Management.Storage.Models.StorageAccountListKeysResult ListKeys (this Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, string accountName, Nullable&lt;Microsoft.Azure.Management.Storage.Models.ListKeyExpand&gt; expand = default);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.Management.Storage.Models.StorageAccountListKeysResult ListKeys (this Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, string accountName, Microsoft.Azure.Management.Storage.Models.ListKeyExpand? expand = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.Management.Storage.Models.StorageAccountListKeysResult ListKeys(class Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, string accountName, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Storage.Models.ListKeyExpand&gt; expand) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.ListKeys(Microsoft.Azure.Management.Storage.IStorageAccountsOperations,System.String,System.String,System.Nullable{Microsoft.Azure.Management.Storage.Models.ListKeyExpand})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListKeys (operations As IStorageAccountsOperations, resourceGroupName As String, accountName As String, Optional expand As Nullable(Of ListKeyExpand) = null) As StorageAccountListKeysResult" />
@@ -1016,6 +1050,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
         <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Storage.Models.StorageAccountListKeysResult</ReturnType>
@@ -1052,14 +1087,16 @@
       </Docs>
     </Member>
     <Member MemberName="ListKeysAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Storage.Models.StorageAccountListKeysResult&gt; ListKeysAsync (this Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, string accountName, Nullable&lt;Microsoft.Azure.Management.Storage.Models.ListKeyExpand&gt; expand = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Storage.Models.StorageAccountListKeysResult&gt; ListKeysAsync (this Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, string accountName, Microsoft.Azure.Management.Storage.Models.ListKeyExpand? expand = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Storage.Models.StorageAccountListKeysResult&gt; ListKeysAsync(class Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, string accountName, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Storage.Models.ListKeyExpand&gt; expand, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.ListKeysAsync(Microsoft.Azure.Management.Storage.IStorageAccountsOperations,System.String,System.String,System.Nullable{Microsoft.Azure.Management.Storage.Models.ListKeyExpand},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListKeysAsync (operations As IStorageAccountsOperations, resourceGroupName As String, accountName As String, Optional expand As Nullable(Of ListKeyExpand) = null, Optional cancellationToken As CancellationToken = null) As Task(Of StorageAccountListKeysResult)" />
       <MemberSignature Language="F#" Value="static member ListKeysAsync : Microsoft.Azure.Management.Storage.IStorageAccountsOperations * string * string * Nullable&lt;Microsoft.Azure.Management.Storage.Models.ListKeyExpand&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Storage.Models.StorageAccountListKeysResult&gt;" Usage="Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.ListKeysAsync (operations, resourceGroupName, accountName, expand, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
         <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1114,6 +1151,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
         <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Storage.Models.StorageAccount&gt;</ReturnType>
@@ -1141,11 +1179,13 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Storage.Models.StorageAccount&gt;&gt; ListNextAsync (this Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Storage.Models.StorageAccount&gt;&gt; ListNextAsync(class Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string nextPageLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.ListNextAsync(Microsoft.Azure.Management.Storage.IStorageAccountsOperations,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListNextAsync (operations As IStorageAccountsOperations, nextPageLink As String, Optional cancellationToken As CancellationToken = null) As Task(Of IPage(Of StorageAccount))" />
       <MemberSignature Language="F#" Value="static member ListNextAsync : Microsoft.Azure.Management.Storage.IStorageAccountsOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Storage.Models.StorageAccount&gt;&gt;" Usage="Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.ListNextAsync (operations, nextPageLink, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
         <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1188,6 +1228,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
         <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Storage.Models.ListServiceSasResponse</ReturnType>
@@ -1225,11 +1266,13 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Storage.Models.ListServiceSasResponse&gt; ListServiceSASAsync (this Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, string accountName, Microsoft.Azure.Management.Storage.Models.ServiceSasParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Storage.Models.ListServiceSasResponse&gt; ListServiceSASAsync(class Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, string accountName, class Microsoft.Azure.Management.Storage.Models.ServiceSasParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.ListServiceSASAsync(Microsoft.Azure.Management.Storage.IStorageAccountsOperations,System.String,System.String,Microsoft.Azure.Management.Storage.Models.ServiceSasParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListServiceSASAsync (operations As IStorageAccountsOperations, resourceGroupName As String, accountName As String, parameters As ServiceSasParameters, Optional cancellationToken As CancellationToken = null) As Task(Of ListServiceSasResponse)" />
       <MemberSignature Language="F#" Value="static member ListServiceSASAsync : Microsoft.Azure.Management.Storage.IStorageAccountsOperations * string * string * Microsoft.Azure.Management.Storage.Models.ServiceSasParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Storage.Models.ListServiceSasResponse&gt;" Usage="Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.ListServiceSASAsync (operations, resourceGroupName, accountName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
         <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1282,6 +1325,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
         <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Storage.Models.StorageAccountListKeysResult</ReturnType>
@@ -1321,11 +1365,13 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Storage.Models.StorageAccountListKeysResult&gt; RegenerateKeyAsync (this Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, string accountName, string keyName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Storage.Models.StorageAccountListKeysResult&gt; RegenerateKeyAsync(class Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, string accountName, string keyName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.RegenerateKeyAsync(Microsoft.Azure.Management.Storage.IStorageAccountsOperations,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function RegenerateKeyAsync (operations As IStorageAccountsOperations, resourceGroupName As String, accountName As String, keyName As String, Optional cancellationToken As CancellationToken = null) As Task(Of StorageAccountListKeysResult)" />
       <MemberSignature Language="F#" Value="static member RegenerateKeyAsync : Microsoft.Azure.Management.Storage.IStorageAccountsOperations * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Storage.Models.StorageAccountListKeysResult&gt;" Usage="Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.RegenerateKeyAsync (operations, resourceGroupName, accountName, keyName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
         <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1380,6 +1426,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
         <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Storage.Models.BlobRestoreStatus</ReturnType>
@@ -1421,11 +1468,13 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Storage.Models.BlobRestoreStatus&gt; RestoreBlobRangesAsync (this Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, string accountName, DateTime timeToRestore, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Storage.Models.BlobRestoreRange&gt; blobRanges, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Storage.Models.BlobRestoreStatus&gt; RestoreBlobRangesAsync(class Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, string accountName, valuetype System.DateTime timeToRestore, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Storage.Models.BlobRestoreRange&gt; blobRanges, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.RestoreBlobRangesAsync(Microsoft.Azure.Management.Storage.IStorageAccountsOperations,System.String,System.String,System.DateTime,System.Collections.Generic.IList{Microsoft.Azure.Management.Storage.Models.BlobRestoreRange},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function RestoreBlobRangesAsync (operations As IStorageAccountsOperations, resourceGroupName As String, accountName As String, timeToRestore As DateTime, blobRanges As IList(Of BlobRestoreRange), Optional cancellationToken As CancellationToken = null) As Task(Of BlobRestoreStatus)" />
       <MemberSignature Language="F#" Value="static member RestoreBlobRangesAsync : Microsoft.Azure.Management.Storage.IStorageAccountsOperations * string * string * DateTime * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Storage.Models.BlobRestoreRange&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Storage.Models.BlobRestoreStatus&gt;" Usage="Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.RestoreBlobRangesAsync (operations, resourceGroupName, accountName, timeToRestore, blobRanges, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
         <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1482,6 +1531,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
         <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1514,11 +1564,13 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task RevokeUserDelegationKeysAsync (this Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, string accountName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task RevokeUserDelegationKeysAsync(class Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, string accountName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.RevokeUserDelegationKeysAsync(Microsoft.Azure.Management.Storage.IStorageAccountsOperations,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function RevokeUserDelegationKeysAsync (operations As IStorageAccountsOperations, resourceGroupName As String, accountName As String, Optional cancellationToken As CancellationToken = null) As Task" />
       <MemberSignature Language="F#" Value="static member RevokeUserDelegationKeysAsync : Microsoft.Azure.Management.Storage.IStorageAccountsOperations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.RevokeUserDelegationKeysAsync (operations, resourceGroupName, accountName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
         <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1567,6 +1619,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
         <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Storage.Models.StorageAccount</ReturnType>
@@ -1613,11 +1666,13 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Storage.Models.StorageAccount&gt; UpdateAsync (this Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, string accountName, Microsoft.Azure.Management.Storage.Models.StorageAccountUpdateParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Storage.Models.StorageAccount&gt; UpdateAsync(class Microsoft.Azure.Management.Storage.IStorageAccountsOperations operations, string resourceGroupName, string accountName, class Microsoft.Azure.Management.Storage.Models.StorageAccountUpdateParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.UpdateAsync(Microsoft.Azure.Management.Storage.IStorageAccountsOperations,System.String,System.String,Microsoft.Azure.Management.Storage.Models.StorageAccountUpdateParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function UpdateAsync (operations As IStorageAccountsOperations, resourceGroupName As String, accountName As String, parameters As StorageAccountUpdateParameters, Optional cancellationToken As CancellationToken = null) As Task(Of StorageAccount)" />
       <MemberSignature Language="F#" Value="static member UpdateAsync : Microsoft.Azure.Management.Storage.IStorageAccountsOperations * string * string * Microsoft.Azure.Management.Storage.Models.StorageAccountUpdateParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Storage.Models.StorageAccount&gt;" Usage="Microsoft.Azure.Management.Storage.StorageAccountsOperationsExtensions.UpdateAsync (operations, resourceGroupName, accountName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
         <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

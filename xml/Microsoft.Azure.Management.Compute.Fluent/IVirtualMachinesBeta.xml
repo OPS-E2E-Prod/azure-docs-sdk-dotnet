@@ -10,6 +10,8 @@
     <AssemblyVersion>1.0.0.62</AssemblyVersion>
     <AssemblyVersion>1.0.0.63</AssemblyVersion>
     <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -36,6 +38,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandResultInner</ReturnType>
@@ -61,6 +65,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandResultInner&gt; RunCommandAsync (string groupName, string name, Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandInput inputCommand, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandResultInner&gt; RunCommandAsync(string groupName, string name, class Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandInput inputCommand, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.IVirtualMachinesBeta.RunCommandAsync(System.String,System.String,Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandInput,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RunCommandAsync (groupName As String, name As String, inputCommand As RunCommandInput, Optional cancellationToken As CancellationToken = null) As Task(Of RunCommandResultInner)" />
       <MemberSignature Language="F#" Value="abstract member RunCommandAsync : string * string * Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandInput * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandResultInner&gt;" Usage="iVirtualMachinesBeta.RunCommandAsync (groupName, name, inputCommand, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -69,6 +74,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandResultInner&gt;</ReturnType>
@@ -80,10 +87,10 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="cancellationToken">To be added.</param>
         <param name="groupName">The resource group name.</param>
         <param name="name">The virtual machine name.</param>
         <param name="inputCommand">Command input.</param>
-        <param name="cancellationToken">To be added.</param>
         <summary>
             Run commands in a virtual machine asynchronously.
             </summary>
@@ -105,6 +112,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandResultInner</ReturnType>
@@ -132,6 +141,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandResultInner&gt; RunPowerShellScriptAsync (string groupName, string name, System.Collections.Generic.IList&lt;string&gt; scriptLines, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandInputParameter&gt; scriptParameters, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandResultInner&gt; RunPowerShellScriptAsync(string groupName, string name, class System.Collections.Generic.IList`1&lt;string&gt; scriptLines, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandInputParameter&gt; scriptParameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.IVirtualMachinesBeta.RunPowerShellScriptAsync(System.String,System.String,System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandInputParameter},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RunPowerShellScriptAsync (groupName As String, name As String, scriptLines As IList(Of String), scriptParameters As IList(Of RunCommandInputParameter), Optional cancellationToken As CancellationToken = null) As Task(Of RunCommandResultInner)" />
       <MemberSignature Language="F#" Value="abstract member RunPowerShellScriptAsync : string * string * System.Collections.Generic.IList&lt;string&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandInputParameter&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandResultInner&gt;" Usage="iVirtualMachinesBeta.RunPowerShellScriptAsync (groupName, name, scriptLines, scriptParameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -140,6 +150,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandResultInner&gt;</ReturnType>
@@ -152,11 +164,11 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="cancellationToken">To be added.</param>
         <param name="groupName">The resource group name.</param>
         <param name="name">The virtual machine name.</param>
         <param name="scriptLines">PowerShell script lines.</param>
         <param name="scriptParameters">Script parameters.</param>
-        <param name="cancellationToken">To be added.</param>
         <summary>
             Run shell script in a virtual machine asynchronously.
             </summary>
@@ -178,6 +190,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandResultInner</ReturnType>
@@ -205,6 +219,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandResultInner&gt; RunShellScriptAsync (string groupName, string name, System.Collections.Generic.IList&lt;string&gt; scriptLines, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandInputParameter&gt; scriptParameters, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandResultInner&gt; RunShellScriptAsync(string groupName, string name, class System.Collections.Generic.IList`1&lt;string&gt; scriptLines, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandInputParameter&gt; scriptParameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.IVirtualMachinesBeta.RunShellScriptAsync(System.String,System.String,System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandInputParameter},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RunShellScriptAsync (groupName As String, name As String, scriptLines As IList(Of String), scriptParameters As IList(Of RunCommandInputParameter), Optional cancellationToken As CancellationToken = null) As Task(Of RunCommandResultInner)" />
       <MemberSignature Language="F#" Value="abstract member RunShellScriptAsync : string * string * System.Collections.Generic.IList&lt;string&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandInputParameter&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandResultInner&gt;" Usage="iVirtualMachinesBeta.RunShellScriptAsync (groupName, name, scriptLines, scriptParameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -213,6 +228,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandResultInner&gt;</ReturnType>
@@ -225,11 +242,11 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="cancellationToken">To be added.</param>
         <param name="groupName">The resource group name.</param>
         <param name="name">The virtual machine name.</param>
         <param name="scriptLines">Shell script lines.</param>
         <param name="scriptParameters">Script parameters.</param>
-        <param name="cancellationToken">To be added.</param>
         <summary>
             Run shell script in a virtual machine asynchronously.
             </summary>

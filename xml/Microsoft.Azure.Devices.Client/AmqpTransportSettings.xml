@@ -12,6 +12,9 @@
     <AssemblyVersion>1.22.0.0</AssemblyVersion>
     <AssemblyVersion>1.23.0.0</AssemblyVersion>
     <AssemblyVersion>1.23.1.0</AssemblyVersion>
+    <AssemblyVersion>1.23.2.0</AssemblyVersion>
+    <AssemblyVersion>1.24.0.0</AssemblyVersion>
+    <AssemblyVersion>1.25.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -32,6 +35,7 @@
       <MemberSignature Language="C#" Value="public AmqpTransportSettings (Microsoft.Azure.Devices.Client.TransportType transportType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Azure.Devices.Client.TransportType transportType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Client.AmqpTransportSettings.#ctor(Microsoft.Azure.Devices.Client.TransportType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (transportType As TransportType)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Devices.Client.AmqpTransportSettings : Microsoft.Azure.Devices.Client.TransportType -&gt; Microsoft.Azure.Devices.Client.AmqpTransportSettings" Usage="new Microsoft.Azure.Devices.Client.AmqpTransportSettings transportType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -42,6 +46,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="transportType" Type="Microsoft.Azure.Devices.Client.TransportType" />
@@ -57,6 +64,7 @@
       <MemberSignature Language="C#" Value="public AmqpTransportSettings (Microsoft.Azure.Devices.Client.TransportType transportType, uint prefetchCount);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Azure.Devices.Client.TransportType transportType, unsigned int32 prefetchCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Client.AmqpTransportSettings.#ctor(Microsoft.Azure.Devices.Client.TransportType,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (transportType As TransportType, prefetchCount As UInteger)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Devices.Client.AmqpTransportSettings : Microsoft.Azure.Devices.Client.TransportType * uint32 -&gt; Microsoft.Azure.Devices.Client.AmqpTransportSettings" Usage="new Microsoft.Azure.Devices.Client.AmqpTransportSettings (transportType, prefetchCount)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -67,6 +75,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="transportType" Type="Microsoft.Azure.Devices.Client.TransportType" />
@@ -84,6 +95,7 @@
       <MemberSignature Language="C#" Value="public AmqpTransportSettings (Microsoft.Azure.Devices.Client.TransportType transportType, uint prefetchCount, Microsoft.Azure.Devices.Client.AmqpConnectionPoolSettings amqpConnectionPoolSettings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Azure.Devices.Client.TransportType transportType, unsigned int32 prefetchCount, class Microsoft.Azure.Devices.Client.AmqpConnectionPoolSettings amqpConnectionPoolSettings) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Client.AmqpTransportSettings.#ctor(Microsoft.Azure.Devices.Client.TransportType,System.UInt32,Microsoft.Azure.Devices.Client.AmqpConnectionPoolSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (transportType As TransportType, prefetchCount As UInteger, amqpConnectionPoolSettings As AmqpConnectionPoolSettings)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Devices.Client.AmqpTransportSettings : Microsoft.Azure.Devices.Client.TransportType * uint32 * Microsoft.Azure.Devices.Client.AmqpConnectionPoolSettings -&gt; Microsoft.Azure.Devices.Client.AmqpTransportSettings" Usage="new Microsoft.Azure.Devices.Client.AmqpTransportSettings (transportType, prefetchCount, amqpConnectionPoolSettings)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -94,6 +106,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="transportType" Type="Microsoft.Azure.Devices.Client.TransportType" />
@@ -124,6 +139,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Devices.Client.AmqpConnectionPoolSettings</ReturnType>
@@ -137,16 +155,15 @@
       </Docs>
     </Member>
     <Member MemberName="CertificateRevocationCheck">
-      <MemberSignature Language="C#" Value="public bool CertificateRevocationCheck;" />
-      <MemberSignature Language="ILAsm" Value=".field public bool CertificateRevocationCheck" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Devices.Client.AmqpTransportSettings.CertificateRevocationCheck" />
-      <MemberSignature Language="VB.NET" Value="Public CertificateRevocationCheck As Boolean " />
-      <MemberSignature Language="F#" Value="val mutable CertificateRevocationCheck : bool" Usage="Microsoft.Azure.Devices.Client.AmqpTransportSettings.CertificateRevocationCheck" />
-      <MemberType>Field</MemberType>
+      <MemberSignature Language="C#" Value="public bool CertificateRevocationCheck { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CertificateRevocationCheck" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Devices.Client.AmqpTransportSettings.CertificateRevocationCheck" />
+      <MemberSignature Language="VB.NET" Value="Public Property CertificateRevocationCheck As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CertificateRevocationCheck : bool with get, set" Usage="Microsoft.Azure.Devices.Client.AmqpTransportSettings.CertificateRevocationCheck" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Client</AssemblyName>
-        <AssemblyVersion>1.23.0.0</AssemblyVersion>
-        <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -155,6 +172,7 @@
         <summary>
             To enable certificate revocation check. Default to be false.
             </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -173,6 +191,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509Certificate2</ReturnType>
@@ -196,6 +217,9 @@
         <AssemblyName>Microsoft.Azure.Devices.Client</AssemblyName>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
@@ -218,6 +242,9 @@
         <AssemblyName>Microsoft.Azure.Devices.Client</AssemblyName>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
@@ -240,6 +267,9 @@
         <AssemblyName>Microsoft.Azure.Devices.Client</AssemblyName>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.UInt32</ReturnType>
@@ -270,6 +300,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
@@ -297,6 +330,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -331,6 +367,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Devices.Client.TransportType</ReturnType>
@@ -356,6 +395,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
@@ -383,6 +425,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
@@ -410,6 +455,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
@@ -437,6 +485,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.UInt32</ReturnType>
@@ -464,6 +515,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.IWebProxy</ReturnType>
@@ -491,6 +545,9 @@
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Security.RemoteCertificateValidationCallback</ReturnType>

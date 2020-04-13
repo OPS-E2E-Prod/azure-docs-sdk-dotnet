@@ -10,6 +10,8 @@
     <AssemblyVersion>1.0.0.62</AssemblyVersion>
     <AssemblyVersion>1.0.0.63</AssemblyVersion>
     <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.ResourceManager.Fluent.SubResource</BaseTypeName>
@@ -39,6 +41,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -49,15 +53,18 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public InboundNatPoolInner (Microsoft.Azure.Management.Network.Fluent.Models.TransportProtocol protocol, int frontendPortRangeStart, int frontendPortRangeEnd, int backendPort, string id = default, Microsoft.Azure.Management.ResourceManager.Fluent.SubResource frontendIPConfiguration = default, Nullable&lt;int&gt; idleTimeoutInMinutes = default, Nullable&lt;bool&gt; enableFloatingIP = default, Nullable&lt;bool&gt; enableTcpReset = default, Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState provisioningState = default, string name = default, string etag = default, string type = default);" />
+      <MemberSignature Language="C#" Value="public InboundNatPoolInner (Microsoft.Azure.Management.Network.Fluent.Models.TransportProtocol protocol, int frontendPortRangeStart, int frontendPortRangeEnd, int backendPort, string id = default, Microsoft.Azure.Management.ResourceManager.Fluent.SubResource frontendIPConfiguration = default, int? idleTimeoutInMinutes = default, bool? enableFloatingIP = default, bool? enableTcpReset = default, Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState provisioningState = default, string name = default, string etag = default, string type = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.Management.Network.Fluent.Models.TransportProtocol protocol, int32 frontendPortRangeStart, int32 frontendPortRangeEnd, int32 backendPort, string id, class Microsoft.Azure.Management.ResourceManager.Fluent.SubResource frontendIPConfiguration, valuetype System.Nullable`1&lt;int32&gt; idleTimeoutInMinutes, valuetype System.Nullable`1&lt;bool&gt; enableFloatingIP, valuetype System.Nullable`1&lt;bool&gt; enableTcpReset, class Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState provisioningState, string name, string etag, string type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.Models.InboundNatPoolInner.#ctor(Microsoft.Azure.Management.Network.Fluent.Models.TransportProtocol,System.Int32,System.Int32,System.Int32,System.String,Microsoft.Azure.Management.ResourceManager.Fluent.SubResource,System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.Boolean},Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (protocol As TransportProtocol, frontendPortRangeStart As Integer, frontendPortRangeEnd As Integer, backendPort As Integer, Optional id As String = null, Optional frontendIPConfiguration As SubResource = null, Optional idleTimeoutInMinutes As Nullable(Of Integer) = null, Optional enableFloatingIP As Nullable(Of Boolean) = null, Optional enableTcpReset As Nullable(Of Boolean) = null, Optional provisioningState As ProvisioningState = null, Optional name As String = null, Optional etag As String = null, Optional type As String = null)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Network.Fluent.Models.InboundNatPoolInner : Microsoft.Azure.Management.Network.Fluent.Models.TransportProtocol * int * int * int * string * Microsoft.Azure.Management.ResourceManager.Fluent.SubResource * Nullable&lt;int&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Microsoft.Azure.Management.Network.Fluent.Models.ProvisioningState * string * string * string -&gt; Microsoft.Azure.Management.Network.Fluent.Models.InboundNatPoolInner" Usage="new Microsoft.Azure.Management.Network.Fluent.Models.InboundNatPoolInner (protocol, frontendPortRangeStart, frontendPortRangeEnd, backendPort, id, frontendIPConfiguration, idleTimeoutInMinutes, enableFloatingIP, enableTcpReset, provisioningState, name, etag, type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="protocol" Type="Microsoft.Azure.Management.Network.Fluent.Models.TransportProtocol" />
@@ -75,6 +82,7 @@
         <Parameter Name="type" Type="System.String" />
       </Parameters>
       <Docs>
+        <param name="id">To be added.</param>
         <param name="protocol">The reference to the transport protocol used
             by the inbound NAT pool. Possible values include: 'Udp', 'Tcp',
             'All'</param>
@@ -88,7 +96,6 @@
             between 1 and 65535.</param>
         <param name="backendPort">The port used for internal connections on
             the endpoint. Acceptable values are between 1 and 65535.</param>
-        <param name="id">To be added.</param>
         <param name="frontendIPConfiguration">A reference to frontend IP
             addresses.</param>
         <param name="idleTimeoutInMinutes">The timeout for the TCP idle
@@ -131,6 +138,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -150,7 +159,7 @@
       </Docs>
     </Member>
     <Member MemberName="EnableFloatingIP">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; EnableFloatingIP { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? EnableFloatingIP { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; EnableFloatingIP" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Fluent.Models.InboundNatPoolInner.EnableFloatingIP" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableFloatingIP As Nullable(Of Boolean)" />
@@ -162,6 +171,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -184,7 +195,7 @@
       </Docs>
     </Member>
     <Member MemberName="EnableTcpReset">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; EnableTcpReset { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? EnableTcpReset { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; EnableTcpReset" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Fluent.Models.InboundNatPoolInner.EnableTcpReset" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableTcpReset As Nullable(Of Boolean)" />
@@ -196,6 +207,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -228,6 +241,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -259,6 +274,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -289,6 +306,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -321,6 +340,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -341,7 +362,7 @@
       </Docs>
     </Member>
     <Member MemberName="IdleTimeoutInMinutes">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; IdleTimeoutInMinutes { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? IdleTimeoutInMinutes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; IdleTimeoutInMinutes" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Fluent.Models.InboundNatPoolInner.IdleTimeoutInMinutes" />
       <MemberSignature Language="VB.NET" Value="Public Property IdleTimeoutInMinutes As Nullable(Of Integer)" />
@@ -353,6 +374,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -385,6 +408,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -417,6 +442,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -448,6 +475,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -480,6 +509,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -510,6 +541,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

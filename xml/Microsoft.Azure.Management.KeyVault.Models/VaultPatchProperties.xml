@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.KeyVault</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,6 +29,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,14 +40,15 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public VaultPatchProperties (Nullable&lt;Guid&gt; tenantId = default, Microsoft.Azure.Management.KeyVault.Models.Sku sku = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.KeyVault.Models.AccessPolicyEntry&gt; accessPolicies = default, Nullable&lt;bool&gt; enabledForDeployment = default, Nullable&lt;bool&gt; enabledForDiskEncryption = default, Nullable&lt;bool&gt; enabledForTemplateDeployment = default, Nullable&lt;bool&gt; enableSoftDelete = default, Nullable&lt;Microsoft.Azure.Management.KeyVault.Models.CreateMode&gt; createMode = default, Nullable&lt;bool&gt; enablePurgeProtection = default, Microsoft.Azure.Management.KeyVault.Models.NetworkRuleSet networkAcls = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;valuetype System.Guid&gt; tenantId, class Microsoft.Azure.Management.KeyVault.Models.Sku sku, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.KeyVault.Models.AccessPolicyEntry&gt; accessPolicies, valuetype System.Nullable`1&lt;bool&gt; enabledForDeployment, valuetype System.Nullable`1&lt;bool&gt; enabledForDiskEncryption, valuetype System.Nullable`1&lt;bool&gt; enabledForTemplateDeployment, valuetype System.Nullable`1&lt;bool&gt; enableSoftDelete, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.KeyVault.Models.CreateMode&gt; createMode, valuetype System.Nullable`1&lt;bool&gt; enablePurgeProtection, class Microsoft.Azure.Management.KeyVault.Models.NetworkRuleSet networkAcls) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Models.VaultPatchProperties.#ctor(System.Nullable{System.Guid},Microsoft.Azure.Management.KeyVault.Models.Sku,System.Collections.Generic.IList{Microsoft.Azure.Management.KeyVault.Models.AccessPolicyEntry},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{Microsoft.Azure.Management.KeyVault.Models.CreateMode},System.Nullable{System.Boolean},Microsoft.Azure.Management.KeyVault.Models.NetworkRuleSet)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.KeyVault.Models.VaultPatchProperties : Nullable&lt;Guid&gt; * Microsoft.Azure.Management.KeyVault.Models.Sku * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.KeyVault.Models.AccessPolicyEntry&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;Microsoft.Azure.Management.KeyVault.Models.CreateMode&gt; * Nullable&lt;bool&gt; * Microsoft.Azure.Management.KeyVault.Models.NetworkRuleSet -&gt; Microsoft.Azure.Management.KeyVault.Models.VaultPatchProperties" Usage="new Microsoft.Azure.Management.KeyVault.Models.VaultPatchProperties (tenantId, sku, accessPolicies, enabledForDeployment, enabledForDiskEncryption, enabledForTemplateDeployment, enableSoftDelete, createMode, enablePurgeProtection, networkAcls)" />
+      <MemberSignature Language="C#" Value="public VaultPatchProperties (Guid? tenantId = default, Microsoft.Azure.Management.KeyVault.Models.Sku sku = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.KeyVault.Models.AccessPolicyEntry&gt; accessPolicies = default, bool? enabledForDeployment = default, bool? enabledForDiskEncryption = default, bool? enabledForTemplateDeployment = default, bool? enableSoftDelete = default, bool? enableRbacAuthorization = default, int? softDeleteRetentionInDays = default, Microsoft.Azure.Management.KeyVault.Models.CreateMode? createMode = default, bool? enablePurgeProtection = default, Microsoft.Azure.Management.KeyVault.Models.NetworkRuleSet networkAcls = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;valuetype System.Guid&gt; tenantId, class Microsoft.Azure.Management.KeyVault.Models.Sku sku, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.KeyVault.Models.AccessPolicyEntry&gt; accessPolicies, valuetype System.Nullable`1&lt;bool&gt; enabledForDeployment, valuetype System.Nullable`1&lt;bool&gt; enabledForDiskEncryption, valuetype System.Nullable`1&lt;bool&gt; enabledForTemplateDeployment, valuetype System.Nullable`1&lt;bool&gt; enableSoftDelete, valuetype System.Nullable`1&lt;bool&gt; enableRbacAuthorization, valuetype System.Nullable`1&lt;int32&gt; softDeleteRetentionInDays, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.KeyVault.Models.CreateMode&gt; createMode, valuetype System.Nullable`1&lt;bool&gt; enablePurgeProtection, class Microsoft.Azure.Management.KeyVault.Models.NetworkRuleSet networkAcls) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Models.VaultPatchProperties.#ctor(System.Nullable{System.Guid},Microsoft.Azure.Management.KeyVault.Models.Sku,System.Collections.Generic.IList{Microsoft.Azure.Management.KeyVault.Models.AccessPolicyEntry},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Nullable{Microsoft.Azure.Management.KeyVault.Models.CreateMode},System.Nullable{System.Boolean},Microsoft.Azure.Management.KeyVault.Models.NetworkRuleSet)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional tenantId As Nullable(Of Guid) = null, Optional sku As Sku = null, Optional accessPolicies As IList(Of AccessPolicyEntry) = null, Optional enabledForDeployment As Nullable(Of Boolean) = null, Optional enabledForDiskEncryption As Nullable(Of Boolean) = null, Optional enabledForTemplateDeployment As Nullable(Of Boolean) = null, Optional enableSoftDelete As Nullable(Of Boolean) = null, Optional enableRbacAuthorization As Nullable(Of Boolean) = null, Optional softDeleteRetentionInDays As Nullable(Of Integer) = null, Optional createMode As Nullable(Of CreateMode) = null, Optional enablePurgeProtection As Nullable(Of Boolean) = null, Optional networkAcls As NetworkRuleSet = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.KeyVault.Models.VaultPatchProperties : Nullable&lt;Guid&gt; * Microsoft.Azure.Management.KeyVault.Models.Sku * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.KeyVault.Models.AccessPolicyEntry&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Nullable&lt;Microsoft.Azure.Management.KeyVault.Models.CreateMode&gt; * Nullable&lt;bool&gt; * Microsoft.Azure.Management.KeyVault.Models.NetworkRuleSet -&gt; Microsoft.Azure.Management.KeyVault.Models.VaultPatchProperties" Usage="new Microsoft.Azure.Management.KeyVault.Models.VaultPatchProperties (tenantId, sku, accessPolicies, enabledForDeployment, enabledForDiskEncryption, enabledForTemplateDeployment, enableSoftDelete, enableRbacAuthorization, softDeleteRetentionInDays, createMode, enablePurgeProtection, networkAcls)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="tenantId" Type="System.Nullable&lt;System.Guid&gt;" />
@@ -55,6 +58,8 @@
         <Parameter Name="enabledForDiskEncryption" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="enabledForTemplateDeployment" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="enableSoftDelete" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="enableRbacAuthorization" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="softDeleteRetentionInDays" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="createMode" Type="System.Nullable&lt;Microsoft.Azure.Management.KeyVault.Models.CreateMode&gt;" />
         <Parameter Name="enablePurgeProtection" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="networkAcls" Type="Microsoft.Azure.Management.KeyVault.Models.NetworkRuleSet" />
@@ -77,8 +82,18 @@
             whether Azure Resource Manager is permitted to retrieve secrets
             from the key vault.</param>
         <param name="enableSoftDelete">Property to specify whether the
-            'soft delete' functionality is enabled for this key vault. It does
-            not accept false value.</param>
+            'soft delete' functionality is enabled for this key vault. Once set
+            to true, it cannot be reverted to false.</param>
+        <param name="enableRbacAuthorization">Property that controls how
+            data actions are authorized. When true, the key vault will use Role
+            Based Access Control (RBAC) for authorization of data actions, and
+            the access policies specified in vault properties will be  ignored
+            (warning: this is a preview feature). When false, the key vault
+            will use the access policies specified in vault properties, and any
+            policy stored on Azure Resource Manager will be ignored. If null or
+            not specified, the value of this property will not change.</param>
+        <param name="softDeleteRetentionInDays">softDelete data retention
+            days. It accepts &gt;=7 and &lt;=90.</param>
         <param name="createMode">The vault's create mode to indicate
             whether the vault need to be recovered or not. Possible values
             include: 'recover', 'default'</param>
@@ -107,6 +122,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -127,7 +143,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateMode">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Management.KeyVault.Models.CreateMode&gt; CreateMode { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.KeyVault.Models.CreateMode? CreateMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.KeyVault.Models.CreateMode&gt; CreateMode" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.KeyVault.Models.VaultPatchProperties.CreateMode" />
       <MemberSignature Language="VB.NET" Value="Public Property CreateMode As Nullable(Of CreateMode)" />
@@ -136,6 +152,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -156,7 +173,7 @@
       </Docs>
     </Member>
     <Member MemberName="EnabledForDeployment">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; EnabledForDeployment { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? EnabledForDeployment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; EnabledForDeployment" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.KeyVault.Models.VaultPatchProperties.EnabledForDeployment" />
       <MemberSignature Language="VB.NET" Value="Public Property EnabledForDeployment As Nullable(Of Boolean)" />
@@ -165,6 +182,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -185,7 +203,7 @@
       </Docs>
     </Member>
     <Member MemberName="EnabledForDiskEncryption">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; EnabledForDiskEncryption { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? EnabledForDiskEncryption { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; EnabledForDiskEncryption" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.KeyVault.Models.VaultPatchProperties.EnabledForDiskEncryption" />
       <MemberSignature Language="VB.NET" Value="Public Property EnabledForDiskEncryption As Nullable(Of Boolean)" />
@@ -194,6 +212,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -213,7 +232,7 @@
       </Docs>
     </Member>
     <Member MemberName="EnabledForTemplateDeployment">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; EnabledForTemplateDeployment { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? EnabledForTemplateDeployment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; EnabledForTemplateDeployment" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.KeyVault.Models.VaultPatchProperties.EnabledForTemplateDeployment" />
       <MemberSignature Language="VB.NET" Value="Public Property EnabledForTemplateDeployment As Nullable(Of Boolean)" />
@@ -222,6 +241,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -241,7 +261,7 @@
       </Docs>
     </Member>
     <Member MemberName="EnablePurgeProtection">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; EnablePurgeProtection { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? EnablePurgeProtection { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; EnablePurgeProtection" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.KeyVault.Models.VaultPatchProperties.EnablePurgeProtection" />
       <MemberSignature Language="VB.NET" Value="Public Property EnablePurgeProtection As Nullable(Of Boolean)" />
@@ -250,6 +270,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -273,8 +294,42 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="EnableRbacAuthorization">
+      <MemberSignature Language="C#" Value="public bool? EnableRbacAuthorization { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; EnableRbacAuthorization" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.KeyVault.Models.VaultPatchProperties.EnableRbacAuthorization" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableRbacAuthorization As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.EnableRbacAuthorization : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.KeyVault.Models.VaultPatchProperties.EnableRbacAuthorization" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.KeyVault</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="enableRbacAuthorization")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets property that controls how data actions are
+            authorized. When true, the key vault will use Role Based Access
+            Control (RBAC) for authorization of data actions, and the access
+            policies specified in vault properties will be  ignored (warning:
+            this is a preview feature). When false, the key vault will use the
+            access policies specified in vault properties, and any policy
+            stored on Azure Resource Manager will be ignored. If null or not
+            specified, the value of this property will not change.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="EnableSoftDelete">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; EnableSoftDelete { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? EnableSoftDelete { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; EnableSoftDelete" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.KeyVault.Models.VaultPatchProperties.EnableSoftDelete" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableSoftDelete As Nullable(Of Boolean)" />
@@ -283,6 +338,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -295,8 +351,8 @@
       <Docs>
         <summary>
             Gets or sets property to specify whether the 'soft delete'
-            functionality is enabled for this key vault. It does not accept
-            false value.
+            functionality is enabled for this key vault. Once set to true, it
+            cannot be reverted to false.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -312,6 +368,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -340,6 +397,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -357,8 +415,36 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="SoftDeleteRetentionInDays">
+      <MemberSignature Language="C#" Value="public int? SoftDeleteRetentionInDays { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; SoftDeleteRetentionInDays" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.KeyVault.Models.VaultPatchProperties.SoftDeleteRetentionInDays" />
+      <MemberSignature Language="VB.NET" Value="Public Property SoftDeleteRetentionInDays As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.SoftDeleteRetentionInDays : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.KeyVault.Models.VaultPatchProperties.SoftDeleteRetentionInDays" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.KeyVault</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="softDeleteRetentionInDays")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets softDelete data retention days. It accepts &amp;gt;=7
+            and &amp;lt;=90.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="TenantId">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Guid&gt; TenantId { get; set; }" />
+      <MemberSignature Language="C#" Value="public Guid? TenantId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Guid&gt; TenantId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.KeyVault.Models.VaultPatchProperties.TenantId" />
       <MemberSignature Language="VB.NET" Value="Public Property TenantId As Nullable(Of Guid)" />
@@ -367,6 +453,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -395,6 +482,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

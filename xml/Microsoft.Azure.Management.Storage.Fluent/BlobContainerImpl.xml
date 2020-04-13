@@ -10,6 +10,8 @@
     <AssemblyVersion>1.0.0.62</AssemblyVersion>
     <AssemblyVersion>1.0.0.63</AssemblyVersion>
     <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.ResourceManager.Fluent.Core.ResourceActions.CreatableUpdatable&lt;Microsoft.Azure.Management.Storage.Fluent.IBlobContainer,Microsoft.Azure.Management.Storage.Fluent.Models.BlobContainerInner,Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl,Microsoft.Azure.Management.ResourceManager.Fluent.Core.IHasId,Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Update.IUpdate&gt;</BaseTypeName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Storage.Fluent.IBlobContainer&gt; CreateResourceAsync (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Storage.Fluent.IBlobContainer&gt; CreateResourceAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl.CreateResourceAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateResourceAsync (Optional cancellationToken As CancellationToken = null) As Task(Of IBlobContainer)" />
       <MemberSignature Language="F#" Value="override this.CreateResourceAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Storage.Fluent.IBlobContainer&gt;" Usage="blobContainerImpl.CreateResourceAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -94,6 +97,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -126,6 +131,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -141,6 +148,7 @@
       <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Storage.Fluent.Models.BlobContainerInner&gt; GetInnerAsync (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Storage.Fluent.Models.BlobContainerInner&gt; GetInnerAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl.GetInnerAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetInnerAsync (Optional cancellationToken As CancellationToken = null) As Task(Of BlobContainerInner)" />
       <MemberSignature Language="F#" Value="override this.GetInnerAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Storage.Fluent.Models.BlobContainerInner&gt;" Usage="blobContainerImpl.GetInnerAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -149,6 +157,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -169,7 +179,7 @@
       </Docs>
     </Member>
     <Member MemberName="HasImmutabilityPolicy">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; HasImmutabilityPolicy ();" />
+      <MemberSignature Language="C#" Value="public bool? HasImmutabilityPolicy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Nullable`1&lt;bool&gt; HasImmutabilityPolicy() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl.HasImmutabilityPolicy" />
       <MemberSignature Language="VB.NET" Value="Public Function HasImmutabilityPolicy () As Nullable(Of Boolean)" />
@@ -181,6 +191,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -193,7 +205,7 @@
       </Docs>
     </Member>
     <Member MemberName="HasLegalHold">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; HasLegalHold ();" />
+      <MemberSignature Language="C#" Value="public bool? HasLegalHold ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Nullable`1&lt;bool&gt; HasLegalHold() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl.HasLegalHold" />
       <MemberSignature Language="VB.NET" Value="Public Function HasLegalHold () As Nullable(Of Boolean)" />
@@ -205,6 +217,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -229,6 +243,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -253,6 +269,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Storage.Fluent.Models.ImmutabilityPolicyProperties</ReturnType>
@@ -277,6 +295,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -289,7 +309,7 @@
       </Docs>
     </Member>
     <Member MemberName="LastModifiedTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; LastModifiedTime ();" />
+      <MemberSignature Language="C#" Value="public DateTime? LastModifiedTime ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; LastModifiedTime() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl.LastModifiedTime" />
       <MemberSignature Language="VB.NET" Value="Public Function LastModifiedTime () As Nullable(Of DateTime)" />
@@ -301,6 +321,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
@@ -325,6 +347,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Storage.Fluent.Models.LeaseDuration</ReturnType>
@@ -349,6 +373,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Storage.Fluent.Models.LeaseState</ReturnType>
@@ -373,6 +399,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Storage.Fluent.Models.LeaseStatus</ReturnType>
@@ -397,6 +425,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Storage.Fluent.Models.LegalHoldProperties</ReturnType>
@@ -421,6 +451,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Storage.Fluent.StorageManager</ReturnType>
@@ -445,6 +477,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;</ReturnType>
@@ -461,7 +495,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Microsoft.Azure.Management.ResourceManager.Fluent.Core.IHasId.Id" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl.Microsoft#Azure#Management#ResourceManager#Fluent#Core#IHasId#Id" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Id As String Implements IHasId.Id" />
-      <MemberSignature Language="F#" Usage="Microsoft.Azure.Management.ResourceManager.Fluent.Core.IHasId.Id" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Azure.Management.ResourceManager.Fluent.Core.IHasId.Id : string" Usage="Microsoft.Azure.Management.ResourceManager.Fluent.Core.IHasId.Id" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.Id</InterfaceMember>
@@ -472,6 +506,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -487,7 +523,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Storage.Fluent.StorageManager Microsoft.Azure.Management.ResourceManager.Fluent.Core.IHasManager&lt;Microsoft.Azure.Management.Storage.Fluent.StorageManager&gt;.Manager" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl.Microsoft#Azure#Management#ResourceManager#Fluent#Core#IHasManager&lt;Microsoft#Azure#Management#Storage#Fluent#StorageManager&gt;#Manager" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Manager As StorageManager Implements IHasManager(Of StorageManager).Manager" />
-      <MemberSignature Language="F#" Usage="Microsoft.Azure.Management.ResourceManager.Fluent.Core.IHasManager&lt;Microsoft.Azure.Management.Storage.Fluent.StorageManager&gt;.Manager" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Azure.Management.ResourceManager.Fluent.Core.IHasManager&lt;Microsoft.Azure.Management.Storage.Fluent.StorageManager&gt;.Manager : Microsoft.Azure.Management.Storage.Fluent.StorageManager" Usage="Microsoft.Azure.Management.ResourceManager.Fluent.Core.IHasManager&lt;Microsoft.Azure.Management.Storage.Fluent.StorageManager&gt;.Manager" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Management.ResourceManager.Fluent.Core.IHasManager`1.Manager</InterfaceMember>
@@ -498,6 +534,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Storage.Fluent.StorageManager</ReturnType>
@@ -513,6 +551,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithPublicAccess Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithBlobService.WithExistingBlobService(string resourceGroupName, string accountName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl.Microsoft#Azure#Management#Storage#Fluent#BlobContainer#Definition#IWithBlobService#WithExistingBlobService(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Function WithExistingBlobService (resourceGroupName As String, accountName As String) As IWithPublicAccess Implements IWithBlobService.WithExistingBlobService" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithBlobService.WithExistingBlobService : string * string -&gt; Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithPublicAccess&#xA;override this.Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithBlobService.WithExistingBlobService : string * string -&gt; Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithPublicAccess" Usage="blobContainerImpl.Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithBlobService.WithExistingBlobService (resourceGroupName, accountName)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithBlobService.WithExistingBlobService(System.String,System.String)</InterfaceMember>
@@ -523,6 +562,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithPublicAccess</ReturnType>
@@ -547,6 +588,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithCreate Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithMetadata.WithMetadata(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl.Microsoft#Azure#Management#Storage#Fluent#BlobContainer#Definition#IWithMetadata#WithMetadata(System.Collections.Generic.IDictionary{System.String,System.String})" />
       <MemberSignature Language="VB.NET" Value="Function WithMetadata (metadata As IDictionary(Of String, String)) As IWithCreate Implements IWithMetadata.WithMetadata" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithMetadata.WithMetadata : System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithCreate&#xA;override this.Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithMetadata.WithMetadata : System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithCreate" Usage="blobContainerImpl.Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithMetadata.WithMetadata metadata" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithMetadata.WithMetadata(System.Collections.Generic.IDictionary{System.String,System.String})</InterfaceMember>
@@ -557,6 +599,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithCreate</ReturnType>
@@ -579,6 +623,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithCreate Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithMetadata.WithMetadata(string name, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl.Microsoft#Azure#Management#Storage#Fluent#BlobContainer#Definition#IWithMetadata#WithMetadata(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Function WithMetadata (name As String, value As String) As IWithCreate Implements IWithMetadata.WithMetadata" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithMetadata.WithMetadata : string * string -&gt; Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithCreate&#xA;override this.Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithMetadata.WithMetadata : string * string -&gt; Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithCreate" Usage="blobContainerImpl.Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithMetadata.WithMetadata (name, value)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithMetadata.WithMetadata(System.String,System.String)</InterfaceMember>
@@ -589,6 +634,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithCreate</ReturnType>
@@ -612,6 +659,8 @@
       <MemberSignature Language="C#" Value="Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithCreate IWithPublicAccess.WithPublicAccess (Microsoft.Azure.Management.Storage.Fluent.Models.PublicAccess publicAccess);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithCreate Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithPublicAccess.WithPublicAccess(valuetype Microsoft.Azure.Management.Storage.Fluent.Models.PublicAccess publicAccess) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl.Microsoft#Azure#Management#Storage#Fluent#BlobContainer#Definition#IWithPublicAccess#WithPublicAccess(Microsoft.Azure.Management.Storage.Fluent.Models.PublicAccess)" />
+      <MemberSignature Language="VB.NET" Value="Function WithPublicAccess (publicAccess As PublicAccess) As IWithCreate Implements IWithPublicAccess.WithPublicAccess" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithPublicAccess.WithPublicAccess : Microsoft.Azure.Management.Storage.Fluent.Models.PublicAccess -&gt; Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithCreate&#xA;override this.Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithPublicAccess.WithPublicAccess : Microsoft.Azure.Management.Storage.Fluent.Models.PublicAccess -&gt; Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithCreate" Usage="blobContainerImpl.Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithPublicAccess.WithPublicAccess publicAccess" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithPublicAccess.WithPublicAccess(Microsoft.Azure.Management.Storage.Fluent.Models.PublicAccess)</InterfaceMember>
@@ -622,6 +671,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Definition.IWithCreate</ReturnType>
@@ -644,6 +695,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Update.IUpdate Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Update.IWithMetadata.WithMetadata(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl.Microsoft#Azure#Management#Storage#Fluent#BlobContainer#Update#IWithMetadata#WithMetadata(System.Collections.Generic.IDictionary{System.String,System.String})" />
       <MemberSignature Language="VB.NET" Value="Function WithMetadata (metadata As IDictionary(Of String, String)) As IUpdate Implements IWithMetadata.WithMetadata" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Update.IWithMetadata.WithMetadata : System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Update.IUpdate&#xA;override this.Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Update.IWithMetadata.WithMetadata : System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Update.IUpdate" Usage="blobContainerImpl.Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Update.IWithMetadata.WithMetadata metadata" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Update.IWithMetadata.WithMetadata(System.Collections.Generic.IDictionary{System.String,System.String})</InterfaceMember>
@@ -654,6 +706,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Update.IUpdate</ReturnType>
@@ -676,6 +730,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Update.IUpdate Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Update.IWithMetadata.WithMetadata(string name, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl.Microsoft#Azure#Management#Storage#Fluent#BlobContainer#Update#IWithMetadata#WithMetadata(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Function WithMetadata (name As String, value As String) As IUpdate Implements IWithMetadata.WithMetadata" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Update.IWithMetadata.WithMetadata : string * string -&gt; Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Update.IUpdate&#xA;override this.Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Update.IWithMetadata.WithMetadata : string * string -&gt; Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Update.IUpdate" Usage="blobContainerImpl.Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Update.IWithMetadata.WithMetadata (name, value)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Update.IWithMetadata.WithMetadata(System.String,System.String)</InterfaceMember>
@@ -686,6 +741,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Update.IUpdate</ReturnType>
@@ -709,6 +766,8 @@
       <MemberSignature Language="C#" Value="Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Update.IUpdate IWithPublicAccess.WithPublicAccess (Microsoft.Azure.Management.Storage.Fluent.Models.PublicAccess publicAccess);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Update.IUpdate Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Update.IWithPublicAccess.WithPublicAccess(valuetype Microsoft.Azure.Management.Storage.Fluent.Models.PublicAccess publicAccess) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl.Microsoft#Azure#Management#Storage#Fluent#BlobContainer#Update#IWithPublicAccess#WithPublicAccess(Microsoft.Azure.Management.Storage.Fluent.Models.PublicAccess)" />
+      <MemberSignature Language="VB.NET" Value="Function WithPublicAccess (publicAccess As PublicAccess) As IUpdate Implements IWithPublicAccess.WithPublicAccess" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Update.IWithPublicAccess.WithPublicAccess : Microsoft.Azure.Management.Storage.Fluent.Models.PublicAccess -&gt; Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Update.IUpdate&#xA;override this.Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Update.IWithPublicAccess.WithPublicAccess : Microsoft.Azure.Management.Storage.Fluent.Models.PublicAccess -&gt; Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Update.IUpdate" Usage="blobContainerImpl.Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Update.IWithPublicAccess.WithPublicAccess publicAccess" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Update.IWithPublicAccess.WithPublicAccess(Microsoft.Azure.Management.Storage.Fluent.Models.PublicAccess)</InterfaceMember>
@@ -719,6 +778,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Storage.Fluent.BlobContainer.Update.IUpdate</ReturnType>
@@ -741,7 +802,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.Etag" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl.Microsoft#Azure#Management#Storage#Fluent#IBlobContainer#Etag" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Etag As String Implements IBlobContainer.Etag" />
-      <MemberSignature Language="F#" Usage="Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.Etag" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.Etag : string" Usage="Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.Etag" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.Etag</InterfaceMember>
@@ -752,6 +813,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -765,11 +828,11 @@
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.HasImmutabilityPolicy">
-      <MemberSignature Language="C#" Value="Nullable&lt;bool&gt; Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.HasImmutabilityPolicy { get; }" />
+      <MemberSignature Language="C#" Value="bool? Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.HasImmutabilityPolicy { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.HasImmutabilityPolicy" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl.Microsoft#Azure#Management#Storage#Fluent#IBlobContainer#HasImmutabilityPolicy" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property HasImmutabilityPolicy As Nullable(Of Boolean) Implements IBlobContainer.HasImmutabilityPolicy" />
-      <MemberSignature Language="F#" Usage="Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.HasImmutabilityPolicy" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.HasImmutabilityPolicy : Nullable&lt;bool&gt;" Usage="Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.HasImmutabilityPolicy" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.HasImmutabilityPolicy</InterfaceMember>
@@ -780,6 +843,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -793,11 +858,11 @@
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.HasLegalHold">
-      <MemberSignature Language="C#" Value="Nullable&lt;bool&gt; Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.HasLegalHold { get; }" />
+      <MemberSignature Language="C#" Value="bool? Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.HasLegalHold { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.HasLegalHold" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl.Microsoft#Azure#Management#Storage#Fluent#IBlobContainer#HasLegalHold" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property HasLegalHold As Nullable(Of Boolean) Implements IBlobContainer.HasLegalHold" />
-      <MemberSignature Language="F#" Usage="Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.HasLegalHold" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.HasLegalHold : Nullable&lt;bool&gt;" Usage="Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.HasLegalHold" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.HasLegalHold</InterfaceMember>
@@ -808,6 +873,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -825,7 +892,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.Id" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl.Microsoft#Azure#Management#Storage#Fluent#IBlobContainer#Id" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Id As String Implements IBlobContainer.Id" />
-      <MemberSignature Language="F#" Usage="Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.Id" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.Id : string" Usage="Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.Id" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.Id</InterfaceMember>
@@ -836,6 +903,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -853,7 +922,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Storage.Fluent.Models.ImmutabilityPolicyProperties Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.ImmutabilityPolicy" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl.Microsoft#Azure#Management#Storage#Fluent#IBlobContainer#ImmutabilityPolicy" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ImmutabilityPolicy As ImmutabilityPolicyProperties Implements IBlobContainer.ImmutabilityPolicy" />
-      <MemberSignature Language="F#" Usage="Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.ImmutabilityPolicy" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.ImmutabilityPolicy : Microsoft.Azure.Management.Storage.Fluent.Models.ImmutabilityPolicyProperties" Usage="Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.ImmutabilityPolicy" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.ImmutabilityPolicy</InterfaceMember>
@@ -864,6 +933,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Storage.Fluent.Models.ImmutabilityPolicyProperties</ReturnType>
@@ -877,11 +948,11 @@
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.LastModifiedTime">
-      <MemberSignature Language="C#" Value="Nullable&lt;DateTime&gt; Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.LastModifiedTime { get; }" />
+      <MemberSignature Language="C#" Value="DateTime? Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.LastModifiedTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.LastModifiedTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl.Microsoft#Azure#Management#Storage#Fluent#IBlobContainer#LastModifiedTime" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property LastModifiedTime As Nullable(Of DateTime) Implements IBlobContainer.LastModifiedTime" />
-      <MemberSignature Language="F#" Usage="Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.LastModifiedTime" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.LastModifiedTime : Nullable&lt;DateTime&gt;" Usage="Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.LastModifiedTime" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.LastModifiedTime</InterfaceMember>
@@ -892,6 +963,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
@@ -909,7 +982,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Storage.Fluent.Models.LeaseDuration Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.LeaseDuration" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl.Microsoft#Azure#Management#Storage#Fluent#IBlobContainer#LeaseDuration" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property LeaseDuration As LeaseDuration Implements IBlobContainer.LeaseDuration" />
-      <MemberSignature Language="F#" Usage="Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.LeaseDuration" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.LeaseDuration : Microsoft.Azure.Management.Storage.Fluent.Models.LeaseDuration" Usage="Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.LeaseDuration" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.LeaseDuration</InterfaceMember>
@@ -920,6 +993,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Storage.Fluent.Models.LeaseDuration</ReturnType>
@@ -937,7 +1012,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Storage.Fluent.Models.LeaseState Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.LeaseState" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl.Microsoft#Azure#Management#Storage#Fluent#IBlobContainer#LeaseState" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property LeaseState As LeaseState Implements IBlobContainer.LeaseState" />
-      <MemberSignature Language="F#" Usage="Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.LeaseState" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.LeaseState : Microsoft.Azure.Management.Storage.Fluent.Models.LeaseState" Usage="Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.LeaseState" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.LeaseState</InterfaceMember>
@@ -948,6 +1023,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Storage.Fluent.Models.LeaseState</ReturnType>
@@ -965,7 +1042,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Storage.Fluent.Models.LeaseStatus Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.LeaseStatus" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl.Microsoft#Azure#Management#Storage#Fluent#IBlobContainer#LeaseStatus" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property LeaseStatus As LeaseStatus Implements IBlobContainer.LeaseStatus" />
-      <MemberSignature Language="F#" Usage="Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.LeaseStatus" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.LeaseStatus : Microsoft.Azure.Management.Storage.Fluent.Models.LeaseStatus" Usage="Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.LeaseStatus" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.LeaseStatus</InterfaceMember>
@@ -976,6 +1053,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Storage.Fluent.Models.LeaseStatus</ReturnType>
@@ -993,7 +1072,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Storage.Fluent.Models.LegalHoldProperties Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.LegalHold" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl.Microsoft#Azure#Management#Storage#Fluent#IBlobContainer#LegalHold" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property LegalHold As LegalHoldProperties Implements IBlobContainer.LegalHold" />
-      <MemberSignature Language="F#" Usage="Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.LegalHold" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.LegalHold : Microsoft.Azure.Management.Storage.Fluent.Models.LegalHoldProperties" Usage="Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.LegalHold" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.LegalHold</InterfaceMember>
@@ -1004,6 +1083,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Storage.Fluent.Models.LegalHoldProperties</ReturnType>
@@ -1021,7 +1102,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.Metadata" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl.Microsoft#Azure#Management#Storage#Fluent#IBlobContainer#Metadata" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Metadata As IReadOnlyDictionary(Of String, String) Implements IBlobContainer.Metadata" />
-      <MemberSignature Language="F#" Usage="Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.Metadata" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.Metadata : System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt;" Usage="Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.Metadata" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.Metadata</InterfaceMember>
@@ -1032,6 +1113,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;</ReturnType>
@@ -1049,7 +1132,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl.Microsoft#Azure#Management#Storage#Fluent#IBlobContainer#Name" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Name As String Implements IBlobContainer.Name" />
-      <MemberSignature Language="F#" Usage="Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.Name" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.Name : string" Usage="Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.Name" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.Name</InterfaceMember>
@@ -1060,6 +1143,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1073,11 +1158,11 @@
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.PublicAccess">
-      <MemberSignature Language="C#" Value="Nullable&lt;Microsoft.Azure.Management.Storage.Fluent.Models.PublicAccess&gt; Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.PublicAccess { get; }" />
+      <MemberSignature Language="C#" Value="Microsoft.Azure.Management.Storage.Fluent.Models.PublicAccess? Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.PublicAccess { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Storage.Fluent.Models.PublicAccess&gt; Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.PublicAccess" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl.Microsoft#Azure#Management#Storage#Fluent#IBlobContainer#PublicAccess" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property PublicAccess As Nullable(Of PublicAccess) Implements IBlobContainer.PublicAccess" />
-      <MemberSignature Language="F#" Usage="Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.PublicAccess" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.PublicAccess : Nullable&lt;Microsoft.Azure.Management.Storage.Fluent.Models.PublicAccess&gt;" Usage="Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.PublicAccess" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.PublicAccess</InterfaceMember>
@@ -1088,6 +1173,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Microsoft.Azure.Management.Storage.Fluent.Models.PublicAccess&gt;</ReturnType>
@@ -1105,7 +1192,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.Type" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl.Microsoft#Azure#Management#Storage#Fluent#IBlobContainer#Type" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Type As String Implements IBlobContainer.Type" />
-      <MemberSignature Language="F#" Usage="Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.Type" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.Type : string" Usage="Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.Type" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Management.Storage.Fluent.IBlobContainer.Type</InterfaceMember>
@@ -1116,6 +1203,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1141,6 +1230,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1153,7 +1244,7 @@
       </Docs>
     </Member>
     <Member MemberName="PublicAccess">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Management.Storage.Fluent.Models.PublicAccess&gt; PublicAccess ();" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Storage.Fluent.Models.PublicAccess? PublicAccess ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Storage.Fluent.Models.PublicAccess&gt; PublicAccess() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl.PublicAccess" />
       <MemberSignature Language="VB.NET" Value="Public Function PublicAccess () As Nullable(Of PublicAccess)" />
@@ -1165,6 +1256,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Microsoft.Azure.Management.Storage.Fluent.Models.PublicAccess&gt;</ReturnType>
@@ -1189,6 +1282,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1213,6 +1308,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl</ReturnType>
@@ -1242,6 +1339,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl</ReturnType>
@@ -1269,6 +1368,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl</ReturnType>
@@ -1289,6 +1390,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl WithPublicAccess (Microsoft.Azure.Management.Storage.Fluent.Models.PublicAccess publicAccess);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl WithPublicAccess(valuetype Microsoft.Azure.Management.Storage.Fluent.Models.PublicAccess publicAccess) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl.WithPublicAccess(Microsoft.Azure.Management.Storage.Fluent.Models.PublicAccess)" />
+      <MemberSignature Language="VB.NET" Value="Public Function WithPublicAccess (publicAccess As PublicAccess) As BlobContainerImpl" />
       <MemberSignature Language="F#" Value="member this.WithPublicAccess : Microsoft.Azure.Management.Storage.Fluent.Models.PublicAccess -&gt; Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl" Usage="blobContainerImpl.WithPublicAccess publicAccess" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1297,6 +1399,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Storage.Fluent.BlobContainerImpl</ReturnType>

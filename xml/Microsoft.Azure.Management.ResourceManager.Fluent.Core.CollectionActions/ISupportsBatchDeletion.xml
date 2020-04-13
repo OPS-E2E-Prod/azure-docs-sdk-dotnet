@@ -10,6 +10,8 @@
     <AssemblyVersion>1.0.0.62</AssemblyVersion>
     <AssemblyVersion>1.0.0.63</AssemblyVersion>
     <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -37,6 +39,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -65,6 +69,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -90,6 +96,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;string&gt;&gt; DeleteByIdsAsync (System.Collections.Generic.IList&lt;string&gt; ids, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;string&gt;&gt; DeleteByIdsAsync(class System.Collections.Generic.IList`1&lt;string&gt; ids, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ResourceManager.Fluent.Core.CollectionActions.ISupportsBatchDeletion.DeleteByIdsAsync(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DeleteByIdsAsync (ids As IList(Of String), Optional cancellationToken As CancellationToken = null) As Task(Of IEnumerable(Of String))" />
       <MemberSignature Language="F#" Value="abstract member DeleteByIdsAsync : System.Collections.Generic.IList&lt;string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;string&gt;&gt;" Usage="iSupportsBatchDeletion.DeleteByIdsAsync (ids, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -98,6 +105,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;System.String&gt;&gt;</ReturnType>
@@ -107,8 +116,8 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="ids">Resource IDs of the resources to be deleted.</param>
         <param name="cancellationToken">To be added.</param>
+        <param name="ids">Resource IDs of the resources to be deleted.</param>
         <summary>
             Deletes the specified resources from Azure asynchronously and in parallel.
             </summary>
@@ -121,6 +130,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;string&gt;&gt; DeleteByIdsAsync (string[] ids, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;string&gt;&gt; DeleteByIdsAsync(string[] ids, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ResourceManager.Fluent.Core.CollectionActions.ISupportsBatchDeletion.DeleteByIdsAsync(System.String[],System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DeleteByIdsAsync (ids As String(), Optional cancellationToken As CancellationToken = null) As Task(Of IEnumerable(Of String))" />
       <MemberSignature Language="F#" Value="abstract member DeleteByIdsAsync : string[] * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;string&gt;&gt;" Usage="iSupportsBatchDeletion.DeleteByIdsAsync (ids, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -129,6 +139,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;System.String&gt;&gt;</ReturnType>
@@ -138,8 +150,8 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="ids">Resource IDs of the resources to be deleted.</param>
         <param name="cancellationToken">To be added.</param>
+        <param name="ids">Resource IDs of the resources to be deleted.</param>
         <summary>
             Deletes the specified resources from Azure asynchronously and in parallel.
             </summary>

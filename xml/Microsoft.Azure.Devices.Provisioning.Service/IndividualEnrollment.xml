@@ -10,6 +10,8 @@
     <AssemblyVersion>1.5.1.0</AssemblyVersion>
     <AssemblyVersion>1.5.2.0</AssemblyVersion>
     <AssemblyVersion>1.6.0.0</AssemblyVersion>
+    <AssemblyVersion>1.6.1.0</AssemblyVersion>
+    <AssemblyVersion>1.6.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -21,7 +23,7 @@
   </Interfaces>
   <Docs>
     <summary>
-             Representation of a single Device Provisioning Service enrollment and their accessors with a JSON serializer 
+             Representation of a single Device Provisioning Service enrollment and their accessors with a JSON serializer
                  and deserializer.
              </summary>
     <remarks>
@@ -29,16 +31,16 @@
             
              To create or update an Enrollment on the provisioning service you should fill this object and call the
              public API <see cref="M:Microsoft.Azure.Devices.Provisioning.Service.ProvisioningServiceClient.CreateOrUpdateIndividualEnrollmentAsync(Microsoft.Azure.Devices.Provisioning.Service.IndividualEnrollment)" />.
-             
+            
              The minimum information required by the provisioning service is the <code>RegistrationId</code> and the
              <code>Attestation</code>.
             
-             A new device can be provisioned by three attestation mechanisms, Trust Platform Module (see <see cref="T:Microsoft.Azure.Devices.Provisioning.Service.TpmAttestation" />), X509 (see <see cref="T:Microsoft.Azure.Devices.Provisioning.Service.X509Attestation" />) or Symmetric Key (see <see cref="T:Microsoft.Azure.Devices.Provisioning.Service.SymmetricKeyAttestation" />). The definition of each one you 
+             A new device can be provisioned by three attestation mechanisms, Trust Platform Module (see <see cref="T:Microsoft.Azure.Devices.Provisioning.Service.TpmAttestation" />), X509 (see <see cref="T:Microsoft.Azure.Devices.Provisioning.Service.X509Attestation" />) or Symmetric Key (see <see cref="T:Microsoft.Azure.Devices.Provisioning.Service.SymmetricKeyAttestation" />). The definition of each one you
              should use depending on the physical authentication hardware that the device contains.
             
              The content of this class will be serialized in a JSON format and sent as a body of the rest API to the
-             provisioning service. Or the content of this class can be filled by a JSON, received from the provisioning 
-             service, as result of a individualEnrollment operation like create, update, or query. 
+             provisioning service. Or the content of this class can be filled by a JSON, received from the provisioning
+             service, as result of a individualEnrollment operation like create, update, or query.
              </remarks>
     <example>
              When serialized, an individualEnrollment will look like the following example:
@@ -56,7 +58,7 @@
                  "provisioningStatus":"enabled"
              }
              </code>
-             
+            
              The following JSON is a sample of the individualEnrollment response, received from the provisioning service.
              <code>
              {
@@ -81,6 +83,7 @@
       <MemberSignature Language="C#" Value="public IndividualEnrollment (string registrationId, Microsoft.Azure.Devices.Provisioning.Service.Attestation attestation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string registrationId, class Microsoft.Azure.Devices.Provisioning.Service.Attestation attestation) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Provisioning.Service.IndividualEnrollment.#ctor(System.String,Microsoft.Azure.Devices.Provisioning.Service.Attestation)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (registrationId As String, attestation As Attestation)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Devices.Provisioning.Service.IndividualEnrollment : string * Microsoft.Azure.Devices.Provisioning.Service.Attestation -&gt; Microsoft.Azure.Devices.Provisioning.Service.IndividualEnrollment" Usage="new Microsoft.Azure.Devices.Provisioning.Service.IndividualEnrollment (registrationId, attestation)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -89,27 +92,28 @@
         <AssemblyVersion>1.5.1.0</AssemblyVersion>
         <AssemblyVersion>1.5.2.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="registrationId" Type="System.String" />
         <Parameter Name="attestation" Type="Microsoft.Azure.Devices.Provisioning.Service.Attestation" />
       </Parameters>
       <Docs>
-        <param name="registrationId">the <code>string</code> that uniquely identify this enrollment in the provisioning 
+        <param name="registrationId">the <code>string</code> that uniquely identify this enrollment in the provisioning
                  service. It cannot be <code>null</code> or empty.</param>
         <param name="attestation">the <see cref="P:Microsoft.Azure.Devices.Provisioning.Service.IndividualEnrollment.Attestation" /> object with the attestation mechanism. It cannot be <code>null</code>.</param>
         <summary>
              Creates a new instance of <code>IndividualEnrollment</code>.
              </summary>
         <remarks>
-             This constructor creates an instance of the IndividualEnrollment object with the minimum set of 
-             information required by the provisioning service. A valid individualEnrollment must contain the 
-             registrationId, which uniquely identify this enrollment, and the attestation mechanism, which can 
+             This constructor creates an instance of the IndividualEnrollment object with the minimum set of
+             information required by the provisioning service. A valid individualEnrollment must contain the
+             registrationId, which uniquely identify this enrollment, and the attestation mechanism, which can
              be TPM, X509, or Symmetric key.
             
              Other parameters can be added by calling the setters on this object.
              </remarks>
-        <exception cref="T:System.ArgumentNullException">if one of the provided parameters is not correct</exception>
         <example>
              When serialized, an IndividualEnrollment will look like the following example:
              <code>
@@ -123,10 +127,11 @@
                 }
              }
              </code></example>
+        <exception cref="T:System.ArgumentNullException">if one of the provided parameters is not correct</exception>
       </Docs>
     </Member>
     <Member MemberName="AllocationPolicy">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Devices.Provisioning.Service.AllocationPolicy&gt; AllocationPolicy { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Devices.Provisioning.Service.AllocationPolicy? AllocationPolicy { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Devices.Provisioning.Service.AllocationPolicy&gt; AllocationPolicy" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Devices.Provisioning.Service.IndividualEnrollment.AllocationPolicy" />
       <MemberSignature Language="VB.NET" Value="Public Property AllocationPolicy As Nullable(Of AllocationPolicy)" />
@@ -138,6 +143,8 @@
         <AssemblyVersion>1.5.1.0</AssemblyVersion>
         <AssemblyVersion>1.5.2.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -148,7 +155,7 @@
         <ReturnType>System.Nullable&lt;Microsoft.Azure.Devices.Provisioning.Service.AllocationPolicy&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> 
+        <summary>
             The allocation policy of this resource. Overrides the tenant level allocation policy.
             </summary>
         <value>To be added.</value>
@@ -168,6 +175,8 @@
         <AssemblyVersion>1.5.1.0</AssemblyVersion>
         <AssemblyVersion>1.5.2.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -198,6 +207,8 @@
         <AssemblyVersion>1.5.1.0</AssemblyVersion>
         <AssemblyVersion>1.5.2.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -216,7 +227,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreatedDateTimeUtc">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; CreatedDateTimeUtc { get; }" />
+      <MemberSignature Language="C#" Value="public DateTime? CreatedDateTimeUtc { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; CreatedDateTimeUtc" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Devices.Provisioning.Service.IndividualEnrollment.CreatedDateTimeUtc" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreatedDateTimeUtc As Nullable(Of DateTime)" />
@@ -228,6 +239,8 @@
         <AssemblyVersion>1.5.1.0</AssemblyVersion>
         <AssemblyVersion>1.5.2.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -258,6 +271,8 @@
         <AssemblyVersion>1.5.1.0</AssemblyVersion>
         <AssemblyVersion>1.5.2.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -268,8 +283,8 @@
         <ReturnType>Microsoft.Azure.Devices.Provisioning.Service.CustomAllocationDefinition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> 
-            Custom allocation definition.  
+        <summary>
+            Custom allocation definition.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -288,6 +303,8 @@
         <AssemblyVersion>1.5.1.0</AssemblyVersion>
         <AssemblyVersion>1.5.2.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -321,6 +338,8 @@
         <AssemblyVersion>1.5.1.0</AssemblyVersion>
         <AssemblyVersion>1.5.2.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -351,6 +370,8 @@
         <AssemblyVersion>1.5.1.0</AssemblyVersion>
         <AssemblyVersion>1.5.2.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -381,6 +402,8 @@
         <AssemblyVersion>1.5.1.0</AssemblyVersion>
         <AssemblyVersion>1.5.2.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -411,6 +434,8 @@
         <AssemblyVersion>1.5.1.0</AssemblyVersion>
         <AssemblyVersion>1.5.2.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -421,7 +446,7 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> 
+        <summary>
             The list of names of IoT hubs the device in this resource can be allocated to. Must be a subset of tenant level list of IoT hubs
             </summary>
         <value>To be added.</value>
@@ -429,7 +454,7 @@
       </Docs>
     </Member>
     <Member MemberName="LastUpdatedDateTimeUtc">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; LastUpdatedDateTimeUtc { get; }" />
+      <MemberSignature Language="C#" Value="public DateTime? LastUpdatedDateTimeUtc { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; LastUpdatedDateTimeUtc" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Devices.Provisioning.Service.IndividualEnrollment.LastUpdatedDateTimeUtc" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastUpdatedDateTimeUtc As Nullable(Of DateTime)" />
@@ -441,6 +466,8 @@
         <AssemblyVersion>1.5.1.0</AssemblyVersion>
         <AssemblyVersion>1.5.2.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -459,7 +486,7 @@
       </Docs>
     </Member>
     <Member MemberName="ProvisioningStatus">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Devices.Provisioning.Service.ProvisioningStatus&gt; ProvisioningStatus { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Devices.Provisioning.Service.ProvisioningStatus? ProvisioningStatus { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Devices.Provisioning.Service.ProvisioningStatus&gt; ProvisioningStatus" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Devices.Provisioning.Service.IndividualEnrollment.ProvisioningStatus" />
       <MemberSignature Language="VB.NET" Value="Public Property ProvisioningStatus As Nullable(Of ProvisioningStatus)" />
@@ -471,6 +498,8 @@
         <AssemblyVersion>1.5.1.0</AssemblyVersion>
         <AssemblyVersion>1.5.2.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -504,6 +533,8 @@
         <AssemblyVersion>1.5.1.0</AssemblyVersion>
         <AssemblyVersion>1.5.2.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -537,6 +568,8 @@
         <AssemblyVersion>1.5.1.0</AssemblyVersion>
         <AssemblyVersion>1.5.2.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -567,6 +600,8 @@
         <AssemblyVersion>1.5.1.0</AssemblyVersion>
         <AssemblyVersion>1.5.2.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -577,7 +612,7 @@
         <ReturnType>Microsoft.Azure.Devices.Provisioning.Service.ReprovisionPolicy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> 
+        <summary>
             The behavior when a device is re-provisioned to an IoT hub.
             </summary>
         <value>To be added.</value>
@@ -597,6 +632,8 @@
         <AssemblyVersion>1.5.1.0</AssemblyVersion>
         <AssemblyVersion>1.5.2.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.1.0</AssemblyVersion>
+        <AssemblyVersion>1.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

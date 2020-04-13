@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
     <AssemblyVersion>5.6.0.0</AssemblyVersion>
+    <AssemblyVersion>6.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.IdentityModel.Protocols.AuthenticationProtocolMessage</BaseTypeName>
@@ -28,6 +29,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -47,6 +49,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="other" Type="Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectMessage" />
@@ -61,28 +64,6 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public OpenIdConnectMessage (Newtonsoft.Json.Linq.JObject json);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Newtonsoft.Json.Linq.JObject json) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectMessage.#ctor(Newtonsoft.Json.Linq.JObject)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (json As JObject)" />
-      <MemberSignature Language="F#" Value="new Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectMessage : Newtonsoft.Json.Linq.JObject -&gt; Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectMessage" Usage="new Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectMessage json" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
-        <AssemblyVersion>5.6.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="json" Type="Newtonsoft.Json.Linq.JObject" />
-      </Parameters>
-      <Docs>
-        <param name="json">the json object from which the instance is created.</param>
-        <summary>
-            Initializes a new instance of the <see cref="T:Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectMessage" /> class.
-            </summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public OpenIdConnectMessage (System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,string[]&gt;&gt; parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, string[]&gt;&gt; parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectMessage.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String[]}})" />
@@ -92,6 +73,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="parameters" Type="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.String[]&gt;&gt;" />
@@ -108,17 +90,46 @@
       <MemberSignature Language="C#" Value="public OpenIdConnectMessage (System.Collections.Specialized.NameValueCollection nameValueCollection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Specialized.NameValueCollection nameValueCollection) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectMessage.#ctor(System.Collections.Specialized.NameValueCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (nameValueCollection As NameValueCollection)" />
       <MemberSignature Language="F#" Value="new Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectMessage : System.Collections.Specialized.NameValueCollection -&gt; Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectMessage" Usage="new Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectMessage nameValueCollection" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="nameValueCollection" Type="System.Collections.Specialized.NameValueCollection" />
       </Parameters>
       <Docs>
         <param name="nameValueCollection">Collection of key value pairs.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectMessage" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OpenIdConnectMessage (object json);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object json) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectMessage.#ctor(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (json As Object)" />
+      <MemberSignature Language="F#" Value="new Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectMessage : obj -&gt; Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectMessage" Usage="new Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectMessage json" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("The 'OpenIdConnectMessage(object json)' constructor is obsolete. Please use 'OpenIdConnectMessage(string json)' instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="json" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="json">The JSON object from which the instance is created.</param>
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectMessage" /> class.
             </summary>
@@ -135,6 +146,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="json" Type="System.String" />
@@ -157,6 +169,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -179,6 +192,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -201,6 +215,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -223,6 +238,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -245,6 +261,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -267,6 +284,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -289,6 +307,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -311,6 +330,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -333,6 +353,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectMessage</ReturnType>
@@ -356,6 +377,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -378,6 +400,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -401,6 +424,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -424,6 +448,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -446,6 +471,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -468,6 +494,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -491,6 +518,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -513,6 +541,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -535,6 +564,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -557,6 +587,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -579,6 +610,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -601,6 +633,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -623,6 +656,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -645,6 +679,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -667,6 +702,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -689,6 +725,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -711,6 +748,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -733,6 +771,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -755,6 +794,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -777,6 +817,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -799,6 +840,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -821,6 +863,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -843,6 +886,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -865,6 +909,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -887,6 +932,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectRequestType</ReturnType>
@@ -909,6 +955,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -931,6 +978,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -953,6 +1001,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -975,6 +1024,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -997,6 +1047,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1019,6 +1070,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1041,6 +1093,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1063,6 +1116,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1085,6 +1139,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1107,6 +1162,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1129,6 +1185,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1151,6 +1208,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1173,6 +1231,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1195,6 +1254,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1217,6 +1277,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Protocols.OpenIdConnect</AssemblyName>
         <AssemblyVersion>5.6.0.0</AssemblyVersion>
+        <AssemblyVersion>6.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

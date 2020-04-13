@@ -118,12 +118,18 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Azure.WebJobs.Extensions.DurableTask.DurableOrchestrationStatus&gt;&gt; GetStatusAsync (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.WebJobs.Extensions.DurableTask.DurableOrchestrationStatus&gt;&gt; GetStatusAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.WebJobs.Extensions.DurableTask.IDurableOrchestrationClient.GetStatusAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStatusAsync (Optional cancellationToken As CancellationToken = null) As Task(Of IList(Of DurableOrchestrationStatus))" />
       <MemberSignature Language="F#" Value="abstract member GetStatusAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Azure.WebJobs.Extensions.DurableTask.DurableOrchestrationStatus&gt;&gt;" Usage="iDurableOrchestrationClient.GetStatusAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.WebJobs.Extensions.DurableTask</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Azure.WebJobs.Extensions.DurableTask.DurableOrchestrationStatus&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -143,12 +149,18 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.WebJobs.Extensions.DurableTask.OrchestrationStatusQueryResult&gt; GetStatusAsync (Microsoft.Azure.WebJobs.Extensions.DurableTask.OrchestrationStatusQueryCondition condition, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.WebJobs.Extensions.DurableTask.OrchestrationStatusQueryResult&gt; GetStatusAsync(class Microsoft.Azure.WebJobs.Extensions.DurableTask.OrchestrationStatusQueryCondition condition, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.WebJobs.Extensions.DurableTask.IDurableOrchestrationClient.GetStatusAsync(Microsoft.Azure.WebJobs.Extensions.DurableTask.OrchestrationStatusQueryCondition,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStatusAsync (condition As OrchestrationStatusQueryCondition, cancellationToken As CancellationToken) As Task(Of OrchestrationStatusQueryResult)" />
       <MemberSignature Language="F#" Value="abstract member GetStatusAsync : Microsoft.Azure.WebJobs.Extensions.DurableTask.OrchestrationStatusQueryCondition * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.WebJobs.Extensions.DurableTask.OrchestrationStatusQueryResult&gt;" Usage="iDurableOrchestrationClient.GetStatusAsync (condition, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.WebJobs.Extensions.DurableTask</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.WebJobs.Extensions.DurableTask.OrchestrationStatusQueryResult&gt;</ReturnType>
       </ReturnValue>
@@ -167,15 +179,21 @@
       </Docs>
     </Member>
     <Member MemberName="GetStatusAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Azure.WebJobs.Extensions.DurableTask.DurableOrchestrationStatus&gt;&gt; GetStatusAsync (DateTime createdTimeFrom, Nullable&lt;DateTime&gt; createdTimeTo, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.WebJobs.Extensions.DurableTask.OrchestrationRuntimeStatus&gt; runtimeStatus, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Azure.WebJobs.Extensions.DurableTask.DurableOrchestrationStatus&gt;&gt; GetStatusAsync (DateTime createdTimeFrom, DateTime? createdTimeTo, System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.WebJobs.Extensions.DurableTask.OrchestrationRuntimeStatus&gt; runtimeStatus, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.WebJobs.Extensions.DurableTask.DurableOrchestrationStatus&gt;&gt; GetStatusAsync(valuetype System.DateTime createdTimeFrom, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; createdTimeTo, class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Azure.WebJobs.Extensions.DurableTask.OrchestrationRuntimeStatus&gt; runtimeStatus, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.WebJobs.Extensions.DurableTask.IDurableOrchestrationClient.GetStatusAsync(System.DateTime,System.Nullable{System.DateTime},System.Collections.Generic.IEnumerable{Microsoft.Azure.WebJobs.Extensions.DurableTask.OrchestrationRuntimeStatus},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStatusAsync (createdTimeFrom As DateTime, createdTimeTo As Nullable(Of DateTime), runtimeStatus As IEnumerable(Of OrchestrationRuntimeStatus), Optional cancellationToken As CancellationToken = null) As Task(Of IList(Of DurableOrchestrationStatus))" />
       <MemberSignature Language="F#" Value="abstract member GetStatusAsync : DateTime * Nullable&lt;DateTime&gt; * seq&lt;Microsoft.Azure.WebJobs.Extensions.DurableTask.OrchestrationRuntimeStatus&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Azure.WebJobs.Extensions.DurableTask.DurableOrchestrationStatus&gt;&gt;" Usage="iDurableOrchestrationClient.GetStatusAsync (createdTimeFrom, createdTimeTo, runtimeStatus, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.WebJobs.Extensions.DurableTask</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Azure.WebJobs.Extensions.DurableTask.DurableOrchestrationStatus&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -229,6 +247,34 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ListInstancesAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.WebJobs.Extensions.DurableTask.OrchestrationStatusQueryResult&gt; ListInstancesAsync (Microsoft.Azure.WebJobs.Extensions.DurableTask.OrchestrationStatusQueryCondition condition, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.WebJobs.Extensions.DurableTask.OrchestrationStatusQueryResult&gt; ListInstancesAsync(class Microsoft.Azure.WebJobs.Extensions.DurableTask.OrchestrationStatusQueryCondition condition, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.WebJobs.Extensions.DurableTask.IDurableOrchestrationClient.ListInstancesAsync(Microsoft.Azure.WebJobs.Extensions.DurableTask.OrchestrationStatusQueryCondition,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ListInstancesAsync (condition As OrchestrationStatusQueryCondition, cancellationToken As CancellationToken) As Task(Of OrchestrationStatusQueryResult)" />
+      <MemberSignature Language="F#" Value="abstract member ListInstancesAsync : Microsoft.Azure.WebJobs.Extensions.DurableTask.OrchestrationStatusQueryCondition * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.WebJobs.Extensions.DurableTask.OrchestrationStatusQueryResult&gt;" Usage="iDurableOrchestrationClient.ListInstancesAsync (condition, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.WebJobs.Extensions.DurableTask</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.WebJobs.Extensions.DurableTask.OrchestrationStatusQueryResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="condition" Type="Microsoft.Azure.WebJobs.Extensions.DurableTask.OrchestrationStatusQueryCondition" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="condition">Return orchestration instances that match the specified conditions.</param>
+        <param name="cancellationToken">Cancellation token that can be used to cancel the status query operation.</param>
+        <summary>
+            Gets the status of all orchestration instances with paging that match the specified conditions.
+            </summary>
+        <returns>Returns each page of orchestration status for all instances and continuation token of next page.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="PurgeInstanceHistoryAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.WebJobs.Extensions.DurableTask.PurgeHistoryResult&gt; PurgeInstanceHistoryAsync (string instanceId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.WebJobs.Extensions.DurableTask.PurgeHistoryResult&gt; PurgeInstanceHistoryAsync(string instanceId) cil managed" />
@@ -256,7 +302,7 @@
       </Docs>
     </Member>
     <Member MemberName="PurgeInstanceHistoryAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.WebJobs.Extensions.DurableTask.PurgeHistoryResult&gt; PurgeInstanceHistoryAsync (DateTime createdTimeFrom, Nullable&lt;DateTime&gt; createdTimeTo, System.Collections.Generic.IEnumerable&lt;DurableTask.Core.OrchestrationStatus&gt; runtimeStatus);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.WebJobs.Extensions.DurableTask.PurgeHistoryResult&gt; PurgeInstanceHistoryAsync (DateTime createdTimeFrom, DateTime? createdTimeTo, System.Collections.Generic.IEnumerable&lt;DurableTask.Core.OrchestrationStatus&gt; runtimeStatus);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.WebJobs.Extensions.DurableTask.PurgeHistoryResult&gt; PurgeInstanceHistoryAsync(valuetype System.DateTime createdTimeFrom, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; createdTimeTo, class System.Collections.Generic.IEnumerable`1&lt;valuetype DurableTask.Core.OrchestrationStatus&gt; runtimeStatus) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.WebJobs.Extensions.DurableTask.IDurableOrchestrationClient.PurgeInstanceHistoryAsync(System.DateTime,System.Nullable{System.DateTime},System.Collections.Generic.IEnumerable{DurableTask.Core.OrchestrationStatus})" />
       <MemberSignature Language="VB.NET" Value="Public Function PurgeInstanceHistoryAsync (createdTimeFrom As DateTime, createdTimeTo As Nullable(Of DateTime), runtimeStatus As IEnumerable(Of OrchestrationStatus)) As Task(Of PurgeHistoryResult)" />
@@ -492,6 +538,12 @@
             </summary>
         <returns>A task that completes when the terminate message is enqueued if necessary.</returns>
         <remarks>
+          <para>
+            A terminated instance will eventually transition into the <see cref="F:Microsoft.Azure.WebJobs.Extensions.DurableTask.OrchestrationRuntimeStatus.Terminated" /> state.
+            However, this transition will not happen immediately. Rather, the terminate operation will be queued in the task hub
+            along with other operations for that instance. You can use the <see cref="M:Microsoft.Azure.WebJobs.Extensions.DurableTask.IDurableOrchestrationClient.GetStatusAsync(System.String,System.Boolean,System.Boolean,System.Boolean)" />
+            method to know when a terminated instance has actually reached the Terminated state.
+            </para>
           <para>
             Terminating an orchestration instance has no effect on any in-flight activity function executions
             or sub-orchestrations that were started by the current orchestration instance.

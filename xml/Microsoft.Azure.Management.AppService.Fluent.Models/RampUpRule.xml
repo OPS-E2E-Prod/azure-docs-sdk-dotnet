@@ -10,6 +10,8 @@
     <AssemblyVersion>1.0.0.62</AssemblyVersion>
     <AssemblyVersion>1.0.0.63</AssemblyVersion>
     <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -36,6 +38,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -46,7 +50,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public RampUpRule (string actionHostName = default, Nullable&lt;double&gt; reroutePercentage = default, Nullable&lt;double&gt; changeStep = default, Nullable&lt;int&gt; changeIntervalInMinutes = default, Nullable&lt;double&gt; minReroutePercentage = default, Nullable&lt;double&gt; maxReroutePercentage = default, string changeDecisionCallbackUrl = default, string name = default);" />
+      <MemberSignature Language="C#" Value="public RampUpRule (string actionHostName = default, double? reroutePercentage = default, double? changeStep = default, int? changeIntervalInMinutes = default, double? minReroutePercentage = default, double? maxReroutePercentage = default, string changeDecisionCallbackUrl = default, string name = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string actionHostName, valuetype System.Nullable`1&lt;float64&gt; reroutePercentage, valuetype System.Nullable`1&lt;float64&gt; changeStep, valuetype System.Nullable`1&lt;int32&gt; changeIntervalInMinutes, valuetype System.Nullable`1&lt;float64&gt; minReroutePercentage, valuetype System.Nullable`1&lt;float64&gt; maxReroutePercentage, string changeDecisionCallbackUrl, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.Models.RampUpRule.#ctor(System.String,System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Int32},System.Nullable{System.Double},System.Nullable{System.Double},System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional actionHostName As String = null, Optional reroutePercentage As Nullable(Of Double) = null, Optional changeStep As Nullable(Of Double) = null, Optional changeIntervalInMinutes As Nullable(Of Integer) = null, Optional minReroutePercentage As Nullable(Of Double) = null, Optional maxReroutePercentage As Nullable(Of Double) = null, Optional changeDecisionCallbackUrl As String = null, Optional name As String = null)" />
@@ -58,6 +62,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="actionHostName" Type="System.String" />
@@ -119,6 +125,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -150,6 +158,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -171,7 +181,7 @@
       </Docs>
     </Member>
     <Member MemberName="ChangeIntervalInMinutes">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; ChangeIntervalInMinutes { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? ChangeIntervalInMinutes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; ChangeIntervalInMinutes" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.AppService.Fluent.Models.RampUpRule.ChangeIntervalInMinutes" />
       <MemberSignature Language="VB.NET" Value="Public Property ChangeIntervalInMinutes As Nullable(Of Integer)" />
@@ -183,6 +193,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -202,7 +214,7 @@
       </Docs>
     </Member>
     <Member MemberName="ChangeStep">
-      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; ChangeStep { get; set; }" />
+      <MemberSignature Language="C#" Value="public double? ChangeStep { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; ChangeStep" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.AppService.Fluent.Models.RampUpRule.ChangeStep" />
       <MemberSignature Language="VB.NET" Value="Public Property ChangeStep As Nullable(Of Double)" />
@@ -214,6 +226,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -243,7 +257,7 @@
       </Docs>
     </Member>
     <Member MemberName="MaxReroutePercentage">
-      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; MaxReroutePercentage { get; set; }" />
+      <MemberSignature Language="C#" Value="public double? MaxReroutePercentage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; MaxReroutePercentage" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.AppService.Fluent.Models.RampUpRule.MaxReroutePercentage" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxReroutePercentage As Nullable(Of Double)" />
@@ -255,6 +269,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -274,7 +290,7 @@
       </Docs>
     </Member>
     <Member MemberName="MinReroutePercentage">
-      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; MinReroutePercentage { get; set; }" />
+      <MemberSignature Language="C#" Value="public double? MinReroutePercentage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; MinReroutePercentage" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.AppService.Fluent.Models.RampUpRule.MinReroutePercentage" />
       <MemberSignature Language="VB.NET" Value="Public Property MinReroutePercentage As Nullable(Of Double)" />
@@ -286,6 +302,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -317,6 +335,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -337,7 +357,7 @@
       </Docs>
     </Member>
     <Member MemberName="ReroutePercentage">
-      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; ReroutePercentage { get; set; }" />
+      <MemberSignature Language="C#" Value="public double? ReroutePercentage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; ReroutePercentage" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.AppService.Fluent.Models.RampUpRule.ReroutePercentage" />
       <MemberSignature Language="VB.NET" Value="Public Property ReroutePercentage As Nullable(Of Double)" />
@@ -349,6 +369,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

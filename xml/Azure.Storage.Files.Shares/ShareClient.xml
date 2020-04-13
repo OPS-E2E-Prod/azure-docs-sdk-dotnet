@@ -9,6 +9,7 @@
     <AssemblyVersion>12.0.0.0</AssemblyVersion>
     <AssemblyVersion>12.0.1.0</AssemblyVersion>
     <AssemblyVersion>12.1.0.0</AssemblyVersion>
+    <AssemblyVersion>12.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -33,6 +34,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -55,6 +57,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="connectionString" Type="System.String" />
@@ -90,6 +93,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="shareUri" Type="System.Uri" />
@@ -124,6 +128,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="connectionString" Type="System.String" />
@@ -165,6 +170,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="shareUri" Type="System.Uri" />
@@ -203,6 +209,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -216,9 +223,10 @@
       </Docs>
     </Member>
     <Member MemberName="Create">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt; Create (System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = default, Nullable&lt;int&gt; quotaInGB = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt; Create (System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = default, int? quotaInGB = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Files.Shares.Models.ShareInfo&gt; Create(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata, valuetype System.Nullable`1&lt;int32&gt; quotaInGB, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareClient.Create(System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Create (Optional metadata As IDictionary(Of String, String) = null, Optional quotaInGB As Nullable(Of Integer) = null, Optional cancellationToken As CancellationToken = null) As Response(Of ShareInfo)" />
       <MemberSignature Language="F#" Value="abstract member Create : System.Collections.Generic.IDictionary&lt;string, string&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt;&#xA;override this.Create : System.Collections.Generic.IDictionary&lt;string, string&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt;" Usage="shareClient.Create (metadata, quotaInGB, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -226,6 +234,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt;</ReturnType>
@@ -264,9 +273,10 @@
       </Docs>
     </Member>
     <Member MemberName="CreateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt;&gt; CreateAsync (System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = default, Nullable&lt;int&gt; quotaInGB = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt;&gt; CreateAsync (System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = default, int? quotaInGB = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Files.Shares.Models.ShareInfo&gt;&gt; CreateAsync(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata, valuetype System.Nullable`1&lt;int32&gt; quotaInGB, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareClient.CreateAsync(System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateAsync (Optional metadata As IDictionary(Of String, String) = null, Optional quotaInGB As Nullable(Of Integer) = null, Optional cancellationToken As CancellationToken = null) As Task(Of Response(Of ShareInfo))" />
       <MemberSignature Language="F#" Value="abstract member CreateAsync : System.Collections.Generic.IDictionary&lt;string, string&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt;&gt;&#xA;override this.CreateAsync : System.Collections.Generic.IDictionary&lt;string, string&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt;&gt;" Usage="shareClient.CreateAsync (metadata, quotaInGB, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -274,6 +284,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt;&gt;</ReturnType>
@@ -315,6 +326,7 @@
       <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Files.Shares.ShareDirectoryClient&gt; CreateDirectory (string directoryName, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = default, Azure.Storage.Files.Shares.Models.FileSmbProperties smbProperties = default, string filePermission = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Files.Shares.ShareDirectoryClient&gt; CreateDirectory(string directoryName, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata, class Azure.Storage.Files.Shares.Models.FileSmbProperties smbProperties, string filePermission, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareClient.CreateDirectory(System.String,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Storage.Files.Shares.Models.FileSmbProperties,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateDirectory (directoryName As String, Optional metadata As IDictionary(Of String, String) = null, Optional smbProperties As FileSmbProperties = null, Optional filePermission As String = null, Optional cancellationToken As CancellationToken = null) As Response(Of ShareDirectoryClient)" />
       <MemberSignature Language="F#" Value="abstract member CreateDirectory : string * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Storage.Files.Shares.Models.FileSmbProperties * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Files.Shares.ShareDirectoryClient&gt;&#xA;override this.CreateDirectory : string * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Storage.Files.Shares.Models.FileSmbProperties * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Files.Shares.ShareDirectoryClient&gt;" Usage="shareClient.CreateDirectory (directoryName, metadata, smbProperties, filePermission, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -322,6 +334,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Files.Shares.ShareDirectoryClient&gt;</ReturnType>
@@ -370,6 +383,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.ShareDirectoryClient&gt;&gt; CreateDirectoryAsync (string directoryName, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = default, Azure.Storage.Files.Shares.Models.FileSmbProperties smbProperties = default, string filePermission = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Files.Shares.ShareDirectoryClient&gt;&gt; CreateDirectoryAsync(string directoryName, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata, class Azure.Storage.Files.Shares.Models.FileSmbProperties smbProperties, string filePermission, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareClient.CreateDirectoryAsync(System.String,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Storage.Files.Shares.Models.FileSmbProperties,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateDirectoryAsync (directoryName As String, Optional metadata As IDictionary(Of String, String) = null, Optional smbProperties As FileSmbProperties = null, Optional filePermission As String = null, Optional cancellationToken As CancellationToken = null) As Task(Of Response(Of ShareDirectoryClient))" />
       <MemberSignature Language="F#" Value="abstract member CreateDirectoryAsync : string * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Storage.Files.Shares.Models.FileSmbProperties * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.ShareDirectoryClient&gt;&gt;&#xA;override this.CreateDirectoryAsync : string * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Storage.Files.Shares.Models.FileSmbProperties * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.ShareDirectoryClient&gt;&gt;" Usage="shareClient.CreateDirectoryAsync (directoryName, metadata, smbProperties, filePermission, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -377,6 +391,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.ShareDirectoryClient&gt;&gt;</ReturnType>
@@ -421,10 +436,105 @@
              </remarks>
       </Docs>
     </Member>
+    <Member MemberName="CreateIfNotExists">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt; CreateIfNotExists (System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = default, int? quotaInGB = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Files.Shares.Models.ShareInfo&gt; CreateIfNotExists(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata, valuetype System.Nullable`1&lt;int32&gt; quotaInGB, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareClient.CreateIfNotExists(System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateIfNotExists (Optional metadata As IDictionary(Of String, String) = null, Optional quotaInGB As Nullable(Of Integer) = null, Optional cancellationToken As CancellationToken = null) As Response(Of ShareInfo)" />
+      <MemberSignature Language="F#" Value="abstract member CreateIfNotExists : System.Collections.Generic.IDictionary&lt;string, string&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt;&#xA;override this.CreateIfNotExists : System.Collections.Generic.IDictionary&lt;string, string&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt;" Usage="shareClient.CreateIfNotExists (metadata, quotaInGB, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Files.Shares</AssemblyName>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadata" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="quotaInGB" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="metadata">
+             Optional custom metadata to set for this share.
+             </param>
+        <param name="quotaInGB">
+             Optional. Maximum size of the share in bytes.  If unspecified, use the service's default value.
+             </param>
+        <param name="cancellationToken">
+             Optional <see cref="T:System.Threading.CancellationToken" /> to propagate
+             notifications that the operation should be cancelled.
+             </param>
+        <summary>
+             The <see cref="M:Azure.Storage.Files.Shares.ShareClient.CreateIfNotExists(System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{System.Int32},System.Threading.CancellationToken)" /> operation creates a new share
+             under the specified account. If a share with the same name
+             already exists, it is not changed.
+            
+             For more information, see <see href="https://docs.microsoft.com/rest/api/storageservices/create-share" />.
+             </summary>
+        <returns>
+             A <see cref="T:Azure.Response`1" /> describing the newly
+             created share.  If the share already exists, <c>null</c>.
+             </returns>
+        <remarks>
+             A <see cref="T:Azure.RequestFailedException" /> will be thrown if
+             a failure occurs.
+             </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateIfNotExistsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt;&gt; CreateIfNotExistsAsync (System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = default, int? quotaInGB = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Files.Shares.Models.ShareInfo&gt;&gt; CreateIfNotExistsAsync(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata, valuetype System.Nullable`1&lt;int32&gt; quotaInGB, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareClient.CreateIfNotExistsAsync(System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateIfNotExistsAsync (Optional metadata As IDictionary(Of String, String) = null, Optional quotaInGB As Nullable(Of Integer) = null, Optional cancellationToken As CancellationToken = null) As Task(Of Response(Of ShareInfo))" />
+      <MemberSignature Language="F#" Value="abstract member CreateIfNotExistsAsync : System.Collections.Generic.IDictionary&lt;string, string&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt;&gt;&#xA;override this.CreateIfNotExistsAsync : System.Collections.Generic.IDictionary&lt;string, string&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt;&gt;" Usage="shareClient.CreateIfNotExistsAsync (metadata, quotaInGB, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Files.Shares</AssemblyName>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadata" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="quotaInGB" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="metadata">
+             Optional custom metadata to set for this share.
+             </param>
+        <param name="quotaInGB">
+             Optional. Maximum size of the share in bytes.  If unspecified, use the service's default value.
+             </param>
+        <param name="cancellationToken">
+             Optional <see cref="T:System.Threading.CancellationToken" /> to propagate
+             notifications that the operation should be cancelled.
+             </param>
+        <summary>
+             The <see cref="M:Azure.Storage.Files.Shares.ShareClient.CreateIfNotExistsAsync(System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{System.Int32},System.Threading.CancellationToken)" /> operation creates a new share
+             under the specified account. If a share with the same name
+             already exists, it is not changed.
+            
+             For more information, see <see href="https://docs.microsoft.com/rest/api/storageservices/create-share" />.
+             </summary>
+        <returns>
+             A <see cref="T:Azure.Response`1" /> describing the newly
+             created share.  If the share already exists, <c>null</c>.
+             </returns>
+        <remarks>
+             A <see cref="T:Azure.RequestFailedException" /> will be thrown if
+             a failure occurs.
+             </remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CreatePermission">
       <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Files.Shares.Models.PermissionInfo&gt; CreatePermission (string permission, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Files.Shares.Models.PermissionInfo&gt; CreatePermission(string permission, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareClient.CreatePermission(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreatePermission (permission As String, Optional cancellationToken As CancellationToken = null) As Response(Of PermissionInfo)" />
       <MemberSignature Language="F#" Value="abstract member CreatePermission : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Files.Shares.Models.PermissionInfo&gt;&#xA;override this.CreatePermission : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Files.Shares.Models.PermissionInfo&gt;" Usage="shareClient.CreatePermission (permission, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -432,6 +542,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Files.Shares.Models.PermissionInfo&gt;</ReturnType>
@@ -464,6 +575,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.PermissionInfo&gt;&gt; CreatePermissionAsync (string permission, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Files.Shares.Models.PermissionInfo&gt;&gt; CreatePermissionAsync(string permission, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareClient.CreatePermissionAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreatePermissionAsync (permission As String, Optional cancellationToken As CancellationToken = null) As Task(Of Response(Of PermissionInfo))" />
       <MemberSignature Language="F#" Value="abstract member CreatePermissionAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.PermissionInfo&gt;&gt;&#xA;override this.CreatePermissionAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.PermissionInfo&gt;&gt;" Usage="shareClient.CreatePermissionAsync (permission, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -471,6 +583,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.PermissionInfo&gt;&gt;</ReturnType>
@@ -503,6 +616,7 @@
       <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareSnapshotInfo&gt; CreateSnapshot (System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Files.Shares.Models.ShareSnapshotInfo&gt; CreateSnapshot(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareClient.CreateSnapshot(System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateSnapshot (Optional metadata As IDictionary(Of String, String) = null, Optional cancellationToken As CancellationToken = null) As Response(Of ShareSnapshotInfo)" />
       <MemberSignature Language="F#" Value="abstract member CreateSnapshot : System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareSnapshotInfo&gt;&#xA;override this.CreateSnapshot : System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareSnapshotInfo&gt;" Usage="shareClient.CreateSnapshot (metadata, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -510,6 +624,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareSnapshotInfo&gt;</ReturnType>
@@ -545,6 +660,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareSnapshotInfo&gt;&gt; CreateSnapshotAsync (System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Files.Shares.Models.ShareSnapshotInfo&gt;&gt; CreateSnapshotAsync(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareClient.CreateSnapshotAsync(System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateSnapshotAsync (Optional metadata As IDictionary(Of String, String) = null, Optional cancellationToken As CancellationToken = null) As Task(Of Response(Of ShareSnapshotInfo))" />
       <MemberSignature Language="F#" Value="abstract member CreateSnapshotAsync : System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareSnapshotInfo&gt;&gt;&#xA;override this.CreateSnapshotAsync : System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareSnapshotInfo&gt;&gt;" Usage="shareClient.CreateSnapshotAsync (metadata, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -552,6 +668,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareSnapshotInfo&gt;&gt;</ReturnType>
@@ -587,6 +704,7 @@
       <MemberSignature Language="C#" Value="public virtual Azure.Response Delete (bool includeSnapshots = true, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response Delete(bool includeSnapshots, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareClient.Delete(System.Boolean,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (Optional includeSnapshots As Boolean = true, Optional cancellationToken As CancellationToken = null) As Response" />
       <MemberSignature Language="F#" Value="abstract member Delete : bool * System.Threading.CancellationToken -&gt; Azure.Response&#xA;override this.Delete : bool * System.Threading.CancellationToken -&gt; Azure.Response" Usage="shareClient.Delete (includeSnapshots, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -594,6 +712,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response</ReturnType>
@@ -630,6 +749,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; DeleteAsync (bool includeSnapshots = true, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; DeleteAsync(bool includeSnapshots, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareClient.DeleteAsync(System.Boolean,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (Optional includeSnapshots As Boolean = true, Optional cancellationToken As CancellationToken = null) As Task(Of Response)" />
       <MemberSignature Language="F#" Value="abstract member DeleteAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.DeleteAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="shareClient.DeleteAsync (includeSnapshots, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -637,6 +757,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
@@ -673,6 +794,7 @@
       <MemberSignature Language="C#" Value="public virtual Azure.Response DeleteDirectory (string directoryName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response DeleteDirectory(string directoryName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareClient.DeleteDirectory(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteDirectory (directoryName As String, Optional cancellationToken As CancellationToken = null) As Response" />
       <MemberSignature Language="F#" Value="abstract member DeleteDirectory : string * System.Threading.CancellationToken -&gt; Azure.Response&#xA;override this.DeleteDirectory : string * System.Threading.CancellationToken -&gt; Azure.Response" Usage="shareClient.DeleteDirectory (directoryName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -680,6 +802,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response</ReturnType>
@@ -714,6 +837,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; DeleteDirectoryAsync (string directoryName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; DeleteDirectoryAsync(string directoryName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareClient.DeleteDirectoryAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteDirectoryAsync (directoryName As String, Optional cancellationToken As CancellationToken = null) As Task(Of Response)" />
       <MemberSignature Language="F#" Value="abstract member DeleteDirectoryAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.DeleteDirectoryAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="shareClient.DeleteDirectoryAsync (directoryName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -721,6 +845,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
@@ -751,10 +876,165 @@
              </remarks>
       </Docs>
     </Member>
+    <Member MemberName="DeleteIfExists">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;bool&gt; DeleteIfExists (bool includeSnapshots = true, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;bool&gt; DeleteIfExists(bool includeSnapshots, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareClient.DeleteIfExists(System.Boolean,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteIfExists (Optional includeSnapshots As Boolean = true, Optional cancellationToken As CancellationToken = null) As Response(Of Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteIfExists : bool * System.Threading.CancellationToken -&gt; Azure.Response&lt;bool&gt;&#xA;override this.DeleteIfExists : bool * System.Threading.CancellationToken -&gt; Azure.Response&lt;bool&gt;" Usage="shareClient.DeleteIfExists (includeSnapshots, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Files.Shares</AssemblyName>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="includeSnapshots" Type="System.Boolean" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="includeSnapshots">
+             A value indicating whether to delete a share's snapshots in addition
+             to the share itself.
+             </param>
+        <param name="cancellationToken">
+             Optional <see cref="T:System.Threading.CancellationToken" /> to propagate
+             notifications that the operation should be cancelled.
+             </param>
+        <summary>
+             Marks the specified share or share snapshot for deletion, if it exists.
+            
+             For more information, see <see href="https://docs.microsoft.com/rest/api/storageservices/delete-share" />.
+             </summary>
+        <returns>
+             A <see cref="T:Azure.Response" /> on successfully deleting.
+             </returns>
+        <remarks>
+             A <see cref="T:Azure.RequestFailedException" /> will be thrown if
+             a failure occurs.
+             </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteIfExistsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;bool&gt;&gt; DeleteIfExistsAsync (bool includeSnapshots = true, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;bool&gt;&gt; DeleteIfExistsAsync(bool includeSnapshots, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareClient.DeleteIfExistsAsync(System.Boolean,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteIfExistsAsync (Optional includeSnapshots As Boolean = true, Optional cancellationToken As CancellationToken = null) As Task(Of Response(Of Boolean))" />
+      <MemberSignature Language="F#" Value="abstract member DeleteIfExistsAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;bool&gt;&gt;&#xA;override this.DeleteIfExistsAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;bool&gt;&gt;" Usage="shareClient.DeleteIfExistsAsync (includeSnapshots, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Files.Shares</AssemblyName>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Boolean&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="includeSnapshots" Type="System.Boolean" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="includeSnapshots">
+             A value indicating whether to delete a share's snapshots in addition
+             to the share itself.
+             </param>
+        <param name="cancellationToken">
+             Optional <see cref="T:System.Threading.CancellationToken" /> to propagate
+             notifications that the operation should be cancelled.
+             </param>
+        <summary>
+             Marks the specified share or share snapshot for deletion, if it exists.
+            
+             For more information, see <see href="https://docs.microsoft.com/rest/api/storageservices/delete-share" />.
+             </summary>
+        <returns>
+             A <see cref="T:Azure.Response" /> on successfully deleting.
+             </returns>
+        <remarks>
+             A <see cref="T:Azure.RequestFailedException" /> will be thrown if
+             a failure occurs.
+             </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Exists">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;bool&gt; Exists (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;bool&gt; Exists(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareClient.Exists(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Exists (Optional cancellationToken As CancellationToken = null) As Response(Of Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Exists : System.Threading.CancellationToken -&gt; Azure.Response&lt;bool&gt;&#xA;override this.Exists : System.Threading.CancellationToken -&gt; Azure.Response&lt;bool&gt;" Usage="shareClient.Exists cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Files.Shares</AssemblyName>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">
+            Optional <see cref="T:System.Threading.CancellationToken" /> to propagate
+            notifications that the operation should be cancelled.
+            </param>
+        <summary>
+            The <see cref="M:Azure.Storage.Files.Shares.ShareClient.Exists(System.Threading.CancellationToken)" /> operation can be called on a
+            <see cref="T:Azure.Storage.Files.Shares.ShareClient" /> to see if the associated share
+            exists on the storage account in the storage service.
+            </summary>
+        <returns>
+            Returns true if the share exists.
+            </returns>
+        <remarks>
+            A <see cref="T:Azure.RequestFailedException" /> will be thrown if
+            a failure occurs.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExistsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;bool&gt;&gt; ExistsAsync (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;bool&gt;&gt; ExistsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareClient.ExistsAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ExistsAsync (Optional cancellationToken As CancellationToken = null) As Task(Of Response(Of Boolean))" />
+      <MemberSignature Language="F#" Value="abstract member ExistsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;bool&gt;&gt;&#xA;override this.ExistsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;bool&gt;&gt;" Usage="shareClient.ExistsAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Files.Shares</AssemblyName>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Boolean&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">
+            Optional <see cref="T:System.Threading.CancellationToken" /> to propagate
+            notifications that the operation should be cancelled.
+            </param>
+        <summary>
+            The <see cref="M:Azure.Storage.Files.Shares.ShareClient.ExistsAsync(System.Threading.CancellationToken)" /> operation can be called on a
+            <see cref="T:Azure.Storage.Files.Shares.ShareClient" /> to see if the associated share
+            exists on the storage account in the storage service.
+            </summary>
+        <returns>
+            Returns true if the share exists.
+            </returns>
+        <remarks>
+            A <see cref="T:Azure.RequestFailedException" /> will be thrown if
+            a failure occurs.
+            </remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetAccessPolicy">
       <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;System.Collections.Generic.IEnumerable&lt;Azure.Storage.Files.Shares.Models.ShareSignedIdentifier&gt;&gt; GetAccessPolicy (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class Azure.Storage.Files.Shares.Models.ShareSignedIdentifier&gt;&gt; GetAccessPolicy(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareClient.GetAccessPolicy(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAccessPolicy (Optional cancellationToken As CancellationToken = null) As Response(Of IEnumerable(Of ShareSignedIdentifier))" />
       <MemberSignature Language="F#" Value="abstract member GetAccessPolicy : System.Threading.CancellationToken -&gt; Azure.Response&lt;seq&lt;Azure.Storage.Files.Shares.Models.ShareSignedIdentifier&gt;&gt;&#xA;override this.GetAccessPolicy : System.Threading.CancellationToken -&gt; Azure.Response&lt;seq&lt;Azure.Storage.Files.Shares.Models.ShareSignedIdentifier&gt;&gt;" Usage="shareClient.GetAccessPolicy cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -762,6 +1042,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;System.Collections.Generic.IEnumerable&lt;Azure.Storage.Files.Shares.Models.ShareSignedIdentifier&gt;&gt;</ReturnType>
@@ -795,6 +1076,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IEnumerable&lt;Azure.Storage.Files.Shares.Models.ShareSignedIdentifier&gt;&gt;&gt; GetAccessPolicyAsync (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class Azure.Storage.Files.Shares.Models.ShareSignedIdentifier&gt;&gt;&gt; GetAccessPolicyAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareClient.GetAccessPolicyAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAccessPolicyAsync (Optional cancellationToken As CancellationToken = null) As Task(Of Response(Of IEnumerable(Of ShareSignedIdentifier)))" />
       <MemberSignature Language="F#" Value="abstract member GetAccessPolicyAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;seq&lt;Azure.Storage.Files.Shares.Models.ShareSignedIdentifier&gt;&gt;&gt;&#xA;override this.GetAccessPolicyAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;seq&lt;Azure.Storage.Files.Shares.Models.ShareSignedIdentifier&gt;&gt;&gt;" Usage="shareClient.GetAccessPolicyAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -802,6 +1084,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IEnumerable&lt;Azure.Storage.Files.Shares.Models.ShareSignedIdentifier&gt;&gt;&gt;</ReturnType>
@@ -843,6 +1126,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Storage.Files.Shares.ShareDirectoryClient</ReturnType>
@@ -866,6 +1150,7 @@
       <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;string&gt; GetPermission (string filePermissionKey = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;string&gt; GetPermission(string filePermissionKey, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareClient.GetPermission(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPermission (Optional filePermissionKey As String = null, Optional cancellationToken As CancellationToken = null) As Response(Of String)" />
       <MemberSignature Language="F#" Value="abstract member GetPermission : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;string&gt;&#xA;override this.GetPermission : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;string&gt;" Usage="shareClient.GetPermission (filePermissionKey, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -873,6 +1158,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;System.String&gt;</ReturnType>
@@ -902,6 +1188,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;string&gt;&gt; GetPermissionAsync (string filePermissionKey = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;string&gt;&gt; GetPermissionAsync(string filePermissionKey, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareClient.GetPermissionAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPermissionAsync (Optional filePermissionKey As String = null, Optional cancellationToken As CancellationToken = null) As Task(Of Response(Of String))" />
       <MemberSignature Language="F#" Value="abstract member GetPermissionAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;string&gt;&gt;&#xA;override this.GetPermissionAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;string&gt;&gt;" Usage="shareClient.GetPermissionAsync (filePermissionKey, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -909,6 +1196,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;System.String&gt;&gt;</ReturnType>
@@ -938,6 +1226,7 @@
       <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareProperties&gt; GetProperties (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Files.Shares.Models.ShareProperties&gt; GetProperties(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareClient.GetProperties(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProperties (Optional cancellationToken As CancellationToken = null) As Response(Of ShareProperties)" />
       <MemberSignature Language="F#" Value="abstract member GetProperties : System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareProperties&gt;&#xA;override this.GetProperties : System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareProperties&gt;" Usage="shareClient.GetProperties cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -945,6 +1234,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareProperties&gt;</ReturnType>
@@ -978,6 +1268,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareProperties&gt;&gt; GetPropertiesAsync (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Files.Shares.Models.ShareProperties&gt;&gt; GetPropertiesAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareClient.GetPropertiesAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPropertiesAsync (Optional cancellationToken As CancellationToken = null) As Task(Of Response(Of ShareProperties))" />
       <MemberSignature Language="F#" Value="abstract member GetPropertiesAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareProperties&gt;&gt;&#xA;override this.GetPropertiesAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareProperties&gt;&gt;" Usage="shareClient.GetPropertiesAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -985,6 +1276,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareProperties&gt;&gt;</ReturnType>
@@ -1026,6 +1318,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Storage.Files.Shares.ShareDirectoryClient</ReturnType>
@@ -1045,6 +1338,7 @@
       <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareStatistics&gt; GetStatistics (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Files.Shares.Models.ShareStatistics&gt; GetStatistics(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareClient.GetStatistics(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetStatistics (Optional cancellationToken As CancellationToken = null) As Response(Of ShareStatistics)" />
       <MemberSignature Language="F#" Value="abstract member GetStatistics : System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareStatistics&gt;&#xA;override this.GetStatistics : System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareStatistics&gt;" Usage="shareClient.GetStatistics cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1052,6 +1346,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareStatistics&gt;</ReturnType>
@@ -1083,6 +1378,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareStatistics&gt;&gt; GetStatisticsAsync (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Files.Shares.Models.ShareStatistics&gt;&gt; GetStatisticsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareClient.GetStatisticsAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetStatisticsAsync (Optional cancellationToken As CancellationToken = null) As Task(Of Response(Of ShareStatistics))" />
       <MemberSignature Language="F#" Value="abstract member GetStatisticsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareStatistics&gt;&gt;&#xA;override this.GetStatisticsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareStatistics&gt;&gt;" Usage="shareClient.GetStatisticsAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1090,6 +1386,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareStatistics&gt;&gt;</ReturnType>
@@ -1129,6 +1426,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1145,6 +1443,7 @@
       <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt; SetAccessPolicy (System.Collections.Generic.IEnumerable&lt;Azure.Storage.Files.Shares.Models.ShareSignedIdentifier&gt; permissions, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Files.Shares.Models.ShareInfo&gt; SetAccessPolicy(class System.Collections.Generic.IEnumerable`1&lt;class Azure.Storage.Files.Shares.Models.ShareSignedIdentifier&gt; permissions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareClient.SetAccessPolicy(System.Collections.Generic.IEnumerable{Azure.Storage.Files.Shares.Models.ShareSignedIdentifier},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SetAccessPolicy (permissions As IEnumerable(Of ShareSignedIdentifier), Optional cancellationToken As CancellationToken = null) As Response(Of ShareInfo)" />
       <MemberSignature Language="F#" Value="abstract member SetAccessPolicy : seq&lt;Azure.Storage.Files.Shares.Models.ShareSignedIdentifier&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt;&#xA;override this.SetAccessPolicy : seq&lt;Azure.Storage.Files.Shares.Models.ShareSignedIdentifier&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt;" Usage="shareClient.SetAccessPolicy (permissions, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1152,6 +1451,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt;</ReturnType>
@@ -1190,6 +1490,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt;&gt; SetAccessPolicyAsync (System.Collections.Generic.IEnumerable&lt;Azure.Storage.Files.Shares.Models.ShareSignedIdentifier&gt; permissions, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Files.Shares.Models.ShareInfo&gt;&gt; SetAccessPolicyAsync(class System.Collections.Generic.IEnumerable`1&lt;class Azure.Storage.Files.Shares.Models.ShareSignedIdentifier&gt; permissions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareClient.SetAccessPolicyAsync(System.Collections.Generic.IEnumerable{Azure.Storage.Files.Shares.Models.ShareSignedIdentifier},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SetAccessPolicyAsync (permissions As IEnumerable(Of ShareSignedIdentifier), Optional cancellationToken As CancellationToken = null) As Task(Of Response(Of ShareInfo))" />
       <MemberSignature Language="F#" Value="abstract member SetAccessPolicyAsync : seq&lt;Azure.Storage.Files.Shares.Models.ShareSignedIdentifier&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt;&gt;&#xA;override this.SetAccessPolicyAsync : seq&lt;Azure.Storage.Files.Shares.Models.ShareSignedIdentifier&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt;&gt;" Usage="shareClient.SetAccessPolicyAsync (permissions, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1197,6 +1498,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt;&gt;</ReturnType>
@@ -1235,6 +1537,7 @@
       <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt; SetMetadata (System.Collections.Generic.IDictionary&lt;string,string&gt; metadata, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Files.Shares.Models.ShareInfo&gt; SetMetadata(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareClient.SetMetadata(System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SetMetadata (metadata As IDictionary(Of String, String), Optional cancellationToken As CancellationToken = null) As Response(Of ShareInfo)" />
       <MemberSignature Language="F#" Value="abstract member SetMetadata : System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt;&#xA;override this.SetMetadata : System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt;" Usage="shareClient.SetMetadata (metadata, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1242,6 +1545,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt;</ReturnType>
@@ -1278,6 +1582,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt;&gt; SetMetadataAsync (System.Collections.Generic.IDictionary&lt;string,string&gt; metadata, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Files.Shares.Models.ShareInfo&gt;&gt; SetMetadataAsync(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareClient.SetMetadataAsync(System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SetMetadataAsync (metadata As IDictionary(Of String, String), Optional cancellationToken As CancellationToken = null) As Task(Of Response(Of ShareInfo))" />
       <MemberSignature Language="F#" Value="abstract member SetMetadataAsync : System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt;&gt;&#xA;override this.SetMetadataAsync : System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt;&gt;" Usage="shareClient.SetMetadataAsync (metadata, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1285,6 +1590,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt;&gt;</ReturnType>
@@ -1321,6 +1627,7 @@
       <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt; SetQuota (int quotaInGB = 0, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Storage.Files.Shares.Models.ShareInfo&gt; SetQuota(int32 quotaInGB, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareClient.SetQuota(System.Int32,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SetQuota (Optional quotaInGB As Integer = 0, Optional cancellationToken As CancellationToken = null) As Response(Of ShareInfo)" />
       <MemberSignature Language="F#" Value="abstract member SetQuota : int * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt;&#xA;override this.SetQuota : int * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt;" Usage="shareClient.SetQuota (quotaInGB, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1328,6 +1635,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt;</ReturnType>
@@ -1361,6 +1669,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt;&gt; SetQuotaAsync (int quotaInGB = 0, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Storage.Files.Shares.Models.ShareInfo&gt;&gt; SetQuotaAsync(int32 quotaInGB, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Storage.Files.Shares.ShareClient.SetQuotaAsync(System.Int32,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SetQuotaAsync (Optional quotaInGB As Integer = 0, Optional cancellationToken As CancellationToken = null) As Task(Of Response(Of ShareInfo))" />
       <MemberSignature Language="F#" Value="abstract member SetQuotaAsync : int * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt;&gt;&#xA;override this.SetQuotaAsync : int * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt;&gt;" Usage="shareClient.SetQuotaAsync (quotaInGB, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1368,6 +1677,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Shares.Models.ShareInfo&gt;&gt;</ReturnType>
@@ -1409,6 +1719,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -1433,6 +1744,7 @@
         <AssemblyVersion>12.0.0.0</AssemblyVersion>
         <AssemblyVersion>12.0.1.0</AssemblyVersion>
         <AssemblyVersion>12.1.0.0</AssemblyVersion>
+        <AssemblyVersion>12.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Storage.Files.Shares.ShareClient</ReturnType>

@@ -10,6 +10,8 @@
     <AssemblyVersion>1.0.0.62</AssemblyVersion>
     <AssemblyVersion>1.0.0.63</AssemblyVersion>
     <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -33,6 +35,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteAsync (string resourceGroupName, string accountName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteAsync(string resourceGroupName, string accountName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.Fluent.IManagementPolicies.DeleteAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DeleteAsync (resourceGroupName As String, accountName As String, Optional cancellationToken As CancellationToken = null) As Task" />
       <MemberSignature Language="F#" Value="abstract member DeleteAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="iManagementPolicies.DeleteAsync (resourceGroupName, accountName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -41,6 +44,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -51,9 +56,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="cancellationToken">To be added.</param>
         <param name="resourceGroupName">The name of the resource group within the user's subscription. The name is case insensitive.</param>
         <param name="accountName">The name of the storage account within the specified resource group. Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</param>
-        <param name="cancellationToken">To be added.</param>
         <summary>
             Deletes the managementpolicy associated with the specified storage account.
             </summary>
@@ -67,6 +72,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Storage.Fluent.IManagementPolicy&gt; GetAsync (string resourceGroupName, string accountName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Storage.Fluent.IManagementPolicy&gt; GetAsync(string resourceGroupName, string accountName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.Fluent.IManagementPolicies.GetAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAsync (resourceGroupName As String, accountName As String, Optional cancellationToken As CancellationToken = null) As Task(Of IManagementPolicy)" />
       <MemberSignature Language="F#" Value="abstract member GetAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Storage.Fluent.IManagementPolicy&gt;" Usage="iManagementPolicies.GetAsync (resourceGroupName, accountName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -75,6 +81,8 @@
         <AssemblyVersion>1.0.0.62</AssemblyVersion>
         <AssemblyVersion>1.0.0.63</AssemblyVersion>
         <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Storage.Fluent.IManagementPolicy&gt;</ReturnType>
@@ -85,9 +93,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="cancellationToken">To be added.</param>
         <param name="resourceGroupName">The name of the resource group within the user's subscription. The name is case insensitive.</param>
         <param name="accountName">The name of the storage account within the specified resource group. Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.</param>
-        <param name="cancellationToken">To be added.</param>
         <summary>
             Gets the managementpolicy associated with the specified storage account.
             </summary>

@@ -10,6 +10,8 @@
     <AssemblyVersion>1.18.3.0</AssemblyVersion>
     <AssemblyVersion>1.18.4.0</AssemblyVersion>
     <AssemblyVersion>1.19.0.0</AssemblyVersion>
+    <AssemblyVersion>1.20.0.0</AssemblyVersion>
+    <AssemblyVersion>1.20.1.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="TKey" />
@@ -50,9 +52,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="TKey">To be added.</typeparam>
-    <typeparam name="TValue">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="TKey">Type to be used for keys.</typeparam>
+    <typeparam name="TValue">Type to be used for values</typeparam>
+    <summary>
+            Read-only wrapper for another generic dictionary.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -69,13 +73,17 @@
         <AssemblyVersion>1.18.3.0</AssemblyVersion>
         <AssemblyVersion>1.18.4.0</AssemblyVersion>
         <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="dictionary" Type="System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="dictionary">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dictionary">The source dictionary</param>
+        <summary>
+            Creates a readonly dictionary from a specified IDictionary
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,6 +103,8 @@
         <AssemblyVersion>1.18.3.0</AssemblyVersion>
         <AssemblyVersion>1.18.4.0</AssemblyVersion>
         <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -103,9 +113,11 @@
         <Parameter Name="key" Type="TKey" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key to check</param>
+        <summary>
+            Reports whether a key exists in the dictionary
+            </summary>
+        <returns>True if exists, othewise fals</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,12 +137,16 @@
         <AssemblyVersion>1.18.3.0</AssemblyVersion>
         <AssemblyVersion>1.18.4.0</AssemblyVersion>
         <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The count of items in the dictionary
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -148,12 +164,16 @@
         <AssemblyVersion>1.18.3.0</AssemblyVersion>
         <AssemblyVersion>1.18.4.0</AssemblyVersion>
         <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The source dictionary
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -174,14 +194,18 @@
         <AssemblyVersion>1.18.3.0</AssemblyVersion>
         <AssemblyVersion>1.18.4.0</AssemblyVersion>
         <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Returns an enumerator
+            </summary>
+        <returns>The enumerator</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,6 +222,8 @@
         <AssemblyVersion>1.18.3.0</AssemblyVersion>
         <AssemblyVersion>1.18.4.0</AssemblyVersion>
         <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TValue</ReturnType>
@@ -206,9 +232,11 @@
         <Parameter Name="key" Type="TKey" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="key">The desired key</param>
+        <summary>
+            Enables accessing values by indexing with a key
+            </summary>
+        <value>The corresponding value</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,12 +253,16 @@
         <AssemblyVersion>1.18.3.0</AssemblyVersion>
         <AssemblyVersion>1.18.4.0</AssemblyVersion>
         <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Devices.Common.ReadOnlyDictionary45&lt;TKey,TValue&gt;+KeyCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            They keys in the dictionary
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -240,6 +272,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.Add(valuetype System.Collections.Generic.KeyValuePair`2&lt;!TKey, !TValue&gt; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Common.ReadOnlyDictionary45`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#Add(System.Collections.Generic.KeyValuePair{`0,`1})" />
       <MemberSignature Language="VB.NET" Value="Sub Add (item As KeyValuePair(Of TKey, TValue)) Implements ICollection(Of KeyValuePair(Of TKey, TValue)).Add" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.Add : System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt; -&gt; unit&#xA;override this.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.Add : System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt; -&gt; unit" Usage="readOnlyDictionary45.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.Add item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
@@ -250,6 +283,8 @@
         <AssemblyVersion>1.18.3.0</AssemblyVersion>
         <AssemblyVersion>1.18.4.0</AssemblyVersion>
         <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -268,6 +303,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Common.ReadOnlyDictionary45`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#Clear" />
       <MemberSignature Language="VB.NET" Value="Sub Clear () Implements ICollection(Of KeyValuePair(Of TKey, TValue)).Clear" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.Clear : unit -&gt; unit&#xA;override this.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.Clear : unit -&gt; unit" Usage="readOnlyDictionary45.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
@@ -278,6 +314,8 @@
         <AssemblyVersion>1.18.3.0</AssemblyVersion>
         <AssemblyVersion>1.18.4.0</AssemblyVersion>
         <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -293,6 +331,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.Contains(valuetype System.Collections.Generic.KeyValuePair`2&lt;!TKey, !TValue&gt; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Common.ReadOnlyDictionary45`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#Contains(System.Collections.Generic.KeyValuePair{`0,`1})" />
       <MemberSignature Language="VB.NET" Value="Function Contains (item As KeyValuePair(Of TKey, TValue)) As Boolean Implements ICollection(Of KeyValuePair(Of TKey, TValue)).Contains" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.Contains : System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt; -&gt; bool&#xA;override this.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.Contains : System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt; -&gt; bool" Usage="readOnlyDictionary45.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.Contains item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
@@ -303,6 +342,8 @@
         <AssemblyVersion>1.18.3.0</AssemblyVersion>
         <AssemblyVersion>1.18.4.0</AssemblyVersion>
         <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -322,13 +363,19 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.CopyTo(valuetype System.Collections.Generic.KeyValuePair`2&lt;!TKey, !TValue&gt;[] array, int32 arrayIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Common.ReadOnlyDictionary45`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#CopyTo(System.Collections.Generic.KeyValuePair{`0,`1}[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Sub CopyTo (array As KeyValuePair(Of TKey, TValue)(), arrayIndex As Integer) Implements ICollection(Of KeyValuePair(Of TKey, TValue)).CopyTo" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.CopyTo : System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;[] * int -&gt; unit&#xA;override this.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.CopyTo : System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;[] * int -&gt; unit" Usage="readOnlyDictionary45.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.CopyTo (array, arrayIndex)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
         <AssemblyVersion>1.18.2.0</AssemblyVersion>
         <AssemblyVersion>1.18.3.0</AssemblyVersion>
         <AssemblyVersion>1.18.4.0</AssemblyVersion>
         <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -349,7 +396,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Devices.Common.ReadOnlyDictionary45`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of KeyValuePair(Of TKey, TValue)).IsReadOnly" />
-      <MemberSignature Language="F#" Usage="System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.IsReadOnly" />
+      <MemberSignature Language="F#" Value="member this.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.IsReadOnly : bool" Usage="System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -360,6 +407,8 @@
         <AssemblyVersion>1.18.3.0</AssemblyVersion>
         <AssemblyVersion>1.18.4.0</AssemblyVersion>
         <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -375,6 +424,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.Remove(valuetype System.Collections.Generic.KeyValuePair`2&lt;!TKey, !TValue&gt; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Common.ReadOnlyDictionary45`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#Remove(System.Collections.Generic.KeyValuePair{`0,`1})" />
       <MemberSignature Language="VB.NET" Value="Function Remove (item As KeyValuePair(Of TKey, TValue)) As Boolean Implements ICollection(Of KeyValuePair(Of TKey, TValue)).Remove" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.Remove : System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt; -&gt; bool&#xA;override this.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.Remove : System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt; -&gt; bool" Usage="readOnlyDictionary45.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.Remove item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
@@ -385,6 +435,8 @@
         <AssemblyVersion>1.18.3.0</AssemblyVersion>
         <AssemblyVersion>1.18.4.0</AssemblyVersion>
         <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -404,6 +456,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Add(!TKey key, !TValue value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Common.ReadOnlyDictionary45`2.System#Collections#Generic#IDictionary&lt;TKey,TValue&gt;#Add(`0,`1)" />
       <MemberSignature Language="VB.NET" Value="Sub Add (key As TKey, value As TValue) Implements IDictionary(Of TKey, TValue).Add" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Add : 'Key * 'Value -&gt; unit&#xA;override this.System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Add : 'Key * 'Value -&gt; unit" Usage="readOnlyDictionary45.System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Add (key, value)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IDictionary`2.Add(`0,`1)</InterfaceMember>
@@ -414,6 +467,8 @@
         <AssemblyVersion>1.18.3.0</AssemblyVersion>
         <AssemblyVersion>1.18.4.0</AssemblyVersion>
         <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -434,7 +489,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance !TValue System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Item(!TKey)" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Devices.Common.ReadOnlyDictionary45`2.System#Collections#Generic#IDictionary&lt;TKey,TValue&gt;#Item(`0)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(key As TKey) As TValue Implements IDictionary(Of TKey, TValue).Item" />
-      <MemberSignature Language="F#" Usage="System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Item" />
+      <MemberSignature Language="F#" Value="member this.System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Item('Key) : 'Value with get, set" Usage="System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Item(`0)</InterfaceMember>
@@ -445,6 +500,8 @@
         <AssemblyVersion>1.18.3.0</AssemblyVersion>
         <AssemblyVersion>1.18.4.0</AssemblyVersion>
         <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TValue</ReturnType>
@@ -464,7 +521,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;!TKey&gt; System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Keys" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Devices.Common.ReadOnlyDictionary45`2.System#Collections#Generic#IDictionary&lt;TKey,TValue&gt;#Keys" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Keys As ICollection(Of TKey) Implements IDictionary(Of TKey, TValue).Keys" />
-      <MemberSignature Language="F#" Usage="System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Keys" />
+      <MemberSignature Language="F#" Value="member this.System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Keys : System.Collections.Generic.ICollection&lt;'Key&gt;" Usage="System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Keys" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Keys</InterfaceMember>
@@ -475,6 +532,8 @@
         <AssemblyVersion>1.18.3.0</AssemblyVersion>
         <AssemblyVersion>1.18.4.0</AssemblyVersion>
         <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.ICollection&lt;TKey&gt;</ReturnType>
@@ -490,6 +549,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Remove(!TKey key) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Common.ReadOnlyDictionary45`2.System#Collections#Generic#IDictionary&lt;TKey,TValue&gt;#Remove(`0)" />
       <MemberSignature Language="VB.NET" Value="Function Remove (key As TKey) As Boolean Implements IDictionary(Of TKey, TValue).Remove" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Remove : 'Key -&gt; bool&#xA;override this.System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Remove : 'Key -&gt; bool" Usage="readOnlyDictionary45.System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Remove key" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IDictionary`2.Remove(`0)</InterfaceMember>
@@ -500,6 +560,8 @@
         <AssemblyVersion>1.18.3.0</AssemblyVersion>
         <AssemblyVersion>1.18.4.0</AssemblyVersion>
         <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -519,7 +581,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;!TValue&gt; System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Values" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Devices.Common.ReadOnlyDictionary45`2.System#Collections#Generic#IDictionary&lt;TKey,TValue&gt;#Values" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Values As ICollection(Of TValue) Implements IDictionary(Of TKey, TValue).Values" />
-      <MemberSignature Language="F#" Usage="System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Values" />
+      <MemberSignature Language="F#" Value="member this.System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Values : System.Collections.Generic.ICollection&lt;'Value&gt;" Usage="System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Values" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Values</InterfaceMember>
@@ -530,6 +592,8 @@
         <AssemblyVersion>1.18.3.0</AssemblyVersion>
         <AssemblyVersion>1.18.4.0</AssemblyVersion>
         <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.ICollection&lt;TValue&gt;</ReturnType>
@@ -544,6 +608,8 @@
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Common.ReadOnlyDictionary45`2.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Sub CopyTo (array As Array, index As Integer) Implements ICollection.CopyTo" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.ICollection.CopyTo : Array * int -&gt; unit&#xA;override this.System.Collections.ICollection.CopyTo : Array * int -&gt; unit" Usage="readOnlyDictionary45.System.Collections.ICollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -554,6 +620,8 @@
         <AssemblyVersion>1.18.3.0</AssemblyVersion>
         <AssemblyVersion>1.18.4.0</AssemblyVersion>
         <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -574,7 +642,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Devices.Common.ReadOnlyDictionary45`2.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
-      <MemberSignature Language="F#" Usage="System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="F#" Value="member this.System.Collections.ICollection.IsSynchronized : bool" Usage="System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -585,6 +653,8 @@
         <AssemblyVersion>1.18.3.0</AssemblyVersion>
         <AssemblyVersion>1.18.4.0</AssemblyVersion>
         <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -600,7 +670,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Devices.Common.ReadOnlyDictionary45`2.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
-      <MemberSignature Language="F#" Usage="System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="F#" Value="member this.System.Collections.ICollection.SyncRoot : obj" Usage="System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -611,6 +681,8 @@
         <AssemblyVersion>1.18.3.0</AssemblyVersion>
         <AssemblyVersion>1.18.4.0</AssemblyVersion>
         <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -626,6 +698,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IDictionary.Add(object key, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Common.ReadOnlyDictionary45`2.System#Collections#IDictionary#Add(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub Add (key As Object, value As Object) Implements IDictionary.Add" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.IDictionary.Add : obj * obj -&gt; unit&#xA;override this.System.Collections.IDictionary.Add : obj * obj -&gt; unit" Usage="readOnlyDictionary45.System.Collections.IDictionary.Add (key, value)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IDictionary.Add(System.Object,System.Object)</InterfaceMember>
@@ -636,6 +709,8 @@
         <AssemblyVersion>1.18.3.0</AssemblyVersion>
         <AssemblyVersion>1.18.4.0</AssemblyVersion>
         <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -656,6 +731,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IDictionary.Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Common.ReadOnlyDictionary45`2.System#Collections#IDictionary#Clear" />
       <MemberSignature Language="VB.NET" Value="Sub Clear () Implements IDictionary.Clear" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.IDictionary.Clear : unit -&gt; unit&#xA;override this.System.Collections.IDictionary.Clear : unit -&gt; unit" Usage="readOnlyDictionary45.System.Collections.IDictionary.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IDictionary.Clear</InterfaceMember>
@@ -666,6 +742,8 @@
         <AssemblyVersion>1.18.3.0</AssemblyVersion>
         <AssemblyVersion>1.18.4.0</AssemblyVersion>
         <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -681,6 +759,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IDictionary.Contains(object key) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Common.ReadOnlyDictionary45`2.System#Collections#IDictionary#Contains(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function Contains (key As Object) As Boolean Implements IDictionary.Contains" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.IDictionary.Contains : obj -&gt; bool&#xA;override this.System.Collections.IDictionary.Contains : obj -&gt; bool" Usage="readOnlyDictionary45.System.Collections.IDictionary.Contains key" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IDictionary.Contains(System.Object)</InterfaceMember>
@@ -691,6 +770,8 @@
         <AssemblyVersion>1.18.3.0</AssemblyVersion>
         <AssemblyVersion>1.18.4.0</AssemblyVersion>
         <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -710,6 +791,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IDictionaryEnumerator System.Collections.IDictionary.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Common.ReadOnlyDictionary45`2.System#Collections#IDictionary#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IDictionaryEnumerator Implements IDictionary.GetEnumerator" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.IDictionary.GetEnumerator : unit -&gt; System.Collections.IDictionaryEnumerator&#xA;override this.System.Collections.IDictionary.GetEnumerator : unit -&gt; System.Collections.IDictionaryEnumerator" Usage="readOnlyDictionary45.System.Collections.IDictionary.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IDictionary.GetEnumerator</InterfaceMember>
@@ -720,6 +802,8 @@
         <AssemblyVersion>1.18.3.0</AssemblyVersion>
         <AssemblyVersion>1.18.4.0</AssemblyVersion>
         <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IDictionaryEnumerator</ReturnType>
@@ -736,7 +820,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IDictionary.IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Devices.Common.ReadOnlyDictionary45`2.System#Collections#IDictionary#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IDictionary.IsFixedSize" />
-      <MemberSignature Language="F#" Usage="System.Collections.IDictionary.IsFixedSize" />
+      <MemberSignature Language="F#" Value="member this.System.Collections.IDictionary.IsFixedSize : bool" Usage="System.Collections.IDictionary.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.IsFixedSize</InterfaceMember>
@@ -747,6 +831,8 @@
         <AssemblyVersion>1.18.3.0</AssemblyVersion>
         <AssemblyVersion>1.18.4.0</AssemblyVersion>
         <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -762,7 +848,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IDictionary.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Devices.Common.ReadOnlyDictionary45`2.System#Collections#IDictionary#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IDictionary.IsReadOnly" />
-      <MemberSignature Language="F#" Usage="System.Collections.IDictionary.IsReadOnly" />
+      <MemberSignature Language="F#" Value="member this.System.Collections.IDictionary.IsReadOnly : bool" Usage="System.Collections.IDictionary.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.IsReadOnly</InterfaceMember>
@@ -773,6 +859,8 @@
         <AssemblyVersion>1.18.3.0</AssemblyVersion>
         <AssemblyVersion>1.18.4.0</AssemblyVersion>
         <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -788,7 +876,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IDictionary.Item(object)" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Devices.Common.ReadOnlyDictionary45`2.System#Collections#IDictionary#Item(System.Object)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(key As Object) As Object Implements IDictionary.Item" />
-      <MemberSignature Language="F#" Usage="System.Collections.IDictionary.Item" />
+      <MemberSignature Language="F#" Value="member this.System.Collections.IDictionary.Item(obj) : obj with get, set" Usage="System.Collections.IDictionary.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.Item(System.Object)</InterfaceMember>
@@ -799,6 +887,8 @@
         <AssemblyVersion>1.18.3.0</AssemblyVersion>
         <AssemblyVersion>1.18.4.0</AssemblyVersion>
         <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -818,7 +908,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection System.Collections.IDictionary.Keys" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Devices.Common.ReadOnlyDictionary45`2.System#Collections#IDictionary#Keys" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Keys As ICollection Implements IDictionary.Keys" />
-      <MemberSignature Language="F#" Usage="System.Collections.IDictionary.Keys" />
+      <MemberSignature Language="F#" Value="member this.System.Collections.IDictionary.Keys : System.Collections.ICollection" Usage="System.Collections.IDictionary.Keys" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.Keys</InterfaceMember>
@@ -829,6 +919,8 @@
         <AssemblyVersion>1.18.3.0</AssemblyVersion>
         <AssemblyVersion>1.18.4.0</AssemblyVersion>
         <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ICollection</ReturnType>
@@ -844,6 +936,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IDictionary.Remove(object key) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Common.ReadOnlyDictionary45`2.System#Collections#IDictionary#Remove(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub Remove (key As Object) Implements IDictionary.Remove" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.IDictionary.Remove : obj -&gt; unit&#xA;override this.System.Collections.IDictionary.Remove : obj -&gt; unit" Usage="readOnlyDictionary45.System.Collections.IDictionary.Remove key" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IDictionary.Remove(System.Object)</InterfaceMember>
@@ -854,6 +947,8 @@
         <AssemblyVersion>1.18.3.0</AssemblyVersion>
         <AssemblyVersion>1.18.4.0</AssemblyVersion>
         <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -872,7 +967,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection System.Collections.IDictionary.Values" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Devices.Common.ReadOnlyDictionary45`2.System#Collections#IDictionary#Values" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Values As ICollection Implements IDictionary.Values" />
-      <MemberSignature Language="F#" Usage="System.Collections.IDictionary.Values" />
+      <MemberSignature Language="F#" Value="member this.System.Collections.IDictionary.Values : System.Collections.ICollection" Usage="System.Collections.IDictionary.Values" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.Values</InterfaceMember>
@@ -883,6 +978,8 @@
         <AssemblyVersion>1.18.3.0</AssemblyVersion>
         <AssemblyVersion>1.18.4.0</AssemblyVersion>
         <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ICollection</ReturnType>
@@ -898,6 +995,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Common.ReadOnlyDictionary45`2.System#Collections#IEnumerable#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.IEnumerable.GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.System.Collections.IEnumerable.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="readOnlyDictionary45.System.Collections.IEnumerable.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -908,6 +1006,8 @@
         <AssemblyVersion>1.18.3.0</AssemblyVersion>
         <AssemblyVersion>1.18.4.0</AssemblyVersion>
         <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
@@ -935,6 +1035,8 @@
         <AssemblyVersion>1.18.3.0</AssemblyVersion>
         <AssemblyVersion>1.18.4.0</AssemblyVersion>
         <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -944,10 +1046,12 @@
         <Parameter Name="value" Type="TValue" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The desired key</param>
+        <param name="value">The value found</param>
+        <summary>
+            Gets the value of the specified key, if exists
+            </summary>
+        <returns>True if key was found</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -964,12 +1068,16 @@
         <AssemblyVersion>1.18.3.0</AssemblyVersion>
         <AssemblyVersion>1.18.4.0</AssemblyVersion>
         <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Devices.Common.ReadOnlyDictionary45&lt;TKey,TValue&gt;+ValueCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The values in the dictionary
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
